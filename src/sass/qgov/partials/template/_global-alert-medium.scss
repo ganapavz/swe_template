@@ -1,0 +1,19 @@
+.global-alert .header,
+.global-alert .summary {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.global-alert .header {
+  padding-right: 1em;
+  white-space: nowrap;
+}
+
+.global-alert .summary {
+  padding-left: 1em;
+  border-left: 1px solid transparentize($global-alert-summary-border-color, 0.33);
+}
+
+.home .global-alert {
+	margin: 0;
+}

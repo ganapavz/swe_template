@@ -1,0 +1,56 @@
+// smaller panels on larger screens
+#large-application {
+  margin: 0 (-1 * $content-container-side-margin-large);
+}
+
+#app-viewport-tools,
+#app-viewport-info {
+  width: $large-application-medium-panel-size;
+  height: 100%;
+  @include alpha-attribute('background', rgba($large-application-medium-app-viewport-overlay-background-color, 0.85), $large-application-medium-app-viewport-overlay-background-color);
+
+}
+
+#app-viewport-overlay {
+  @include alpha-attribute('background', rgba($large-application-medium-app-viewport-overlay-background-color, 0.85), $large-application-medium-app-viewport-overlay-background-color);
+}
+
+#app-viewport-tools input[type=search] {
+  max-width: 80%;
+}
+
+.questions li {
+  padding-top: 0.5em;
+  padding-right: 0;
+  padding-bottom: 0.1em;
+}
+
+// dim viewport for visible tools or info
+.viewport-tools #app-viewport-overlay,
+.viewport-info #app-viewport-overlay,
+.viewport-tools-info #app-viewport-overlay {
+  opacity: $whitebox-overlay-opacity;
+}
+
+// hide tools
+.viewport #app-viewport-tools,
+.viewport-info #app-viewport-tools {
+  margin-left: -1 * $large-application-medium-panel-size;
+}
+
+// hide info
+.viewport #app-viewport-info,
+.viewport-tools #app-viewport-info {
+  margin-right: -1 * $large-application-medium-panel-size;
+}
+
+#app-viewport-tools {
+
+  .viewport {
+    margin-left: 90px; // clear google maps controls
+    width: 21em; // size of query input (+ padding?)
+    #query {
+      width: 20em;
+    }
+  }
+}

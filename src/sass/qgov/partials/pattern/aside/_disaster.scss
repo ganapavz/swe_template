@@ -1,0 +1,5 @@
+#asides .disaster h2,
+#asides-primary .disaster h2,
+#asides-secondary .disaster h2 {
+    @include fonticon($fa-var-bullhorn, .8, 2, 1, $qgov-green);
+}

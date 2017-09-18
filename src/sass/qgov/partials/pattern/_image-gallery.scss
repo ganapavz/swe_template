@@ -1,0 +1,25 @@
+@media screen, projection, tv, handheld {
+
+  /* Image gallery */
+  .image-gallery {
+    overflow: hidden;
+  }
+  .image-gallery ul {
+    padding-left: 0;
+  }
+  .image-gallery li {
+    float: left;
+    list-style: none;
+    padding: 10px;
+  }
+  .image-gallery img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid $image-gallery-img-border-color;
+    @include alpha-attribute('box-shadow', rgba($image-gallery-img-box-shadow-rgba, 0.2), $image-gallery-img-box-shadow-rgba, 0 0 2px 1px);
+  }
+  .image-gallery a:link:hover img {
+    border-color: $image-gallery-link-hover-img-border-color;
+    @include rotate(5deg);
+  }
+}

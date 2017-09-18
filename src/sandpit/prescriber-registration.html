@@ -1,0 +1,588 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Example page | FRANCHISE | Queensland Government</title>
+
+<!--#set var="franchise" value=""-->
+<!--#set var="title" value="Example page"-->
+<!--#set var="licence" value="http://creativecommons.org/licenses/by-nd/3.0/au/"-->
+<!--#include virtual="/assets/includes/global/head-assets.html"-->
+
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+	
+	<meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=DEPARTMENT NAME; ou=UNIT NAME" />
+	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland" />
+	<meta name="DCTERMS.created" content="2010-11-04" />
+	<meta name="DCTERMS.modified" content="2012-05-24" />
+	<meta name="DCTERMS.title" content="Example page | FRANCHISE" />
+	<meta name="DCTERMS.alternative" content="Parking permits" />
+	<meta name="DCTERMS.description" content="DESCRIPTION" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION" />
+<!--#include virtual="/assets/includes/global/head-meta-identifier.html"-->
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="guidelines" />
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+	<meta name="DCTERMS.license" scheme="DCTERMS.URI" content="http://creativecommons.org/licenses/by-nd/3.0/au/" />
+</head>
+
+<body id="qld-gov-au" class="residents">
+
+<!--#include virtual="/assets/includes/global/header.html"-->	
+	
+	<div id="page-container"><div class="max-width">
+		<div id="breadcrumbs">
+			<h2>You are here:</h2>
+			<ol>
+<!--#include virtual="/assets/includes/global/breadcrumb-citizen.html"-->
+				<li><a href="/disability/">People with disability</a></li>
+				<li><a href="/disability/getting-out/">Getting out and about</a></li>
+				<li><a href="../">Transport</a></li>
+				<li class="last-child">Example page</li>
+			</ol>
+		</div>
+	
+		<div id="content-container">
+			<div id="content">
+				<div class="article"><div class="box-sizing"><div class="border" id="article">
+				
+<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+<h1>Prescriber registration form</h1>
+
+<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+				  <!-- Form HTML start -->
+
+<div class="preamble instructions">
+	<p>CAEATI welcomes your professionalism as you join our Registered CAEATI Prescriber (RCP) network. CAEATI aims to offer individualised support for people with a disability who want, or need assistance to fund equipment to enable access to their communities of choice.</p>
+	<p>Completing this Prescriber Registration Form By completing the following details you enable CAEATI to:</p>
+	<ul>
+		<li>Develop a register of the prescriber workforce for dissemination of CAEATI information.</li>
+		<li>Develop a list of RCP’s to be available for referral.</li>
+		<li>Allow payments for service to occur (if applicable).</li>
+	</ul>
+	<p>It takes about 15 minutes to complete this form.</p>
+</div>
+<form action="/cgi-bin/emailform.pl" method="post" class="form" onsubmit="minOneCheckboxCheckedCheck();">
+	<input name="captcha" value="" type="hidden" />
+	<input name="recipient" value="greg.eaton@smartservice.qld.gov.au, Emma.Tovell2@communities.qld.gov.au" type="hidden" />
+	<input id="subject" name="subject" value="Prescriber registration form" type="hidden" />
+	<!-- reply_to defaults to recipient -->
+	<input name="email_field" value="NO EMAIL" type="hidden" />
+	<input name="redirect" value="http://www.qld.gov.au" type="hidden" />
+	<ol class="questions">
+		<li class="section">
+			<fieldset>
+				<legend>
+					<span class="h2">1. Prescriber Register (Confidential information)</span>               </legend>
+				<ol class="questions">
+					<li>
+						<label for="full-name">
+							<span class="label">Name</span>
+							<abbr class="required" title="(required)">*</abbr>
+							<small class="hint">Full name, as Registered in your profession</small>                     </label>
+						<input id="full-name" name="full-name" size="30" required="required" type="text" />
+					</li>
+					<li>
+						<label for="registration-body">
+							<span class="label">Registration Body</span>
+							<abbr class="required" title="(required)">*</abbr>                      </label>
+						<input id="registration-body" name="registration-body" size="30" required="required" type="text" />
+					</li>
+					<li>
+						<label for="registration-number">
+							<span class="label">Registration Number</span>
+							<abbr class="required" title="(required)">*</abbr>                      </label>
+						<input id="registration-number" name="registration-number" size="30" required="required" type="text" />
+					</li>
+					<li class="section">
+						<fieldset>
+							<legend>
+								<span class="h3">Professional Qualifications</span>                         </legend>
+							<ol class="questions">
+								<li>
+									<label for="qualification">
+										<span class="label">Qualification</span>
+										<abbr class="required" title="(required)">*</abbr>                                  </label>
+									<input id="qualification" name="qualification" size="30" required="required" type="text" />
+								</li>
+								<li>
+									<label for="institution">
+										<span class="label">Institution</span>
+										<abbr class="required" title="(required)">*</abbr>                                  </label>
+									<input id="institution" name="institution" size="30" required="required" type="text" />
+								</li>
+								<li>
+									<label for="year-obtained">
+										<span class="label">Year obtained</span>
+										<abbr class="required" title="(required)">*</abbr>                                  </label>
+									<input id="year-obtained" name="year-obtained" size="20" required="required" type="text" />
+								</li>
+							</ol>
+						</fieldset>
+					</li>
+					<li class="section">
+						<fieldset>
+							<legend>
+								<span class="h3">Specialist Qualifications</span>                           </legend>
+							<ol class="questions">
+								<li>
+									<label for="qualification1">
+										<span class="label">Qualification</span>
+										<abbr class="required" title="(required)">*</abbr>                                  </label>
+									<input id="qualification1" name="qualification1" size="30" required="required" type="text" />
+								</li>
+								<li>
+									<label for="institution1">
+										<span class="label">Institution</span>
+										<abbr class="required" title="(required)">*</abbr>                                  </label>
+									<input id="institution1" name="institution1" size="30" required="required" type="text" />
+								</li>
+								<li>
+									<label for="year-obtained1">
+										<span class="label">Year obtained</span>
+										<abbr class="required" title="(required)">*</abbr>
+										<small class="hint">E.g. 2001</small>                                    </label>
+									<input id="year-obtained1" name="year-obtained1" size="5" required="required" type="text" />
+								</li>
+							</ol>
+						</fieldset>
+					</li>
+				</ol>
+			</fieldset>
+		</li>
+		<li class="section">
+			<fieldset>
+				<legend>
+					<span class="h2">2. List of RCP’s for referral (Public information)</span>              </legend>
+				<ol class="questions">
+					<li>
+						<label for="contact-person">
+							<span class="label">Contact Person</span>
+							<abbr class="required" title="(required)">*</abbr>                      </label>
+						<input id="contact-person" name="contact-person" size="30" required="required" type="text" />
+					</li>
+					<li>
+						<label for="business-or-employer-name">
+							<span class="label">Business or Employer Name</span>
+							<abbr class="required" title="(required)">*</abbr>                      </label>
+						<input id="business-or-employer-name" name="business-or-employer-name" size="30" required="required" type="text" />
+					</li>
+					<li>
+						<fieldset id="name1">
+							<legend>
+								<span class="label">RCP Experience and Preference for Referral</span>
+								<small class="hint">Select at least one</small>
+								<abbr class="required" title="(required)">*</abbr>
+							</legend>
+							<ul class="choices">
+								<li>
+									<input id="rcp-experience-and-preference-for-referral-children-6-years" name="rcp-experience-and-preference-for-referral" value="Children <6 years" type="checkbox" />
+									<!--6-->
+									<!--6-->
+									<label for="rcp-experience-and-preference-for-referral-children-6-years">Children <6 years</label>
+								</li>
+								<li>
+									<input id="rcp-experience-and-preference-for-referral-children-6-years-18-years" name="rcp-experience-and-preference-for-referral" value="Children />6 years – 18 years" type="checkbox">
+									<label for="rcp-experience-and-preference-for-referral-children-6-years-18-years">Children >6 years – 18 years</label>
+								</li>
+								<li>
+									<input id="rcp-experience-and-preference-for-referral-young-adults" name="rcp-experience-and-preference-for-referral" value="Young adults" type="checkbox" />
+									<label for="rcp-experience-and-preference-for-referral-young-adults">Young adults</label>
+								</li>
+								<li>
+									<input id="rcp-experience-and-preference-for-referral-older-adults" name="rcp-experience-and-preference-for-referral" value="Older adults" type="checkbox" />
+									<label for="rcp-experience-and-preference-for-referral-older-adults">Older adults</label>
+								</li>
+								<li>
+									<input id="rcp-experience-and-preference-for-referral-behavioural-needs" name="rcp-experience-and-preference-for-referral" value="Behavioural needs" type="checkbox" />
+									<label for="rcp-experience-and-preference-for-referral-behavioural-needs">Behavioural needs</label>
+								</li>
+								<li>
+									<input id="rcp-experience-and-preference-for-referral-physical-needs" name="rcp-experience-and-preference-for-referral" value="Physical needs" type="checkbox" />
+									<label for="rcp-experience-and-preference-for-referral-physical-needs">Physical needs</label>
+								</li>
+								<li>
+									<input id="rcp-experience-and-preference-for-referral-cognitive-needs" name="rcp-experience-and-preference-for-referral" value="Cognitive needs" type="checkbox" />
+									<label for="rcp-experience-and-preference-for-referral-cognitive-needs">Cognitive needs</label>
+								</li>
+								<li>
+									<input id="rcp-experience-and-preference-for-referral-complex-health-needs" name="rcp-experience-and-preference-for-referral" value="Complex health needs" type="checkbox" />
+									<label for="rcp-experience-and-preference-for-referral-complex-health-needs">Complex health needs</label>
+								</li>
+								<li>
+									<input id="rcp-experience-and-preference-for-referral-other" name="rcp-experience-and-preference-for-referral" value="Other" type="checkbox" />
+									<label for="rcp-experience-and-preference-for-referral-other">Other</label>
+								</li>
+							</ul>
+						</fieldset>
+					</li>
+					<li>
+						<label for="please-describe">
+							<span class="label">Please describe</span>
+							<abbr class="required" title="(required)">*</abbr>
+							<small class="relevance">(If you chose 'Other' above)</small>                       </label>
+						<textarea id="please-describe" name="please-describe" rows="2" cols="40" required="required"></textarea>
+					</li>
+					<li>
+						<label for="rcp-additional-qualifications">
+							<span class="label">RCP additional qualifications</span>
+							<abbr class="required" title="(required)">*</abbr>                      </label>
+						<input id="rcp-additional-qualifications" name="rcp-additional-qualifications" size="30" required="required" type="text" />
+					</li>
+					<li class="section">
+						<fieldset>
+							<legend>
+								<span class="h3">Preferred contact time and method</span>                           </legend>
+							<ol class="questions">
+								<li>
+									<label for="time">
+										<span class="label">Time</span>
+										<abbr class="required" title="(required)">*</abbr>
+										<small class="hint">E.g. 10am</small>                                   </label>
+									<input id="time" name="time" size="5" required="required" type="text" />
+								</li>
+								<li>
+									<fieldset>
+										<legend>
+											<span class="label">Method</span>
+											<abbr class="required" title="(required)">*</abbr>
+											<small class="hint">How would you us to contact you?</small>                                        </legend>
+										<ul class="choices">
+											<li>
+												<input id="method1-phone" name="method1" value="Phone" required="required" type="radio" />
+												<label for="method1-phone">Phone</label>
+											</li>
+											<li>
+												<input id="method1-email" name="method1" value="Email" required="required" type="radio" />
+												<label for="method1-email">Email</label>
+											</li>
+											<li>
+												<input id="method1-post" name="method1" value="Post" required="required" type="radio" />
+												<label for="method1-post">Post</label>
+											</li>
+										</ul>
+									</fieldset>
+								</li>
+								<li>
+									<label for="email1">
+										<span class="label">Email</span>
+										<abbr class="required" title="(required)">*</abbr>
+										<small class="relevance">(If you chose 'Email' above)</small>                                   </label><br />
+									<input id="email1" name="email1" size="40" required="required" type="email" />
+								</li>
+								<li>
+									<label for="phone">
+										<span class="label">Phone</span>
+										<abbr class="required" title="(required)">*</abbr>
+										<small class="relevance">(If you chose 'Phone' above)</small>                                   </label><br />
+									<input required="required" id="phone" name="phone" size="20" value="" type="tel" />
+								</li>
+								<li class="atomic group">
+									<fieldset>
+										<legend>
+											<span class="label">Postal address</span>
+											<small class="relevance">(If you chose 'Post' above)</small>                                        </legend>
+										<ol class="questions">
+											<li>
+												<label for="postal-address">
+													<span class="label">Address line 1</span>
+													<abbr class="required" title="(required)">*</abbr>                                              </label>
+												<input id="postal-address" name="postal-address" size="20" value="" required="required" type="text" />
+											</li>
+											<li>
+												<label for="postal-address1">
+													<span class="label">Address line 2</span>                                               </label>
+												<input id="postal-address1" name="postal-address" size="20" value="" type="text" />
+											</li>
+											<li>
+												<label for="postal-address2">
+													<span class="label">Address line 3</span>                                               </label>
+												<input id="postal-address2" name="postal-address" size="20" value="" type="text" />
+											</li>
+											<li class="group">
+												<ol class="questions compact">
+													<li>
+														<label for="postal-address3">
+															<span class="label">Town, city or suburb</span>
+															<abbr class="required" title="(required)">*</abbr>                                                      </label>
+														<input id="postal-address3" name="postal-address" size="20" value="" required="required" type="text" />
+													</li>
+													<li>
+														<label for="postal-address-qld">
+															<span class="label">State</span>
+															<abbr class="required" title="(required)">*</abbr>                                                      </label>
+														<input id="postal-address-qld" name="postal-address" size="5" value="QLD" required="required" type="text" />
+													</li>
+													<li>
+														<label for="postal-address4">
+															<span class="label">Postcode</span>
+															<abbr class="required" title="(required)">*</abbr>                                                      </label>
+														<input id="postal-address4" name="postal-address" size="5" value="" required="required" type="text" />
+													</li>
+												</ol>
+											</li>
+											<li>
+												<label for="postal-address-australia">
+													<span class="label">Country</span>
+													<abbr class="required" title="(required)">*</abbr>                                              </label>
+												<input id="postal-address-australia" name="postal-address" size="20" value="Australia" required="required" type="text" />
+											</li>
+										</ol>
+									</fieldset>
+								</li>
+							</ol>
+						</fieldset>
+					</li>
+					<li>
+						<label for="physical-accessibility">
+							<span class="label">Physical Accessibility</span>
+							<abbr class="required" title="(required)">*</abbr>                      </label>
+						<textarea id="physical-accessibility" name="physical-accessibility" rows="2" cols="40" required="required"></textarea>
+					</li>
+					<li>
+						<label for="other-relevant-considerations">
+							<span class="label">Other Relevant Considerations</span>
+							<abbr class="required" title="(required)">*</abbr>                      </label>
+						<textarea id="other-relevant-considerations" name="other-relevant-considerations" rows="2" cols="40" required="required"></textarea>
+					</li>
+					</ol>
+			</fieldset>
+		</li>
+		<li>
+			<fieldset>
+				<legend>
+					<span class="label">Are you a private provider?</span>
+					<abbr class="required" title="(required)">*</abbr>              </legend>
+				<ul class="choices compact">
+					<li>
+						<input id="are-you-a-private-provider-yes" name="are-you-a-private-provider" value="Yes" required="required" type="radio" />
+						<label for="are-you-a-private-provider-yes">Yes</label>
+					</li>
+					<li>
+						<input id="are-you-a-private-provider-no" name="are-you-a-private-provider" value="No" required="required" type="radio" />
+						<label for="are-you-a-private-provider-no">No</label>
+					</li>
+				</ul>
+			</fieldset>
+		</li>
+		<li class="section">
+			<fieldset>
+				<legend>
+					<span class="h2">3. Payment for Service (Confidential information)</span>
+					<small class="relevance">(If you chose 'Yes' above)</small>             </legend>
+				<ol class="questions">
+					<li>
+						<label for="banking-institution">
+							<span class="label">Banking Institution</span>
+							<abbr class="required" title="(required)">*</abbr>                      </label>
+						<input id="banking-institution" name="banking-institution" size="30" required="required" type="text" />
+					</li>
+					<li>
+						<label for="branch-where-account-held">
+							<span class="label">Branch where account held</span>
+							<abbr class="required" title="(required)">*</abbr>                      </label>
+						<input id="branch-where-account-held" name="branch-where-account-held" size="30" required="required" type="text" />
+					</li>
+					<li>
+						<label for="bsb-number">
+							<span class="label">BSB Number</span>
+							<abbr class="required" title="(required)">*</abbr>                      </label>
+						<input id="bsb-number" name="bsb-number" size="30" required="required" type="text" />
+					</li>
+					<li>
+						<label for="account-number">
+							<span class="label">Account number</span>
+							<abbr class="required" title="(required)">*</abbr>                      </label>
+						<input id="account-number" name="account-number" size="30" required="required" type="text" />
+					</li>
+					<li>
+						<label for="account-name">
+							<span class="label">Account Name</span>
+							<abbr class="required" title="(required)">*</abbr>                      </label>
+						<input id="account-name" name="account-name" size="30" required="required" type="text" />
+					</li>
+				</ol>
+			</fieldset>
+		</li>
+		<div class="preamble instructions">
+			<p>Please read and complete the following declaration to CAEATI as a part of Disability Services (DS).</p>
+			<p>I declare that:</p>
+			<ul>
+				<li>The information contained in this form is true and accurate.</li>
+				<li>I will inform CAEATI of any change to the above information within two weeks of these details having changed.</li>
+				<li>I understand that submitting this CAEATI registration form in no way guarantees access to funding.</li>
+				<li>I understand that part of the above information will be given to the public and available electronically for the purpose of referral to my service.</li>
+				<li>I understand that DS reserves the right to clarify and confirm information provided in this CAEATI registration form.</li>
+				<li>I understand that DS reserves the right at any time to exclude any registration that does not meet the intent of CAEATI.</li>
+				<li>I agree to read the CAEATI guidelines document.</li>
+			</ul>
+		</div>
+		<li>
+		  <fieldset>
+		  <legend> <span class="label">Conditions of use</span> <abbr class="required" title="(required)">*</abbr> </legend>
+			<input id="conditions-of-use-and-privacy" name="conditions-of-use-and-privacy" value="true" required="required" type="checkbox" />
+			<label for="conditions-of-use-and-privacy">I have read and agree to the conditions above.</label><br />
+			<input id="referral-consent" name="referral-consent" value="true" required="required" type="checkbox" />
+			<label for="referral-consent">I consent for these details to be used for referrals.</label>
+		  </fieldset>
+		  </li>
+		<li class="footer">
+			<ul class="actions">
+				<li>
+					<strong>
+						<input value="Submit" type="submit" />
+					</strong>
+			   </li>
+			</ul>
+		</li>
+	</ol>
+</form>
+
+<!-- Form HTML end -->
+
+
+
+				</div></div></div><!-- end .article, .box-sizing, .border -->
+			</div><!-- end #content -->
+
+			<div id="asides"><div class="box-sizing"><div class="border">
+				<!--#include virtual="/assets/includes/global/global-aside.html"-->
+				
+				<div class="aside emergency-contact">
+					<p>If you are in a crisis situation, call <span class="tel">13 74 68</span></p>
+				</div>
+				
+				<!--#include virtual="/assets/includes/global/aside-contact-qgov.html" -->
+
+				<div class="aside story">
+					<h2>Dave’s story</h2>
+					<div class="cut-in">
+						<img src="assets/eg-dave-story.jpg" alt="" />
+					</div>
+					<p><strong>Kids in Far North Queensland have 2 new exciting playgrounds to explore.</strong></p>
+					<p>The SugarWorld All Abilities Playground in Edmonton, south of Cairns, includes an accessible swing set, bird’s nest swing, a bamboo maze and a sensory space with outdoor musical instruments.</p>
+				</div>
+				
+				<div class="aside your-say">
+					<h2>Have your say</h2>
+					<p>… on <a href="#">changes to page title legislation</a>.</p>
+				</div>
+				
+				<div class="aside tip">
+					<h2>Did you know…</h2>
+					<p>A <a href="http://www.disabilityparking.gov.au/">national disability parking scheme</a> is being rolled out across Australia?</p>
+				</div>
+				
+				<div class="aside search">
+					<form>
+						<h2>Search SmartJobs</h2>
+						<p>Search inputs here.</p>
+					</form>
+				</div>
+				
+				
+				
+				<div class="aside subscribe">
+					<h2>Subscribe</h2>
+					<p>Subscribe for updates using the <a href="#">news feed</a></p>
+				</div>
+				
+				<div class="aside">
+					<p>Download the following:</p>
+					<ul>
+						<li><a href="../../docs/cue-template-change-log.pdf" class="download">
+								<span class="title">Downloadable document</span>
+								<span class="meta">(PDF, 72KB)</span>
+						</a></li>
+						<li><a href="../../docs/cue-template-change-log.rtf" class="download">
+								<span class="title">Downloadable document</span>
+								<span class="meta">(RTF, 50KB)</span>
+						</a></li>
+						<li><a href="../../docs/cue-template-change-log.jpg" class="download">
+								<span class="title">Downloadable document</span>
+								<span class="meta">(JPEG, 50KB)</span>
+						</a></li>
+					</ul>
+				</div>
+				
+				
+				<div class="aside feedback">
+					<h2>Tell us what you think</h2>
+					<p><a href="#page-feedback">Fill in the feedback section</a> and let us know what you think of the pages so far and what you would like to see in the future.</p>
+				</div>
+			
+			</div></div></div><!-- end #asides, .box-sizing, .border -->
+
+			<div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+				<div id="document-properties"><div class="box-sizing">
+					<dl>
+						<dt class="attribution">Acknowledgments</dt>
+						<dd><p>This material was sourced from BoysTown (2011). Retrieved January 30, 2012 from—Kids Helpline Hot Topic: Leaving Home.</p></dd>
+
+						<dt class="visuallyhidden">Licence</dt>
+						<dd id="document-licence">
+							<a title="Text available under Creative Commons Attribution 3.0 Australia (CC BY 3.0) licence" rel="license" href="http://creativecommons.org/licenses/by/3.0/au/"><img alt="Creative Commons Attribution 3.0 Australia (CC BY 3.0)" src="/assets/v2/images/licences/by-80x15.png" /></a>
+						</dd>
+
+						<dt>Last updated</dt>
+						<dd>24 May 2012</dd>
+					</dl>
+				</div></div>
+				
+<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+			</div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+		</div><!-- end #content-container -->
+		
+<!--#include virtual="/examples/nav/transport.html"-->
+	
+	</div></div><!-- end #page-container, .max-width -->
+
+<!--#include virtual="/assets/includes/global/footer-page.html"-->
+<script type="text/javascript"><!-- //
+
+	var minOneCheckboxGroups = [ 'rcp-experience-and-preference-for-referral' ],
+
+	// check that at least one checkbox is checked
+	minOneCheckboxCheckedCheck = function( evt ) {
+		// console.log( 'minOneCheckboxCheckedCheck' );
+		// for all checkbox groups
+		$.each( minOneCheckboxGroups, function( index, name ) {
+			// find the checkboxes in the group
+			var checkboxes = $( 'input' ).filter(function() {
+					return this.name === name;
+				}),
+				validitionMessage = ''
+			;
+
+			// must have 1 item selected
+			if ( checkboxes.filter( ':checked' ).length === 0 ) {
+				validitionMessage = 'Must be completed';
+			}
+			// set validity o nevery checkbox in the group (UI isn't updated otherwise)
+			checkboxes.each(function() {
+				this.setCustomValidity( validitionMessage );
+			});
+		});
+	}
+	;
+
+	$( 'input' ).filter(function() {
+		return $.inArray( this.name, minOneCheckboxGroups ) >= 0;
+	}).on( 'click', minOneCheckboxCheckedCheck );
+
+// --></script>
+<!--#include virtual="/assets/includes/global/footer-stats.html"-->
+	
+</body>
+</html>

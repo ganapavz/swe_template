@@ -1,0 +1,7 @@
+
+// calculate ems from pixels (uses interpolation method)
+// Example 1: @include calc-ems('width', 100);
+
+@mixin calc-ems($attribute, $pixels: 1) {
+  #{$attribute}: em($pixels);
+}

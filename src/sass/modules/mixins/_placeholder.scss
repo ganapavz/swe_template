@@ -1,0 +1,18 @@
+@mixin placeholder($color: $body-color, $alpha: 0.8) {
+  // WebKit browsers
+  &::-webkit-input-placeholder {
+    color: rgba($color, $alpha);
+  }
+  // Mozilla Firefox 4 to 18
+  &:-moz-placeholder {
+    color: rgba($color, 1)
+  }
+  // Mozilla Firefox 19+
+  &::-moz-placeholder {
+    color: rgba($color, 1)
+  }
+  // Internet Explorer 10+
+  &:-ms-input-placeholder {
+    color: rgba($color, $alpha)
+  }
+}

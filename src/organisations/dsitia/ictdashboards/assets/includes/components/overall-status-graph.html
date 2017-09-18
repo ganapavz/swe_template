@@ -1,0 +1,53 @@
+<h2 id="h2-overall-status">Overall status</h2>
+<div id="overall-status">Loading...</div>
+<p><strong>Key</strong></p>
+<ul>
+	<li>Green&mdash;everything is to plan and the initiative is within tolerance</li>
+	<li>Amber&mdash;the initiative is still within tolerance, but pushing the bounds</li>
+	<li>Red&mdash;the initiative is forecast to or has exceeded tolerance(s)</li>
+</ul>
+<p>Note: If one of the elements (time, cost, quality) is amber and the rest are green, then overall status is reported as amber.</p>
+
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var datafile = "<!--#echo encoding="entity" var="data" -->";
+
+	function overallStatus() {
+		// load json data
+		var sql =	' SELECT COALESCE(CASE C.\"status\"' +
+		         			'			WHEN \'R\' THEN \'RED\'' +
+		         			'			WHEN \'A\' THEN \'AMBER\'' +
+		         			'			WHEN \'G\' THEN \'GREEN\'' +
+		         			'			END, C.\"status\") AS \"Status\",' +
+		         			'		SUM(case when D.\"Duration (months)\" < 6 then 1 else 0 end) as \"< 6 months\",' +
+		         			'		SUM(case when D.\"Duration (months)\" between 6 and 12 then 1 else 0 end) as \"6-12 months\",' +
+		         			'		SUM(case when D.\"Duration (months)\" > 12 then 1 else 0 end) as \"> 12 months\"' +
+		         			' FROM colours C' +
+		         			' LEFT OUTER JOIN \"' + datafile + '\" D on D.\"Overall status\"=C.\"status\"' +
+		         			' GROUP BY C.\"status\"' +
+		         			' ORDER BY (CASE C.\"status\" WHEN \'R\' THEN 1 WHEN \'A\' THEN 2 WHEN \'G\' THEN 3 END)';
+		
+
+		// load data lib
+		swe.load({ name: 'data', url: 'data.js' });
+
+		// configure chart
+		swe.data({
+			container: 'overall-status',
+			title: 'Overall status',
+			headings: [ 'Status', '< 6 months', '6-12 months', '> 12 months' ],
+			sql: sql,
+			type: 'bar',
+			colours: 'rag',
+			legend: false
+		});
+	};
+
+	overallStatus();
+
+}( jQuery, qg.swe ));
+
+//--></script><!-- end -->

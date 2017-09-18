@@ -1,0 +1,7 @@
+@media screen, projection, tv, handheld {
+	.pagination .next a .pagination-button-inner,
+	.pagination .previous a .pagination-button-inner { /* IE6&7 can't handle the negative margins to make the buttons work */
+		*background: none;
+		*padding: .2em 1em .4em 1em;
+	}
+}

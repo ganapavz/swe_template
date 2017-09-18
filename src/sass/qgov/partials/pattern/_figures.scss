@@ -1,0 +1,128 @@
+/* figures */
+.figure,
+.cut-in,
+.cut-in-alt {
+    position: relative;
+    margin: 1.2em 0 1em 0;
+}
+
+/* cut-in images */
+
+div.cut-in, div.cut-in-alt {
+    position: relative;
+    max-width: 374px !important;
+    max-height: auto !important;
+    text-align: center;
+    @include font-rem(0.9);
+    font-style: italic;
+    border: 1px solid #EEE;
+    padding: .5em;
+
+button.figure-credits-toggle {
+    display: block;
+    position: absolute;
+    height: 30px;
+    top: 10px !important;
+    right: 10px !important;
+    text-align: right;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+}
+
+div.cut-in {
+    float: right;
+    margin-left: 1em;
+}
+div.cut-in.app ul{
+  padding: 0;
+  li {
+    list-style: none;
+    &:not(:first-child){
+      padding-top: 8px;
+    }
+  }
+}
+
+
+div.cut-in-alt {
+    float: left;
+    margin-right: 1em;
+}
+
+div.cut-in img, div.cut-in-alt img {
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto;
+}
+
+div.cut-in .caption,
+div.cut-in .caption-large,
+div.cut-in-alt .caption,
+div.cut-in-alt .caption-large
+{
+    margin: .5em auto;
+    text-align: left;
+    font-size: .9em;
+    font-style: italic;
+    max-width: 284px;
+}
+
+.figure img,
+.cut-in img,
+.cut-in-alt img {
+    display: block;
+}
+
+.cut-in .caption,
+.cut-in-alt .caption,
+.cut-in .caption-large,
+.cut-in-alt .caption-large {
+    color: $cut-in-caption-color; /* match h2, h3 */
+}
+//
+.cut-in .caption .name,
+.cut-in .caption .name {
+    font-weight: bold;
+}
+
+/* figure credits */
+.figure button img,
+.cut-in button img,
+.cut-in-alt button img {
+  border: none;
+  box-shadow: none;
+}
+
+.figure-credits {
+  padding: 0 1.4em 0 1.4em;
+}
+
+.figure-credits-toggle {
+  position: absolute;
+  right: 2em;
+  margin: -40px 5px 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+  opacity: .67;
+}
+
+.figure-credits-toggle:focus,
+.figure-credits-toggle:hover,
+.figure-credits-toggle:active {
+  opacity: 1;
+}
+
+.figure-credits-toggle img {
+  width: 25px;
+  height: 19px;
+  border: none;
+  box-shadow: none;
+}
+
+#promo-banner img {
+  max-width: 100%;
+  height: auto;
+}

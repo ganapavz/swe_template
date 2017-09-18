@@ -1,0 +1,162 @@
+// search widget for centre column applications
+
+#app-viewport .search-widget {
+  margin-top: 1.6em;
+  margin-bottom: 0.8em;
+}
+
+.search-widget {
+  background: $qgov-lightBlue-gray;
+  padding: 0.5em 1em;
+
+  .widget-header {
+    &:after {
+      clear: both;
+      content: '';
+      display: block;
+      height: 0;
+    }
+
+    h2 {
+      float: left;
+      margin: 0;
+      padding: 0.2em 0 0;
+    }
+
+    .action {
+      float: right;
+    }
+
+    .action a {
+      border: 0;
+      outline: 0;
+      display: block;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      width: 0;
+      height: 2.6em;
+      padding-left: 2.6em;
+      @include fonticon($fa-var-chevron-circle-down, 0.1, 2.6);
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0.1em;
+      }
+    }
+
+    .action a.up {
+      border: 0;
+      outline: 0;
+      display: block;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      width: 0;
+      height: 2.6em;
+      padding-left: 2.6em;
+      @include fonticon($fa-var-chevron-circle-up, 0.1, 2.6);
+
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0.1em;
+      }
+    }
+  }
+
+  form {
+    clear: both;
+  }
+
+  li {
+    clear: none;
+  }
+
+  li input,
+  li select,
+  li textarea {
+    width: 99%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+  .widget-col-small-left {
+    float: left;
+    width: 30%;
+  }
+
+  .widget-col-small-right {
+    float: right;
+    width: 30%;
+  }
+
+  .widget-col-large-left {
+    float: left;
+    width: 65%;
+  }
+
+  .widget-col-large-right {
+    float: right;
+    width: 65%;
+  }
+
+  .widget-col-half-left {
+    float: left;
+    width: 47.5%;
+  }
+
+  .widget-col-half-right {
+    float: right;
+    width: 47.5%;
+  }
+
+  .widget-col-full {
+    clear: both;
+    float: none;
+    width: 100%;
+  }
+
+  .location {
+    padding-top: 0.2em;
+    padding-right: 3em;
+    box-sizing: border-box;
+    position: relative;
+
+    input#location {
+      width: 100%;
+      max-width: 100%;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      box-sizing: border-box;
+      float: none;
+
+      & + #app-geocoding {
+        background: $qgov-green;
+        position: absolute;
+        height: 2em;
+        right: 0;
+        margin: 0;
+        padding: 0.15em 0.2em;
+
+        &:hover,
+        &:focus {
+          background-color: $form-strong-button-hover-background-color;
+          outline: 1px solid $qgov-green;
+          outline-offset: -1px;
+        }
+      }
+    }
+  }
+
+  .questions {
+    clear: both;
+    @include clearfix();
+  }
+
+  .hide {
+    display: none;
+  }
+}

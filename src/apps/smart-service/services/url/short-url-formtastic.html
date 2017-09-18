@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+	<meta charset="UTF-8" />
+	<title>Get a short URL | URL management | Queensland Government</title>
+
+<!--#set var="franchise" value="QGov"-->
+<!--#set var="title" value="Get a short URL"-->
+<!--#include virtual="/assets/includes/global/head-assets.html"-->
+
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+	
+	<meta name="DCTERMS.created" content="2011-05-25" />
+	<meta name="DCTERMS.modified" content="2011-05-25" />
+	<meta name="DCTERMS.title" content="Get a short URL | URL management" />
+	<meta name="DCTERMS.description" content="DESCRIPTION" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION" />
+	<meta name="DCTERMS.identifier" scheme="DCTERMS.URI" content="https://www.smartservice.qld.gov.au/services/url/purls" />
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="form" />
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="government" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+</head>
+
+<body id="qld-gov-au">
+
+<!--#include virtual="/assets/includes/global/header.html"-->	
+	
+	<div id="page-container"><div class="max-width">
+		<div id="breadcrumbs">
+			<h2>You are here:</h2>
+			<ol>
+<!--#include virtual="/assets/includes/global/breadcrumb-global.html"-->
+				<li><a href="/services/url">URL management</a></li>
+				<li class="last-child">Get a short URL</li>
+			</ol>
+		</div>
+	
+		<div id="content-container">
+            <div id="content">
+
+				<div class="article"><div class="box-sizing"><div class="border">
+                
+<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+					<div class="status warn">
+						<h1>Unable to process this form</h1>
+						<ol>
+							<!-- missing colon and capital -->
+							<!-- focus in field, but link to question wrapper -->
+							<li><a href="#purl_new_url">URL to be shortened: Must be completed</a></li>
+						</ol>
+					</div>
+
+					<div class="form">
+					<h1>Get a short URL</h1>
+
+<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+				<form accept-charset="UTF-8" action="/services/url/purls" class="formtastic purl" id="new_purl" method="post">
+					<!-- UGH. Devs. Bless 'em. Hiding stuff in divs, sigh. -->
+					<div style="margin:0;padding:0;display:inline">
+						<input name="utf8" type="hidden" value="✓" />
+						<input name="authenticity_token" type="hidden" value="D79Bxq+DQ3rlMO8y+voFPSQRlvzszaDgyBgV1iehTp8=" />
+					</div>
+
+					<!-- .questions wrapper -->
+					<ol>
+						<li class="string required error url" id="purl_new_url_input">
+							<label for="purl_new_url">
+								<!-- would prefer a span.label wrapper below  -->
+								URL to be shortened
+								<!-- change @title to '(required)' -->
+								<abbr title="required">*</abbr>
+							</label>
+							<!-- @type url, @required -->
+							<input id="purl_new_url" maxlength="255" name="purl[new_url]" size="75" type="url" value="" class="" required="required" />
+							<p class="inline-hints">Must be hosted on a qld.gov.au domain</p>
+						</li>
+						<li class="commit"><input class="create" id="purl_submit" name="commit" type="submit" value="Get short URL"></li>
+						<li class="cancel"><a href="/services/url/translations">Cancel</a></li>
+					</ol>
+				</form>
+
+				</div></div></div><!-- end .article, .box-sizing, .border -->
+			</div><!-- end #content -->
+
+            <div id="asides"><div class="box-sizing"><div class="border">
+            	<!--#include virtual="/assets/includes/global/global-aside.html"-->
+                
+				<div class="aside">
+					<h2>Designing URLs</h2>
+
+					<p>Agencies must design URLs to last.</p>
+
+					<h3>Benefits of conformance</h3>
+
+					<p>A consistent, quality experience for users of the site.
+Increased site credibility and levels of user trust.
+Well designed URLs are more marketable and memorable.</p>
+
+					<h3>Risks of non-conformance</h3>
+
+					<p>Users encounter site errors with increased frequency.
+Possible increase in offline channel requests for inexplicably removed information.
+Reduced site credibility and levels of user trust.</p>
+				</div>
+				</div>
+            
+            </div></div></div><!-- end #asides, .box-sizing, .border -->
+
+			<div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+				<div id="document-properties"><div class="box-sizing">
+					<dl>
+						<dt>Last updated</dt>
+						<dd>25 May 2011</dd>
+					</dl>
+				</div></div>
+				
+<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+			</div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+		</div><!-- end #content-container -->
+        
+<!--#include virtual="/disability/assets/nav/transport.html"-->
+	
+    </div></div><!-- end #page-container, .max-width -->
+
+<!--#include virtual="/assets/includes/global/footer.html"-->
+	
+</body>
+</html>

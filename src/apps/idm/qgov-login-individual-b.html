@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Log in | FRANCHISE | Queensland Government</title>
+
+<!--#set var="franchise" value=""-->
+<!--#set var="title" value="Choose your account"-->
+<!--#include virtual="/assets/includes/global/head-assets-styles.html"-->
+<style>
+	@charset "UTF-8";
+
+	ul.cpGroup {
+	  color: grey;
+	  font-size: 1.3em;
+	  list-style-type: none;
+	}
+
+	ol.cpGroup h2 {
+		margin: 0;
+	}
+
+	ul.cpGroup li {
+	  line-height: 1.5;
+	  padding-bottom: 5px;
+	  padding-top: 5px;
+	}
+
+	span.cpname {
+	  padding-left: 7px;
+	}
+
+	ul.cpGroup li a {
+	  color: inherit;
+	  text-decoration: none;
+	}
+
+	.cplogo {
+	   width: 45px; 
+	   height: 45px;
+	   vertical-align: middle;
+	}
+
+	.page_navigation , .alt_page_navigation{
+		padding-bottom: 10px;
+	}
+
+	.page_navigation a, .alt_page_navigation a{
+		padding:3px 5px;
+		margin:2px;
+	}
+	.active_page{
+		color:black !important;
+	}		
+
+</style>
+<!--#include virtual="/assets/includes/global/head-assets-scripts.html"-->
+
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+	
+	<meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=DEPARTMENT NAME; ou=UNIT NAME" />
+	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland" />
+	<meta name="DCTERMS.created" content="2013-06-26" />
+	<meta name="DCTERMS.modified" content="2014-04-08" />
+	<meta name="DCTERMS.title" content="Choose your account | FRANCHISE" />
+	<meta name="DCTERMS.description" content="DESCRIPTION" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION" />
+<!--#include virtual="/assets/includes/global/head-meta-identifier.html"-->
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="form" />
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+</head>
+
+<body id="qld-gov-au"><!--class="residents large-application"-->
+
+<!--#include virtual="assets/header.html"-->	
+<!--#include virtual="assets/banner-qgov.html"-->	
+	
+	<div id="page-container"><div class="max-width">
+
+<div id="promo-banner">
+	<img src="assets/qga-promo-banner.png" alt="Your secure access to Queensland Government Services">
+</div>
+
+		<div id="content-container">
+			<div id="content">
+
+				<div class="article"><div class="box-sizing"><div class="border">
+				
+<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+					<h1>Log in</h1>
+
+<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+					<p>You are here because you have requested access to a QGov service. To continue, please log in using one of the accounts below.</p>
+					
+					<form id="identityForm" method="post" action="" class="form">
+
+						<ol class="cpGroup questions">
+
+							<li class="atomic group">
+								<h2>QGov account</h2>
+								<ol class="questions">
+									<li>
+										<label for="username">
+											<span class="label">Username</span>
+											<abbr title="(required)">*</abbr>												
+										</label>
+										<input type="text" id="username" name="username" size="30" required="required" />
+									</li>
+									<li>
+										<label for="password">
+											<span class="label">Password</span>
+											<abbr title="(required)">*</abbr>
+										</label>
+										<input type="text" id="password" name="password" size="30" required="required" />
+									</li>							
+								</ol>
+								<ul class="actions">
+									<li>
+										<strong><input id="submit_login" type="submit" value="Log in" name="login" /></strong>
+									</li>	
+									<li><a href="#">Forgot your password?</a></li>											
+								</ul>
+							</li>
+
+						</ol>
+
+						<ul class="actions">
+							<li>
+								Don't have an account? <a href="#">Register</a> for a QGov account.
+							</li>
+							<li>
+							<!-- 	<em><input id="submit_login" type="submit" value="Register" name="register" /></em>
+							</li> -->
+						</ul>	
+
+						<ul class="cpGroup actions">
+							<!-- <li>																	
+								<a href="qga.html" id="qga_link" class="btn-qga">
+									<img src="assets/log-in-button-qgov.png" alt="Log in with a QGov Account">
+								</a>
+							</li> -->
+							<li>	
+								<a href="google.html" class="btn-google" id="google_link">
+									<img src="assets/log-in-button-google.png" alt="Log in with Google">
+								</a>
+							</li>
+							<li>
+								<a href="microsoft.html" id="microsoft_link" class="btn-microsoft">
+									<img src="assets/log-in-button-ms.png" alt="Log in with Microsoft">
+								</a>
+							</li>
+							<!-- <li>
+								<a href="aba.html" id="aba_link" class="btn-aba">
+									<img src="assets/log-in-button-aba.png" alt="Australian Business Account">
+								</a>
+							</li>
+							<li>
+								<a href="auskey.html" id="auskey_link" class="btn-auskey">
+									<img src="assets/log-in-button-auskey.png" alt="AUSkey">
+								</a>
+							</li> -->
+						</ul>												
+					</form>
+
+					<!-- <p>Don't have one of the accounts above? <a href="#">Register for a QGov account</a>.</p> -->
+					<p></p>
+
+				</div></div></div><!-- end .article, .box-sizing, .border -->
+			</div><!-- end #content -->
+
+
+			<!-- <div id="asides"><div class="box-sizing"><div class="border">-->
+<!--#include virtual="/assets/includes/global/global-aside.html"-->
+				
+				<!-- <div class="aside tip">
+					<h2>myID—What is it?</h2>
+					<p>We've made it easier for you to access Queensland Government services online.</p>
+					<p>By creating an identity, you'll be able to log in once to use multiple online services in a single session.<br>
+						<a id="faq" href="/faq.html" target="_blank">Tell me more…</a></p>
+				</div> -->
+			
+			<!-- </div></div></div>--><!-- end #asides, .box-sizing, .border -->
+
+
+			<div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+			</div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+		</div><!-- end #content-container -->
+
+<!--#include virtual="/examples/nav/nonav.html"-->
+
+	</div></div><!-- end #page-container, .max-width -->
+
+<!--#include virtual="/assets/includes/global/footer-page.html"-->
+<!-- https://developers.google.com/+/web/signin/#step_2_include_the_google_script_on_your_page -->
+<!-- Place this asynchronous JavaScript just before your </body> tag -->
+<script type="text/javascript">
+(function() {
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/client:plusone.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+<!--#include virtual="/assets/includes/global/footer-stats.html"-->
+	
+</body>
+</html>

@@ -1,0 +1,32 @@
+<h2 id="key">Key</h2>
+<div id="organisation-key">Loading...</div>
+
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var datafile = "<!--#echo encoding="entity" var="data" -->";
+
+	function organisationKey( containerTxt, containerDiv ) {
+		// load json data
+		var sql = 'SELECT DISTINCT \"Category\", \"Category name\" as fullname from \"' + datafile + '\"  ORDER BY \"Category\"';
+
+		// load data lib
+		swe.load({ name: 'data', url: 'data.js' });
+
+		// configure chart
+		swe.data({
+			container: containerDiv,
+			title: containerTxt,
+			sql: sql,
+			type: 'ul',
+			delimiter: '—'
+		});
+	};
+
+	organisationKey( 'Key', 'organisation-key' );
+
+}( jQuery, qg.swe ));
+
+//--></script><!-- end -->

@@ -1,0 +1,33 @@
+<div class="content-module section" id="main">
+    <div id="main-sections">
+        <div class="section" id="feature-search">
+            <div class="section-header">
+                <h2>Search datasets</h2>
+            </div>
+
+            <div class="contents">
+                <form action="https://find.search.qld.gov.au/s/search.html" method="get">
+                    <div class="search-wrapper">
+                        <input type="hidden" name="form" value="simple-adv" />                    
+                        <label for="search-query-primary" class="visuallyhidden">Search for Queensland Government datasets</label>
+                        <input type="text" name="query" id="search-query-primary" size="30" value="" placeholder="Search for Queensland Government datasets"/>
+                        <div class="submit">
+                            <!--<input type="image" id="feature-search-submit" src="/assets/v2/images/skin/button-search-featured.png" value="Search"/>-->
+                            <button id="feature-search-submit">Search datasets</button>
+                        </div>
+                    </div>
+                    <div class="hidden">
+                        <input type="hidden" name="num_ranks" value="10"/>
+                        <input type="hidden" name="tiers" value="off"/>
+                        <input type="hidden" name="collection" value="qld-gov"/>
+                        <input type="hidden" name="profile" value="qld"/>
+                        <!-- For fluster template -->
+                        <!-- <input type="hidden" name="form" value="fluster" /> -->
+                    </div>
+                </form>
+            </div>
+            <p>There are <a href="/dataset">9 datasets (30 resources)</a> that you can browse, learn about and download.</p>
+        </div>
+        <!-- end #feature-search -->
+    </div>
+</div><!-- end #main -->

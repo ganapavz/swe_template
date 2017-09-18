@@ -1,0 +1,152 @@
+// -------------------------------------
+//   typography
+// -------------------------------------
+
+body {
+  font-family: $font-body;
+  @extend %font-size-100;
+}
+button, input, select, textarea {
+  font-size: 100%;
+}
+
+#access,
+.article,
+#tools,
+#nav-site ul,
+#nav-section,
+#breadcrumbs,
+#asides,
+#document-properties,
+#post-page-options,
+#page-feedback,
+#meta-wrapper,
+#jb-window-content {
+  @include font-rem(1);
+}
+
+#breadcrumbs #tools,
+#content #asides {
+  @include font-rem(1);
+}
+
+#nav-site ul ul {
+/* Stop font-size above from cascading */
+  @include font-rem(1);
+}
+
+#footer #fat-footer .box-sizing {
+  @include font-rem(.8);
+}
+
+// headings
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-headings;
+}
+
+h1, h2, h3, h4, h5, h6, dt, strong, caption, th {
+  font-weight: bold;
+}
+
+h1 {
+  @include font-rem(1.6);
+  margin: 0.67em 0 0 0;
+}
+
+h2 {
+  @include font-rem(1.3);
+  margin: 0.83em 0;
+}
+
+h3 {
+  @include font-rem(1.2);
+  margin: 1em 0;
+}
+
+h4 {
+  @include font-rem(1.15);
+  margin: 1.33em 0;
+}
+
+h5 {
+  @include font-rem(1);
+  margin: 1.5em 0;
+}
+
+h6 {
+  @include font-rem(.9);
+  margin: 1.7em 0;
+}
+
+#fat-footer h3 {
+  font-family: $lato;
+  @include font-rem(1.3);
+  font-weight: 700;
+}
+
+.comparison-inner h3 {
+  font-family: $lato;
+  @include font-rem(1.3);
+  font-weight: 700;
+  font-style: italic;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+i, cite, em, var, dfn {
+  font-style: italic;
+}
+
+tt, code, kbd, samp, pre {
+  font-family: $font-monospaced;
+}
+
+pre {
+  display: block;
+  white-space: pre;
+  margin: 1em 0;
+}
+
+/* titles */
+abbr, acronym {
+  border-bottom: 1px dotted $mid-gray;
+}
+
+/* links */
+
+a, a:link, a:visited, a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* Navigation links underlined on focus/hover only */
+
+#tools a,
+#access a,
+#nav-site a,
+#nav-section a,
+#footer a {
+  @extend %reverse-decoration;
+}
+
+/* small print */
+small {
+  @include font-rem(0.8);
+}
+
+/* reset fonts for bleeding styles */
+#document-properties,
+#post-page-options,
+#asides,
+#nav-section,
+#footer {
+  @extend %font-reset;
+}

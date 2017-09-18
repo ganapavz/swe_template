@@ -1,0 +1,242 @@
+/* reseting overiding styles - for G.I. feedback */
+#page-feedback form ul.actions {
+  margin-top: 0;
+  float: none;
+}
+
+/* buttons */
+button,
+.button,
+input[type=button],
+input[type=submit],
+input[type=image],
+input[type=reset] {
+  @include cursor(pointer);
+  border-radius: 4px;
+  letter-spacing: .05em;
+}
+
+.button,
+.button:link,
+.button:visited,
+.button:active,
+.button:focus,
+.button:hover,
+#asides .button:visited {
+  display: inline-block;
+  color: $form-button-color;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+/* leave image buttons alone */
+input[type=image] {
+  padding: 0;
+  max-width: none;
+  background: transparent;
+  border: none;
+}
+
+/* actions buttons */
+form button,
+.ui-button,
+.ui-widget .ui-button,
+.actions .button,
+.poll .button,
+.actions input,
+#page-feedback form .actions input[type=submit] {
+  margin: 0;
+  line-height: 1.2;
+  padding: 1em 2em;
+  max-width: none;
+  font-weight: bold;
+  font-style: normal;
+  color: $form-button-color;
+  background: $form-button-background-color;
+  border: none;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+/* slimmer buttons in asides */
+.aside button,
+.aside .button,
+.aside .ui-button,
+.aside .actions input {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+/* interaction states */
+form button:hover,
+form button:focus,
+.ui-button:hover,
+.ui-button:focus,
+.ui-widget .ui-button:hover,
+.ui-widget .ui-button:focus,
+.actions .button:hover,
+.actions .button:focus,
+.poll .button:hover,
+.poll .button:focus,
+.actions input:hover,
+.actions input:focus {
+  color: $form-button-hover-color;
+  background-color: $form-button-hover-background-color;
+  //outline: 1px solid $form-button-background-color;
+ // outline-offset: -1px;
+}
+.ui-button-icon-only:hover,
+.ui-button-icon-only:focus,
+.ui-widget .ui-button-icon-only:hover,
+.ui-widget .ui-button-icon-only:focus {
+  outline: none;
+}
+
+form button:active,
+.ui-button:active,
+.ui-widget .ui-button:active,
+.actions .button:active,
+.poll .button:active,
+.actions input:active {
+  background-color: $form-button-active-background-color;
+}
+
+/* primary action */
+form strong button,
+strong .ui-button,
+.ui-widget strong .ui-button,
+.actions strong .button,
+.poll .button,
+.actions strong input,
+#page-feedback .actions strong input[type=submit] {
+  background-color: $form-strong-button-background-color;
+  color: $form-strong-button-color;
+}
+
+form strong button:hover,
+form strong button:focus,
+strong .ui-button:hover,
+strong .ui-button:focus,
+.ui-widget strong .ui-button:hover,
+.ui-widget strong .ui-button:focus,
+.actions strong .button:hover,
+.actions strong .button:focus,
+.poll .button:hover,
+.poll .button:focus,
+.actions strong input:hover,
+.actions strong input:focus {
+color: #000 !important;
+background-color: $form-strong-button-hover-background-color !important;
+//outline: 1px solid $form-strong-button-background-color;
+//outline-offset: -1px;
+}
+
+form strong button:active,
+strong .ui-button:active,
+.ui-widget strong .button:active,
+.actions strong .button:active,
+.poll .button:active,
+.actions strong input:active {
+  /* reverse gradient */
+background-color: $form-strong-button-active-background-color;
+}
+
+/* alternate primary action */
+form em button,
+em .ui-button,
+.ui-widget em .ui-button,
+.actions em .button,
+.actions em input {
+  background-color: $form-em-button-background-color;
+  color: $form-em-button-color;
+}
+
+form em button:hover,
+form em button:focus,
+em .ui-button:hover,
+em .ui-button:focus,
+.ui-widget em .ui-button:hover,
+.ui-widget em .ui-button:focus,
+.actions em .button:hover,
+.actions em .button:focus,
+.actions em input:hover,
+.actions em input:focus {
+  color: $form-em-button-hover-color;
+  background-color: $form-em-button-hover-background-color;
+  //outline: 1px solid $form-em-button-background-color;
+  //outline-offset: -1px;
+}
+
+form em button:active,
+em .ui-button:active,
+.ui-widget em .ui-button:active,
+.actions em .button:active,
+.actions em input:active {
+  background-color: $form-em-button-active-background-color;
+}
+
+/* disabled buttons */
+.ui-button[disabled],
+form button[disabled],
+.poll .button[disabled],
+form input[type="submit"][disabled] {
+  opacity: .35; /* based on jquery UI .ui-state-disabled */
+  background: $form-button-disabled-background-color;
+  color: $form-button-disabled-color;
+  cursor: default;
+}
+
+strong .ui-button[disabled],
+.ui-widget strong .ui-button[disabled],
+form strong button[disabled],
+form strong input[type="submit"][disabled] {
+  background: $form-strong-button-disabled-background-color;
+  color: $form-strong-button-disabled-color;
+}
+
+form strong .disabled {
+  position: absolute;
+  top: 0.2em;
+}
+
+em .ui-button[disabled],
+.ui-widget em .ui-button[disabled],
+form em button[disabled],
+form em input[type="submit"][disabled] {
+  background: $form-em-button-disabled-background-color;
+  color: $form-em-button-disabled-color;
+}
+
+form em .disabled {
+  position: relative;
+  top: 0.2em;
+}
+// search button
+#search-button,
+#search-button-primary {
+  background: $search-button-background-color;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+}
+
+#search-button:hover {
+   background: $qgov-light-green !important;
+}
+
+.app-geocoding {
+  background: $qgov-green;
+  height: 2em;
+  padding: 0.15em 0.2em;
+  display: inline-block;
+  vertical-align: bottom;
+
+  &:hover,
+  &:focus {
+    background-color: $form-strong-button-hover-background-color;
+    outline: 1px solid $qgov-green;
+    outline-offset: -1px;
+  }
+}

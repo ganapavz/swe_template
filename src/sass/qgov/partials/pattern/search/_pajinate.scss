@@ -1,0 +1,30 @@
+// pajination lib
+.pagination {
+	// ellipse [sic] (ellipsis)
+	.ellipse {
+		float: left;
+	}
+	.active_page {
+		color: black;
+		text-decoration: none;
+	}
+	.page_link {
+		margin: 0 5px 0 5px;
+		display: block;
+		float: left;
+	}
+	.previous_link {
+		margin: 0 12px 0 0;
+		display: block;
+		float: left;
+	}
+	.previous_link.no_more,
+	.next_link.no_more {
+		text-decoration: none;
+	}
+	.next_link {
+		margin: 0 0 0 12px;
+		display: block;
+		float: left;
+	}
+}

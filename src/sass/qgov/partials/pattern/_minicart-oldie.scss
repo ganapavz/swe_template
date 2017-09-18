@@ -1,0 +1,10 @@
+/* minicart */
+
+#ssq-minicart .topRight,
+#ssq-minicart .bottomRight {
+	_margin-right: expression(this.parentNode.offsetWidth%2==0 ? '0' : '-1px');
+}
+#ssq-minicart .bottomRight,
+#ssq-minicart .bottomLeft {
+	_margin-bottom: expression(this.parentNode.offsetHeight%2==0 ? '0' : '-1px');
+}

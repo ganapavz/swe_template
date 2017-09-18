@@ -1,0 +1,40 @@
+// -------------------------------------
+//   base settings
+// -------------------------------------
+
+@import "../modules/base";
+
+// -------------------------------------
+//   base partials
+// -------------------------------------
+
+// TODO: set this in a base file?
+@import "partials/helpers/visibility";
+
+// -------------------------------------
+//   page models
+// -------------------------------------
+
+//@import "partials/pattern/map/_layout";
+
+// -------------------------------------
+//   vendor files
+// -------------------------------------
+
+//@import "vendor/maps/leaflet";
+//@import "vendor/maps/MarkerCluster";
+//@import "vendor/maps/MarkerCluster.Default";
+
+// -------------------------------------
+//   page models
+// -------------------------------------
+
+@import "partials/page-model/search-results";
+
+// -------------------------------------
+//   ui patterns
+// -------------------------------------
+
+// TODO which pagination styles are being used!?
+@import "partials/pattern/search/pagination";
+@import "partials/pattern/search/pajinate";

@@ -1,0 +1,39 @@
+/* Contact blocks */
+.contact {
+	dl {
+		display: block;
+		position: relative;
+		margin: .5em 0 .5em 8em;
+
+		dt,
+		dd {
+			margin: 0;
+			padding: 0;
+		}
+		dd {
+			padding: 0 0 .75em;
+		}
+		dt {
+			position: absolute;
+			left: -8em;
+			width: 7em;
+			font-weight: normal;
+		}
+	}
+}
+
+.tel {
+	white-space: nowrap;
+}
+
+.adr .type,
+.tel .type {
+	display: none;
+}
+
+
+/* click to chat */
+.click-to-chat {
+	clear: both;
+	margin: 1em 0;
+}

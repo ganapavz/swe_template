@@ -1,0 +1,8 @@
+fieldset.group > legend { position: relative; left: -0.25em; top: -2.5em; width: 98%; padding: 0.5em 0.5em 0 0.5em; }
+fieldset.inline legend { position: static; }
+fieldset.group > legend span { display: block; white-space: normal; width: 90%; }
+fieldset.inline legend span { display: block; white-space: normal; width: 90%; }
+
+.dateValue input { max-width: none; }
+
+#mainForm\:buttons1 button { max-width: none; }

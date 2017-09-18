@@ -1,0 +1,205 @@
+// bootstrap defaults
+.btn {
+	display: inline-block;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 8.4px 21.6px;
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.btn-block {
+	display: block;
+    width: 100%;
+}
+.btn-default {
+	color: #fff;
+    background-color: #585e62;
+    border-color: #585e62;
+}
+.col-md-1 {
+	position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+	@media (min-width: 1200px) {
+		padding-left: 25px;
+    	padding-right: 25px;
+	}
+	@media (min-width: 992px) {
+		width:	8.3333%;
+		float: left;
+	}
+}
+
+
+#tools li.qg-avatar-container {
+	float: right;
+	margin-left: 1em;
+}
+
+#qg-login-container {
+    @media (max-width: 640px) {
+        vertical-align: top !important;
+    }
+    @media (min-width: 641px) and (max-width: 768px) {
+        vertical-align: baseline !important;
+    }
+    #qg-login-trigger {
+    	.qg-sign-in-icon {
+    		width: auto;
+    		height: auto;
+            &.fa-2x {
+                @media (max-width: 640px) {
+                    font-size: 22px;
+                }
+            }
+    	}
+    	&.expanded {
+	        color: $qgov-blue-green;
+
+	        &:after{
+	            border-bottom-color: $qgov-blue;
+	        }
+	    }
+    }
+
+    .qg-sign-in-icon.fa-2x {
+        font-size: 2em;
+
+        @media (min-width: 992px) {
+            font-size: 2.5em;
+        }
+    }
+    .qg-sign-in-text {
+    	display: none;
+    }
+
+    #qg-login-menu > div {
+        background: $qgov-blue;
+        color: white;
+        padding: 20px;
+        @media (max-width: 640px) {
+        	position: fixed;
+    		min-height: 100vh;
+    	}
+
+        h1 {
+            font-weight: 500;
+            color: #fff;
+        }
+
+        a, a:link, a:hover {
+            color: white !important;
+            padding: 0;
+            @media (max-width: 768px) {
+                width: auto;
+                height: auto;
+                display: block;
+            }
+        }
+
+        #qg-btn-login, #qg-btn-create-account, #qg-btn-logout {
+            @extend .btn;
+            @extend .btn-block;
+            @extend .btn-default;
+
+            border-color: transparent;
+            letter-spacing: normal;
+
+            &:hover {
+                border-color: transparent;
+            }
+        }
+
+        #qg-btn-create-account {
+            background: $qgov-light-gray;
+            color: $qgov-blue !important;
+
+            &:hover, &:focus {
+                background: $qgov-pale-blue;
+            }
+        }
+
+        #qg-btn-login, #qg-btn-logout {
+            background: $qgov-blue-green;
+
+            &:hover, &:focus {
+                background: $qgov-blue-green;
+            }
+        }
+
+        #qg-btn-login + span {
+            text-transform: uppercase;
+            padding: 5px 0;
+            margin: 0 auto;
+    		color: #fff;
+            @media (max-width: 768px) {
+                padding: 0;
+                margin: 5px auto;
+            }
+        }
+
+        ul.secondary-nav {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin: 0;
+                clear: both;
+            }
+
+            li a#qg-myaccount-link {
+                display: block;
+                text-align: center;
+                padding: 0;
+                width: auto;
+                @media (max-width: 640px) {
+                	display: inline-block;
+                }
+            }
+
+            li .fa {
+                font-size: 1em;
+                margin-right: 10px;
+                display: inline-block;
+                color: #fff;
+                @media (max-width: 768px) {
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            margin: 20px 0;
+        }
+    }
+}
+
+#qg-search-form + #qg-avatar {
+    @extend .col-md-1;
+}
+
+#qg-avatar {
+	@media (max-width: 768px) {
+        display: inline;
+    }
+    @media (min-width: 641px) and (max-width: 768px) {
+        margin-right: 1em;
+    }
+}

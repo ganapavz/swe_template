@@ -1,0 +1,40 @@
+<div id="initiatives-by-priority-and-category">Loading...</div>
+<div id="initiatives-by-priority-and-category-legend-container">Loading...</div>
+
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var datafile = "<!--#echo encoding="entity" var="data" -->";
+
+	function initiativesByPriorityAndCategory() {
+		// load json data
+		var sql = 'SELECT \"Category\",'+
+			' (SELECT count(B.\"Priority\") from \"' + datafile + '\" B where B.\"Priority\"=\'Critical\' and A.\"Category\"=B.\"Category\") as \"Critical\",'+
+			' (SELECT count(B.\"Priority\") from \"' + datafile + '\" B where B.\"Priority\"=\'High\' and A.\"Category\"=B.\"Category\") as \"High\",'+
+			' (SELECT count(B.\"Priority\") from \"' + datafile + '\" B where B.\"Priority\"=\'Medium\' and A.\"Category\"=B.\"Category\") as \"Medium\",'+
+			' (SELECT count(B.\"Priority\") from \"' + datafile + '\" B where B.\"Priority\"=\'Low\' and A.\"Category\"=B.\"Category\") as \"Low\"'+
+			' FROM  \"' + datafile + '\" A GROUP BY \"Category\" ORDER BY 1'
+		;
+
+		// load data lib
+		swe.load({ name: 'data', url: 'data.js' });
+
+		swe.data({
+			container: 'initiatives-by-priority-and-category',
+			title: 'Initiatives by priority and category',
+			headings: [ 'Category', 'Critical', 'High', 'Medium', 'Low' ],
+			group: 'row',
+			colours: 'priority',
+			sql: sql,
+			type: 'bar',
+			legend: '#initiatives-by-priority-and-category-legend-container' 
+		});
+	}
+
+	initiativesByPriorityAndCategory();
+
+}( jQuery, qg.swe ));
+
+//--></script><!-- end -->

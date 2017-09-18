@@ -1,0 +1,38 @@
+@media screen,projection,tv,handheld {
+/* screen layout */
+
+  /* Logo and site name */
+  #qg-logo,
+  #qg-coa {
+    background: $header-background-color;
+    line-height: 1;
+
+    a {
+      padding: 0;
+      margin: 0;
+    }
+    img {
+      /* width and height in header.html include */
+      display: block;
+      margin: 3px 2px 2px 1px;
+    }
+  }
+
+
+  /* Hide print content */
+  .print-link-url,
+  #site-name img.print-version,
+  #qg-logo img.print-version,
+  #qg-coa img.print-version {
+    display: none;
+  }
+
+  #content .print-content-link {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    cursor: pointer;
+    float: right;
+  }
+}

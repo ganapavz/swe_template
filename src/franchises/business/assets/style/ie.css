@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* header wrapping is poor in IE6&7 at some resolutions */
+	/* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+		#tools {
+			*width: 31.5em;
+		}
+
+
+		
+
+#nav-prime ul {
+	margin: 0 2%;
+}
+
+#nav-prime ul li {
+	float: left;
+}
+
+
+
+
+#guts-container {
+	_display: inline;
+}
+
+#guts-border {
+	_zoom: 1;
+}
+
+
+#topics .section {
+	_height: 333px;
+}
+#ia .ia-box-sizing {
+	_margin-right: 1em;
+	_padding-right: 1em;
+}
+#topics {
+	zoom: 1;
+}
+#topics .viewport {
+	/*width: 65%;*/
+	_width: 66%;		
+}
+#topics .section {
+	_margin-right: 0;
+}
+
+#topics #getting-into {
+	_background: url("../images/home/getting.jpg") 0 0 no-repeat #eaeaea;
+}
+#topics #running {
+	_background: url("../images/home/running.jpg") 0 0 no-repeat #eaeaea;
+}
+#topics #employing {
+	_background: url("../images/home/employing.jpg") 0 0 no-repeat #eaeaea;
+}
+#topics #trade {
+	_background: url("../images/home/trade.jpg") 0 0 no-repeat #eaeaea;
+
+}
+#topics #regional {
+	_background: url("../images/home/regional.jpg") 0 0 no-repeat #eaeaea;
+}
+
+/* Section navigation */
+#nav-section ul li.current-page {
+	background-image: none !important;
+	width: 100%;
+}
+
+
+/* Related promotions */
+
+#related-promotions .section {
+	margin-top: 1em;
+	_margin-top: 0em;
+}
+
+#news h2 {
+	_background: #194477 url("../images/skin/features.jpg") 5px 2px no-repeat;
+	_width: auto;
+	_height: 1.5em;
+
+}
+#services h2 {
+	_background: #194477 url("../images/skin/globe.jpg") 5px 2px no-repeat;
+}
+
+#maps h2 {
+	_background: #194477 url("../images/skin/star.jpg") 5px 2px no-repeat;
+}

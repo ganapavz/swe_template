@@ -1,0 +1,50 @@
+@media screen, projection, tv, handheld {
+	
+	#featured-stories .stories-box-sizing,
+	#featured-story .story-box-sizing {
+		overflow: hidden;
+	}
+	
+	#featured-stories .section {
+		margin-top: 1em;
+	}
+	
+	#featured-stories .section .story-box-sizing,
+	#featured-story .story-box-sizing {
+		padding: .2em 1em;
+		overflow: hidden;
+	}
+	
+	#featured-stories h2,
+	#featured-story h2,
+	#featured-stories h3 {
+		margin: 0;
+	}
+	#featured-stories h2 {
+		margin: .5em .7em 0;
+	}
+	
+	#featured-story h2 {
+		margin: .5em 0 0;
+	}
+
+	#featured-stories .cut-in,
+	#featured-story .cut-in {
+		float: right;
+		position: relative;
+		width: 124px;
+		height: 182px;
+		margin: 1em 0 .5em .7em;
+	}
+	#featured-story.landscape .cut-in {
+		width: 248px;
+	}
+	#featured-stories p.more {
+		float: right;
+		clear: both;
+	}
+	#featured-story p.more {
+		float: right;
+		clear: left;
+	}
+}

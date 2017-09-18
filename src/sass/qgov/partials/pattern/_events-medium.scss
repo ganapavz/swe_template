@@ -1,0 +1,16 @@
+/* Medium and large layout, use grid layout for definition list */
+
+/* event details */
+.vevent dl {
+	position: relative;
+	margin: .5em 0 .5em 8em;
+}
+.vevent dl dd {
+	padding: 0 0 .75em;
+}
+.vevent dl dt {
+	margin-top: 0;
+	position: absolute;
+	left: -8em;
+	width: 7em;
+}

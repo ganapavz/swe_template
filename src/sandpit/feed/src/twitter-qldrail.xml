@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	https://api.twitter.com/1/statuses/user_timeline.xml?include_entities=true&include_rts=true&screen_name=queenslandrail&count=20
+-->
+
+<statuses type="array"> 
+<status> 
+  <created_at>Tue Oct 25 23:46:57 +0000 2011</created_at> 
+  <id>128980898195574784</id> 
+  <text>@sarahebowden That's great to hear. We will pass it on :)</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128980183234514944</in_reply_to_status_id> 
+  <in_reply_to_user_id>38218585</in_reply_to_user_id> 
+  <in_reply_to_screen_name>Sarahebowden</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="13" start="0"> 
+        <id>38218585</id> 
+        <screen_name>Sarahebowden</screen_name> 
+        <name>Sarah bowden</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 23:04:24 +0000 2011</created_at> 
+  <id>128970190707900416</id> 
+  <text>@monique_dean Hoorah!</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128966941980364801</in_reply_to_status_id> 
+  <in_reply_to_user_id>203855099</in_reply_to_user_id> 
+  <in_reply_to_screen_name>monique_dean</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="13" start="0"> 
+        <id>203855099</id> 
+        <screen_name>monique_dean</screen_name> 
+        <name>Monique Dean</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 22:50:17 +0000 2011</created_at> 
+  <id>128966637717159936</id> 
+  <text>@jeminabox amen to that</text> 
+  <source>&lt;a href=&quot;http://blackberry.com/twitter&quot; rel=&quot;nofollow&quot;&gt;Twitter for BlackBerry&#174;&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128965524691484672</in_reply_to_status_id> 
+  <in_reply_to_user_id>20871886</in_reply_to_user_id> 
+  <in_reply_to_screen_name>jeminabox</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="10" start="0"> 
+        <id>20871886</id> 
+        <screen_name>jeminabox</screen_name> 
+        <name>Jemina Venter</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 22:27:24 +0000 2011</created_at> 
+  <id>128960878757412864</id> 
+  <text>@jeminabox :(</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128948526796386304</in_reply_to_status_id> 
+  <in_reply_to_user_id>20871886</in_reply_to_user_id> 
+  <in_reply_to_screen_name>jeminabox</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="10" start="0"> 
+        <id>20871886</id> 
+        <screen_name>jeminabox</screen_name> 
+        <name>Jemina Venter</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 22:27:13 +0000 2011</created_at> 
+  <id>128960832167088128</id> 
+  <text>@cenaphan23 good #trainetiquette rule</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128950218409521152</in_reply_to_status_id> 
+  <in_reply_to_user_id>61914492</in_reply_to_user_id> 
+  <in_reply_to_screen_name>cenaphan23</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="11" start="0"> 
+        <id>61914492</id> 
+        <screen_name>cenaphan23</screen_name> 
+        <name>Renee Cutts</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags> 
+      <hashtag end="32" start="17"> 
+        <text>trainetiquette</text> 
+      </hashtag> 
+    </hashtags> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 22:26:58 +0000 2011</created_at> 
+  <id>128960769479028736</id> 
+  <text>@monique_dean did it wait again?</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128951004875075584</in_reply_to_status_id> 
+  <in_reply_to_user_id>203855099</in_reply_to_user_id> 
+  <in_reply_to_screen_name>monique_dean</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="13" start="0"> 
+        <id>203855099</id> 
+        <screen_name>monique_dean</screen_name> 
+        <name>Monique Dean</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 22:19:20 +0000 2011</created_at> 
+  <id>128958852044562432</id> 
+  <text>@mightystickbug very true. #trainetiquette as in life</text> 
+  <source>&lt;a href=&quot;http://ubersocial.com&quot; rel=&quot;nofollow&quot;&gt;UberSocial for BlackBerry&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128958137519718400</in_reply_to_status_id> 
+  <in_reply_to_user_id>25262640</in_reply_to_user_id> 
+  <in_reply_to_screen_name>mightystickbug</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="15" start="0"> 
+        <id>25262640</id> 
+        <screen_name>mightystickbug</screen_name> 
+        <name>Ang</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags> 
+      <hashtag end="42" start="27"> 
+        <text>trainetiquette</text> 
+      </hashtag> 
+    </hashtags> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 22:17:28 +0000 2011</created_at> 
+  <id>128958381233942529</id> 
+  <text>@Brazen00 can't advise as to how many, but will pass on to get it fixed. Thanks</text> 
+  <source>&lt;a href=&quot;http://ubersocial.com&quot; rel=&quot;nofollow&quot;&gt;UberSocial for BlackBerry&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128957571804577792</in_reply_to_status_id> 
+  <in_reply_to_user_id>378827976</in_reply_to_user_id> 
+  <in_reply_to_screen_name>Brazen00</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="9" start="0"> 
+        <id>378827976</id> 
+        <screen_name>Brazen00</screen_name> 
+        <name>Nicholas Whitlock</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 22:14:11 +0000 2011</created_at> 
+  <id>128957553290903554</id> 
+  <text>@mightystickbug @GadgetGirlTracy true, the stern look or quiet word may not be for everyone. At the end of day, some ppl are just rude</text> 
+  <source>&lt;a href=&quot;http://blackberry.com/twitter&quot; rel=&quot;nofollow&quot;&gt;Twitter for BlackBerry&#174;&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128956110211268608</in_reply_to_status_id> 
+  <in_reply_to_user_id>25262640</in_reply_to_user_id> 
+  <in_reply_to_screen_name>mightystickbug</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="15" start="0"> 
+        <id>25262640</id> 
+        <screen_name>mightystickbug</screen_name> 
+        <name>Ang</name> 
+      </user_mention> 
+      <user_mention end="32" start="16"> 
+        <id>15068203</id> 
+        <screen_name>GadgetGirlTracy</screen_name> 
+        <name>GadgetGirl</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 22:13:15 +0000 2011</created_at> 
+  <id>128957317839462401</id> 
+  <text>@chrismelck cheers, will see if we can get train contacted for reminder announcement</text> 
+  <source>&lt;a href=&quot;http://blackberry.com/twitter&quot; rel=&quot;nofollow&quot;&gt;Twitter for BlackBerry&#174;&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128956919036653568</in_reply_to_status_id> 
+  <in_reply_to_user_id>33496518</in_reply_to_user_id> 
+  <in_reply_to_screen_name>chrismelck</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="11" start="0"> 
+        <id>33496518</id> 
+        <screen_name>chrismelck</screen_name> 
+        <name>Chris Melck</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 22:07:56 +0000 2011</created_at> 
+  <id>128955980577910784</id> 
+  <text>@GadgetGirlTracy excellent, feel free to lean over, wink, say 'I did that' and sit back with satisfied smile. :)</text> 
+  <source>&lt;a href=&quot;http://ubersocial.com&quot; rel=&quot;nofollow&quot;&gt;UberSocial for BlackBerry&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128955496169349120</in_reply_to_status_id> 
+  <in_reply_to_user_id>15068203</in_reply_to_user_id> 
+  <in_reply_to_screen_name>GadgetGirlTracy</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="16" start="0"> 
+        <id>15068203</id> 
+        <screen_name>GadgetGirlTracy</screen_name> 
+        <name>GadgetGirl</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 22:05:27 +0000 2011</created_at> 
+  <id>128955354586419200</id> 
+  <text>@Jackaoz @QPSmedia we're aware of issue and sending technicians from either Twba or Warwick, no ETA though sorry</text> 
+  <source>&lt;a href=&quot;http://ubersocial.com&quot; rel=&quot;nofollow&quot;&gt;UberSocial for BlackBerry&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128950291826614273</in_reply_to_status_id> 
+  <in_reply_to_user_id>79427134</in_reply_to_user_id> 
+  <in_reply_to_screen_name>Jackaoz</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="8" start="0"> 
+        <id>79427134</id> 
+        <screen_name>Jackaoz</screen_name> 
+        <name>David Uzzell</name> 
+      </user_mention> 
+      <user_mention end="18" start="9"> 
+        <id>59338142</id> 
+        <screen_name>QPSmedia</screen_name> 
+        <name>QPS Media Unit</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 22:04:46 +0000 2011</created_at> 
+  <id>128955185463705600</id> 
+  <text>@GadgetGirlTracy boom goes the dynamite</text> 
+  <source>&lt;a href=&quot;http://ubersocial.com&quot; rel=&quot;nofollow&quot;&gt;UberSocial for BlackBerry&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128954740980723713</in_reply_to_status_id> 
+  <in_reply_to_user_id>15068203</in_reply_to_user_id> 
+  <in_reply_to_screen_name>GadgetGirlTracy</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="16" start="0"> 
+        <id>15068203</id> 
+        <screen_name>GadgetGirlTracy</screen_name> 
+        <name>GadgetGirl</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 22:04:09 +0000 2011</created_at> 
+  <id>128955027757862913</id> 
+  <text>@GadgetGirlTracy we trust we got the right one, otherwise there'll be a silent train elsewhere wondering why they've been told off</text> 
+  <source>&lt;a href=&quot;http://ubersocial.com&quot; rel=&quot;nofollow&quot;&gt;UberSocial for BlackBerry&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128954516455432192</in_reply_to_status_id> 
+  <in_reply_to_user_id>15068203</in_reply_to_user_id> 
+  <in_reply_to_screen_name>GadgetGirlTracy</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="16" start="0"> 
+        <id>15068203</id> 
+        <screen_name>GadgetGirlTracy</screen_name> 
+        <name>GadgetGirl</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 21:58:03 +0000 2011</created_at> 
+  <id>128953495305977856</id> 
+  <text>@Jackaoz we will advise control. Thanks.</text> 
+  <source>&lt;a href=&quot;http://blackberry.com/twitter&quot; rel=&quot;nofollow&quot;&gt;Twitter for BlackBerry&#174;&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128950291826614273</in_reply_to_status_id> 
+  <in_reply_to_user_id>79427134</in_reply_to_user_id> 
+  <in_reply_to_screen_name>Jackaoz</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="8" start="0"> 
+        <id>79427134</id> 
+        <screen_name>Jackaoz</screen_name> 
+        <name>David Uzzell</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 21:54:48 +0000 2011</created_at> 
+  <id>128952676942749696</id> 
+  <text>&quot;@chrismelck: Listening to a tradie's music in a quiet carriage. Not upset, just bemused. Did not pick him for an Eye of the Tiger fan.&quot;</text> 
+  <source>&lt;a href=&quot;http://blackberry.com/twitter&quot; rel=&quot;nofollow&quot;&gt;Twitter for BlackBerry&#174;&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="12" start="1"> 
+        <id>33496518</id> 
+        <screen_name>chrismelck</screen_name> 
+        <name>Chris Melck</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 21:54:29 +0000 2011</created_at> 
+  <id>128952597385183232</id> 
+  <text>@chrismelck could you advise service?</text> 
+  <source>&lt;a href=&quot;http://blackberry.com/twitter&quot; rel=&quot;nofollow&quot;&gt;Twitter for BlackBerry&#174;&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128951457738268674</in_reply_to_status_id> 
+  <in_reply_to_user_id>33496518</in_reply_to_user_id> 
+  <in_reply_to_screen_name>chrismelck</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="11" start="0"> 
+        <id>33496518</id> 
+        <screen_name>chrismelck</screen_name> 
+        <name>Chris Melck</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 21:52:14 +0000 2011</created_at> 
+  <id>128952028830507008</id> 
+  <text>@GadgetGirlTracy we've passed on, you'll have to listen out and let us know</text> 
+  <source>&lt;a href=&quot;http://blackberry.com/twitter&quot; rel=&quot;nofollow&quot;&gt;Twitter for BlackBerry&#174;&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128950353071841280</in_reply_to_status_id> 
+  <in_reply_to_user_id>15068203</in_reply_to_user_id> 
+  <in_reply_to_screen_name>GadgetGirlTracy</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="16" start="0"> 
+        <id>15068203</id> 
+        <screen_name>GadgetGirlTracy</screen_name> 
+        <name>GadgetGirl</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 21:45:00 +0000 2011</created_at> 
+  <id>128950211048509440</id> 
+  <text>@tamacapa welcome to twitter then :) it's a great space to be in.</text> 
+  <source>&lt;a href=&quot;http://blackberry.com/twitter&quot; rel=&quot;nofollow&quot;&gt;Twitter for BlackBerry&#174;&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128949682788503553</in_reply_to_status_id> 
+  <in_reply_to_user_id>394343208</in_reply_to_user_id> 
+  <in_reply_to_screen_name>tamacapa</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="9" start="0"> 
+        <id>394343208</id> 
+        <screen_name>tamacapa</screen_name> 
+        <name>Michael Austin</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 25 21:43:09 +0000 2011</created_at> 
+  <id>128949744574799872</id> 
+  <text>@GadgetGirlTracy will give a go, just waiting on another piece of feedback before contacting control. Also, cld you advise current location?</text> 
+  <source>&lt;a href=&quot;http://blackberry.com/twitter&quot; rel=&quot;nofollow&quot;&gt;Twitter for BlackBerry&#174;&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id>128947147344326656</in_reply_to_status_id> 
+  <in_reply_to_user_id>15068203</in_reply_to_user_id> 
+  <in_reply_to_screen_name>GadgetGirlTracy</in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>166727502</id> 
+    <name>Queensland Rail</name> 
+    <screen_name>QueenslandRail</screen_name> 
+    <location>Queensland</location> 
+    <description>Queensland Rail's official account: monitored 7am-6pm M-F. All other times please call 13 12 30. RT does not necessarily imply endorsement.</description> 
+    <profile_image_url>http://a1.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1398151559/twitter_avatar_normal.gif</profile_image_url_https> 
+    <url>http://www.queenslandrail.com.au</url> 
+    <protected>false</protected> 
+    <followers_count>1967</followers_count> 
+    <profile_background_color>dd0000</profile_background_color> 
+    <profile_text_color>000000</profile_text_color> 
+    <profile_link_color>0084B4</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>dd0000</profile_sidebar_border_color> 
+    <friends_count>516</friends_count> 
+    <created_at>Wed Jul 14 21:29:05 +0000 2010</created_at> 
+    <favourites_count>2</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a1.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/265641564/2.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>false</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>5462</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>47</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions> 
+      <user_mention end="16" start="0"> 
+        <id>15068203</id> 
+        <screen_name>GadgetGirlTracy</screen_name> 
+        <name>GadgetGirl</name> 
+      </user_mention> 
+    </user_mentions> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+</statuses> 

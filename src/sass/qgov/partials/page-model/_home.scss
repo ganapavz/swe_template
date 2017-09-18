@@ -1,0 +1,280 @@
+/* HOME */
+.home #breadcrumbs .nav-home a,
+.home #breadcrumbs .nav-home a:hover {
+	font-weight: bold;
+	text-decoration: none;
+	cursor: default;
+	color: $home-breadcrumbs-link-color;
+}
+/* links */
+.home #featured a,
+.home #featured a:link,
+.home #questions a,
+.home #questions a:link {
+	color: $aside-link-color;
+}
+.home #featured a:visited,
+.home #questions a:visited {
+	color: $aside-link-visited-color;
+}
+.home #ia {
+	float: none;
+	margin: .5em;
+	width: auto;
+}
+
+/* Visually hide all unecessary headings */
+.home #feature-search h2,
+.home #questions h2,
+.home #featured h2,
+.home .in-your-region h4 {
+	position: absolute;
+	left: -9999px;
+	width: 100px;
+}
+.home #ia li a,
+.home #questions li a {
+	text-decoration: none;
+}
+.home #ia li a:hover,
+.home #questions li a:hover {
+	text-decoration: underline;
+}
+
+.home #asides-primary,
+.home #asides-secondary {
+	padding-top: 1em;
+}
+.home #news,
+.home #ia,
+.home #services,
+.home #my-community,
+#related-promotions .aside {
+	border: none;
+	padding: 0;
+}
+
+.home #ia .contents {
+	padding: 1em 0;
+}
+.home #ia .section ul {
+	padding-left: 2em;
+}
+.home #ia h3 {
+	font-size: 120%;
+	margin: 0 1em;
+}
+
+.home #featured,
+.home #services,
+.home #news {
+	background: $home-xx-background-color;
+}
+.home #news {
+	color: $home-news-background-color;
+}
+.home .news-feature .news-content {
+	padding: 0 .7em;
+}
+.home .news-feature .section h3 {
+	margin-left: 0;
+}
+	
+.home #ia {
+	background: $home-ia-background-color;
+	overflow: hidden;
+	margin: 1em 0;
+}
+.home #services .section-header h2,
+.home #services .section-header a {
+	color: $home-services-section-header-color-xx;
+}
+.home #services .section-header {
+	color: $home-services-section-header-color;
+	background: $home-services-section-header-background-color;
+}
+.home #featured {
+	margin-top: 1em;
+}
+.home #featured .inner {
+	padding: 1em;
+}
+.home #featured .feature {
+	padding-bottom: 30px;
+	margin-left: 1em;
+	float: right;
+	background: transparent url(../images/skin/bg-feature-image-shadow.jpg) left bottom no-repeat;
+}
+.home #featured .more {
+	float: none;
+}
+.home #featured .feature img {
+	border: 1px solid #fff;
+}
+.home #featured .compact-slideshow-active h3 {
+	font-size: 160%;
+	font-weight: normal;
+	color: $home-compact-slideshow-active-h3-color;
+	/*float: left;*/
+	margin-top: .5em;
+	/*margin-right: 383px;*/
+	min-width: 12em;
+}
+.home #featured .feature-content {
+	clear: left;
+}
+.home #main {
+	margin-top: 1em;
+}
+.home #main .controlset li a {
+	font-size: 120%;
+}
+.home #main #search-query-primary {
+	border: none;
+	background: $home-main-search-query-primary-background-color;
+	font-size: 180%;
+	padding: 5px 1em 5px 0;
+	height: 30px;
+	width: 100%;
+}
+.home #main form {
+	background: $home-main-form-background-color;
+	padding: 0 0 0 1em;
+}
+.home #main .search-wrapper {
+	position: relative;
+	overflow: hidden;
+	//width: 89%;
+	width: 100%;
+}
+.home #main label.compact-label {
+	top: .7em;
+	left: 0;
+}
+.home #main #feature-search-submit {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+}
+.home #questions .frag-linx-content {
+	background: $home-questions-frag-linx-content-background-color url("../images/skin/bg-questions-arrowhead.png") 2em top no-repeat;
+	color: $home-questions-frag-linx-content-color;
+	margin: 0.3em 0 0 -1.1em;
+	overflow: hidden;
+	padding: 0.5em 1em;
+}
+.home #questions a.loading {
+	background: transparent url("../images/skin/loading-black-on-white.gif") right center no-repeat;
+	padding-right: 25px;
+}
+
+.home .your-say ul {
+	padding-left: 2em;
+}
+.home .your-say li {
+	list-style: url("../images/skin/bullet-small-list.png");
+}
+.home .your-say li a {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	background: none;
+}
+
+/* In your area (my-community) */
+#my-community {
+	background: transparent;
+}
+#my-community .controls label,
+#my-community #local h3,
+#my-community .in-your-area h3,
+#my-community #local .forecast-pop {
+	display: block;
+	margin: 0; padding: 0;
+	width: 0; height: 0;
+	overflow: hidden;
+}
+#my-community .controls {
+	margin-top: 1em;
+	float: left;
+	width: 165px;
+	overflow: visible;
+}
+#my-community #local {
+	overflow: visible;
+	float: right;
+}
+.home #my-community #local img {
+	border: none;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	float: right;
+	margin: 0 15px 0 0;
+}
+#my-community select {
+	float: left;
+	clear: left;
+	font-size: 95%;
+}
+#my-community #local-tonight,
+#my-community #local-today {
+	float: right;
+	width: 130px;
+}
+#my-community #local .forecast-icon {
+	margin: 0;
+}
+#my-community #local .controlset {
+	margin: 0; padding: 0;
+}
+#my-community #local .controlset li {
+	list-style: none;
+	display: inline;
+}
+#my-community #local .controlset li a {
+	padding: 0 .5em .5em;
+	float: right;
+}
+#my-community #local-tonight-button {
+	clear: right;
+}
+#my-community #local .controlset li.current a {
+	font-weight: bold;
+}
+#my-community .forecast {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: $home-my-community-forecast-color;
+}
+#my-community .in-your-area {
+	clear: both;
+}
+#my-community .in-your-area ul {
+	margin-top: 0;
+}
+#my-community #weather-and-selection {
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 3em;
+}
+/* weather tabs */
+#weather-and-selection .viewport {
+	background: transparent;
+}
+#weather-and-selection img {
+	display: inline;
+}
+#weather-and-selection .tabs li a {
+	background: transparent;
+	color: $home-weather-and-selection-tabs-color;
+}
+#weather-and-selection .tabs li.current a {
+	font-weight: bold;
+	text-decoration: underline;
+}
+#weather-and-selection .tabbed .section .content {
+	padding: 0;
+}

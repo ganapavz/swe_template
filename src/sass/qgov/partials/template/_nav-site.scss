@@ -1,0 +1,36 @@
+@media screen, projection, tv, handheld {
+
+  #header #nav-site {
+    background: transparent;
+    float: left;
+    clear:left;
+  }
+
+  #nav-site {
+    padding: 0;
+    text-align: left;
+    // this needs to be a lot longer than the menu will ever be
+    // if there is a case where the menu extends beyond this limit
+    // then we might have to adjust the value OR rework the IA
+    max-height: $nav-site-max-height;
+    @include slideUp();
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      //margin-top: 1em;
+       margin-top: 0;    
+       margin-left: 2em;
+    }
+
+    a {
+      display: block;
+      white-space: nowrap;
+      padding: 0.7em 0;
+    }
+  }
+}

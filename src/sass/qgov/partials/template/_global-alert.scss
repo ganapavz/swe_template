@@ -1,0 +1,97 @@
+.global-alert {
+	background: $global-alert-background-color;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+    color: $global-alert-color;
+	overflow: hidden;
+	clear: both;
+	padding: 1em 2em;
+	margin: 0 -3.125em; // stretch over parent padding
+
+	.header,
+	.summary,
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	.summary {
+		padding: 0 1.25em;
+	}
+
+	h2 {
+		font-weight: bold;
+		margin: 0;
+		font-size: 17px;
+	}
+
+	a {
+		color: $global-alert-link-color;
+	}
+
+	// icon
+	.header {
+		padding-left: 4em; // for background icon
+		@include fonticon($fa-var-exclamation-triangle, 1, 2.5, 1, $global-alert-color);
+
+		&:before {
+			display: block;
+			position: absolute;
+			margin-top: -0.3em;
+			margin-left: -1.7em; // this is out of alignment with other page element to grab attention
+			width: 1em;
+			height: 1em;
+			text-align: center;
+			padding: 0.4em;
+		}
+	}
+}
+
+.home .global-alert {
+	margin: 0 -1.3em;
+}
+
+
+
+//##################################################
+
+#no-js-alert {
+    max-width: 30em;
+    margin: 2em auto;
+    text-align: center; 
+    
+    span.fa {
+    font-size: 5em;
+    color: #F8AE70;
+    } 
+    
+    h2 {
+    font-size: 2em;       
+    }
+    
+    p {  
+    font-size: 1.5em;
+    font-weight: 600;
+    }
+    
+    ul {  
+    font-size: 1.3em;
+    text-align: left;
+    }
+    
+    h3 {
+    font-size: 1.5em;
+    color: #007EB1;
+        
+    span.fa {
+    font-size: 2em;
+    color: #007EB1;
+    padding-right: .3em;
+    }    
+    }
+    
+}
+
+
+
+
+

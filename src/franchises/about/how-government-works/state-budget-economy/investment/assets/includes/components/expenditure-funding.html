@@ -1,0 +1,524 @@
+<script type="text/javascript"><!--
+	(function( $, qg ) {
+		'use strict';
+
+		var QueryString = function () {
+			// This function is anonymous, is executed immediately and 
+			// the return value is assigned to QueryString!
+			var query_string = {};
+			var query = window.location.search.substring(1);
+			var vars = query.split("&");
+			for (var i=0;i<vars.length;i++) {
+				var pair = vars[i].split("=");
+				// If first entry with this name
+				if (typeof query_string[pair[0]] === "undefined") {
+					query_string[pair[0]] = pair[1];
+					// If second entry with this name
+				} else if (typeof query_string[pair[0]] === "string") {
+					var arr = [ query_string[pair[0]], pair[1] ];
+					query_string[pair[0]] = arr;
+					// If third or later entry with this name
+				} else {
+					query_string[pair[0]].push(pair[1]);
+				}
+			} 
+			return query_string;
+		} ();
+
+		
+		var table = 'qgip2013_expenditure_tables()';
+		var FinancialYear = '2013-14';
+
+		if ( QueryString.FinancialYear && QueryString.FinancialYear === '2012-13' ) {
+			table = 'qgip2012_expenditure_tables()';
+			FinancialYear = '2012-13';
+		} else if ( QueryString.FinancialYear &&QueryString.FinancialYear === '2013-14' ) {
+			table = 'qgip2013_expenditure_tables()';
+			FinancialYear = '2013-14';
+		}
+
+		//table = '\"fb078f3e-ff0b-40a5-a9a0-13abf8a4407c\"'; //DATSIMA - Cleaned
+		// table = '\"4f96e196-9edc-4993-8496-e1c06e823d5a\"'; //DAFF
+		// table = '\"86a2ddbf-58e9-4502-9cde-43b81c567c11\"'; //DCCSDS - Cleaned -- need to run through messytable
+		// table = '\"4e215701-182d-43e0-bd52-9f86a29d123d\"'; //DETE
+		// table = '\"555ea3f2-af89-4937-895e-001edc6827a3\"'; //DEWS
+		// table = '\"8d23357e-3004-4463-8f06-fa49ecd61115\"'; //DEHP - Cleaned
+		// table = '\"40056d52-8e94-4bcc-a375-78b44870163b\"'; //QH
+		// table = '\"9588856d-69bd-4d9f-a583-2517c2ccf843\"'; //DHPW - Cleaned
+		// table = '\"b183eb85-1807-4a15-a175-2dd581b8a8ca\"'; //DJAG
+		// table = '\"da146751-5b5d-435c-9989-dd28896ce371\"'; //DLGCRR - Cleaned
+		// table = '\"6a6c4cee-a130-4d3b-8541-ffbea5796130\"'; //DNPRSR - Cleaned
+		// table = '\"29513ecc-40ee-44ae-be3e-87ebb44fda05\"'; //DNRM - LGA Problem
+		// table = '\"53b2d02b-f2f4-4923-b4ca-ce725c03078c\"'; //DPC
+		//table = '\"9ab188e0-f721-4cd3-b9e6-53b316f866aa\"'; //DSITIA - Cleaned
+		// table = '\"d32737d2-e1f3-4547-bb93-469e23d36bc5\"'; //DSDIP
+		// table = '\"cb107063-9e31-4e93-9f13-b6179162ed9c\"'; //DTESB - Cleaned
+		// table = '\"159be93c-9430-49ef-9de8-e6be6b40a6db\"'; //DTMR - No LGA
+		// table = '\"bd73cb7c-ac38-435f-bd5b-3b7e78bd6d63\"'; //QTT
+		// table = '\"da177926-cecc-4871-b4e1-4ed4d899bd8e\"'; //QPS
+		// table = '\"bbe382d3-4c85-45c2-bd32-c70a77859e50\"'; //QFES
+
+		var limit = ' LIMIT 10';
+		var cat = ( QueryString.Category && (typeof QueryString.Category !== 'undefined' || typeof QueryString.Category !== '' )) ? '&Category=' + QueryString.Category : '';
+		var lga = ( QueryString.LGA && (typeof QueryString.LGA !== 'undefined' || typeof QueryString.LGA !== '' )) ? '&LGA=' + QueryString.LGA : '';
+
+		if (QueryString.showAll && typeof QueryString.showAll !== 'undefined' ) {
+			limit = '';
+			$( '#containerLGAMore' ).html('<a class="button" href="../expenditure/?FinancialYear=' + FinancialYear + cat + '">Show top 10 <acronym title="local government area">LGAs</acronym></a>');
+			$( '#containerCategoryMore' ).html('<a class="button"   href="../expenditure/?FinancialYear=' + FinancialYear + lga + '">Show top 10 categories</a>');
+		} else {
+			$( '#containerLGAMore' ).html('<a class="button"  href="../expenditure/?showAll=y&FinancialYear=' + FinancialYear + cat + '">Show all <acronym title="local government area">LGAs</acronym></a>');
+			$( '#containerCategoryMore' ).html('<a class="button"  href="../expenditure/?showAll=y&FinancialYear=' + FinancialYear + lga + '">Show all categories</a>');
+		}
+		
+		var overviewTitle = '';
+		overviewTitle += QueryString.Category && typeof QueryString.Category !== '' ? 'for ' + QueryString.Category.replace(/\+/g, ' ').replace(/\%2C/g, ',') : '';
+		overviewTitle += QueryString.LGA && typeof QueryString.LGA !== '' ? ' in ' + QueryString.LGA.replace(/\+/g, ' ').replace(/\%2C/g, ',').replace(/\%28/g, '(').replace(/\%29/g, ')') : '';
+		
+
+		var getFilters,
+			displayChart,
+			getLGAList,
+			getCategoryList,
+			searchResultsCount,
+			displaySearchResultsCount,
+			searchResults,
+			displaySearchResult,
+			populateAsideSearchForm,
+			displayPagination,
+			paginationWhenReady,
+			searchSumTotalExpenditureCategory,
+			displaySumTotalExpenditureCategory
+		;
+
+		getFilters = function( ) {
+			var query = '';
+
+			query += ( QueryString.query && (typeof QueryString.query !== 'undefined' || typeof QueryString.query !== '' ) ? ', plainto_tsquery(\'english\', \'' + QueryString.query + '\') query' : '' );
+			query += ' WHERE 1=1 AND (\"Funding title\" != \'\' OR \"Program title\" !=\'\')';
+			query += ( QueryString.query && (typeof QueryString.query !== 'undefined' || typeof QueryString.query !== '' ) ? ' AND _full_text @@ query' : '' );
+
+
+			if ( QueryString.ABN && (typeof QueryString.ABN !== 'undefined' || typeof QueryString.ABN !== '' )) {
+				query += ' AND (\"Australian Business Number (ABN)\"=\'' + QueryString.ABN.replace(/\+/g, ' ').replace(/\%2C/g, ',') + '\')';
+			}
+
+			if ( QueryString.LGA && (typeof QueryString.LGA !== 'undefined' || typeof QueryString.LGA !== '' )) {
+				if ( QueryString.LGA === 'Statewide' ) {
+					query += ' AND (\"Service delivery LGA\"=\'Statewide\' OR \"Statewide\"=\'Yes\')';
+				} else if ( QueryString.LGA === 'Unspecified' ) {
+					query += ' AND (\"Service delivery LGA\"=\'\' OR \"Service delivery LGA\"=\'Unspecified\')';
+				} else {
+					query += ' AND (\"Service delivery LGA\"=\'' + QueryString.LGA.replace(/\+/g, ' ').replace(/\%2C/g, ',').replace(/\%28/g, '(').replace(/\%29/g, ')') + '\')';
+				}
+			}
+
+			if ( QueryString.Category && (typeof QueryString.Category !== 'undefined' || typeof QueryString.Category !== '' )) {
+				query += ' AND (\"Category\"=\'' + QueryString.Category.replace(/\+/g, ' ').replace(/\%2C/g, ',')  + '\')';
+			}
+
+			return query;
+		}
+
+		displayChart = function( jsonData  ) {
+			if ( jsonData.result.records.length > 0 ) {
+
+				var minDisplay = 2;  
+				var xAxisTitle = "Total expenditure amount";
+				var dataRowName = "Expenditure";
+				var yLabels = [];
+				var seriesData = jsonData.result.records;  
+				var valVals = [];
+				var isLGA = jsonData.result.records[0].LGA ? true : false;
+
+				var graphTitle = jsonData.result.records[0].LGA? 'Top 10 expenditure by local government areas' : 'Top 10 expenditure by category';
+				if (limit === ''){
+					graphTitle = jsonData.result.records[0].LGA? 'All expenditure by local government areas' : 'All expenditure by category';
+				}
+
+
+				$.each(seriesData, function ( item, value ) { 
+				   	yLabels.push( jsonData.result.records[0].LGA? value.LGA : value.Category );   
+				   	valVals.push( parseFloat( value.total )); 
+				});					
+				Highcharts.setOptions({
+				    lang: {
+				        numericSymbols: ['K', 'M', 'B', 'T']
+				    }
+				});
+				$('#container' + (isLGA ? 'LGA' : 'Category') ).highcharts({
+					chart: {
+						type: 'bar',
+						backgroundColor:'#ffffff',
+						marginLeft: 160,
+						height: jsonData.result.records.length * 30 + 120						
+					},
+					credits: {
+						enabled: false
+					},
+					title: {
+						useHTML: true,
+						text: graphTitle
+					},
+					xAxis: {
+						categories: yLabels,        
+						lineWidth: 1,
+						lineColor: '#ccc',
+						gridLineWidth: 1,
+						tickLength: 160,
+						tickColor: '#eee',
+						gridLineColor: '#ccc',
+
+						labels: {
+							enabled: true,
+							formatter: function() {
+							var temp = this.value.length > 24 ? this.value.slice(0, 21)+'...' : this.value;
+							return '<span title="Expenditure for '+ this.value +'">' + temp + '</span>';
+							},
+							useHTML: true,
+							cursor: 'pointer'
+						}
+					},
+					yAxis: {
+						gridLineWidth: 0.5,
+						gridLineColor: '#ddd',
+						minPointLength: 20,
+						pointPadding: 5,
+						tickLength: 5,
+						tickColor:'#ccc',
+						tickWidth: 0.5,
+						//type: "logarithmic",
+						title: {
+						 	text: xAxisTitle
+						}				
+					},
+					legend: {
+						enabled: false
+					},
+					tooltip: {
+						useHTML: true,
+						borderWidth: 2,
+						borderColor: '#78BA00',
+						formatter: function () {
+							var formattedNum = Highcharts.numberFormat(this.y, 0, '', ',');
+							var param = isLGA ? 'LGA' : 'Category';
+							return '<div class="tooltip"><strong><a href="../expenditure/?' + param +'=' + this.x.replace(/\s/g, '+').replace(/\,/g, '%2C')  + '&FinancialYear=' + FinancialYear +'">' + this.x + '</a></strong><br/>' + this.series.name + ': $' + formattedNum + '<br/></div>';
+						},
+						style: {
+							padding: '0'
+						}
+					},
+					plotOptions: {
+						bar: {
+							states: {
+								hover: {
+									color: '#78BA00'                                                        
+								}
+							}
+						},
+						series: {
+							// stacking: 'normal',
+							dataLabels: {
+								enabled: true,
+								color: 'black',
+								// style: {
+								//	textShadow: '0 0 3px black, 0 0 3px black'
+								// },
+								formatter: function() { 
+
+									var ret = '',
+									multi,
+									axis = this.series.yAxis,
+									numericSymbols = ['K', 'M', 'B', 'T', 'Q', ''],
+									i = numericSymbols.length;
+									while (i-- && ret === '') {
+										multi = Math.pow(1000, i + 1);
+										if ( axis.tickInterval >= multi && numericSymbols[i] !== null ) {
+											
+											ret = Highcharts.numberFormat( this.y / multi, -1 );
+											ret = ret.replace(',', '');
+										    ret = ( Math.round( ret * 10 ) / 10 ) + numericSymbols[i];
+										}
+									}
+
+									return ret;
+				   				}
+				   			},
+				   			cursor: 'pointer'
+				   		}
+				   	},
+				   	series: [{
+				   		name: dataRowName,
+				   		data: valVals,            
+				   		color: '#007EB1',
+				   		pointPadding: 1.3,
+				   		pointWidth: 25,
+				   		point: {
+				   			events: {
+				   				mouseOver: function() {    
+				   					$('#container' + (isLGA ? 'LGA' : 'Category') + ' div.highcharts-axis-labels.highcharts-xaxis-labels span span').eq(this.x).addClass('active');
+				   				},
+				   				mouseOut: function() {                       
+				   					$('#container' + (isLGA ? 'LGA' : 'Category') + ' div.highcharts-axis-labels.highcharts-xaxis-labels span span').eq(this.x).removeClass('active');                        
+				   				}
+				   			}
+				   		}
+				   	}]  
+				});	  
+				$( '#container' + (isLGA ? 'LGA' : 'Category') + ' g.highcharts-series.highcharts-tracker' ).on("click", "rect", function() {	
+					var param = isLGA ? 'LGA' : 'Category';
+					window.location.href = '../expenditure/?' + param +'=' + yLabels[$(this).index()].replace(/\s/g, '+').replace(/\,/g, '%2C') + '&FinancialYear=' + FinancialYear;
+				});
+
+				$( '#container' + (isLGA ? 'LGA' : 'Category') + ' g.highcharts-data-labels.highcharts-tracker' ).on("click", "g", function() {
+					var param = isLGA ? 'LGA' : 'Category';
+					window.location.href = '../expenditure/?' + param +'=' + yLabels[$(this).index()].replace(/\s/g, '+').replace(/\,/g, '%2C') + '&FinancialYear=' + FinancialYear;
+				});  
+
+				$( '#container' + (isLGA ? 'LGA' : 'Category') + ' .highcharts-xaxis-labels' ).on("click", "span", function() {
+					var param = isLGA ? 'LGA' : 'Category';
+					window.location.href = '../expenditure/?' + param +'=' + yLabels[$(this).index()].replace(/\s/g, '+').replace(/\,/g, '%2C') + '&FinancialYear=' + FinancialYear;
+				});   
+
+			} 
+		};
+
+		getLGAList = function( ) {
+			// load json data
+			var rules = getFilters(); 
+			var sql = 'SELECT (CASE \"Statewide\"' +
+					'			WHEN \'Yes\' THEN \'Statewide\'' +
+					'			ELSE' +
+					'				(CASE \"Service delivery LGA\"' + 
+					'					WHEN \'\' THEN \'Unspecified\'' +
+					'					WHEN \'Unspecified\' THEN \'Unspecified\'' +
+					'					ELSE \"Service delivery LGA\"' +
+					'				END) ' +
+					'		END) AS \"LGA\",' +
+					' SUM(\"Total funding under this agreement\") as \"total\" FROM ' + table + rules + ' GROUP BY \"LGA\" ORDER BY \"total\" DESC' + limit;
+			qg.data.get( 'data.qld.gov.au', sql, displayChart );
+		};
+
+		getCategoryList = function( ) {
+			// load json data
+			var rules = getFilters(); 
+			var sql = 'SELECT \"Category\", SUM(\"Total funding under this agreement\") as \"total\" FROM ' + table + rules + ' GROUP BY \"Category\" ORDER BY \"total\" DESC' + limit;
+			qg.data.get( 'data.qld.gov.au', sql, displayChart );
+		};
+
+
+		if ( !QueryString.LGA || typeof QueryString.LGA === 'undefined' || typeof QueryString.LGA === '' ) {
+			$( '#containerLGA' ).show();
+			$( '#containerLGAMore' ).show();
+			getLGAList();
+		} else {
+			$( '#containerLGA' ).hide();
+			$( '#containerLGAMore' ).hide();
+		}
+
+		if ( !QueryString.Category || typeof QueryString.Category  === 'undefined' || typeof QueryString.Category  === '' ) {
+			$( '#containerCategory' ).show();
+			$( '#containerCategoryMore' ).show();
+			getCategoryList();
+		} else {
+			$( '#containerCategory' ).hide();
+			$( '#containerCategoryMore' ).hide();
+		}
+
+		searchResultsCount = function( ) {
+			// load json data
+			var rules = getFilters();
+			var sql = 'SELECT COUNT(*) from ' + table + rules;
+			qg.data.get( 'data.qld.gov.au', sql, displaySearchResultsCount );
+		};
+
+		displaySearchResultsCount = function( jsonData   ) {
+			$( '#total-result' ).text( jsonData.result.records[0].count );
+		};
+
+		searchSumTotalExpenditureCategory = function( ) {
+			// load json data
+			var rules = getFilters();
+			var sql = 'SELECT SUM(\"Previous financial year\") from ' + table + rules;
+			qg.data.get( 'data.qld.gov.au', sql, displaySumTotalExpenditureCategory );
+		};
+
+		displaySumTotalExpenditureCategory = function( jsonData   ) {
+			var sumTotal = jsonData.result.records[0].sum;
+			var txt = sumTotal ? qg.swe.template.format( jsonData.result.records[0].sum, '$' ) + ' total expenditure ': 'Total expenditure ';
+			$( '#overview-expenditure' ).text( txt + overviewTitle + ' in ' + FinancialYear ) ;
+		};
+
+		searchResults = function( ) {
+			// load json data
+			var rules = getFilters(); 
+			var resultLimit = 10;
+			
+
+			var sql = 'SELECT (CASE \"Statewide\"' +
+					'			WHEN \'Yes\' THEN \'Statewide\'' +
+					'			ELSE' +
+					'				(CASE \"Service delivery LGA\"' + 
+					'					WHEN \'\' THEN \'Unspecified\'' +
+					'					ELSE \"Service delivery LGA\"' +
+					'				END) ' +
+					'		END) AS \"LGA\", COALESCE(\"Total funding under this agreement\", -1) AS TOTAL, * FROM  ' + table + rules + 
+					' ORDER BY \"total\" DESC LIMIT ' + resultLimit +' OFFSET ' + (QueryString.offset && typeof QueryString.offset !== 'undefined' ? QueryString.offset * resultLimit : 0 );
+			qg.data.get( 'data.qld.gov.au', sql, displaySearchResult );
+		};
+
+		displaySearchResult = function( jsonData   ) {
+			var resultsHTML = '',
+			    results = $( '#results-table' )
+			;
+			results.empty();
+
+			if ( jsonData.result.records.length > 0 ) {
+				// loop through items
+				$.each( jsonData.result.records, function( index, item ) {
+					// append to search results
+					resultsHTML += '<tr class="' + (index%2==1?'even':'odd')+' summary">';
+					resultsHTML += '<td class="details-control"></td>';
+					resultsHTML += '<td class="details-title"><a>' + item['Funding title'] +'</a></td>';
+					resultsHTML += '<td>' + item['Service provider'] +'</td>';
+					resultsHTML += '<td>' + item['Funding agency'] + '</td>';
+					resultsHTML += '<td>' + qg.swe.template.format( item['Previous financial year'], '$'  ) +'</td>';
+					resultsHTML += '</tr>';
+					resultsHTML += '<tr class="detailedInfoRow ' + (index%2==1?'even':'odd')+'"><td></td><td colspan="4">';
+
+
+					resultsHTML += markdown.toHTML( item['Purpose'] );
+					resultsHTML += '<ul>';
+					resultsHTML +=  (item['Program title'] != '' ) ? '<li>Program title: ' + item['Program title'] +'</li>' : '';
+					resultsHTML += '<li>Category: ' + item['Category'] +'</li>';
+					resultsHTML += '<li>Service delivery LGA: ' + item['LGA'] + '</li>';
+					resultsHTML += (item['Client group'] != '' ) ? '<li>Client group: ' + item['Client group'] +'</li>' : '';
+
+					resultsHTML += '<li>Funding<ul>';
+					resultsHTML += '<li>Terms: ' + item['Funding terms'] +'</li>';
+					resultsHTML += '<li>Source: ' + item['Funding source'] +'</li>';
+					resultsHTML += '<li>Type: ' + item['Funding type'] +'</li>';
+					resultsHTML += '<li>Duration: ' + item['Funding agreement duration'] +'</li>';
+					resultsHTML += '<li>Start: ' + qg.swe.template.format( item['Funding agreement start'], 'date' ) +'</li>';
+					resultsHTML += '<li>End: ' + qg.swe.template.format( item['Funding agreement end'], 'date' ) +'</li>';
+					resultsHTML += (item['Co-contribution'] != '' ) ? '<li>Co-contribution: ' + item['Co-contribution'] +'</li>' : '';
+					resultsHTML += '<li>Total funding under this agreement: ' + qg.swe.template.format( item['Total funding under this agreement'], '$', 'abbr' ) +'</li>';
+					resultsHTML += (item['Previous financial year'] != '' ) ? '<li>Previous financial year: ' +  qg.swe.template.format( item['Previous financial year'], '$', 'abbr' ) +'</li>' : '';
+					resultsHTML += '</ul></li>';
+					resultsHTML += '<li>Legal entity<ul>';
+					resultsHTML += (item['Legal entity'] != '' ) ? '<li>Name: ' + item['Legal entity'] + '</li>' : '';
+					resultsHTML += ((item['Australian Business Number (ABN)'] != '' ) ? ' <li>ABN: ' + item['Australian Business Number (ABN)'] +'</li>' : '');
+					resultsHTML += (item['Legal entity LGA'] != '' ) ? '<li>LGA: ' + item['Legal entity LGA'] + '</li> ': ''; 
+					resultsHTML += '</ul></li></ul>';
+					resultsHTML += (item['Website'] != '' ) ? '<p><a href="' + item['Website'] + '">More information…</a></p>' : '';
+					resultsHTML += '</td></tr>';
+				});
+				$( results ).append( resultsHTML );
+			} else {
+				results.append( resultsHTML + '<tr><td colspan="5">No funding records were found for this search</td></tr>' );
+			}
+
+			// Add event listener for opening and closing details
+		    $('#example tbody').on('click', 'tr.summary', function () {
+		        var tr = $(this).next();
+		        if ( tr.hasClass( 'open' ) ) {
+		            tr.hide();
+		            $(this).removeClass( 'shown' );
+		            tr.addClass( 'closed' );
+		            tr.removeClass( 'open' );
+		        } else {
+		            tr.show();
+		            $(this).addClass( 'shown' );
+		            tr.addClass( 'open' );
+		            tr.removeClass( 'closed' );
+		            results.trigger( 'x-height-change' );
+		        }
+		    } );
+		    $( '.detailedInfoRow' ).hide();
+		    results.trigger( 'x-height-change' );
+		};
+
+		populateAsideSearchForm = function( ){
+			if ( QueryString.LGA && (typeof QueryString.LGA !== 'undefined' || typeof QueryString.LGA !== '' )) {
+				$( $( 'form', '#asides' )[ 0 ][ 'LGA' ] ).val( unescape( QueryString.LGA.replace(/\+/g, ' ') ) );
+			}
+
+			if ( QueryString.Category && (typeof QueryString.Category !== 'undefined' || typeof QueryString.Category !== '' )) {
+				$( $( 'form', '#asides' )[ 0 ][ 'Category' ] ).val( QueryString.Category.replace(/\+/g, ' ').replace(/\%2C/g, ',') );
+			}
+
+			if ( QueryString.query && (typeof QueryString.query !== 'undefined' || typeof QueryString.query !== '' )) {
+				$( $( 'form', '#asides' )[ 0 ][ 'query' ] ).val( QueryString.query.replace(/\+/g, ' ').replace(/\%2C/g, ',') );
+			}
+
+			if ( QueryString.ABN && (typeof QueryString.ABN !== 'undefined' || typeof QueryString.ABN !== '' )) {
+				$( $( 'form', '#asides' )[ 0 ][ 'ABN' ] ).val( QueryString.ABN );
+			}
+
+			if ( QueryString.FinancialYear && (typeof QueryString.FinancialYear !== 'undefined' || typeof QueryString.FinancialYear !== '' )) {
+				$( $( 'form', '#asides' )[ 0 ][ 'FinancialYear' ] ).val( QueryString.FinancialYear.replace(/\+/g, ' ').replace(/\%2C/g, ',') );
+			}
+		};
+		
+		searchSumTotalExpenditureCategory();
+		searchResultsCount(); 
+		searchResults();
+		populateAsideSearchForm();
+
+
+		// Pagination for results
+
+		displayPagination = function( total ) {
+			// current page and total results
+			var url = $.url();
+			var offset = parseInt( url.param( 'offset' ), 10 ) || 0;
+			var start = offset * 10 + 1;
+
+			// how many results on each page
+			var resultspp = 10; // per page
+
+			// display at most 10 pages, preferably up to 5 previous pages
+			var min = Math.max( 1, start - 5 * resultspp );
+			var max = Math.min( total, start + 10 * resultspp );
+
+			if (total > 10) {
+				url = url.attr( 'source' ).replace( /#.*?/, '' );
+				if ( ! /offset/.test( url )) {
+					url += ( window.location.search.substring(1) ) ? '&offset=0' : '?offset=0';
+				}
+
+				// 'Previous' link
+				if ( offset > 0 ) {
+				  $( 'ul', '#pagination' ).append( '<li><a href="' + url.replace( /offset=\d+/, 'offset=' + ( offset - 1 )) + '">Previous</a></li>' );
+				}
+
+				// numbered links
+				for ( var i = min; i < max; i += resultspp ) {
+					var pageNumber = Math.ceil( i / resultspp );
+					var page = '<li>' + ( start === i ? '<strong>' + pageNumber + '</strong>' : '<a href="' + url.replace( /offset=\d+/, 'offset=' + ( pageNumber - 1 )) + '">' + pageNumber + '</a>' ) + '</li>';
+					$( 'ul', '#pagination' ).append( page );
+				}
+
+				// 'Next' link
+				if ( start + resultspp < total ) {
+				  $( 'ul', '#pagination' ).append( '<li><a href="' + url.replace( /offset=\d+/, 'offset=' + ( offset + 1 )) + '">Next</a></li>' );
+				}
+			}
+
+			$( '#result-scope' ).html( total > 0 ? (total < 10 ? total : (start + ' - ' + ((offset+1)*resultspp))) : '0' );
+		};
+
+		paginationWhenReady = function( ) {
+			if ( /^\d+$/.test( $( '#total-result' ).text() )) {
+				$( '.total-search-count' ).hide();
+				displayPagination( parseInt( $( '#total-result' ).text(), 10 ));
+			} else {
+				// try again in a minute
+				setTimeout( paginationWhenReady, 1000 );
+			}
+		};
+
+		paginationWhenReady();
+
+	}( jQuery, qg ));
+//--></script><!-- end -->

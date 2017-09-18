@@ -1,0 +1,81 @@
+#breadcrumbs li,
+.home #breadcrumbs li.last-child {
+  display: block;
+  padding: 0.45em 0.8em 0.5em 0;
+}
+
+#breadcrumbs li.last-child {
+  white-space: nowrap;
+  display: none;
+}
+
+#breadcrumbs a {
+  white-space: nowrap;
+  padding: 0.2em 0.5em 0.3em;
+}
+
+#breadcrumbs .nav-home a {
+  padding-left: 0;
+}
+
+@media screen, projection, tv, handheld {
+
+  #breadcrumbs {
+    color: $breadcrumbs-color;
+    background: $breadcrumbs-background-color;
+    overflow: hidden;
+    @include font-rem(1.05);
+
+    // this needs to be a lot longer than the menu will ever be
+    // if there is a case where the menu extends beyond this limit
+    // then we might have to adjust the value
+    max-height: $breadcrumbs-max-height;
+    @include slideUp();
+    &.slideUp {
+      border-bottom: 0.3em solid $breadcrumbs-background-color;
+    }
+
+    ol {
+      margin: 1rem 0 0.95rem;
+      padding: 0;
+      overflow: hidden;
+      list-style-type: none;
+
+      li.last-child {
+        font-weight: bold;
+        background: none;
+      }
+    }
+
+    .nav-home a {
+      @include fonticon($fa-var-institution, 0.7, 1.3, 1.05, $white);
+    }
+
+    a,
+    a:link,
+    a:visited {
+      color: $breadcrumbs-link-color;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      color: $breadcrumbs-link-hover-color;
+      text-decoration: underline;
+    }
+  }
+
+  #breadcrumbs a li.nav-home:before {
+    display: none;
+  }
+
+}
+
+@media print {
+  #breadcrumbs {
+    border: none;
+    background-color: $breadcrumbs-color;
+    margin: 0;
+    padding: 0;
+  }
+}

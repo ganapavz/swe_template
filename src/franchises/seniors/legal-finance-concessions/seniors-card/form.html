@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>TITLE | FRANCHISE | Queensland Government</title>
+
+<!--#set var="franchise" value=""-->
+<!--#set var="title" value="TITLE"-->
+<!--#include virtual="/assets/includes/global/head-assets.html"-->
+
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+	
+	<meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=DEPARTMENT NAME; ou=UNIT NAME" />
+	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland" />
+	<meta name="DCTERMS.created" content="2014-05-26" />
+	<meta name="DCTERMS.modified" content="2014-05-26" />
+	<meta name="DCTERMS.title" content="TITLE | FRANCHISE" />
+	<meta name="DCTERMS.description" content="DESCRIPTION" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION" />
+<!--#include virtual="/assets/includes/global/head-meta-identifier.html"-->
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="form" />
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+</head>
+
+<body id="qld-gov-au" class="residents">
+
+<!--#include virtual="/assets/includes/global/header.html"-->	
+	
+	<div id="page-container"><div class="max-width">
+		<div id="breadcrumbs">
+			<h2>You are here:</h2>
+			<ol>
+<!--#include virtual="/assets/includes/global/breadcrumb-citizen.html"-->
+				<li><a href="/disability/">People with disability</a></li>
+				<li><a href="/disability/getting-out/">Getting out and about</a></li>
+				<li><a href="../">Transport</a></li>
+				<li class="last-child">TITLE</li>
+			</ol>
+		</div>
+	
+		<div id="content-container">
+			<!-- <div id="content"> -->
+
+				<div class="article"><div class="box-sizing"><div class="border">
+				
+<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+					<h1>TITLE</h1>
+
+<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+					<p>This page simulates the missing <code>#content</code> div, as seen on seniors card implementation.</p>
+
+					<div class="status warn">
+						<h2>Please check your answers</h2>
+						<ol>
+							<li><a href="#Q-email">Email: Must be a valid email address</a></li>
+						</ol>
+					</div>
+
+					<div class="preamble">
+						<p>Your attachments must be less than <span class="max-fsize">1MB</span>.</p>
+					</div>
+					<form action="./content-form.html" method="post" class="form">
+						<ol class="questions">
+
+							<li class="text required">
+								<label for="name">
+									<span class="label">Name</span>
+									<abbr title="(required)">*</abbr>
+								</label>
+								<input type="text" name="name" id="name" size="30" required="required" placeholder="Given Family" />
+							</li>
+
+							<li id="Q-email" class="email required invalid">
+								<label for="email">
+									<span class="label">Email</span>
+									<abbr title="(required)">*</abbr>
+									<em class="alert">Must be a valid email address</em>
+									<small class="hint privacy">We will never share your email address</small>
+								</label>
+								<input type="email" name="email" id="email" size="40" value="abcdefghijklmnopqrztuvwxyz" required="required" placeholder="jane.smart@example.com" />
+							</li>
+
+							<li id="Q-tel" class="tel">
+								<label for="tel">
+									<span class="label">Phone</span>
+								</label>
+								<input type="tel" name="tel" id="tel" size="20" value="" placeholder="07 5555 5555" />
+							</li>
+
+							<li id="Q-disabled">
+								<label for="disabled">
+									<span class="label">A disabled field</span>
+									<abbr title="(required)">*</abbr>
+								</label>
+								<input type="text" name="disabled" id="disabled" size="20" disabled="disabled" required="required" value="" />
+							</li>
+
+							<li id="Q-readonly">
+								<label for="readonly">
+									<span class="label">A readonly field</span>
+								</label>
+								<input type="text" name="readonly" id="readonly" size="20" readonly="readonly" value="foo" />
+							</li>
+
+							<li class="textarea required">
+								<label for="comments">
+									<span class="label">Comments</span>
+									<abbr title="(required)">*</abbr>
+									<small class="hint">Maximum: 50 words</small>
+								</label>
+								<textarea name="comments" id="comments" rows="10" cols="40" required="required"></textarea>
+							</li>
+
+							<li>
+								<label for="birth-certificate">
+									<span class="label">Birth certificate</span>
+									<small class="hint">
+										We accept: DOC, DOCX, PDF, ODF, JPG, BMP, TIFF, PNG, XLS or XLSX
+										(<a href="//www.qld.gov.au/help/downloading/" class="help">tips for uploading files</a>)
+									</small>
+								</label>
+								<input type="file" id="birth-certificate" name="birthCertificate" accept="application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf,application/vnd.oasis.opendocument.text,image/jpeg,image/bmp,image/tiff,image/png,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" />
+							</li>
+
+							<li>
+								<fieldset>
+									<legend>
+										<span class="label">Flavours</span>
+									</legend>
+									<ul class="choices">
+										<li>
+											<input type="checkbox" name="flavours" value="Chocolate" id="flavours-chocolate" />
+											<label for="flavours-chocolate">Chocolate</label>
+										</li>
+										<li>
+											<input type="checkbox" name="flavours" value="Strawberry" id="flavours-strawberry" />
+											<label for="flavours-strawberry">Strawberry</label>
+										</li>
+										<li>
+											<input type="checkbox" name="flavours" value="Vanilla" id="flavours-vanilla" />
+											<label for="flavours-vanilla">Vanilla</label>
+										</li>
+									</ul>
+								</fieldset>
+							</li>
+
+							<li class="section">
+								<fieldset>
+									<legend><span class="h2">Contact details</span></legend>
+									<ol class="questions">
+										<li class="group atomic">
+											<fieldset>
+												<legend>
+													<span class="label">Postal address</span>
+												</legend>
+												<ol class="questions">
+													<li>
+														<label for="streetaddress1">
+															<span class="label">Address line 1</span>
+															<abbr title="(required)">*</abbr>
+														</label>
+														<input type="text" name="streetaddress1" id="streetaddress1" size="20" value="" required="required" />
+													</li>
+													<li>
+														<label for="streetaddress2">
+															<span class="label">Address line 2</span>
+														</label>
+														<input type="text" name="streetaddress2" id="streetaddress2" size="20" value="" />
+													</li>
+													<li>
+														<label for="streetaddress3">
+															<span class="label">Address line 3</span>
+														</label>
+														<input type="text" name="streetaddress3" id="streetaddress3" size="20" value="" />
+													</li>
+													<li class="group">
+														<ol class="questions compact">
+															<li>
+																<label for="town">
+																	<span class="label">Town</span>
+																	<abbr title="(required)">*</abbr>
+																</label>
+																<input type="text" name="town" id="town" size="20" value="" required="required" />
+															</li>
+															<li>
+																<label for="state">
+																	<span class="label">State</span>
+																	<abbr title="(required)">*</abbr>
+																</label>
+																<input type="text" name="state" id="state" size="5" value="QLD" required="required" />
+															</li>
+															<li>
+																<label for="postcode">
+																	<span class="label">Postcode</span>
+																	<abbr title="(required)">*</abbr>
+																</label>
+																<input type="text" name="postcode" id="postcode" size="5" value="" required="required" />
+															</li>
+														</ol>
+													</li>
+													<li>
+														<label for="country">
+															<span class="label">Country</span>
+															<abbr title="(required)">*</abbr>
+														</label>
+														<input type="text" name="country" id="country" size="20" value="Australia" required="required" />
+													</li>
+												</ol>
+											</fieldset>
+										</li>
+									</ol>
+								</fieldset>
+							</li>
+
+							<li>
+								<label for="attachment2">
+									<span class="label">Drivers license</span>
+									<abbr title="(required)">*</abbr>
+									<small class="hint">Attach your file here</small>
+								</label>
+								<input type="file" id="attachment2" name="attachment2" required="required" accept="application/pdf,image/jpeg" />
+							</li>
+
+							<li class="footer">
+								<ul class="actions">
+									<li><strong><input type="submit" value="Primary" /></strong></li>
+									<li><input type="submit" value="Secondary" /></li>
+									<li><a href="#" class="button">Link button</a></li>
+									<li><a href="#">Cancel</a></li>
+								</ul>
+							</li>
+
+							<li class="footer">
+								<ul class="actions">
+									<li><em><input type="submit" value="Primary alt" /></em></li>
+									<li><input type="submit" value="Secondary" /></li>
+									<li><a href="#" class="button">Link button</a></li>
+									<li><a href="#">Cancel</a></li>
+								</ul>
+							</li>
+
+						</ol>
+
+					</form>
+
+
+				</div></div></div><!-- end .article, .box-sizing, .border -->
+			<!-- </div> end #content -->
+
+			<div id="asides"><div class="box-sizing"><div class="border">
+				<!--#include virtual="/assets/includes/global/global-aside.html"-->
+				
+				<!--#include virtual="/assets/includes/global/aside-contact-qgov.html"-->
+				
+				<div class="aside login">
+					<h2>Done this before?</h2>
+					<p>If you have used this service before, <a href="#">log in</a>.</p>
+				</div>
+
+				<div class="aside">
+					<p>Download the following <a href="../../docs/cue-template-change-log.doc" class="download">
+						<span class="title">Downloadable document</span>
+						<span class="meta">(DOC, 72KB)</span>
+					</a></p>
+				</div>
+			
+			</div></div></div><!-- end #asides, .box-sizing, .border -->
+
+			<div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+				<div id="document-properties"><div class="box-sizing">
+					<dl>
+						<dt>Last updated</dt>
+						<dd>26 May 2014</dd>
+					</dl>
+				</div></div>
+				
+<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+			</div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+		</div><!-- end #content-container -->
+		
+<!--#include virtual="/examples/nav/transport.html"-->
+	
+	</div></div><!-- end #page-container, .max-width -->
+
+<!--#include virtual="/assets/includes/global/footer.html"-->
+	
+</body>
+</html>

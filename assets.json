@@ -1,0 +1,274 @@
+{
+    "root": [
+        "src/qgov/apple-touch-icon.png",
+        "src/qgov/apple-touch-icon-114x114.png",
+        "src/qgov/apple-touch-icon-144x144.png",
+        "src/qgov/favicon.ico"
+    ],
+
+    "js": {
+        "environment": [
+            "src/qgov/assets/v2/script/lib/modernizr.custom.55956.js",
+            "src/qgov/assets/v2/script/jquery.debug.js",
+            "src/qgov/assets/v2/script/jquery.migrate.js",
+            "src/qgov/assets/v2/script/qgov-environment.js"
+        ],
+
+        "loader": [
+            "src/qgov/assets/v2/script/loader.js"
+        ],
+
+        "qgov": [
+            "bower_components/generate-id/dist/generate-id.js",
+            "bower_components/purl/purl.js",
+            "src/qgov/assets/v2/script/lib/jquery.history.js",
+            "bower_components/jquery.scrollTo/jquery.scrollTo.js",
+            "src/qgov/assets/v2/script/jquery.keyboard-focus.js",
+            "src/qgov/assets/v2/script/lib/jquery.aria.js",
+            "src/qgov/assets/v2/script/jquery.aria.key-nav.js",
+            "src/qgov/assets/v2/script/jquery.aria.labelledby.js",
+            "src/qgov/assets/v2/script/lib/jquery.accessibleText.js",
+            "src/qgov/assets/v2/script/jquery.resize-events.js",
+            "src/qgov/assets/v2/script/jquery.frag-linx.js",
+            "src/qgov/assets/v2/script/lib/jquery.butterfly.js",
+            "src/qgov/assets/v2/script/lib/tabs/jquery.mousewheel.min.js",
+            "src/qgov/assets/v2/script/lib/tabs/jquery.slidetabs.min.js",
+            "bower_components/relevance/dist/relevance.js",
+            "src/qgov/assets/v2/script/lib/jquery.relevance.legacy-API.js",
+            "bower_components/qgovau-jquery.autocomplete/src/autocomplete.js",
+            "src/qgov/assets/v2/script/qgov-core.js"
+        ],
+
+        "qgovIndex": [
+            "src/qgov/assets/v2/script/jquery.smartresize.js",
+            "src/qgov/assets/v2/script/jquery.flex-grid.js",
+            "src/qgov/assets/v2/script/jquery.linked-up.js",
+            "src/qgov/assets/v2/script/page-model/ia-highlight.js",
+            "src/qgov/assets/v2/script/jquery.got-style.js",
+            "src/qgov/assets/v2/script/jquery.compact.js",
+            "src/qgov/assets/v2/script/jquery.compact.slider.js",
+            "src/qgov/assets/v2/script/jquery.compact.slideshow.js",
+            "src/qgov/assets/v2/script/jquery.shorter-list.js",
+            "src/qgov/assets/v2/script/jquery.compact.init.js",
+            "src/qgov/assets/v2/script/jquery.slide-runner.js",
+            "src/qgov/assets/v2/script/jquery.section-runner.js",
+            "src/qgov/assets/v2/script/template/initialise-index.js"
+        ],
+
+        "qgovLargeApp": [
+            "src/qgov/assets/v2/script/page-model/large-applications.js"
+        ],
+
+        "qgovMisc": [
+            "src/qgov/assets/v2/script/jquery.forms.js",
+            "src/qgov/assets/v2/script/pattern/scrollable.js",
+            "src/qgov/assets/v2/script/jquery.status.js",
+            "src/qgov/assets/v2/script/jquery.linked-up.js"
+        ],
+
+        "qgovMaps": [
+            "src/qgov/assets/v2/script/lib/maps/markerclusterer.js",
+            "bower_components/jquery-jsonp/src/jquery.jsonp.js",
+            "bower_components/history.js/scripts/bundled-uncompressed/html4+html5/jquery.history.js",
+            "src/qgov/assets/v2/script/utils/data.js",
+            "bower_components/markdown/lib/markdown.js",
+            "src/qgov/assets/v2/script/utils/template.js",
+            "src/qgov/assets/v2/script/lib/jquery.pajinate.js",
+            "src/qgov/assets/v2/script/pattern/qgov-maps.js"
+        ],
+
+        "mapsCounters": [
+            "src/qgov/assets/v2/script/lib/maps/markerclusterer.js",
+            "src/qgov/assets/v2/script/pattern/qgov-maps-counters.js"
+        ],
+
+        "qgovCounters": [
+            "src/qgov/assets/v2/script/lib/maps/markerclusterer.js",
+            "bower_components/jquery-jsonp/src/jquery.jsonp.js",
+            "src/qgov/assets/v2/script/utils/data.js",
+            "src/qgov/assets/v2/script/lib/jquery.pajinate.js",
+            "bower_components/markdown/lib/markdown.js",
+            "src/qgov/assets/v2/script/utils/template.js",
+            "src/qgov/assets/v2/script/pattern/qgov-counters.js"
+        ],
+
+        "qgovViewResult": [
+            "bower_components/jquery-jsonp/src/jquery.jsonp.js",
+            "src/qgov/assets/v2/script/utils/data.js",
+            "bower_components/markdown/lib/markdown.js",
+            "src/qgov/assets/v2/script/utils/template.js",
+            "src/qgov/assets/v2/script/pattern/qgov-view-result.js"
+        ],
+
+        "mapsDirectory": [
+            "bower_components/jQuery.XDomainRequest/jQuery.XDomainRequest.js",
+            "bower_components/markdown/lib/markdown.js",
+            "src/qgov/assets/v2/script/utils/template.js",
+            "bower_components/jquery-jsonp/src/jquery.jsonp.js",
+            "src/qgov/assets/v2/script/utils/data.js",
+            "bower_components/json3/lib/json3.js",
+            "bower_components/history.js/scripts/bundled-uncompressed/html4+html5/jquery.history.js",
+            "bower_components/leaflet/dist/leaflet-src.js",
+            "bower_components/leaflet.markerclusterer/dist/leaflet.markercluster-src.js",
+            "bower_components/leaflet.fullscreen/Control.FullScreen.js",
+            "src/qgov/assets/v2/script/jquery.status.js",
+            "src/qgov/assets/v2/script/lib/jquery.pajinate.js",
+            "src/qgov/assets/v2/script/pattern/qgov-maps-directory.js"
+        ],
+
+        "footable": [
+            "bower_components/footable/js/footable.js",
+            "bower_components/footable/js/footable.sort.js",
+            "bower_components/footable/js/footable.filter.js",
+            "bower_components/footable/js/footable.paginate.js",
+            "bower_components/footable/js/footable.plugin.template.js"
+        ],
+
+        "init": [
+            "bower_components/doubletaptogo/index.js",
+            "src/qgov/assets/v2/script/template/layout.js",
+            "src/qgov/assets/v2/script/jquery.flowt.js",
+            "src/qgov/assets/v2/script/jquery.expandable-content.js",
+            "src/qgov/assets/v2/script/template/nav-section.js",
+            "src/qgov/assets/v2/script/jquery.compact-form-labels.js",
+            "src/qgov/assets/v2/script/template/initialise.js",
+            "src/qgov/assets/v2/script/template/column-heights.js",
+            "src/qgov/assets/v2/script/jquery.figures.js",
+            "src/qgov/assets/v2/script/document-links.js",
+            "src/qgov/assets/v2/script/template/page-options.js",
+            "src/qgov/assets/v2/script/licence.js",
+            "src/qgov/assets/v2/script/template/print-link-urls.js",
+            "src/qgov/assets/v2/script/jquery.fat-footer.js",
+            "src/qgov/assets/v2/script/languages.js",
+            "bower_components/jquery.cookie/jquery.cookie.js",
+            "src/qgov/assets/v2/script/pattern/tabs.js"
+        ],
+
+        "analytics": [
+            "src/qgov/assets/v2/script/jquery.eventful.js",
+            "src/qgov/assets/v2/script/analytics.js"
+        ],
+
+        "placeholders": [
+            "bower_components/placeholders/lib/utils.js",
+            "bower_components/placeholders/lib/main.js",
+            "bower_components/placeholders/lib/adapters/placeholders.jquery.js"
+        ],
+
+        "ieLayout": [
+            "src/qgov/assets/v2/script/oldIE.js",
+            "bower_components/placeholders/lib/utils.js",
+            "bower_components/placeholders/lib/main.js",
+            "bower_components/placeholders/lib/adapters/placeholders.jquery.js",
+            "src/qgov/assets/v2/script/jquery.resize-events.js",
+            "src/qgov/assets/v2/script/lib/jquery.transformer-layout.js",
+            "src/qgov/assets/v2/script/max-width-ie6.js",
+            "bower_components/excanvas/silverlight/excanvas.js"
+        ],
+
+        "video": [
+            "src/qgov/assets/v2/script/lib/adobe.detect-flash.js",
+            "src/qgov/assets/v2/script/lib/jquery-ui-1.8.2.core.widget.mouse.slider.js",
+            "src/qgov/assets/v2/script/pattern/video.js"
+        ],
+
+        "forms": [
+            "bower_components/html5-constraint-validation-API/dist/html5.constraintValidationAPI.js",
+            "src/qgov/assets/v2/script/lib/forms/form-validation.js",
+            "src/qgov/assets/v2/script/form-validation-xor.js",
+            "src/qgov/assets/v2/script/jquery.forms.required.js",
+            "src/qgov/assets/v2/script/lib/forms/jquery.simplyCountable.js",
+            "src/qgov/assets/v2/script/forms/word-count-validation.js",
+            "src/qgov/assets/v2/script/forms/file-size-validation.js",
+            "src/qgov/assets/v2/script/initialise-forms.js",
+            "src/qgov/assets/v2/script/qg-date.js"
+        ],
+
+        "beforeAfter": [
+            "src/qgov/assets/v2/script/lib/jquery.beforeafter-1.3.js",
+            "src/qgov/assets/v2/script/pattern/beforeafter.js"
+        ],
+
+        "sectionRunner": [
+            "src/qgov/assets/v2/script/jquery.smartresize.js",
+            "src/qgov/assets/v2/script/jquery.section-runner.js"
+        ],
+
+        "slideRunner": [
+            "src/qgov/assets/v2/script/jquery.smartresize.js",
+            "src/qgov/assets/v2/script/jquery.slide-runner.js"
+        ],
+
+        "slideshow": [
+            "src/qgov/assets/v2/script/jquery.got-style.js",
+            "src/qgov/assets/v2/script/jquery.compact.js",
+            "src/qgov/assets/v2/script/jquery.compact.slideshow.js",
+            "src/qgov/assets/v2/script/jquery.compact.slideshow.init.js"
+        ],
+
+        "minicart": [
+            "src/qgov/assets/v2/script/pattern/minicart.js"
+        ],
+
+        "data": [
+            "bower_components/jquery-jsonp/src/jquery.jsonp.js",
+            "src/qgov/assets/v2/script/utils/data.js",
+            "src/qgov/assets/v2/script/jquery.shorter-list.js",
+            "bower_components/markdown/lib/markdown.js",
+            "src/qgov/assets/v2/script/utils/template.js",
+            "bower_components/flot/jquery.flot.js",
+            "bower_components/flot.orderBars/index.js",
+            "bower_components/flot/jquery.flot.categories.js",
+            "bower_components/flot/jquery.flot.pie.js",
+            "bower_components/raphael/raphael.js",
+            "bower_components/justgage-official/justgage.js",
+            "src/qgov/assets/v2/script/pattern/data.js"
+        ],
+
+        "countdownTimer": [
+            "src/qgov/assets/v2/script/utils/template.js",
+            "src/qgov/assets/v2/script/pattern/countdown-timer.js"
+        ],
+
+        "clickToChat": [
+            "src/qgov/assets/v2/script/contact/click-to-chat.js",
+            "src/qgov/assets/v2/script/lib/contact/zoho.js"
+        ],
+
+        "customerSatisfactionSurvey": [
+            "src/qgov/assets/v2/script/analytics/customer-satisfaction-survey.js"
+        ],
+
+        "dataTables": [
+            "src/qgov/assets/v2/script/lib/jquery.dataTables.js",
+            "src/qgov/assets/v2/script/pattern/data-tables.js"
+        ],
+
+        "jqueryFlot": [
+            "bower_components/flot/jquery.flot.js",
+            "bower_components/flot/jquery.flot.time.js",
+            "bower_components/flot/jquery.flot.symbol.js"
+        ],
+        "qgovXmlReader": [
+            "src/qgov/assets/v2/script/qg-xml-reader.js"
+        ],
+        "qgovLoanCalculator": [
+            "src/qgov/assets/v2/script/qg-loan-calculator.js"
+        ],
+        "qgovSocialMedia": [
+            "src/qgov/assets/v2/script/qg-social-media.js"
+        ],
+        "qgovMyaccountLogin": [
+            "src/qgov/assets/v2/script/qg-myaccount-login.js"
+        ],
+        "qgovQuickExit": [
+            "src/qgov/assets/v2/script/qg-quick-exit.js"
+        ],
+        "qgovPrintGuide": [
+            "src/qgov/assets/v2/script/qg-print-guide.js"
+        ],
+        "qgovAutocompleteAddress": [
+            "src/qgov/assets/v2/script/pattern/qgov-autocomplete-address.js"
+        ]
+    }
+}

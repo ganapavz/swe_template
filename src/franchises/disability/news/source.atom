@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<atom:feed xmlns:dcterms="http://purl.org/dc/terms/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.w3.org/1999/xhtml">
+<atom:author>
+<atom:name>Queensland Government</atom:name>
+<atom:email>disabilityinfo@disability.qld.gov.au</atom:email>
+</atom:author>
+<atom:id>http://www.qld.gov.au/assets/includes/dynamic/news/feed.php?franchise=disability</atom:id>
+<atom:title>Latest news for people with disability | Queensland Government</atom:title>
+<atom:updated>2012-02-06T12:34:39+10:00</atom:updated>
+<atom:link href="http://www.qld.gov.au/disability/news/" rel="self"/>
+<atom:entry>
+<atom:id>http://www.qld.gov.au/disability/news-events/super-sports/</atom:id>
+<atom:link href="http://www.qld.gov.au/disability/news-events/super-sports/"/>
+<atom:content src="http://www.qld.gov.au/disability/news-events/super-sports/" type="text/html"/>
+<atom:title>Super Sports Sign-on Day</atom:title>
+<atom:updated>2012-02-02T09:00:00+10:00</atom:updated>
+<dcterms:valid xsi:type="dcterms:Period">2012-02-02T09:00:00+10:00/2013-01-01T00:00:00+10:00</dcterms:valid>
+<atom:link rel="icon" href="http://www.qld.gov.au//disability/assets/images/news/sss-day.jpg"/>
+<atom:summary type="xhtml">
+<div>
+<img src="http://www.qld.gov.au/disability/assets/images/news/sss-day.jpg" alt="" class="hero"/>
+<p>Discover what sport and recreation opportunities are available in your local community at the Super Sports Sign-on Day being held on Sunday 12 February 2012...</p>
+</div>
+</atom:summary>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/priority/" term="high"/>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/franchises/" term="disability" label="People with disability"/>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/content-types/" term="news-item" label="News item"/>
+</atom:entry>
+<atom:entry>
+<atom:id>http://www.qld.gov.au/disability/news-events/anti-discrimination/</atom:id>
+<atom:link href="http://www.qld.gov.au/disability/news-events/anti-discrimination/"/>
+<atom:content src="http://www.qld.gov.au/disability/news-events/anti-discrimination/" type="text/html"/>
+<atom:title>Anti-discrimination laws: call for comment</atom:title>
+<atom:updated>2012-01-23T09:00:00+10:00</atom:updated>
+<dcterms:valid xsi:type="dcterms:Period">2012-01-23T09:00:00+10:00/2013-01-01T00:00:00+10:00</dcterms:valid>
+<atom:link rel="icon" href="http://www.qld.gov.au//disability/assets/images/news/justice.jpg"/>
+<atom:summary type="xhtml">
+<div>
+<img src="http://www.qld.gov.au/disability/assets/images/news/justice.jpg" alt="" class="hero"/>
+<p>The Australian Government is accepting submissions about issues raised in a discussion paper about consolidating Commonwealth anti-discrimination laws—including the <em>Disability Discrimination Act 1992 (Cwlth)</em>—until 1 February.</p>
+</div>
+</atom:summary>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/priority/" term="high"/>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/franchises/" term="disability" label="People with disability"/>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/content-types/" term="news-item" label="News item"/>
+</atom:entry>
+<atom:entry>
+<atom:id>http://www.qld.gov.au/disability/news-events/micro-grants/</atom:id>
+<atom:link href="http://www.qld.gov.au/disability/news-events/micro-grants/"/>
+<atom:content src="http://www.qld.gov.au/disability/news-events/micro-grants/" type="text/html"/>
+<atom:title>Resilient Places Project micro-grants</atom:title>
+<atom:updated>2012-01-23T09:00:00+10:00</atom:updated>
+<dcterms:valid xsi:type="dcterms:Period">2012-01-23T09:00:00+10:00/2013-01-01T00:00:00+10:00</dcterms:valid>
+<atom:link rel="icon" href="http://www.qld.gov.au//disability/assets/images/news/qld-alliance.jpg"/>
+<atom:summary type="xhtml">
+<div>
+<img src="http://www.qld.gov.au/disability/assets/images/news/qld-alliance.jpg" alt="" class="hero"/>
+<p>Mental health micro-grants are available to assist organisations with supporting events and activities that build resilience and promote social and emotional wellbeing in communities affected by natural disasters.</p>
+</div>
+</atom:summary>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/priority/" term="important"/>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/franchises/" term="disability" label="People with disability"/>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/content-types/" term="news-item" label="News item"/>
+</atom:entry>
+<atom:entry>
+<atom:id>http://www.qld.gov.au/disability/news-events/silent-tweets/</atom:id>
+<atom:link href="http://www.qld.gov.au/disability/news-events/silent-tweets/"/>
+<atom:content src="http://www.qld.gov.au/disability/news-events/silent-tweets/" type="text/html"/>
+<atom:title>Silent Tweets</atom:title>
+<atom:updated>2012-01-23T09:00:00+10:00</atom:updated>
+<dcterms:valid xsi:type="dcterms:Period">2012-01-23T09:00:00+10:00/2013-01-01T00:00:00+10:00</dcterms:valid>
+<atom:link rel="icon" href="http://www.qld.gov.au//disability/assets/images/news/silent-tweets.jpg"/>
+<atom:summary type="xhtml">
+<div>
+<img src="http://www.qld.gov.au/disability/assets/images/news/silent-tweets.jpg" alt="" class="hero"/>
+<p>An award-winning smartphone app, Silent Tweets, is available for people who are Deaf or have a hearing impairment. It is a free broadcasting tool that can be used to share community announcements.</p>
+</div>
+</atom:summary>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/priority/" term="high"/>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/franchises/" term="disability" label="People with disability"/>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/content-types/" term="news-item" label="News item"/>
+</atom:entry>
+<atom:entry>
+<atom:id>http://www.qld.gov.au/disability/news-events/preparing-for-cyclones/</atom:id>
+<atom:link href="http://www.qld.gov.au/disability/news-events/preparing-for-cyclones/"/>
+<atom:content src="http://www.qld.gov.au/disability/news-events/preparing-for-cyclones/" type="text/html"/>
+<atom:title>Prepare for a cyclone</atom:title>
+<atom:updated>2012-01-06T09:00:00+10:00</atom:updated>
+<dcterms:valid xsi:type="dcterms:Period">2012-01-06T09:00:00+10:00/2013-01-01T00:00:00+10:00</dcterms:valid>
+<atom:link rel="icon" href="http://www.qld.gov.au//disability/assets/images/news/cyclone2.jpg"/>
+<atom:summary type="xhtml">
+<div>
+<img src="http://www.qld.gov.au/disability/assets/images/news/cyclone2.jpg" alt="" class="hero"/>
+<p>An Easy English guide about preparing for a cyclone in Queensland is available for people with complex communication needs.</p>
+</div>
+</atom:summary>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/priority/" term="high"/>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/franchises/" term="disability" label="People with disability"/>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/content-types/" term="news-item" label="News item"/>
+</atom:entry>
+<atom:entry>
+<atom:id>http://www.qld.gov.au/disability/news-events/supporting-inclusion/</atom:id>
+<atom:link href="http://www.qld.gov.au/disability/news-events/supporting-inclusion/"/>
+<atom:content src="http://www.qld.gov.au/disability/news-events/supporting-inclusion/" type="text/html"/>
+<atom:title>Supporting inclusion in environment groups</atom:title>
+<atom:updated>2011-12-14T09:00:00+10:00</atom:updated>
+<dcterms:valid xsi:type="dcterms:Period">2011-12-14T09:00:00+10:00/2013-01-01T00:00:00+10:00</dcterms:valid>
+<atom:link rel="icon" href="http://www.qld.gov.au//disability/assets/images/news/supporting-inclusion.jpg"/>
+<atom:summary type="xhtml">
+<div>
+<img src="http://www.qld.gov.au/disability/assets/images/news/supporting-inclusion.jpg" alt="" class="hero"/>
+<p>Resources are available to help environment groups engage with people with a disability interested in volunteering to protect the environment.</p>
+</div>
+</atom:summary>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/priority/" term="high"/>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/franchises/" term="disability" label="People with disability"/>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/content-types/" term="news-item" label="News item"/>
+</atom:entry>
+<atom:entry>
+<atom:id>http://www.qld.gov.au/news-events/redi-plan/</atom:id>
+<atom:link href="http://www.qld.gov.au/news-events/redi-plan/"/>
+<atom:content src="http://www.qld.gov.au/news-events/redi-plan/" type="text/html"/>
+<atom:title>emergency REDiPlan—prepare for the storm season</atom:title>
+<atom:updated>2011-12-14T09:00:00+10:00</atom:updated>
+<dcterms:valid xsi:type="dcterms:Period">2011-12-14T09:00:00+10:00/2013-01-01T00:00:00+10:00</dcterms:valid>
+<atom:link rel="icon" href="http://www.qld.gov.au//disability/assets/images/news/redi-plan.jpg"/>
+<atom:summary type="xhtml">
+<div>
+<img src="http://www.qld.gov.au/disability/assets/images/news/redi-plan.jpg" alt="" class="hero"/>
+<p>The emergency REDiPlan has information to help you prepare for the storm season and other emergencies this summer.</p>
+</div>
+</atom:summary>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/priority/" term="high"/>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/franchises/" term="disability" label="People with disability"/>
+<atom:category scheme="http://www.qld.gov.au/assets/taxonomies/content-types/" term="news-item" label="News item"/>
+</atom:entry>
+</atom:feed>

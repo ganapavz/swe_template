@@ -1,0 +1,31 @@
+// chart legends
+.legend table {
+	width: auto;
+
+	th, td {
+		padding: .3em;
+	}
+
+}
+
+// override flot inline style to remove white padding
+.legendColorBox div {
+	padding: 0 !important;
+}
+// override flot inline style to make legend colour a square shape
+.legendColorBox div div {
+	width: 0 !important;
+	border-width: .75em !important;
+}
+
+// pie chart labels
+.pieLabel {
+	font-size: 10px;
+	text-align: center;
+	padding: 2px;
+	color: $pieLabel-color;
+}
+// 100% label
+.pieLabel100 {
+	margin-top: 1em;
+}

@@ -1,0 +1,144 @@
+<p>On this page:</p>
+<ul>
+	<li><a href="#pay-it">Pay it</a></li>
+	<li><a href="#find-it">Find it</a></li>
+	<li><a href="#apply-for-it">Apply for it</a></li>
+	<li><a href="#buy-it">Buy it</a></li>
+	<li><a href="#report-it">Report it</a></li>
+</ul>
+
+<div id="pay-it">
+	<div class="cut-in"><img src="/assets/images/services/pay-it.jpg" alt="" /></div>
+	<h2>Pay it</h2>
+	<ul>
+		<li>Loading...</li>
+	</ul>
+</div>
+<div id="find-it">
+	<div class="cut-in"><img src="/assets/images/services/find-it.jpg" alt="" /></div>
+	<h2>Find it</h2>
+	<ul>
+		<li>Loading...</li>
+	</ul>
+</div>
+<div id="apply-for-it">
+	<div class="cut-in"><img src="/assets/images/services/apply-for-it.jpg" alt="" /></div>
+	<h2>Apply for it</h2>
+	<ul>
+		<li>Loading...</li>
+	</ul>
+</div>
+<div id="buy-it">
+	<div class="cut-in"><img src="/assets/images/services/buy-it.jpg" alt="" /></div>
+	<h2>Buy it</h2>
+	<ul>
+		<li>Loading...</li>
+	</ul>
+</div>
+
+<div id="report-it">
+	<div class="cut-in"><img src="/assets/images/services/report-it.jpg" alt="" /></div>
+	<h2>Report it</h2>
+	<ul>
+		<li>Loading...</li>
+	</ul>
+</div>
+
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var displayServices,
+		getData,
+		jsonData,
+		baseSearch = 'https://data.qld.gov.au/api/action/datastore_search_sql?sql=',
+		datafile = "<!--#echo encoding="entity" var="data" -->";
+	;
+
+
+	function getWhereClause( column, value ) {
+		return '\"' + column + '\"=\'' + value  + '\'';
+	}
+
+
+	// get new data
+	getData = function( sql, displayDiv  ) {
+		window.console.log( 'sql' , sql);
+		// request data
+		$.ajax({
+			url: baseSearch + encodeURIComponent( sql ),
+			type: 'GET',
+			dataType: 'jsonp',
+			timeout: 3000,
+			success: function( data ) {
+				jsonData = data;
+
+				var resultsHTML = '',
+				    results = $( document.getElementById( displayDiv )),
+				    clean
+				;
+
+				clean = function( text ) {
+					return $( '<div/>' ).text( text ).html().replace( /"/g, '&quot;' );
+				};
+
+				if ( jsonData.result.records.length > 0 ) {
+					results.find( 'ul' ).empty();
+
+					// loop through items
+					$.each( jsonData.result.records, function( index, item ) {
+						// append to search results
+						resultsHTML += '<li><a href="' + item['URL'] + '">' + item['Service'];
+						resultsHTML += (item['Formerly'] !== '') ? ' (formerly ' + item['Formerly'] + ')' : '';
+						resultsHTML += '</a>'
+						resultsHTML += (item['Details'] !== '') ? '<br \/>' + item['Details'] : '';
+						resultsHTML += (item['Maintenance'] !== '') ? '<br \/><strong>Service note</strong>: ' + item['Maintenance'] : '';
+						resultsHTML += '</li>';
+					});
+
+					$( 'ul', results ).append( resultsHTML );
+				} else {
+					results.empty();
+					results.append( '<p>Nil</p>' );
+				}
+			}
+		})
+		.fail(function() {
+			$( document ).status( 'show', {
+				status: 'fail',
+				lightbox: true,
+				title: 'A server error has prevented the requested data from being displayed',
+				body: '<p>We were unable to retrieve data to display on the map.</p><p>Please try again later.</p>'
+			});
+		});
+	};
+
+	displayServices = function( category, displayDiv ) {
+		// load json data
+		var sql = 'SELECT * from \"' + datafile + '\"' +
+				  ' WHERE ' + getWhereClause( 'Category', category ) +
+		          ' ORDER BY \"Service\"'
+		;
+
+		getData( sql, displayDiv );
+	}
+
+	
+	displayServices( 'Find it', 'find-it' );
+	displayServices( 'Pay it', 'pay-it' );
+	displayServices( 'Apply for it', 'apply-for-it' );
+	displayServices( 'Buy it', 'buy-it' );
+	displayServices( 'Report it', 'report-it' );
+
+}( jQuery, qg.swe ));
+
+
+//--></script><!-- end -->
+
+
+
+
+
+
+ 

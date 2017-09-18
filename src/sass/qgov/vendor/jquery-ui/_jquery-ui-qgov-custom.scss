@@ -1,0 +1,147 @@
+/* QGov customisations */
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	background: #fff;
+	color: #000;
+	border-color: #ccc;
+}
+
+.ui-widget {
+	font-size: 100%;
+	// copied from typography.css
+	font-family: $font-body;
+	@extend %font-size-100;
+}
+
+.ui-helper-hidden-accessible,
+.ui-selectonemenu-label {
+	width: auto;
+}
+
+/* text shadow */
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	text-shadow: none;
+}
+
+.ui-state-error,
+input.ui-state-error,
+select.ui-state-error,
+textarea.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+	border: 1px solid $jquery-ui-state-error-border-color;
+}
+
+/* buttons (some styles in component-form-button.css) */
+.ui-button-text-only .ui-button-text {
+	padding: 0;
+}
+/* disabled command links */
+.actions span.ui-state-disabled,
+.actions span.ui-state-disabled:hover,
+.actions span.ui-state-disabled:focus,
+.actions span.ui-state-disabled:active {
+	opacity: .35;
+	background: #585E62;
+	color: #fff;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+/* select menus (these have @style setting width:0 !?) */
+.ui-selectonemenu {
+	padding: 0 .3em;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: rgba(198,218,222,.5) 0 1px 1.5px;
+	color: #000;
+}
+.ui-state-hover .ui-selectonemenu-trigger,
+.ui-state-focus .ui-selectonemenu-trigger {
+	background: #E6E6E6;
+	border-color: #E6E6E6;
+}
+.ui-selectonemenu .ui-selectonemenu-trigger .ui-icon {
+	margin-top: .5em;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover {
+	border-color: #ccc;
+}
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-selectonemenu.ui-state-focus {
+	border-color: #eab754;
+}
+
+/* checkboxes and radio buttons */
+.ui-radiobutton-icon,
+.ui-chkbox-icon {
+	height: 16px;
+	width: 16px;
+	background-repeat: no-repeat;
+	display: block;
+	overflow: hidden;
+	text-indent: -99999px;
+}
+.ui-radiobutton .ui-radiobutton-box,
+.ui-chkbox .ui-chkbox-box {
+	background: #fff;
+	border: 1px solid #444;
+}
+.ui-radiobutton .ui-state-hover,
+.ui-chkbox .ui-state-hover {
+	border-color: #3085A2;
+}
+.ui-radiobutton .ui-state-focus,
+.ui-chkbox .ui-state-focus {
+	border-color: #eab754;
+}
+
+/* table layouts for radio buttons and checkboxes */
+table.ui-widget tr th,
+table.ui-widget tr td {
+	background: transparent;
+	border: none;
+	padding: .2em .5em .2em 0;
+	vertical-align: baseline;
+	@include font-rem(1);
+}
+table.ui-widget tbody {
+	background: none;
+}
+table.ui-selectmanycheckbox label,
+table.ui-selectoneradio label {
+	margin-right: 1.5em;
+}
+
+/* radio buttons in choices list */
+ul.choices .ui-radiobutton {
+	margin-left: -20px;
+	padding-right: 4px; /* 16px + 4 = 20px */
+	margin-right: .5em;
+}
+
+// dialogs (lightbox)
+.ui-widget-overlay {
+	background: $lightbox-overlay-background-color;
+	opacity: $lightbox-overlay-opacity;
+}
+
+// disabled jquery ui widgets
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+	opacity: .5;
+}
+
+// primefaces fallbacks
+.ui-radiobutton-box {
+	border-radius: 100%;
+}

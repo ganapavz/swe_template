@@ -1,0 +1,61 @@
+$blockquote-margin-vertical: 1.5em;
+$blockquote-padding-vertical: 2em;
+
+blockquote.pull-quote {
+  background: $blockquote-pull-quote-background-color;
+  color: $blockquote-pull-quote-color;
+  padding: $blockquote-padding-vertical 2em;
+  margin: $blockquote-margin-vertical 0;
+  position: relative;
+  border: 2px dotted $blockquote-pull-quote-border-color;
+  border-width: 2px 0;
+  border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="6"><g transform="translate(0 -1046.362)"><path id="a" d="M2 10a1 1 0 1 1-2 0 1 1 0 1 1 2 0z" transform="translate(0 1037.362)" fill="#a7a7a7" fill-rule="evenodd"/><use xlink:href="#a" transform="translate(22)" width="60" height="60"/><use xlink:href="#a" transform="translate(11)" width="60" height="60"/><use xlink:href="#a" transform="translate(0 4)" width="60" height="60"/><use xlink:href="#a" transform="translate(11 4)" width="60" height="60"/><use xlink:href="#a" transform="translate(22 4)" width="60" height="60"/></g></svg>') 3 3 round;
+  @include font-rem(1.3);
+  font-weight: 700;
+}
+
+blockquote.pull-quote:after,
+blockquote.pull-quote:before {
+  content: "\2018";
+  font: $lato;
+  @include font-rem(4.5);
+  font-weight: 900;
+  color: $blockquote-pull-quote-after-color;
+  position: absolute;
+  line-height: 1;
+  top: 0.5em;
+}
+
+blockquote.pull-quote:before {
+  left: 0;
+}
+blockquote.pull-quote:after {
+  content: "\2019";
+  right: 0;
+}
+
+blockquote.pull-quote {
+  p {
+    @include font-rem(1.3);
+    font-weight: 700;
+    margin: 0;
+  }
+  p + p {
+    margin-top: 1rem;
+  }
+}
+
+.pull-quote + .figcaption {
+  margin-top: -1 * ( $blockquote-margin-vertical + $blockquote-padding-vertical );
+  position: relative;
+  padding: 1em 0;
+  text-align: right;
+  background: $blockquote-pull-quote-background-color;
+  color: $blockquote-pull-quote-color;
+  border-bottom: 2px dotted $blockquote-pull-quote-border-color;
+  border-width: 0 0 2px;
+  border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="6"><g transform="translate(0 -1046.362)"><path id="a" d="M2 10a1 1 0 1 1-2 0 1 1 0 1 1 2 0z" transform="translate(0 1037.362)" fill="#a7a7a7" fill-rule="evenodd"/><use xlink:href="#a" transform="translate(22)" width="60" height="60"/><use xlink:href="#a" transform="translate(11)" width="60" height="60"/><use xlink:href="#a" transform="translate(0 4)" width="60" height="60"/><use xlink:href="#a" transform="translate(11 4)" width="60" height="60"/><use xlink:href="#a" transform="translate(22 4)" width="60" height="60"/></g></svg>') 3 3 round;
+  font: $lato;
+  @include font-rem(1.05);
+  font-weight: 300;
+}

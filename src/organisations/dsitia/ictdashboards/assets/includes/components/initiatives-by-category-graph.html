@@ -1,0 +1,33 @@
+<h2 id="h2-initiatives-by-category">Initiatives by category</h2>
+<div id="initiatives-by-category">Loading...</div>
+
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var datafile = "<!--#echo encoding="entity" var="data" -->";
+	
+	function initiativesByCategory() {
+		// load json data
+		var sql = 'SELECT A.\"Category\", COUNT(A."Category")*100 / (SELECT COUNT(*) FROM "' + datafile + '" B) as \"Percentage\" FROM "' + datafile + '" A GROUP BY "Category"';
+
+		// load data lib
+		swe.load({ name: 'data', url: 'data.js' });
+
+		// configure chart
+		swe.data({
+			container: 'initiatives-by-category',
+			title: 'Initiatives by category',
+			headings: [ 'Category', 'Percentage' ],
+			formats: { Percentage: '%' },
+			sql: sql,
+			type: 'pie'
+		});
+	}
+
+	initiativesByCategory();
+
+}( jQuery, qg.swe ));
+
+//--></script><!-- end -->

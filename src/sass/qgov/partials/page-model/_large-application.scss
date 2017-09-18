@@ -1,0 +1,281 @@
+/* large application */
+.large-application h1 {
+  font-size: 150%;
+}
+
+#large-application {
+  position: relative;
+  margin: 0 (-1 * $content-container-side-margin-small);
+  background: $large-application-background-color;
+}
+
+/* large application */
+
+#app-viewport-tools,
+#app-viewport-info {
+  position: absolute;
+  top: 0;
+  width: $large-application-panel-size;
+  height: 100%;
+}
+
+#app-viewport-tools {
+  left: 0;
+  z-index: 3;
+  background: $large-application-app-viewport-tools-background-color;
+}
+
+#app-viewport-tools select {
+  // stop select controls peeking beyond tools container
+  width: 80%;
+}
+
+#app-viewport-info {
+  right: 0;
+  z-index: 4;
+  background: $large-application-app-viewport-info-background-color;
+  overflow-y: scroll;
+}
+
+// overlay
+#app-viewport-overlay {
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $lightbox-overlay-background-color;
+  opacity: 0;
+}
+
+// dim viewport for visible tools or info
+.viewport-tools #app-viewport-overlay,
+.viewport-info #app-viewport-overlay,
+.viewport-tools-info #app-viewport-overlay {
+  visibility: visible;
+  opacity: $lightbox-overlay-opacity;
+  transition: opacity $large-application-transition-speed;
+}
+
+// visible tools
+.viewport-tools #app-viewport-tools,
+.viewport-tools-info #app-viewport-tools {
+  margin-left: 0;
+}
+
+// visible info
+#large-application.viewport-info #app-viewport-info,
+#large-application.viewport-tools-info #app-viewport-info {
+  margin-right: 0;
+}
+
+// hidden tools
+.viewport #app-viewport-tools,
+.viewport-info #app-viewport-tools {
+  margin-left: -1 * $large-application-panel-size;
+}
+
+// hidden info
+.viewport #app-viewport-info,
+.viewport-tools #app-viewport-info {
+  margin-right: -1 * $large-application-panel-size;
+}
+
+.viewport-tools #app-viewport-tools,
+.viewport-tools-info #app-viewport-tools,
+.viewport #app-viewport-tools,
+.viewport-info #app-viewport-tools,
+#app-viewport-tools {
+  transition: margin-left $large-application-transition-speed;
+}
+
+.viewport-info #app-viewport-info,
+.viewport-tools-info #app-viewport-info,
+.viewport #app-viewport-info,
+.viewport-tools #app-viewport-info
+#app-viewport-info {
+  transition: margin-right $large-application-transition-speed;
+}
+
+/* https://developer.mozilla.org/en-US/docs/DOM/Using-fullscreen-mode#Presentation-differences */
+-webkit-full-screen #large-application {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#app-viewport-info h2 {
+  padding: 0 .5em;
+}
+
+#app-viewport-tools #app-viewport-tools-results,
+#app-viewport-info p,
+#app-viewport-info .section {
+  padding: 0 1em;
+}
+
+#app-viewport-info .section p {
+  padding: 0;
+}
+
+// search box shown on viewport
+#app-viewport-tools {
+
+  form {
+    max-height: 100%;
+    transition: max-height $large-application-transition-speed;
+
+    // search question
+    .search {
+      position: relative;
+      left: 0;
+      margin: 0;
+      width: auto;
+      transition: left $large-application-transition-speed, margin $large-application-transition-speed;
+    }
+
+    .viewport {
+      @include alpha-attribute('background', rgba($large-application-app-viewport-tools-viewport-background-color, 0.85), $large-application-app-viewport-tools-viewport-background-color);
+      @include alpha-attribute('box-shadow', rgba($large-application-app-viewport-tools-viewport-box-shadow-rgba, 0.3), $large-application-app-viewport-tools-viewport-box-shadow-rgba, 1px 1px 12px);
+      left: 100%; // offset by amount panel is offscreen
+      margin: 1em 1em 1em 45px; // clear google maps controls
+      border-radius: 4px;
+
+      white-space: nowrap;
+      max-width: none;
+      padding: 1em 35px 1em 1em; // size of search button
+    }
+  }
+
+  &.search-results form {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  &.search-results #app-viewport-tools-results {
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
+
+// tools: search + results + pagination
+.section legend {
+  margin-left: 1em;
+}
+
+#app-viewport-tools li.section {
+  border-bottom: 0;
+  margin: 0;
+}
+
+// viewport bubbles
+.viewport-bubble {
+  display: block;
+  @include alpha-attribute('background-color', rgba($large-application-viewport-bubble-background-color, 0.85), $large-application-viewport-bubble-background-color);
+  @include alpha-attribute('background-color', rgba($large-application-viewport-bubble-box-shadow-rgba, 0.3), $large-application-viewport-bubble-box-shadow-rgba, 1px 1px 12px);
+  border-radius: 4px;
+  padding: 0 20px 15px 20px;
+  position: absolute;
+  right: 1.5em;
+  margin-left: 80%;
+  width: 220px;
+  z-index: 2;
+
+  h2 {
+    margin: .5em 0;
+  }
+  p {
+    margin: 0;
+  }
+
+  .close {
+    background: transparent url('../images/skin/close-x.png') center center no-repeat;
+    width: 13px;
+    height: 13px;
+    display: block;
+    z-index: 10;
+    float: right;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    background: transparent url('../images/skin/close-x-hover.png') center center no-repeat;
+  }
+}
+
+// controls
+#app-viewport-controls {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  margin: 1.5em;
+  font-family: $font-large-application-app-viewport-controls;
+
+  li {
+    display: inline-block;
+  }
+
+  // viewport bubble buttons
+  a {
+    display: block;
+    background: $large-application-app-viewport-controls-link-background-color;
+    color: $large-application-app-viewport-controls-link-color;
+    font-size: 11px;
+    text-align: center;
+    border: 1px solid $large-application-app-viewport-controls-link-border-color;
+    padding: 1px 6px;
+    @include alpha-attribute('box-shadow', rgba($large-application-app-viewport-controls-link-box-shadow-rgba, 0.3), $large-application-app-viewport-controls-link-box-shadow-rgba, 0 0 4px 0);
+
+    &:hover {
+      background: $large-application-app-viewport-controls-link-hover-background-color;
+      color: $large-application-app-viewport-controls-link-hover-color;
+    }
+  }
+
+}
+
+// TODO science capability directory specific styles?
+.viewport-bubble.about {
+  top: 220px;
+}
+
+.viewport-bubble.key {
+  top: 60px;
+  @include alpha-attribute('background-color', rgba($large-application-viewport-bubble-key-background-color, 0.85), $large-application-viewport-bubble-key-background-color);
+}
+
+.tell-us {
+  top: 5px;
+  right: 221px;
+  width: 50px;
+}
+
+@media print {
+  #app-viewport-tools,
+  .viewport-bubble,
+  #app-viewport-overlay,
+  #app-viewport-tools .viewport,
+  #app-viewport-controls {
+    display: none;
+    background: none;
+  }
+  div#large-application.viewport-info {
+    width: 100%;
+    height: inherit !important;
+    margin: 0;
+    background: $white;
+  }
+  #app-viewport-info {
+    position: relative;
+    width: 100% !important;
+    background: none;
+    clear: both;
+    margin: 0;
+    overflow: hidden !important;
+  }
+
+}

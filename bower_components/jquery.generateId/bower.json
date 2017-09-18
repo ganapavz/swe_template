@@ -1,0 +1,33 @@
+{
+  "name": "jquery.generateId",
+  "version": "1.0.3",
+  "homepage": "https://github.com/bboyle/Generate-ID",
+  "authors": [
+    "Ben Boyle <benjamins.boyle@gmail.com>"
+  ],
+  "description": "Generate unique ID attributes on DOM elements.",
+  "main": "src/generate-id.js",
+  "keywords": [
+    "@id",
+    "generate-id",
+    "id attribute",
+    "unique id",
+    "setAttribute",
+    "attr"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "CONTRIBUTING.md",
+    "*.json",
+    "Gruntfile.js",
+    "bower_components",
+    "libs",
+    "node_modules",
+    "src",
+    "test"
+  ],
+  "dependencies": {
+    "jquery": "*"
+  }
+}

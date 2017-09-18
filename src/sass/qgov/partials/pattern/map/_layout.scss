@@ -1,0 +1,134 @@
+
+#app-viewport {
+  position: relative;
+}
+
+.key img {
+  cursor: pointer;
+}
+
+// fixes for icons in infowindows on map
+.filter-icon {
+  display: block;
+  background: transparent;
+  border: none;
+  position: relative;
+
+  ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    position: absolute;
+    top: 0;
+    margin-left: 25px;
+    width: 16em;
+  }
+  li {
+    display: inline-block;
+    margin: .2em 0;
+  }
+  i {
+    margin-left: .3em;
+    vertical-align: top;
+  }
+}
+
+// fixes for icons in infowindows on map
+.cluster-icon {
+  display: block;
+  background: transparent;
+  border: none;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+
+  img {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  span {
+    margin: -34px 0 12px 15px;
+    display: block;
+    color: $map-cluster-icon-span-color;
+  }
+}
+
+// Highlighting for map focus
+//.leaflet-container {
+//  outline: 2px solid $map-leaflet-container-outline-color
+//}
+//
+//.leaflet-container:focus,
+//.leaflet-clickable:focus,
+//.leaflet-control-layers-selector:focus {
+//  outline: 4px solid $leaflet-container-focus-border-color;
+//}
+//
+//.leaflet-clickable:focus {
+//  width: inherit !important;
+//  height: inherit !important;
+//  @include alpha-attribute('background-color', rgba($leaflet-container-focus-background-color, 0.2), $leaflet-container-focus-background-color);
+//}
+
+// Hide accessible text and replace with images.
+//a.leaflet-control-zoom-in,
+//a.leaflet-control-zoom-out,
+//a.leaflet-control-zoom-fullscreen {
+//  text-indent: -50em;
+//}
+//
+//a.leaflet-control-zoom-in {
+//  background: url(/assets/v2/images/skin/icon-zoom-in.png) 50% 50% no-repeat;
+//}
+//
+//a.leaflet-control-zoom-out {
+//  background: url(/assets/v2/images/skin/icon-zoom-out.png) 50% 50% no-repeat;
+//}
+//
+//a.leaflet-control-zoom-in.leaflet-disabled {
+//  background: url(/assets/v2/images/skin/icon-zoom-in-disabled.png) 50% 50% no-repeat;
+//}
+//
+//a.leaflet-control-zoom-out.leaflet-disabled {
+//  background: url(/assets/v2/images/skin/icon-zoom-out-disabled.png) 50% 50% no-repeat;
+//}
+
+
+// science capability directory icons
+.key .fa {
+  background: $qgov-green;
+  color: $white;
+  padding: .2em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: inherit;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: 100%;
+  text-shadow: 1px 1px rgba( 0, 0, 0, 0.5 );
+}
+#key-sectors a {
+  display: inline-block;
+  margin: .2em;
+}
+#key-sectors a span {
+  @extend %visually-hidden;
+}
+
+.key i.fa-flask         { background: #A162D4 }
+.key i.fa-wrench        { background: #646464 }
+.key i.fa-cutlery       { background: #50C35F }
+.key i.fa-medkit        { background: #F70606 }
+.key i.fa-laptop        { background: #5961A5 }
+.key i.fa-cogs          { background: #272736 }
+.key i.fa-bolt          { background: #F9803A }
+.key i.fa-leaf          { background: #46802B }
+.key i.fa-fighter-jet   { background: #08BFE3 }
+.key i.fa-suitcase      { background: #793408 }
+.key i.fa-dollar        { background: #034D46 }
+.key i.fa-h-square      { background: #A70000 }
+.key i.fa-group         { background: #0056F8 }
+.key i.fa-sun-o         { background: #FCC90D }

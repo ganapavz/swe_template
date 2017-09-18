@@ -1,0 +1,27 @@
+@media screen, projection, tv, handheld {
+	.theme-index #ia .d1,
+	.audience-index #ia .d1,
+	.theme-index-with-asides #ia .d1 { /* d1 for 'down one level' */
+		width: 50%;
+		*width: 49% !important; /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+	}
+	.theme-index-with-asides #ia {
+		width: 100%;
+	}
+	.theme-index-with-asides h1 {
+		margin-left: -.25em;
+	}
+
+	.franchise-index #ia .d1,
+	.home #ia .d1 { /* d1 for 'down one level' */
+		width: 33%;
+	}
+	.franchise-index-with-asides #ia {
+		width: 67%;
+	}
+	.franchise-index-with-asides #ia .d1 {
+		width: 50%;
+		*width: 49.95% !important; /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+	}
+
+}

@@ -1,0 +1,87 @@
+// -------------------------------------
+//   base settings
+// -------------------------------------
+
+@import "../modules/base";
+
+// -------------------------------------
+//   base partials
+// -------------------------------------
+
+@import "partials/reset";
+// TODO: set this in a base file?
+@import "partials/helpers/visibility";
+@import "partials/helpers/clearfix";
+@import "partials/helpers/typography";
+@import "partials/typography";
+@import "partials/headings";
+@import "partials/misc";
+
+// -------------------------------------
+//   template components
+// -------------------------------------
+
+@import "partials/pattern/form/xor";
+@import "partials/template/init";
+@import "partials/template/access-links";
+@import "partials/template/header";
+@import "partials/template/logo";
+@import "partials/template/header-tools";
+//@import "partials/pattern/form/placeholder";
+@import "partials/pattern/form/search-suggestions";
+@import "partials/pattern/social-media/instagram";
+@import "partials/template/nav-site";
+@import "partials/template/header-banner";
+@import "partials/template/nav-site-bar";
+@import "partials/template/breadcrumbs";
+@import "partials/template/page-content";
+@import "partials/template/global-alert";
+@import "partials/template/asides";
+@import "partials/template/document-properties";
+@import "partials/template/nav-section";
+@import "partials/template/footer";
+@import "partials/template/resize-events";
+@import "partials/template/layout-small";
+@import "partials/template/page-options";
+@import "partials/template/global-survey";
+//@import "partials/base/keyboard-focus";
+
+// -------------------------------------
+//   page models
+// -------------------------------------
+
+@import "partials/page-model/ia";
+@import "partials/page-model/myaccount";
+@import "partials/page-model/aggregation";
+
+// -------------------------------------
+//   ui patterns
+// -------------------------------------
+
+@import "partials/pattern/slide-runner";
+@import "partials/pattern/butterfly";
+@import "partials/pattern/skin-loading";
+@import "partials/pattern/list";
+@import "partials/pattern/table";
+@import "partials/pattern/scrollable";
+@import "partials/pattern/aside/headings";
+@import "partials/pattern/contact";
+@import "partials/pattern/form/form";
+@import "partials/pattern/form/button";
+@import "partials/pattern/form/placeholder";
+@import "partials/pattern/status";
+@import "partials/pattern/url";
+@import "partials/pattern/tabs";
+@import "partials/pattern/minicart";
+@import "partials/template/print";
+@import "partials/pattern/smart-banner";
+@import "partials/pattern/tabs/slidetabs";
+@import "partials/pattern/widgets/search";
+@import "partials/pattern/widgets/my-account-login";
+@import "partials/pattern/quick-exit";
+
+// -------------------------------------
+//   third-party libs
+// -------------------------------------
+
+@import "../modules/footable";

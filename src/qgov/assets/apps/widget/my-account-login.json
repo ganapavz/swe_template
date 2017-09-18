@@ -1,0 +1,33 @@
+{
+	"description": "config for cidm-neo login widget",
+	"allowedPaths": ["/seniors/", "/about/"],
+	"devDomains": ["localhost", "git.develop", "cmsready.qldgovau.ssq.qld.gov.au"],
+	"tstDomains": [],
+	"uatDomains": ["qld-uat.ssq.qld.gov.au", "qld-beta.ssq.qld.gov.au"],
+	"prdDomains": ["www.qld.gov.au"],
+	"devConfig": {
+		"home": "https://cidm-neo.sandpit.test-services.qld.gov.au/DEV/CIDM-NEO/master",
+		"domain": "dev.qld-gov-dev.auth0.com",
+		"webtaskHome": "webtask.qld-gov-dev.auth0.com/ap1/run/dev",
+		"clientID": "681IFQQirt45uAjRnChc1LTBUce9drmf"
+	},
+	"tstConfig": {
+		"home": "https://cidm-neo.sandpit.test-services.qld.gov.au/TST/CIDM-NEO/master",
+		"domain": "tst.qld-gov-dev.auth0.com",
+		"webtaskHome": "webtask.qld-gov-dev.auth0.com/ap1/run/dev",
+		"clientID": "Lw2TORFmtKGPXRm1vLiohmU8HDdooIt2"
+	},
+	"uatConfig": {
+		"home": "https://cidm-neo.sandpit.test-services.qld.gov.au/UAT/CIDM-NEO/master",
+		"domain": "uat.qld-gov-dev.auth0.com",
+		"webtaskHome": "webtask.qld-gov-dev.auth0.com/ap1/run/dev",
+		"clientID": "I8D1zI8wM9tiSDZOzAkrJBnaQXeITV41"
+	},
+	"prdConfig": {
+		"home": "https://cidm-neo.sandpit.test-services.qld.gov.au/PRD/CIDM-NEO/master",
+		"domain": "app.qld-gov-dev.auth0.com",
+		"webtaskHome": "webtask.qld-gov-dev.auth0.com/api/run/prd",
+		"clientID": "wDshwCvlzYyqmYh6N98eBNKLptK9qhSq"
+	}
+
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Discounts map | Seniors | Queensland Government</title>
+
+<!--#set var="franchise" value=""-->
+<!--#set var="title" value="Discounts map"-->
+<!--#include virtual="/assets/includes/global/head-assets.html"-->
+
+	
+	<style type="text/css">
+		#canvas, #map_canvas {
+			width: 100%;
+			height: 470px;
+		}
+	</style>
+
+
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+	
+	<meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=DEPARTMENT NAME; ou=UNIT NAME" />
+	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland" />
+	<meta name="DCTERMS.created" content="2012-09-18" />
+	<meta name="DCTERMS.modified" content="2012-10-11" />
+	<meta name="DCTERMS.title" content="Discounts map | Seniors" />
+	<meta name="DCTERMS.description" content="DESCRIPTION" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION" />
+	<meta name="DCTERMS.identifier" scheme="DCTERMS.URI" content="URL_OF_PAGE" />
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="InteractiveResource" />
+	<meta name="AGLSTERMS.serviceType" scheme="AGLSTERMS.agls-service" content="benefits and entitlements" />
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="seniors" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+	<meta name="DCTERMS.license" scheme="DCTERMS.URI" content="https://creativecommons.org/licenses/by/4.0/" />
+	<!-- PUT CUSTOM METADATA HERE -->
+</head>
+
+<body id="qld-gov-au" class="residents franchise-index">
+
+<!--#include virtual="/assets/includes/global/header.html"-->	
+
+	<div id="page-container"><div class="max-width">
+		<div id="breadcrumbs">
+			<h2>You are here:</h2>
+			<ol>
+<!--#include virtual="/assets/includes/global/breadcrumb-citizen.html"-->
+				<li><a href="/seniors/">Seniors</a></li>
+				<li><a href="/seniors/legal-finance-concessions">Legal, finance and concessions</a></li>
+				<li><a href="/seniors/legal-finance-concessions/seniors-card/">Seniors Card</a></li>
+				<li><a href="../">Search for discounts</a></li>
+				<li class="last-child">Discounts map</li>
+			</ol>
+		</div>
+
+
+		<div id="content-container">
+			<div id="content">
+				<div class="article"><div class="box-sizing"><div class="border" id="article">
+
+<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+					<h1>Discounts map</h1>
+
+<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+
+					<!-- PUT YOUR PAGE CONTENT HERE -->
+					<div id="canvas"></div>
+
+				</div></div></div><!-- end .article, .box-sizing, .border -->
+			</div><!-- end #content -->
+
+			<div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+				<div id="document-properties"><div class="box-sizing">
+					<dl>
+						<dt class="visuallyhidden">Licence</dt>
+						<dd id="document-licence">
+							<a href="http://creativecommons.org/licenses/by/3.0/au/" rel="license" title="Text available under Creative Commons Attribution 3.0 Australia (CC BY 3.0) licence"><img src="/assets/v2/images/licences/by-80x15.png" alt="Creative Commons Attribution 3.0 Australia (CC BY 3.0)"/></a>
+						</dd>
+
+						<dt>Last updated</dt>
+						<dd>11 October 2012</dd>
+					</dl>
+				</div></div>
+
+<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+			</div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+		</div><!-- end #content-container -->
+
+	</div></div><!-- end #page-container, .max-width -->
+
+
+<!--#include virtual="/assets/includes/global/footer-page.html"-->
+
+<script type="text/javascript">
+
+
+// global callback
+var initMaps, info;
+
+
+// closure
+(function( $ ) {
+	var addDataToMap,
+		jsonData, map, markerClusterer,
+		mapReady = false,
+		dataReady = false
+	;
+
+	// add map canvas
+	$( '#canvas' ).append( '<div id="map_canvas" />' );
+
+
+	// add data to the map
+	addDataToMap = function() {
+		// do we have a location?
+		if ( jsonData.location ) {
+			map.setCenter( new google.maps.LatLng( jsonData.location[ 0 ], jsonData.location[ 1 ] ));
+		}
+
+		// loop through businesses
+		$.each( jsonData.matches, function( key, business ) {
+			// loop through outlet locations
+			$.each( business, function( key, outlet ) {
+				// put it on the map?
+				if ( ! outlet[ 0 ][ 'Latitude' ]) {
+					return;
+				}
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng( outlet[ 0 ][ 'Latitude' ], outlet[ 0 ][ 'Longitude' ] ),
+					title: outlet[ 0 ][ 'TradingName (BS)' ],
+					visible: true,
+					animation: google.maps.Animation.DROP,
+					map: map
+				});
+				
+				// marker click, show info box
+				google.maps.event.addListener( marker, 'click', function() {
+					var content = $( '<div class="vcard">' +
+							'<h2 class="fn">' + outlet[ 0 ][ 'TradingName (BS)' ] + '</h2>' +
+							'<p>' + outlet[ 0 ][ 'DiscountDetails (BS)' ] + '</p>' +
+							'<dl>' +
+								// TODO hCard markup won't be right for 13 QGOV (need to parse string)
+								'<dt>Phone</dt><dd class="tel"><span class="type">Work</span><span class="value">' + outlet[ 0 ][ 'telephoneno (OS)' ] + '</span></dd>' +
+								'<dt>Address</dt><dd class="adr"><span class="type">Work</span><span class="street-address">' + outlet[ 0 ][ 'listingaddress (OS)' ] + '</span><br /><span class="locality">' + outlet[ 0 ][ 'listingsuburb (OS)' ] + '</span> <span class="region">' + ( /^4/.test( outlet[ 0 ][ 'listingpostcode (OS)' ] ) ? 'QLD' : 'NSW' ) + '</span> <span class="postal-code">' + outlet[ 0 ][ 'listingpostcode (OS)' ] + '</span></dd>' +
+								'<dt>Hours</dt><dd>TBA</dd>' +
+							'</dl>' +
+						'</div>' )
+					;
+
+					// info box already visible?
+					if ( info ) {
+						info.close();
+					}
+
+					info = new google.maps.InfoWindow({ content: content.get( 0 ) })
+					info.open( map, marker );
+				});
+
+				markerClusterer.addMarker( marker );
+			});
+		});
+
+		// auto fit
+		markerClusterer.fitMapToMarkers();
+	};
+
+
+	// load map libs
+	(function() {
+		var script = document.createElement( 'script' );
+		script.type = 'text/javascript';
+		script.src = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=initMaps&region=AU';
+		document.body.appendChild( script );
+
+		script = document.createElement( 'script' );
+		script.type = 'text/javascript';
+		script.src = qg.swe.paths.assets + 'script/qgov-maps.js';
+		document.body.appendChild( script );
+	}());
+
+
+	// load json data
+	$.getJSON( '/assets/includes/dynamic/business-discount-directory/json.php' + window.location.search, function( data ) {
+		jsonData = data;
+
+		if ( mapReady ) {
+			addDataToMap();
+		}
+		dataReady = true;
+	});
+
+
+	// initialise map with data
+	initMaps = function() {
+		var myOptions = {
+			zoom: 5,
+			center: new google.maps.LatLng( -20.5, 145 ), // Qld = -23, 143?
+			mapTypeId: google.maps.MapTypeId.ROADMAP // ROADMAP, SATELLITE, HYBRID, TERRAIN
+		};
+
+		map = new google.maps.Map( document.getElementById( 'map_canvas' ), myOptions );
+		// TODO markerClusterer script might not be ready here
+		markerClusterer = new MarkerClusterer( map, null, {
+			// TODO think about maxZoom. compare Roma, Toowoomba and Brisbane
+			// can it depend on the number of markers at different zoom levels?
+			// e.g. at higher zoom levels, maybe 3 or 4 markers must exist before being clustered?
+			// maxZoom: 11,
+			imagePath: qg.swe.paths.assets + 'images/skin/map-marker/m',
+			imageSizes: [ 53, 56, 66, 78, 90 ],
+			imageExtension: 'png'
+		});
+
+		if ( dataReady ) {
+			addDataToMap();
+		}
+		mapReady = true;
+	};
+
+
+}( jQuery ));
+
+
+</script>
+
+<!--#include virtual="/assets/includes/global/footer-stats.html"-->
+
+</body>
+</html>

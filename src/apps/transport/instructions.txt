@@ -1,0 +1,59 @@
+How to assemble cbui-qgov-assets-lib from the QGov Online templates.
+
+History
+- 13/09/2012 updated for version 2.3.0 of the QGov Online templates
+
+Download the template zip file from 
+https://www.govdex.gov.au/confluence/display/SSQSWE/Download+template
+(you need a govdex login) and extract the
+qgov-template.zip\www.qld.gov.au\assets\v2\
+directory.
+
+Do a comparison with the v2 folder of the last version of templates (to see what changes there are).
+
+1. Copy flash directory (if there are changes) to 
+src\main\resources\META-INF\resources\qgov\flash
+
+2. Copy images directory (except jquery-ui) to 
+src\main\resources\META-INF\resources\qgov\images
+
+3. Copy script directory to
+src\main\resources\META-INF\resources\qgov\script
+but delete all scripts not listed below:
+ie-layout.js
+init.js
+loader.js
+qgov.js
+qgov-environment.js
+
+4. Update qgov-environment.js by adding the following to the production environments array (currently 'b' in the minified js)
+"https://www.service.transport.qld.gov.au"
+
+5. Update all scripts that refer to qg.swe.paths.assets (or a.swe.paths.assets or similar) to add 
+qg.swe.paths.assetsSuffix (or similar) on the end of the URL 
+(this property is setup in the page template, and is required for the javascript to load resources via the JSF URL). 
+This is really really painful to update (it's easiest to search for 'assets' in the scripts) - but there was only 14 occurences last time.
+
+6. Copy style directory to
+src\main\resources\META-INF\resources\qgov\style
+but delete all stylesheets not listed below:
+layout-large.css
+layout-medium.css
+qgov.css
+qgov-ie.css
+
+7. Using the latest version of Notepad++ (which supports the non-greedy ? operator) update (use the 'Find in Files' feature!)
+the URL's to JSF style by replacing regex
+url\("?(?:\.\.|/assets/v2)/images/(.+?)"?\)
+with
+url\("#{resource['qgov:images/$1']}"\)
+
+8. Remove the button related styles in qgov.css by replacing regex
+form button,\.actions \.button.*?(\.invalid \.alert)
+with
+$1
+
+9. Remove the fieldset and legend related styles in qgov.css by replacing regex
+fieldset\{.*?(label\{)
+with
+$1

@@ -1,0 +1,85 @@
+/* news */
+#asides .news h2 ,
+#asides .news-feature h2 ,
+#asides-primary .news h2,
+#asides-secondary .news h2{
+    @include fonticon($fa-var-file-text-o, .8, 2, 1, $qgov-green);
+}
+
+/* beta */
+#asides .beta h2,
+#asides-primary .beta h2,
+#asides-secondary .beta h2 {
+    padding: .2em 0 .2em 40px;
+}
+#asides .beta {
+    background-image: url(../images/skin/ribbon-beta.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+/* subscribe */
+#asides .subscribe h2 ,
+#asides-primary .subscribe h2,
+#asides-secondary .subscribe h2{
+    @include fonticon($fa-var-rss, .8, 2, 1, $qgov-green);
+}
+
+/* tips */
+#asides .tip h2,
+#asides-primary .tip h2,
+#asides-secondary .tip h2 {
+    @include fonticon($fa-var-lightbulb-o, .8, 2, 1, $qgov-green);
+}
+
+/* tips */
+#asides .help h2,
+#asides-primary .help h2,
+#asides-secondary .help h2 {
+    @include fonticon($fa-var-question-circle, .8, 2, 1, $qgov-green);
+}
+
+/* maps */
+#asides .map h2,
+#asides-primary .map h2,
+#asides-secondary .map h2 {
+    @include fonticon($fa-var-compass, .8, 2, 1, $qgov-green);
+}
+
+/* sponsors */
+#asides .sponsors h2,
+#asides-primary .sponsors h2,
+#asides-secondary .sponsors h2 {
+    @include fonticon($fa-var-star-o, .8, 2, 1, $qgov-green);
+}
+
+/* search */
+#asides .search h2,
+#asides-primary .search h2,
+#asides-secondary .search h2 {
+    @include fonticon($fa-var-search, .8, 2, 1, $qgov-green);
+}
+
+/* your say */
+#asides .your-say h2,
+#asides-primary .your-say h2,
+#asides-secondary .your-say h2 {
+    @include fonticon($fa-var-comment-o, .8, 2, 1, $qgov-green);
+}
+
+/* login */
+#asides .login h2,
+#asides-primary .login h2,
+#asides-secondary .login h2,
+#asides .idw h2,
+#asides-primary .idw h2,
+#asides-secondary .idw h2 {
+    @include fonticon($fa-var-sign-in, .8, 2, 1, $qgov-green);
+}
+
+/* feedback */
+#asides .feedback h2,
+#asides-primary .feedback h2,
+#asides-secondary .feedback h2 {
+    @include fonticon($fa-var-comments-o, .8, 2, 1, $qgov-green);
+}

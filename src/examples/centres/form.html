@@ -1,0 +1,58 @@
+<div class="search-widget" id="tmr-search">
+    <div class="widget-header">
+        <h2>Refine search</h2>
+        <span class="action"><a href="#" id="form-toggle" class="up">Toggle</a></span>
+    </div>
+
+    <form id="app-viewport-tools-search" action="<!--#echo var='action'-->" method="get">
+            <ol class="questions form-section ">
+                <li class="widget-col-full">
+                    <label for="location">
+                        <span class="label">Location</span>
+                    </label>
+                    <input type="text" name="location" id="location" size="30" value="" placeholder="Enter your suburb or click the location finder button" />
+                </li>
+                <li class="widget-col-half-right">
+                    <label for="distance">
+                        <span class="label">Radius</span>
+                    </label>
+                    <select name="distance" id="distance">
+                        <option value="1000">1000km</option>
+                        <option value="50">50km</option>
+                    </select>
+                </li>
+                <li class="widget-col-half-left">
+                    <label for="service">
+                        <span class="label">Service</span>
+                    </label>
+                    <select name="Services" id="service">
+                        <option value="">All</option>
+                        <option value="Licensing">Licensing</option>
+                        <option value="Registration">Registration</option>
+                        <option value="Driver testing">Driver testing</option>
+                        <option value="Pre-registration inspections">Pre-registration inspections</option>
+                        <option value="Industry licensing">Industry licensing</option>
+                        <option value="Driver authorisations">Driver authorisations</option>
+                        <option value="Passenger transport">Passenger transport</option>
+                    </select>
+                </li>
+            </ol>
+            <ol class="footer-section questions">
+                <li class="footer">
+                    <ul class="actions">
+                        <li>
+                            <strong>
+                                <input type="submit" value="Search" />
+                            </strong>
+                        </li>
+                        <li>
+                            <em>
+                                <input class="reset" type="button" value="Reset" />
+                            </em>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </form>
+    </form>
+</div>

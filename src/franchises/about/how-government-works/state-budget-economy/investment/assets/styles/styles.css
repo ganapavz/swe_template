@@ -1,0 +1,54 @@
+div.highcharts-axis-labels.highcharts-xaxis-labels span span {
+	text-decoration: underline;
+	color: #007EB1; 
+}
+
+div.highcharts-axis-labels.highcharts-xaxis-labels span span:hover, div.highcharts-axis-labels.highcharts-xaxis-labels span span.active {
+	text-decoration: underline;
+	color: #007EB1;
+	cursor: pointer;
+	font-weight: 900;
+}
+
+div.highcharts-axis-labels.highcharts-xaxis-labels span span:focus {
+	text-decoration: underline;
+	color: #00f;
+	cursor: pointer;
+	font-weight: 900;
+}
+
+.highcharts-axis-labels.highcharts-xaxis-labels span {
+	z-index: 1 !important;
+}
+
+.highcharts-tooltip span  {
+	z-index:9999 !important;
+	background: #ffffff;
+	background: rgba(255,255,255,.7);
+	padding: 5px !important;
+}
+
+
+td.details-control { background: url('../images/details_open.png') no-repeat center center; }
+tr.shown td.details-control{ background: url('../images/details_close.png') no-repeat center center; }
+tr.shown td.details-title { font-weight: 900;}
+tr.shown { border-top: 1px solid;}
+tr.detailedInfoRow.open { border-bottom: 1px solid;}
+.even td.details-control,tr.shown.even td.details-control { background-color: white; }
+
+tr.summary { cursor: pointer; cursor: hand; }
+
+.detailedInfoRow td {
+	padding: 0 1em 0 1em;
+}
+.detailedInfoRow td p {
+	margin-top: 0;
+}
+p .button {
+    padding-bottom: 0.5em !important;
+    padding-top: 0.5em !important;
+}
+
+p.actions {
+    text-align: right !important;
+}

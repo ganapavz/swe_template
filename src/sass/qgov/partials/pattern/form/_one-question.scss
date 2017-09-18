@@ -1,0 +1,19 @@
+.one-question li,
+.one-question .label,
+.one-question .hint,
+.one-question .alert,
+.one-question .footer,
+.one-question .actions {
+    display: inline !important;
+    padding: 0;
+    font-weight: bold;
+}
+/* hide inline alerts */
+.one-question .alert {
+    display: none !important;
+}
+/* slimmer buttons */
+.one-question input[type="submit"] {
+    padding-top: .3em;
+    padding-bottom: .3em;
+}

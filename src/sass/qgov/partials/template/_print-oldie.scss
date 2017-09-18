@@ -1,0 +1,11 @@
+/* printing */
+@media print {
+	#breadcrumbs a {
+		*border-left: 1px solid $print-breadcrumbs-link-border-color;
+		*padding-left: .5em;
+	}
+	#breadcrumbs .nav-home a {
+		*border-left: none;
+		*padding-left: 0;
+	}
+}

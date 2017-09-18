@@ -1,0 +1,40 @@
+<h2>Internal partners</h2>
+<div id="internal-partners"><p>Nil</p></div>
+<h2>External partners</h2>
+<div id="external-partners"><p>Nil</p></div>
+
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var partnerfile = "<!--#echo encoding="entity" var="partner" -->"
+
+	function getWhereClause( column, value ) {
+		return 'upper("' + column + '") LIKE upper(\'%' + value + '%\')';
+	}
+
+	function displayPartners( type, containerDiv ) {
+		// load json data
+		var sql = 'SELECT \"Implementation partner\" from \"' + partnerfile + '\" WHERE ' + getWhereClause( 'Implementation partner type', type ) + ' ORDER BY 1' ;
+
+		// load data lib
+		swe.load({ name: 'data', url: 'data.js' });
+
+		// configure chart
+		swe.data({
+			container: containerDiv,
+			title: type,
+			// TODO find a way to speed up data pre-loading
+			// data: qg.data.get( sql ) returns a promise?
+			sql: sql,
+			type: 'ul'
+		});
+	}
+
+	displayPartners( 'Internal', 'internal-partners' );
+	displayPartners( 'External', 'external-partners' );
+
+}( jQuery, qg.swe ));
+
+//--></script><!-- end -->

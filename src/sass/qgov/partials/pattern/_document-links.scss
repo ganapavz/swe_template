@@ -1,0 +1,25 @@
+/*
+	Downloadable document links
+	Example:
+	<a href="file.doc" class="download">
+		<span class="title">Document title</span><span class="meta"> (DOC, 50 KB)</span>
+	</a>
+*/
+
+a.download,
+a.download:link,
+a.download:visited {
+	text-decoration: none;
+}
+
+a.meta-link,
+a.meta-link:link,
+a.meta-link:visited {
+	text-decoration: none;
+}
+
+a .title,
+a:link .title,
+a:visited .title {
+	text-decoration: underline;
+}

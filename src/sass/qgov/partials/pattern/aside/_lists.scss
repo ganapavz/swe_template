@@ -1,0 +1,29 @@
+#asides .sponsors ul,
+#asides-primary .sponsors ul,
+#asides-secondary .sponsors ul {
+	list-style: none;
+	padding-left: 0;
+}
+#asides .sponsors li,
+#asides-primary .sponsors li,
+#asides-secondary .sponsors li {
+	list-style: none;
+	float: left;
+	margin: .5em 1em .5em 0;
+}
+
+#asides .login .submit li,
+#asides-primary .login .submit li,
+#asides-secondary .login .submit li {
+	margin-right: 1em;
+}
+#asides .login dt,
+#asides .login dd {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+#asides .login dd {
+	font-weight: bold;
+}

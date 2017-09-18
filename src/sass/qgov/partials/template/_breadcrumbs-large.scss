@@ -1,0 +1,23 @@
+#breadcrumbs li {
+	float: left;
+}
+#breadcrumbs li.last-child {
+  display: block;
+}
+
+@media screen,projection,tv,handheld {
+	#breadcrumbs {
+		float: none;
+	}
+	#breadcrumbs li {
+      	@include fonticon($fa-var-chevron-right, 0.4, 0.7);
+	}
+}
+
+#breadcrumbs li.nav-home:before {
+	content: none;
+	padding: 0;
+}
+#breadcrumbs li:before {
+	min-height: 1.4em; /* fix for large breadcrumbs not wrapping correctly (FF) */
+}

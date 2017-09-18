@@ -1,0 +1,6 @@
+@media screen,projection,tv,handheld {
+	/* Skip links display poorly */
+	#access a {
+		*white-space: nowrap; /* IE 6 & 7 */
+	}
+}

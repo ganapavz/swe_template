@@ -1,0 +1,146 @@
+@media screen, projection, tv, handheld {
+
+/* Medium styles*/
+
+
+#nav-prime .max-width {
+		background: #fff url("../images/skin/nav-gradient.png") 0 0 repeat-x;
+		padding-top: 0.5em;
+}
+
+#nav-prime .max-width #nav-prime-inner {
+	background: transparent url("../images/skin/nav-bg-01.png") 0 0 no-repeat;
+	margin: 0 0.7em;
+}
+
+#nav-prime ul {
+	height: 153px;
+	line-height: 1em;
+	text-align: center;
+	padding: 0;
+	margin: 0 0.75em;
+	/* *padding-left: 3%;*/
+	*display: inline; /* IE6&7 */
+	*zoom: 1; /* IE6&7 */
+}
+#nav-prime ul li {
+	border-left: none;
+	width: 7.5em;
+}
+#nav-prime a {
+	padding: 9.5em 0 0;
+}
+#nav-prime a:hover {
+	font-weight: bold;
+}
+#nav-prime a:hover {
+	font-weight: bold;
+}
+
+#nav-prime a#getting {
+	background: transparent url("../images/ui/nav-getting.png") 50% 60% no-repeat;
+		_background: transparent url("../images/ui/ie-nav-getting.png") 50% 60% no-repeat;
+}
+#nav-prime a#running {
+	background: transparent url("../images/ui/nav-running.png") 50% 60% no-repeat;
+		_background: transparent url("../images/ui/ie-nav-running.png") 50% 60% no-repeat;
+}
+#nav-prime a#employing {
+	background: transparent url("../images/ui/nav-employing.png") 50% 60% no-repeat;
+		_background: transparent url("../images/ui/ie-nav-employing.png") 50% 60% no-repeat;
+}
+#nav-prime a#trade {
+	background: transparent url("../images/ui/nav-trade.png") 50% 60% no-repeat;
+		_background: transparent url("../images/ui/ie-nav-trade.png") 50% 60% no-repeat;
+}
+#nav-prime a#industry {
+	background: transparent url("../images/ui/nav-industry.png") 50% 60% no-repeat;
+		_background: transparent url("../images/ui/ie-nav-industry.png") 50% 60% no-repeat;
+}
+#nav-prime a#regional {
+	background: transparent url("../images/ui/nav-regional.png") 50% 60% no-repeat;
+		_background: transparent url("../images/ui/ie-nav-regional.png") 50% 60% no-repeat;
+}
+#nav-prime a:hover#getting {
+	background: transparent url("../images/ui/nav-getting-hover.png") 50% 60% no-repeat;
+		_background: transparent url("../images/ui/ie-nav-getting-hover.png") 50% 60% no-repeat;
+}
+#nav-prime a:hover#running {
+	background: transparent url("../images/ui/nav-running-hover.png") 50% 60% no-repeat;
+		_background: transparent url("../images/ui/ie-nav-running-hover.png") 50% 60% no-repeat;
+}
+#nav-prime a:hover#employing {
+	background: transparent url("../images/ui/nav-employing-hover.png") 50% 60% no-repeat;
+		_background: transparent url("../images/ui/ie-nav-employing-hover.png") 50% 60% no-repeat;
+}
+#nav-prime a:hover#trade {
+	background: transparent url("../images/ui/nav-trade-hover.png") 50% 60% no-repeat;
+		_background: transparent url("../images/ui/ie-nav-trade-hover.png") 50% 60% no-repeat;
+}
+#nav-prime a:hover#industry {
+	background: transparent url("../images/ui/nav-industry-hover.png") 50% 60% no-repeat;
+		_background: transparent url("../images/ui/ie-nav-industry-hover.png") 50% 60% no-repeat;
+}
+#nav-prime a:hover#regional {
+	background: transparent url("../images/ui/nav-regional-hover.png") 50% 60% no-repeat;
+		_background: transparent url("../images/ui/ie-nav-regional-hover.png") 50% 60% no-repeat;
+}
+
+
+
+#topics #section-getting-into {
+	background: url("../images/home/getting.png") 0 0 no-repeat #eaeaea;
+	padding-left: 210px;
+}
+#topics #section-running {
+	background: url("../images/home/running.png") 0 0 no-repeat #eaeaea;
+	padding-left: 210px;
+}
+#topics #section-employing {
+	background: url("../images/home/employing.png") 0 0 no-repeat #eaeaea;
+	padding-left: 210px;
+}
+#topics #section-trade {
+	background: url("../images/home/trade.png") 0 0 no-repeat #eaeaea;
+	padding-left: 210px;
+}
+#topics #section-industry {
+	background: none #eaeaea;
+	padding-left: 30px;
+}
+#topics #section-regional {
+	background: url("../images/home/regional.png") 0 0 no-repeat #eaeaea;
+	padding-left: 210px;
+}
+
+
+
+
+.franchise-index-with-asides #asides {
+	width: 100%;
+	float: none;
+}
+
+.franchise-index-with-asides #content #asides .asides {
+	float: left;
+	width: 45%;
+}
+
+#nav-home {
+	width: 100%;
+}
+#services, #maps {
+	width: 40%;
+}
+
+
+#news .news-box-sizing, #services .services-box-sizing,  #maps .maps-box-sizing {
+	margin-right:0.5em;
+}
+
+#nav-home #ia li.d1 {
+	*min-width: 49.5%; /* for IE7 */
+}
+
+
+}

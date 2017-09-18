@@ -1,0 +1,70 @@
+/* twitter: https://dev.twitter.com/terms/display-guidelines */
+.tweet {
+	padding: .5em 0 .5em 58px;
+	position: relative;
+}
+.tweet a:focus,
+.tweet:hover :link,
+.tweet:hover :visited {
+	color: $social-tweet-hover-link-color;
+}
+
+.tweet a {
+	text-decoration: none;
+}
+
+a:focus .tweet-user-name,
+a:hover .tweet-user-name,
+a:focus .title,
+a:hover .title,
+a.twitter-timeline-link:focus,
+a.twitter-timeline-link:hover,
+a.tweet-timestamp:focus,
+a.tweet-timestamp:hover {
+	text-decoration: underline;
+}
+
+.tweet-user-name {
+	font-weight: bold;
+}
+.tweet-full-name {
+	font-size: 90%;
+	margin-left: .5em;
+}
+.tweet-full-name,
+.tweet-meta {
+	color: $social-tweet-meta-color;
+	white-space: nowrap;
+}
+
+.tweet img {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	margin-left: -58px; /* IE6 friendly */
+}
+.tweet-text {
+	margin: 0;
+}
+
+.twitter-atreply .meta {
+	opacity: .5;
+}
+.twitter-hashtag .meta {
+	opacity: .7;
+}
+
+.tweet-actions {
+	padding-left: 20px;
+	background: url(../images/twitter/bird_16_blue.png) no-repeat;
+	display: block;
+	min-height: 16px;
+	_height: 16px; /* IE6 */
+}
+
+.retweet-icon {
+	display: inline-block;
+	width: 15px;
+	height: 14px;
+	background: -96px 0 url(../images/twitter/everything-spritev2.png) no-repeat;
+}

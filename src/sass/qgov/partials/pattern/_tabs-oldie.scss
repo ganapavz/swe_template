@@ -1,0 +1,13 @@
+@media screen,projection,tv,handheld {
+	/* tabs */
+	.tabs li {
+		_margin-right: 0; /* Not sure where IE6 was getting 1.5em from???? */
+	}
+	.tabs li a {
+		_color: $tabs-li-link-color-oldie !important;
+		_text-decoration: none !important;
+	}
+	.tabs li.current a {
+		_color: $tabs-li-current-link-color-oldie !important;
+	}
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-AU" xml:lang="en-AU">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+<title>Variances | ICT dashboards | Queensland Government</title>
+<!--#set var="franchise" value="ictdashboards"-->
+<!--#set var="title" value="Variances"-->
+<!--#include virtual="/assets/includes/global/head-assets.html"-->
+<meta content="An explanation of the variances of department’s initiatives that have a red or amber status." name="description" />
+<meta content="DJAG, initiatives, variances, projects, status, red, amber, progress" name="keywords" />
+<link href="http://purl.org/dc/terms/" rel="schema.DCTERMS" />
+<link href="http://www.agls.gov.au/agls/terms/" rel="schema.AGLSTERMS" />
+<meta content="c=AU; o=The State of Queensland; ou=Department of Science, Information Technology, Innovation and the Arts; ou=Corporate and Shared Services" scheme="AGLSTERMS.GOLD" name="DCTERMS.creator" />
+<meta content="corporateName=The State of Queensland; jurisdiction=Queensland" scheme="AGLSTERMS.AglsAgent" name="DCTERMS.publisher" />
+<meta content="2013-11-13" name="DCTERMS.created" />
+<meta content="2013-11-21" name="DCTERMS.modified" />
+<meta name="DCTERMS.title" content="Variances | ICT dashboards" />
+<meta content="An explanation of the variances of department’s initiatives that have a red or amber status." name="DCTERMS.description" />
+<meta content="Government" scheme="AGLSTERMS.APAIS" name="DCTERMS.subject" />
+<!--#include virtual="/assets/includes/global/head-meta-identifier.html"-->
+<meta content="Text" scheme="DCTERMS.DCMIType" name="DCTERMS.type" />
+<meta content="guidelines" scheme="AGLSTERMS.agls-document" name="AGLSTERMS.documentType" />
+<meta content="all" scheme="AGLSTERMS.agls-audience" name="DCTERMS.audience" />
+<meta content="Queensland" scheme="AGLSTERMS.AglsJuri" name="DCTERMS.jurisdiction" />
+<meta content="http://creativecommons.org/licenses/by/3.0/au/" scheme="DCTERMS.URI" name="DCTERMS.license" />
+</head>
+<body class="residents ictdashboards" id="qld-gov-au">
+<!-- noindex -->
+<!--#include virtual="/assets/includes/global/header.html"-->
+<!-- endnoindex -->
+<div id="page-container">
+<div class="max-width">
+<!-- noindex -->
+<div id="breadcrumbs">
+<h2>You are here:</h2>
+<ol>
+<!--#include virtual="/assets/includes/global/breadcrumb-ictdashboards.html"-->
+<li class="last-child">Variances</li>
+</ol>
+</div>
+<!-- endnoindex -->
+<div id="content-container">
+<div id="content">
+<div class="article">
+<div class="box-sizing">
+<div class="border">
+<!--#include virtual="/assets/includes/global/global-alert.html"-->
+<h1>Variances</h1>
+<!--#include virtual="/assets/includes/global/page-options-pre.html"--><table id="projects-list" border="0">
+<thead>
+<tr>
+<th>Status</th><th>Initiative name</th><th>Explanation of variance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>Renewable and Photographic Licensing System Renewal Project</td>
+<td>Timeframe and cost are amber due to the project identifing a number of changes to both business requirements and functionality to improve customer experience.</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Machinery-of-government 2009&mdash;Office of Fair Safe Work Queensland Migration&mdash;75 William St</td>
+<td>Timeframe is amber due to a delay caused by higher priority activities needing to be addressed and a change in Government ICT direction. This has resulted in the necessity to revisit the proposed solution.</td>
+</tr>
+<tr>
+<td colspan="3">
+<p>Key:</p>
+<ul>
+<li>Green&mdash;Everything is to plan and the initiative is within tolerance</li>
+<li>Amber&mdash;The initiative is still within tolerance, but pushing the bounds</li>
+<li>Red&mdash;The initiative is forecasted to, or has exceeded tolerances</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div id="asides">
+<div class="box-sizing">
+<div class="border">
+<!--#include virtual="/assets/includes/global/global-aside.html"-->
+</div>
+</div>
+</div>
+<div id="meta-wrapper">
+<div class="meta-box-sizing">
+<div class="border">
+<div id="document-properties">
+<div class="box-sizing">
+<dl>
+<dt class="visuallyhidden">Licence</dt>
+<dd id="document-licence">
+<a title="Text available under Creative Commons Attribution 3.0 Australia (CC BY 3.0) licence" rel="license" href="http://creativecommons.org/licenses/by/3.0/au/">
+<img alt="Creative Commons Attribution 3.0 Australia (CC BY 3.0)" src="/assets/v2/images/licences/by-80x15.png" />
+</a>
+</dd>
+<script type="text/javascript">
+			var tintRAGStatusCells = function(){
+				var status = {
+					R: 'rag-red',
+					A: 'rag-amber',
+					G: 'rag-green'
+				};
+				
+				$.each( status, function( statusCode, className ) {
+					$( 'td' )
+						.filter(function() {
+							return $.trim( $( this ).text() ) === statusCode;
+						})
+						.addClass( className )
+					;
+				});
+			};
+			$(tintRAGStatusCells);
+			
+			/* Enhance all image links with a lightbox */
+				$(function(){
+					$( 'a.large-table' ).butterfly({
+						contentDefaultWidth: '800px',
+						closeButton: true,
+						closeButtonCorner: 'tr',
+						galleryContainers: '.image-gallery',
+						closeButtonImage: qg.swe.paths.assets+'images/skin/button-close.png',
+						callbackPostOpen: tintRAGStatusCells
+					});
+				});
+
+		</script>
+<style type="text/css">
+			td.rag-amber {
+			  background: #fc0 !important;
+			}
+			td.rag-red {
+			  background: red !important;
+			  color: white;
+			  font-weight: bold;
+			}
+			td.rag-green {
+			  background: green !important;
+			  color: white;
+			}
+		</style>
+<dt>Last updated</dt>
+<dd>21 November 2013</dd>
+</dl>
+</div>
+</div>
+<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+</div>
+</div>
+</div>
+<!-- noindex -->
+</div>
+</div>
+</div>
+<!--#include virtual="/assets/includes/global/footer.html"-->
+<!-- endnoindex -->
+</body>
+</html>

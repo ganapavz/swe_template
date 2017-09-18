@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Map search with layer | Tools | Queensland Government</title>
+
+<!--#set var="franchise" value=""-->
+<!--#set var="title" value="Map search with layer"-->
+<!--#set var="licence" value="http://creativecommons.org/licenses/by/3.0/au/"-->
+<!--#include virtual="/assets/includes/global/head-assets.html"-->
+
+	<style type="text/css">
+		#canvas, #map_canvas {
+			width: 100%;
+			height: 470px;
+		}
+	</style>
+
+	<meta name="description" content="Display a map based on a location search, with additional layers included" />
+	<meta name="keywords" content="QGAP, Queensland Government Agent Program" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+	
+	<meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=Department of Science, Information Technology, Innovation and the Arts
+; ou=Smart Service Queensland" />
+	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland" />
+	<meta name="DCTERMS.created" content="2012-10-11" />
+	<meta name="DCTERMS.modified" content="2013-02-04" />
+	<meta name="DCTERMS.title" content="Map search with layer | Tools" />
+	<meta name="DCTERMS.description" content="Display a map based on a location search, with additional layers included" />
+<!--#include virtual="/assets/includes/global/head-meta-identifier.html"-->
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="InteractiveResource" />
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="dataset" />
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="all" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+	<meta name="DCTERMS.license" scheme="DCTERMS.URI" content="https://creativecommons.org/licenses/by/4.0/" />
+</head>
+
+<body id="qld-gov-au" class="franchise-index">
+
+<!--#include virtual="/assets/includes/global/header.html"-->	
+	
+	<div id="page-container"><div class="max-width">
+		<div id="breadcrumbs">
+			<h2>You are here:</h2>
+			<ol>
+<!--#include virtual="/assets/includes/global/breadcrumb-global.html"-->
+				<li class="last-child">Map search with layer</li>
+			</ol>
+		</div>
+	
+		<div id="content-container">
+			<div id="content">
+				<div class="article"><div class="box-sizing"><div class="border" id="article">
+
+<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+					<h1>Map search with layer</h1>
+
+<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+
+					<!-- PUT YOUR PAGE CONTENT HERE -->
+					<div id="canvas"></div>
+
+					<div>
+						<label for="location">Location</label>
+						<input id="location" size="40" />
+						<button>Search</button>
+					</div>
+
+				</div></div></div><!-- end .article, .box-sizing, .border -->
+			</div><!-- end #content -->
+
+			<div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+				<div id="document-properties"><div class="box-sizing">
+					<dl>
+						<dt class="visuallyhidden">Licence</dt>
+						<dd id="document-licence">
+							<a href="http://creativecommons.org/licenses/by/3.0/au/" rel="license" title="Text available under Creative Commons Attribution 3.0 Australia (CC BY 3.0) licence"><img src="/assets/v2/images/licences/by-80x15.png" alt="Creative Commons Attribution 3.0 Australia (CC BY 3.0)"/></a>
+						</dd>
+
+						<dt>Last updated</dt>
+						<dd>4 February 2013</dd>
+					</dl>
+				</div></div>
+
+<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+			</div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+		</div><!-- end #content-container -->
+
+	</div></div><!-- end #page-container, .max-width -->
+
+
+<!--#include virtual="/assets/includes/global/footer-page.html"-->
+
+<script type="text/javascript">
+
+
+// global callback
+var initMaps, info;
+
+
+// closure
+(function( $ ) {
+	var addDataToMap,
+		displayResult,
+		// markerClusterer,
+		map,
+		marker,
+		geocoder
+	;
+
+	// add map canvas
+	$( '#canvas' ).append( '<div id="map_canvas" />' );
+
+
+	// add data to the map
+	addDataToMap = function() {
+		var DistributionEntityMAPS, Pipeline, Buffer,
+			// Assets,
+			listener1, listener2
+		;
+
+		// add KML to map
+		DistributionEntityMAPS = new google.maps.KmlLayer( 'http://www.qld.gov.au/assets/data/DRE.kmz', {
+		 	clickable: true,
+			preserveViewport: true
+		});
+		
+		// // add KML to map
+		Buffer = new google.maps.KmlLayer( 'http://www.qld.gov.au/assets/data/400m_buffer.kmz', {
+			// preserveViewport: true,
+			clickable: true
+		});
+		
+		// add KML to map
+		Pipeline = new google.maps.KmlLayer( 'http://www.qld.gov.au/assets/data/Pipeline.kmz', {
+			clickable: true,
+			preserveViewport: true
+		});
+
+		// load in order: https://gist.github.com/1170104
+		DistributionEntityMAPS.setMap(map);
+
+		// Listen for when coneLayer is drawn
+		var listener1 = google.maps.event.addListener( DistributionEntityMAPS, 'metadata_changed', function() {
+			// When it's drawn (metadata changed), clear listener, draw next ...
+			google.maps.event.clearListeners( DistributionEntityMAPS, 'metadata_changed');
+			Buffer.setMap( map );
+
+			// .. and listen for when next is drawn
+			var listener2 = google.maps.event.addListener( Buffer, 'metadata_changed', function() {
+				google.maps.event.clearListeners( Buffer, 'metadata_changed');
+				// load last layer
+				Pipeline.setMap( map );
+			});
+		});
+
+		// add KML to map
+		// Assets = new google.maps.KmlLayer( 'http://data.qld.gov.au/civic-infrastructure/energy-supply/seq-water-grid/Assets.kmz', {
+		// 	clickable: true,
+		// 	preserveViewport: true,
+		// 	map: map
+		// });
+	};
+
+
+	// load map libs
+	(function() {
+		var script = document.createElement( 'script' );
+		script.type = 'text/javascript';
+		script.src = 'http://maps.googleapis.com/maps/api/js?sensor=false&callback=initMaps&region=AU';
+		document.body.appendChild( script );
+
+		// don't need marker clusterer?
+		// script = document.createElement( 'script' );
+		// script.type = 'text/javascript';
+		// script.src = qg.swe.paths.assets + 'script/qgov-maps.js';
+		// document.body.appendChild( script );
+	}());
+
+
+	// initialise map with data
+	initMaps = function() {
+		var myOptions = {
+			zoom: 5,
+			center: new google.maps.LatLng( -20.5, 145 ), // Qld = -23, 143?
+			mapTypeId: google.maps.MapTypeId.ROADMAP // ROADMAP, SATELLITE, HYBRID, TERRAIN
+		};
+
+		map = new google.maps.Map( document.getElementById( 'map_canvas' ), myOptions );
+
+		geocoder = new google.maps.Geocoder();
+
+		marker = new google.maps.Marker({
+			position: new google.maps.LatLng( -23, 143 ),
+			visible: false,
+			map: map
+		});
+
+
+		// TODO markerClusterer script might not be ready here
+		// markerClusterer = new MarkerClusterer( map, null, {
+		// 	// TODO think about maxZoom. compare Roma, Toowoomba and Brisbane
+		// 	// can it depend on the number of markers at different zoom levels?
+		// 	// e.g. at higher zoom levels, maybe 3 or 4 markers must exist before being clustered?
+		// 	// maxZoom: 11,
+		// 	imagePath: qg.swe.paths.assets + 'images/skin/map-marker/m',
+		// 	imageSizes: [ 53, 56, 66, 78, 90 ],
+		// 	imageExtension: 'png'
+		// });
+
+		addDataToMap();
+	};
+
+
+	displayResult = function( geocodeResult ) {
+		map.panTo( geocodeResult.geometry.location );
+		map.setZoom( 14 );
+		marker.setOptions({
+			animation: google.maps.Animation.DROP,
+			position: geocodeResult.geometry.location,
+			title: geocodeResult.formatted_address,
+			visible: true
+		});
+	};
+
+
+	// handle search
+	$( 'button' ).on( 'click', function() {
+		var location = $( '#location' ).val();
+
+		if ( location.length > 0 ) {
+			// geocode it
+
+			geocoder.geocode({
+				address: location,
+				region: 'AU'
+
+			}, function( results, status ) {
+				if ( status === google.maps.GeocoderStatus.OK ) {
+					// display it
+					displayResult( results[ 0 ]);
+
+				} else {
+					$( document ).status( 'show', {
+						lightbox: true,
+						status: 'fail',
+						title: 'Geocoding failed',
+						body: '<p>' + status + '</p>'
+					})
+				}
+			});
+		}
+	});
+
+
+}( jQuery ));
+
+
+</script>
+
+<!--#include virtual="/assets/includes/global/footer-stats.html"-->
+
+</body>
+</html>

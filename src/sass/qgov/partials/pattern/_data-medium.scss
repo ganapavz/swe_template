@@ -1,0 +1,19 @@
+/* Medium and large layout, use grid layout for definition list */
+$dl-grid-indent: 8em;
+
+/* definition list details */
+dl.grid {
+	position: relative;
+	margin: .5em 0 .5em 0;
+	padding-left: $dl-grid-indent;
+
+	dd {
+		padding: 0 0 .75em;
+	}
+	dt {
+		margin-top: 0;
+		position: absolute;
+		margin-left: -1 * $dl-grid-indent;
+		width: $dl-grid-indent - 1;
+	}
+}

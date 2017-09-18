@@ -1,0 +1,248 @@
+#nav-process {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 1.5em;
+  padding: 0;
+  background: $nav-process-background-color;
+  font-size: 1em;
+  display: table;
+  position: relative;
+  color: $nav-process-color;
+
+  .cf {
+    @extend %clearfix;
+  }
+}
+
+// Clearfix
+/*
+#nav-process .cf:after,
+#nav-process .cf:before {
+  content: "";
+  display: table;
+}
+
+#nav-process .cf:after {
+  clear: both;
+}
+
+#nav-process .cf {
+  zoom: 1;
+}
+*/
+
+#nav-process .article .box-sizing,
+#nav-process .box-sizing {
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+#nav-process .nav-wrapper {
+  float: left;
+  margin-right: 10px;
+  /* width:100%; for full width dropdown */
+}
+
+#nav-process ul, #nav-process ul li {
+  padding: 0;
+  margin: 0;
+}
+
+#nav-process .nav a:hover {
+  text-decoration: none;
+  padding: 0;
+}
+
+#nav-process a,
+#nav-process a:link,
+#nav-process a:visited,
+#nav-process a:active {
+  padding: 10px !important;
+}
+
+#nav-process a.dropdown,
+#nav-process a.dropdown:link,
+#nav-process a.dropdown:visited,
+#nav-process a.dropdown:active {
+  padding: 0;
+}
+
+#nav-process .nav .current {
+  background-color: $nav-process-nav-current-background-color;
+  font-weight: bold;
+}
+
+#nav-process .nav .current a {
+  background-color: $nav-process-nav-current-background-color;
+}
+
+#nav-process .nav .current a:hover {
+  background-color: $nav-process-nav-current-background-color;
+  cursor: default;
+}
+
+#nav-process .nav .future {
+  background-color: $nav-process-nav-future-background-color;
+}
+
+#nav-process .nav .future a {
+  background-color: $nav-process-nav-future-background-color;
+}
+
+#nav-process .nav .future a:hover {
+  background-color: $nav-process-nav-future-background-color;
+  cursor: default;
+}
+
+#nav-process .nav .current a:hover,
+#nav-process .nav .future a:hover {
+  background: none;
+  cursor: default;
+}
+
+#nav-process span.title {
+  float: left;
+  height: 20px;
+  padding: 10px;
+  margin: 0 0 0 0;
+  display: block;
+}
+
+#nav-process span.back {
+  width: 1em;
+  height: 20px;
+  padding: 11px;
+  margin: -1px 1.2em 0 0;
+  float: left;
+  display: block;
+}
+
+#nav-process span.forward {
+  width: 1em;
+  height: 20px;
+  padding: 11px;
+  margin: -1px 0 0 0;
+  float: left;
+  display: block;
+}
+
+#nav-process span.back a,
+#nav-process span.forward a {
+  color: $nav-process-span-link-color;
+  text-decoration: none;
+}
+
+#nav-process span.back a:hover,
+#nav-process span.forward a:hover {
+  color: $nav-process-span-link-hover-color;
+  text-decoration: none;
+  background-color: $nav-process-span-link-hover-background-color;
+}
+
+#nav-process a .page-number {
+  margin: 0 10px 0 0 !important;
+  padding: 0;
+  font-weight: bold;
+  speak: none;
+  float: left;
+  color: $nav-process-page-number-color;
+  min-width: 1.5em;
+  text-align: center;
+  @include alpha-attribute('background', rgba($nav-process-page-number-background-color, 0.8), $nav-process-page-number-background-color);
+}
+
+#nav-process a[href]:hover .page-number {
+  background: white;
+}
+
+/*------------------------------------*\
+    NAV
+\*------------------------------------*/
+#nav-process .nav {
+  float: left;
+  padding: 0;
+  margin: 0;
+  /* width:100%; for full width dropdown */
+}
+
+#nav-process .nav ul {
+  -webkit-font-smoothing: antialiased;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+}
+
+#nav-process .nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  min-width: 25%;
+  /* width:100%; for full width dropdown */
+}
+
+#nav-process .nav li ul,
+#nav-process .nav li ol {
+  transition: all .25s ease-out;
+  list-style: none;
+  background: $nav-process-nav-list-background-color;
+  width: 100%;
+  float: left;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  z-index: 1;
+  padding: 0;
+  margin-top: 5px !important;
+}
+
+#nav-process .nav li:hover ul,
+#nav-process .nav li:hover ol {
+  opacity: 1;
+  top: 35px;
+  visibility: visible;
+  padding: 0;
+  margin: 0;
+  background: $nav-process-nav-hover-list-background-color;
+}
+
+#nav-process .nav li ul li,
+#nav-process .nav li ol li {
+  float: none;
+  width: 100%;
+}
+
+#nav-process .nav li ul a:hover,
+#nav-process .nav li ol a:hover {
+  background: $nav-process-nav-list-link-hover-background-color;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-process .nav a {
+  transition: all .25s ease-out;
+  background: $nav-process-nav-link-background-color;
+  color: $nav-process-nav-link-color;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+}
+
+#nav-process .nav .dropdown:after {
+  content: " \25bc";
+}
+
+#nav-process .nav a.dropdown {
+  padding: 10px;
+  background-color: $nav-process-nav-link-dropdown-background-color;
+  display: block;
+}
+
+#nav-process .nav:hover,
+#nav-process .nav a.dropdown:hover {
+  background: $nav-process-nav-hover-background-color;
+}

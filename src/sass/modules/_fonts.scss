@@ -1,0 +1,66 @@
+
+// -------------------------------------
+//   type setting variables
+// -------------------------------------
+
+$base-font-size: 16;
+$base-line-height: $base-font-size * 1.5;
+
+// -------------------------------------
+//   import the font-awesome files
+// -------------------------------------
+
+@import "fonts/variables";
+
+//@font-face {
+//   font-family: 'FontAwesome';
+//   src: url('#{$fa-font-path}/fontawesome-webfont.eot?v=#{$fa-version}');
+//   src: url('#{$fa-font-path}/fontawesome-webfont.eot?#iefix&v=#{$fa-version}') format('embedded-opentype'),
+//   url('#{$fa-font-path}/fontawesome-webfont.woff?v=#{$fa-version}') format('woff'),
+//   url('#{$fa-font-path}/fontawesome-webfont.ttf?v=#{$fa-version}') format('truetype'),
+//   url('#{$fa-font-path}/fontawesome-webfont.svg?v=#{$fa-version}#fontawesomeregular') format('svg');
+   //src: url('#{$fa-font-path}/FontAwesome.otf') format('opentype'); // used when developing fonts
+//   font-weight: normal;
+//   font-style: normal;
+//}
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+// -------------------------------------
+//   google font/s
+// -------------------------------------
+
+//@import url("//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic");
+
+// -------------------------------------
+//   master set of font combinations
+// -------------------------------------
+
+// sans-serif
+$arial: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$arial-rounded: "ArialRoundedMT", Arial, "Helvetica Neue", Helvetica, sans-serif;
+$arial-rounded-bold: "ArialRoundedMTBold", Arial, "Helvetica Neue", Helvetica, sans-serif;
+$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$lucida-grande: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+$trebuchet: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+$trebuchet-helvetica: "Trebuchet MS", Helvetica, Arial, sans-serif;
+$trebuchet-verdana: "Trebuchet MS", Verdana, sans-serif;
+$verdana: Verdana, Geneva, sans-serif;
+$verdana-arial: Verdana, Arial, Helvetica, sans-serif;
+$verdana-helvetica: Verdana, Helvetica, Arial, sans-serif;
+$roboto: Roboto, Arial, Helvetica, sans-serif;
+$lato: 'Lato', Helvetica, Arial, sans-serif;
+
+// serif
+$baskerville: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+$georgia: Georgia, Times, "Times New Roman", serif;
+$lucida-bright: "Lucida Bright", Georgia, serif;
+$tnr: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+
+// monospaced
+$consolas: Consolas, monaco, monospace;
+$courier: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+$monaco: Monaco, Consolas, "Lucida Console", monospace;
+
+// icons
+$font-awesome: FontAwesome;

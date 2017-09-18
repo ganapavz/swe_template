@@ -1,0 +1,82 @@
+<div class="section" id="main">
+    <div id="main-sections">
+        <div class="section" id="feature-search">
+
+            <div class="section-header">
+                <h2>Search</h2>
+            </div>
+
+            <div class="contents">
+                <form action="//find.search.qld.gov.au/s/search.html" method="get">
+                    <div class="search-wrapper">
+                        <input type="hidden" name="form" value="simple-adv" />                      
+                        <label for="search-query-primary" class="visuallyhidden">Search website</label>
+                        <input type="text" name="query" id="search-query-primary" size="30" value="" placeholder="Search website e.g. holidays"/>
+                        <div class="submit">
+                            <!--<input type="image" id="feature-search-submit" src="/assets/v2/images/skin/button-search-featured.png" value="Search"/>-->
+                            <button id="feature-search-submit">Search</button>
+                        </div>
+                    </div>
+                    <div class="hidden">
+                        <input type="hidden" name="num_ranks" value="10"/>
+                        <input type="hidden" name="tiers" value="off"/>
+                        <input type="hidden" name="collection" value="qld-gov"/>
+                        <input type="hidden" name="profile" value="qld"/>
+                        <!-- For fluster template -->
+                        <!-- <input type="hidden" name="form" value="fluster" /> -->
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <!-- end #feature-search -->
+        <div class="section" id="questions">
+            <h2>Popular questions</h2>
+
+            <div class="contents">
+                <ol>
+                    <li class="even">Where can I find a <a href="/questions/#section-where-can-i-find-a-list-of-government-departments">list of government departments?</a>
+                    <div class="frag-linx-content expanded" id="frag-linx-content-section-where-can-i-find-a-list-of-government-departments" aria-live="assertive" aria-hidden="false" aria-busy="false" aria-relevant="additions text" style="display: block;">
+
+<p>See a list of <a href="http://www.qld.gov.au/contact-us/departments/index.html">all government departments</a>.</p>
+</div>
+                    </li>
+                    <li>When are <a href="/questions/#section-when-are-school-and-public-holidays-in-queensland">school and public holidays in Queensland?</a></li>
+                    <li class="even">How do I find out about <a href="/questions/#section-how-do-i-find-out-about-the-law-in-queensland">the law in Queensland?</a></li>
+                    <li>How do I <a href="/questions/#section-how-do-i-find-a-job-in-queensland">find a job in Queensland?</a></li>
+                    <li class="even">How much <a href="/questions/#section-how-much-stamp-duty-will-i-have-to-pay-when-buying-a-property">stamp duty will I have to pay when buying a property?</a></li>
+                    <li>Where can I find <a href="/questions/#section-where-can-i-find-information-about-camping-in-queensland">information about camping in Queensland?</a></li>
+                    <li class="even">How do I <a href="/questions/#section-how-do-i-change-my-address">change my address?</a></li>
+                    <li>Which <a href="/questions/#section-which-grants-and-rebates-are-currently-available">grants and rebates are currently available?</a></li>
+                    <li class="even">How do I <a href="/questions/#section-how-do-i-tender-for-government-business">tender for Government business?</a></li>
+                    <li>How do I <a href="/questions/#section-how-do-i-pay-my-rego-vehicle-registration">pay my rego (vehicle registration)?</a></li>
+                    <li class="even">How do I <a href="/questions/#section-how-do-i-apply-for-a-seniors-card">apply for a Seniors card?</a></li>
+                    <li>How do I <a href="/questions/#section-how-do-i-hire-a-baby-capsule">hire a baby capsule?</a></li>
+                    <li class="even">How do I <a href="/questions/#section-how-do-i-complain-about-goods-or-services">complain about goods or services?</a></li>
+                    <li>What is a <a href="/questions/#section-what-is-a-ppsr-check">PPS Register check (formerly REVS)?</a></li>
+                    <li class="even">What can I do if I don't understand or agree with <a href="/questions/#section-what-can-i-do-if-i-dont-understand-or-agree-with-my-land-valuation-notice">my land valuation notice?</a></li>
+                </ol>
+            </div>
+            <!-- end .contents -->
+        </div>
+        <!-- end #questions -->
+    </div>
+</div><!-- end #main -->
+
+<script type="text/javascript"><!-- // initialise ASAP! (to avoid flicker)
+var $questions = $( '#questions' );
+$questions.fragLinx();
+$questions.find( 'h2').on( 'click', function () {
+    $( this).toggleClass( 'active' );
+    if ( $questions.find( '.contents' ).is( ':visible') ) {
+        $questions.find( '.contents' ).slideUp( 'fast', function () {
+            $( '.frag-linx-content' ).remove();
+            $( this).hide();
+        });
+    } else {
+        $questions.find( '.contents' ).slideDown( 'fast', function () {
+            $( this).show();
+        });
+    }
+});
+// --></script>

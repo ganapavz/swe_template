@@ -1,0 +1,35 @@
+@media screen,projection,tv,handheld {
+	/* Slideshow controls */
+	.compact-slideshow-active .sliding-tray, /* needed */
+	.compact-slideshow-active .section /* seems to help */
+	{
+		_zoom: 1;
+		_width: 100%;
+	}
+	.slideshow .section /* needed */
+	{
+		_text-align: left;
+	}
+	.compact-slideshow-active .viewport,
+	.compact-slideshow-active .controlbar /* needed */
+	{
+		_zoom: 1;
+		_overflow: hidden;
+	}
+	/*.compact-slideshow-active .actions {
+		_width: 8.5em;  IE6 needs a little more room 
+	}*/
+	/* Adjustment for IE6 */
+	* html .compact-slideshow-active .controlbar a span {
+		*margin-top: 1.2em;
+	}
+	/* Adjustment for IE7 (must be separate declaration to IE6 block) */
+	*+html .compact-slideshow-active .controlbar a span {
+		*margin-top: 1.2em;
+	}
+	.compact-slideshow-active .panels a span.button-symbol,
+	.compact-slideshow-active .panels a:link span.button-symbol,
+	.compact-slideshow-active .panels a:visited span.button-symbol {
+		_background-position: 7px 7px; /* IE6 needs help. */
+	}
+}

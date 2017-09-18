@@ -1,0 +1,52 @@
+@media screen,projection,tv,handheld {
+	#nav-site,
+	#header .max-width,
+	#header .box-sizing,
+	#nav-site .max-width,
+	#nav-site .box-sizing,
+	#nav-site ul ul li,
+	#nav-site ul ul li a,
+	#search-form div,
+	#breadcrumbs ol,
+	#page-container,
+	#content-container,
+	#nav-section .box-sizing,
+	.article .box-sizing,
+	.article .box-sizing .border,
+	.questions li,
+	#asides .box-sizing,
+	#asides .border,
+	.aside,
+	.section-header,
+	.page-options,
+	#footer .box-sizing,
+	#qg-logo,
+	#qg-coa,
+	#site-name,
+	#footer,
+	ul.tabs,
+	.viewport,
+	.viewport-inner,
+	.short-list .viewport,
+	.short-list ul,
+	.image-gallery,
+	#featured {
+		_zoom: 1; /* IE6 */
+	}
+
+	#page-container,
+	#page-container .max-width,
+	#pre-page-options,
+	#meta-wrapper,
+	#meta-wrapper .meta-box-sizing,
+	.article .box-sizing .border,
+	#meta-wrapper .meta-box-sizing .border,
+	#page-feedback-privacy,
+	ol.questions,
+	#pre-page-options,
+	#pre-page-options ul,
+	#post-page-options,
+	#post-page-options ul {
+		*zoom: 1; /* IE6 & 7 */
+	}
+}

@@ -1,0 +1,51 @@
+@media screen,projection,tv,handheld {
+	.comparison,
+	.comparison-inner {
+		*zoom: 1; /* Make containers behave in IE6 & 7 */
+	}
+
+	/* gradients
+
+	These filters work in IE6-9, but are only used for IE6-8 due to conditional comment loading this CSS.
+
+	Note that IE9 supports CSS border-radius.
+	Filters conflict with border-radius (they fill the bounding rectangle).
+	So we are not using gradients for IE9.
+
+	IE10 supports CSS for gradients and border-radius. These filters will not work in IE10.
+
+	Alpha colours are supported, using the format #AARRGGBB (not rgba!)
+
+	http://msdn.microsoft.com/en-us/library/ms532997(v=vs.85).aspx
+	*/
+	.comparison {
+		background: transparent;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFB8DDEF',EndColorStr='#FFFFFF'); /* AARRGGBB */
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFB8DDEF',EndColorStr='#FFFFFF')"; /* AARRGGBB */
+	}
+	.comparison-inner {
+		background: transparent;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFE5F2FF',EndColorStr='#FFFFFF'); /* AARRGGBB */
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFE5F2FF',EndColorStr='#FFFFFF')"; /* AARRGGBB */
+	}
+	.advantage {
+		background: transparent;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFBDEABF',EndColorStr='#FFFFFF'); /* AARRGGBB */
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFBDEABF',EndColorStr='#FFFFFF')"; /* AARRGGBB */
+	}
+	.advantage .comparison-inner {
+		background: transparent;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFE7FCEC',EndColorStr='#FFFFFF'); /* AARRGGBB */
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFE7FCEC',EndColorStr='#FFFFFF')"; /* AARRGGBB */
+	}
+	.disadvantage {
+		background: transparent;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFAB5AC',EndColorStr='#FFFFFF'); /* AARRGGBB */
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFAB5AC',EndColorStr='#FFFFFF')"; /* AARRGGBB */
+	}
+	.disadvantage .comparison-inner {
+		background: transparent;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFECE5',EndColorStr='#FFFFFF'); /* AARRGGBB */
+		-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#FFFFECE5',EndColorStr='#FFFFFF')"; /* AARRGGBB */
+	}
+}

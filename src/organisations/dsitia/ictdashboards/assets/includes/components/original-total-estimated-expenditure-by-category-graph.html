@@ -1,0 +1,32 @@
+<h2>Original total estimated expenditure by category</h2>
+<div id="original-total-estimated-expenditure-by-category">Loading...</div>
+
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var datafile = "<!--#echo encoding="entity" var="data" -->";
+
+	function originalTotalEstimatedExpenditureBycategory() {
+		// load json data
+		var sql = 'SELECT \"Category\", sum(\"Original total estimated expenditure\")* 100 / (SELECT sum(\"Original total estimated expenditure\") from "' + datafile + '") as \"Percentage\" from "' + datafile + '" group by \"Category\"';
+
+		// load data lib
+		swe.load({ name: 'data', url: 'data.js' });
+
+		swe.data({
+			container: 'original-total-estimated-expenditure-by-category',
+			title: 'Original total estimated expenditure by category',
+			headings: [ 'Category', 'Percentage' ],
+			formats: { Percentage: '%' },
+			sql: sql,
+			type: 'pie'
+		});
+	}
+
+	originalTotalEstimatedExpenditureBycategory();
+
+}( jQuery, qg.swe ));
+
+//--></script><!-- end -->

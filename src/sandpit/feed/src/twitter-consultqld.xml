@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	https://api.twitter.com/1/statuses/user_timeline.xml?include_entities=true&include_rts=true&screen_name=consultqld&count=20
+-->
+
+<statuses type="array"> 
+<status> 
+  <created_at>Mon Oct 24 08:00:02 +0000 2011</created_at> 
+  <id>128380212462370816</id> 
+  <text>ePetition about Halifax Bay Wetlands National Park, which petitioners want returned to allowing recreational use http://t.co/GVCJ0iuP</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="133" start="113"> 
+        <url>http://t.co/GVCJ0iuP</url> 
+        <display_url>ow.ly/76zPH</display_url> 
+        <expanded_url>http://ow.ly/76zPH</expanded_url> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Mon Oct 24 07:20:56 +0000 2011</created_at> 
+  <id>128370374290321408</id> 
+  <text>Public holidays and state school holidays are under review. Have your say on Qld's holidays by the end of October http://t.co/wfOiZB6S</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="134" start="114"> 
+        <url>http://t.co/wfOiZB6S</url> 
+        <display_url>ow.ly/76zMK</display_url> 
+        <expanded_url>http://ow.ly/76zMK</expanded_url> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Thu Oct 20 07:17:09 +0000 2011</created_at> 
+  <id>126919867629699072</id> 
+  <text>Comment on the Tweed sand bypass, making the Tweed River entrance safe for boats, with no impact on Gold Coast beaches http://t.co/sRe6w8iX</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="139" start="119"> 
+        <url>http://t.co/sRe6w8iX</url> 
+        <display_url>ow.ly/7349i</display_url> 
+        <expanded_url>http://ow.ly/7349i</expanded_url> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Wed Oct 19 08:30:02 +0000 2011</created_at> 
+  <id>126575822172725249</id> 
+  <text>ePetition about Stafford Road and South Pine Road intersection, Everton Park, which petitioners would like upgraded http://t.co/ynsfcfL6</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>1</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="136" start="116"> 
+        <url>http://t.co/ynsfcfL6</url> 
+        <display_url>ow.ly/71Mgd</display_url> 
+        <expanded_url>http://ow.ly/71Mgd</expanded_url> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Wed Oct 19 06:54:12 +0000 2011</created_at> 
+  <id>126551706900250624</id> 
+  <text>Have your say on the Environmental Impact Statement for Brisbane's proposed Cross River Rail. Closing 5pm Friday http://t.co/86EKPxhT</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>1</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="133" start="113"> 
+        <url>http://t.co/86EKPxhT</url> 
+        <display_url>bit.ly/rh9VPU</display_url> 
+        <expanded_url>http://bit.ly/rh9VPU</expanded_url> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 18 07:07:43 +0000 2011</created_at> 
+  <id>126192719809888257</id> 
+  <text>ePetition about concessions for the use of metered LPG. Petitioners refer to Seniors Card and Qld Pensioners in particular...</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls/> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Mon Oct 17 07:14:20 +0000 2011</created_at> 
+  <id>125831995141009408</id> 
+  <text>ePetition now open about Childers Hospital. Petitioners are asking for a more constant presence of doctors on duty http://t.co/224gTuGz</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="135" start="115"> 
+        <url>http://t.co/224gTuGz</url> 
+        <display_url>ow.ly/6ZcY6</display_url> 
+        <expanded_url>http://ow.ly/6ZcY6</expanded_url> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Sat Oct 15 04:20:02 +0000 2011</created_at> 
+  <id>125063357320527873</id> 
+  <text>ePetition about land at 53-57 Mill Road, Buderim. Petitioners want Gov to purchase this land for community facilities http://t.co/S1j7CpJn</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="138" start="118"> 
+        <url>http://t.co/S1j7CpJn</url> 
+        <display_url>ow.ly/6X4FX</display_url> 
+        <expanded_url>http://ow.ly/6X4FX</expanded_url> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Sat Oct 15 01:35:03 +0000 2011</created_at> 
+  <id>125021836076519424</id> 
+  <text>Have your say on a minimum standard for non-parole periods http://t.co/4T33AwGo</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="79" start="59"> 
+        <url>http://t.co/4T33AwGo</url> 
+        <display_url>bit.ly/pRs0Qk</display_url> 
+        <expanded_url>http://bit.ly/pRs0Qk</expanded_url> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Thu Oct 13 07:13:26 +0000 2011</created_at> 
+  <id>124382218142494720</id> 
+  <text>ePetition now open about the 3am lockout for licensed premises. Petitioners would like the practice to be abolished http://t.co/wUu8ojYg</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>4</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="136" start="116"> 
+        <url>http://t.co/wUu8ojYg</url> 
+        <display_url>ow.ly/6VRku</display_url> 
+        <expanded_url>http://ow.ly/6VRku</expanded_url> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Wed Oct 12 07:03:28 +0000 2011</created_at> 
+  <id>124017323957944320</id> 
+  <text>Have your say about Qld's practical driving test. How can the test be strengthened for current and future generations? http://t.co/UyrIKRkM</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>1</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="139" start="119"> 
+        <url>http://t.co/UyrIKRkM</url> 
+        <display_url>bit.ly/qOVEbD</display_url> 
+        <expanded_url>http://bit.ly/qOVEbD</expanded_url> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 11 08:30:04 +0000 2011</created_at> 
+  <id>123676728416665600</id> 
+  <text>Different laws for debt collection cost consumers and business money. Read the discussion paper and have your say http://t.co/v300IFrk</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>1</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="134" start="114"> 
+        <url>http://t.co/v300IFrk</url> 
+        <display_url>bit.ly/qUUfck</display_url> 
+        <expanded_url>http://bit.ly/qUUfck</expanded_url> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 11 07:00:37 +0000 2011</created_at> 
+  <id>123654217331257344</id> 
+  <text>ePetition about the Standard Time Act 1894, which petitioners want updated to reflect changes since the 19th century http://t.co/WVFnIi7P</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>4</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="137" start="117"> 
+        <url>http://t.co/WVFnIi7P</url> 
+        <display_url>ow.ly/6ToNi</display_url> 
+        <expanded_url>http://ow.ly/6ToNi</expanded_url> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Mon Oct 10 07:10:46 +0000 2011</created_at> 
+  <id>123294384874717184</id> 
+  <text>ePetition open about a railway crossing for Telegraph Road, Bracken Ridge http://ow.ly/6Sc2Y</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>2</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="92" start="74"> 
+        <url>http://ow.ly/6Sc2Y</url> 
+        <expanded_url/> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Sat Oct 08 04:15:02 +0000 2011</created_at> 
+  <id>122525385031294976</id> 
+  <text>ePetition now open about the Office of the Public Advocate, which petitioners want returned http://ow.ly/6Q8Q2</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="110" start="92"> 
+        <url>http://ow.ly/6Q8Q2</url> 
+        <expanded_url/> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Sat Oct 08 01:00:14 +0000 2011</created_at> 
+  <id>122476362295554048</id> 
+  <text>Review Brisbane's Long Term Infrastructure Plan. Have your say about transport, water, energy, waste management &amp; more http://ow.ly/6Q8RS</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>1</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="137" start="119"> 
+        <url>http://ow.ly/6Q8RS</url> 
+        <expanded_url/> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Thu Oct 06 07:13:09 +0000 2011</created_at> 
+  <id>121845430945456128</id> 
+  <text>ePetition open about the D'Aguilar Highway. Petitioners are concerned about the safety of the road http://ow.ly/6P0rX</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="117" start="99"> 
+        <url>http://ow.ly/6P0rX</url> 
+        <expanded_url/> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Thu Oct 06 02:30:03 +0000 2011</created_at> 
+  <id>121774185956642816</id> 
+  <text>ePetition open about waste transfer station opposite Prince Charles and Holy Spirit Hospitals in Chermside http://ow.ly/6OPKG</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="125" start="107"> 
+        <url>http://ow.ly/6OPKG</url> 
+        <expanded_url/> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Thu Oct 06 00:56:57 +0000 2011</created_at> 
+  <id>121750758608732160</id> 
+  <text>Do you live near Airlie Beach? Contribute to the Shute Harbour Road revitalisation project http://ow.ly/6OPJw</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>0</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="109" start="91"> 
+        <url>http://ow.ly/6OPJw</url> 
+        <expanded_url/> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+<status> 
+  <created_at>Tue Oct 04 07:22:46 +0000 2011</created_at> 
+  <id>121123075612876800</id> 
+  <text>Have your say on new body corporate regulation relating to duplexes http://t.co/y1Soj5WM</text> 
+  <source>&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;</source> 
+  <truncated>false</truncated> 
+  <favorited>false</favorited> 
+  <in_reply_to_status_id></in_reply_to_status_id> 
+  <in_reply_to_user_id></in_reply_to_user_id> 
+  <in_reply_to_screen_name></in_reply_to_screen_name> 
+  <retweet_count>2</retweet_count> 
+  <retweeted>false</retweeted> 
+  <user> 
+    <id>103741682</id> 
+    <name>Qld Government</name> 
+    <screen_name>consultqld</screen_name> 
+    <location>Brisbane, Australia</location> 
+    <description>Engaging Queenslanders - Have your say and contribute to government directions that affect you. For enquiries call 13 QGOV (13 74 68).</description> 
+    <profile_image_url>http://a3.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url> 
+    <profile_image_url_https>https://si0.twimg.com/profile_images/1143514441/twitter-thumbnail_normal.jpg</profile_image_url_https> 
+    <url>http://www.getinvolved.qld.gov.au</url> 
+    <protected>false</protected> 
+    <followers_count>722</followers_count> 
+    <profile_background_color>ecf5f9</profile_background_color> 
+    <profile_text_color>333333</profile_text_color> 
+    <profile_link_color>1482d1</profile_link_color> 
+    <profile_sidebar_fill_color>ffffff</profile_sidebar_fill_color> 
+    <profile_sidebar_border_color>eeeeee</profile_sidebar_border_color> 
+    <friends_count>34</friends_count> 
+    <created_at>Mon Jan 11 03:18:57 +0000 2010</created_at> 
+    <favourites_count>0</favourites_count> 
+    <utc_offset>36000</utc_offset> 
+    <time_zone>Brisbane</time_zone> 
+    <profile_background_image_url>http://a0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url> 
+    <profile_background_image_url_https>https://si0.twimg.com/profile_background_images/199401101/twitter-gi-1024x768_01.jpg</profile_background_image_url_https> 
+    <profile_background_tile>false</profile_background_tile> 
+    <profile_use_background_image>true</profile_use_background_image> 
+    <notifications></notifications> 
+    <geo_enabled>true</geo_enabled> 
+    <verified>false</verified> 
+    <following></following> 
+    <statuses_count>366</statuses_count> 
+    <lang>en</lang> 
+    <contributors_enabled>false</contributors_enabled> 
+    <follow_request_sent></follow_request_sent> 
+    <listed_count>35</listed_count> 
+    <show_all_inline_media>true</show_all_inline_media> 
+    <default_profile>false</default_profile> 
+    <default_profile_image>false</default_profile_image> 
+    <is_translator>false</is_translator> 
+  </user> 
+  <geo/> 
+  <coordinates/> 
+  <place/> 
+  <possibly_sensitive>false</possibly_sensitive> 
+  <contributors/> 
+  <entities> 
+    <user_mentions/> 
+    <urls> 
+      <url end="88" start="68"> 
+        <url>http://t.co/y1Soj5WM</url> 
+        <display_url>bit.ly/pLnWw7</display_url> 
+        <expanded_url>http://bit.ly/pLnWw7</expanded_url> 
+      </url> 
+    </urls> 
+    <hashtags/> 
+  </entities> 
+</status> 
+</statuses> 

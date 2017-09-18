@@ -1,0 +1,11 @@
+@media screen,projection,tv,handheld {
+	/* max-width for images */
+	/*.aside img,*/
+	.figure img,
+	.cut-in img,
+	.cut-in-alt img,
+	.featured img {
+		_width: 100%;
+	}
+
+}

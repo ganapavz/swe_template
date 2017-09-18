@@ -1,0 +1,13 @@
+/* acceptance marks */
+#asides .accepted ul {
+	padding-left: 0;
+}
+#asides .accepted li {
+	display: inline;
+	list-style: none;
+	margin-right: 8px; /* minimum required by BPAY branding "isolation guide" */
+}
+#asides .accepted img {
+	display: inline;
+	box-shadow: none;
+}

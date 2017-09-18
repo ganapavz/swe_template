@@ -1,0 +1,37 @@
+/* NOTE: these selectors must be separate or the entire property block will be ignored
+http://stackoverflow.com/questions/11459051/firefox-moz-placeholder-not-working */
+
+
+/* placeholder colour in search fields */
+#header ::-moz-placeholder,
+#banner ::-moz-placeholder,
+.search ::-moz-placeholder {
+	color: $form-placeholder-color;
+	opacity: 1;
+}
+#header ::-webkit-input-placeholder,
+#banner ::-webkit-input-placeholder,
+.search ::-webkit-input-placeholder {
+	color: $form-placeholder-color;
+}
+#header :-ms-input-placeholder,
+#banner :-ms-input-placeholder,
+.search :-ms-input-placeholder {
+	color: $form-placeholder-color;
+}
+#header .placeholdersjs,
+#banner .placeholdersjs,
+.search .placeholdersjs {
+	color: $form-placeholder-color;
+}
+
+/* hide placeholder on focus */
+#header :focus::-moz-placeholder,
+#banner :focus::-moz-placeholder,
+:focus::-moz-placeholder {
+	opacity: 0;
+}
+:focus::-webkit-input-placeholder {
+	direction: ltr;
+	text-indent: -999px;
+}

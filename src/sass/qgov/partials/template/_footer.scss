@@ -1,0 +1,122 @@
+#footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#footer > .max-width {
+
+}
+
+#footer li {
+	padding: .2em .5em;
+}
+
+#footer p {
+	margin: 1.5em 0;
+	font-weight: 900;
+}
+
+#footer a {
+	white-space: nowrap;
+	padding: .2em .5em .3em;
+	display: inline;
+}
+
+#fat-footer {
+	a {
+		display: block; // override #footer
+		margin: 1em 0;
+		padding: 0;
+	}
+
+	h3 a {
+		// adjustments for 180% font on h3
+		margin: .5em 0;
+	}
+}
+
+
+#qg-branding {
+	display: none;
+	// stop vertical margin collapsing
+	overflow: hidden;
+}
+#qg-branding .tagline {
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+
+@media screen,projection,tv,handheld {
+
+	#footer {
+		color: $footer-color;
+		background: $footer-background-color;
+		position: relative; /* cover up shadow from #meta-wrapper */
+		text-align: center;
+		font-family: $font-footer;
+		font-weight: 900;
+
+	}
+	#footer .box-sizing {
+		padding: 1em 1em 4em;
+		font-size: .7rem;		
+	}
+	#fat-footer {
+		text-align: left;
+		font-family: $lato;
+		font-weight: 700;
+		max-width: 82rem;
+		margin: 0 auto 1.2rem auto;
+	}
+	#fat-footer .box-sizing {
+		overflow: hidden;
+		background: $fat-footer-box-sizing-background-color;
+	}
+	#fat-footer .section {
+		float: left;
+	    margin: 0 2.5%;
+		padding-top: 0;
+	}
+	#fat-footer h3 {
+		border-bottom: 1px solid $fat-footer-xx-border-color;
+	}
+	#footer li {
+		border-left: 1px solid $footer-link-color;
+	}
+	#footer li:first-child {
+		border-left: none;
+	}
+	#fat-footer li {
+		background: none;
+		padding: 0;
+		border-left: none;
+	}
+	#fat-footer .max-width a {
+		white-space: normal;
+	}
+	#languages {
+		width: 20em;
+		text-align: left;
+	}
+	#footer .box-sizing h3 {
+		clear: both;
+		line-height: 1;
+	}
+	#footer a,
+	#footer a:link,
+	#footer a:visited {
+		color: $footer-link-color;
+	}
+	#fat-footer a,
+	#fat-footer a:link,
+	#fat-footer a:visited {
+		color: $fat-footer-link-color;
+	}
+	#fat-footer h3 a,
+	#fat-footer h3 a:link,
+	#fat-footer h3 a:visited {
+		color: $fat-footer-headings-link-color;
+	}
+}

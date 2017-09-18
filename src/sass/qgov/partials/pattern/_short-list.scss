@@ -1,0 +1,17 @@
+@media screen,projection,tv,handheld {
+	.short-list {
+      .toggle {
+        a {
+          padding: .5em 1em .5em 20px;
+          background: $short-list-toggle-link-background-color url("../images/skin/toggle-grey-plus.png") 7px 0.85em no-repeat;
+          text-decoration: none;
+        }
+        a {
+          background-image: url("../images/skin/toggle-grey-minus.png");
+        }
+        a:hover {
+          background-color: $short-list-toggle-link-hover-background-color;
+        }
+      }
+    }
+}

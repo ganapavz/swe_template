@@ -1,0 +1,18 @@
+fieldset.group { border-top: none; }
+fieldset.group > legend { width: 99.3%; margin-left: -0.75em; padding: 0.5em 0.5em 0em; }
+fieldset.cue > legend { position: absolute; left: 0%; }
+#polls fieldset.cue > legend { position: relative; }
+#polls fieldset.cue > legend span { display: block; white-space: normal; width: 90%; }
+fieldset.cue .fieldLabel { width: 20.5%; }
+fieldset.cue .fieldValue { margin-left: 22.8%; }
+div.Matrix fieldset.cue .fieldValue { margin-left: 0%; }
+fieldset.inline legend { position: static; }
+input.primary { margin-bottom: 0em; }
+
+/* IE7 inline-block fixes */
+.fieldLabel { zoom: 1; display: inline; }
+.fieldLabel .label { zoom: 1; display: inline; }
+.fieldValue { zoom: 1; display: inline; }
+.fieldValue table label { zoom: 1; display: inline; }
+.fieldValueSearch { zoom: 1; display: inline; }
+.labelAbove { zoom: 1; display: inline; }

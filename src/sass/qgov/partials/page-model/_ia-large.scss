@@ -1,0 +1,41 @@
+@media screen, projection, tv, handheld {
+	.theme-index #ia .d1,
+	.audience-index #ia .d1 { /* d1 for 'down one level' */
+		width: 33%;
+	}
+	.theme-index-with-asides #ia {
+		width: 67%;
+	}
+	.theme-index-with-asides #ia .d1 {
+		width: 50%;
+		*width: 49.95% !important; /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+	}
+
+	.franchise-index #ia .d1,
+	.home #ia .d1 {
+		width: 25%;
+		*width: 24.95% !important; /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+	}
+	.franchise-index-with-asides #ia {
+		width: 75.4%;
+	}
+	.franchise-index-with-asides #ia .d1 {
+		width: 33%;
+	}
+
+	.audience-index #ia #section-about {
+		float: left;
+		width: 66%;
+	}
+	.audience-index #ia #section-about .d1 {
+		width: 50%;
+	}
+	.audience-index #ia #section-for {
+		float: left;
+		width: 34%;
+	}
+	.audience-index #ia #section-for .d1 {
+		width: 100%;
+	}
+
+}

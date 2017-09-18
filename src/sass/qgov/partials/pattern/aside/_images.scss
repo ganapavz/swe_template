@@ -1,0 +1,62 @@
+/* images in asides and features */
+.aside img,
+.featured img,
+  /*#related-promotions img,*/
+.page-news img.thumb,
+.home .news-items .section img {
+  max-width: 100%;
+  height: auto;
+}
+
+#content .diagram img,
+#asides .key img,
+#asides .diagram img,
+#asides .feed img,
+#asides button img,
+#related-promotions .feed img,
+.aside .feed a img, /* feed icon */
+#related-promotions button img,
+#asides img.for-css-replacement,
+#related-promotions img.for-css-replacement,
+.aside .ssq-minicart-cards img {
+  border: none;
+  box-shadow: none;
+}
+
+img[width="0"] {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+// legend (used on maps)
+#asides .key {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li, img {
+    display: inline;
+  }
+}
+
+#asides .sponsors img,
+#asides-primary .sponsors img,
+#asides-secondary .sponsors img {
+  height: 64px;
+  border: none;
+  box-shadow: none;
+}
+
+#featured .section img {
+  width: 284px;
+  height: 113px;
+}
+
+.home #featured .section img {
+  width: 373px;
+  height: 189px;
+}
+
+.featured img {
+  margin-top: 1.5em;
+}

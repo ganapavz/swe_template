@@ -1,0 +1,27 @@
+#featured #featured-primary,
+#featured #featured-secondary {
+	float: left;
+	width: 50%;
+}
+#featured #featured-primary .inner {
+	padding: 0 1em 0 0;
+}
+#featured #featured-secondary .inner {
+	padding: 0 0 0 1em;
+}
+#featured #featured-primary .inner {
+	padding: 1em 1em 0 0;
+}
+
+#featured #featured-secondary ul {
+	padding: 0;
+}
+#featured #featured-secondary li {
+	list-style: none;
+}
+#featured #featured-secondary h3 {
+	margin-bottom: 0;
+}
+#featured #featured-secondary p {
+	margin-top: 0;
+}

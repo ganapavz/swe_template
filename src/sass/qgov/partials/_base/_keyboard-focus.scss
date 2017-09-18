@@ -1,0 +1,8 @@
+/* Important for keyboard access! */
+.compact-slideshow-active .controlbar a.keyboard-focus {
+	outline: none;
+}
+a.keyboard-focus,
+.compact-slideshow-active .controlbar a.keyboard-focus span {
+	outline: 2px solid $leaflet-container-focus-border-color;
+}

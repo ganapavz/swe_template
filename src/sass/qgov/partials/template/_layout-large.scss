@@ -1,0 +1,707 @@
+@media screen, projection, tv, handheld {
+
+  /* layout-large - 1024 */
+
+  // ios6 svg replacement
+  .ios6,
+  .no-svg {
+    #qg-logo img,
+    #qg-coa img {
+      display: none;
+    }
+
+    #qg-logo a,
+    #qg-coa a {
+      background: url('../images/skin/qg-coa-bg.png') no-repeat;
+      display: inline-block;
+      width: 287px;
+      height: 50px;
+    }
+
+    &.retina {
+      #qg-logo a,
+      #qg-coa a {
+        background: url('../images/skin/qg-coa-bg-retina.png') no-repeat;
+        background-size: 287px 50px;
+      }
+    }
+  }
+
+  body #access {
+    margin-bottom: 32px;
+  }
+
+  a {
+    display: inline;
+    white-space: normal;
+    padding: 0;
+  }
+
+  #header .box-sizing,
+  #banner .box-sizing,
+  #nav-site .box-sizing,
+  #page-container,
+  #fat-footer {
+    padding: 0 0.7em;
+  }
+
+  #header-bg {
+    display: block;
+  }
+
+  #header .current-area {
+    background: $header-current-area-background;
+    background-color: $header-current-area-background-color;
+  }
+
+  #breadcrumbs {
+    width: 100%;
+
+    ol {
+      margin-left: em(50);
+      margin-right: em(50);
+
+      li a {
+        margin-left: 0;
+        padding-left: 0;
+      }
+    }
+  }
+
+  #nav-section {
+    width: 25%;
+  }
+
+  #nav-site {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+
+    .max-width {
+      .active,
+      .current-area {
+        border: 0 solid $nav-site-current-area-border-color;
+      }
+    }
+
+    ul {
+      @include clearfix();
+      margin: 0 0 0 em(20);
+      padding: 0;
+    }
+
+    li, a {
+      float: left;
+    }
+  }
+
+  #tools {
+    float: right;
+    margin-right: em(50);
+    margin-bottom: em(20); // To push nav-site below logo when wrapping
+
+    li {
+      margin-top: 1em;
+    }
+    li#header-search {
+      margin-top: 1.4em;
+    }
+  }
+
+  #banner #tools {
+    margin-bottom: 0;
+
+    li#header-search {
+      margin-top: 0.4em;
+    }
+  }
+
+  // content
+
+  #content-container {
+    width: 75%;
+
+    .article .box-sizing .border {
+      margin-left: em(50);
+      margin-right: em(50);
+      padding: em(20) 0 0;
+    }
+  }
+
+  .franchise-index-with-asides {
+    #content-container {
+
+      .article .box-sizing .border {
+        margin-right: 0;
+      }
+    }
+
+    .content-row {
+      @include clearfix();
+      clear: both;
+    }
+
+    .announcements {
+//      margin-right: em(50);
+      padding: em(20) 0 em(30);
+    }
+  }
+
+  #page-feedback {
+    clear: both;
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: 133.333%;
+    margin-left: -33.333%;
+
+    form {
+      margin: 0 em(50) em(20);
+      width: 38em;
+    }
+  }
+
+  // asides
+
+  #asides {
+    width: 33%;
+    *width: 32.95% !important; /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+    padding-top: em(16);
+    background: $qgov-lightBlue-gray;
+
+    .box-sizing {
+      padding: 0;
+    }
+
+    .box-sizing .border {
+      background: none;
+    }
+
+    .aside {
+      border-bottom: 1px solid darken($content-container-background-color, 5);
+      font-size: .9em;
+      margin: 0;
+      padding: em(20) em(54) em(24);
+    }
+
+    .aside .section-header .more {
+      display: inline-block;
+      margin-top: em(4);
+    }
+
+    .disater {
+      border: 0 none;
+    }
+
+    .emergency-contact {
+      border: 0 none;
+    }
+
+    .contact {
+      border-bottom: 1px solid darken($asides-feedback-background-color, 5);
+    }
+
+    .news-feature {
+
+      .news-items {
+        padding-top: em(20);
+      }
+
+      h3,
+      .section,
+      .controlbar,
+      .news-content {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .facebook-updates,
+    .twitter-updates {
+      h2 {
+        padding-left: 0;
+      }
+      ol.social-media {
+        padding: 0;
+      }
+    }
+  }
+
+  #content #asides {
+    padding-top: 0;
+  }
+
+  .article,
+  #document-properties {
+    width: 67%;
+  }
+  // 2 column layout
+  .column2 {
+    .article,
+    #document-properties {
+      width: 100%;
+    }
+  }
+
+  #document-properties .box-sizing {
+    padding: em(10) em(50);
+  }
+
+  #post-page-options {
+    li {
+      padding: 1em 0 !important;
+    }
+
+    li.feedback {
+      padding-left: em(50) !important;
+    }
+
+    li.share {
+      padding-right: em(50) !important;
+    }
+
+    h2 {
+      display: inline-block !important;
+      padding-bottom: em(2);
+    }
+  }
+
+  #document-properties dt,
+  #document-properties dd {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #document-properties #document-licence {
+    clear: both;
+    display: inline !important;
+    float: right !important;
+    margin: 0;
+  }
+
+  // min-height for content area
+  #content > .article > .box-sizing > .border {
+    min-height: 30em;
+  }
+
+  .franchise-index .article .box-sizing .border,
+  .franchise-index-with-asides .article .box-sizing .border,
+  .large-application .article .box-sizing .border {
+    padding-left: 1em; /* Extra room not needed on franchise landing page */
+  }
+
+  .large-application .article .box-sizing .border {
+    padding-right: 1em;
+  }
+
+  #footer .box-sizing {
+    padding-left: em(64);
+    padding-right: em(68);
+  }
+
+  #fat-footer {
+    .section {
+      width: 24%;
+      margin: 0;
+    }
+
+    .section#for-qldrs {
+      width: 36%;
+      margin: 0 8%;
+    }
+
+    .section#for-qldrs ul {
+      float: left;
+      width: 44%;
+      margin: -1em 0 0;
+      padding-right: 1em;
+    }
+  }
+
+  #nav-section {
+    clear: none;
+    background: $nav-section-background-color;
+    color: $nav-section-color;
+    padding: 0;
+
+    .box-sizing {
+      overflow: hidden;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 1em;
+    }
+
+    h2, h3 {
+      color: $nav-section-headings-color;
+      padding-left: 2.5em;
+      margin-bottom: 0;
+      margin-top: em(32);
+      @include font-rem(1.3);
+      font-weight: 900;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 1.2em;
+    }
+
+    ul li {
+      //padding: 0.1em 0.7em 0.2em 3.7em;
+      padding: 0.6em 0.7em 0.7em 3.7em;
+      margin: 0;
+      @include fonticon($fa-var-chevron-right, 0.5, 0.7);
+      position: relative;
+      width: auto;
+    }
+
+    ul li:before, ul li:hover:before {
+      background: transparent;
+      position: absolute;
+      top: 1.3em;
+    }
+
+    ul li.current-page {
+      // background-image: url(../images/skin/bg-section-nav-arrow.png);
+      padding-right: 20px;
+    }
+
+    ul ul,
+    ul ol {
+      margin: 0.6em 0 0;
+      padding: 0;
+
+      li {
+        padding: 0.1em 0.7em 0.2em 2.5em;
+      }
+
+      // hide the chevrons
+      li:before,
+      li:hover:before {
+        display: none;
+      }
+    }
+
+    ul a {
+      @include font-rem(.9);
+      font-weight: 700;
+      background: none;
+      //padding: 0.5em 0 0.5em;
+      padding: 0;
+      margin: 0 0 0 1em;
+      display: inline-block;
+    }
+  }
+
+  /* side-by-side comparisons */
+
+  .article {
+
+    .box-sizing {
+      margin: 0;
+      padding: 0;
+    }
+
+    .comparison {
+      float: left;
+      margin: 0 1% 0 0;
+      width: 49%;
+      *width: 48.95% !important; /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+    }
+
+    .comparison-first {
+      margin-right: 1%;
+      clear: left;
+    }
+
+    .comparison-last {
+      margin-left: 1%;
+      margin-right: 0;
+      clear: right;
+    }
+  }
+
+  /* INDEX PAGES (FRANCHISE and THEME) */
+
+  .theme-index .article,
+  .theme-index #document-properties,
+  .theme-index #post-page-options,
+  .theme-index #page-feedback,
+  .theme-index #meta-wrapper,
+  .theme-index-with-asides .article,
+  .theme-index-with-asides #document-properties,
+  .theme-index-with-asides #page-feedback,
+  .theme-index-with-asides #meta-wrapper,
+  .audience-index .article,
+  .audience-index #document-properties,
+  .audience-index #page-feedback,
+  .audience-index #meta-wrapper,
+  .franchise-index .article,
+  .home .article,
+  .franchise-index #document-properties,
+  .franchise-index #post-page-options,
+  .franchise-index #page-feedback,
+  .franchise-index #meta-wrapper,
+  .franchise-index #content-container,
+  .home #document-properties,
+  .home #post-page-options,
+  .home #page-feedback,
+  .home #meta-wrapper,
+  .home #content-container,
+  .franchise-index-with-asides .article,
+  .franchise-index-with-asides #document-properties,
+  .franchise-index-with-asides #post-page-options,
+  .franchise-index-with-asides #page-feedback,
+  .franchise-index-with-asides #meta-wrapper,
+  .franchise-index-with-asides #content-container,
+  .large-application .article,
+  .large-application #document-properties,
+  .large-application #post-page-options,
+  .large-application #page-feedback,
+  .large-application #meta-wrapper,
+  .large-application #content-container {
+    width: 100% !important; // TODO remove this !important
+    margin-left: 0;
+  }
+
+  .theme-index #content .section,
+  .audience-index #content .section,
+  .theme-index-with-asides #content .section,
+  .franchise-index #content .section,
+  .home #content .section,
+  .franchise-index-with-asides #content .section,
+  .large-application #content .section {
+    max-width: 100%;
+  }
+
+  .theme-index-with-asides #asides {
+    margin-top: -2.5em;
+  }
+
+  .audience-index-with-asides #asides,
+  .franchise-index-with-asides #asides {
+    border: none;
+    float: right;
+    width: 25%;
+    *width: 24.95% !important; /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+    margin-top: -2.5em;
+  }
+
+  .emergency-state #asides {
+    margin-top: 0;
+  }
+
+  .franchise-index-with-asides h1 {
+    width: 72.1%;
+  }
+
+  .theme-index-with-asides h1 {
+    width: 64.8%;
+    margin-left: -.5em;
+  }
+
+  /* slot 'related promotions' block under the IA */
+  .franchise-index #related-promotions,
+  .home #related-promotions,
+  .franchise-index-with-asides #related-promotions,
+  .theme-index #related-promotions,
+  .audience-index #related-promotions,
+  .theme-index-with-asides #related-promotions {
+    clear: none;
+    float: left;
+    width: 75%;
+  }
+
+  /* Home styles */
+
+  .home {
+
+    #content-container {
+      width: 100%;
+
+      .article .box-sizing .border {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+      }
+    }
+
+    .content-row {
+      padding: em(50) 0;
+    }
+
+    .content-module {
+      margin: 0 em(50);
+      position: relative;
+    }
+
+    // section header
+    .section-header h2,
+    .section-header h3 {
+      font-size: em(36);
+      line-height: 80%;
+      margin: 0 0 em(40);
+      padding: 0;
+    }
+
+    .sections {
+      margin-top: em(35);
+
+      .section ul {
+        //width: 85%;
+        width: 100%;
+      }
+
+      .section ul li {
+        margin-right: 4em;
+      }
+    }
+
+    // search & popular questions
+
+    .main-search {
+      padding: 0;
+    }
+
+    #main {
+      min-height: em(140);
+
+      #feature-search {
+        height: em(140);
+
+        .section-header,
+        .contents {
+          margin: em(45) 0 0;
+        }
+
+        .contents {
+          height: em(52);
+          width: 50%;
+          padding-right: 5%;
+
+          .search-wrapper {
+            overflow: hidden;
+          }
+
+          #search-query-primary {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    #questions {
+      margin-top: em(-164);
+      padding-top: em(54);
+
+      h2 {
+        font-size: em(24);
+
+        &:before {
+          width: em(20);
+          line-height: em(20);
+          margin-right: 0.5em;
+        }
+      }
+
+      .contents {
+        ol {
+          margin: 0 em(80) 0 em(120);
+        }
+      }
+    }
+
+    // services
+
+    #services {
+      min-height: em(140);
+    }
+
+    // options
+
+    .options {
+
+      .aside,
+      .section {
+        font-size: 1em;
+        h2 {
+          font-size: 2.25em;
+        }
+      }
+
+      // my community
+
+      #my-community {
+        @include clearfix();
+        float: left;
+        width: 65%;
+      }
+
+      #weather-and-selection {
+        width: 45%;
+      }
+      .in-your-area {
+        width: 45%;
+      }
+
+      #feedback {
+        float: right;
+        width: 30%;
+      }
+    }
+
+  }
+
+  /* Undo mobile enhancements */
+  #access-instructions,
+  #fat-footer,
+  .home #services .contents,
+  .home #news .contents,
+  .home #featured .feature img,
+  .page-options,
+  .feed {
+    display: block;
+  }
+
+  #footer li {
+    display: inline-block;
+    line-height: 0.6em;
+  }
+
+  #fat-footer li {
+    display: block;
+    line-height: 1.5em;
+  }
+
+  /* Global alert */
+  .audience-index #global-alert h2,
+  .franchise-index #global-alert h2,
+  .franchise-index-with-asides #global-alert h2,
+  .large-application #global-alert h2,
+  .home #global-alert h2 {
+    float: left;
+  }
+
+  .audience-index #global-alert .time,
+  .franchise-index #global-alert .time,
+  .franchise-index-with-asides #global-alert .time,
+  .large-application #global-alert .time,
+  .home #global-alert .time {
+    float: left;
+    clear: left;
+    padding-left: 60px;
+  }
+
+  .audience-index #global-alert .summary,
+  .franchise-index #global-alert .summary,
+  .franchise-index-with-asides #global-alert .summary,
+  .large-application #global-alert .summary,
+  .home #global-alert .summary {
+    background: transparent url(../images/skin/bg-global-alert-divider.png) left center no-repeat;
+    clear: none;
+    padding: 2em;
+    margin: -2em;
+    margin-left: 23.5em;
+  }
+
+}

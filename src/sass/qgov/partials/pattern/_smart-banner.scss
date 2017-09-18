@@ -1,0 +1,111 @@
+#smartbanner {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 78px;
+  overflow: hidden;
+  font-family: $font-smartbanner;
+  background: $smartbanner-background-color;
+  border-bottom: 1px solid $smartbanner-border-color;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  //box-shadow: 0 3px 5px 0 $smartbanner-box-shadow-rgba;
+  @include alpha-attribute('box-shadow', rgba($smartbanner-box-shadow-rgba, 0.35), $smartbanner-box-shadow-rgba, 0 3px 5px 0);
+}
+
+.smartbanner-container {
+  margin: 0 auto;
+}
+
+.smartbanner-close {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  display: block;
+  font-family: $font-smartbanner-close;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 14px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  border: 0;
+  width: 17px;
+  height: 17px;
+  line-height: 17px;
+  color: $smartbanner-close-color;
+  background: $smartbanner-close-background-color;
+}
+
+.smartbanner-close:active,
+.smartbanner-close:hover {
+  color: $smartbanner-close-states-color;
+}
+
+a:link.smartbanner-close,
+a:visited.smartbanner-close {
+  text-decoration: none;
+  color: $link-smartbanner-close-color;
+}
+
+.smartbanner-icon {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+  display: block;
+  width: 57px;
+  height: 57px;
+  background-color: $smartbanner-icon-background-color;
+  background-size: cover;
+}
+
+.smartbanner-info {
+  position: absolute;
+  left: 98px;
+  top: 15px;
+  width: 44%;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: bold;
+  color: $smartbanner-info-color;
+}
+
+.smartbanner-title {
+  font-size: 15px;
+  line-height: 17px;
+  color: $smartbanner-title-color;
+  font-weight: bold;
+}
+
+.smartbanner-button {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  min-width: 12%;
+  font-size: 14px;
+  color: $smartbanner-button-color;
+  text-decoration: none;
+}
+
+//.smartbanner-button:hover {
+//
+//}
+
+.smartbanner-button-text {
+  text-align: center;
+  display: block;
+  padding: 0 5px;
+}
+
+a:link.smartbanner-button,
+a:visited.smartbanner-button {
+  text-decoration: none;
+  color: $link-smartbanner-button-color;
+}
+
+#smartbanner .aside {
+  border: 0;
+}
+
+#smartbanner .aside a:visited {
+  color: $smartbanner-aside-link-visited-color;
+}

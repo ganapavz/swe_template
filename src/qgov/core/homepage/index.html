@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Queensland Government</title>
+
+    <!--#set var="franchise" value="core"-->
+    <!--#set var="title" value="Queensland Government"-->
+    <!--#set var="licence" value="http://creativecommons.org/licenses/by-nd/2.5/au/"-->
+    <!--#include virtual="/assets/includes/global/head-assets-styles.html"-->
+    <link href="/assets/v2/style/qgov-index.css" media="all" rel="stylesheet" type="text/css"/>
+    <!--#include virtual="/assets/includes/global/head-assets-scripts.html"-->
+
+<script>
+    (function( $ ) {
+        'use strict';
+
+        // split traffic between this page and a B-variant
+        function ABredirect( path, weight, variationFunction ) {
+            path = path || '/index.html';
+            weight = weight || 0.5;
+
+            // is this the B-variant?
+            if ( window.location.pathname.indexOf( path ) === -1 ) {
+                // A variant: redirect some traffic to B variant
+                if ( Math.random() < weight ) {
+                    window.location.href = path;
+                }
+
+            } else {
+                // B variant: run function
+                if ( typeof variationFunction === 'function' ) {
+                    // run onready
+                    $( variationFunction );
+                }
+            }
+        }
+
+        // redirect
+        ABredirect( '/homepage/index.html', 0.5, function() {
+            $( '.content-row.announcements', '#content' )
+            .insertBefore( '#content .content-row.franchises' )
+            .addClass( 'featured-news' );
+        });
+
+
+    }( jQuery ));
+</script>
+
+    <!-- Get the qgov scripts in early for the homepage, so it can render flicker free -->
+    <script type="text/javascript" src="/assets/v2/script/qgov.js"></script>
+    <script type="text/javascript" src="/assets/v2/script/qgov-index.js"></script>
+
+    <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/"/>
+    <link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/"/>
+
+    <meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=DEPARTMENT NAME; ou=UNIT NAME"/>
+    <meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland"/>
+    <meta name="DCTERMS.created" content="2010-11-03"/>
+    <meta name="DCTERMS.modified" content="2014-02-04"/>
+    <meta name="DCTERMS.title" content="Queensland Government"/>
+    <meta name="DCTERMS.description" content="Queensland Government home"/>
+    <meta name="DCTERMS.identifier" scheme="DCTERMS.URI" content="http://www.qld.gov.au/"/>
+    <meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Collection"/>
+    <meta name="AGLSTERMS.aggregationLevel" content="collection"/>
+    <meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="index"/>
+    <meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content=""/>
+    <meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland"/>
+    <meta name="DCTERMS.license" scheme="DCTERMS.URI" content="http://creativecommons.org/licenses/by-nd/2.5/au/"/>
+
+</head>
+
+<body id="qld-gov-au" class="home">
+
+<!--#include virtual="/assets/includes/global/header.html"-->
+
+<div id="page-container">
+    <div class="max-width">
+        <div id="breadcrumbs">
+            <h2>You are here:</h2>
+            <ol>
+                <li class="nav-home last-child"><a href="/">Queensland Government home</a></li>
+            </ol>
+        </div>
+
+        <div id="content-container">
+            <div id="content">
+                <div class="article">
+                    <div class="box-sizing">
+                        <div class="border">
+                            <!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+                            <h1 class="visuallyhidden">Queensland Government home</h1>
+
+                            <!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+                            <div class="content-row main-search">
+                                <div class="content-module">
+                                    <!--#include virtual="/assets/includes/home/refresh/search.html"-->
+                                </div>
+                            </div>
+
+                            <div class="content-row services">
+                                <div class="content-module">
+                                    <!--#include virtual="/assets/includes/home/refresh/services.html"-->
+                                </div>
+                            </div>
+
+                            <div class="content-row franchises">
+                                <div class="content-module">
+                                    <!--#include virtual="/assets/includes/home/refresh/franchises.html"-->
+                                </div>
+                            </div>
+
+                            <div class="content-row announcements">
+                                <div class="content-module">
+                                    <div class="section-header">
+                                        <h2>Featured</h2>
+                                        <p class="more green"><a href="/news/" title="View all announcements">View all</a></p>
+                                    </div>
+                                    <div class="slide-runner autoplay-enabled">
+                                        <!--#include virtual="/assets/includes/home/refresh/featured.html"-->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-row options">
+                                <div class="content-module">
+                                    <div class="modules">
+                                        <!--  #include virtual="/assets/apps/localisation/includes/in-your-area.jsp"-->
+                                        <!--#include virtual="/assets/includes/home/refresh/my-community.html"-->
+                                        <!--#include virtual="/assets/includes/home/refresh/have-your-say.html"-->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end .article .box-sizing .border -->
+            </div>
+            <!-- end #content -->
+
+            <div id="meta-wrapper">
+                <div class="meta-box-sizing">
+                    <div class="border">
+
+                        <!--<div id="document-properties"><div class="box-sizing">
+                            <dl>
+                                <dt>Last updated</dt>
+                                <dd>4 February 2014</dd>
+                            </dl>
+                        </div></div>-->
+
+                        <!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+                    </div>
+                </div>
+            </div>
+            <!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+        </div>
+        <!-- end #content-container -->
+
+    </div>
+</div>
+<!-- end #page-container, .max-width -->
+
+<!--#include virtual="/assets/includes/global/footer-page.html"-->
+<!--#include virtual="/assets/includes/global/footer-stats.html"-->
+</body>
+</html>

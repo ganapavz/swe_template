@@ -1,0 +1,23 @@
+{
+  "name": "swe_template",
+  "description": "Queensland Government 'single website experience' (SWE) web template and supporting assets",
+  "main": "index.js",
+  "authors": [
+    "Queensland Government"
+  ],
+  "license": "ISC",
+  "homepage": "http://www.qld.gov.au",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery.generateId": "jquery.generate-id#^1.0.3",
+    "purl": "^2.3.2",
+    "jquery.scrollTo": "^2.1.2",
+    "relevance": "https://github.com/bboyle/relevance.git#^2.1.2"
+  }
+}

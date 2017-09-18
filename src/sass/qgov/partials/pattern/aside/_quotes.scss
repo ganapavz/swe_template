@@ -1,0 +1,29 @@
+#asides blockquote.pull-quote {
+  border: 0;
+  padding: 0.5em 2em 1em 2em;
+  background: none;
+  margin: 0;
+}
+
+#asides .figcaption {
+  // min-height: 120px; 
+  margin-top: -1.5em;
+  // padding: 1em 0 2em 0;
+  padding: 1em 0 0 0;
+  background: none;
+  border: 0;
+
+  float: left;
+  width: 100%;
+}
+
+#asides .figcaption img {
+  float: right;
+  margin: 1em;
+  width: 100px;
+  height: 100px;
+}
+
+#asides blockquote.pull-quote:after, #asides blockquote.pull-quote:before {
+  top: 0.1em;
+}

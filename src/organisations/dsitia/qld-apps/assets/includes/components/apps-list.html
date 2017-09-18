@@ -1,0 +1,130 @@
+<script type="text/javascript"><!--
+
+(function( $, qg ) {
+	'use strict';
+
+
+	var displayAppsList,
+		getAppsList
+	;
+
+
+	var QueryString = function () {
+		// This function is anonymous, is executed immediately and 
+		// the return value is assigned to QueryString!
+		var query_string = {};
+		var query = window.location.search.substring(1);
+		var vars = query.split("&");
+		for (var i=0;i<vars.length;i++) {
+			var pair = vars[i].split("=");
+			// If first entry with this name
+			if (typeof query_string[pair[0]] === "undefined") {
+				query_string[pair[0]] = pair[1];
+				// If second entry with this name
+			} else if (typeof query_string[pair[0]] === "string") {
+				var arr = [ query_string[pair[0]], pair[1] ];
+				query_string[pair[0]] = arr;
+				// If third or later entry with this name
+			} else {
+				query_string[pair[0]].push(pair[1]);
+			}
+		} 
+		return query_string;
+	} ();
+
+	// get new data
+	displayAppsList = function( jsonData  ) {
+
+		var resultsHTML = '',
+		    results = $( '#apps' )
+		;
+		results.empty();
+
+		resultsHTML += '<h2 class="search-results-summary">Displaying <strong>' + jsonData.result.records.length +'</strong>';
+		resultsHTML += QueryString.Category && (typeof QueryString.Category !== 'undefined' || typeof QueryString.Category !== '' ) != '' ? ' <strong>' + QueryString.Category.replace(/\+/g, ' ').replace(/\%2C/g, ',') + '</strong>' : '';
+		resultsHTML += jsonData.result.records.length > 1 ? ' apps ' : ' app ';
+		resultsHTML +=QueryString.Platform && (typeof QueryString.Platform !== 'undefined' || typeof QueryString.Platform !== '' ) != '' ? ' for <strong>' + QueryString.Platform.replace(/\+/g, ' ').replace(/\%2C/g, ',') + '</strong>' : '';
+		resultsHTML += '</h2>';
+
+
+		if ( jsonData.result.records.length > 0 ) {
+			// loop through items
+
+			$.each( jsonData.result.records, function( index, item ) {
+				// append to search results
+				resultsHTML += '<div class="tool">';
+				resultsHTML += '<h3><span class="link-text">' + item['Application name'] +'</span>';
+				resultsHTML += item['Icon'] != '' ? '<img src="' +  item['Icon'] +'" alt="" />' : ''
+				resultsHTML += '</h3>';
+				resultsHTML += '<div class="shorten">' + markdown.toHTML( item['Description']) + '</div>';
+				resultsHTML += item['Category'] != '' ? '<p><strong>Category</strong>: ' + item['Category'] +'</p>' : '';
+				resultsHTML += item['Web'] != '' ? '<p><strong>Website</strong>: <a href=\'' + item['Web'] +'\'>' + item['Web'] +'</a></p>' : '';
+				
+				if ( item['Android'] != '' || item['Apple iOS'] != '' || item['Windows mobile'] != '' ) {
+					resultsHTML += '<div class="actions"><p>Download ' +  item['Application name'] + ' for:</p><ul>';
+					resultsHTML += item['Android'] != '' ? '<li><a class="button" href="' + item['Android'] + '">Android</a></li>' : '';
+					resultsHTML += item['Apple iOS'] != '' ? '<li><a class="button" href="' + item['Apple iOS'] + '">Apple iOS</a></li>' : '';
+					resultsHTML += item['Windows mobile'] != '' ? '<li><a class="button" href="' + item['Windows mobile']  +'">Windows Phone</a></li>' : '';
+					resultsHTML += '</ul></div>';
+				}
+				resultsHTML += '</div>';
+			});
+
+			$( results ).append( resultsHTML );
+		} else {
+			results.append( resultsHTML + '<p>No apps were found. Please search again using a different category or platform.</p>' );
+		}
+		$('.shorten').trunk8({ tooltip: false, lines: 4, fill: '&hellip; <a class="read-more" href="#">read more</a>' });
+		results.trigger( 'x-height-change' );
+	};
+
+	function populateSearchForm(){
+		if ( QueryString.Category && (typeof QueryString.Category !== 'undefined' || typeof QueryString.Category !== '' )) {
+			$( $( 'form', '#asides' )[ 0 ][ 'Category' ] ).val( QueryString.Category.replace(/\+/g, ' ').replace(/\%2C/g, ',') );
+		}
+
+		if ( QueryString.Platform && (typeof QueryString.Platform !== 'undefined' || typeof QueryString.Platform !== '' )) {
+			$('input[name="Platform"][value="' + QueryString.Platform.replace(/\+/g, ' ').replace(/\%2C/g, ',') + '"]').prop('checked', true);
+		}
+	}
+
+	function getFilterValues() {
+		var query = ' WHERE 1=1';
+
+		if ( QueryString.Category && (typeof QueryString.Category !== 'undefined' || typeof QueryString.Category !== '' )) {
+			query += ' AND (\"Category\"=\'' + QueryString.Category.replace(/\+/g, ' ').replace(/\%2C/g, ',')  + '\')';
+		}
+
+		if ( QueryString.Platform && ( typeof QueryString.Platform !== 'undefined' )) {
+			window.console.log(QueryString.Platform);
+			if ( QueryString.Platform == 'Android' ) {
+				query += ' AND (\"Android\"!=\'\')';
+			} else if (  QueryString.Platform == 'Apple+iOS' ) {
+				query += ' AND (\"Apple iOS\"!=\'\')';
+			} else if (  QueryString.Platform == 'Windows+mobile' ) {
+				query += ' AND (\"Windows mobile\"!=\'\')';
+			}
+		}
+		
+		return query;
+	}
+
+	getAppsList = function( ) {
+		// load json data
+		var sql = 'SELECT * FROM \"dc306fdf-3500-498e-a7b5-9178658d3df7\"' + getFilterValues();
+		window.console.log(sql);
+		qg.data.get( 'data.qld.gov.au', sql, displayAppsList );
+	}
+
+	getAppsList();
+	populateSearchForm();
+
+	$('.read-more').live('click', function ( ) {
+		$(this).parents('.shorten').trunk8('revert');
+		return false;
+	});
+
+}( jQuery, qg ));
+
+
+//--></script><!-- end -->

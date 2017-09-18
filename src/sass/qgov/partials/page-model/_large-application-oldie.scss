@@ -1,0 +1,44 @@
+// smaller panels on larger screens
+#app-viewport-tools,
+#large-application #app-viewport-info {
+	width: $large-application-panel-size-oldie;
+}
+
+#app-viewport-overlay {
+	background: $large-application-oldie-app-viewport-overlay-background-color;
+}
+
+// search box shown on viewport
+#app-viewport-tools {
+	.viewport {
+		background: $large-application-oldie-app-viewport-tools-background-color;
+	}
+}
+
+// hide tools
+.viewport #app-viewport-tools,
+.viewport-info #app-viewport-tools {
+	margin-left: -1 * $large-application-panel-size-oldie;
+	*visibility: hidden; // IE6+7
+}
+// hide info
+.viewport #app-viewport-info,
+.viewport-tools #app-viewport-info {
+	margin-right: -1 * $large-application-panel-size-oldie;
+	*visibility: hidden; // IE6+7
+}
+
+
+// transparent overlay
+#app-viewport-overlay {
+	// old IE doesn't support opacity
+	filter: alpha($whitebox-overlay-opacity * 100);
+}
+
+// viewport bubbles
+.viewport-bubble {
+	background-color: $large-application-oldie-viewport-bubble-background-color;
+}
+.viewport-bubble.key {
+	background-color: $large-application-oldie-viewport-bubble-key-background-color;
+}

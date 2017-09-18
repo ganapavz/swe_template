@@ -1,0 +1,507 @@
+/* HOME */
+.home {
+
+  #breadcrumbs .nav-home {
+    a, a:hover {
+      font-weight: bold;
+      text-decoration: none;
+      cursor: default;
+      color: $home-breadcrumbs-link-color;
+    }
+  }
+
+  // links in sections
+  .section ul li {
+    a {
+      &,
+      &:link {
+        color: $aside-link-color;
+        text-decoration: none;
+      }
+      &:visited {
+        color: $aside-link-visited-color;
+        text-decoration: none;
+      }
+      &:active,
+      &:hover {
+        color: $aside-link-hover-color;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // backgrounds
+  .main-search {
+    background: $qgov-banner-blue;
+  }
+
+  .services,
+  .options {
+    background: $home-xx-background-color;
+  }
+
+  // borders
+  .franchises,
+  .featured-news {
+    border-bottom: 2px solid darken($home-xx-background-color, 5);
+  }
+
+  .featured-news {
+    border-top: 2px solid darken($home-xx-background-color, 5);
+  }
+
+  #my-community {
+    border-right: 1px solid darken($home-xx-background-color, 5);
+  }
+
+  // indexing
+  .announcements {
+    .section-header {
+      z-index: 10;
+    }
+  }
+
+  // section header
+  .section-header {
+    @include clearfix();
+    position: relative;
+    overflow: visible;
+
+    h2, h3, p {
+      margin: 0;
+    }
+
+    h2 {
+      float: left;
+    }
+
+    .more {
+      float: right;
+      margin: 0;
+      padding: 0;
+    }
+
+    .more a {
+      display: inline-block;
+      text-decoration: none;
+      font-size: em(13);
+      padding: 0 em(22);
+      line-height: em(40);
+    }
+
+    .green a {
+      color: $black;
+      background: $qgov-green;
+      &:hover {
+        color: $qgov-green;
+        background: $qgov-dark-blue;
+      }
+    }
+
+    .blue a {
+      color: $white;
+      background: $qgov-dark-blue;
+      &:hover {
+        color: $qgov-dark-blue;
+        background: $qgov-green;
+      }
+    }
+  }
+
+  .sections {
+    overflow: hidden;
+    position: relative;
+
+    ul {
+      display: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .section {
+      margin: 0;
+      padding: 0;
+      float: left;
+
+      ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul li {
+        font-size: em(18);
+        line-height: normal;
+        padding-top: em(12);
+      }
+
+      ul li:first-child {
+        padding-top: 0;
+      }
+
+      ul li .description {
+        pointer-events: none;
+        color: darken($qgov-silver, 10);
+        display: block;
+        @include font-rem(0.9);
+        line-height: 1.5em;
+        padding: em(13) 0 em(8);
+      }
+    }
+
+    .section-last,
+    .section:last-child ul {
+      border: 0 none;
+    }
+  }
+
+  // main (search and questions)
+  #main {
+    margin-top: 0;
+
+    #main-sections {
+      @include clearfix();
+    }
+
+    #feature-search {
+      @include clearfix();
+
+      .section-header,
+      .contents {
+        float: left;
+      }
+
+      .section-header {
+        pointer-events: none;
+        background: darken($qgov-banner-blue, 2);
+        padding: 0;
+        width: em(120);
+
+        h2 {
+          color: $white;
+          font-size: em(16);
+          font-weight: normal;
+          line-height: normal;
+          margin: 0;
+          padding: 0;
+          float: none;
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          height: em(52);
+          width: em(120);
+        }
+      }
+
+      .contents form {
+        margin: 0;
+        padding: 0;
+      }
+
+      .search-wrapper {
+        @include clearfix();
+        padding: 0 em(52) 0 0;
+        position: relative;
+        overflow: visible;
+        height: 3.25em;
+        background-color: #fff;
+
+        .submit {
+          width: em(52);
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+
+        .listbox {
+          margin-top: 0;
+        }
+
+      }
+
+      #search-query-primary {
+        float: left;
+        border: 0 none;
+        background: $home-main-search-query-primary-background-color;
+        font-size: em(15);
+        padding: em(18) em(24) em(18.5);
+        @include border-box();
+      }
+
+      button#feature-search-submit {
+        width: 0;
+        height: em(52);
+        background: $qgov-green;
+        color: $black;
+        position: relative;
+        @include fonticon($fa-var-search, 0.2, 1.4);
+      }
+
+      button#feature-search-submit:before,
+      button#feature-search-submit:hover:before {
+        padding: 0.7em 0.8em;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  #questions {
+    h2 {
+      cursor: pointer;
+      color: $white;
+      font-weight: normal;
+      float: left;
+
+      &.active,
+      &:hover {
+        color: lighten($qgov-banner-blue, 70);
+      }
+
+      &:before {
+        pointer-events: none;
+        text-align: center;
+        background: $qgov-green;
+        color: $qgov-banner-blue;
+        border-radius: 50%;
+        @include fonticon-content($fa-var-question);
+      }
+    }
+
+    .contents {
+      @include clearfix();
+      clear: both;
+      display: none;
+      padding: 0 0 1em;
+
+      ol {
+        list-style: none;
+        padding: 0;
+      }
+
+      ol li {
+        color: $white;
+
+        a,
+        a:link,
+        a:visited {
+          color: $qgov-green;
+        }
+        a:active,
+        a:hover {
+          color: lighten($qgov-banner-blue, 70);
+        }
+
+        li {
+          color: $black;
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .frag-linx-content {
+        background: $home-questions-frag-linx-content-background-color url("../images/skin/bg-questions-arrowhead.png") 1em top no-repeat;
+        color: $home-questions-frag-linx-content-color;
+        margin: 0.8em 0 0.8em -1.1em;
+        padding: 0.5em 1em;
+        overflow: hidden;
+
+          a,
+          a:link,
+          a:visited {
+            color: $qgov-blue-green;
+          }
+          a:active,
+          a:hover {
+            color: $qgov-dark-blue;
+          }
+      }
+
+      a.loading {
+        background: transparent url("../images/skin/ajax-loader-blue.gif") right center no-repeat;
+        padding-right: 25px;
+      }
+    }
+  }
+
+  // services
+
+  #services .status {
+      margin-top: em(18);
+  }
+
+  // announcements
+
+  .announcements .section-header {
+    padding-bottom: em(14);
+  }
+
+  // options
+
+  .options {
+    @include clearfix();
+
+    .modules {
+      @include clearfix();
+      overflow: hidden;
+    }
+
+    .module {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul li {
+        @include font-rem(1);
+        color: darken($qgov-silver, 10);
+        padding: 0 0 em(4);
+      }
+
+      p {
+        @include font-rem(0.9);
+        color: darken($qgov-silver, 10);
+      }
+    }
+
+    .contents {
+      padding: em(30) 0 0;
+    }
+  }
+
+  .options {
+    // required because asides resets this below
+    .aside,
+    .section {
+      font-size: 1em;
+      padding: 0;
+
+      .section-header h2 {
+        color: $gray;
+        font-weight: 900;
+        line-height: 80%;
+        margin: 0;
+        padding: 0;
+        &:before {
+          display: none;
+        }
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  // my community
+
+  #my-community {
+    font-size: 1em;
+    padding: 0;
+
+    .contents {
+      @include clearfix();
+    }
+
+    .contents h3 {
+      @include visuallyhidden();
+    }
+
+    .controls select {
+      width: 99%;
+    }
+  }
+
+  #weather-and-selection {
+    float: left;
+
+    label {
+      @include visuallyhidden();
+    }
+  }
+
+  // area selection
+  #area-selection {
+    float: left;
+  }
+
+  // in your-area
+  .in-your-area {
+    float: right;
+
+    ul {
+      margin-top: em(-4);
+    }
+  }
+
+  #feedback {
+    float: right;
+
+    .more {
+      float: left;
+      text-align: left;
+    }
+  }
+
+  // options links
+  .in-your-area a,
+  #feedback a {
+    &:link {
+      color: $aside-link-color;
+      text-decoration: none;
+    }
+    &:visited {
+      color: $aside-link-visited-color;
+      text-decoration: none;
+    }
+    &:active,
+    &:hover {
+      color: $aside-link-hover-color;
+      text-decoration: underline;
+    }
+  }
+
+  .in-your-area .toggle,
+  #feedback .more {
+    margin: 0;
+    padding-top: em(10);
+    a {
+      background: $qgov-green;
+      color: $qgov-dark-blue;
+      display: inline-block;
+      @include font-rem(1);
+      @include fonticon($fa-var-plus, null, 1);
+      padding: em(10) em(25) em(10) em(66);
+      text-decoration: none;
+      position: relative;
+      outline: 0 none;
+
+      &:before {
+        background: darken($qgov-green, 5);
+        padding: 0.85em;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    a:hover {
+      background: $qgov-dark-blue;
+      color: $qgov-green;
+
+      &:before {
+        background: darken($qgov-dark-blue, 5);
+        padding: 0.9em;
+      }
+    }
+  }
+
+}

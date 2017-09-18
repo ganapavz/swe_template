@@ -1,0 +1,54 @@
+// -------------------------------------
+//   base settings
+// -------------------------------------
+
+@import "../modules/base";
+
+// -------------------------------------
+//   base partials
+// -------------------------------------
+
+@import "partials/helpers/visibility";
+
+// -------------------------------------
+//   ui patterns
+// -------------------------------------
+
+@import "partials/pattern/short-list";
+//@import "partials/pattern/slide-runner";
+@import "partials/pattern/news";
+// asides
+@import "partials/pattern/aside/aside";
+@import "partials/pattern/aside/app";
+@import "partials/pattern/aside/contact";
+@import "partials/pattern/aside/disaster";
+@import "partials/pattern/aside/controlbar";
+@import "partials/pattern/aside/cut-in";
+@import "partials/pattern/figures";
+@import "partials/pattern/aside/events";
+@import "partials/pattern/aside/featured";
+@import "partials/pattern/aside/feedback";
+@import "partials/pattern/aside/have-your-say";
+@import "partials/pattern/aside/images";
+@import "partials/pattern/aside/lists";
+@import "partials/pattern/aside/more";
+@import "partials/pattern/aside/section-headers";
+@import "partials/pattern/aside/story";
+
+// -------------------------------------
+//   page models
+// -------------------------------------
+
+// home page model overrides
+@import "partials/page-model/home.refresh";
+
+// -------------------------------------
+//   ui patterns
+// -------------------------------------
+
+// load on demand
+@import "partials/pattern/aside/social-media";
+@import "partials/pattern/social-media/facebook";
+@import "partials/pattern/events";
+@import "partials/pattern/maps";
+@import "partials/pattern/document-links";

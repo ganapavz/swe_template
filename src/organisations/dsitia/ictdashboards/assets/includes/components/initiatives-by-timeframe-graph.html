@@ -1,0 +1,49 @@
+<h2 id="h2-initiatives-by-timeframe">Initiatives by timeframe</h2>
+<div id="initiatives-by-timeframe">Loading...</div>
+<p><strong>Key</strong></p>
+<ul>
+	<li>Green&mdash;initiative is within timeframe tolerance.</li>
+	<li>Amber&mdash;initiative is still within timeframe tolerance but pushing the bounds (an issue or risk has been identified that may impact on timeframes).</li>
+	<li>Red&mdash;initiative is forecast to, or has exceeded timeframe tolerance</li>
+</ul>
+
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var datafile = "<!--#echo encoding="entity" var="data" -->";
+
+	function initiativesByTimeframe() {
+		// load json data
+		var sql = 'SELECT CASE \"Time-frame\"' +
+					'		WHEN \'R\' THEN \'RED\'' +
+					'		WHEN \'A\' THEN \'AMBER\'' +
+					'		WHEN \'G\' THEN \'GREEN\'' +
+					'	END AS \"Status\",' +
+			' (SELECT count(B.\"Duration (months)\") from \"' + datafile + '\" B where B.\"Duration (months)\"< 6 and A.\"Time-frame\"=B.\"Time-frame\") as \"< 6 months\",'+
+			' (SELECT count(B.\"Duration (months)\") from \"' + datafile + '\" B where (B.\"Duration (months)\" BETWEEN 6 and 12) and A.\"Time-frame\"=B.\"Time-frame\") as \"6-12 months\",'+
+			' (SELECT count(B.\"Duration (months)\") from \"' + datafile + '\" B where B.\"Duration (months)\"> 12 and A.\"Time-frame\"=B.\"Time-frame\") as \"> 12 months\"'+
+			' FROM  \"' + datafile + '\" A GROUP BY \"Time-frame\"'
+		;
+
+		// load data lib
+		swe.load({ name: 'data', url: 'data.js' });
+
+		// configure chart
+		swe.data({
+			container: 'initiatives-by-timeframe',
+			title: 'Initiatives by timeframe',
+			headings: [ 'Status', '< 6 months', '6-12 months', '> 12 months' ],
+			sql: sql,
+			type: 'bar',
+			colours: 'rag',
+			legend: false
+		});
+	};
+
+	initiativesByTimeframe();
+
+}( jQuery, qg.swe ));
+
+//--></script><!-- end -->

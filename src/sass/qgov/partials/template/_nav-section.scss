@@ -1,0 +1,164 @@
+#nav-section {
+  padding-top: 1em;
+}
+
+#nav-section a .page-number {
+  speak: none; /* These numbers just replicate the list numbers for easy visual styling. They would be redundant to AT */
+  margin: 0 0 .3em -2.85em;
+  float: left;
+  //background: $nav-section-link-page-number-background-color;
+  //color: $nav-section-link-page-number-color;
+  color: #13578b;
+  min-width: 1.5em;
+  text-align: center;
+}
+
+#nav-section a .page-number {
+  margin-left: -2.4em;
+  font-weight: 700;
+  @include alpha-attribute('background', rgba($nav-section-link-page-number-background-color, 1), $nav-section-link-page-number-background-color);
+}
+
+#nav-section li.current a .page-number {
+ // color: $qgov-blue;
+   color: #13578b;
+}
+
+#nav-section a[href]:hover .page-number {
+  @include alpha-attribute('background', rgba($nav-section-link-hover-page-number-background-color, 1), $nav-section-link-hover-page-number-background-color);
+}
+
+@media screen, projection, tv, handheld {
+
+  #nav-section {
+    // position: relative;
+    clear: both;
+    background: $nav-section-background-color;
+    color: $nav-section-color;
+    @include font-rem(.9);
+    font-weight: 700;
+  }
+
+  #nav-section .box-sizing {
+    overflow: hidden;
+    padding-right: 0;
+    padding-bottom: 0.5em;
+  }
+
+  #nav-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1.5em;
+  }
+
+  #nav-section ul li {
+    padding: 0.1em 0.7em 0.2em 0;
+    margin: 0;
+  }
+
+  #nav-section a,
+  #nav-section a:link,
+  #nav-section a:visited,
+  #nav-section a:active {
+    color: $nav-section-link-color;
+  }
+
+  #nav-section .current-page a,
+  #nav-section .current-page a:hover {
+    font-weight: 700;
+    text-decoration: none;
+    @include cursor-disabled();
+  }
+
+  #nav-section ul li.current-page {
+    background: $nav-link-current-background-color;
+    &, a:link, a:visited {
+      color: $nav-link-current-color;
+    }
+  }
+
+  #nav-section ul li.has-submenu {
+    background: $nav-link-current-background-color;
+    &, a:link, a:visited {
+      color: $nav-link-color;
+    }
+  }
+
+  #nav-section ul li.current-page .current {
+    background: $nav-link-current-background-color;
+    &, a:link, a:visited {
+      color: $white;
+    }
+  }
+
+  #nav-section ul li.current-page ul {
+    background: $nav-section-current-page-list-background-color;
+  }
+
+  #nav-section ul li.current-page ol {
+    list-style-type: none;
+  }
+
+  #nav-section ul li.current-page ol a,
+  #nav-section ul li.current-page ol a:hover,
+  #nav-section ul li.current-page ol .current a,
+  #nav-section ul li.current-page ol .current a:hover {
+    font-weight: normal;
+    @include cursor(pointer);
+    background: none;
+    padding-top: 0.35em;
+  }
+
+  #nav-section ul li.current-page ol a:hover .link-text {
+    text-decoration: underline;
+  }
+
+  #nav-section ul li.current-page ol .current a:hover,
+  #nav-section ul li.current-page ol .current a:hover .link-text {
+    text-decoration: none;
+    @include cursor-disabled();
+  }
+
+  #nav-section ul li.current-page ol .current a,
+  #nav-section ul li.current-page ol .current a:hover {
+    font-weight: 700;
+    color: $white;
+  }
+
+  #nav-section ul li.has-submenu {
+    padding-right: 0 !important;
+    background: none !important;
+  }
+
+  #nav-section .has-submenu a,
+  #nav-section .has-submenu a:hover {
+    font-weight: 700;
+    @include cursor(pointer);
+  }
+
+  #nav-section ul .has-submenu ol a:before,   #nav-section ul .has-submenu ol a:hover:before {
+    content:"";
+    padding: 0;
+    display: none;
+  }
+
+  #nav-section .has-submenu .future a,
+  #nav-section .has-submenu .future a:hover {
+    @include cursor-disabled();
+  }
+
+  #nav-section ul li.current-page .current,
+  #nav-section ul li.current-page .current {
+    font-weight: 700;
+    text-decoration: none !important;
+    background: $nav-section-current-page-current-background-color;
+  }
+
+  #current-page-indicator {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+  }
+
+}

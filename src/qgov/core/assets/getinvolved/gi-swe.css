@@ -1,0 +1,30 @@
+table#survey tr.groups { background-color: #EDF6FF; }
+table#survey tr.active { background-color: #004B85; }
+tr.active td.name, tr.active a { color: #000; }
+fieldset.cue table.striped, #polls table.striped { table-layout: fixed; border-bottom: none; }
+fieldset.cue td, fieldset.cue tr.even td, #polls td { background-color: transparent; }
+table.caption { border: none; }
+#online table th, #online table td { border: none; }
+.hasSimpleBar { background-color: transparent; border: 1px dotted #91B0D0; }
+.simpleBar-value { background-color: #91B0D0; }
+#responseList li { background-color: #EDF6FF; }
+.wide { width: 90%; }
+.name input { width: 45%; }
+
+#nav-section .box-sizing { padding-right:0; }
+#nav-section h2 { color:#4f4537;margin-bottom:0; }
+#nav-section ul { list-style-type: none; color: #636363; padding: 0 0 1em; margin-top: .5em; }
+#nav-section ul li { padding:.25em 0 .25em .5em;margin:0; }
+#nav-section ul a { padding:.5em 0 .5em 2.5em;margin:0;display:block;background:transparent url(/gi/img/bullet.png) .8em 1.1em no-repeat; }
+
+#nav-section ul li.current-page a { background-image:url(/gi/img/bullet-current.png); }
+#nav-section .current-page a,#nav-section .current-page a:hover { font-weight:bold;text-decoration:none;cursor:default;color:#fff; }
+#nav-section ul li.current-page ul { background:#e5e5e5; }
+#nav-section ul li.current-page ol { list-style-type:none; }
+#nav-section ul li.current-page ol a,#nav-section ul li.current-page ol a:hover { color:#06C;font-weight:normal;cursor:pointer; }
+#nav-section ul li.current-page ol a:hover .link-text { text-decoration:underline; }
+
+#nav-section ul li.current-page ol .current a:hover,#nav-section ul li.current-page ol .current a:hover .link-text { text-decoration:none;cursor:default; }
+#nav-section ul li.current-page ol .current a,#nav-section ul li.current-page ol .current a:hover { font-weight:bold; }
+#nav-section ul li.current-page .current,#nav-section ul li.current-page .current { font-weight:bold;text-decoration:none!important;background:#195f91 url(/gi/img/bg-section-nav-arrow.png) right center no-repeat!important;padding-right:20px!important; }
+#nav-section ul li.current-page .current a,#nav-section ul li.current-page .current a:hover { background-image:url(/gi/img/bullet-current.png);color:#fff!important; }

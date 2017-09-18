@@ -1,0 +1,44 @@
+<h2 id="h2-initiatives-by-timeframe">Initiatives by timeframe</h2>
+<div id="initiatives-by-timeframe">Loading...</div>
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var datafile = "<!--#echo encoding="entity" var="data" -->";
+
+	function initiativesByTimeframe() {
+		// load json data
+		var sql = 	' SELECT COALESCE(CASE C.\"status\"' +
+					'			WHEN \'R\' THEN \'RED\'' +
+					'			WHEN \'A\' THEN \'AMBER\'' +
+					'			WHEN \'G\' THEN \'GREEN\'' +
+					'			END, C.\"status\") AS \"Status\",' +
+					'		SUM(case when D.\"Duration (months)\" < 6 then 1 else 0 end) as \"< 6 months\",' +
+					'		SUM(case when D.\"Duration (months)\" between 6 and 12 then 1 else 0 end) as \"6-12 months\",' +
+					'		SUM(case when D.\"Duration (months)\" > 12 then 1 else 0 end) as \"> 12 months\"' +
+					' FROM colours C' +
+					' LEFT OUTER JOIN \"' + datafile + '\" D on D.\"Time-frame\"=C.\"status\"' +
+					' GROUP BY C.\"status\"' +
+					' ORDER BY (CASE C.\"status\" WHEN \'R\' THEN 1 WHEN \'A\' THEN 2 WHEN \'G\' THEN 3 END)';
+
+		// load data lib
+		swe.load({ name: 'data', url: 'data.js' });
+
+		// configure chart
+		swe.data({
+			container: 'initiatives-by-timeframe',
+			title: 'Initiatives by timeframe',
+			headings: [ 'Status', '< 6 months', '6-12 months', '> 12 months' ],
+			sql: sql,
+			type: 'bar',
+			colours: 'rag',
+			legend: false
+		});
+	};
+
+	initiativesByTimeframe(); 
+
+}( jQuery, qg.swe ));
+
+//--></script><!-- end -->

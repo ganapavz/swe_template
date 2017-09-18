@@ -1,0 +1,11 @@
+@media screen, projection, tv, handheld {
+    #post-page-options li.feedback {
+        white-space: nowrap;
+    }
+
+    // TODO get this to stretch to 133% (to overlap nav)
+    #post-page-options {
+        _width: 100% !important;
+        _margin-left: 0 !important;
+    }
+}

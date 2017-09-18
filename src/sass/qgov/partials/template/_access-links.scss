@@ -1,0 +1,44 @@
+#access {
+  background: $access-background-color;
+  color: $access-color;
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  text-align: left;
+  position: relative; /* appear above #header-bg */
+  list-style-type: none;
+}
+
+#access ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#access li {
+  float: left;
+}
+
+#access a {
+  float: left;
+  display: block;
+  color: $access-link-color;
+  padding: .2em .5em;
+  margin: .2em .5em .3em;
+  //  Hidden offscreen until focused
+  position: absolute;
+  left: -9999px;
+}
+
+#access a:focus,
+#access.visible a {
+  position: static;
+}
+
+@media screen, projection, tv, handheld {
+  body #access {
+    margin-bottom: 0.7em;
+  }
+}

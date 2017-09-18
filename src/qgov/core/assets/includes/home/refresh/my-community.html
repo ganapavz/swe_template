@@ -1,0 +1,141 @@
+<div class="section aside" id="my-community">
+    <div class="inner">
+
+        <div class="section-header">
+            <h2>In your area</h2>
+        </div>
+
+        <div class="contents">
+
+            <div id="weather-and-selection">
+                <div class="controls">
+                    <form action="/assets/apps/localisation/actions/set-town.jsp" method="get">
+                        <div><label for="town">Town:</label></div>
+                        <div class="inputs">
+                            <select name="town" id="town">
+                                <optgroup label="Darling Downs">
+                                    <option value="dalby">Dalby</option>
+                                    <option value="gatton" selected="selected">Gatton</option>
+                                    <option value="goondiwindi">Goondiwindi</option>
+                                    <option value="stanthorpe">Stanthorpe</option>
+                                    <option value="toowoomba">Toowoomba</option>
+                                    <option value="warwick">Warwick</option>
+                                </optgroup>
+                                <optgroup label="Far North QLD">
+                                    <option value="atherton">Atherton</option>
+                                    <option value="cairns">Cairns</option>
+                                    <option value="cooktown">Cooktown</option>
+                                    <option value="georgetown">Georgetown</option>
+                                    <option value="mareeba">Mareeba</option>
+                                    <option value="weipa">Weipa</option>
+                                </optgroup>
+                                <optgroup label="Fitzroy">
+                                    <option value="emerald">Emerald</option>
+                                    <option value="gladstone">Gladstone</option>
+                                    <option value="rockhampton">Rockhampton</option>
+                                    <option value="yeppoon">Yeppoon</option>
+                                </optgroup>
+                                <optgroup label="Greater Brisbane">
+                                    <option value="brisbane">Brisbane</option>
+                                    <option value="ipswich">Ipswich</option>
+                                    <option value="logan">Logan</option>
+                                    <option value="redcliffe">Redcliffe</option>
+                                </optgroup>
+                                <optgroup label="Mackay / Whitsunday">
+                                    <option value="clermont">Clermont</option>
+                                    <option value="mackay">Mackay</option>
+                                    <option value="moranbah">Moranbah</option>
+                                    <option value="proserpine">Proserpine</option>
+                                </optgroup>
+                                <optgroup label="North Coast">
+                                    <option value="maroochydore">Maroochydore</option>
+                                    <option value="nambour">Nambour</option>
+                                    <option value="sunshinecoast">Sunshine Coast</option>
+                                </optgroup>
+                                <optgroup label="North Queensland">
+                                    <option value="charterstowers">Charters Towers</option>
+                                    <option value="ingham">Ingham</option>
+                                    <option value="townsvillethuringowa">Townsville</option>
+                                </optgroup>
+                                <optgroup label="South Coast">
+                                    <option value="goldcoast">Gold Coast</option>
+                                </optgroup>
+                                <optgroup label="West Queensland">
+                                    <option value="barcaldine">Barcaldine</option>
+                                    <option value="birdsville">Birdsville</option>
+                                    <option value="charleville">Charleville</option>
+                                    <option value="cloncurry">Cloncurry</option>
+                                    <option value="cunnamulla">Cunnamulla</option>
+                                    <option value="juliacreek">Julia Creek</option>
+                                    <option value="longreach">Longreach</option>
+                                    <option value="mtisa">Mt Isa</option>
+                                    <option value="normanton">Normanton</option>
+                                    <option value="richmond">Richmond</option>
+                                    <option value="roma">Roma</option>
+                                    <option value="stgeorge">St George</option>
+                                    <option value="winton">Winton</option>
+                                </optgroup>
+                                <optgroup label="Wide Bay Burnett">
+                                    <option value="1770">1770</option>
+                                    <option value="bundaberg">Bundaberg</option>
+                                    <option value="gympie">Gympie</option>
+                                    <option value="herveybay">Hervey Bay</option>
+                                    <option value="kingaroy">Kingaroy</option>
+                                    <option value="maryborough">Maryborough</option>
+                                </optgroup>
+
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <!-- end .controls -->
+
+            </div>
+            <!-- end #weather-and-selection -->
+
+            <div class="in-your-area">
+                <h3>Gatton</h3>
+
+                <ul>
+                    <li><a href="/announcements/?region=darlingDownsWestMoreton">Darling Downs West Moreton
+                        announcements</a></li>
+
+                    <li><a href="/about/contact-government/contacts/government-service-offices/">Find your local
+                        QGAP office</a></li>
+                    <li><a href="http://www.parliament.qld.gov.au/members/current/list">Find your local MP</a></li>
+                    <li><a href="http://www.translink.com.au">Transport information</a></li>
+                    <li><a href="http://www.tmr.qld.gov.au/Projects.aspx">Road projects</a></li>
+                    <li><a href="http://www.qwc.qld.gov.au/">Water restrictions</a></li>
+                    <li><a href="http://www.information.qld.gov.au/">Queensland maps</a></li>
+                    <li>
+                        <a href="https://smartjobs.qld.gov.au/jobtools/jncustomsearch.searchResults?in_organid=14904&amp;in_location=%22Ipswich/Toowoomba%22">Jobs</a>
+                    </li>
+                    <li><a href="http://www.eventsqld.com.au/queensland-event-calendar">Events</a></li>
+                    <li><a href="http://www.bom.gov.au/weather/qld/">Queensland weather alerts</a></li>
+                    <li>
+                        <a href="http://www.queenslandholidays.com.au/destinations/destinations_home.cfm">Holidays</a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- end .in-your-area -->
+
+
+        </div>
+        <!-- end .contents -->
+    </div>
+</div>
+<!-- end #my-community -->
+<script type="text/javascript"><!-- // initialise ASAP! (to avoid flicker)
+var $community = $('#my-community');
+$community.find('select').bind('change', function () {
+    $(this).parents('form').submit();
+});
+$community.find('.in-your-area > ul').shorterList({
+    howShort: 3,
+    toggleShowText: 'More',
+    toggleHideText: 'Less',
+    toggleShowTitle: 'Show more links',
+    toggleHideTitle: 'Show less links' // Remember, no trailing slash for IE!
+});
+// --></script>

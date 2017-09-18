@@ -1,0 +1,18 @@
+/* stories */
+#asides .story {
+    border: none;
+    background: transparent;
+    border-bottom: 1px #dcdcdc solid;
+}
+
+#asides .story h2 {
+    @include fonticon($fa-var-book, .8, 2, 1, $qgov-green);
+}
+
+#asides .story p {
+    margin: 1.7em 0;
+}
+
+#asides .story img {
+    max-width: 250px;
+}

@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+<head>
+    <meta charset="UTF-8"/>
+    <title>JSON Maps | Your franchise here | Queensland Government</title>
+    <link rel="stylesheet" type="text/css" href="/assets/v2/style/qgov.css" media="all"/>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="/assets/v2/style/qgov-ie.css" type="text/css" media="all"/><![endif]-->
+    <!-- layout-small is assumed by default (combined with qgov.css) -->
+    <link href="/assets/v2/style/layout-medium.css" media="only all and (min-width: 640px) and (max-width: 980px)"
+          rel="stylesheet" type="text/css"/>
+    <link href="/assets/v2/style/layout-large.css" media="only all and (min-width: 980px)" rel="stylesheet"
+          type="text/css"/>
+    <link href="/assets/v2/style/jquery-ui-qgov.css" media="all" rel="stylesheet" type="text/css"/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="shortcut icon" href="/assets/v2/images/skin/favicon.ico"/>
+    <!-- Grab Google CDN's jQuery. Fall back to local copy if necessary -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript"><!-- //
+    !window.jQuery && document.write(unescape('%3Cscript src="/assets/v2/script/jquery-1.7.2-min.js"%3E%3C/script%3E'));
+    // --></script>
+    <script type="text/javascript" src="/assets/v2/script/qgov-environment.js" id="qgov-environment"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript">document.createElement('abbr');
+    document.createElement('time');</script>
+    <script type="text/javascript" src="/assets/v2/script/ie-layout.js"></script>
+    <![endif]-->
+    <!-- hide these files from build
+    <link type="text/css" rel="stylesheet" href="form-builder.css" />
+    <link type="text/css" rel="stylesheet" href="wireframe/wireframe.css" />
+    -->
+    <meta name="description" content="A tool for mocking up forms"/>
+    <meta name="keywords" content="forms, form builder, form design"/>
+    <link rel="schema.DCTERMS" href="https://purl.org/dc/terms/"/>
+    <link rel="schema.AGLSTERMS" href="https://www.agls.gov.au/agls/terms/"/>
+    <meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD"
+          content="c=AU; o=The State of Queensland; ou=Department of Public Works; ou=Smart Service Queensland"/>
+    <meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent"
+          content="corporateName=The State of Queensland; jurisdiction=Queensland"/>
+    <meta name="DCTERMS.created" content="2010-11-04"/>
+    <meta name="DCTERMS.modified" content="2012-06-21"/>
+    <meta name="DCTERMS.title" content="Form builder | QGov Online tools"/>
+    <meta name="DCTERMS.description" content="A tool for mocking up forms"/>
+    <meta name="DCTERMS.identifier" scheme="DCTERMS.URI" content="https://www.qld.gov.au"/>
+    <meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text"/>
+    <meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="form"/>
+    <meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland"/>
+</head>
+<body id="qld-gov-au" class="lofi">
+<!-- noindex -->
+<!--[if lt IE 9]>
+<script type="text/javascript">jQuery && jQuery.transformer({addClasses: true});</script><![endif]-->
+<div id="access">
+    <h2>Skip links and keyboard navigation</h2>
+    <ul>
+        <li><a href="#content">Skip to content</a></li>
+        <!-- <li><a href="#nav-site">Skip to site navigation</a></li>
+        <li><a href="#footer">Skip to footer</a></li> -->
+        <li id="access-instructions"><a href="/help/accessibility/keyboard.html#section-aria-keyboard-navigation">Use
+            tab and cursor keys to move around the page (more information)</a></li>
+    </ul>
+</div>
+<div id="header-wrapper">
+    <div id="header">
+        <div id="header-bg"></div>
+        <div class="box-sizing">
+            <div class="max-width">
+                <h2>Site header</h2>
+
+                <div id="qg-logo"><a href="/">
+                    <!--[if gte IE 7]><!--><img src="/assets/v2/images/skin/qg-logo.png" width="266" height="45"
+                                                alt="Queensland Government home"/><!--<![endif]-->
+                    <!--[if lte IE 6]><img src="/assets/v2/images/skin/qg-logo-ie6.png" width="266" height="45"
+                                           alt="Queensland Government home"/><![endif]-->
+                    <img src="/assets/v2/images/skin/qg-logo-print.png" width="240" height="42" class="print-version"
+                         alt=""/>
+                </a></div>
+                <ul id="tools">
+                    <li class="nav-contact"><a accesskey="4" href="/contact-us/">Contact us</a></li>
+                    <li class="last-child" id="header-search">
+                        <form action="https://find.search.qld.gov.au/s/search.html" id="search-form">
+                            <div>
+                                <input type="hidden" name="form" value="simple-adv" />                              
+                                <label for="search-query">Search website</label>
+                                <input accesskey="5" type="search" name="query" id="search-query" size="27" value=""/>
+                                <input id="search-button" type="image" src="/assets/v2/images/skin/button-search.png"
+                                       alt="Search"/>
+                                <input type="hidden" name="num_ranks" value="10"/>
+                                <input type="hidden" name="tiers" value="off"/>
+                                <input type="hidden" name="collection" value="qld-gov"/>
+                                <input type="hidden" name="profile" value="qld"/>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+                <div id="nav-site">
+                    <ul>
+                        <li class="nav-residents">
+                            <a href="/queenslanders/">For Queenslanders</a>
+                        </li>
+                        <li class="nav-business">
+                            <a href="https://www.business.qld.gov.au/">Business and industry</a>
+                        </li>
+                        <!--<li class="nav-non-residents">
+                            <a href="/non-residents/">For non-residents</a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- endnoindex -->
+<div id="page-container">
+    <div class="max-width">
+        <div id="breadcrumbs">
+            <h2>You are here:</h2>
+            <ol>
+                <li class="nav-home"><a href="#">Queensland Government home</a></li>
+                <li class="nav-residents"><a href="#">For Queenslanders</a></li>
+            </ol>
+        </div>
+        <div id="content-container">
+            <div id="content">
+                <div class="article">
+                    <div class="box-sizing">
+                        <div class="border">
+
+                            <h1>JSON Maps</h1>
+
+                            <!--#include virtual="/assets/includes/dynamic/news/all-news-nav.php?franchise=disability"-->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end .article, .box-sizing, .border -->
+            </div>
+            <!-- end #content -->
+            <div id="asides">
+                <div class="box-sizing">
+                    <div class="border">
+
+                        <!-- global aside -->
+                    </div>
+                </div>
+            </div>
+            <!-- end #asides, .box-sizing, .border -->
+            <div id="meta-wrapper">
+                <div class="meta-box-sizing">
+                    <div class="border">
+                        <div id="document-properties">
+                            <div class="box-sizing">
+                                <dl>
+                                    <dt>Last updated</dt>
+                                    <dd>13 March 2013</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <!-- noindex -->
+                        <div id="post-page-options" class="page-options">
+                            <ul>
+                                <!-- <li class="subscribe"><a href="404.html"><img alt="Subscribe" src="/assets/v2/images/skin/button-subscribe.png" /></a></li>-->
+                                <li class="share">
+                                    <!-- <img src="/assets/v2/images/skin/button-share-share.png" alt="Share: " />-->
+                                    <h2>Share:</h2>
+                                    <a href="/share/?via=facebook" title="Share using Facebook"><img
+                                            src="/assets/v2/images/skin/button-share-facebook.png" alt="Share using Facebook"/></a>
+                                    <a href="/share/?via=twitter" title="Share using Twitter"><img
+                                            src="/assets/v2/images/skin/button-share-twitter.png" alt="Share using Twitter"/></a>
+                                    <a href="/share/?via=linkedin" title="Share using LinkedIn"><img
+                                            src="/assets/v2/images/skin/button-share-linkedin.png" alt="Share using LinkedIn"/></a>
+                                    <a href="/share/" title="Share using another service…"><img
+                                            src="/assets/v2/images/skin/button-share-more.png" alt="Share using another service…"/></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="page-feedback">
+                            <form method="post" action="/assets/apps/feedback/feedback.jsp" class="form">
+                                <h2>Page feedback</h2>
+
+                                <div id="page-feedback-privacy" class="preamble">
+                                    <h3>Your privacy</h3>
+
+                                    <p>Information collected through this form is used to improve this website.</p>
+
+                                    <p>Any information you submit that could identify you (e.g. name, email address) will be stored
+                                        securely, and destroyed after we process your feedback.</p>
+                                </div>
+                                <ol class="questions">
+                                    <li id="page-was-useful">
+                                        <fieldset>
+                                            <legend>
+                                                <span class="label">This page was</span>
+                                            </legend>
+                                            <ul class="choices compact">
+                                                <li>
+                                                    <input type="radio" name="useful" id="useful-yes" value="yes"/>
+                                                    <label for="useful-yes">Useful</label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="useful" id="useful-no" value="no"/>
+                                                    <label for="useful-no">Not useful</label>
+                                                </li>
+                                            </ul>
+                                        </fieldset>
+                                    </li>
+                                    <li class="instruction">
+                                        We want this information to be the best it can be and we know we can’t do it without you.
+                                        Let us know what you thought of this page and what other information you would like to see.
+                                    </li>
+                                    <li>
+                                        <label for="comments">
+                                            <span class="label">Other comments</span>
+                                        </label>
+                                        <textarea name="comments" id="comments" cols="50" rows="7"></textarea>
+                                    </li>
+                                    <li class="section">
+                                        <fieldset id="feedback-contact">
+                                            <legend>
+                                                <span class="h3">Contact (optional)</span>
+                                            </legend>
+                                            <ol class="questions">
+                                                <li>
+                                                    <label for="contact">
+                                                        <span class="label">I agree that my partner and I will visit a Justice of the Peace (JP) so the JP can witness the form and valid my ID, before returing the form.</span>
+                                                    </label>
+                                                    <input type="text" value="" name="contact" id="contact" size="48"/>
+                                                </li>
+                                            </ol>
+                                        </fieldset>
+                                    </li>
+                                    <li id="captcha-container">
+                                        <label for="captcha">Please leave this blank (this helps us identify automatic spam)</label>
+                                        <input type="text" name="captcha" id="captcha" value=""/>
+                                    </li>
+                                    <li class="footer">
+                                        <input type="hidden" name="franchise" id="franchise" value="core"/>
+                                        <input type="hidden" name="page-title" id="page-title" value="QGov Form Builder"/>
+                                        <ul class="actions">
+                                            <li><strong><input type="submit" value="Submit feedback"/></strong></li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </form>
+                        </div>
+                        <!-- endnoindex -->
+                    </div>
+                </div>
+            </div>
+            <!-- end #meta-wrapper, .meta-box-sizing, .border -->
+        </div>
+        <!-- end #content-container -->
+        <div id="nav-section">
+            <div class="box-sizing">
+
+                <h2><a href="/disability/">People with disability</a></h2>
+                <ul>
+                    <li><a href="/disability/children-young-people/">Support for children and young people</a></li>
+                    <li><a href="/disability/adults/">Support for adults</a></li>
+                    <li><a href="/disability/families-carers-friends/">Support for families, carers and friends</a></li>
+                    <li><a href="/disability/out-and-about/">Getting out and about</a></li>
+                    <li><a href="/disability/legal-and-rights/">Legal information and your rights</a></li>
+                    <li><a href="/disability/community/">For the community and business</a></li>
+                    <li><a href="/disability/service-providers/">For service providers</a></li>
+                    <li><a href="/disability/news/">News</a></li>
+                </ul>
+
+                <!-- TODO: insert ajax seo menu here -->
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end #page-container, .max-width -->
+<div id="footer">
+    <!-- noindex -->
+    <div id="fat-footer">
+        <div class="max-width">
+            <div class="box-sizing">
+                <h2>Explore this site</h2>
+
+                <div class="section">
+                    <h3><a href="/">Queensland Government</a></h3>
+                    <ul>
+                        <li><a href="/about/contact-government/contacts/">Government contacts</a></li>
+                        <li><a href="/about/contact-government/have-your-say/">Have your say</a></li>
+                        <li><a href="/about/staying-informed/">Staying informed</a></li>
+                        <li><a href="/about/government-jobs/">Government jobs</a></li>
+                        <li><a href="/about/how-government-works/">How government works</a></li>
+                    </ul>
+                </div>
+                <div class="section" id="for-qldrs">
+                    <h3><a href="/queenslanders/">For Queenslanders</a></h3>
+                    <ul>
+                        <li><a href="/transport/">Transport and motoring</a></li>
+                        <li><a href="/jobs/">Employment and jobs</a></li>
+                        <li><a href="/housing/">Homes and housing</a></li>
+                        <li><a href="/education/">Education and training</a></li>
+                        <li><a href="/community/">Community support</a></li>
+                        <li><a href="/health/">Health and wellbeing</a></li>
+                        <li><a href="/emergency/">Emergency services and safety</a></li>
+                        <li><a href="/about/">About Queensland and its government</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="/families/">Parents and families</a></li>
+                        <li><a href="/disability/">People with disability</a></li>
+                        <li><a href="/seniors/">Seniors</a></li>
+                        <li><a href="/atsi/">Aboriginal and Torres Strait Islander peoples</a></li>
+                        <li><a href="/youth/">Youth</a></li>
+                        <li><a href="/environment/">Environment, land and water</a></li>
+                        <li><a href="/law/">Your rights, crime and the law</a></li>
+                        <li><a href="/recreation/">Recreation, sports and arts</a></li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h3><a href="https://www.business.qld.gov.au/">Business and industry</a></h3>
+                    <ul>
+                        <li><a href="https://www.business.qld.gov.au/getting-into-business.html">Getting into
+                            business</a></li>
+                        <li><a href="https://www.business.qld.gov.au/running-a-business.html">Running a business</a>
+                        </li>
+                        <li><a href="https://www.business.qld.gov.au/employing-people.html">Employing people</a></li>
+                        <li><a href="https://www.business.qld.gov.au/trade-and-investment.html">Trade and investment</a>
+                        </li>
+                        <li><a href="https://www.business.qld.gov.au/industry-sectors.html">Industry sectors</a></li>
+                        <li><a href="https://www.business.qld.gov.au/regional-queensland.html">Regional Queensland</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <!-- For non-residents -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="max-width">
+        <div class="box-sizing">
+            <h2>Site footer</h2>
+            <ul>
+                <li id="link-help"><a href="/help/">Help</a></li>
+                <!--<li id="link-legal"><a href="/legal/">Terms and conditions</a></li>-->
+                <li class="legal"><a href="/legal/copyright/">Copyright</a></li>
+                <li class="legal"><a href="/legal/disclaimer/">Disclaimer</a></li>
+                <li class="legal"><a href="/legal/privacy/">Privacy</a></li>
+                <li class="legal"><a href="/right-to-information/">Right to information</a></li>
+                <li id="link-accessibility"><a href="/help/accessibility/">Accessibility</a></li>
+                <li id="link-jobs"><a href="https://smartjobs.qld.gov.au/">Jobs in Queensland Government</a></li>
+                <li id="link-languages"><a href="/languages/">Other languages</a></li>
+            </ul>
+            <!-- endnoindex -->
+            <p class="legal">&#169; The State of Queensland 1995-2012</p>
+
+            <p><a href="/" accesskey="1">Queensland Government</a></p>
+        </div>
+    </div>
+</div>
+<div id="scripts">
+    <script type="text/javascript" src="/assets/v2/script/loader.js"></script>
+    <script type="text/javascript" src="/assets/v2/script/init.js"></script>
+</div>
+
+</body>
+</html>

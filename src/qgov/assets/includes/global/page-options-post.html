@@ -1,0 +1,111 @@
+<!-- noindex -->
+<div id="post-page-options" class="page-options">
+	<ul>
+		<li class="feedback"><a href="#page-feedback" class="button" id="page-feedback-useful">Feedback</a></li>
+		<li class="share">
+			<h2>Share:</h2>
+			<a class="facebook" href="/share/?via=facebook&amp;title=<!--#echo encoding="url" var="title" -->" title="Share using Facebook"><span>Facebook</span></a>
+			<a class="twitter" href="/share/?via=twitter&amp;title=<!--#echo encoding="url" var="title" -->" title="Share using Twitter"><span>Twitter</span></a>
+			<a class="linkedin" href="/share/?via=linkedin&amp;title=<!--#echo encoding="url" var="title" -->" title="Share using LinkedIn"><span>LinkedIn</span></a>
+			<a class="share" href="/share/?title=<!--#echo encoding="url" var="title" -->" title="Share using another service…"><span>More</span></a>
+		</li>
+	</ul>
+</div>
+
+
+
+<div id="page-feedback">
+	<form method="post" action="https://www.smartservice.qld.gov.au/services/submissions/email/feedback/feedback" class="form">
+		<ol class="questions"> 
+                                             
+            <li> 
+                <fieldset> 
+                    <legend> 
+                        <span class="label">Is your feedback about:</span> 
+                    </legend> 
+                    <ul class="choices"> 
+                        <li> 
+                            <input type="radio" name="feedback-type" value="website" required="required" id="wizard-yes1-yes" /> 
+                            <label for="wizard-yes1-yes">this website</label> 
+                        </li> 
+                        <li> 
+                            <input type="radio" name="feedback-type" value="service" required="required" id="wizard-yes1-no" /> 
+                            <label for="wizard-yes1-no">a government service, department or staff member?</label> 
+                        </li> 
+                    </ul> 
+                </fieldset> 
+            </li> 
+            <li class="section"> 
+                        <small class="hint relevance visuallyhidden">(If you chose ‘website’ above)</small> 
+                        <h2>Page feedback</h2>
+
+
+                        <ol class="questions">
+                            <li>
+                                <fieldset>
+                                    <legend>
+                                        <span class="label">How satisfied are you with your experience today?</span>
+                                        <abbr title="(required)" class="required">*</abbr>
+                                    </legend>
+                                    <ul class="choices vert-label">
+                                        <li>
+                                            <label for="fs-very-dissatisfied">Very <br /> dissatisfied<br /> (1)</label>
+                                            <input type="radio" name="feedback-satisfaction" value="Very dissatisfied" required="" id="fs-very-dissatisfied" />
+                                        </li>
+                                        <li>
+                                            <label for="fs-dissatisfied"> Dissatisfied <br /> (2)</label>
+                                            <input type="radio" name="feedback-satisfaction" value="Dissatisfied" required="" id="fs-dissatisfied" />
+                                        </li>
+                                        <li>
+                                            <label for="fs-neither-satisfied-or-dissatisfied">Neither<br />satisfied or <br /> dissatisfied <br /> (3)</label>
+                                            <input type="radio" name="feedback-satisfaction" value="Neither satisfied or dissatisfied" required="" id="fs-neither-satisfied-or-dissatisfied" />
+                                        </li>
+                                        <li>
+                                            <label for="fs-satisfied">Satisfied<br /> (4)</label>
+                                            <input type="radio" name="feedback-satisfaction" value="Satisfied" required="" id="fs-satisfied" />
+                                        </li>
+                                        <li>
+                                            <label for="fs-very-satisfied">Very <br /> satisfied <br /> (5)</label>
+                                            <input type="radio" name="feedback-satisfaction" value="Very satisfied" required="" id="fs-very-satisfied" />
+                                        </li>
+                                        
+                                    </ul>
+                                </fieldset>
+                            </li>
+                            <li>
+                                <label for="comments">
+                                    <span class="label">Comments</span>
+                                    <abbr title="(required)" class="required">*</abbr>
+                                </label>
+                                <textarea name="comments" id="comments" rows="10" cols="40" required="required"></textarea>
+                            </li>
+                            <li class="visuallyhidden">
+                                <label for="captchaCatch">Please leave this blank (this helps us identify automatic spam)</label>
+                                <input type="text" name="captchaCatch" value="" id="captchaCatch" />
+                            </li>
+
+
+                            <li id="feedback-captcha-container">
+                                <label for="feedback-captcha">Please leave this blank (this helps us identify automatic spam)</label>
+                                <input type="text" name="captcha" id="feedback-captcha" value="" />
+                            </li>
+
+                            <li class="footer">
+                                <span id="feedback-hidden-inputs"></span>
+                                <ul class="actions">
+                                    <li><strong><input type="submit" value="Submit feedback" /></strong></li>
+                                </ul>
+                            </li>
+                        </ol>
+            </li> 
+            <li> 
+                    <small class="hint relevance visuallyhidden">(If you chose ‘service’ above)</small> 
+                    <div class="status info"><h2>Feedback on government services, departments and staff</h2><p>Please use our <a href="https://www.qld.gov.au/contact-us/complaints/">complaints and compliments form</a>.</p></div>
+            </li> 
+
+        </ol> 
+
+		
+	</form>
+</div>
+<!-- endnoindex -->

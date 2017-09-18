@@ -1,0 +1,31 @@
+/* Guide content (multipage) */
+.pagination {
+	clear: both;
+	overflow: hidden;
+	list-style-type: none;
+	margin: 2em 0 1em;
+	padding: 0;
+}
+.pagination .previous a,
+.pagination .next a {
+	display: block;
+	float: left;
+	text-decoration: none;
+	background: $search-pagination-link-background-color;
+	color: $search-pagination-link-color;
+	padding: .2em 1em .4em;
+}
+.pagination .next {
+	float: right;
+}
+.pagination .previous a {
+    @include fonticon($fa-var-chevron-left, 1, 0.7, #007EB1);
+}
+.pagination .next a {
+    @include fonticon-after($fa-var-chevron-right, 1, 0.7, #007EB1);
+}
+.pagination .previous a:hover,
+.pagination .next a:hover {
+	background: $search-pagination-link-hover-background-color;
+	color: $search-pagination-link-hover-color;
+}

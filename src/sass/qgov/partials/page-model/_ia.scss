@@ -1,0 +1,155 @@
+#ia-updates {
+	clear: both;
+}
+
+#related-promotions .aside h2 {
+	// reset aside icon
+    padding-left: 0;
+    &:before {
+        content: "";
+        display: none;
+    }
+}
+
+@media screen, projection, tv, handheld {
+	#ia h2 {
+		font-size: 100%;
+		margin: 0;
+	}
+	.audience-index #ia h2 {
+		font-size: 170%;
+	}
+	/* Index presentation */
+	#ia ul {
+		padding-left: 0;
+		list-style: none;
+	}
+	#ia p {
+		color: $ia-p-color;
+	}
+
+	#ia li.flex-grid-new-row {
+		clear: left !important;
+	}
+	
+	/* mobile buttons */
+	#ia button,
+	#ia a {
+		display: block;
+		padding: 1em;
+		margin: .3em 0;
+		font-size: 100%;
+		text-align: left;
+		text-decoration: none;
+		border: none;
+	}
+
+	#ia a {
+		background: $ia-link-background-color;
+		color: $mobile-link-button-color;
+		&:hover {
+			background: $mobile-link-button-hover-background-color;
+			color: $mobile-link-button-hover-color;
+		}
+		&:active {
+			background: $mobile-link-button-active-background-color;
+			color: $mobile-link-button-active-color;
+		}
+	}
+
+	#ia button {
+		width: 100%;
+	}
+
+	#ia button a {
+		color: $white !important;
+	}
+
+	#ia button {
+		background: $mobile-link-menu-button-background-color;
+		color: $mobile-link-menu-button-color;
+		&:hover {
+			background: $mobile-link-menu-button-hover-background-color;
+			color: $mobile-link-menu-button-hover-color;
+		}
+		&:active {
+			background: $mobile-link-menu-button-active-background-color;
+			color: $mobile-link-menu-button-active-color;
+		}
+		&.submenu {
+			background: $mobile-link-menu-button-background-color $mobile-link-menu-button-submenu-background-image;
+			&:hover {
+				background: $mobile-link-menu-button-hover-background-color $mobile-link-menu-button-submenu-background-image;
+			}
+			&:active {
+				background: $mobile-link-menu-button-active-background-color $mobile-link-menu-button-submenu-background-image;
+			}
+		}
+	}
+
+	#ia ul img {
+		display: none;
+	}
+
+	#ia .d1 .snippet {
+		display: block;
+		clear: both;
+		color: black;
+	}
+
+	#ia li .snippet a {
+		text-decoration: none;
+		color: $ia-li-snippet-link-color;
+	}
+
+	#ia li .snippet a:hover {
+		text-decoration: underline;
+		color: $ia-li-snippet-link-hover-color;
+	}
+
+	/* don't display section headings within tabs */
+	#ia-updates .viewport h2 {
+		display: none;
+	}
+
+	/* INDEX PAGES (FRANCHISE and THEME) */
+	.article,
+	#document-properties,
+	#meta-wrapper,
+	.d1 {
+		width: 100%;
+	}
+
+	#content .section {
+		max-width: 100%;
+	}
+
+	/* asides within related promotions */
+	#ia-updates .aside,
+	#related-promotions .aside {
+		padding: 0;
+		border: none;
+		background: transparent;
+	}
+	#ia-updates .aside-inner,
+	#related-promotions .aside-inner {
+		margin: 0 .5em;
+		overflow: hidden;
+	}
+	#ia-updates .aside img {
+		max-width: 250px;
+		height: auto;
+		width: auto;
+		margin-left: 1em;		
+	}
+}
+
+@media print {
+	#ia .d1 img {
+		float: left;
+	}
+
+	.compact .section {
+		display: block !important;
+	}
+}

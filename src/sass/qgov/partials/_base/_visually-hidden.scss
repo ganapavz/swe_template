@@ -1,0 +1,16 @@
+/* hide from visual browsers */
+#access h2,
+#header h2,
+#nav-site h2,
+#breadcrumbs h2,
+#footer h2,
+#feedback-captcha-container,
+#captcha-container,
+.tabbed .heading, // headings in tabs
+.visuallyhidden {
+	@extend %visually-hidden;
+}
+
+#header #site-name {
+	@extend %visible;
+}

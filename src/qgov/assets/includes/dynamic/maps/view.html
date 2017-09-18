@@ -1,0 +1,120 @@
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+    <title> {{Title}} <!--#echo var="franchiseTitle"--> | Queensland Government</title>
+    <!--#include virtual="/assets/includes/global/head-assets.html"-->
+    <style type="text/css">
+        table tbody tr.today th,
+        table tbody tr.today td {
+            background: #DFD;
+        }
+        table tbody tr.tomorrow th,
+        table tbody tr.tomorrow td {
+            background: #EFD;
+        }
+    </style>
+    <link href="http://purl.org/dc/terms/" rel="schema.DCTERMS" />
+    <link href="http://www.agls.gov.au/agls/terms/" rel="schema.AGLSTERMS" />
+    <!--description-->
+    <!--keywords-->
+    <meta content="corporateName=The State of Queensland; jurisdiction=Queensland" scheme="AGLSTERMS.AglsAgent" name="DCTERMS.publisher" />
+    <meta content="2012-11-08" name="DCTERMS.created" />
+    <meta content="2012-11-13" name="DCTERMS.modified" />
+    <meta name="DCTERMS.title" content="{{Title}} | About Queensland and its government | Queensland Government" />
+    <meta content="SUBJECT" scheme="AGLSTERMS.APAIS" name="DCTERMS.subject" />
+    <!--#include virtual="/assets/includes/global/head-meta-identifier.html"-->
+    <meta content="Queenslanders" scheme="AGLSTERMS.agls-audience" name="DCTERMS.audience" />
+    <!--DCTERMS.spatial-->
+    <!--AGLSTERMS.availability-->
+    <meta content="Text" scheme="DCTERMS.DCMIType" name="DCTERMS.type" />
+    <meta content="guidelines" scheme="AGLSTERMS.agls-document" name="AGLSTERMS.documentType" />
+    <meta content="Queensland" scheme="AGLSTERMS.AglsJuri" name="DCTERMS.jurisdiction" />
+    <meta content="http://creativecommons.org/licenses/by/3.0/au/" scheme="DCTERMS.URI" name="DCTERMS.license" />
+</head>
+<body class="residents seniors" id="qld-gov-au">
+<input id="data-url" type="hidden" data-set="<!--#echo var='data-set'-->" data-url="<!--#echo var='data-url'-->">
+
+    <!-- noindex -->
+    <!--#include virtual="/assets/includes/global/header.html"-->
+    <!-- endnoindex -->
+    <div id="page-container">
+        <div class="max-width">
+            <!-- noindex -->
+            <div id="breadcrumbs">
+                <h2>You are here:</h2>
+                <ol>
+                    <!--#include virtual="/assets/includes/global/breadcrumb-citizen.html"-->
+                    <li><a href='/<!--#echo var="franchise"-->/'><!--#echo var="franchiseTitle"--></a></li>
+                    <li class="last-child">{{Title}}</li>
+                </ol>
+            </div>
+            <!-- endnoindex -->
+            <div id="content-container">
+                <div id="content">
+                    <div class="article"><div class="box-sizing"><div class="border">
+                        <!--#include virtual="/assets/includes/global/global-alert.html"-->
+                        <h1 id="page-heading" class="counter-view">{{Title}}</h1>
+                        <!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+                        <!--#include virtual="/assets/includes/dynamic/counters/view-contact-info.html"-->
+
+                        <div id="view-closure">
+                            <div>[[<div class="status info"><h2>Changes to opening hours</h2><p>{{Closure}}</p></div>]]</div>
+                        </div>
+
+
+                        <!--#include virtual="/assets/includes/dynamic/counters/view-opening-hours.html"-->
+
+                    </div></div></div>
+                </div>
+                <div id="asides"><div class="box-sizing"><div class="border">
+                    <!--#include virtual="/assets/includes/global/global-aside.html"-->
+
+                    <div class="aside map">
+                        <h2>Map</h2>
+                        <div id="static-map" class="figure diagram">
+                            <div>[[<a id="static-map-link" href="https://maps.google.com/maps?q=+{{Suburb}}+QLD+{{Postcode}}">{{Staticmap}}</a>]]</div>
+                        </div>
+                        <div id="aside-address">
+                            <div>[[<div class="caption">{{Address 1}}, {{Address 2}}, {{Suburb}}, Qld, {{Postcode}}</div>]]</div>
+                        </div>
+                    </div>
+
+                </div></div></div>
+
+                <div id="meta-wrapper">
+                    <div class="meta-box-sizing">
+                        <div class="border">
+                            <div id="document-properties"><div class="box-sizing">
+                                <dl>
+                                    <dt>Last updated</dt>
+                                    <dd>5 January 2015</dd>
+                                </dl>
+                            </div></div>
+                            <!--#include virtual="/assets/includes/global/page-options-post.html"-->
+                        </div>
+                    </div>
+                </div>
+                <!-- noindex -->
+            </div>
+
+            <div id="nav-section"><div class="box-sizing">
+                <!-- TODO section nav?? heading and other items? -->
+                <h2><a href="../"><!--#echo var="section_nav_h2"--></a></h2>
+                <ul>
+                    <div><li class="current-page">[[<a href="./?title={{Title}}">{{Title}}</a>]]</li></div>
+                    <div><li>[[<a href="../?location={{Suburb}} {{Postcode}}">Nearby</a>]]</li></div>
+                    <div><li><a href="../">View all</a></li></div>
+                </ul>
+            </div></div>
+        </div>
+    </div>
+    <!--#include virtual="/assets/includes/global/footer.html"-->
+    <!-- endnoindex -->
+
+    <!--<script type="text/javascript" src="jquery.jsonp.js"></script>-->
+    <!--<script type="text/javascript" src="data.js"></script>-->
+    <!--<script type="text/javascript" src="view.js"></script>-->
+
+
+</body>

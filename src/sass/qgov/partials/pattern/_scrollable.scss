@@ -1,0 +1,21 @@
+@media screen, projection, tv, handheld {
+  // http: //www.456bereastreet.com/archive/201309/responsive_scrollable_tables/
+  .scrollable {
+    position: relative;
+    overflow: hidden; // Clips the shadow created with the pseudo-element in the next rule. Not necessary for the actual scrolling.
+  }
+  .scrollable:after {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 50px;
+    height: 100%;
+    content: '';
+    border-radius: 10px 0 0 10px / 50% 0 0 50%;
+    @include alpha-attribute('box-shadow', rgba($scrollable-after-box-shadow-rgba, 0.25), $scrollable-after-box-shadow-rgba, -5px 0 10px);
+  }
+  // This is the element whose content will be scrolled if necessary
+  .scrollable > div {
+    overflow-x: auto;
+  }
+}

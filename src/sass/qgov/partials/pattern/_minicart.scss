@@ -1,0 +1,176 @@
+/* minicart */
+
+
+#ssq-minicart {
+  position: relative;
+
+  table, caption, th, td, ul, li {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    // reset aside icon
+    &:before {
+      content: "";
+      display: none;
+    }
+  }
+
+  .ssq-minicart-noscript,
+  .ssq-minicart-loading,
+  .ssq-minicart-error,
+  .ssq-minicart-info,
+  .ssq-minicart-empty {
+    padding: em(10);
+  }
+
+  &.fail #ssq-minicart-view {
+    background: darken($qgov-lightBlue-gray, 5);
+  }
+
+  .ssq-minicart-error {
+    padding-left: em(20);
+    background: darken($qgov-lightBlue-gray, 5) url(fail.png) 10px 20px no-repeat;
+  }
+
+  .ssq-minicart-info {
+    padding-left: em(20);
+    background: darken($qgov-lightBlue-gray, 5) url(info.png) 10px 20px no-repeat;
+  }
+
+  .ssq-minicart-loading {
+    padding-left: em(20);
+    background: darken($qgov-lightBlue-gray, 5) url(wait.gif) 10px 50% no-repeat;
+  }
+
+  .ssq-minicart-items,
+  .ssq-minicart-totals {
+    padding: 0;
+  }
+
+  table {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    background: darken($qgov-lightBlue-gray, 5);
+  }
+
+  th, td, caption {
+    padding: 0.33em 0.5em;
+  }
+
+  caption {
+    padding: 0.5em;
+    text-align: left;
+  }
+
+  .number {
+    text-align: right;
+  }
+
+  .alternate,
+  .alternate td,
+  .alternate th {
+    background: lighten($qgov-lightBlue-gray, 2);
+  }
+
+  tfoot th,
+  tfoot td,
+  tbody th,
+  tbody td {
+    background: darken($qgov-lightBlue-gray, 5);
+    font-size: 1em;
+  }
+
+  tfoot th {
+    text-align: right;
+  }
+
+  tfoot th,
+  tfoot td {
+    font-weight: bold;
+  }
+
+  tbody th {
+    font-weight: bold;
+  }
+
+  .gst th,
+  .gst td {
+    font-weight: normal;
+    padding: 0.25em 0.625em;
+  }
+
+  .timeout th,
+  .timeout td {
+    text-align: left;
+    font-weight: normal;
+    padding: 0.25em 0.625em;
+  }
+
+  .ssq-minicart-submit {
+    padding: 1em 0.5em 0.5em;
+
+    input {
+      margin-left: 0.5em;
+    }
+  }
+
+  input[type='image'],
+  a:active img {
+    top: 1px;
+    left: 1px;
+    position: relative;
+  }
+
+   a img {
+    border: none;
+    box-shadow: none;
+  }
+
+  .ssq-minicart-cards {
+    padding: 1em 0.5em 0.5em;
+    text-align: center;
+
+    h3 {
+      font-size: 0.9em;
+      font-weight: normal;
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      display: inline-block;
+      font-weight: normal;
+      margin: 0.5em 0 0;
+    }
+
+    li {
+      display: inline;
+      list-style: none;
+      vertical-align: middle;
+    }
+  }
+
+  .ssq-minicart-warning em {
+    color: $red;
+  }
+
+  // SWE integration modifications
+
+  .cart-item img {
+    border: 1px solid $qgov-lightBlue-gray;
+    float: left;
+  }
+
+  .cart-item ol {
+    float: right;
+    padding: 0 1em;
+  }
+}

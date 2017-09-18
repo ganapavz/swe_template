@@ -1,0 +1,41 @@
+.comparison {
+  overflow: hidden;
+}
+
+.comparison-inner {
+  overflow: hidden;
+  padding: 0 1em;
+  @include linear-gradient(rgba($comparison-inner-background-color, 1), rgba($comparison-background-color-bottom, 1));
+}
+
+.advantage {
+  @include linear-gradient(rgba($advantage-background-color, 1), rgba($comparison-background-color-bottom, 1));
+}
+
+.advantage .comparison-inner {
+  @include linear-gradient(rgba($advantage-comparison-inner-background-color, 1), rgba($comparison-background-color-bottom, 1));
+}
+
+.disadvantage {
+  @include linear-gradient(rgba($disadvantage-background-color, 1), rgba($comparison-background-color-bottom, 1));
+}
+
+.disadvantage .comparison-inner {
+  @include linear-gradient(rgba($disadvantage-comparison-inner-background-color, 1), rgba($comparison-background-color-bottom, 1));
+}
+
+.qg-id {
+  @include linear-gradient(rgba($qg-id-background-gradient-top, 1), rgba($comparison-background-color-bottom, 1));
+}
+
+.qg-id .comparison-inner {
+  @include linear-gradient(rgba($qg-id-background-gradient-top, 1), rgba($comparison-background-color-bottom, 1));
+}
+
+.qg-acc {
+  @include linear-gradient(rgba($qg-acc-background-color, 1), rgba($comparison-background-color-bottom, 1));
+}
+
+.qg-acc .comparison-inner {
+  @include linear-gradient(rgba($qg-acc-comparison-inner-background-color, 1), rgba($comparison-background-color-bottom, 1));
+}

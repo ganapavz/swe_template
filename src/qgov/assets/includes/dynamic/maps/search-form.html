@@ -1,0 +1,44 @@
+<div class="search-widget">
+    <div class="widget-header">
+        <h2>Refine search</h2>
+        <span class="action"><a href="#" class="form-toggle" class="up">Toggle</a></span>
+    </div>
+    <form action="" method="get">
+        <ol class="questions">
+
+            <li class="location">
+                <label for="location">
+                    <span class="label">Suburb or postcode</span>
+                </label>
+                <input type="text" id="location" name="location" size="30" value="" placeholder="Enter your suburb or click the location finder button" />
+                <!--#include virtual="/assets/includes/dynamic/maps/get-current-location.html" -->
+            </li>
+            <li>
+                <label for="distance">
+                    <span class="label">Radius</span>
+                </label>
+                <select name="distance" id="distance">
+                    <option value="1000">1000km</option>
+                    <option value="50" selected="selected">50km</option>
+                </select>
+            </li>
+
+        </ol>
+        <ol class="footer-section questions">
+            <li class="footer">
+                <ul class="actions">
+                    <li>
+                        <strong>
+                            <input type="submit" value="Search" />
+                        </strong>
+                    </li>
+                    <li>
+                        <em>
+                            <input class="reset" type="button" value="Reset" />
+                        </em>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </form>
+</div>

@@ -1,0 +1,51 @@
+// -------------------------------------
+//   base settings
+// -------------------------------------
+
+@import "../modules/base";
+
+// -------------------------------------
+//   base partials
+// -------------------------------------
+
+@import "partials/helpers/clearfix";
+
+// -------------------------------------
+//   page models
+// -------------------------------------
+
+@import "partials/page-model/ia-oldie";
+@import "partials/page-model/search-results-oldie";
+@import "partials/page-model/home-oldie";
+@import "partials/page-model/news-oldie";
+@import "partials/page-model/large-application-oldie";
+
+// -------------------------------------
+//   ui patterns
+// -------------------------------------
+
+@import "partials/pattern/aside/aside-oldie";
+@import "partials/pattern/figures-oldie";
+@import "partials/pattern/search/pagination-oldie";
+// load on demand
+@import "partials/pattern/form/form-oldie";
+@import "partials/pattern/minicart-oldie";
+@import "partials/pattern/slideshow-oldie";
+@import "partials/pattern/tabs-oldie";
+@import "partials/pattern/toc-oldie";
+@import "partials/pattern/tools-oldie";
+
+// -------------------------------------
+//   vendor files
+// -------------------------------------
+
+@import "vendor/jquery-ui/jquery-ui-qgov-custom-oldie";
+
+// -------------------------------------
+//   ui patterns
+// -------------------------------------
+
+@import "partials/pattern/qg-video-ie";
+// TODO are these used?
+@import "partials/pattern/aside/featured-stories-oldie";
+@import "partials/pattern/comparison-oldie";

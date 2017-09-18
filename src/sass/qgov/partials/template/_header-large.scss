@@ -1,0 +1,36 @@
+#tools li {
+  float: left;
+}
+
+@media screen, projection, tv, handheld {
+  #header,
+  #header .current-area {
+    a,
+    a:link,
+    a:visited {
+      color: $header-current-area-link-color;
+    }
+  }
+
+  #header li
+  #header a {
+    float: left;
+  }
+
+  // float on desktop layout
+  #qg-logo,
+  #qg-coa {
+    margin-left: em(50);
+    margin-right: 0.85em;
+    padding: 0.75em 0;
+    &, a {
+      float: left;
+      clear: left;
+    }
+  }
+
+  #tools {
+    margin-right: em(50);
+    float: right;
+  }
+}

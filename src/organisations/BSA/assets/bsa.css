@@ -1,0 +1,12 @@
+/* BSA branding customisations */
+#header-bg {
+	background: #005883 url('/bsa/assets/bg-bsa-tile.jpg') 0 0;
+}
+
+#banner .max-width {
+	background: #F9CA3C;
+	text-align: left;
+}
+#banner img {
+	margin: 3px 1em 5px 0.85em;
+}

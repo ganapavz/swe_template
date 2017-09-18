@@ -1,0 +1,373 @@
+/**
+  Base settings 
+*/
+ul#secondaryNav { padding: 0; list-style: none; }
+ul#secondaryNav li { margin-bottom: 0.5em; }
+
+/* Form related */
+fieldset {	padding: 0.5em; }
+input, select, textarea { font-family: Verdana,Helvetica,Arial,sans-serif; font-size: 100%; }
+input[type=submit],input[type=button],button,
+form button, .actions input,
+form button:active,
+.actions input:active { padding: 0.25em 0.5em; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+input[type=submit][disabled],input[type=button][disabled],button[disabled] { opacity: 0.4; filter: alpha(opacity=50); }
+input[type=checkbox], input[type=radio] { margin-right: 0.5em; }
+textarea { width: 30em; }
+
+.hint { display: block; font-size: 75%; }
+.flushTop { margin-top: 0px; }
+.headerHint { display: block; font-size: 75%; width: 75%; margin-left: 22%; }
+
+#maintenanceMenu { margin: 0em; padding: 0em; list-style: none; }
+#maintenanceMenu li { float: left; width: 45%; height: 11em; padding: 2%; }
+#maintenanceMenu img { float: left; margin: 0em 0.5em 0.5em 0em; }
+
+fieldset.cue { padding: 0; border: none; }
+fieldset.cue > legend { position: relative; float: left; margin-right: 1%; padding: 0; background-color: transparent; white-space: normal; }
+fieldset.cue .fieldLabel .required { position: relative; left: -1%; width: 7.5%; }
+fieldset.cue.survey > legend { position: relative; float: left; margin-bottom: .5em; margin-right: 1%; padding: 0 .5em; background-color: transparent; white-space: normal; }
+
+fieldset.group { padding: 0; border: 1px solid #eee; border-width: 2.5em 0.25em 0.25em; }
+fieldset.group > legend { position: static; height: 2em; padding-top: 0.5em; background-color: #eee; }
+fieldset.inline { padding: 0; border: none; }
+fieldset.inline legend { position: static; }
+fieldset.horizontal { position: relative; margin: 0.5em 0em 0em 0.5em; padding: 0; border: none; }
+fieldset.horizontal legend { float: left; width: 22%; margin-left: -2em; }
+fieldset.poll { padding: 0; border: 0; }
+
+input.otherSpecify { margin-top: 0.5em; }
+
+input.primary { margin: 0.5em 0; }
+input[type=submit].primary, input[type=button].primary, button.primary, .ui-widget-content button.primary { font-weight: bold; }
+
+.fieldLabel { display: inline-block; width: 22%; vertical-align: top; text-align: right; }
+.fieldLabel .label { display: inline-block; float: left; width: 90%; white-space: normal; }
+.fieldLabel .required { width: 10%; }
+fieldset.cue.survey .fieldLabel { width: 97%; padding: 0 .5em; text-align: left; }
+fieldset.cue.survey .horizontal .fieldLabel { padding: 0em; }
+fieldset.cue.survey .horizontal .fieldLabel .required { margin-left: -2.25em; }
+.Rating.Matrix fieldset.cue.survey .horizontal .fieldLabel { margin: 0em; }
+fieldset.cue.survey .fieldLabel .label { display: inline-block; float: none; width: auto; margin-left: 2em; white-space: normal; }
+fieldset.cue.survey .fieldLabel .required { position: absolute; left: 0px; top: 0px; width: 1em; margin-left: 0em; }
+.fieldLabel span.fieldLabel { float: left; width: 90%; }
+.vert .fieldLabel .label { float: none; }
+
+.fieldValue { display: inline-block; width: 75%; }
+.fieldValue table { display: table; width: 100%; margin-top: 0; border-bottom: 0; }
+.fieldValue table td, .fieldValue table tr.even td { padding: 0.2em 0; background: transparent; border: 0; }
+.fieldValue table input { position: relative; vertical-align: middle; }
+.top table input{ position: relative; vertical-align: top; }
+.middle table input{ position: relative; vertical-align: middle; }
+.fieldValue .horizontal table input { position: relative; vertical-align: top; margin-top: 0.3em; }
+.fieldValue table label { display: inline-block; width: 90%; vertical-align: middle; }
+.fieldValue .horizontal table label { width: 85%; }
+fieldset.cue.survey .fieldValue .horizontal table label { width: 75%; }
+.fieldValue .ratingMatrix { display: table; width: 100%; }
+.fieldValue .ratingMatrix th.ratingMatrixQuestion { width: 10em; }
+.ratingMatrixQuestion { width: 10em; float: left; }
+.ratingMatrixAnswer { padding-left: 10em; }
+.ratingMatrixAnswer table { width: 100%; float: left; }
+.ratingMatrixAnswer table tr td { width: 7em; float: left; }
+
+fieldset.cue.survey .fieldValue { margin-left: 22%; }
+fieldset.cue.survey .fieldValue fieldset.horizontal label { margin-left: 22%; }
+.labelspace { margin-left: 12em; }
+fieldset.cue.survey .fieldValue fieldset.horizontal table label { margin: 0; }
+fieldset.cue.survey .fieldValue textarea { width: 99%; }
+fieldset.cue.survey .fieldValue fieldset.horizontal textarea { margin-left: 22%; width: 77%; }
+.Rating.Matrix fieldset.cue.survey .fieldValue textarea { margin-left: 12em; width: 69%; }
+
+.dateValue { display: inline-block; }
+
+.demographics input[type=checkbox] { margin-bottom: 0.75em; }
+.hasDatepicker, .hasTimeEntry { width: 8em; }
+img.ui-datepicker-trigger { position: relative; top: 4px; margin-left: 4px; }
+
+.vert .row { margin: 0.5em 0; text-align: left; }
+.vert fieldset.cue { padding-left: 0% }
+.vert fieldset.cue legend { float: none; }
+.vert .fieldLabel { width: 95%; text-align: left; }
+.vert .fieldLabel span.fieldLabel { float: none; }
+.vert .indent { display: block; margin-left: 5%; }
+.vert .errorMsg { margin-left: 5%; }
+.vert .required { width: 5%; }
+.vert fieldset.cue .fieldLabel .required { left: 0%; width: 5%; }
+
+/* Table related */
+table { width: auto; margin-top: 1em; margin-bottom: 0.5em; }
+caption { padding: 0.25em; background-color: #eee; border: 1px solid #ccc; }
+th, td { padding: 0.25em; border: none; }
+td { padding: 0.25em 0; border: none; }
+th img { vertical-align: middle; }
+
+table + .primary { position: relative; top: -0.9em; }
+th.count, td.count { text-align: right; }
+table.bordered th, table.bordered td, table.bordered tr.even td { border: 1px solid #ccc; padding: 0.25em; }
+table.borderedDemographic th, table.borderedDemographic td { border: 1px solid #ccc; padding: 0.25em; width: 33%; }
+
+/* Application messages */
+.messages { clear: both; margin: 0 0.7em 1em; padding: 0.5em 1em; font-size: 80%; }
+.messagesIcon { float: left; margin-right: 1em; vertical-align: top; }
+.messagesHeading { font-size: 150%; font-style: bold; }
+.messages ul { margin: 0 0 0 1em; list-style: none; }
+.messages li { padding: 0.25em; padding-left: 20px; }
+.messages li.error { background: transparent url(/gi/cue/images/error.png) no-repeat left center; }
+.messages li.warning { background: transparent url(/gi/cue/images/warning.png) no-repeat left center; }
+.messages li.info { background: transparent url(/gi/cue/images/info.png) no-repeat left center; }
+.errorMsg { display: block; padding-left: 20px; color: red; background: transparent url(/gi/cue/images/warning.png) no-repeat left center; text-align: left; }
+
+/* Login aside */
+.aside.login ul { clear: both; padding: 0em; list-style: none; }
+.aside.login dt { font-weight: normal; }
+.aside.login dd { font-weight: bold; }
+
+/* Survey asides */
+#didYouKnow { background: transparent url(/gi/img/icon-tip.png) no-repeat left top; }
+#didYouKnow h2 { margin-left: 40px; }
+
+/* Common applications */
+.actions { clear: both; float: right; margin-top: 1em; }
+.actions table { display: inline-block; }
+.actions table, .actions td { border: none; }
+.bold { font-style: bold; }
+.centred { text-align: center; }
+.clearfix { clear: both; height: 0; }
+.cleditorMain { display: inline-block; }
+.inline { display: inline; width: 100%; }
+.more-link { background: none; border: none; }
+.multiline { white-space: pre; }
+.row { clear: both; position: relative; margin: 1em 0; }
+.right { float: right; text-align: right; }
+.required { display: inline-block; width: 2%; color: #c00; text-align: center; vertical-align: top; }
+.required.offset, .required.offset + label { position: relative; left: -3%; }
+.required abbr { border-bottom: none; }
+.rounded-corners { -moz-border-radius: 10px; -webkit-border-radius: 10px; -khtml-border-radius: 10px; border-radius: 10px; font-size: 200%; padding-left: 5%; width: 60%; }
+.wide { width: 30em; }
+.narrow { width: 15em; }
+
+/* Consultation */
+#consultationContacts { margin-top: 1.3em; padding: 0em; border: none; }
+#consultationContacts > legend { color: #4F4537; font-family: "Trebuchet MS",Helvetica,Arial,sans-serif; font-size: 130%; font-weight: bold; }
+.documents li { clear: both; }
+
+/* Poll specific */
+#polls { margin-bottom: 0.5em; }
+#polls fieldset { margin: 1em 0; }
+#polls legend { background-color: transparent; }
+#polls legend span { display: block; white-space: normal; width: 90%; }
+#polls h2 { margin: 0.66em 0 0; }
+#polls table { margin: 0.5em 0; width: 100%; }
+#polls .hasSimpleBar { margin: 0em 0.5em; background-color: transparent; }
+#polls a.button { padding: 0.5em; color: #000; background-color: #EEF1F5; border: 1px solid #D0D0D0; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; text-decoration: none; }
+#polls .row { margin-top: 0; }
+#polls th, #polls td { padding: 0.25em; }
+#polls tr.r0 { background-color: #F7F7F7; }
+#polls tr.r1 { background-color: #E7E7E7; }
+
+/* Responses */
+#responseList li { margin-bottom: 1em; padding: 0.5em 1em 2em 1em; background-color: #DFDBC3; }
+#responseList p.group { margin-top: 0; font-size: 110%; font-weight: bold; }
+#responseList p.question { background: none; font-style: italic; font-weight: bold; }
+#responseList div.question { background: none; }
+#responseList blockquote { padding: 0.5em; background-color: #FFF; }
+#responseList blockquote p { margin: 0; }
+#responseList a { float: right; }
+.in-confidence { border: 0.5em solid #FFCC99; }
+.in-confidence-header { position: relative; left: -1em; top: -0.5em; width: 98%; margin: 0; padding: 0.25em 1.5em; background: #FFCC99 url(/gi/cue/images/warning.png) no-repeat left center; }
+.moderation-required { border: 0.5em solid #FFCC99; }
+
+.ratingMatrix th, .ratingMatrix td { font-weight: normal; text-align: center; vertical-align: middle; }
+.ratingMatrix th.subquestion { text-align: left; }
+
+#textAnswersList { width: 100%; }
+
+/* Moderation */
+.moderateDetails { display: none; }
+.moderate { border: 0.5em solid #FFCC99; background-color: #FFCC99; }
+.moderate-header { padding: 0.25em 0em 0.25em 1.5em; background: #FFCC99 url(/gi/cue/images/warning.png) no-repeat left 0.4em; }
+.moderation-required { border: 0.5em solid #FFCC99; }
+.checkBoxValues tbody tr td label { padding-left: 20px; }
+.noBorder tbody tr td { border: none; border-style: none; border-width: 0; }
+#moderatePostDialog table { border: none; }
+#moderatePostDialog table td { background: transparent; }
+
+/* Forum related */
+#forum .editTitle, #forum .closeTopic { white-space: nowrap; }
+.topicModeration { background-color: #C00; }
+#topics { width : 100%; }
+.post { margin-bottom: 0.5em; background-color: #F7F7F7; }
+.post div { padding: 0.5em; }
+.postBody { white-space: pre-line;}
+.postHeader { background-color: #E7E7E7; font-weight: bold; }
+.postHeaderModerate { background-color: khaki; font-weight: bold; }
+#moderatePostForm\:rejectionReasonDiv\:rejectionReason label { vertical-align: top; }
+
+#actions, .dialog, .hidden , .hiddenAction, .hiddenIndex, .Instruction .fieldLabel, .Instruction .required, .initMaxLength, td.security  { display: none; }
+#access.hidden { display: block; }
+
+/* Consultation dashboard */
+#overlay { display: none; position: fixed; left: 0%; top: 0%; width: 100%; height: 100%; opacity: 0.7; }
+#overview { margin: 1em 0em; }
+.dd-menu { float: right; }
+.dd-menu.fl-fix { position: relative; top: -3.5em; }
+a.dropdownMenu { display: block; }
+a.dropdownMenu.open { background-color: #ccc; -moz-border-radius: 6px 6px 0px 0px; -webkit-border-radius: 6px 6px 0px 0px; border-radius: 6px 6px 0px 0px; }
+ul.dropdownMenu { display: none; position: absolute; z-index: 100; width: 10em; background-color: #ccc; -moz-border-radius: 6px 0px 6px 6px; -webkit-border-radius: 6px 0px 6px 6px; border-radius: 6px 0px 6px 6px; list-style: none; margin: 0em; padding: 0.5em; }
+h1 ul.dropdownMenu { font-family: Verdana,Helvetica,Arial,sans-serif; font-size: 0.5em; letter-spacing: 0; }
+
+#audiencesDiv\:audiences td, #topicsDiv\:topics td { padding: 0.2em 0em; }
+
+#progress .row { height: 2em; margin: 0em; }
+
+.statusAside img { float: right; margin: 0em 0em 0.5em 1em; }
+
+#workflow { margin-top: 1em; text-align: center; }
+
+a.yourSay { margin-right: 5em; }
+
+/* Survey (public) */
+a.docLink { text-decoration: none; }
+.docTitle { text-decoration: underline; }
+
+.answers { padding: 0; }
+.answers label { display: block; visibility: hidden; height: 1px; overflow: hidden; }
+.Instruction { margin: 1em 1em 1em 2.5em; }
+ol.ordered { list-style: none; margin: 0; padding: 0; }
+ol.ordered img { position: relative; top: 0.25em; margin: 0 0.5em; }
+ol.ordered input { width: 3em; }
+
+.Rating fieldset.cue { padding: 0 0 0 22.6%; }
+.Rating fieldset.cue.survey { padding: 0; }
+.Rating fieldset.cue legend { position: static; width: 100%; text-align: left; }
+.Rating fieldset.cue legend .label { display: inline-block; }
+
+/* Questions */
+table#survey { width: 100%; }
+tr.groups a { color: #000; }
+tr.active td.name, tr.active a { color: #fff; }
+tr.questions { display: none; }
+table tr.questions td.name { padding-left: 4em; }
+tr.action img { vertical-align: bottom; }
+th.reorder, td.reorder, th.select, td.select { width: 5em; text-align: center; }
+.expander img { vertical-align: middle; }
+
+.relevancyIf { display: inline-block; width: 4em; }
+.sample { display: none; margin-left: 5em; }
+
+#orderedQuestions > span { display: block; margin-bottom: 0.5em; cursor: pointer; }
+#orderedQuestions img { position: relative; top: 0.25em; padding: 0 0.5em; }
+#questionDetails\:labelDiv\:label { height: 3em; }
+#questionDetails\:minimumResponsesDiv .fieldValue { width: 73%; margin-left: 2%; }
+#questionDetails\:predefinedValuesDiv select { width: 88%; }
+#questionDetails\:predefinedValuesDiv button { width: 9%; }
+#questionDetails\:relevancyDiv select { width: 80%; }
+#questionDetails\:relevancyDiv\:hasRelevancy { width: 1.25em; margin-right: 0.25em; }
+#relevancyDiv\:hasRelevancy { width: 1.25em; margin-right: 0.25em; }
+
+#relevancyValueSelect { position: relative; padding-left: 5.5em; border: none; }
+#relevancyValueSelect legend { position: absolute; left: -4em; width: auto; }
+#relevancyValueSelect input { margin-bottom: 0.75em; }
+
+/* Report related */
+#tabs .ui-tabs-nav li { text-align: center; }
+#tabs .ui-tabs-nav li { width: 25%; }
+#tabs .ui-tabs-nav li + li { width: 20%; }
+#tabs .ui-tabs-nav li + li + li { width: 22%; }
+#tabs .ui-tabs-nav li + li + li + li { width: 28%; }
+#tabs .ui-tabs-nav li a { width: 80%; }
+
+#online table { width: 100%; } 
+#online table, #online thead { border-bottom: 1px solid #888; }
+#online tfoot { border-top: 1px solid #888; }
+#online table th, #online table td { text-align: left; }
+#online table th + th, #online table td + td { text-align: right; }
+#online td.security { display: none; }
+
+#online #moderationResponse\:acceptableDiv\:acceptable, #online #reModerationResponse\:acceptableDiv\:acceptable { width: auto; }
+#online #moderationResponse\:acceptableDiv\:acceptable td, #online #reModerationResponse\:acceptableDiv\:acceptable td { width: 5em; text-align: left; }
+#moderationResponse\:acceptableDiv, #reModerationResponse\:acceptableDiv { padding: 0px; }
+#moderationResponse table, #moderationResponse thead, #moderationResponse tfoot,
+#reModerationResponse table, #reModerationResponse thead, #reModerationResponse tfoot { margin-top: 0px; border: none; }
+#moderationResponse td, #reModerationResponse td { padding: 0.25em 0.5em; background: none; }
+#moderationResponse\:rejectionReasonDiv label, #reModerationResponse\:rejectionReasonDiv label { display: inline-block; width: 90%; vertical-align: top; }
+
+.col1 .article, .col2 .article,
+.col1 #meta-wrapper, .col2 #meta-wrapper { width: 100%; }
+
+.std-links { float: right; } /* Consultation related */
+
+.fieldValueSearch { display: inline-block; width: 50%; }
+.advancedSearch { display: none; width: 25%; }
+.Rating .fieldValue { width: 100%; }
+.Rating fieldset.cue .fieldValue { margin: 0; padding: 0 .5em; width: 97%; }
+.Rating fieldset.cue.survey .fieldValue { margin-left: 1.5em; }
+
+.outputText { display: inline-block; padding: 0.25em 0.5em; background-color: #eee; } /* questions */
+
+p.relevancy { padding: 0 0.5em; }
+
+.name input { width: 15em; }
+.name label.nameLabel { display: inline-block; width: 15em; }
+
+.multiElement { display: inline-block; }
+.dragHandle { vertical-align: text-top; }
+
+.labelAbove { display: inline-block; }
+.labelAbove input { width: 8em; }
+
+.buttons { clear: both; float: right; margin-top: 1em; }
+
+.dates label { display: inline-block; width: 9.75em; }
+.endRange { margin-top: 0.5em; }
+
+ul.outputText { margin: 0; padding-left: 2em; }
+#mainForm\:buttons1 { float: right; margin: 0.5em 0; }
+#mainForm\:personalDetailsDiv p { margin: 0; }
+#mainForm\:buttons2 { clear: both; }
+
+/* JQuery UI customisation */
+.ui-dialog { text-align: left; }
+.ui-dialog .buttonOrder { float: right; }
+.ui-dialog .ui-dialog-buttonpane .buttonOrder button { float: left; }
+.ui-widget { font-size: 0.9em !important; }
+.ui-widget-content .ui-state-hover { color: #000; font-weight: normal; }
+.ui-widget-content .ui-state-hover.primary { color: #fff; font-weight: bold; }
+.ui-widget-overlay { opacity: 0.7; }
+.ui-state-default a:focus { outline: 2px solid #f8be4c; }
+.ui-state-hover a, .ui-state-hover a:hover { font-weight: bold; }
+.ui-tabs.ui-widget { font-size: 1em !important; }
+.ui-datepicker-div { z-index: 2000; }
+
+.ui-dialog .question { background: none; }
+.ui-dialog .ui-button { max-width: none; }
+.ui-dialog a.cancel { display: inline-block; padding: 0.7em; }
+
+tr.ui-sortable-helper { display: table-row; border: 1px solid #000; }
+tr.ui-sortable-helper.questions { background-color: #fff; background-image: none; }
+tr.ui-sortable-helper td { border: none; }
+tr.ui-sortable-placeholder { display: table-row; border: 1px solid #ccc; }
+
+/* Styling for false buttons */
+a.button { padding: 0.5em; color: #000; background-color: #EEF1F5; border: 1px solid #D0D0D0; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; text-decoration: none; }
+
+/* Maxlength customisation */
+.maxlength-feedback { display: inline-block; width: 100%; }
+fieldset.cue.survey fieldset.horizontal .maxlength-feedback { margin-left: 22%; width: 75%; } 
+.Rating.Matrix .maxlength-feedback { margin-left: 16.5em; width: 69%; } 
+.hasMaxLength.maxlength-full { background-color: #fff; border: 1px solid #ccc; }
+
+/* CKEditor customisation */
+.cke_dialog_body { z-index: 2000 !important; }
+.cke_skin_kama .cke_dialog_tabs { display: none !important; }
+.cke_skin_kama .cke_dialog_contents { margin-top: 6px !important; }
+.fieldValue span.cke_skin_kama { padding: 0px; }
+.fieldValue .cke_skin_kama .cke_wrapper { padding: 0px; }
+.fieldValue .cke_top { padding: 0.2em; }
+.fieldValue .cke_skin_kama .cke_toolgroup { margin: 0px; }
+.fieldValue .cke_contents { padding: 0px; }
+.fieldValue .cke_bottom { padding: 0px; }
+.fieldValue .cke_skin_kama .cke_path { margin: 0px; }
+.fieldValue .cke_skin_kama .cke_resizer { margin-top: 4px; }
+
+.fontBold { font-weight: bold; }

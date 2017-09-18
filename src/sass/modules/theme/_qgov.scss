@@ -1,0 +1,872 @@
+// global colors
+
+$black: #000000;
+$white: #ffffff;
+$off-white: #F5F5F5;
+$gray: #333333;
+$mid-gray: #666666;
+$light-gray: #444444;
+$silver: #cccccc;
+$dark-silver: #cccccc;
+$red: #ff0000;
+$dark-red: #cc0000;
+
+// corporate id / JSA visual design
+
+$qgov-light-green: #b1e455; // buttons -- new colour
+
+$qgov-green: #78BA00; // buttons
+
+$qgov-dark-green: #517D00; // buttons -- new colour
+
+$qgov-blue: #007EB1; // breadcrumbs, buttons
+$qgov-blue-green: #005375; // header text
+$qgov-dark-blue: #0B2E4C; // fat footer
+$qgov-pale-blue: #e7f5fe; // $asides-feedback-background-color
+$qgov-banner-blue: #00335B;
+$qgov-light-gray: #F6F6F6; // header, section nav
+$qgov-lightBlue-gray: #f2f7f9; // asides
+$qgov-silver: #939393;
+
+//$qgov-guava-red: #F85C50; // alerts -- changed for accessibility
+$qgov-guava-red: #D93D31; // alerts -- updated colour
+
+$qgov-peach: #f8ae70;
+$qgov-light-peach: #FFEDDE;
+
+$qgov-watermelon: #EA6A7E;
+$qgov-light-watermelon: #FEECEF;
+
+$qgov-lime: #9CBF6D;
+$qgov-light-lime: #F2F7EA;
+
+$qgov-blueberry: #759BF3;
+$qgov-light-blueberry: #EEF4F6;
+
+//fonts & typography
+
+//body, button, input, select, textarea
+$font-body: $lato;
+//h1, h2, h3, h4, h5, h6
+$font-headings: $lato;
+//tt, code, kbd, samp, pre
+$font-monospaced: $courier;
+//#app-viewport-controls
+$font-large-application-app-viewport-controls: $roboto;
+//search-results h3
+$font-search-results-heading: $lato;
+//smartbanner
+$font-smartbanner: $helvetica;
+//smartbanner-close
+$font-smartbanner-close: $arial-rounded-bold;
+//#asides .events h4
+$font-asides-events-heading: $verdana-arial;
+//legend .h2
+$font-legend-heading: $trebuchet-helvetica;
+//banner
+$font-banner-heading: $trebuchet;
+///ui-widget
+$font-ui-widget: $font-body;
+//footer
+$font-footer: $verdana-arial;
+
+// -------------------------------------
+//   common elements
+// -------------------------------------
+
+// slidetabs
+
+$slidetabs-white: $white;
+$slidetabs-off-white: #fbfbfb;
+$slidetabs-tint-white: #f7f7f7;
+$slidetabs-silver: #e7e7e7;
+$slidetabs-silver-light: #f8f8f8;
+$slidetabs-silver-medium-light: #efedee;
+$slidetabs-silver-medium: #f4f4f4;
+$slidetabs-blue-dark: #293942;
+$slidetabs-blue-medium: #283966;
+$slidetabs-blue-light: #006584;
+$slidetabs-blue-lightest: #1ca5ec;
+$slidetabs-gray: $gray;
+$slidetabs-gray-medium: #5c5c5c;
+$slidetabs-gray-light: #838383;
+
+// content
+
+$body-background-color: $white;
+$body-color: $light-gray;
+
+// global links
+
+$link-color: #13578b;
+$link-hover-color: #0066CC;
+$link-active-color: $dark-red;
+$link-visited-color: #8800bb;
+
+// keyboard focus / accessibility
+
+$leaflet-container-focus-border-color: #eab754;
+$leaflet-container-focus-background-color: $white;
+
+// search button
+
+$search-button-background-color: $qgov-green;
+
+// headings
+
+$headings-top-level: $black;
+$headings-top-level-layout-small: $black;
+$headings-bottom-level: #555;
+
+// -------------------------------------
+//   page models
+// -------------------------------------
+
+// home page
+
+$home-weather-and-selection-tabs-color: #546A9A;
+$home-breadcrumbs-link-color: $white;
+$home-xx-background-color: #f9f9f9;
+$home-news-background-color: #264258;
+$home-ia-background-color: #faf8f9;
+$home-compact-slideshow-active-h3-color: #293942;
+$home-main-form-background-color: $white;
+$home-main-search-query-primary-background-color: $white;
+$home-main-form-background-color: $white;
+$home-questions-frag-linx-content-background-color: lighten($qgov-banner-blue, 70);
+$home-questions-frag-linx-content-color: #444444;
+$home-my-community-forecast-color: #293942;
+$home-weather-and-selection-tabs-color: #546A9A;
+
+// information architecture large-medium
+
+$large-medium-headings-top-level-background-color: #293942;
+$large-medium-headings-top-level-color: $black;
+$large-medium-ia-d1-inner-background-color: #F9F9F9;
+$large-medium-ia-d1-inner-border-color: #E7E7E7;
+$large-medium-ia-d1-img-background-color: #F9F9F9;
+$large-medium-ia-d1-img-box-shadow-rgba: $black;
+$large-medium-ia-d1-img-border-color: #FFFEFC;
+$large-medium-ia-d1-link-visited-hover-img-border-color: #576978;
+
+
+// information architecture
+
+$ia-p-color: $black;
+$ia-link-background-color: $qgov-blue-green;
+$ia-li-snippet-link-color: $black;
+$ia-li-snippet-link-hover-color: #0066cc;
+$ia-aside-inner-background-color: #EFEFEF;
+$ia-aside-inner-background-top: #FFF7F7;
+$ia-aside-inner-background-middle: $white;
+
+// large application (large)
+
+$large-application-large-app-viewport-overlay-background-color: $white;
+
+// large application (medium)
+
+$large-application-medium-app-viewport-overlay-background-color: $white;
+
+// large application (oldie)
+
+$large-application-oldie-app-viewport-overlay-background-color: $white;
+$large-application-oldie-app-viewport-tools-background-color: $white;
+$large-application-oldie-viewport-bubble-background-color: #F4FFD9;
+$large-application-oldie-viewport-bubble-key-background-color: $white;
+
+// large application
+
+$large-application-background-color: #B4D1FF;
+$large-application-app-viewport-tools-background-color: $white;
+$large-application-app-viewport-info-background-color: #F7FBFF;
+$large-application-app-viewport-controls-link-color: #565656;
+$large-application-app-viewport-controls-link-background-color: $white;
+$large-application-app-viewport-controls-link-border-color: #7E92B3;
+$large-application-app-viewport-controls-link-box-shadow-rgba: $black;
+$large-application-app-viewport-controls-link-hover-color: $black;
+$large-application-app-viewport-controls-link-hover-background-color: #EBEBEB;
+$large-application-app-viewport-tools-viewport-background-color:  $white;
+$large-application-app-viewport-tools-viewport-box-shadow-rgba:  $black;
+$large-application-viewport-bubble-background-color: #F5FFD9;
+$large-application-viewport-bubble-box-shadow-rgba: $black;
+$large-application-viewport-bubble-key-background-color: $white;
+
+// search results
+
+$search-results-jobs-met-time-color: $light-gray;
+$search-results-file-meta-color: #0456FF;
+$search-results-h2-resultset-title-border-color: $silver;
+$search-results-search-scope-strong-color: $black;
+$search-results-jobs-li-border-color: #D9D9D9;
+
+// -------------------------------------
+//   ui templates
+// -------------------------------------
+
+// header
+
+$header-background: none;
+$header-background-color: $qgov-light-gray;
+$header-wrapper-background-color: $qgov-light-gray;
+$header-max-width-background-color: $qgov-light-gray;
+$header-search-form-color: $white;
+$header-search-form-border-color: #c9c9c9;
+$header-search-placeholder-color: $qgov-silver;
+$header-search-query-color: $body-color;
+$header-search-query-border-color: $qgov-green;
+$header-search-button-background-color: $qgov-green;
+$header-search-button-color: $black;
+$header-search-button-border-color: $qgov-green;
+$header-tools-background-color: $white;
+$header-tools-border-color: #91A97C;
+$header-current-area-background: none;
+$header-current-area-background-color: transparent;
+$header-current-area-color: $qgov-blue-green;
+$header-current-area-link-color: $qgov-blue-green;
+$header-link-color: $mid-gray;
+$header-link-hover-background-color: transparent;
+$header-xx-current-border-color: #559FB8;
+$header-xx-current-border-color-rgb: $white;
+
+$header-tools-button-link-color: #222222;
+$header-tools-button-link-hover-color: $qgov-green;
+
+// banner
+
+$banner-background-color: $qgov-blue-green;
+$banner-link-color: $white;
+
+// access
+
+$access-color: $white;
+$access-background-color: $black;
+$access-link-color: $white;
+
+// footer
+
+$footer-color: #000000;
+$footer-background-color: #ffffff;
+$fat-footer-xx-border-color: #ffffff;
+$fat-footer-box-sizing-background-color: $qgov-dark-blue;
+$footer-link-color: #000000;
+$fat-footer-link-color: #ffffff;
+$fat-footer-headings-link-color: #ffffff;
+
+// breadcrumbs
+
+$breadcrumbs-max-height: 30em;
+$breadcrumbs-background-color: $qgov-blue;
+$breadcrumbs-color: $white;
+$breadcrumbs-link-color: $white;
+$breadcrumbs-link-hover-color: $white;
+
+// current page
+
+$current-page-border-left-color: #559FB8;
+$current-page-border-top-color: $white;
+$current-page-border-bottom-color: $white;
+
+// nav links
+
+$nav-link-color: #13578b;
+$nav-link-visited-color: $qgov-blue;
+$nav-link-current-background-color: $qgov-blue;
+$nav-link-current-color: $white;
+
+// nav section
+
+$nav-section-color: #13578b;
+$nav-section-background-color: $qgov-light-gray;
+$nav-section-headings-color: #13578b;
+$nav-section-link-color: #13578b;
+$nav-section-link-page-number-color: $qgov-blue;
+$nav-section-link-page-number-background-color: $qgov-light-gray;
+$nav-section-link-hover-page-number-background-color: $qgov-light-gray;
+$nav-section-current-page-list-background-color: $qgov-light-gray;
+$nav-section-current-page-current-background-color: $qgov-blue;
+$nav-section-page-number-link-color: #13578b;
+$nav-section-page-number-link-background-color: $qgov-green;
+$nav-section-page-number-link-hover-color: $qgov-green;
+$nav-section-page-number-current-link-color: $white;
+
+// nav site
+
+$nav-site-max-height: $breadcrumbs-max-height;
+$nav-site-background-color: $qgov-banner-blue;
+$nav-site-color: $white;
+$nav-site-current-area-background: transparent;
+$nav-site-current-area-color: $qgov-green;
+$nav-site-current-area-border-color: $qgov-green;
+
+// page container
+
+$page-container-background-color: $qgov-light-gray;
+$content-container-background-color: $qgov-lightBlue-gray;
+$content-container-box-shadow-rgba: $black;
+$content-container-background-bottom: #FDFDFD;
+$content-container-side-margin-small: em(20);
+$content-container-side-margin-large: em(50);
+$article-box-sizing-background-color: $white;
+$article-box-sizing-border-background-color: $white;
+
+// asides
+
+//$aside-link-color: #546A9A;
+$aside-link-color: $qgov-dark-blue;
+$aside-link-visited-color: $qgov-blue-green;
+$aside-link-hover-color: darken($qgov-green, 10);
+$asides-box-sizing-border-color: $white;
+
+// section header
+
+$section-header-background-color: #293942;
+$section-header-color: $black;
+$section-header-headings-color: #293942;
+
+// global alert
+
+$global-alert-background-color: #B90824;
+$global-alert-color: $white;
+$global-alert-link-color: #FF0;
+$global-alert-summary-border-color: $white;
+$global-alert-summary-border-left-color: #B85B6C;
+
+// page feedback
+
+$page-feedback-link-color: $qgov-blue;
+
+// page options
+
+$post-page-options-background-color: $qgov-blue;
+$post-page-options-color: $white;
+$post-page-options-share-background-color: $qgov-blue-green;
+$post-page-options-share-color: $white;
+// $post-page-options-ul-border-color: #d9d9d9;
+// $post-page-options-button-border-color: #3085A2;
+$post-page-options-button-color: $white;
+$post-page-options-button-background-color: $qgov-blue-green;
+$post-page-options-button-hover-background-color: $qgov-dark-blue;
+$post-page-options-button-active-background-color: $qgov-blue-green;
+
+// meta-wrapper
+
+$meta-wrapper-background-color: $white;
+
+// flat style buttons for mobile
+
+$mobile-link-button-background-color: $qgov-blue-green;
+$mobile-link-button-color: $white;
+$mobile-link-button-hover-background-color: $qgov-blue;
+$mobile-link-button-hover-color: $mobile-link-button-color;
+$mobile-link-button-active-background-color: $qgov-blue;
+$mobile-link-button-active-color: $mobile-link-button-color;
+$mobile-link-menu-button-background-color: $mobile-link-button-background-color;
+$mobile-link-menu-button-color: $mobile-link-button-color;
+$mobile-link-menu-button-hover-background-color: $mobile-link-button-hover-background-color;
+$mobile-link-menu-button-hover-color: $mobile-link-button-color;
+$mobile-link-menu-button-active-background-color: $mobile-link-button-active-background-color;
+$mobile-link-menu-button-active-color: $mobile-link-button-color;
+$mobile-link-menu-button-submenu-background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 7" preserveAspectRatio="none"><path d="M0 0h10L5 7z" fill="#fff" fill-opacity=".5"/></svg>') 95% 50% no-repeat;
+
+// light box
+
+$lightbox-overlay-background-color: $black;
+$lightbox-overlay-opacity: 0.7;
+$whitebox-overlay-opacity: 0.3;
+
+// butterfly
+
+$jb-window-inner-background-color: $white;
+$jb-window-inner-color: $light-gray;
+$jb-window-content-jb-caption-background-color: $white;
+
+// charts
+
+$pieLabel-color: $light-gray;
+
+// -------------------------------------
+//   print over-rides
+// -------------------------------------
+
+$print-body-background-color: $white;
+$print-body-color: $black;
+$print-link-url-color: #0066cc;
+$print-header-border-color: $black;
+$print-footer-border-color: $black;
+$print-breadcrumbs-link-border-color: #333;
+$print-checklist-li-border-color: $light-gray;
+
+// -------------------------------------
+//   ui patterns
+// -------------------------------------
+
+// comparison
+$comparison-background-color-bottom: $white;
+$comparison-background-color: #B8DDEF;
+$comparison-inner-background-color: #E5F2FF;
+$advantage-background-color: #BDEABF;
+$advantage-comparison-inner-background-color: #E7FCEC;
+$disadvantage-background-color: #FAB5AC;
+$disadvantage-comparison-inner-background-color: #FFECE5;
+$qg-id-background-gradient-top: #C7D3E3;
+$qg-acc-background-color: #D7E8F0;
+$qg-acc-comparison-inner-background-color: #EBF2F5;
+
+// content type tools
+
+$tool-background-color: $white;
+$tool-border-color: #DCDCDC;
+$tool-actions-background-color: #EFEDEE;
+$icon-link-text-color: #444;
+
+// figures
+
+$figure-img-border-color: #FFFEFC;
+$figure-img-box-shadow-rgba: $black;
+$cut-in-caption-color: $headings-top-level;
+
+// highlight
+
+$highlight-background-color: #ffff99;
+
+// image gallery
+
+$image-gallery-img-border-color: #FFFEFC;
+$image-gallery-img-box-shadow-rgba: $black;
+$image-gallery-link-hover-img-border-color: #0066cc;
+
+// list
+
+$list-navbar-li-border-color: $light-gray;
+
+// map
+
+$map-cluster-icon-span-color: $white;
+$map-leaflet-container-outline-color: $white;
+
+// news feature
+
+$news-feature-background-color: #f9f9f9;
+$news-feature-section-h3-color: $black;
+$news-feature-dl-meta-color: $mid-gray;
+$news-feature-alert-meta-category-color: #ce2408;
+$news-feature-section-important-color: #915f2a;
+$compact-slideshow-active-controlbar-link-color: $white;
+$compact-slideshow-active-controlbar-link-hover-span-color: $white;
+$compact-slideshow-active-panels-current-button-symbol-color: #194477;
+$page-news-news-featured-meta-color: $mid-gray;
+$page-news-news-featured-alert-meta-category-color: #ce2408;
+$page-news-news-archive-meta-color: $mid-gray;
+
+// process menu
+
+$nav-process-background-color: #013652;
+$nav-process-color: $white;
+$nav-process-nav-current-background-color: #559FB8;
+$nav-process-nav-future-background-color: #606060;
+$nav-process-span-link-color: #CCD9E0;
+$nav-process-span-link-hover-color: $white;
+$nav-process-span-link-hover-background-color: #53b2d2;
+$nav-process-page-number-color: #05457F;
+$nav-process-page-number-background-color: $white;
+$nav-process-nav-list-background-color: #006584;
+$nav-process-nav-hover-list-background-color: #006584;
+$nav-process-nav-list-link-hover-background-color: #53B2D2;
+$nav-process-nav-link-color: $white;
+$nav-process-nav-link-background-color: #006584;
+$nav-process-nav-link-dropdown-background-color: #013652;
+$nav-process-nav-hover-background-color: #53B2D2;
+
+// QG video
+
+$qg-ovt-active-qg-ovt-controls-background-color: #d5d5d5;
+$qg-ovt-active-qg-ovt-controls-link-keyboard-focus-outline-color: #eab754;
+$qg-ovt-active-qg-ovt-alternatives-border-color: #777777;
+$qg-ovt-active-qg-ovt-alternatives-background-color: $white;
+$qg-ovt-active-qg-ovt-options-transcript-link-color: $black;
+$qg-ovt-active-qg-ovt-options-transcript-link-background-color: $white;
+$qg-ovt-active-qg-ovt-options-transcript-link-border-color: #999999;
+$qg-ovt-active-qg-ovt-options-transcript-link-hover-background-color: #ffffcc;
+$qg-ovt-active-qg-ovt-options-download-border-color: #aacee8;
+$qg-ovt-active-qg-ovt-options-download-background-color: #ebf4fa;
+$qg-ovt-active-qg-ovt-options-download-list-border-color: #aacee8;
+$qg-ovt-active-qg-ovt-options-download-list-background-color: $white;
+$qg-ovt-active-qg-ovt-options-download-list-link-color: #555555;
+$qg-ovt-active-qg-ovt-options-download-list-link-keyboard-focus-border-color: #f8be4c;
+$qg-ovt-active-qg-ovt-options-download-list-link-hover-background-color: #ffffcc;
+$qg-ovt-active-qg-ovt-options-download-list-link-hover-color: #0000ff;
+$qg-ovt-active-qg-ovt-transcript-background-color: $white;
+$qg-ovt-active-qg-ovt-controls-progress-bar-background-color: $black;
+$qg-ovt-active-qg-ovt-controls-progress-bar-load-progress-background-color: #8deaf4;
+$qg-ovt-active-qg-ovt-controls-volume-overlay-background-color: #efefef;
+$qg-ovt-active-qg-ovt-controls-volume-slider-ui-slider-range-background-color: #3170a3;
+
+// quotes
+
+$blockquote-pull-quote-background-color: $white;
+$blockquote-pull-quote-color: $qgov-blue-green;
+$blockquote-pull-quote-border-color: #A7A7A7;
+$blockquote-pull-quote-after-color: $qgov-blue-green;
+
+// scrollable
+
+$scrollable-border-color-ie: #D6D6D6;
+$scrollable-after-box-shadow-rgba: $black;
+
+// short list
+
+$short-list-toggle-link-background-color: #f3f3f3;
+$short-list-toggle-link-hover-background-color: #dddddd;
+
+// smart banner
+
+$smartbanner-background-color: $white;
+$smartbanner-box-shadow-rgba: #323232;
+$smartbanner-border-color: $silver;
+$smartbanner-close-color: #b1b1b3;
+$smartbanner-close-background-color: #efefef;
+$smartbanner-close-states-color: $gray;
+$smartbanner-icon-background-color: $white;
+$smartbanner-info-color: #999999;
+$smartbanner-title-color: $black;
+$smartbanner-button-color: $white;
+$link-smartbanner-close-color: $gray;
+$link-smartbanner-button-color: $white;
+$smartbanner-aside-link-visited-color: $white;
+
+// status
+
+$status-color: $black;
+$status-background-color: $qgov-light-blueberry;
+$status-border-color: $qgov-blueberry;
+$info-background-color: $qgov-light-blueberry;
+$info-border-color: $qgov-blueberry;
+$info-color: $black;
+$success-step-background-color: $qgov-light-blueberry;
+$success-step-border-color: $qgov-blueberry;
+$success-step-color: $black;
+$success-background-color: $qgov-light-lime;
+$success-border-color: $qgov-lime;
+$success-color: $black;
+$warn-background-color: $qgov-light-peach;
+$warn-border-color: $qgov-peach;
+$warn-color: $black;
+$fail-background-color: $qgov-light-watermelon;
+$fail-border-color: $qgov-watermelon;
+$fail-color: $black;
+$download-background-color: #F5EBDC;
+$download-border-color: #AE8446;
+$download-color: $black;
+
+// tables
+
+$tables-thead-background-color: #13578b;
+$tables-thead-color: $white;
+$tables-odd-background-color: #f3f3f3;
+$tables-odd-sorting-1-background-color: mix($tables-thead-background-color, $tables-odd-background-color, 20%);
+$tables-odd-sorting-2-background-color: mix($tables-thead-background-color, $tables-odd-background-color, 10%);
+$tables-odd-sorting-3-background-color: mix($tables-thead-background-color, $tables-odd-background-color, 5%);
+$tables-even-background-color: #ffffff;
+$tables-even-sorting-1-background-color: mix($tables-thead-background-color, $tables-even-background-color, 20%);
+$tables-even-sorting-2-background-color: mix($tables-thead-background-color, $tables-even-background-color, 10%);
+$tables-even-sorting-3-background-color: mix($tables-thead-background-color, $tables-even-background-color, 5%);
+$tables-current-background-color: #bddff0;
+$tables-caption-color: $headings-top-level;
+$tables-tbody-background-color: #f3f3f3;
+$tables-paginate-enabled-previous-next-color: #111111;
+$tables-paginate-disabled-previous-next-color: $tables-paginate-enabled-previous-next-color;
+$tables-paginate-disabled-previous-color: $mid-gray;
+$tables-paging-full-numbers-link-paginate-button-border-color: #aaaaaa;
+$tables-paging-full-numbers-link-paginate-button-color: $gray;
+$tables-paging-full-numbers-link-paginate-button-background-color: #dddddd;
+$tables-paging-full-numbers-link-paginate-button-hover-background-color: $silver;
+$tables-paging-full-numbers-link-paginate-active-background-color: #99B3FF;
+$tables-processing-border-color: #dddddd;
+$tables-processing-color: #999999;
+
+// tabs (oldie)
+
+$tabs-li-link-color-oldie: $white;
+$tabs-li-current-link-color-oldie: #2c3a43;
+
+// tabs
+
+$tabbed-viewport-background-color: #efedee;
+$tabs-li-link-background-color: #2c3a43;
+$tabs-li-link-color: $white;
+$tabs-li-current-link-background-color: #efedee;
+$tabs-li-current-link-color: #2c3a43;
+$red-tab-button-border-color: #D80000;
+$amber-tab-button-border-color: #FFB400;
+$green-tab-button-border-color: #007C00;
+
+// toc
+
+$toc-border-background-color: #EEF5F8;
+$toc-link-page-number-background-color: #DDECF1;
+$toc-link-page-number-color: #05457F;
+$toc-link-hover-page-number-background-color: $white;
+
+// what's next
+
+$what-next-border-background-color: #EDEDED;
+$what-next-border-background-top: #F6F6F6;
+$what-next-h2-background-color: #0B2E4C;
+$what-next-h2-color: $white;
+$what-next-li-nth-child-2n-link-background-color: #FCFCFC;
+$what-next-link-color: #437CA9;
+$what-next-link-visited-color: #437CA9;
+
+// xol
+
+$xol-li-disc-link-before-background-color: #444444;
+$xol-li-disc-link-before-border-color: $xol-li-disc-link-before-background-color;
+$xol-li-disc-link-before-color: $white;
+
+// aside
+
+$aside-color: #4d4d4d;
+$aside-background-color: #F9F9F9;
+$aside-border-color: #DCDCDC;
+$aside-h2-color: #005474;
+$aside-img-border-color: $white;
+$aside-img-box-shadow-rgba: $black;
+
+// asides
+
+$asides-emergency-contact-background-color: #FFDEA6;
+$asides-events-li-even-background-color: #f3f3f3;
+$asides-feedback-background-color: #e7f5fe;
+$asides-your-say-li-even-link-background-color: #fcfcfc;
+$asides-your-say-li-new-meta-background-color: #639052;
+$asides-your-say-li-new-meta-box-shadow-rgba: $black;
+$asides-your-say-li-new-meta-color: $white;
+$asides-story-color: #005A7A;
+$asides-contact-color: #13578b;
+
+// form
+
+$form-required-marker-color: $qgov-guava-red;
+
+$form-button-background-color: #585E62;
+$form-button-color: $white;
+$form-button-hover-color: $black;
+$form-button-hover-background-color: lighten(#585E62, 15);
+$form-button-active-background-color: #585E62;
+$form-button-disabled-background-color: #585E62;
+$form-button-disabled-color: $white;
+
+
+
+//$form-strong-button-background-color: $qgov-green;
+//$form-strong-button-color: $black;
+//
+//$form-strong-button-hover-background-color: #b1e455;
+//$form-strong-button-active-background-color: $qgov-green;
+//$form-strong-button-disabled-background-color: $qgov-green;
+//$form-strong-button-disabled-color: $form-strong-button-color;
+
+
+$form-strong-button-background-color: $qgov-green;
+$form-strong-button-color: $black;
+
+$form-strong-button-hover-background-color: $qgov-light-green;
+$form-strong-button-active-background-color: $qgov-green;
+$form-strong-button-disabled-background-color: $qgov-green;
+$form-strong-button-disabled-color: $form-strong-button-color;
+
+$form-em-button-background-color: $qgov-blue;
+$form-em-button-color: $white;
+$form-em-button-hover-color: $black;
+$form-em-button-hover-background-color: #9ac5df;
+$form-em-button-active-background-color: $qgov-blue;
+$form-em-button-disabled-background-color: $qgov-blue;
+$form-em-button-disabled-color: $form-em-button-color;
+
+$form-actions-link-color: #13578b;
+
+$form-input-background-color: $white;
+$form-input-border-color: $silver;
+$form-input-disabled: #777777;
+$form-input-readonly: $form-input-disabled;
+$form-input-focus-border-color: $qgov-blue;
+
+$form-search-lookup-background-color: $mid-gray;
+$form-search-lookup-color: $white;
+$form-search-results-border-color: $silver;
+$form-disabled-color: $form-input-disabled;
+
+$form-invalid-alert-color: $qgov-guava-red;
+$form-invalid-input-border-color: $qgov-guava-red;
+$form-invalid-input-color: $form-invalid-alert-color;
+$form-questions-li-active-background-color: #FFFBE6;
+$form-questions-li-active-background-top: #FFFBE6;
+$form-questions-li-active-background-bottom: #FFFBE6;
+
+$form-status-heading-color: $gray;
+$form-section-li-section-border-color: $silver;
+$form-section-legend-heading-color: $black;
+$form-data-dd-border-color: #dbdbdb;
+$form-data-dd-background-color: #f9f9f9;
+$form-data-tba-dd-color: #777777;
+$form-data-tba-dd-link-color: #444444;
+$form-label-compact-label-color: $mid-gray;
+$form-placeholder-color: $mid-gray;
+$form-checked-label: $qgov-blue;
+
+$form-xor-li-border-color: $silver;
+$form-xor-li-background-color: transparent;
+$form-xor-li-color: $qgov-blue;
+
+// search
+
+$search-pagination-link-background-color: #585E62;
+$search-pagination-link-color: $white;
+$search-pagination-link-hover-background-color: $search-pagination-link-background-color;
+$search-pagination-link-hover-color: $white;
+
+// social media
+
+$social-tweet-hover-link-color: #0084B4;
+$social-tweet-meta-color: #999999;
+
+// slide tabs
+
+// NOTE: Prefix the template styles with <TEMPLATE FOLDER NAME>-horizontal/vertical
+
+//div.swe-horizontal > div.st_tabs a.st_prev
+$slidetabs-horizontal-tabs-link-next-background-top: $slidetabs-white;
+$slidetabs-horizontal-tabs-link-next-background-bottom: $slidetabs-silver-medium-light;
+$slidetabs-horizontal-tabs-link-next-box-shadow-rgba: $black;
+//div.swe-horizontal > div.st_tabs a.st_prev
+//div.swe-horizontal > div.st_tabs a.st_next
+$slidetabs-horizontal-tabs-link-prev-next-background-color: $slidetabs-white;
+//div.swe-horizontal > div.st_tabs a.st_prev:hover
+//div.swe-horizontal > div.st_tabs a.st_next:hover
+$slidetabs-horizontal-tabs-prev-next-link-hover-background-color: $slidetabs-blue-light;
+//div.swe-horizontal > div.st_tabs a.st_prev.st_btn_disabled
+//div.swe-horizontal > div.st_tabs a.st_next.st_btn_disabled
+$slidetabs-horizontal-tabs-prev-next-link-disabled-background-color: $slidetabs-silver-light;
+//div.swe-horizontal > div.st_tabs ul li a
+$slidetabs-horizontal-tabs-list-link-color: $slidetabs-white;
+$slidetabs-horizontal-tabs-list-link-border-color: $slidetabs-silver;
+$slidetabs-horizontal-tabs-list-link-background-color: $slidetabs-blue-dark;
+//div.swe-horizontal > div.st_tabs ul li a:hover
+$slidetabs-horizontal-tabs-list-link-hover-color: $slidetabs-white;
+$slidetabs-horizontal-tabs-list-link-hover-background-color: $slidetabs-blue-light;
+//div.swe-horizontal > div.st_tabs ul li a.st_tab_first
+$slidetabs-horizontal-tabs-list-link-first-border-color: $slidetabs-silver;
+//div.swe-horizontal > div.st_tabs ul li a.st_tab_active
+$slidetabs-horizontal-tabs-list-link-active-background-color: $slidetabs-silver-medium-light;
+$slidetabs-horizontal-tabs-list-link-active-color: $slidetabs-blue-medium;
+//div.swe-horizontal > div.st_views
+$slidetabs-horizontal-views-border-color: $slidetabs-silver;
+$slidetabs-horizontal-views-background-color: $slidetabs-silver-medium-light;
+//div.swe-horizontal.align_bottom > div.st_tabs ul li a
+$slidetabs-horizontal-views-list-link-border-color: $slidetabs-silver;
+//div.swe-horizontal.align_bottom > div.st_tabs ul li a.st_tab_active
+$slidetabs-horizontal-views-list-link-active-border-color: $slidetabs-white;
+
+//div.swe-vertical > div.st_tabs a.st_prev
+//div.swe-vertical > div.st_tabs a.st_next
+$slidetabs-vertical-tabs-prev-next-link-border-color: $slidetabs-silver;
+$slidetabs-vertical-tabs-prev-next-link-background-color: $slidetabs-white;
+//div.swe-vertical > div.st_tabs a.st_prev:hover
+//div.swe-vertical > div.st_tabs a.st_next:hover
+$slidetabs-vertical-tabs-prev-next-link-hover-background-color: $slidetabs-blue-light;
+//div.swe-vertical > div.st_tabs a.st_prev.st_btn_disabled
+//div.swe-vertical > div.st_tabs a.st_next.st_btn_disabled
+$slidetabs-vertical-tabs-prev-next-link-disabled-background-color: $slidetabs-tint-white;
+//div.swe-vertical > div.st_tabs
+$slidetabs-vertical-tabs-border-color: $slidetabs-silver;
+//div.swe-vertical.st_sliding_active > div.st_tabs
+$slidetabs-vertical-active-tabs-border-color: $slidetabs-silver;
+//div.swe-vertical > div.st_tabs ul li a
+$slidetabs-vertical-tabs-list-link-color: $slidetabs-gray-medium;
+$slidetabs-vertical-tabs-list-link-border-color: $slidetabs-silver;
+$slidetabs-vertical-tabs-list-link-border-background-color: $slidetabs-silver-light;
+$slidetabs-vertical-tabs-list-link-border-background-top: $slidetabs-silver-light;
+$slidetabs-vertical-tabs-list-link-border-background-bottom: $slidetabs-silver-medium;
+//div.swe-vertical > div.st_tabs ul li a:hover
+$slidetabs-vertical-tabs-list-link-hover-color: $slidetabs-gray;
+$slidetabs-vertical-tabs-list-link-hover-background-color: $slidetabs-off-white;
+//div.swe-vertical > div.st_tabs ul li a.st_tab_active
+$slidetabs-vertical-tabs-list-link-active-color: $slidetabs-blue-lightest;
+$slidetabs-vertical-tabs-list-link-active-background-color: $slidetabs-white;
+//div.swe-vertical > div.st_tabs ul li a span
+$slidetabs-vertical-tabs-list-link-span-color: $slidetabs-gray-light;
+//div.swe-vertical > div.st_views
+$slidetabs-vertical-views-border-color: $slidetabs-silver;
+$slidetabs-vertical-views-background-color: $slidetabs-silver-medium-light;
+//div.swe-vertical.align_right.st_sliding_active > div.st_tabs
+$slidetabs-vertical-right-tabs-border-color: $slidetabs-silver;
+//div.swe-vertical.align_right > div.st_tabs ul li a
+$slidetabs-vertical-right-tabs-list-link-border-color: $slidetabs-silver;
+//div.swe-vertical.align_right > div.st_tabs ul li a.st_tab_active
+$slidetabs-vertical-right-tabs-list-link-active-border-color: $slidetabs-white;
+//div.swe-vertical.align_right > div.st_tabs a.st_prev
+$slidetabs-vertical-right-tabs-link-prev-border-color: $slidetabs-silver;
+
+// -------------------------------------
+//   vendor theme (jquery-ui)
+// -------------------------------------
+
+//.ui-tooltip
+$jquery-ui-tooltip-box-shadow: $dark-silver;
+//.ui-widget-content
+$jquery-ui-widget-content-border-color: #E7E7E7;
+$jquery-ui-widget-content-background-color: $white;
+$jquery-ui-widget-content-color: $black;
+//.ui-widget-content a
+$jquery-ui-widget-content-link-color: $black;
+//.ui-widget-header
+$jquery-ui-widget-header-border-color: #293942;
+$jquery-ui-widget-header-background-color: #293942;
+$jquery-ui-widget-header-color: $white;
+//.ui-widget-header a
+$jquery-ui-widget-header-link-color: $white;
+//.ui-state-default
+$jquery-ui-state-default-border-color: #e6e6e6;
+$jquery-ui-state-default-background-color: #e6e6e6;
+$jquery-ui-state-default-color: #555555;
+//.ui-state-default a
+$jquery-ui-state-default-link-color: #555555;
+//.ui-state-hover
+$jquery-ui-state-hover-border-color: #559FB8;
+$jquery-ui-state-hover-background-color: #559FB8;
+$jquery-ui-state-hover-color: $black;
+//.ui-state-hover a
+$jquery-ui-state-hover-link-color: $black;
+//.ui-state-active
+$jquery-ui-state-active-border-color: #aaaaaa;
+$jquery-ui-state-active-background-color: #ffffff;
+$jquery-ui-state-active-color: #212121;
+//.ui-state-active a
+$jquery-ui-state-active-link-color: #212121;
+//.ui-state-highlight
+$jquery-ui-state-highlight-border-color: #FFE7AC;
+$jquery-ui-state-highlight-background-color: #FFFBE6;
+$jquery-ui-state-highlight-color: #363636;
+//.ui-state-highlight a
+$jquery-ui-state-highlight-link-color: #363636;
+//.ui-state-error
+$jquery-ui-state-error-border-color: #cd0a0a;
+$jquery-ui-state-error-background-color: #fef1ec;
+$jquery-ui-state-error-color: #cd0a0a;
+//.ui-state-error a
+$jquery-ui-state-error-link-color: #cd0a0a;
+//.ui-state-error-text
+$jquery-ui-state-error-text-color: #cd0a0a;
+//.ui-widget-overlay
+$jquery-ui-widget-overlay-background-color: #31312f;
+//.ui-widget-shadow
+$jquery-ui-widget-shadow-background-color: #aaaaaa;
+
+//correct incorrect style guide
+$qg-correct-border-color: #92c23a;
+$qg-correct-bg-color: #fafff2;
+$qg-correct-color: #78ba00;
+$qg-incorrect-border-color: #d4534c;
+$qg-incorrect-bg-color: #fffafa;
+$qg-incorrect-color: #d22d24;

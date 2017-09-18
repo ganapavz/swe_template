@@ -1,0 +1,22 @@
+ParentCategory (BS),ChildCategory (BS),Description,Thumbnail
+Accommodation,Accommodation,DESCRIPTION,/examples/assets/example-thumb.jpg
+"Arts, Crafts and Hobbies",Collectables and Memorabilia - Sales and Services,DESCRIPTION,/examples/assets/example-thumb.jpg
+"Arts, Crafts and Hobbies",Swords - Restoration and Supplies,DESCRIPTION,/examples/assets/example-thumb.jpg
+Automotive,Auto - Car and 4WD Rentals,DESCRIPTION,/examples/assets/example-thumb.jpg
+Automotive,Auto - Mechanical Repairs and Servicing,DESCRIPTION,/examples/assets/example-thumb.jpg
+"Books, Magazines and Newsagents","Books, Magazines and Newspapers",DESCRIPTION,/examples/assets/example-thumb.jpg
+"Clothing, Fabrics, Accessories and Services",Footwear - Repairs and Services,DESCRIPTION,/examples/assets/example-thumb.jpg
+Computers,"Computers - Sales, Products and Repairs",DESCRIPTION,/examples/assets/example-thumb.jpg
+Consumer Goods and Services,Electrical Goods - Repairs and Services,Electrical Goods - Repairs and Services,/sandpit/data/business-discount-directory/category/electrical-goods.jpg
+Consumer Goods and Services,Hardware and Tool Supplies,Hardware and Tool Supplies,/sandpit/data/business-discount-directory/category/hardware-tools.jpg
+Consumer Goods and Services,Key Cutting and Engraving,Key Cutting and Engraving,/sandpit/data/business-discount-directory/category/key-cutting.jpg
+Consumer Goods and Services,Refrigeration - Sales and Services,Refrigeration - Sales and Services,/sandpit/data/business-discount-directory/category/refrigerator.jpg
+Consumer Goods and Services,Watches and Clocks - Sales and Services,Watches and Clocks - Sales and Services,/sandpit/data/business-discount-directory/category/clocks.jpg
+"Entertainment, Events and Venues",Cinemas,DESCRIPTION,/examples/assets/example-thumb.jpg
+Financial Services,Financial Services,DESCRIPTION,/examples/assets/example-thumb.jpg
+"Food, Drink Suppliers and Services","Food - Meat, Seafood, Poultry and Smallgoods",DESCRIPTION,/examples/assets/example-thumb.jpg
+"Food, Drink Suppliers and Services",Food and Beverages - Takeaway,DESCRIPTION,/examples/assets/example-thumb.jpg
+Health and Medical Products and Services,Hearing - Products and Services,DESCRIPTION,/examples/assets/example-thumb.jpg
+Office and Business - Supplies and Services,Stationery and Office Supplies,DESCRIPTION,/examples/assets/example-thumb.jpg
+Security,Security - Alarm Systems and Monitoring Services,DESCRIPTION,/examples/assets/example-thumb.jpg
+Travel,Travel - Tourist Attractions,DESCRIPTION,/examples/assets/example-thumb.jpg

@@ -1,0 +1,59 @@
+@media screen, projection, tv, handheld {
+
+  /* single column (mobile) skin */
+  #header-wrapper {
+    min-height: 80px;
+    @include clearfix();
+  }
+
+  /* header */
+  #header {
+    position: relative;
+  }
+
+  #header .max-width {
+    background: $header-max-width-background-color;
+    min-height: 80px;
+    @include clearfix();
+  }
+
+  #header a img {
+    border: none;
+  }
+
+  #header-bg {
+    display: none;
+    position: absolute;
+    top: -32px; /* #access margin-bottom */
+    left: 0;
+    right: 0;
+    height: 0;
+    width: 0;
+    z-index: -1;
+  }
+
+  #header,
+  #header .current-area {
+    a,
+    a:link,
+    a:visited {
+      color: $header-link-color;
+    }
+  }
+
+  #header a:hover,
+  #header a.keyboard-focus {
+    background: $header-link-hover-background-color;
+  }
+
+  #header .current-area {
+    background: $header-current-area-background-color;
+    color: $header-current-area-color;
+  }
+}
+
+@media print {
+  #header {
+    margin-bottom: 0.5em;
+  }
+}

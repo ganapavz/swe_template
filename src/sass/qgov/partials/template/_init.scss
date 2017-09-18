@@ -1,0 +1,17 @@
+@media screen,projection,tv,handheld {
+	body {
+		background-color: $body-background-color;
+		color: $body-color;
+	}
+	#header,
+	#page-container,
+	#jb-window-content {
+		clear: both;
+		text-align: left;
+	}
+	/* max-width for all columns */
+	.max-width {
+		max-width: 82em;
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,25 @@
+div.tool h3 img {
+	width: 75px; 
+	height: 75px; 
+	border:1px solid #DCDCDC;
+}
+
+div.tool .actions {
+	padding-left: 50px;
+	text-align: left;
+} 
+
+div.tool .actions ul {
+	padding: 0;
+	margin: .5em 0 0 0;
+} 
+
+div.tool .actions p {
+	margin: 0 !important;
+} 
+
+div.tool .button {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+

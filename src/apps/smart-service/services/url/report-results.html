@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+	<meta charset="UTF-8" />
+	<title>View redirection log | URL management | Queensland Government</title>
+
+<!--#set var="franchise" value="QGov"-->
+<!--#set var="title" value="View redirection log"-->
+<!--#include virtual="/assets/includes/global/head-assets.html"-->
+
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+	
+	<meta name="DCTERMS.created" content="2011-05-25" />
+	<meta name="DCTERMS.modified" content="2011-06-16" />
+	<meta name="DCTERMS.title" content="View redirection log | URL management" />
+	<meta name="DCTERMS.description" content="DESCRIPTION" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION" />
+	<meta name="DCTERMS.identifier" scheme="DCTERMS.URI" content="https://www.smartservice.qld.gov.au/services/url/purls" />
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="form" />
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="government" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+</head>
+
+<body id="qld-gov-au" style="background: #112945">
+
+<!--#include virtual="/assets/includes/global/header.html"-->	
+	
+	<div id="page-container"><div class="max-width">
+		<div id="breadcrumbs">
+			<h2>You are here:</h2>
+			<ol>
+<!--#include virtual="/assets/includes/global/breadcrumb-global.html"-->
+				<li><a href="/services/url">URL management</a></li>
+				<li class="last-child">View redirection log</li>
+			</ol>
+		</div>
+	
+		<div id="content-container">
+            <div id="content">
+
+				<div class="article"><div class="box-sizing"><div class="border">
+                
+<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+					<h1>View redirection log</h1>
+
+<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+					<div class="form"><form accept-charset="UTF-8" action="/services/url/purls" class="formtastic purl" id="new_purl" method="post">
+
+						<ol class="questions">
+
+							<li class="group">
+								<fieldset>
+									<legend>
+										<span class="label">Date range</span>
+										<small class="hint">Supported formats:
+											<samp>15 Jan</samp>,
+											<samp>now</samp>,
+											<samp>Wednesday</samp>,
+											<samp>10 hrs ago</samp>,
+											<samp>2011-06-16</samp>
+										</small>
+									</legend>
+
+									<ol class="questions compact">
+										<li class="string required">
+											<label for="dtstart">
+												<span class="label">From</span>
+												<abbr title="(required)">*</abbr>
+											</label>
+											<input type="text" id="dtstart" size="20" list="dtstart-list" required="required" value="9am" />
+											<datalist id="dtstart-list">
+												<option value="24 hours ago"></option>
+												<option value="Sunday"></option>
+												<option value="Monday"></option>
+												<option value="Tuesday"></option>
+												<option value="Wednesday"></option>
+												<option value="Thursday"></option>
+												<option value="Friday"></option>
+												<option value="Saturday"></option>
+											</datalist>
+										</li>
+										<li class="string required">
+											<label for="dtend">
+												<span class="label">To</span>
+												<abbr title="(required)">*</abbr>
+											</label>
+											<input type="text" id="dtend" size="20" list="dtend-list" required="required" value="now" />
+											<datalist id="dtend-list">
+												<option value="now"></option>
+												<option value="Monday"></option>
+												<option value="Tuesday"></option>
+												<option value="Wednesday"></option>
+												<option value="Thursday"></option>
+												<option value="Friday"></option>
+												<option value="Saturday"></option>
+												<!-- guessing that Saturday is more likely than Sunday for 'To' field -->
+												<option value="Sunday"></option>
+											</datalist>
+										</li>
+									</ol>
+
+								</fieldset>
+							</li>
+
+							<li class="string">
+								<label for="purl_new_url">
+									<span class="label">Old URL</span>
+									<small class="hint">A URL which has been redirected in this system</small>
+								</label>
+								<input id="purl_new_url" maxlength="255" name="purl[new_url]" size="75" type="url" value="http://www.getinvolved.qld.gov.au/" class="" required="required" />
+							</li>
+
+							<li class="string">
+								<label for="referrer">
+									<span class="label">Referrer</span>
+									<small class="hint">URL of a page which contains links that are being redirected</small>
+								</label>
+								<input id="referrer" maxlength="255" name="purl[new_url]" size="75" type="url" value="" class="" required="required" />
+							</li>
+
+							<li class="select required">
+								<fieldset>
+									<legend>
+										<span class="label">Show events where the user was</span>
+										<abbr title="(required)">*</abbr>
+									</legend>
+									<ul class="choices">
+										<li><label><input type="checkbox" name="events" required="required" />Redirected</label></li>
+										<li><label><input type="checkbox" name="events" checked="checked" required="required" />Shown the 'file not found' error</label></li>
+									</ul>
+								</fieldset>
+							</li>
+
+							<li class="string">
+								<label for="redirect">
+									<span class="label">New URL</span>
+									<small class="hint">URL that this system is redirecting customers to</small>
+								</label>
+								<input id="redirect" maxlength="255" name="purl[new_url]" size="75" type="url" value="" class="" required="required" />
+							</li>
+
+							<li class="footer">
+								<ul class="submit">
+									<li class="submit"><strong><input class="create" id="purl_submit" name="commit" type="submit" value="Search" /></strong></li>
+								</ul>
+							</li>
+						</ol>
+					</form></div>
+
+                    <div id="search-recommended">
+                      <ul class="search-results">
+                        <li>
+                          <h3><a href="click.cgi?url=http%3A%2F%2Fwww.qsa.qld.edu.au%2Fassessment%2F587.html&amp;rank=1&amp;collection=qld-gov"><span class="result-title">Download raw data</span> (CSV) <span class="recommended">(Recommended)</span></a></h3>
+                          <p class="search-description">All matching records are contained in this CSV file.</p>
+                        </li>
+                      </ul>
+                    </div>
+
+					<h2 class="resultset-title">Displaying <strong>1–10</strong> of <strong>221</strong> results</h2>
+					<ul class="search-results">
+						<li>
+							<h3><a href="select-date.html"><span class="result-title">http://www.getinvolved.qld.gov.au</span></a></h3>
+							<p class="meta">40 hits from <a href="http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053">http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053</a></p>
+							<ul class="submit">
+								<li><a href="#">Add redirection</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<h3><a href="select-date.html"><span class="result-title">http://www.getinvolved.qld.gov.au</span></a></h3>
+							<p class="meta">40 hits from <a href="http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053">http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053</a></p>
+							<ul class="submit">
+								<li><a href="#">Add redirection</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<h3><a href="select-date.html"><span class="result-title">http://www.getinvolved.qld.gov.au</span></a></h3>
+							<p class="meta">40 hits from <a href="http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053">http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053</a></p>
+							<ul class="submit">
+								<li><a href="#">Add redirection</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<h3><a href="select-date.html"><span class="result-title">http://www.getinvolved.qld.gov.au</span></a></h3>
+							<p class="meta">40 hits from <a href="http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053">http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053</a></p>
+							<ul class="submit">
+								<li><a href="#">Add redirection</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<h3><a href="select-date.html"><span class="result-title">http://www.getinvolved.qld.gov.au</span></a></h3>
+							<p class="meta">40 hits from <a href="http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053">http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053</a></p>
+							<ul class="submit">
+								<li><a href="#">Add redirection</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<h3><a href="select-date.html"><span class="result-title">http://www.getinvolved.qld.gov.au</span></a></h3>
+							<p class="meta">40 hits from <a href="http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053">http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053</a></p>
+							<ul class="submit">
+								<li><a href="#">Add redirection</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<h3><a href="select-date.html"><span class="result-title">http://www.getinvolved.qld.gov.au</span></a></h3>
+							<p class="meta">40 hits from <a href="http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053">http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053</a></p>
+							<ul class="submit">
+								<li><a href="#">Add redirection</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<h3><a href="select-date.html"><span class="result-title">http://www.getinvolved.qld.gov.au</span></a></h3>
+							<p class="meta">40 hits from <a href="http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053">http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053</a></p>
+							<ul class="submit">
+								<li><a href="#">Add redirection</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<h3><a href="select-date.html"><span class="result-title">http://www.getinvolved.qld.gov.au</span></a></h3>
+							<p class="meta">40 hits from <a href="http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053">http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053</a></p>
+							<ul class="submit">
+								<li><a href="#">Add redirection</a></li>
+							</ul>
+						</li>
+
+						<li>
+							<h3><a href="select-date.html"><span class="result-title">http://www.getinvolved.qld.gov.au</span></a></h3>
+							<p class="meta">40 hits from <a href="http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053">http://statements.cabinet.qld.gov.au/MMS/StatementDisplaySingle.aspx?id=53053</a></p>
+							<ul class="submit">
+								<li><a href="#">Add redirection</a></li>
+							</ul>
+						</li>
+
+					</ul>                	
+
+				</div></div></div><!-- end .article, .box-sizing, .border -->
+			</div><!-- end #content -->
+
+            <div id="asides"><div class="box-sizing"><div class="border">
+            	<!--#include virtual="/assets/includes/global/global-aside.html"-->
+                
+				<!--#include virtual="aside-promo.html" -->
+				<!--#include virtual="aside-contact.html" -->
+            
+            </div></div></div><!-- end #asides, .box-sizing, .border -->
+
+			<div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+				<div id="document-properties"><div class="box-sizing">
+					<dl>
+						<dt>Last updated</dt>
+						<dd>16 June 2011</dd>
+					</dl>
+				</div></div>
+				
+<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+			</div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+		</div><!-- end #content-container -->
+        
+
+<div id="nav-section">
+	<div class="box-sizing">
+		<h2><a href="/services/url">URL management</a></h2>
+		<ul>
+			<li><a href="/services/url/purls/new">Get a short URL</a></li> 
+			<li><a href="/services/url/translations/new">Add redirection</a></li> 
+			<li><a href="/services/url/batches/new">Batch upload</a></li> 
+			<li><a href="/services/url/translations">List redirections</a></li> 
+			<li><a href="report.html">View redirection log</a></li> 
+<!-- 			<li><a href="/services/url/translation_versions">Translation Changes Feed</a></li>  -->
+		</ul>
+	</div>
+</div>
+
+	
+    </div></div><!-- end #page-container, .max-width -->
+
+<!--#include virtual="/assets/includes/global/footer.html"-->
+	
+</body>
+</html>

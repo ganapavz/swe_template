@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:dcterms="http://purl.org/dc/terms/">
+
+	<skos:Concept rdf:about="franchise:thematic">
+		<skos:prefLabel>Thematic franchises</skos:prefLabel>
+		<skos:hiddenLabel>thematic</skos:hiddenLabel>
+		<skos:narrower rdf:resource="franchise:transport"/>
+		<skos:narrower rdf:resource="franchise:jobs"/>
+		<skos:narrower rdf:resource="franchise:education"/>
+		<skos:narrower rdf:resource="franchise:environment"/>
+		<skos:narrower rdf:resource="franchise:recreation"/>
+		<skos:narrower rdf:resource="franchise:housing"/>
+		<skos:narrower rdf:resource="franchise:health"/>
+		<skos:narrower rdf:resource="franchise:law"/>
+		<skos:narrower rdf:resource="franchise:emergency"/>
+		<skos:narrower rdf:resource="franchise:about"/>
+		<skos:narrower rdf:resource="franchise:community"/>
+		<skos:narrower rdf:resource="franchise:business"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="fracnhise:audience">
+		<skos:prefLabel>Audience based franchises</skos:prefLabel>
+		<skos:hiddenLabel>audience</skos:hiddenLabel>
+		<skos:narrower rdf:resource="franchise:atsi"/>
+		<skos:narrower rdf:resource="franchise:seniors"/>
+		<skos:narrower rdf:resource="franchise:families"/>
+		<skos:narrower rdf:resource="franchise:disability"/>
+		<skos:narrower rdf:resource="franchise:youth"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:transport">
+		<skos:prefLabel>Transport &amp; motoring</skos:prefLabel>
+		<skos:hiddenLabel>transport</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:thematic"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:jobs">
+		<skos:prefLabel>Employment &amp; jobs</skos:prefLabel>
+		<skos:hiddenLabel>jobs</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:thematic"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:education">
+		<skos:prefLabel>Education &amp; training</skos:prefLabel>
+		<skos:hiddenLabel>education</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:thematic"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:environment">
+		<skos:prefLabel>Environment, land &amp; water</skos:prefLabel>
+		<skos:hiddenLabel>environment</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:thematic"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:recreation">
+		<skos:prefLabel>Recreation, sports &amp; arts</skos:prefLabel>
+		<skos:hiddenLabel>recreation</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:thematic"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:housing">
+		<skos:prefLabel>Homes &amp; housing</skos:prefLabel>
+		<skos:hiddenLabel>housing</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:thematic"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:health">
+		<skos:prefLabel>Health &amp; well being</skos:prefLabel>
+		<skos:hiddenLabel>health</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:thematic"/>
+	</skos:Concept>
+ 	 
+	<skos:Concept rdf:about="franchise:law">
+		<skos:prefLabel>Your rights, crime &amp; the law</skos:prefLabel>
+		<skos:hiddenLabel>law</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:thematic"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:emergency">
+		<skos:prefLabel>Emergency services &amp; safety</skos:prefLabel>
+		<skos:hiddenLabel>emergency</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:thematic"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:about">
+		<skos:prefLabel>About Queensland &amp; its government</skos:prefLabel>
+		<skos:hiddenLabel>about</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:thematic"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:community">
+		<skos:prefLabel>Community support</skos:prefLabel>
+		<skos:hiddenLabel>community</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:thematic"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:business">
+		<skos:prefLabel>Business &amp; Industry</skos:prefLabel>
+		<skos:hiddenLabel>business</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:thematic"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:atsi">
+		<skos:prefLabel>Aboriginal &amp; Torres Strait Islanders</skos:prefLabel>
+		<skos:hiddenLabel>atsi</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:audience"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:seniors">
+		<skos:prefLabel>Seniors</skos:prefLabel>
+		<skos:hiddenLabel>seniors</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:audience"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:families">
+		<skos:prefLabel>Parents &amp; families</skos:prefLabel>
+		<skos:hiddenLabel>families</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:audience"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:disability">
+		<skos:prefLabel>People with a disability</skos:prefLabel>
+		<skos:hiddenLabel>disability</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:audience"/>
+	</skos:Concept>
+
+	<skos:Concept rdf:about="franchise:youth">
+		<skos:prefLabel>Youth</skos:prefLabel>
+		<skos:hiddenLabel>youth</skos:hiddenLabel>
+		<skos:broader rdf:resource="franchise:audience"/>
+	</skos:Concept>
+
+</rdf:RDF>

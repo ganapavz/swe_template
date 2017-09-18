@@ -1,0 +1,59 @@
+.section-header h2,
+.section-header h3 {
+	margin: 0;
+	color: $section-header-headings-color;
+	font-weight: 900;
+}
+.section-header h2 {
+    @include font-rem(1.3);
+}
+.aside .section-header h2 {
+	float: left;
+}
+.aside .section-header {
+	@include clearfix();
+}
+// view all, more links in header
+.section-header p {
+	margin: 0 1em;
+}
+
+/* Special asides (dark heading background) */
+.news-feature .section-header h2,
+.news-feature .section-header a,
+#asides .events .section-header h2,
+#asides .events .section-header a,
+#asides .twitter-updates .section-header h2,
+#asides .twitter-updates .section-header a,
+#asides .facebook-updates .section-header h2,
+#asides .facebook-updates .section-header a,
+#related-promotions .section-header h2,
+#ia-updates .section-header h3,
+#related-promotions .section-header a,
+.home #news .section-header h2,
+.home #news .section-header a,
+.home #ia .section-header h2,
+.home #ia .section-header a {
+	color: $section-header-color;
+}
+.news-feature .section-header,
+#asides .events .section-header,
+#asides .twitter-updates .section-header,
+#asides .facebook-updates .section-header,
+#related-promotions .section-header,
+#ia-updates .section-header,
+.home #news .section-header,
+.home #ia .section-header,
+.home #services .section-header {
+	color: $section-header-color;
+}
+
+.section-header a,
+.section-header a:link,
+.section-header a:visited {
+	color: $section-header-color;
+}
+
+.section-header p.feed img {
+	display: none;
+}

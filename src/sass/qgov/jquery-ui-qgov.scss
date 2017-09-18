@@ -1,0 +1,25 @@
+// -------------------------------------
+//   base settings
+// -------------------------------------
+
+@import "../modules/base";
+
+// -------------------------------------
+//   base partials
+// -------------------------------------
+
+@import "partials/helpers/typography";
+
+// -------------------------------------
+//   vendor files
+// -------------------------------------
+
+@import "vendor/jquery-ui/jquery-ui-qgov";
+@import "vendor/jquery-ui/jquery-ui-qgov-custom";
+
+// -------------------------------------
+//   ui patterns
+// -------------------------------------
+
+// TODO refactor specificity for .ui-button rather than repeat this
+@import "partials/pattern/form/button";

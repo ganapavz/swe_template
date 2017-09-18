@@ -1,0 +1,39 @@
+/* THESE STYLES APPLY TO ALL MEDIA */
+
+/* event list */
+.events {
+	list-style: none;
+}
+/* hide lat/long coordinates microformat data */
+.vevent .geo {
+	display: none;
+}
+/* remove underline from abbr (microformats) */
+abbr.dtstart,
+abbr.dtend {
+	border-bottom: none;
+}
+
+/* static map */
+.map img {
+	max-width: 100%;
+}
+
+/* event details */
+.vevent dl {
+	display: block;
+}
+.vevent dl dt,
+.vevent dl dd {
+	margin: 0;
+	padding: 0;
+}
+.vevent dl dt {
+	margin-top: 1em;
+	font-weight: normal;
+}
+
+/* nested lists */
+.vevent ul {
+	list-style: disc;
+}

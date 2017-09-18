@@ -1,0 +1,57 @@
+/* THESE STYLES APPLY TO ALL MEDIA */
+
+#canvas {
+	width: 100%;
+	height: 270px;
+}
+#map_canvas {
+	width: 100%;
+	height: 100%;
+}
+#jb-window #canvas {
+	height: 470px;
+}
+#data-url {
+	display: none;
+}
+.map-marker-A,
+.map-marker-B,
+.map-marker-C,
+.map-marker-D,
+.map-marker-E,
+.map-marker-F,
+.map-marker-G,
+.map-marker-H,
+.map-marker-I,
+.map-marker-J {
+	background: url(../images/skin/map-marker/red_MarkerA.png) 0 0 no-repeat;
+	padding-left: 32px;
+}
+
+.map-marker-B {
+	background-image: url(../images/skin/map-marker/red_MarkerB.png);
+}
+.map-marker-C {
+	background-image: url(../images/skin/map-marker/red_MarkerC.png);
+}
+.map-marker-D {
+	background-image: url(../images/skin/map-marker/red_MarkerD.png);
+}
+.map-marker-E {
+	background-image: url(../images/skin/map-marker/red_MarkerE.png);
+}
+.map-marker-F {
+	background-image: url(../images/skin/map-marker/red_MarkerF.png);
+}
+.map-marker-G {
+	background-image: url(../images/skin/map-marker/red_MarkerG.png);
+}
+.map-marker-H {
+	background-image: url(../images/skin/map-marker/red_MarkerH.png);
+}
+.map-marker-I {
+	background-image: url(../images/skin/map-marker/red_MarkerI.png);
+}
+.map-marker-J {
+	background-image: url(../images/skin/map-marker/red_MarkerJ.png);
+}

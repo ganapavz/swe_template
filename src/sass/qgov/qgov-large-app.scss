@@ -1,0 +1,19 @@
+// -------------------------------------
+//   base settings
+// -------------------------------------
+
+@import "../modules/base";
+
+// -------------------------------------
+//   page models
+// -------------------------------------
+
+@import "partials/page-model/large-application";
+
+@media only all and (min-width: $large-min +px) {
+  @import "partials/page-model/large-application-large";
+}
+
+@media only all and (min-width: $medium-min +px) and (max-width: $medium-max +px) {
+  @import "partials/page-model/large-application-medium";
+}

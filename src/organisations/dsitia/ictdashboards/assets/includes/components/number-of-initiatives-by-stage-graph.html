@@ -1,0 +1,49 @@
+<h3>Number of initiatives by stage</h3>
+<div id="number-of-initiatives-by-stage">Loading...</div>
+<p>View our <a href="../initiatives-list/">initiatives list</a>.</p>
+
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var datafile = "<!--#echo encoding="entity" var="data" -->";
+
+	function numberOfInitiativesByStage() {
+		// load json data
+		var sql =   'SELECT \"Initiative stage\" as \"Stage\", count("Initiative stage") as \"Number of initiatives\" from \"' + datafile + '\"' +
+					' GROUP BY \"Initiative stage\"' +
+					' ORDER BY' +
+					' 	CASE \"Initiative stage\"' +
+					'		WHEN \'Initiate\' THEN 1' +
+					'		WHEN \'Delivery\' THEN 2' +
+					'		WHEN \'Paused\' THEN 3' +
+					'		WHEN \'Closed\' THEN 4' +
+					'		WHEN \'Active (in planning)\' THEN 5' +
+					'		WHEN \'Active (in delivery)\' THEN 6' +
+					'		WHEN \'Hold/postponed\' THEN 7' +
+					'		WHEN \'Completed\' THEN 8' +
+					'		WHEN \'Ended\' THEN 9' +
+					'		ELSE 10' +
+					'	END';
+
+		// load data lib
+		swe.load({ name: 'data', url: 'data.js' });
+
+		swe.data({
+			container: 'number-of-initiatives-by-stage',
+			title: 'Number of initiatives by stage',
+			headings: [ 'Stage', 'Number of initiatives' ],
+			group: 'row',
+			sql: sql,
+			type: 'bar',
+			colours: 'initiatives',
+			legend: false
+		});
+	}
+
+	numberOfInitiativesByStage();
+
+}( jQuery, qg.swe ));
+
+//--></script><!-- end -->

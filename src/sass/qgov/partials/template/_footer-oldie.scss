@@ -1,0 +1,27 @@
+@media screen, projection, tv, handheld {
+	#footer {
+      li, p {
+        font-size: 0.7em !important;
+      }
+      li {
+        *display: inline !important; // IE 6 & 7
+      }
+      li a {
+        font-size: 1em !important;
+        *display: inline; // IE 6 & 7
+      }
+    }
+	#footer #fat-footer {
+      .section {
+        // IE6 needs higher specificity, why?
+        _margin-left: 1%;
+        _margin-right: 1%;
+      }
+      li {
+        font-size: 1em !important;
+      }
+      li a {
+        *display: block; // IE 6 & 7
+      }
+    }
+}

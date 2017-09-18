@@ -1,0 +1,36 @@
+/* have your say asides */
+#asides .your-say ul,
+#related-promotions .your-say ul {
+  padding-left: 1em;
+}
+
+#asides .your-say li,
+#related-promotions .your-say li {
+  list-style: none;
+  @include fonticon($fa-var-chevron-right, 0.8, 0.7, 1, #007EB1);
+}
+
+.your-say li a {
+      color: $link-color;
+    /* display: block; */
+    position: relative;
+    /* margin-left: -.5em; */
+    margin-right: -1em;
+    padding: 0 0 0.5em 0;
+    /* padding-right: 1.5em; */
+    /* background: url("../images/skin/bullet-small-list.png") 1em 1em no-repeat; */
+}
+
+.your-say li a:hover,
+.your-say li a:hover .title {
+  text-decoration: underline;
+}
+
+.your-say li.new .meta {
+  text-transform: uppercase;
+  @include font-rem(.7);
+  background: darken($asides-your-say-li-new-meta-background-color, 15%);
+  color: $asides-your-say-li-new-meta-color;
+  padding: .2em;
+  margin-left: .5em;
+}

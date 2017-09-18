@@ -1,0 +1,16 @@
+@media screen, projection, tv, handheld {
+	/* Box-model issues (not double-margin bug). Half-margins here, results in similar margin with standards-conformant browsers */
+	#ia {
+		*margin-top: -1em;
+	}
+	#ia ul {
+		-zoom: 1; /* needed so that box model bahaves */
+	}
+	#ia .d1 {
+		*margin-top: 1em;
+		*margin-bottom: 1em;
+	}
+	#header #tools, #header #nav-site {
+		display: block !important;
+	}
+}

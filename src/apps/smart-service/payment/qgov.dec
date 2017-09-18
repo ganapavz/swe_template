@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<#import "../macro/ops_swe.ftl" as ops/>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>${title?xhtml} | Queensland Government</title>
+    <!-- Build: @BUILD-LABEL@ -->
+
+    <#assign franchise>papi</#assign>
+    <link rel="stylesheet" href="${base}/ui/payment-swe.css" type="text/css" />
+    <#include "global/head-assets.ftl">
+
+    <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+    <link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+
+    <meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=Department of Public Works; ou=Smart Service Queensland" />
+    <meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland" />
+    <meta name="DCTERMS.created" content="${.now?string('yyyy-MM-dd')}" />
+    <meta name="DCTERMS.modified" content="${.now?string('yyyy-MM-dd')}" />
+    <meta name="DCTERMS.title" content="${title?xhtml}" />
+    <meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="Finance" />
+    <meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FINANCE MANAGEMENT" />
+    <meta name="DCTERMS.identifier" scheme="DCTERMS.URI" content="${base}" />
+    <meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Service" />
+    <meta name="DCTERMS.serviceType" scheme="agls-service" content="financial" />
+    <meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="all" />
+    <meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+    ${head}
+    <@ops.google_analytics/>
+</head>
+
+<#assign bodyClass>${page.properties['body.class']!''}</#assign>
+<body id="qld-gov-au" class="${bodyClass?trim}">
+<#if page.properties['page.notificationURLs']??><div id="notificationURLs" style="display: none;">${page.properties['page.notificationURLs']}</div></#if>
+
+<#include "global/header.ftl">
+
+  <div id="page-container"><div class="max-width">
+    <div id="breadcrumbs">
+      <h2>You are here:</h2>
+      <ol>
+        <#include "global/breadcrumb-services.ftl">
+        <!-- TODO breadcrumb? -->
+        <li class="last-child">${title}</li>
+      </ol>
+    </div>
+
+    <div id="content-container">
+        <div id="content">
+            <div class="article"><div class="box-sizing"><div class="border">
+            <#include "global/global-alert.ftl">
+
+            <h1>${title}</h1>
+            <div class="tf-status" id="outage-warnings-container"></div>
+            <#if (page.properties['page.fail'])??><@ops.status status="fail">${page.properties['page.fail']}</@ops.status></#if>
+            <@s.actionerror theme="qgov"/>
+            <@s.fielderror theme="qgov"/>
+            <#if (page.properties['page.alert'])??><@ops.status status="alert">${page.properties['page.alert']}</@ops.status></#if>
+            <#if (page.properties['page.success'])??><@ops.status status="success">${page.properties['page.success']}</@ops.status></#if>
+            <#if (page.properties['page.info'])??><@ops.status status="info">${page.properties['page.info']}</@ops.status></#if>
+            <#if (page.properties['page.form'])??><div class="form<#if fieldErrors?? && fieldErrors?has_content> submit-error</#if>">${page.properties['page.form']}</div></#if>
+            <#if (page.properties['page.article'])??>${page.properties['page.article']}</#if>
+             ${body}
+            <#if (page.properties['page.footnotes'])??><div id="footnotes"><div class="inner">${page.properties['page.footnotes']}</div></div></#if>
+
+
+            </div></div></div><!-- end .article, .box-sizing, .border -->
+        </div><!-- end #content -->
+
+        <div id="asides"><div class="box-sizing"><div class="border">
+            <#include "global/global-aside.ftl">
+
+            <#if page.properties['page.aside']??><div class="aside">${page.properties['page.aside']}</div></#if>
+            <#if page.properties['page.asides']??>${page.properties['page.asides']}</#if>
+
+            <#if page.properties['page.about']??><div class="aside">${page.properties['page.about']}</div></#if>
+        </div></div></div><!-- end #asides, .box-sizing, .border -->
+
+        <div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+            <div id="document-properties"><div class="box-sizing">
+                <dl>
+                    <dt>Last updated</dt>
+                    <dd>${.now?string('d MMMM yyyy')}</dd>
+                </dl>
+            </div></div>
+
+            <#include "global/page-options-post.ftl">
+
+        </div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+    </div><!-- end #content-container -->
+
+    <#include "global/no-nav.ftl">
+
+  </div></div><!-- end #page-container, .max-width -->
+
+  <#include "global/footer-page.ftl">
+
+  <@ops.foot/>
+
+  <#if (Session["autofill.creditcard"])!false><script type="text/javascript" src="${base}/demo/ui/creditCardDisable.js"></script></#if>
+  <#include "global/footer-stats.ftl">
+</body>
+</html>

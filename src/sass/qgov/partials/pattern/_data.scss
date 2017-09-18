@@ -1,0 +1,30 @@
+/* definition list grid */
+.grid {
+	display: block;
+
+	dt, dd {
+		margin: 0;
+		padding: 0;
+	}
+
+	dt {
+		font-weight: normal;
+	}
+
+	dd {
+		margin-bottom: 1em;
+	}
+
+	ul {
+		list-style: disc;
+	}
+}
+
+
+// hide 'supplementary' items unless in lightbox
+dl .supplementary {
+	display: none;
+}
+#jb-window-content dl .supplementary {
+	display: block;
+}

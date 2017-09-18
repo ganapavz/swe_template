@@ -1,0 +1,6 @@
+@media screen, projection, tv, handheld {
+	/* Avoid flicker IE6 & 7 */
+	#nav-section {
+		*width: 24% !important;
+	}
+}

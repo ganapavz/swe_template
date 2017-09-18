@@ -1,0 +1,36 @@
+// -------------------------------------
+//   base settings
+// -------------------------------------
+
+@import "../modules/base";
+
+// -------------------------------------
+//   base partials
+// -------------------------------------
+
+@import "partials/helpers/clearfix";
+
+// -------------------------------------
+//   template components
+// -------------------------------------
+
+@import "partials/template/header-large";
+@import "partials/template/global-alert-medium";
+@import "partials/template/breadcrumbs-large";
+@import "partials/template/page-content-large";
+@import "partials/template/page-options-medium";
+@import "partials/template/layout-medium";
+
+// -------------------------------------
+//   page models
+// -------------------------------------
+
+@import "partials/page-model/ia-large-medium";
+@import "partials/page-model/ia-medium";
+
+// -------------------------------------
+//   ui patterns
+// -------------------------------------
+
+@import "partials/pattern/data-medium";
+@import "partials/pattern/events-medium";

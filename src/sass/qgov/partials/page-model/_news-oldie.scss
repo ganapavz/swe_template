@@ -1,0 +1,8 @@
+@media screen, projection, tv, handheld {
+	.page-news .news-archive li {
+		*zoom: 1;
+	}
+	.page-news img.thumb {
+		-width: 100%;
+	}
+}

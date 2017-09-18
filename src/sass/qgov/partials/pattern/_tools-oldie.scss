@@ -1,0 +1,7 @@
+@media screen,projection,tv,handheld {
+	.viewport .content li {
+		/* IE6/7 FIXES */
+		*zoom: 1;
+		*float: left;
+	}
+}

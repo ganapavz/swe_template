@@ -1,0 +1,43 @@
+<div class="search-widget" id="tmr-search">
+    <div class="widget-header">
+        <h2>Refine search</h2>
+        <span class="action"><a href="#" id="form-toggle" class="up">Toggle</a></span>
+    </div>
+
+    <form id="app-viewport-tools-search" action="<!--#echo var='action'-->" method="get">
+        <ol class="questions form-section">
+            <li class="widget-col-full">
+                <label for="location">
+                    <span class="label">Location or postcode</span>
+                </label>
+                <input type="text" name="location" id="location" size="30" value="" placeholder="Enter location or postcode" />
+            </li>
+            <li class="widget-col-half-left">
+                <label for="distance">
+                    <span class="label">Radius</span>
+                </label>
+                <select name="distance" id="distance">
+                    <option value="1000">1000km</option>
+                    <option value="500">500km</option>
+                    <option value="200">200km</option>
+                </select>
+            </li>
+        </ol>
+        <ol class="footer-section questions">
+            <li class="footer">
+                <ul class="actions">
+                    <li>
+                        <strong>
+                            <input type="submit" value="Search" />
+                        </strong>
+                    </li>
+                    <li>
+                        <em>
+                            <input class="reset" type="button" value="Reset" />
+                        </em>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+    </form>
+</div>

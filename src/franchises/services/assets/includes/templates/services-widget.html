@@ -1,0 +1,17 @@
+<script id="widget-template" type="text/x-handlebars-template">
+    <div class="aside">
+        <h3>{{items.category.title}}</h3>
+        <ul>
+            {{#each items.services}}
+            <li>
+                {{#if available}}
+                <a href="{{[service-url]}}">{{service}}</a>
+                {{else}}
+                <a href="{{[service-url]}}">{{service}}</a>
+                <span class="unavailable">(currently unavailable)</span>
+                {{/if}}
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</script>

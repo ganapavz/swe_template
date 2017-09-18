@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Pay by credit card | Services | Queensland Government</title>
+
+	<!--#set var="franchise" value="OES"-->
+	<!--#set var="title" value="Pay by credit card"-->
+	<!--#include virtual="/assets/includes/global/head-assets.html"-->
+
+	<style type="text/css">
+	<!--
+	/* credit card buttons */
+	#cc-type input:checked + label img {
+		box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.2);
+	}
+	#cc-type li:hover img {
+		box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.1);
+	}
+	/* card instructions */
+	#csc-instruction dt {
+		font-weight: normal;
+	}
+	-->
+	</style>
+
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+
+	<meta name="DCTERMS.title" content="Pay by credit card" />
+
+	<meta name="DCTERMS.created" content="2011-08-11" />
+	<meta name="DCTERMS.modified" content="2012-01-20" />
+	<meta name="DCTERMS.title" content="Pay by credit card | Services" />
+	<meta name="DCTERMS.description" content="DESCRIPTION" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION" />
+	<meta name="DCTERMS.identifier" scheme="DCTERMS.URI" content="https://www.smartservice.qld.gov.au/services/bill/select" />
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="service" />
+	<meta name="AGLSTERMS.serviceType" scheme="AGLSTERMS.agls-document" content="financial" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+</head>
+
+<body id="qld-gov-au" class="residents">
+
+	<!--#include virtual="/assets/includes/global/header.html"-->
+
+	<div id="page-container">
+		<div class="max-width">
+			<div id="breadcrumbs">
+				<h2>You are here:</h2>
+				<ol>
+					<!--#include virtual="/assets/includes/global/breadcrumb-services.html"-->
+					<li class="last-child">Pay by credit card</li>
+				</ol>
+			</div>
+
+			<div id="content-container">
+				<div id="content">
+
+					<div class="article">
+						<div class="box-sizing">
+							<div class="border">
+
+								<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+								<h1>Pay by credit card</h1>
+
+								<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+								<div class="preamble">
+									<p>Questions marked with
+										<abbr title="(required)">*</abbr>must be completed.</p>
+								</div>
+								<!-- 
+					<div class="status fail">
+						<h2>System error</h2>
+						<p>There was a problem connecting to the bank to make your payment.<br />
+						<strong>Your credit card has not been charged.</strong></p>
+						<p>Please try again in a few minutes.</p>
+						<p>If you see this message again, please <a href="/payment/contact">contact us</a>.</p>
+					</div>
+ -->
+								<form class="form" action="wait.html" method="post" autocomplete="off">
+
+									<ol class="questions">
+
+										<li class="select1">
+											<fieldset id="cc-type">
+												<legend>
+													<span class="label">Card type</span>
+													<abbr title="(required)">*</abbr>
+												</legend>
+												<ul class="choices compact">
+													<li>
+														<input type="radio" id="cc-type-visa" name="card_type" value="Visa" required="required" />
+														<label for="cc-type-visa">
+															<img src="/assets/v2/images/acceptance-marks/visa.png" alt="Visa" required="required" />
+														</label>
+													</li>
+													<li>
+														<input type="radio" id="cc-type-mastercard" name="card_type" value="MasterCard" required="required" />
+														<label for="cc-type-mastercard">
+															<img src="/assets/v2/images/acceptance-marks/mastercard.png" alt="MasterCard" />
+														</label>
+													</li>
+												</ul>
+											</fieldset>
+										</li>
+
+										<li class="input">
+											<label for="cc-number">
+												<span class="label">Card number</span>
+												<abbr title="(required)">*</abbr>
+												<!-- <small class="hint">Test</small> -->
+											</label>
+											<input type="text" id="cc-number" name="creditCardNumber" maxlength="19" size="21" required="required" />
+										</li>
+
+										<li class="group atomic">
+											<fieldset>
+												<legend>
+													<span class="label">Expiry date</span>
+													<abbr title="(required)">*</abbr>
+												</legend>
+											</fieldset>
+											<ul class="questions compact">
+												<li>
+													<label for="cc-expiry-month">
+														<small class="label">Month</small>
+													</label>
+													<input type="text" id="cc-expiry-month" name="creditCardExpiryMonth" maxlength="2" size="3" required="required" />
+												</li>
+												<li>
+													<label for="cc-expiry-year">
+														<small class="label">Year</small>
+													</label>
+													<input type="text" id="cc-expiry-year" name="creditCardExpiryYear" maxlength="2" size="3" required="required" />
+												</li>
+											</ul>
+										</li>
+
+										<li class="input">
+											<label for="cc-name">
+												<span class="label">Name on card</span>
+											</label>
+											<input type="text" id="cc-name" name="cardholderName" maxlength="19" size="20" />
+										</li>
+
+										<li class="input">
+											<label for="cc-csc">
+												<span class="label">Security code</span>
+												<abbr title="(required)">*</abbr>
+												<small class="hint">
+													3-digit code printed on your card.
+													<a href="#csc-aside" class="help">What is a security code?</a>
+												</small>
+											</label>
+											<input type="number" id="cc-csc" name="cardSecurityCode" maxlength="3" size="4" required="required" />
+										</li>
+
+										<li class="footer">
+											<ul class="actions">
+												<li>
+													<small>
+														You need to pay by
+														<strong>11 August 2011, 3.30pm</strong>
+														<br />(57 minutes 20 seconds)
+													</small>
+													<br />
+													<strong>
+														<input type="submit" value="Pay now" />
+													</strong>
+												</li>
+											</ul>
+											<p>
+												Your card will be verified and charged
+												<strong>$74.90</strong>.
+												<br />Amounts shown are in Australian dollars.
+											</p>
+										</li>
+
+									</ol>
+
+								</form>
+
+								<!-- 
+					<div style="display: none">
+						<a id="processing-dialog-link" href="#processing-dialog"></a>
+						<div id="processing-dialog" class="status info">
+							<h2>Processing payment…</h2>
+							<p>This may take up to 2 minutes—usually it’s much faster!</p>
+						</div>
+					</div>
+ -->
+
+							</div>
+						</div>
+					</div>
+					<!-- end .article, .box-sizing, .border -->
+				</div>
+				<!-- end #content -->
+
+				<div id="asides">
+					<div class="box-sizing">
+						<div class="border">
+							<!--#include virtual="/assets/includes/global/global-aside.html"-->
+
+							<div class="aside" id="csc-aside">
+								<h2>Card security code</h2>
+								<p>The code is used to prove you have the card when you pay online.</p>
+
+								<div class="figure diagram" id="csc-figure-common">
+									<img src="cc-back.png" alt="Diagram of a credit card showing back side with 3 digit security code beside the signature block" style="max-width: 100%" />
+									<div class="caption">
+										<strong>Visa</strong>or
+										<strong>MasterCard</strong>—On the back, it’s the 3-digit code near the signature block.</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- end #asides, .box-sizing, .border -->
+
+				<div id="meta-wrapper">
+					<div class="meta-box-sizing">
+						<div class="border">
+
+							<div id="document-properties">
+								<div class="box-sizing">
+									<dl>
+										<dt>Last updated</dt>
+										<dd>20 January 2012</dd>
+									</dl>
+								</div>
+							</div>
+
+							<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+						</div>
+					</div>
+				</div>
+				<!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+			</div>
+			<!-- end #content-container -->
+
+			<div id="nav-section">
+				<div class="box-sizing">
+					<h2>
+						<a href="/payment/">Online payments</a>
+					</h2>
+					<ul>
+						<li class="current-page has-submenu">
+							<a href="/payment/notice.html">Notice to pay</a>
+							<ol>
+								<li>
+									<a href="notice.html">
+										<span class="page-number">1</span>Notice to pay</a>
+								</li>
+								<li class="current">
+									<a href="/payment/pay-by-credit-card.html">
+										<span class="page-number">2</span>Pay by credit card</a>
+								</li>
+								<li class="future">
+									<a>
+										<span class="page-number">3</span>Processing payment…</a>
+								</li>
+								<li class="future">
+									<a>
+										<span class="page-number">4</span>Receipt</a>
+								</li>
+							</ol>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<!-- end #page-container, .max-width -->
+
+	<!--#include virtual="/assets/includes/global/footer-page.html"-->
+
+	<script type="text/javascript">
+	<!-- //
+
+	// var ccExpiry = $( '#cc-expiry' );
+
+	// ccExpiry.bind( 'input change', function() {
+	// 	ccExpiry.forcesForms( 'hint' ).text( ccExpiry.val() );
+	// });
+
+
+	var ccNumber = $('#cc-number');
+
+	ccNumber.bind('keyup', function() {
+		ccNumber.forcesForms('hint').text(ccNumber.val().replace(/[0-9]/g, '*'));
+	})
+		.bind('change', function() {
+			ccNumber[0].setCustomValidity(/[^0-9\- ]/.test(ccNumber.val()) ? 'Numbers only (spaces and dashes are ok)' : '');
+		});
+
+
+	// links in hints
+	$('a', 'form').filter('.help').butterfly();
+
+
+	// var loading = $( '<div id="loading" style="position: fixed; z-index: 9999; top: 0; width: 100%; left: 0; height: 100%; background: white; opacity: .9;"><h1 style="vertical-align: middle; margin: 20% auto"><img src="/assets/v2/images/skin/loading-black-on-white.gif" alt="" />loading…</h1></div>' ).click(function() {
+	// 	loading.fadeOut();
+	// });
+
+
+	// 	$( 'input', 'form' ).filter( ':submit' ).click(function() {
+	// 		loading.appendTo( document.body ).fadeIn( 500 );
+	// 	});
+
+	// 	// show processing dialog when button pressed
+	// 	$(function() {
+	//  	$( 'form' ).bind( 'submit', function( event ) {
+	//  		$( '#processing-dialog-link' ).click();
+	//  		event.stopPropagation();
+	//  		return false;
+	//  	})
+	//  });
+
+
+	// expiry validation
+	// runs on both month and year fields (change)
+	// validityState is only altered on year field
+	// checks for invalid characters, number ranges (months) and that the date is not in the past
+	ccExpiryValidation = function() {
+		var monthErrorMessage = '',
+			yearErrorMessage = '',
+			ccExpiryMonth = $('#cc-expiry-month'),
+			ccExpiryYear = $('#cc-expiry-year'),
+			monthVal = ccExpiryMonth.val(),
+			yearVal = ccExpiryYear.val();
+
+		// if month has a value
+		if (monthVal.length > 0 && !/^(0[1-9])|(1[0-2])$/.test(monthVal)) {
+			// month is invalid
+			monthErrorMessage = 'Month must be a number (1–12)';
+		}
+
+		// if year has a value
+		if (yearVal.length > 0 && !/^\d\d$/.test(yearVal)) {
+			// year is invalid
+			yearErrorMessage = 'Year must be a 2-digit number';
+		}
+
+		// if year and month have values and aren't known to be invalid (above)
+		if (yearVal.length > 0 && monthVal.length > 0 && monthErrorMessage.length === 0 && yearErrorMessage.length === 0) {
+			// formats are correct, check if date has expired
+			(function() {
+				var now = new Date(),
+					// expires on first day of month after that shown on card
+					// e.g. '01/14' expires on 02/14 (1 February 2014)
+					// in javascript months are numbered 0-11, so '01' can be parsed to get the 'next month'
+					expires = new Date(parseInt('20' + yearVal, 10), parseInt(monthVal, 10), 1);
+
+				if (now >= expires) {
+					// it has expired, flag both fields
+					monthErrorMessage = yearErrorMessage = 'Card has expired';
+				}
+			}());
+		}
+
+		// set messages
+		ccExpiryMonth[0].setCustomValidity(monthErrorMessage);
+		ccExpiryYear[0].setCustomValidity(yearErrorMessage);
+
+		// note: custom validity is set on both fields, but only 'this' field will be checked by the UI script
+	};
+
+
+	// bind to change events on month and year fields
+	$('#cc-expiry-month, #cc-expiry-year').bind('change', ccExpiryValidation);
+
+
+	// -->
+	</script>
+
+	<!--#include virtual="/assets/includes/global/footer-stats.html"-->
+
+</body>
+
+</html>

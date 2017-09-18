@@ -1,0 +1,596 @@
+/* styling input widgets */
+form button,
+.button,
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=date],
+input[type=time],
+input[type=datetime],
+input[type=number],
+select,
+textarea {
+  background: $form-input-background-color;
+  border: 1px solid $form-input-border-color;
+  padding: .5em .7em;
+  max-width: 100%;
+  font-family: $lato;
+  // line-height: $body-line-height;
+}
+/* separate the :not() selector or the whole block is ignored in older browsers */
+input:not([type]) {
+  font: inherit;
+  padding: .3em;
+  max-width: 90%;
+  background: $form-input-background-color;
+  border: 1px solid $form-input-border-color;
+}
+
+// need more space in tables
+table {
+  form button,
+  .button,
+  input[type=text],
+  input[type=password],
+  input[type=search],
+  input[type=email],
+  input[type=tel],
+  input[type=url],
+  input[type=date],
+  input[type=time],
+  input[type=datetime],
+  input[type=number],
+  select,
+  textarea {
+    padding: .2em .7em;
+  }
+  input:not([type]) {
+    padding: .2em .7em;
+  }
+}
+
+// field widths are too wide in asides
+.aside {
+  form button,
+  .button,
+  input[type=text],
+  input[type=password],
+  input[type=search],
+  input[type=email],
+  input[type=tel],
+  input[type=url],
+  input[type=date],
+  input[type=time],
+  input[type=datetime],
+  input[type=number],
+  select,
+  textarea {
+    background: $form-input-background-color;
+    border: 1px solid $form-input-border-color;
+    padding: .5em .7em;
+    max-width: 90%;
+  }
+}
+
+// search form pattern overrides
+.search {
+  clear: both;
+  position: relative;
+  input {
+    float: left;
+    padding: .45em; // match height of search button
+  }
+  input[type="search"] {
+    -webkit-appearance: none;
+  }
+  .lookup {
+    background: $form-search-lookup-background-color;
+    border: 0 none;
+    color: $form-search-lookup-color;
+    display: inline-block;
+    padding: 0.2em 0.4em;
+    position: absolute;
+    right: 2.6em;
+    top: .85em;
+    z-index: 100;
+  }
+  .search-button {
+    float: none;
+  }
+  .results {
+    border-top: 1px solid $form-search-results-border-color;
+    margin: 0.5em 0.5em 0 1em;
+    padding: 0.5em 0;
+  }
+  .section {
+    border-bottom: 0;
+  }
+  .all {
+    display: block;
+  }
+}
+
+//search results in counters page
+
+#search-results-container {
+  #search-results {
+    &>li {
+      list-style-type: none;
+      counter-increment: item;
+      &:before {content:counter(item) '. '; float: left;  margin-top: 2px; text-indent: -1.3em;}
+    }
+    ul>li:before {
+      content: '' !important;
+    }
+  }
+  .pagination {
+    a {
+      display: block;
+      list-style: none;
+      float: left;
+      margin: 0 0.3em;
+      padding: 0 0.2em;
+    }
+  }
+  .ellipse {display: none !important;}
+}
+
+// wide boxes and lists
+textarea {
+  width: 90%; // allow for padding
+  max-width: 50em;
+  overflow: auto; // Removes default vertical scrollbar on empty textarea in IE6/7/8/9.
+}
+
+select {
+  overflow-x: hidden; // prevent wide select lists from destroying layout
+}
+
+// tall textareas
+textarea.large-compact {
+  height: 4.5em;
+  transition: height .3s ease-out;
+
+  &:focus {
+    height: 25em;
+  }
+}
+
+/* numbers */
+.number td {
+  text-align: right;
+}
+
+#asides .questions {
+  input[type=text],
+  input[type=password],
+  input[type=search],
+  input[type=email],
+  input[type=tel],
+  input[type=url],
+  input[type=date],
+  input[type=time],
+  input[type=datetime],
+  input[type=number],
+  select {
+    box-sizing: border-box;
+    width: 99%;
+    max-width: 99%;
+  }
+
+  // location icon
+  .location {
+    padding-top: 0.2em;
+    padding-right: 3em;
+    box-sizing: border-box;
+    position: relative;
+    @include clearfix();
+
+    input#location {
+//      width: 99%;
+//      max-width: 99%;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      box-sizing: border-box;
+
+      & + #app-geocoding {
+        background: $qgov-green;
+        position: absolute;
+        height: 2em;
+        right: 0;
+        margin: 0.05em 0 0;
+        padding: 0.15em 0.2em;
+        vertical-align: middle;
+
+        &:hover,
+        &:focus {
+          background-color: $form-strong-button-hover-background-color;
+          outline: 1px solid $qgov-green;
+          outline-offset: -1px;
+        }
+      }
+    }
+  }
+}
+
+.actions a {
+  display: inline-block;
+  margin: 0.75em 0;
+}
+
+/* disabled items */
+.placeholder,
+.disabled {
+  color: $form-disabled-color;
+}
+
+input[disabled],
+select[disabled],
+textarea[disabled] {
+  background: transparent;
+  color: $form-input-disabled;
+}
+
+input[readonly],
+select[readonly],
+textarea[readonly] {
+  color: $form-input-readonly;
+}
+
+/* a form is a list of questions */
+.questions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.questions li {
+  clear: left;
+  position: relative;
+  padding: .5em 0 .7em; /* padding-bottom +.3em to balance padding-top (accounting for line-height on text) */
+  list-style: none;
+  transition:
+    opacity 0.2s ease,
+    margin  0.2s ease,
+    padding 0.2s ease;
+}
+.questions li[hidden] {
+  display: block;
+  max-height: 0;
+  opacity: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  transition: none; // instant hiding
+  position: absolute; // avoid leaving empty space where this element will appear
+}
+
+/* form footer */
+.questions li.footer {
+  padding-bottom: .5em;
+}
+
+.sections li.footer {
+  padding: .5em;
+}
+
+/* form actions */
+.actions, #asides .actions {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: .5em 0 0;
+  overflow: hidden;
+  @include clearfix();
+}
+
+.actions li,
+.questions .actions li {
+  clear: none;
+  float: left;
+  display: inline-block;
+  list-style: none;
+  margin: 0 1em .5em 0;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.actions input {
+  max-width: none;
+}
+
+/* link actions */
+.actions :link,
+.actions :visited {
+  color: $form-actions-link-color;
+}
+
+/* question states */
+.invalid .alert {
+  color: $form-invalid-alert-color;
+  font-weight: bold;
+}
+
+.invalid > button,
+.invalid > input,
+.invalid > select,
+.invalid > textarea {
+  border-color: $form-invalid-input-border-color;
+  color: $form-invalid-input-color;
+  //font-weight: normal;
+
+font-weight: bold;
+
+}
+
+/* focus */
+button.focus,
+input.focus,
+select.focus,
+textarea.focus {
+  border-color: $form-input-focus-border-color;
+}
+
+/* form sections */
+form .sections {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li.section {
+  border-bottom: 1px solid $form-section-li-section-border-color;
+  margin: .5em 0;
+  padding: .5em 0;
+}
+
+li.section li.section {
+  border-bottom: none;
+  margin: .5em 0 0;
+  padding: .5em 0 0;
+}
+
+legend .h2,
+legend .h3 {
+  display: block;
+  color: $form-section-legend-heading-color;
+  font-family: $font-legend-heading;
+  font-weight: bold;
+  font-size: 150%;
+  /*margin: .83em 0;*/
+}
+
+legend .h3 {
+  font-size: 130%;
+  /*margin: 1em 0;*/
+}
+
+/* instructions */
+.instructions p {
+  margin-top: 0;
+}
+
+/* group controls */
+.questions > li.compact {
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.questions > li.group {
+  padding-bottom: 0;
+}
+
+.group > .questions > li,
+.group > fieldset > .questions > li {
+  margin: 0;
+  background: transparent;
+}
+
+/* group labels */
+.group .questions .label,
+.group .questions abbr.required {
+  //font-size: 80%;
+}
+.group .questions abbr[title *= "required"] {
+  //font-size: 100%;
+}
+
+/* compact question layout */
+.group > fieldset .compact li {
+  float: left;
+  clear: none;
+  margin-right: 1.5em;
+}
+
+/* prevent floated selects from truncating */
+.group select {
+  max-width: 100%;
+}
+
+/* https://github.com/h5bp/html5-boilerplate/wiki/css */
+fieldset {
+  border: none;
+  min-width: 0; /* fix for iOS safari - fixes: elements withing fieldsets not scaling correctly */
+  width: 100%; /* fix for iOS safari - fixes: elements withing fieldsets not scaling correctly */
+}
+
+legend {
+  margin: 0;
+  padding: 0;
+  white-space: normal;
+  width: 100%;
+  border: 0;
+  color: inherit;
+}
+
+/* labels and alerts */
+label {
+  cursor: pointer;
+}
+
+.label,
+.hint,
+label .help,
+legend .help,
+.alert {
+  display: block;
+}
+
+/* help inside a hint inline */
+label .hint .help,
+legend .hint .help {
+  display: inline;
+}
+
+/* required fields */
+abbr.required {
+  position: relative;
+  color: $form-required-marker-color;
+  border-bottom: none;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+@mixin question-required-marker {
+  position: absolute;
+  margin-left: -1em;
+  width: 1em;
+  text-align: center;
+  top: .4em;
+}
+.questions abbr.required {
+  @include question-required-marker();
+}
+// .required class not needed if title used
+abbr[title *= "required"] {
+   @extend abbr.required;
+   top: .4em;
+}
+.questions abbr[title *= "required"] {
+  @include question-required-marker();
+}
+
+/* radio buttons and checkboxes are choices */
+.choices,
+#asides .choices {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.questions .choices li {
+  padding: 0 0 0 20px;
+  margin: .3em 0;
+  background: transparent;
+  list-style: none;
+  border: none;
+}
+
+.choices li input {
+  position: absolute;
+  margin-left: -20px;
+  padding: 0; /* IE8 needs this to remove earlier padding */
+  top: .3em; /* helps Chrome, Firefox and Opera */
+}
+
+/* compact options layout */
+.questions .compact > li {
+  float: left;
+  clear: none;
+  margin-right: 1.5em;
+}
+
+/* checked radio buttons/checkboxes */
+input:checked + label {
+  font-weight: bold;
+  color: $form-checked-label;
+}
+
+.choices label {
+  position: relative;
+  padding-left: 20px;
+  margin-left: -20px;
+}
+
+/* data display */
+.data dt {
+  font-weight: normal;
+  margin: 1em 0 .3em;
+}
+
+.data dd {
+  border: 1px solid $form-data-dd-border-color;
+  background: $form-data-dd-background-color;
+  margin: 0 0 1em;
+  position: relative;
+  padding: .5em .5em .7em; /* padding-bottom +.3em to balance padding-top (accounting for line-height on text) */
+  min-height: 1em;
+  list-style: none;
+  word-wrap: break-word;
+}
+
+.tba dd {
+  background: transparent;
+  color: $form-data-tba-dd-color;
+}
+
+.data dd a {
+  color: $form-data-tba-dd-link-color;
+  text-decoration: none;
+}
+
+.data dd a:active,
+.data dd a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* data to copy and paste */
+.copypaste {
+  font-weight: normal;
+  font-size: 180%;
+}
+
+/* edit links */
+.edit {
+  text-align: right;
+  margin: .5em 0;
+}
+
+/**
+ * Basic functionality styles for "Compact Form Labels"
+ * These styles assume that each form input/label pair are surrounded by a div with a class form-element.
+ * These styles need to be customised for the forms markup you are using.
+ */
+.form-element,
+#tools #search-form {
+  position: relative;
+  overflow: hidden;
+}
+
+#search-form label.compact-label {
+  cursor: text;
+}
+
+label.compact-label {
+  position: absolute;
+  top: .15em;
+  left: .5em;
+  z-index: 1;
+  color: $form-label-compact-label-color;
+}
+
+/* printing forms */
+@media print {
+  .actions button,
+  .actions .button,
+  .actions input,
+  .actions a {
+    display: none;
+  }
+}

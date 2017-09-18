@@ -1,0 +1,16 @@
+<script id="warn-template" type="text/x-handlebars-template">
+    <div class="status warn">
+        <div>
+            <h2>Scheduled outage notification</h2>
+            <p>Check the individual service(s) for futher outage details.</p></div>
+            <div id="offline-services">
+                <ul>
+                    {{#each items}}
+                    <li>
+                        <a href="{{[service-url]}}">{{service}}</a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+    </div>
+</script>

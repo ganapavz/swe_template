@@ -1,0 +1,63 @@
+#banner {
+  position: relative;
+
+  .max-width {
+    background: $banner-background-color;
+    padding: 1em 0 0.5em;
+    // use overflow to ensure banner contains floated h2
+    // http://www.quirksmode.org/css/clearing.html
+    // and hidden to prevent scrollbars with wide site names and thin devices
+    overflow: hidden;
+  }
+
+  h2 {
+    // note: site name should be an image
+    // font style to approximate corporate ID meta bold font is a fallback
+    font-family: $font-banner-heading;
+    font-size: 125%;
+    font-weight: bold;
+    display: inline;
+    left: 0;
+    position: relative;
+    width: auto;
+    float: left;
+    margin: 0;
+
+    a {
+      display: inline-block;
+      margin-left: em(40);
+    }
+
+    img {
+      display: inline-block;
+      margin-left: -9px;
+    }
+  }
+
+  a:link,
+  a:visited {
+    color: $banner-link-color;
+    text-decoration: none;
+  }
+
+  #ui-controls {
+    margin-top: 0.7em;
+    background: $banner-background-color;
+  }
+
+  #tools {
+    li {
+      margin-top: 0;
+    }
+    a:hover,
+    a:active {
+      background: transparent;
+      text-decoration: underline;
+    }
+  }
+
+  // no border on banner background
+  #search-form #search-query {
+    border: none;
+  }
+}

@@ -1,0 +1,18 @@
+p.more,
+.section-header p.more,
+.section-header p.feed {
+	float: right;
+	margin: 0;
+	padding: 0;	
+}
+
+.section-header p.feed a {
+	padding: 1.1em .5em;
+	margin: 0 0 -1em; /* offset padding, prevent link from expanding containers */
+	display: block;
+}
+
+
+.section-header p.more {
+	margin-top: 1em;
+}

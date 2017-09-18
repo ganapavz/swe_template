@@ -1,0 +1,37 @@
+@media screen, projection, tv, handheld {
+
+  #header .box-sizing {
+    _overflow: visible; // IE6
+  }
+  // Header wrapping is poor in IE6&7 at some resolutions
+  #header #nav-site {
+    *width: 23.5em;
+  }
+  #tools {
+    // min-height for IE6
+    _height: 53px; // To push nav-site below logo when wrapping
+    _overflow: visible;
+  }
+  #search-form div {
+    _display: inline; // IE6 search button position
+  }
+  #tools #search-query {
+    _height: 31px; // min-height for IE6
+  }
+  // Site name double margin bug
+  // http://www.positioniseverything.net/explorer/floatIndent.html
+  #site-name {
+    _display: inline; /* IE6 */
+  }
+  // Search form
+  #search-form {
+    button#search-button {
+      height: em(40) !important;
+      padding-left: em(40) !important;
+    }
+    button#search-button:before {
+      margin-top: -0.5em;
+      padding: 0.55em 0.55em !important;
+    }
+  }
+}

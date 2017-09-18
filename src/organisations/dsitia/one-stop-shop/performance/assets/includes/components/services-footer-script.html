@@ -1,0 +1,547 @@
+<script type="text/javascript">
+	var tableData = []; 
+	var chartBGColor = 'qgtm-col-set-';
+	var valueLabel = $('.qgTM-value').text();
+	var tableID;
+	var targetDivID;
+
+	function initTreeData(tID) {
+		var titleCol;
+		var titleColUrl;
+		var valueCol;
+		var max;
+
+		// Find table columns with title and value class - set col number  
+		$('#' + tID + ' thead tr').each(function(col, td) {
+			titleCol = $(td).find('.qgTM-title').index();
+			valueCol = $(td).find('.qgTM-value').index();
+		});
+
+		// build array of table content based on cols identified
+		$('#' + tID + ' tr').each(function(row, tr) {
+
+			tableData[row] = {
+				'title': $(tr).find('td:eq(' + titleCol + ')').text(),
+				'url': $(tr).find('td:eq(' + titleCol + ') a').attr('href'),
+				'value': $(tr).find('td:eq(' + valueCol + ')').text(),
+				'adjValue': '',
+				'adjMiniValue': ''
+			};
+
+		});
+		tableData.shift(); // remove table header contents from array
+
+		var maxArr = [];
+		$.each(tableData, function() {
+			maxArr.push(this.value);
+		});
+		var maxVal = Math.max.apply(Math, maxArr);
+		var minVal = Math.min.apply(Math, maxArr);
+
+		var miniMax = 50;
+		var miniMin = 5;
+		var divisor = miniMax / maxVal;
+
+		// if large dataset gap between largest and smallest 
+		// (want to minimise the use of tiny cells in the chart)
+		// you can simply comment this out if you'd prefer accuracy to visibility or adjust values to suit  
+		if (minVal < maxVal / 9.5) {
+			$.each(tableData, function(i) {
+				var adjVal = parseFloat(this.value);
+				var minorNum = this.value;
+				minorNum.toString().replace('.', '');
+
+				if (this.value < maxVal / 9.5) {
+					adjVal = (maxVal / 10) + minorNum;
+				}
+				// insert adjVal into data array in adjValue - this value is used to determine full tree map item sizing
+				tableData[i].adjValue = adjVal;
+
+				var adjMiniVal;
+				adjMiniVal = Math.floor(adjVal * divisor);
+				if (adjMiniVal < 5) {
+					adjMiniVal = 5;
+				}
+				// insert adjMiniVal into data array in adjMiniValue - later used as minival - this is for mobile view icon sizing  
+				tableData[i].adjMiniValue = adjMiniVal;
+			});
+		}
+	}
+
+	var Tree = (function() {
+		// TODO refactor into a single line of jquery when we DO jquery
+		var valuesFrom = function(selection) {
+			return selection[0].map(function(row, i, bGColor) {
+				bGColor = chartBGColor + (i + 1);
+				return {
+					name: tableData[i].title,
+					tdValue: tableData[i].value,
+					size: tableData[i].adjValue,
+					url: tableData[i].url,
+					minival: tableData[i].adjMiniValue,
+					color: bGColor,
+					textColor: 'white'
+				};
+			});
+		};
+
+		var setSize = function(values) {
+			var children = values;
+			return children;
+		};
+
+		return {
+			fromHtmlTable: function(selection) {
+				var values = valuesFrom(selection);
+				return {
+					name: 'Service Explorer',
+					children: setSize(values)
+				};
+			}
+		};
+
+	}());
+
+
+	var TreeMapLayout = (function() {
+
+
+		var setNodeContent = function(d) {
+			var volumeSpan = '';
+			var name = '';
+			if (d.name) {
+				name = '<span class="qgTM-name">' + d.name + '</span>';
+			}
+			if (d.tdValue) {
+				volumeSpan = '<span class="amount">' + d.tdValue + ' ' + valueLabel + '</span>';
+			}
+			this.innerHTML = '<span class="wrap">' + name + volumeSpan + '</span>';
+			return;
+		};
+
+		var nodeClass = function(d) {
+			return d.color + ' qgTM-node' ? d.color + ' qgTM-node' : null;
+		};
+
+		var position = function() {
+			this.style('left', function(d) {
+				return d.x + 1 + 'px';
+			})
+				.style('top', function(d) {
+					return d.y + 1 + 'px';
+				})
+				.style('width', function(d) {
+					return Math.max(0, d.dx - 1) + 'px';
+				})
+				.style('height', function(d) {
+					return Math.max(0, d.dy - 1) + 'px';
+				})
+				.style('position', 'absolute')
+				.style('cursor', function(d) {
+					return d.url ? 'pointer' : '';
+				});
+		};
+
+		var makeTree = function(divId, treeData) {
+			var margin = {
+					top: 0,
+					right: 0,
+					bottom: 0,
+					left: 0
+				},
+				width = ewidth - margin.left - margin.right,
+				height = eheight - margin.top - margin.bottom;
+
+			var color = d3.scale.category20c();
+
+			var treemap = d3.layout.treemap()
+				.size([width, height])
+				.value(function(d) {
+					return d.size;
+				})
+				.sort(function(a, b) {
+					return a.value - b.value;
+				});
+
+			var div = d3.select('#' + divId)
+				.style('width', (width + margin.left + margin.right) + 'px')
+				.style('height', (height + margin.top + margin.bottom) + 'px')
+				.style('left', margin.left + 'px')
+				.style('top', margin.top + 'px');
+
+
+			var node = div.datum(treeData).selectAll('.qgTM-node')
+				.data(treemap.nodes)
+				.enter().append('a')
+				.attr('class', nodeClass)
+				.call(position)
+				// .on('click', function(d) {
+				//	if (d.url) {
+				//		console.log('TODO make me go to ' + d.url);
+				//	}
+				// })
+				.style('background', function(d) {
+					return d.color ? d.color : color(d.name);
+				})
+				.style('color', function(d) {
+					return d.textColor ? d.textColor : null;
+				})
+				.attr('href', function(d) {
+					return d.url ? d.url : null;
+				})
+				.call(function(selection) {
+					selection
+						.filter(function(d) {
+							return !d.children;
+						})
+						.each(setNodeContent);
+				});
+
+		};
+
+
+		return {
+			display: makeTree
+		};
+
+	}());
+
+
+	var noTreeMapLayout = (function() {
+
+		var setNodeContent = function(d) {
+			var volumeSpan = '';
+			var name = '';
+			var visualiseSize = '';
+
+			if (d.minival) {
+				visualiseSize = '<span class="sct-box" style="height:' + d.minival + 'px; width:' + d.minival + 'px; margin-top:' + Math.floor((50 - d.minival) / 2) + 'px; left:' + Math.floor((50 - d.minival) / 2) + 'px;"></span>';
+			}
+			if (d.name) {
+				name = '<span class="qgTM-name">' + d.name + '</span>';
+			}
+			if (d.tdValue) {
+				volumeSpan = '<span class="amount">' + d.tdValue + ' ' + valueLabel + '</span>';
+			}
+			this.innerHTML = '<span class="wrap">' + visualiseSize + name + volumeSpan + '</span>';
+			return;
+		};
+
+		var nodeClass = function(d) {
+			return d.color + ' qgTM-node mobile' ? d.color + ' qgTM-node mobile' : null;
+		};
+
+		var position = function() {
+			this
+				.style('width', '100%')
+				.style('min-height', '50px')
+				.style('float', 'left')
+				.style('cursor', function(d) {
+					return d.url ? 'pointer' : '';
+				});
+		};
+
+		var makeTree = function(divId, treeData) {
+			var margin = {
+					top: 0,
+					right: 0,
+					bottom: 0,
+					left: 0
+				},
+				width = ewidth - margin.left - margin.right,
+				height = 'auto';
+
+			var color = d3.scale.category20c();
+
+			var treemap = d3.layout.treemap()
+
+			.value(function(d) {
+				return d.size;
+			})
+				.sort(function(a, b) {
+					return a.value - b.value;
+				});
+
+			var div = d3.select('#' + divId)
+				.style('width', (width + margin.left + margin.right) + 'px')
+				.style('height', 'auto !important')
+				.style('left', margin.left + 'px')
+				.style('top', margin.top + 'px');
+
+			var node = div.datum(treeData).selectAll('.qgTM-node')
+				.data(treemap.nodes)
+				.enter().append('a')
+				.attr('class', nodeClass)
+				//.call(position)
+				//.on('click', function(d) {
+				//	if (d.url) {
+				//		console.log('TODO make me go to ' + d.url);
+				//	}
+				//})
+				.style('background', function(d) {
+					return d.color ? d.color : color(d.name);
+				})
+				.style('color', function(d) {
+					return d.textColor ? d.textColor : null;
+				})
+				.attr('href', function(d) {
+					return d.url ? d.url : null;
+				})
+				.call(function(selection) {
+					selection
+						.filter(function(d) {
+							return !d.children;
+						})
+						.each(setNodeContent);
+				});
+
+		};
+
+		return {
+			display: makeTree
+		};
+
+	}());
+
+
+	function drawHighlight(operator) {
+		if (operator === true) {
+			if (window.$) {
+				var $figure = $('#' + targetDivID);
+				var $cap = $('<figcaption/>').prependTo($figure);
+
+				// hide the first wrapping node
+				$figure.find('.qgTM-node').first().hide();
+
+
+				$figure.find('.qgTM-node').on('mouseenter', function() {
+					var $this = $(this),
+						bg = $this.css('background-color');
+					$('.qgTM-node').removeClass('highlight');
+					$('.qgTM-node').addClass('lowlight');
+					$this.removeClass('lowlight');
+					$this.addClass('highlight');
+					$cap.html($this.html());
+					$('<span class="keyBlock"/>').css('background-color', bg).prependTo($cap);
+				});
+				$figure.on('mouseleave', function() {
+					$cap.empty();
+					$('.qgTM-node').removeClass('lowlight');
+					$('.qgTM-node').removeClass('highlight');
+				});
+
+			}
+		}
+	}
+
+	function setSize(tID, tDivID) {
+
+		var idx = $('#' + targetDivID)[0];
+		var parent = idx.parentNode;
+
+		var that = this;
+
+		$('.QGTreeWrap').attr('class', 'QGTreeWrap qgTM-on');
+		ewidth = parent.clientWidth;
+		eheight = parent.clientHeight;
+
+		var highlight, tree;
+		if (ewidth < 400) {
+			$('#' + targetDivID).empty();
+			tree = Tree.fromHtmlTable(d3.selectAll(tableData));
+			noTreeMapLayout.display(targetDivID, tree);
+			highlight = false;
+			$('.QGTreeWrap').attr('class', 'QGTreeWrap qgTM-off');
+
+		} else {
+			$('#' + targetDivID).empty();
+			tree = Tree.fromHtmlTable(d3.selectAll(tableData));
+			TreeMapLayout.display(targetDivID, tree);
+			highlight = true;
+			$('.QGTreeWrap').attr('class', 'QGTreeWrap qgTM-on');
+
+		}
+		drawHighlight(highlight);
+	}
+
+
+	function qgTMinit(tID, tDivID) {
+
+		tableID = tID;
+		targetDivID = tDivID;
+
+		initTreeData(tID);
+
+		var elemD = document.getElementById(tDivID);
+		$(document).ready(function(tID, tDivID) {
+			$(elemD).wrap('<div class="QGTreeWrap"></div>');
+			setTimeout(setSize, 1000);
+
+			var idx = $('#deptdatatree')[0];
+			var parent = idx.parentNode;
+			//var parent = document.getElementById(targetDivID);
+			var that = this;
+			var currentHeight;
+			var currentWidth;
+
+			//window.console.log('current height:' + parent.clientHeight);
+
+			$(window).resize(function() {
+				var windowHeight = $(window).height();
+				var windowWidth = $(window).width();
+				if (typeof currentHeight === 'undefined' || currentHeight != windowHeight || typeof currentWidth === 'undefined' || currentWidth != windowWidth) {
+					// redraw the chart here will make IE8 fire resize event again
+					currentHeight = windowHeight;
+					currentWidth = windowWidth;
+					setTimeout(setSize, 300);
+				}
+			});
+
+		});
+	}
+</script>
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var datafile = "ba473c2e-adea-4aa0-b65b-4ad90a444cc0",
+		displayServicesList,
+		getServicesList,
+		displayCategoryChart,
+		getCategoryAndCounts
+	;
+
+
+	var QueryString = function () {
+		// This function is anonymous, is executed immediately and 
+		// the return value is assigned to QueryString!
+		var query_string = {};
+		var query = window.location.search.substring(1);
+		var vars = query.split("&");
+		for (var i=0;i<vars.length;i++) {
+			var pair = vars[i].split("=");
+			// If first entry with this name
+			if (typeof query_string[pair[0]] === "undefined") {
+				query_string[pair[0]] = pair[1];
+				// If second entry with this name
+			} else if (typeof query_string[pair[0]] === "string") {
+				var arr = [ query_string[pair[0]], pair[1] ];
+				query_string[pair[0]] = arr;
+				// If third or later entry with this name
+			} else {
+				query_string[pair[0]].push(pair[1]);
+			}
+		} 
+		return query_string;
+	} ();
+
+	// get new data
+	displayServicesList = function( jsonData  ) {
+
+		var resultsHTML = '',
+		    results = $( '#service-listing' ),
+		    type = ''
+		;
+		results.empty();
+
+		resultsHTML += '<h2 class="search-results-summary">Displaying <strong>' + jsonData.result.records.length +'</strong>';
+		
+		resultsHTML += jsonData.result.records.length > 1 ? ' services ' : ' service ';
+
+		resultsHTML += QueryString.Category && (typeof QueryString.Category !== 'undefined' || typeof QueryString.Category !== '' ) != '' ? ' for <strong>' + QueryString.Category.replace(/\+/g, ' ').replace(/\%2C/g, ',') + '</strong>' : '';
+
+		resultsHTML += '</h2>';
+
+		if ( jsonData.result.records.length > 0 ) {
+			// loop through items
+			resultsHTML += "<ol>";
+			$.each( jsonData.result.records, function( index, item ) {	
+				resultsHTML += '<li><h3><a href="' + item['Website'] +'">' + item['Interaction name'] +'</a>';
+				resultsHTML += (item['Service ID'] != '')? ' <small>(' + item['Service ID'] +')</small>' : '';
+				resultsHTML += '</h3>';
+				resultsHTML += markdown.toHTML(item['Description']) +'<ul>';
+				resultsHTML += '<li>Category: ' + item['Category'] +'</li>';
+				resultsHTML += item['Go-live date note'] !== "" ? '<li>Go-live date: ' + item['Go-live date note'] +'</li>' : '';
+				resultsHTML += item['Go-live date'] !== null || item['Go-live date'] !== 'undefined' ? '<li>Go-live date: ' + qg.swe.template.format( item['Go-live date'] , 'date' ) +'</li>' : '';
+				/*resultsHTML += '<li>Total transactions FY13-14: ' + item['Total transactions FY13-14'] +'<ul>';
+				resultsHTML += '<li>Digital transaction volumes FY13-14: ' + item['Digital transaction volumes FY13-14'] +'</li>';
+				resultsHTML += '<li>Phone transaction volumes FY13-14: ' + item['Phone transaction volumes FY13-14'] +'</li>';
+				resultsHTML += '<li>Counter transaction volumes FY13-14: ' + item['Counter transaction volumes FY13-14'] +'</li></ul></li>';
+				resultsHTML += '<li>Efficiencies savings through digital take-up: ' + qg.swe.template.format( item['Efficiencies savings through digital take-up'], '$' ) +'</li>';*/
+				resultsHTML += '</ul></li>';
+			});
+			resultsHTML += '</ol>';
+			$( results ).append( resultsHTML );
+		} else {
+			results.append( resultsHTML + '<p>No services were found. Please search again using a different category.</p>' );
+		}
+		
+		results.trigger( 'x-height-change' );
+	};
+
+	
+	function populateSearchForm(){
+		if ( QueryString.Category && (typeof QueryString.Category !== 'undefined' || typeof QueryString.Category !== '' )) {
+			$( $( 'form', '#asides' )[ 0 ][ 'Category' ] ).val( QueryString.Category.replace(/\+/g, ' ').replace(/\%2C/g, ',') );
+		}
+
+		if ( QueryString.query && (typeof QueryString.query !== 'undefined' || typeof QueryString.query !== '' )) {
+			$( $( 'form', '#asides' )[ 0 ][ 'query' ] ).val( QueryString.query.replace(/\+/g, ' ').replace(/\%2C/g, ',') );
+		}
+	}
+
+	function getFilterValues() {
+		var query = '';
+
+		query += ( QueryString.query && (typeof QueryString.query !== 'undefined' || typeof QueryString.query !== '' ) ? ', plainto_tsquery(\'english\', \'' + QueryString.query + '\') query' : '' );
+		query += ' WHERE 1=1';
+		query += ( QueryString.query && (typeof QueryString.query !== 'undefined' || typeof QueryString.query !== '' ) ? ' AND _full_text @@ query' : '' );
+		if ( QueryString.Category && (typeof QueryString.Category !== 'undefined' || typeof QueryString.Category !== '' )) {
+			query += ' AND (\"Category\"=\'' + QueryString.Category.replace(/\+/g, ' ').replace(/\%2C/g, ',')  + '\')';
+		}
+		
+		return query;
+	}
+
+	getServicesList = function( ) {
+		// load json data
+		var sql = 'SELECT * FROM \"' + datafile + '\"' + getFilterValues( ) + ' ORDER BY \"Interaction name\"';
+		qg.data.get( 'data.qld.gov.au', sql, displayServicesList );
+	}
+
+
+	getCategoryAndCounts = function( ) {
+		// load json data
+		var sql = ' SELECT \"Category\", COUNT(\"Category\") AS Count FROM \"' + datafile + '\" GROUP BY \"Category\" ORDER BY COUNT DESC';
+		qg.data.get( 'data.qld.gov.au', sql, displayCategoryChart );
+	}
+
+	displayCategoryChart = function( jsonData ) {
+		var resultsHTML = '',
+		    results = $( '#category-table' )
+		;
+		
+		if ( jsonData.result.records.length > 0 ) {
+
+	        $.each( jsonData.result.records, function( index, item ) {
+	        	resultsHTML += '<tr><td scope="row"><a href="services.html?Category=' +  item['Category'].replace( / /g,'+' ).replace( /\,/g,'%2C' ) + '">' +  item['Category'] + '</a></td>';
+				resultsHTML += '<td>' + item['count'] + '</td></tr>';
+			});
+			$( 'tbody', results ).append( resultsHTML );
+
+			qgTMinit('data-table-tree-map', 'deptdatatree');
+		}
+
+		// set heights
+		$( '#data-table-tree-map' ).closest( '#tabs' ).slidetabs().setContentHeight();
+		$( '#data-table-tree-map' ).trigger( 'x-height-change' );
+	}
+
+	getCategoryAndCounts();
+	getServicesList();
+	populateSearchForm();
+
+}( jQuery, qg.swe ));
+
+//--></script><!-- end -->

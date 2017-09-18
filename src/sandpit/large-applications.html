@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Example large application | FRANCHISE | Queensland Government</title>
+
+<!--#set var="franchise" value="FRANCHISE"-->
+<!--#set var="title" value="Example large application"-->
+<!--#set var="licence" value="http://creativecommons.org/licenses/by/3.0/au/"-->
+<!--#include virtual="/assets/includes/global/head-assets.html"-->
+
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+	
+	<meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=DEPARTMENT NAME; ou=UNIT NAME" />
+	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland" />
+	<meta name="DCTERMS.created" content="2013-02-20" />
+	<meta name="DCTERMS.modified" content="2013-02-21" />
+	<meta name="DCTERMS.title" content="Example large application | FRANCHISE" />
+	<meta name="DCTERMS.description" content="DESCRIPTION" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION" />
+<!--#include virtual="/assets/includes/global/head-meta-identifier.html"-->
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Service" />
+	<meta name="AGLSTERMS.serviceType" scheme="AGLSTERMS.agls-service" content="transactions" />
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="all" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+	<meta name="DCTERMS.license" scheme="DCTERMS.URI" content="https://creativecommons.org/licenses/by/4.0/" />
+</head>
+
+<body id="qld-gov-au" class="residents large-application">
+
+<!--#include virtual="/assets/includes/global/header.html"-->
+	
+	<div id="page-container"><div class="max-width">
+		<div id="breadcrumbs">
+			<h2>You are here:</h2>
+			<ol>
+<!--#include virtual="/assets/includes/global/breadcrumb-citizen.html"-->
+				<li><a href="/environment/">Environment, land and water</a></li>
+				<li><a href="/envirnoment/regrowth/">Native forest regrowth benefits</a></li>
+				<li class="last-child">Example large application</li>
+			</ol>
+		</div>
+	
+		<div id="content-container">
+			<div id="content">
+				<div class="article"><div class="box-sizing"><div class="border">
+					<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+					<h1>Example large application</h1>
+					
+					<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+					<div id="large-application">
+						<div id="app-viewport-tools">
+							<span>Tools panel</span>
+						</div>
+
+						<div id="app-viewport">
+							<span>Viewport</span>
+						</div>
+
+						<div id="app-viewport-info">
+							<span>Info panel</span>
+						</div>
+					</div>
+
+				</div></div></div><!-- end .article .box-sizing .border -->
+			</div><!-- end #content -->
+
+			<div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+				<div id="document-properties"><div class="box-sizing">
+					<dl>
+						<dt class="visuallyhidden">Licence</dt>
+						<dd id="document-licence">
+							<a href="http://creativecommons.org/licenses/by/3.0/au/" rel="license" title="Text available under Creative Commons Attribution 3.0 Australia (CC BY 3.0) licence"><img src="/assets/v2/images/licences/by-80x15.png" alt="Creative Commons Attribution 3.0 Australia (CC BY 3.0)"/></a>
+						</dd>
+
+						<dt>Last updated</dt>
+						<dd>21 February 2013</dd>
+					</dl>
+				</div></div>
+
+<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+			</div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+		</div><!-- end #content-container -->
+
+	</div></div><!-- end #page-container, .max-width -->
+
+<!--#include virtual="/assets/includes/global/footer-page.html"-->
+<script type="text/javascript">
+
+	// javascript-supported css (DEMO ONLY)
+	$( '#large-application, #app-viewport' ).css({
+		'min-height' : '30em',
+		'height' : '100%'
+	});
+	$( '#app-viewport-tools' ).css({
+		'background': 'red',
+		'position': 'absolute',
+		'width': '30em',
+		'min-height': '30em',
+		'top': '0'
+	});
+
+	$( '#app-viewport' ).css({
+		'background': 'green',
+		'text-align': 'center' // just for this demo
+	});
+
+	$( '#app-viewport-info' ).css({
+		'background': 'blue',
+		'position': 'absolute',
+		'width': '30em',
+		'min-height': '30em',
+		'top': '0',
+		'right': '0'
+	});
+
+	// click handler
+	var largeApplicationUiHandler = function( event ) {
+		var widget;
+
+		switch ( $( event.target ).text() ) {
+			// show/hide viewport tools
+			case 'Tools':
+				$( '#app-viewport-tools' ).toggle( 400 );
+			break;
+
+			// show/hide viewport info panel
+			case 'Info':
+				$( '#app-viewport-info' ).toggle( 400 );
+			break;
+
+			// invoke fullscreen
+			case 'Fullscreen':
+				widget = document.getElementById( 'large-application' );
+
+				if ( widget.requestFullscreen ) {
+					widget.requestFullscreen();
+				} else if ( widget.mozRequestFullScreen ) {
+					widget.mozRequestFullScreen();
+				} else if ( widget.webkitRequestFullscreen ) {
+					widget.webkitRequestFullscreen();
+				}
+			break;
+		}
+	};
+
+	// sample buttons
+	$( '#app-viewport' )
+		.append(
+			'<button>Tools</button>' +
+			'<button>Info</button>' +
+			'<button>Fullscreen</button>'
+		)
+	;
+	$( '#large-application' ).on( 'click', largeApplicationUiHandler );
+
+	// init: hide the panels
+	$( '#app-viewport-tools, #app-viewport-info' ).hide();
+
+
+</script>
+<!--#include virtual="/assets/includes/global/footer-stats.html"-->
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!-- 
+
+Approve batch UI
+
+Note:  Use search results header
+No pagination
+Cap at 20 results
+
+Displaying 1-20 newest requests
+
+Checkbox
+Actions: approve selected; reject selected
+Select all checkbox toggle
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+	<meta charset="UTF-8" />
+	<title>Batch upload | URL management | Queensland Government</title>
+
+<!--#set var="franchise" value="QGov"-->
+<!--#set var="title" value="Batch upload"-->
+<!--#include virtual="/assets/includes/global/head-assets.html"-->
+
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+	
+	<meta name="DCTERMS.created" content="2011-05-25" />
+	<meta name="DCTERMS.modified" content="2011-05-25" />
+	<meta name="DCTERMS.title" content="Batch upload | URL management" />
+	<meta name="DCTERMS.description" content="DESCRIPTION" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION" />
+	<meta name="DCTERMS.identifier" scheme="DCTERMS.URI" content="https://www.smartservice.qld.gov.au/services/url/purls" />
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="form" />
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="government" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+</head>
+
+<body id="qld-gov-au">
+
+<!--#include virtual="/assets/includes/global/header.html"-->	
+	
+	<div id="page-container"><div class="max-width">
+		<div id="breadcrumbs">
+			<h2>You are here:</h2>
+			<ol>
+<!--#include virtual="/assets/includes/global/breadcrumb-global.html"-->
+				<li><a href="/services/url">URL management</a></li>
+				<li class="last-child">Batch upload</li>
+			</ol>
+		</div>
+	
+		<div id="content-container">
+            <div id="content">
+
+				<div class="article"><div class="box-sizing"><div class="border">
+                
+<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+					<div class="form">
+					<h1>Batch upload</h1>
+
+<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+					<div class="preamble instruction">
+						<p>You can create multiple redirections using this batch process.</p>
+						<ol>
+							<li>Download the
+								<a href="template.xls" class="download">
+									<span class="title">batch file template</span>
+									<span class="meta">(XLS, 15 KB)</span>
+								</a>
+							</li>
+							<li>Copy and paste your URLs into the columns provided.</li>
+							<li>Choose <strong>Save as…</strong> from the <strong>File</strong> menu.</li>
+							<li>Select the <strong>CSV (Comma delimited) (*.csv)</strong> format.</li>
+							<li>Save your file.</li>
+							<li>Upload the file you saved.</li>
+						</ol>
+					</div>
+
+					<form accept-charset="UTF-8" action="/services/url/purls" class="formtastic purl" id="new_purl" method="post">
+
+						<ol class="questions">
+							<li class="string required error url" id="purl_new_url_input">
+								<label for="purl_new_url">
+									<span class="label">Batch file</span>
+									<abbr title="(required)">*</abbr>
+								</label>
+								<input id="purl_new_url" maxlength="255" name="purl[new_url]" size="30" type="file" value="" class="" required="required" />
+							</li>
+							<li class="footer">
+								<div class="instruction">
+									<p>We will ask you to confirm the changes on the next screen.</p>
+								</div>
+								<input name="utf8" type="hidden" value="✓" />
+								<input name="authenticity_token" type="hidden" value="D79Bxq+DQ3rlMO8y+voFPSQRlvzszaDgyBgV1iehTp8=" />
+								<ul class="submit">
+									<li class="submit"><strong><input class="create" id="purl_submit" name="commit" type="submit" value="Upload batch" /></strong></li>
+									<li class="cancel"><a href="/services/url/translations">Cancel</a></li>
+								</ul>
+							</li>
+						</ol>
+					</form>
+					</div>
+
+				</div></div></div><!-- end .article, .box-sizing, .border -->
+			</div><!-- end #content -->
+
+            <div id="asides"><div class="box-sizing"><div class="border">
+            	<!--#include virtual="/assets/includes/global/global-aside.html"-->
+                
+				<div class="aside">
+					<h2>Designing URLs</h2>
+					<p>Agencies must design URLs to last.</p>
+				</div>
+
+				<div class="aside comparison advantage">
+					<h2>Benefits of conformance</h2>
+					<ul>
+						<li>A consistent, quality experience for users of the site.</li>
+						<li>Increased site credibility and levels of user trust.</li>
+						<li>Well designed URLs are more marketable and memorable.</li>
+					</ul>
+				</div>
+
+				<div class="aside comparison disadvantage">
+					<h2>Risks of non-conformance</h2>
+					<ul>
+						<li>Users encounter site errors with increased frequency.</li>
+						<li>Possible increase in offline channel requests for inexplicably removed information.</li>
+						<li>Reduced site credibility and levels of user trust.</li>
+					</ul>
+				</div>
+            
+            </div></div></div><!-- end #asides, .box-sizing, .border -->
+
+			<div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+				<div id="document-properties"><div class="box-sizing">
+					<dl>
+						<dt>Last updated</dt>
+						<dd>25 May 2011</dd>
+					</dl>
+				</div></div>
+				
+<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+			</div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+		</div><!-- end #content-container -->
+        
+
+<div id="nav-section">
+	<div class="box-sizing">
+		<h2><a href="/services/url">URL management</a></h2>
+		<ul>
+			<li><a href="/services/url/purls/new">Get a short URL</a></li> 
+			<li><a href="/services/url/translations/new">Add redirection</a></li> 
+			<li><a href="/services/url/batches/new">Batch upload</a></li> 
+			<li><a href="/services/url/translations">List redirections</a></li> 
+<!-- 			<li><a href="/services/url/translation_versions">Translation Changes Feed</a></li>  -->
+		</ul>
+	</div>
+</div>
+
+	
+    </div></div><!-- end #page-container, .max-width -->
+
+<!--#include virtual="/assets/includes/global/footer.html"-->
+	
+</body>
+</html>

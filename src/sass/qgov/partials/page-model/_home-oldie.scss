@@ -1,0 +1,102 @@
+@media screen, projection, tv, handheld {
+
+  // Layout
+
+  #header .box-sizing {
+    -overflow: visible; // IE6
+  }
+
+  #weather-and-selection,
+  #weather-and-selection * {
+    -zoom: 1; // IE6
+  }
+  #weather-and-selection ul,
+  #weather-and-selection li {
+    -zoom: 0; // IE6
+  }
+  // section header
+
+  .section-header {
+    height: 2.3em;
+
+    h2 {
+      margin: 0 !important;
+      padding: 0;
+    }
+  }
+
+  // Homepage tweaks
+
+  .home {
+
+    #main #feature-search {
+      .section-header,
+      .section-header h2 {
+        height: 3.25em;
+        width: 7.5em;
+      }
+
+      .section-header h2 {
+        line-height: 3.25em;
+      }
+    }
+
+    #article {
+      -display: inline; // IE6 tweak
+    }
+
+    #my-community #local-tonight,
+    #my-community #local-today,
+    #my-community #local .controlset {
+      min-width: 130px; // IE7 needs this
+      clear: right;
+    }
+
+    #my-community .inputs select {
+      -width: 150px; // IE6 needs help
+    }
+
+    #main #search-query-primary {
+      -line-height: 1em; // Not sure where IE6 was getting a crazy large line-height from????
+    }
+
+    .news-items .section img {
+      -width: 100%;
+    }
+
+    #main #feature-search button#feature-search-submit {
+      height: em(62) !important;
+      padding-left: em(62) !important;
+    }
+
+    #main #feature-search button#feature-search-submit:before {
+      margin-top: -0.1em;
+    }
+
+    #questions h2:before {
+      background: $qgov-banner-blue !important;
+      color: $qgov-green !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+
+  // Weather tabs fixes
+
+  #weather-and-selection {
+    .tabs li {
+      *float: none;
+    }
+
+    .tabs li a {
+      -color: $home-weather-and-selection-tabs-color !important;
+    }
+  }
+
+  // Questions, on home page
+
+  #questions-content li {
+    *float: none;
+  }
+
+}

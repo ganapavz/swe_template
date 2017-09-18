@@ -1,0 +1,15 @@
+#asides {
+	margin: 0;
+	padding: 0;
+}
+
+@media screen,projection,tv,handheld {
+	#asides {
+		float: left;
+		position: relative;
+	}
+	#asides .box-sizing,
+	#asides .box-sizing .border {
+		overflow: hidden;
+	}
+}

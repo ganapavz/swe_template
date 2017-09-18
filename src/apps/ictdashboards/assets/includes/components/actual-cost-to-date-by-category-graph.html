@@ -1,0 +1,33 @@
+<h2>Actual cost to date by category</h2>
+<div id="actual-cost-to-date-by-category">Loading...</div>
+
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var datafile = "<!--#echo encoding="entity" var="data" -->";
+
+	function actualCostToDateByBusinessUnit() {
+		// load json data
+		var sql = 'SELECT \"Category\", ROUND(sum(\"Actual cost to date\")* 100.0 / (SELECT sum(\"Actual cost to date\") from \"' + datafile + '\"),0) as \"Percentage %\" from "' + datafile + '" GROUP BY \"Category\"  ORDER BY 1';
+
+		// load data lib
+		swe.load({ name: 'data', url: 'data.js' });
+
+		// configure chart
+		swe.data({
+			container: 'actual-cost-to-date-by-category',
+			title: 'Actual cost to date by category',
+			headings: [ 'Category', 'Percentage %' ],
+			formats: { Percentage: '%' }, 
+			sql: sql,
+			type: 'pie'
+		});
+	}
+
+	actualCostToDateByBusinessUnit();
+
+}( jQuery, qg.swe ));
+
+//--></script><!-- end -->

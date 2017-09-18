@@ -1,0 +1,32 @@
+.instagram-updates {
+  ul {
+    padding-left: 0;
+    list-style: none;
+    .instagram-feed {
+      width: 48%;
+      height: auto;
+      float: left;
+      margin-right: 2%;
+      img {
+        background: $aside-background-color;
+        border: 1px solid $figure-img-border-color;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+        &:hover {
+          border: 1px solid $link-hover-color;
+        }
+      }
+    }
+  }
+  .more {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 0.5em;
+  }
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}

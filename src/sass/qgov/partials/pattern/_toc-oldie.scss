@@ -1,0 +1,11 @@
+@media screen,projection,tv,handheld {
+	#toc a .page-number {
+		*position: relative; /* fix clipping issue - http://is.gd/gS11z */
+	}
+
+	/* Guide Table of Contents */
+	#toc a .page-number,
+	#nav-section a .page-number {
+		padding: 0 .4em; /* IE6 says "I'm different" */
+	}
+}

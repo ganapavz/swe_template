@@ -1,0 +1,79 @@
+@media screen, projection, tv, handheld {
+	/* layout-small - less than 800 small screen single column */
+/* Small styles */
+
+/* Primary navigation */
+
+#nav-prime {
+	color: #fff;
+}
+#nav-prime .box-sizing {
+	padding: 0 0.7em;
+	/*background: transparent url("../images/skin/nav-gradient.png") 0 0 repeat-x;*/
+}
+#nav-prime .max-width {
+		background: #02335F none;
+		/*background: #fff url("../images/skin/nav-gradient.png") 0 0 repeat-x;*/
+				padding-top: 0.5em;
+}
+#nav-prime ul {
+	height: auto;
+	line-height: 1em;
+	text-align: left;
+	padding: 0;
+	margin: 0 0.75em;
+}
+#nav-prime ul li {
+	display: inline-block;
+	border-left: 1px solid #004B85;	
+}
+#nav-prime a {
+	/*display: inline-block;*/
+	display: block;
+	_zoom: 1; /* IE6 */
+	padding: 0.75em 1em;
+}
+#nav-prime a, #nav-prime a:link, #nav-prime a:visited, #nav-prime a:hover {
+	color: #fff;
+	text-decoration: none;
+}  
+#nav-prime a:hover {
+	font-weight: normal;
+}
+#nav-prime a#getting, #nav-prime a#running, #nav-prime a#employing, #nav-prime a#trade, #nav-prime a#industry, #nav-prime a#regional {
+	background: transparent none;
+}
+#nav-prime a:hover#getting, #nav-prime a:hover#running, #nav-prime a:hover#employing, #nav-prime a:hover#trade, #nav-prime a:hover#industry, #nav-prime a:hover#regional {
+	background: #118FB5 none;
+}
+
+
+
+
+
+
+#topics #section-getting-into,
+#topics #section-running,
+#topics #section-employing,
+#topics #section-trade,
+#topics #section-industry,
+#topics #section-regional {
+	background-color: #eaeaea;
+	padding-left: 2em;
+}
+
+
+
+
+
+
+/* Home page styles*/
+
+#nav-home {
+	width: 100%;
+}
+#services, #maps {
+	width: 100%;
+}
+
+}

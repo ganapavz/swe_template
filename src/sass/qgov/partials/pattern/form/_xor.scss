@@ -1,0 +1,41 @@
+.form > .xor {
+  margin: .5em 0;
+}
+
+ol.xor > li {
+  list-style: upper-alpha;
+  border-top: 1px solid $form-xor-li-border-color;
+  margin-top: 2em;
+  padding: 1.5em 0 0;
+}
+
+ol.xor > li > h2 {
+  margin-top: 0;
+}
+
+ol.xor > li:first-child {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+ol.xor > li::before {
+  content: " or ";
+  font-weight: bold;
+  text-transform: capitalize;
+  // border: 1px solid $form-xor-li-border-color;
+  background: $form-xor-li-background-color;
+  color: $form-xor-li-color;
+  position: absolute;
+  padding: .7em;
+  margin-top: -3em;
+  margin-left: -3em;
+}
+
+ol.xor > li:first-child::before {
+  content: none;
+}
+
+.qg-acc h3 {
+  margin: .7em 0;
+}

@@ -1,0 +1,94 @@
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var datafileServices = "ba473c2e-adea-4aa0-b65b-4ad90a444cc0",
+		datafileInformation = "ad846494-1633-48dc-a792-157524bde3b3",
+		getServicesCount,
+		displayServicesGauge,
+		getInformationCount,
+		displayInformationGauge
+	;
+	
+	displayServicesGauge = function( jsonData ) {
+		var resultsHTML = '',
+		    results = $( '#target-100' )
+		;
+		results.empty();
+		
+		if ( jsonData.result.records.length > 0 ) {
+			var target100 = new JustGage({
+				id: "target-100",
+				value: jsonData.result.records[0].count,
+				min: 0,
+				max: 200,
+				customSectors: [{
+					color: "#F78100",
+					lo: 0,
+					hi: 50
+				}, {
+					color: "#007EB1",
+					lo: 50,
+					hi: 100
+				}, {
+					color: "#90E503",
+					lo: 100,
+					hi: 200
+				}]
+			});
+		}
+
+		results.trigger( 'x-height-change' );
+	}
+
+	displayInformationGauge = function( jsonData ) {
+		var resultsHTML = '',
+		    results = $( '#information-online' )
+		;
+		results.empty();
+		
+		if ( jsonData.result.records.length > 0 ) {
+			var informationOnline = new JustGage({
+				id: "information-online",
+				value: jsonData.result.records[0].Percentage,
+				min: 0,
+				max: 100,
+				customSectors: [{
+					color: "#F78100",
+					lo: 0,
+					hi: 25
+				}, {
+					color: "#007EB1",
+					lo: 25,
+					hi: 50
+				}, {
+					color: "#90E503",
+					lo: 50,
+					hi: 100
+				}]
+			});
+		}
+
+		results.trigger( 'x-height-change' );
+		$( "#information-online text tspan:eq(1)" ).append( "%" ); 
+	}
+
+	getServicesCount = function( ) {
+		// load json data
+		var sql = 'SELECT COUNT(*) FROM \"' + datafileServices + '\"' + ' WHERE (\"Contributes to Target 100 new services FY13-14\"=\'Yes\')';
+		qg.data.get( 'data.qld.gov.au', sql, displayServicesGauge );
+	}
+
+	getInformationCount = function( ) {
+		// load json data
+		var sql = 'SELECT \"Percentage\" FROM \"' + datafileInformation + '\"' + ' WHERE (\"Information on www.qld.gov.au\"=\'Delivered\')';
+		qg.data.get( 'data.qld.gov.au', sql, displayInformationGauge );
+	}
+
+	getServicesCount();
+	getInformationCount();
+
+}( jQuery, qg.swe ));
+
+//--></script><!-- end -->

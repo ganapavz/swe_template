@@ -1,0 +1,10 @@
+
+@mixin slideUp($duration:0.3) {
+  transition: all #{$duration}s ease-in;
+
+  &.slideUp {
+  transition: all #{$duration}s ease-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+}

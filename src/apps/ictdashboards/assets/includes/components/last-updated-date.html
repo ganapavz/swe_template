@@ -1,0 +1,12 @@
+<script type="text/javascript"><!--
+	var configfile = "<!--#echo encoding="entity" var="configs" -->";
+
+	if (  typeof qg.data != 'undefined' && configfile !== '' ) {
+		qg.data.get( 'data.qld.gov.au',
+			'SELECT to_char(\"Date data current at\", \'FMDD Month YYYY\') as approveddate from \"' + configfile + '\"',    {
+			successCallback: function( data ) {
+				$( 'dd', '#document-properties' ).last().text( data.result.records[ 0 ].approveddate );
+			}
+		});
+	}
+//--></script><!-- end -->

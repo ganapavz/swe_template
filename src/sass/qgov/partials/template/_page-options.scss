@@ -1,0 +1,278 @@
+
+
+/* Page feedback form */
+#page-feedback {
+  padding: 0 1em;
+}
+
+#page-feedback form:focus {
+  outline: none;
+}
+
+#page-feedback a.expandable-toggle,
+#page-feedback a.expandable-toggle:link,
+#page-feedback a.expandable-toggle:visited,
+#page-feedback a.expandable-toggle:active,
+#page-feedback a.expandable-toggle:hover {
+  color: $page-feedback-link-color;
+}
+
+#page-feedback .expandable-active h3 {
+  @extend %visually-hidden;
+}
+
+#page-feedback p  {
+  max-width: 50em;
+}
+
+/* CAPTCHA (Honeypot) field to be visually hidden, but semantically still available */
+#captcha-container {
+  @extend %visually-hidden;
+}
+
+body #post-page-options .feedback {
+    margin-top: 0.5em;
+}
+
+#feedback-comments {
+  width: 95%;
+}
+
+/* table update */
+#swe-tpl-feedback {
+  width: 100%;
+}
+
+#swe-tpl-feedback input {
+  margin: 0 .5em;
+}
+
+#swe-tpl-feedback td.tbl-alternate {
+  width: 150px;
+}
+
+#swe-tpl-feedback th, #swe-tpl-feedback td {
+  text-align: center;
+  padding: 0.8em 0;
+}
+
+#swe-tpl-feedback .tbl-alternate {
+  text-align: left;
+}
+
+#swe-tpl-feedback .table-rating td:last-child {
+  text-align: right;
+  padding-right: 0.5em;
+}
+
+#swe-tpl-feedback td:first-child {
+  padding-left: 0.5em;
+}
+
+#swe-tpl-feedback label {
+  @extend %visually-hidden;
+}
+
+#meta-wrapper .choices.vert-label label, #meta-wrapper .choices.vert-label input {
+  clear: both;
+  position: relative;
+  margin: 1px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 90%;
+}
+
+ .choices.vert-label input {
+}
+
+.choices.vert-label li {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/* Page options */
+
+/* ##################################### */
+
+#post-page-options {
+overflow: hidden;
+background: $post-page-options-background-color;
+}
+
+/* ##################################### */
+
+#post-page-options h2 {
+color: $post-page-options-color;
+display: inline;
+font-size: 100%;
+font-weight: bold;
+}
+
+/* ##################################### */
+
+#post-page-options ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+#post-page-options ul li {
+ display: block;
+padding: 1em 1em;
+}
+
+/* ##################################### */
+
+#post-page-options ul li.feedback a  {
+/* display: block; */
+display: inline-block;
+//width: 12em;
+margin: .3em 0;
+padding: 0;
+}
+
+#post-page-options ul li.feedback {
+width: 50%;
+}
+
+#post-page-options ul li.feedback .button {
+margin-right: 1em;
+padding: 6px 12px;
+text-align: center;
+border-radius: 4px;
+border: none;
+background: $post-page-options-button-background-color;
+color: $post-page-options-button-color;
+transition: all ease 0.3s;
+-webkit-transition: all ease 0.3s;
+}
+
+#post-page-options ul li.feedback .button:hover {
+background: $post-page-options-button-hover-background-color;
+}
+
+/* ##################################### */
+
+#post-page-options ul li.share {
+}
+
+#meta-wrapper #post-page-options li.share {
+width: 12em;
+}
+
+#post-page-options .share  {
+width: auto;
+}
+
+#post-page-options li.share a {
+color: #FFF;
+display: inline-block;
+padding: .3em;
+text-decoration: none;
+}
+
+#post-page-options li.share a:visited {
+color: #FFF;
+text-decoration: none;
+}
+
+#post-page-options li.share a:active {
+color: #FFF;
+text-decoration: underline;
+}
+
+#post-page-options li.share a:hover {
+color: #FFF;
+text-decoration: underline;
+}
+
+#post-page-options li.share span {
+@extend %visually-hidden;
+}
+
+#post-page-options li.share .share {
+@include fonticon($fa-var-share-alt, null, 1.4);
+}
+
+#post-page-options li.share .facebook {
+@include fonticon($fa-var-facebook, null, 1.4);
+}
+
+#post-page-options li.share .twitter {
+@include fonticon($fa-var-twitter, null, 1.4);
+}
+
+#post-page-options li.share .linkedin {
+@include fonticon($fa-var-linkedin, null, 1.4);
+}
+
+#post-page-options li.share .facebook::before, #post-page-options li.share .facebook:hover:before,
+#post-page-options li.share .linkedin::before, #post-page-options li.share .linkedin:hover:before,
+#post-page-options li.share .share::before, #post-page-options li.share .share:hover:before,
+#post-page-options li.share .twitter::before, #post-page-options li.share .twitter:hover:before
+{
+
+}
+
+/* ##################################### */
+
+#post-page-options .selected {
+background: $post-page-options-button-hover-background-color;
+}
+
+#post-page-options .selected:hover {
+background: $post-page-options-button-hover-background-color;
+}
+
+/* ##################################### */
+
+  @media(max-width: 640px) {
+
+  #post-page-options .feedback {
+  width: 100% !important;
+  text-align: center !important;
+  padding: 0 !important;
+  }
+
+  #post-page-options .feedback a {
+  width: 12em !important;
+  margin: .5em auto !important;
+  display: block;
+  }
+
+  #post-page-options li.share {
+  background: inherit;
+  width: 100% !important;
+  clear: left;
+  text-align: center !important;
+  margin: 0;
+  padding: 0;
+  background-color: #0B2E4C;
+  }
+
+  #post-page-options li.share a {
+  padding: .3em .5em;
+  }
+
+}
+
+
+/* ##################################### */
+
+
+@media(max-width: 980px) and (min-width: 640px) {
+  #post-page-options .feedback {
+  width: 50%;
+  }
+
+  #post-page-options li.share {
+   float: left;
+
+  }
+
+}

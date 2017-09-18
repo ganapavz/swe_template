@@ -1,0 +1,189 @@
+<script type="text/javascript"><!--
+
+(function( $, qg ) {
+	'use strict';
+
+
+	var displayServicesList,
+		displayOfflineServicesList,
+		displayServicesWidget,
+		getServicesList,
+		getOfflineServicesList,
+		getServicesWidget
+	;
+
+
+	var QueryString = function () {
+		// This function is anonymous, is executed immediately and 
+		// the return value is assigned to QueryString!
+		var query_string = {};
+		var query = window.location.search.substring(1);
+		var vars = query.split("&");
+		for (var i=0;i<vars.length;i++) {
+			var pair = vars[i].split("=");
+			// If first entry with this name
+			if (typeof query_string[pair[0]] === "undefined") {
+				query_string[pair[0]] = pair[1];
+				// If second entry with this name
+			} else if (typeof query_string[pair[0]] === "string") {
+				var arr = [ query_string[pair[0]], pair[1] ];
+				query_string[pair[0]] = arr;
+				// If third or later entry with this name
+			} else {
+				query_string[pair[0]].push(pair[1]);
+			}
+		} 
+		return query_string;
+	} ();
+
+	// get new data
+	displayServicesList = function( jsonData  ) {
+
+		var resultsHTML = '',
+		    results = $( '#services' ),
+		    type = ''
+		;
+		results.empty();
+
+		resultsHTML += '<h2 class="search-results-summary">Displaying <strong>' + jsonData.result.records.length +'</strong>';
+		
+		resultsHTML += QueryString.Type && (typeof QueryString.Type !== 'undefined' || typeof QueryString.Type !== '' ) != '' ? ' <strong>' + QueryString.Type.replace(/\+/g, ' ').replace(/\%2C/g, ',') + '</strong>' : '';
+
+		resultsHTML += jsonData.result.records.length > 1 ? ' services ' : ' service ';
+
+		resultsHTML += QueryString.Category && (typeof QueryString.Category !== 'undefined' || typeof QueryString.Category !== '' ) != '' ? ' for <strong>' + QueryString.Category.replace(/\+/g, ' ').replace(/\%2C/g, ',') + '</strong>' : '';
+
+		resultsHTML += '</h2>';
+
+
+		if ( jsonData.result.records.length > 0 ) {
+			// loop through items
+			
+			$.each( jsonData.result.records, function( index, item ) {
+
+				if ( type != '' && type != item['Type'] ) {
+					resultsHTML += '</ul>';
+				}
+				
+				if ( type == '' || type != item['Type'] ) {
+					resultsHTML += '<h3>' + item['Type'] +'</h3><div class="cut-in cut-in-active" style="width: 75px;"><img alt="" src="/assets/images/services/' + item['Type'].toLowerCase().replace( / /g, '-' ) + '.jpg" style="width: 100%;"></div><ul>';
+					type = item['Type'];
+				}
+
+				// append to search results
+				resultsHTML += '<li><a href="' + item['Service URL'] + '">' + item['Service'] + '';
+				resultsHTML += item['Formerly'] != '' ? ' (formerly ' + item['Formerly'] + ')' : '';
+				resultsHTML += '</a>';
+				resultsHTML += item['Details'] != '' ? markdown.toHTML( item['Details'] ) : '';
+				resultsHTML += '</li>';
+			});
+			resultsHTML += '</ul>';
+
+			$( results ).append( resultsHTML );
+		} else {
+			results.append( resultsHTML + '<p>No services were found. Please search again using a different category.</p>' );
+		}
+		results.trigger( 'x-height-change' );
+	};
+
+	// get new data
+	displayOfflineServicesList = function( jsonData  ) {
+
+		var resultsHTML = '';
+
+		if ( jsonData.result.records.length > 0 ) {
+			// loop through items
+			resultsHTML += '<ul>';
+			$.each( jsonData.result.records, function( index, item ) {
+				// append to search results
+				resultsHTML += '<li><a href="' + item['Service URL'] + '">' + item['Service'] + '</a></li>';
+			});
+			resultsHTML += '</ul>';
+			$( 'h1' ).after( '<div class="status warn"><div><h2>Scheduled outage notification</h2><p>Check the individual service(s) for futher outage details.</p></div><div id="offline-services">' + resultsHTML + '</div></div>').trigger( 'x-height-change' );
+		}
+	};
+
+	// get new data
+	displayServicesWidget = function( jsonData  ) {
+
+		var resultsHTML = '',
+		    results = $( '#services-widget' )
+		;
+		results.empty();
+		
+		if ( jsonData.result.records.length > 0 ) {
+			// loop through items
+			resultsHTML += '<ul>';
+			$.each( jsonData.result.records, function( index, item ) {
+				// append to search results
+				resultsHTML += '<li><a href="' + item['Service URL'] + '">' + item['Service'] + '</a>';
+				resultsHTML += item['Available'] == 'No' ? ' (currently unavailable)' : '';
+				resultsHTML += '</li>';
+			});
+			resultsHTML += '</ul>';
+			$( results ).append( resultsHTML );
+		} else {
+			results.append( resultsHTML + '<p>All services are online.</p>' );
+		}
+		results.trigger( 'x-height-change' );
+	};
+
+	function populateSearchForm(){
+		if ( QueryString.Category && (typeof QueryString.Category !== 'undefined' || typeof QueryString.Category !== '' )) {
+			$( $( 'form', '#asides' )[ 0 ][ 'Category' ] ).val( QueryString.Category.replace(/\+/g, ' ').replace(/\%2C/g, ',') );
+		}
+
+		if ( QueryString.Type && (typeof QueryString.Type !== 'undefined' || typeof QueryString.Type !== '' )) {
+			$( $( 'form', '#asides' )[ 0 ][ 'Type' ] ).val( QueryString.Type.replace(/\+/g, ' ').replace(/\%2C/g, ',') );
+		}
+	}
+
+	function getFilterValues() {
+		var query = ' WHERE 1=1';
+
+		if ( QueryString.Category && (typeof QueryString.Category !== 'undefined' || typeof QueryString.Category !== '' )) {
+			query += ' AND (\"Category\"=\'' + QueryString.Category.replace(/\+/g, ' ').replace(/\%2C/g, ',')  + '\')';
+		}
+
+		if ( QueryString.Type && (typeof QueryString.Type !== 'undefined' || typeof QueryString.Type !== '' )) {
+			query += ' AND (\"Type\"=\'' + QueryString.Type.replace(/\+/g, ' ').replace(/\%2C/g, ',')  + '\')';
+		}
+		
+		return query;
+	}
+
+	getServicesList = function( ) {
+		// load json data
+		var sql = 'SELECT * FROM \"ff61bed8-f2ff-42ef-9224-648399a59d4b\"' + getFilterValues( ) + ' ORDER BY ' +
+					' (CASE \"Type\"' +
+					'	WHEN \'Pay it\' THEN 1' +
+					'	WHEN \'Find it\' THEN 2' +
+					'	WHEN \'Apply for it\' THEN 3' +
+					'	WHEN \'Buy it\' THEN 4' +
+					'	WHEN \'Report it\' THEN 5' +
+					'   END) ' +
+					' , \"Service\"';
+		qg.data.get( 'data.qld.gov.au', sql, displayServicesList );
+	}
+
+	getOfflineServicesList = function( ) {
+		// load json data
+		var sql = 'SELECT * FROM \"ff61bed8-f2ff-42ef-9224-648399a59d4b\"' + getFilterValues() + ' AND (\"Available\"=\'No\') ORDER BY \"Service\"';
+		qg.data.get( 'data.qld.gov.au', sql, displayOfflineServicesList );
+	}
+
+	getServicesWidget = function( category ) {
+		// load json data
+		var sql = 'SELECT * FROM \"ff61bed8-f2ff-42ef-9224-648399a59d4b\"' + getFilterValues() + ' AND (\"Category\"=\'' + category+ '\') ORDER BY \"Service\"';
+		qg.data.get( 'data.qld.gov.au', sql, displayServicesWidget );
+	}
+
+	getServicesList();
+	getOfflineServicesList();
+	//getServicesWidget( 'Transport and motoring' );
+	populateSearchForm();
+
+}( jQuery, qg ));
+
+
+//--></script><!-- end -->

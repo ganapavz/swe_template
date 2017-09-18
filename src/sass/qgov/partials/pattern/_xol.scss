@@ -1,0 +1,51 @@
+.section > .xol {
+	margin: .5em 0;
+}
+ol.xol > li {
+	list-style: upper-alpha;
+}
+ol.xol > li > h3 {
+	margin-top: 0;
+}
+ol.xol > li.disc-a::before {
+	content: " \a0 A\a0";
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 1px solid $xol-li-disc-link-before-border-color;
+	background: $xol-li-disc-link-before-background-color;
+	color: $xol-li-disc-link-before-color;
+	border-radius: 50%;
+	position: absolute;
+	padding: .7em;
+	/* z-index: 2; */
+	margin-top: -.5em;
+	margin-left: -3.5em;
+}
+ol.xol > li.disc-b::before {
+	content: " \a0 B\a0";
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 1px solid $xol-li-disc-link-before-border-color;
+	background: $xol-li-disc-link-before-background-color;
+	color: $xol-li-disc-link-before-color;
+	border-radius: 50%;
+	position: absolute;
+	padding: .7em;
+	/* z-index: 2; */
+	margin-top: -.5em;
+	margin-left: -3.5em;
+}
+ol.xol > li.disc-c::before {	
+	content: " \a0 C\a0";
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 1px solid $xol-li-disc-link-before-border-color;
+	background: $xol-li-disc-link-before-background-color;
+	color: $xol-li-disc-link-before-color;
+	border-radius: 50%;
+	position: absolute;
+	padding: .7em;
+	/* z-index: 2; */
+	margin-top: -.5em;
+	margin-left: -3.5em;
+}

@@ -1,0 +1,25 @@
+@media screen, projection, tv, handheld {
+	/* SKIN-specific IE styles */
+	#featured-stories .stories-box-sizing,
+	#featured-stories .story-box-sizing,
+	#featured-stories .caption,
+	#featured-stories .cut-in,
+	#featured-stories .more,
+	#featured-stories .more a,
+	#featured-story,
+	#featured-story .stories-box-sizing,
+	#featured-story .story-box-sizing,
+	#featured-story .caption,
+	#featured-story .cut-in,
+	#featured-story .more,
+	#featured-story .more a {
+		*zoom: 1; /* Make containers behave in IE6 & 7 */
+	}
+	#featured-story p.more {
+		_float: left; /* required to address a particularly strange peekaboo bug (when clicking on the .more link) */
+	}
+	#featured-story .cut-in .caption,
+	#featured-stories .cut-in .caption {
+		*width: 110px; /* IE6&7 don't like to display positioned elements at full width, fake it */
+	}
+}

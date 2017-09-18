@@ -1,0 +1,564 @@
+QGAP_AGENT_CODE,TRIM(T.CUSTOMER_SUBURB),CUSTOMER_POSTCODE,DESCRIPTION,CREATED_DATETIME
+TARA,TARA,4421,Vehicle/Vessel - Cancellation,28/02/2012 9:02
+TARA,MEANDARRA,4422,Financial Services Specifically Requested,28/02/2012 9:26
+TARA,MEANDARRA,4422,Registration Renewal - Other,28/02/2012 9:26
+TARA,TARA,4421,Vehicle Registration - New (Financial),28/02/2012 10:08
+TARA,TARA,4421,New CTP Insurance,28/02/2012 10:08
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,28/02/2012 10:19
+TARA,TARA,4421,Non Financial Services Specifically Requested,28/02/2012 12:33
+TARA,TARA,4421,Vehicle/Vessel - Cancellation,28/02/2012 12:33
+TARA,TARA,4421,Non Financial Services Specifically Requested,28/02/2012 12:33
+TARA,TARA,4421,Vehicle/Vessel - Cancellation,28/02/2012 12:33
+TARA,DALBY,4405,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),28/02/2012 12:42
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,28/02/2012 16:08
+TARA,TARA,4421,Vehicle Registration - New (Financial),29/02/2012 9:46
+TARA,TARA,4421,Application for Birth Certificate (Non District Registrar),29/02/2012 10:34
+TARA,TARA,4421,Priority and postage fees,29/02/2012 10:34
+TARA,TARA,4421,Tenancy Agreement for Public Rental Housing,29/02/2012 10:54
+TARA,BOOVAL,4304,Permit (registration) ,1/03/2012 10:43
+TARA,BOOVAL,4304,Issue CTP Insurance Certificate & Receipting,1/03/2012 10:43
+TARA,THE GUMS,4406,Registration Renewal - Other,1/03/2012 11:26
+TARA,THE GUMS,4406,Registration Renewal - Other,1/03/2012 11:26
+TARA,THE GUMS,4406,Registration Renewal - Other,1/03/2012 11:26
+TARA,TARA,4421,Registration Renewal - Other,5/03/2012 9:03
+TARA,TARA,4421,Application for Birth Certificate (Non District Registrar),5/03/2012 9:33
+TARA,TARA,4421,Priority and postage fees,5/03/2012 9:33
+TARA,EAGLEBY,4207,VVRR - Vehicle Vessel Registration Renewal,5/03/2012 9:52
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),5/03/2012 10:29
+TARA,GLENMORGAN,4423,Vehicle Registration - New (Financial),5/03/2012 10:49
+TARA,GLENMORGAN,4423,Issue CTP Insurance Certificate & Receipting,5/03/2012 10:49
+SARINA,MACKAY,4740,Registration Renewal - Other,5/03/2012 12:05
+SARINA,KOUMALA,4738,Registration Renewal - Other,5/03/2012 12:18
+SARINA,SARINA,4737,Registration Renewal - Other,5/03/2012 13:37
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),5/03/2012 13:45
+TARA,TARA,4421,Application for Marriage Certificate (Non District Registrar),6/03/2012 9:33
+TARA,TARA,4421,Low Volume Vins (Plate) (Financial),6/03/2012 10:38
+SARINA,ARMSTRONG BEACH,4737,Vehicle Registration - New (Financial),6/03/2012 11:37
+TARA,TARA,4421,New CTP Insurance,6/03/2012 11:45
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),6/03/2012 12:45
+TARA,TARA,4421,Vehicle Registration - New (Financial),6/03/2012 15:41
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),7/03/2012 10:06
+SARINA,CHELONA,4740,Issue CTP Insurance Certificate & Receipting,7/03/2012 14:11
+SARINA,SARINA,4737,Registration Renewal - Other,7/03/2012 14:14
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,7/03/2012 14:40
+TARA,TARA,4421,Registration Renewal - Other,7/03/2012 15:01
+SARINA,ALLIGATOR CREEK,4740,Registration Renewal - Other,8/03/2012 9:40
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),8/03/2012 11:47
+SARINA,SARINA,4737,Registration Renewal - Other,8/03/2012 11:47
+SARINA,SARINA,4737,Registration Renewal - Other,8/03/2012 11:53
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),8/03/2012 15:54
+SARINA,SARINA,4737,National driver work diary,8/03/2012 16:05
+SARINA,CARMILA,4739,Registration Renewal - Other,9/03/2012 9:22
+SARINA,SARINA,4737,Registration Renewal - Other,9/03/2012 10:36
+SARINA,SARINA,4737,Application for Birth Certificate (Non District Registrar),9/03/2012 11:55
+SARINA,KOUMALA,4738,Vehicle/Vessel - Transfer (Financial),9/03/2012 14:14
+SARINA,KOUMALA,4738,Registration Renewal - Other,9/03/2012 14:14
+SARINA,GYMPIE,4570,Registration Renewal - Other,9/03/2012 14:27
+SARINA,SARINA,4737,Application for Birth Certificate (Non District Registrar),9/03/2012 14:32
+SARINA,SARINA,4737,Registration Renewal - Other,9/03/2012 14:45
+SARINA,ILBILBIE,4738,Vehicle Registration - New (Financial),9/03/2012 15:37
+SARINA,ILBILBIE,4738,Low Volume Vins (Plate) (Financial),9/03/2012 15:37
+SARINA,KOUMALA,4738,Vehicle/Vessel - Transfer (Financial),12/03/2012 10:49
+SARINA,SARINA,4737,Assist Electors,12/03/2012 12:19
+SARINA,GRASSTREE BEACH,4740,Vehicle/Vessel - Transfer (Financial),12/03/2012 13:42
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),12/03/2012 14:26
+SARINA,ARMSTRONG BEACH,4737,Vehicle/Vessel - Transfer (Financial),12/03/2012 16:05
+SARINA,SARINA,4737,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),13/03/2012 9:30
+SARINA,SARINA,4737,Issue CTP Insurance Certificate & Receipting,13/03/2012 11:22
+SARINA,SARINA,4737,Registration Renewal - Other,13/03/2012 11:26
+SARINA,MARLBOROUGH,4705,Vehicle/Vessel - Transfer (Financial),13/03/2012 12:22
+SARINA,MARLBOROUGH,4705,Registration Renewal - Other,13/03/2012 12:22
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,13/03/2012 14:43
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),13/03/2012 14:52
+TARA,TARA,4421,Registration Renewal - Other,13/03/2012 14:52
+TARA,TARA,4421,Vehicle Registration - New (Financial),13/03/2012 15:07
+TARA,DALBY,4405,VVRR - Vehicle Vessel Registration Renewal,14/03/2012 9:30
+SARINA,GYMPIE,4570,Registration Renewal - Other,14/03/2012 9:37
+SARINA,SARINA,4737,Community Liquor Permit - Receipt Application,14/03/2012 10:17
+TARA,MEANDARRA,4422,Vehicle Registration - New (Financial),14/03/2012 10:21
+TARA,MEANDARRA,4422,Issue CTP Insurance Certificate & Receipting,14/03/2012 10:21
+TARA,BIGGERA WATERS,4216,Permit (registration) ,14/03/2012 10:37
+TARA,BIGGERA WATERS,4216,Issue CTP Insurance Certificate & Receipting,14/03/2012 10:37
+TARA,TARA,4421,Receipt of Monies to Customer Account,14/03/2012 10:44
+SARINA,SARINA,4737,Registration Renewal - Other,14/03/2012 10:58
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,14/03/2012 11:36
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),14/03/2012 11:53
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),14/03/2012 11:53
+SARINA,SARINA,4737,Registration Renewal - Other,14/03/2012 11:53
+SARINA,CAMPWIN BEACH,4737,Vessel Registration - New,14/03/2012 12:20
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,14/03/2012 14:24
+TARA,TARA,4421,Register a Birth (Non District Registrar),14/03/2012 16:00
+TARA,TARA,4421,Application for Birth Certificate (Non District Registrar),14/03/2012 16:00
+TARA,TARA,4421,Vehicle Registration - New (Financial),15/03/2012 9:26
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,15/03/2012 9:33
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,15/03/2012 9:36
+SARINA,SARINA,4737,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),15/03/2012 10:27
+SARINA,CLAIRVIEW,4741,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),15/03/2012 10:46
+TARA,MEANDARRA,4422,VVRR - Vehicle Vessel Registration Renewal,15/03/2012 11:12
+SARINA,MACKAY MC,4740,Registration Renewal - Other,15/03/2012 11:18
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,15/03/2012 11:36
+TARA,TARA,4421,Application for Marriage Certificate (Non District Registrar),15/03/2012 12:05
+TARA,TARA,4421,Registration Renewal - Other,15/03/2012 12:55
+SARINA,HAY POINT,4740,Issue CTP Insurance Certificate & Receipting,15/03/2012 13:45
+SARINA,ST LAWRENCE,4707,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),15/03/2012 13:58
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,15/03/2012 14:09
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,15/03/2012 14:24
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,15/03/2012 14:28
+TARA,TARA,4421,Vehicle Registration - New (Financial),15/03/2012 15:05
+TARA,ONE MILE,4305,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),15/03/2012 15:46
+SARINA,SARINA RANGE,4737,Vehicle/Vessel - Transfer (Financial),20/03/2012 9:16
+TARA,TARA,4421,Registration Renewal - Other,20/03/2012 9:17
+TARA,TARA,4421,Receipt of Monies to Customer Account,20/03/2012 9:47
+TARA,TARA,4421,Public Housing Rental Applications,20/03/2012 10:08
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),20/03/2012 11:12
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),20/03/2012 11:35
+SARINA,SARINA,4737,Registration Renewal - Other,20/03/2012 11:35
+SARINA,SARINA,4737,Registration Renewal - Other,20/03/2012 14:43
+TARA,TARA,4421,Vehicle Registration - New (Financial),20/03/2012 14:45
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,20/03/2012 14:45
+TARA,THE GUMS,4406,Registration Renewal - Other,21/03/2012 10:23
+SARINA,MORANBAH,4744,Vehicle Registration - New (Financial),21/03/2012 10:36
+SARINA,SARINA,4737,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),21/03/2012 11:13
+SARINA,MACKAY,4740,Vessel Registration - New,21/03/2012 13:43
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),21/03/2012 14:36
+SARINA,SARINA,4737,Vehicle Registration - New (Financial),21/03/2012 14:38
+TARA,TARA,4421,Assist Electors,21/03/2012 14:41
+TARA,TARA,4421,Enrolment Form,21/03/2012 14:41
+TARA,TARA,4421,Assist Electors,21/03/2012 14:45
+TARA,TARA,4421,Enrolment Form,21/03/2012 14:45
+TARA,TARA,4421,Change to Customer/Product record,21/03/2012 15:13
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),21/03/2012 15:53
+SARINA,SARINA,4737,Certificate Replacement,21/03/2012 15:53
+TARA,MEANDARRA,4422,Vehicle Registration - New (Financial),22/03/2012 9:21
+TARA,TARA,4421,Registration Renewal - Other,22/03/2012 9:45
+SARINA,KOUMALA,4738,Vehicle/Vessel - Transfer (Financial),22/03/2012 9:49
+SARINA,KOUMALA,4738,Registration Renewal - Other,22/03/2012 9:49
+SARINA,SARINA,4737,Registration Renewal - Other,22/03/2012 10:43
+SARINA,SARINA,4737,Registration Renewal - Other,22/03/2012 10:55
+SARINA,SARINA,4737,Registration Renewal - Other,22/03/2012 11:06
+TARA,TARA,4421,Vehicle Registration - New (Financial),22/03/2012 11:22
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,22/03/2012 11:22
+TARA,TARA,4421,Non Financial Services Specifically Requested,22/03/2012 11:22
+TARA,TARA,4421,Vehicle/Vessel - Cancellation,22/03/2012 11:22
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,22/03/2012 11:27
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,22/03/2012 11:50
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),22/03/2012 12:31
+SARINA,BALBERRA,4740,Application for Birth Certificate (Non District Registrar),22/03/2012 13:46
+SARINA,SARINA,4737,Vehicle Registration - New (Financial),22/03/2012 14:02
+TARA,TARA,4421,Non Financial Services Specifically Requested,22/03/2012 14:48
+SARINA,SARINA,4737,New CTP Insurance,22/03/2012 14:49
+SARINA,SARINA,4737,Permit (registration) ,22/03/2012 14:49
+TARA,TARA,4421,Receipt of Monies to Customer Account,22/03/2012 15:46
+SARINA,ARMSTRONG BEACH,4737,Vehicle/Vessel - Transfer (Financial),22/03/2012 15:54
+SARINA,SARINA,4737,Registration Renewal - Other,22/03/2012 15:58
+SARINA,SARINA,4737,Issue CTP Insurance Certificate & Receipting,23/03/2012 9:18
+SARINA,SARINA,4737,Vehicle Registration - New (Financial),23/03/2012 9:42
+SARINA,SARINA,4737,Vehicle/Vessel - Cancellation,23/03/2012 11:00
+SARINA,KOUMALA,4738,Vehicle/Vessel - Transfer (Financial),23/03/2012 12:02
+SARINA,SARINA,4737,Change to Customer/Product record,23/03/2012 12:27
+SARINA,SUNNYSIDE,4737,Registration Renewal - Other,23/03/2012 13:52
+SARINA,SARINA,4737,Registration Renewal - Other,23/03/2012 14:17
+SARINA,WEST MACKAY,4740,National driver work diary,23/03/2012 14:33
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),23/03/2012 14:57
+SARINA,SARINA,4737,Application for Birth Certificate (Non District Registrar),23/03/2012 16:04
+TARA,TARA,4421,Permit Fee (Disability Parking),27/03/2012 9:57
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),27/03/2012 11:39
+TARA,TARA,4421,Will Instructions,27/03/2012 11:59
+TARA,TARA,4421,Will Instructions,27/03/2012 12:00
+TARA,TARA,4421,Application for Birth Certificate (Non District Registrar),27/03/2012 12:35
+TARA,TARA,4421,Priority and postage fees,27/03/2012 12:35
+TARA,DALBY,4405,Non Financial Services Specifically Requested,28/03/2012 9:17
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,28/03/2012 9:22
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,28/03/2012 9:26
+TARA,TARA,4421,Change to Customer/Product record,28/03/2012 9:33
+TARA,TARA,4421,Receipt of Monies to Customer Account,28/03/2012 10:44
+TARA,TARA,4421,Non Financial Services Specifically Requested,28/03/2012 10:44
+TARA,TARA,4421,Vehicle Registration - New (Financial),28/03/2012 14:23
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,28/03/2012 14:23
+TARA,DALBY,4405,VVRR - Vehicle Vessel Registration Renewal,28/03/2012 15:07
+TARA,TARA,4421,Vehicle Registration - New (Financial),28/03/2012 16:13
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,28/03/2012 16:13
+TARA,TARA,4421,Financial Services Specifically Requested,29/03/2012 10:22
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,29/03/2012 10:26
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,29/03/2012 10:29
+TARA,TORQUAY,4655,Vehicle/Vessel - Transfer (Financial),29/03/2012 11:49
+TARA,TARA,4421,Non Financial Services Specifically Requested,29/03/2012 12:19
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,29/03/2012 12:47
+TARA,TARA,4421,Non Financial Services Specifically Requested,29/03/2012 13:11
+TARA,TARA,4421,Change to Customer/Product record,29/03/2012 13:11
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,29/03/2012 13:11
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,3/04/2012 9:46
+TARA,TARA,4421,Permit (registration) ,3/04/2012 10:27
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,3/04/2012 10:27
+TARA,TARA,4421,Vehicle Registration - New (Financial),3/04/2012 11:08
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,3/04/2012 11:08
+TARA,TARA,4421,Registration Renewal - Other,3/04/2012 11:13
+TARA,TARA,4421,Vehicle Registration - New (Financial),3/04/2012 11:43
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,3/04/2012 11:43
+TARA,VIA DALBY,4405,Vehicle Registration - New (Financial),3/04/2012 12:16
+TARA,VIA DALBY,4405,Issue CTP Insurance Certificate & Receipting,3/04/2012 12:16
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,3/04/2012 15:21
+TARA,MEANDARRA,4422,Vehicle/Vessel - Transfer (Financial),3/04/2012 15:30
+TARA,THE GUMS,4406,Application for Marriage Certificate (Non District Registrar),3/04/2012 15:36
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),4/04/2012 9:10
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,4/04/2012 9:27
+TARA,HANNAFORD,4406,Information/Referral - Direct Customer Contact,4/04/2012 9:35
+TARA,TARA,4421,Vehicle Registration - New (Financial),4/04/2012 10:27
+TARA,TARA,4421,Vehicle Registration - New (Financial),4/04/2012 10:57
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),4/04/2012 10:57
+TARA,TARA,4421,Vehicle Registration - New (Financial),4/04/2012 10:57
+TARA,TARA,4421,Registration Renewal - Other,4/04/2012 12:22
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,4/04/2012 12:49
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,4/04/2012 14:18
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,4/04/2012 14:18
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),5/04/2012 9:17
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,5/04/2012 9:48
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),5/04/2012 11:05
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,5/04/2012 11:35
+TARA,WERANGA VIA DALBY,4405,Register a Birth (Non District Registrar),5/04/2012 12:49
+TARA,WERANGA VIA DALBY,4405,Application for Commemorative Birth Certificate,5/04/2012 12:49
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),5/04/2012 15:19
+TARA,TARA,4421,Will Instructions,5/04/2012 15:21
+TARA,TARA,4421,Financial Services Specifically Requested,10/04/2012 9:47
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,10/04/2012 9:55
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,10/04/2012 9:58
+TARA,TARA,4421,Plate Replacement (Financial),10/04/2012 12:19
+TARA,TARA,4421,Label Replacement,10/04/2012 12:19
+TARA,TARA,4421,Vehicle Registration - New (Financial),10/04/2012 14:37
+TARA,THE GUMS,4406,Vehicle Registration - New (Financial),10/04/2012 15:40
+TARA,THE GUMS,4406,Issue CTP Insurance Certificate & Receipting,10/04/2012 15:40
+TARA,TARA,4421,Vehicle Registration - New (Financial),10/04/2012 15:57
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,10/04/2012 15:57
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,10/04/2012 16:04
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,11/04/2012 9:12
+TARA,DALBY,4405,Registration Renewal - Other,11/04/2012 9:18
+TARA,TARA,4421,Plate Replacement (Financial),11/04/2012 10:28
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,11/04/2012 10:41
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,11/04/2012 12:08
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,12/04/2012 9:10
+TARA,TARA,4421,Register a Birth (Non District Registrar),12/04/2012 9:17
+TARA,TARA,4421,Application for Birth Certificate (Non District Registrar),12/04/2012 9:17
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),12/04/2012 9:21
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),12/04/2012 9:21
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),12/04/2012 9:53
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,12/04/2012 10:03
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,12/04/2012 10:26
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,12/04/2012 10:45
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,12/04/2012 12:18
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),12/04/2012 14:21
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),12/04/2012 14:32
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,12/04/2012 14:37
+TARA,TARA,4421,Change to Customer/Product record,12/04/2012 15:44
+TARA,TARA,4421,Certificate Replacement,12/04/2012 15:44
+TARA,TARA,4421,Label Replacement,12/04/2012 15:44
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),17/04/2012 9:53
+SARINA,SARINA,4737,Registration Renewal - Other,17/04/2012 10:04
+SARINA,SARINA,4737,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),17/04/2012 10:09
+SARINA,HAY POINT,4740,Plate Replacement (Financial),17/04/2012 11:48
+SARINA,HAY POINT,4740,Registration Renewal - Other,17/04/2012 11:48
+SARINA,MT MORGAN,4714,Vehicle/Vessel - Transfer (Financial),17/04/2012 11:57
+SARINA,KOUMALA,4738,Vehicle/Vessel - Cancellation,17/04/2012 12:08
+SARINA,SARINA,4737,Registration Renewal - Other,17/04/2012 13:44
+TARA,HANNAFORD,4406,Low Volume Vins (Application) (Non-Financial),17/04/2012 14:32
+TARA,HANNAFORD,4406,Low Volume Vins (Plate) (Financial),17/04/2012 14:32
+TARA,BOYNE ISLAND,4680,VVRR - Vehicle Vessel Registration Renewal,17/04/2012 15:14
+TARA,HANNNAFORD,4406,Vehicle Registration - New (Financial),17/04/2012 15:52
+TARA,KOGAN,4406,Permit (registration) ,18/04/2012 9:30
+TARA,KOGAN,4406,Class 22 Unregistered Vehicle Permit ,18/04/2012 9:30
+TARA,TARA,4421,Permit (registration) ,19/04/2012 9:44
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,19/04/2012 9:44
+TARA,TARA,4421,Permit (registration) ,19/04/2012 10:49
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,19/04/2012 11:22
+TARA,TARA,4421,Vehicle Registration - New (Financial),23/04/2012 9:45
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,23/04/2012 9:49
+TARA,DALBY,4405,Receipt of Monies to Customer Account,23/04/2012 10:06
+TARA,TARA,4421,Register a Birth (Non District Registrar),23/04/2012 10:38
+TARA,TARA,4421,Application for Commemorative Birth Certificate,23/04/2012 10:38
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,23/04/2012 11:33
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,23/04/2012 11:33
+TARA,TARA,4421,Vehicle Registration - New (Financial),23/04/2012 15:46
+TARA,TARA,4421,Non Financial Services Specifically Requested,23/04/2012 15:46
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,23/04/2012 15:46
+TARA,TARA,4421,Non Financial Services Specifically Requested,23/04/2012 15:46
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),24/04/2012 9:21
+TARA,TARA,4421,Vehicle Registration - New (Financial),24/04/2012 10:45
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,24/04/2012 10:45
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,24/04/2012 10:52
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,24/04/2012 10:52
+TARA,TARA,4421,Vehicle Registration - New (Financial),24/04/2012 14:14
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),1/05/2012 10:21
+TARA,SURAT,4417,Vehicle Registration - New (Financial),1/05/2012 15:06
+TARA,SURAT,4417,Issue CTP Insurance Certificate & Receipting,1/05/2012 15:06
+TARA,GOWRIE JUNCTION,4352,Issue CTP Insurance Certificate & Receipting,2/05/2012 9:30
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),2/05/2012 11:09
+TARA,TARA,4421,Application for Birth Certificate (Non District Registrar),2/05/2012 15:23
+TARA,TARA,4421,Non Financial Services Specifically Requested,3/05/2012 9:54
+TARA,TARA,4421,Registration Renewal - Other,3/05/2012 9:54
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,3/05/2012 10:00
+TARA,TARA,4421,Vehicle Registration - New (Financial),3/05/2012 10:12
+TARA,TARA,4421,Public Housing Rental Applications,4/05/2012 9:21
+TARA,TARA,4421,Vehicle Registration - New (Financial),4/05/2012 10:20
+TARA,TARA,4421,Registration Renewal - Other,4/05/2012 11:38
+TARA,TARA,4421,Non Financial Services Specifically Requested,4/05/2012 11:41
+TARA,MEANDARRA,4422,Non Financial Services Specifically Requested,4/05/2012 11:45
+TARA,MEANDARRA,4422,Non Financial Services Specifically Requested,4/05/2012 11:45
+TARA,MEANDARRA,4422,Permit (registration) ,4/05/2012 12:04
+TARA,MEANDARRA,4422,Vehicle Registration - New (Financial),4/05/2012 12:04
+TARA,TARA,4421,Will Signing (Public Trustee executor),4/05/2012 15:57
+TARA,TARA,4421,Vehicle Registration - New (Financial),8/05/2012 9:41
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,8/05/2012 9:41
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,8/05/2012 9:55
+TARA,TARA,4421,Registration Renewal - Other,8/05/2012 10:16
+TARA,TARA,4421,Non Financial Services Specifically Requested,8/05/2012 10:16
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),8/05/2012 10:35
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),8/05/2012 10:49
+TARA,TARA,4421,Vehicle Registration - New (Financial),8/05/2012 11:45
+TARA,TARA,4421,Non Financial Services Specifically Requested,8/05/2012 11:45
+TARA,TARA,4421,SPER Fines,8/05/2012 12:29
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,9/05/2012 10:51
+TARA,TARA,4421,Vehicle Registration - New (Financial),9/05/2012 11:19
+TARA,TARA,4421,Vehicle Registration - New (Financial),10/05/2012 11:31
+TARA,CONDAMINE,4466,Permit (registration) ,10/05/2012 12:00
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,10/05/2012 12:10
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,10/05/2012 12:10
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,10/05/2012 13:05
+TARA,TOOWOOMBA,4250,Vehicle/Vessel - Cancellation,10/05/2012 13:08
+TARA,TARA,4421,Registration Renewal - Other,11/05/2012 10:18
+TARA,TARA,4421,Vehicle Registration - New (Financial),15/05/2012 9:20
+TARA,TARA,4421,Vehicle Registration - New (Financial),15/05/2012 12:31
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,15/05/2012 12:31
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),16/05/2012 11:03
+TARA,TARA,4421,Registration Renewal - Other,16/05/2012 11:03
+TARA,THE GUMS,4406,Vehicle Registration - New (Financial),16/05/2012 11:25
+TARA,THE GUMS,4406,Issue CTP Insurance Certificate & Receipting,16/05/2012 11:25
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,16/05/2012 12:28
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),16/05/2012 12:42
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,16/05/2012 13:00
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,16/05/2012 13:00
+TARA,TARA,4421,Vehicle Registration - New (Financial),16/05/2012 16:09
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,16/05/2012 16:09
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,17/05/2012 9:01
+TARA,TARA,4421,Vehicle Registration - New (Financial),17/05/2012 10:01
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,17/05/2012 10:05
+TARA,TARA,4421,Permit (registration) ,17/05/2012 10:10
+TARA,THE GUMS,4406,Financial Services Specifically Requested,17/05/2012 12:20
+TARA,TARA,4421,Business Name Application,17/05/2012 12:30
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),17/05/2012 12:38
+TARA,TARA,4421,Non Financial Services Specifically Requested,17/05/2012 12:43
+TARA,TARA,4421,Registration Renewal - Other,17/05/2012 12:43
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),17/05/2012 14:46
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),17/05/2012 15:23
+TARA,TARA,4421,Registration Renewal - Other,17/05/2012 15:23
+TARA,THE GUMS,4406,Vehicle Registration - New (Financial),17/05/2012 15:39
+TARA,TARA,4421,Application for Commemorative Birth Certificate,17/05/2012 15:50
+TARA,TARA,4421,Application for Birth Certificate (Non District Registrar),17/05/2012 15:50
+TARA,TARA,4421,Registration Renewal - Other,22/05/2012 9:04
+TARA,TARA,4421,Vehicle Registration - New (Financial),22/05/2012 11:06
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,22/05/2012 11:06
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,22/05/2012 11:54
+TARA,ROYSTON,4515,Permit (registration) ,22/05/2012 12:52
+TARA,ROYSTON,4515,Class 22 Unregistered Vehicle Permit ,22/05/2012 12:52
+TARA,TARA,4421,Vehicle Registration - New (Financial),22/05/2012 14:52
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),23/05/2012 9:35
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),23/05/2012 9:35
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,23/05/2012 9:47
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,23/05/2012 10:51
+TARA,THE GUMS,4406,Non Financial Services Specifically Requested,23/05/2012 14:30
+TARA,THE GUMS,4406,Plate Replacement (Financial),23/05/2012 14:30
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),23/05/2012 14:34
+TARA,TARA,4421,Vehicle Registration - New (Non Financial),23/05/2012 15:02
+TARA,SILVERWOOD,4370,Vehicle/Vessel - Transfer (Financial),23/05/2012 15:13
+TARA,SILVERWOOD,4370,Vehicle/Vessel - Transfer (Financial),23/05/2012 15:13
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,24/05/2012 9:00
+TARA,TARA,4421,Vehicle Registration - New (Financial),24/05/2012 9:08
+TARA,MEANDARRA,4422,Vehicle/Vessel - Transfer (Financial),24/05/2012 9:37
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,24/05/2012 9:46
+TARA,BLI BLI,4560,Non Financial Services Specifically Requested,24/05/2012 10:52
+TARA,BLI BLI,4560,Registration Renewal - Other,24/05/2012 10:52
+TARA,TARA,4421,Vehicle Registration - New (Non Financial),24/05/2012 11:16
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),24/05/2012 11:22
+TARA,TARA,4421,Vehicle Registration - New (Financial),24/05/2012 11:27
+TARA,TARA,4421,Permit Fee (Disability Parking),24/05/2012 11:43
+TARA,TARA,4421,Vehicle Registration - New (Financial),24/05/2012 15:48
+TARA,DALBY,4405,Vehicle Registration - New (Financial),24/05/2012 16:07
+TARA,DALBY,4405,Issue CTP Insurance Certificate & Receipting,24/05/2012 16:07
+TARA,TARA,4421,Registration Renewal - Other,29/05/2012 9:46
+TARA,TARA,4421,Registration Renewal - Other,29/05/2012 9:46
+TARA,TARA,4421,Registration Renewal - Other,29/05/2012 10:07
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,29/05/2012 10:15
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),30/05/2012 9:07
+TARA,DALBY,4405,Non Financial Services Specifically Requested,30/05/2012 10:33
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,30/05/2012 10:37
+TARA,TARA,4421,Non Financial Services Specifically Requested,30/05/2012 12:22
+TARA,TARA,4421,Vehicle/Vessel - Cancellation,30/05/2012 12:22
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),30/05/2012 15:16
+TARA,THE GUMS,4406,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),31/05/2012 11:00
+TARA,TARA,4421,Vehicle Registration - New (Financial),31/05/2012 11:08
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,31/05/2012 11:08
+TARA,GLENMORGAN,4423,Vehicle Registration - New (Financial),31/05/2012 11:11
+TARA,GLENMORGAN,4423,Issue CTP Insurance Certificate & Receipting,31/05/2012 11:11
+TARA,GLENMORGAN,4423,Plate Replacement (Financial),31/05/2012 11:14
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,31/05/2012 11:36
+TARA,GORANBA,4421,Vehicle/Vessel - Transfer (Financial),31/05/2012 12:13
+TARA,GORANBA,4421,Vehicle/Vessel - Transfer (Financial),31/05/2012 12:13
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),31/05/2012 15:42
+TARA,TARA,4421,Vehicle Registration - New (Financial),5/06/2012 10:24
+TARA,TARA,4421,Low Volume Vins (Application) (Non-Financial),5/06/2012 10:24
+TARA,TARA,4421,Low Volume Vins (Plate) (Financial),5/06/2012 10:24
+TARA,TARA,4421,Vehicle/Vessel - Cancellation,5/06/2012 11:31
+TARA,TARA,4421,Application for Birth Certificate (Non District Registrar),6/06/2012 10:59
+TARA,TARA,4421,Vehicle Registration - New (Financial),6/06/2012 12:02
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),6/06/2012 12:08
+TARA,TARA,4421,Vehicle/Vessel - Transfer (Financial),6/06/2012 14:56
+TARA,TARA,4421,Registration Renewal - Other,6/06/2012 14:56
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),6/06/2012 15:31
+TARA,TARA,4421,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),6/06/2012 15:33
+TARA,TARA,4421,Financial Services Specifically Requested,7/06/2012 9:19
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,7/06/2012 9:48
+TARA,TARA,4421,Vehicle Registration - New (Financial),7/06/2012 14:52
+TARA,TARA,4421,Non Financial Services Specifically Requested,7/06/2012 14:52
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,7/06/2012 14:52
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,12/06/2012 9:04
+TARA,TARA,4421,VVRR - Vehicle Vessel Registration Renewal,12/06/2012 9:10
+SARINA,SARINA,4737,Registration Renewal - Other,12/06/2012 9:44
+SARINA,SARINA,4737,Registration Renewal - Other,12/06/2012 9:44
+SARINA,ARMSTRONG BEACH,4737,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),12/06/2012 9:56
+SARINA,SARINA,4737,Registration Renewal - Other,12/06/2012 10:03
+SARINA,KOUMALA,4738,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),12/06/2012 10:40
+SARINA,SARINA,4737,Vehicle Registration - New (Financial),12/06/2012 10:48
+SARINA,SARINA,4737,Registration Renewal - Other,12/06/2012 10:48
+SARINA,WONDALLI,4390,Vehicle/Vessel - Transfer (Financial),12/06/2012 11:25
+SARINA,MACKAYMC,4740,Registration Renewal - Other,12/06/2012 11:41
+SARINA,MACKAYMC,4740,Registration Renewal - Other,12/06/2012 11:41
+SARINA,SARINA,4737,Permit (registration) ,12/06/2012 11:57
+SARINA,SARINA,4737,Plate Replacement (Non Financial),12/06/2012 12:20
+SARINA,SOUTH MISSION BEAQCH,4852,Vehicle/Vessel - Transfer (Financial),12/06/2012 13:46
+SARINA,SARINA,4737,Permit (registration) ,12/06/2012 14:04
+SARINA,SARINA,4737,New CTP Insurance,12/06/2012 14:04
+TARA,TARA,4421,Receipt of Monies to Customer Account,12/06/2012 14:12
+SARINA,ALLIGATOR CREEK,4740,Vehicle/Vessel - Transfer (Financial),12/06/2012 14:37
+SARINA,ALLIGATOR CREEK,4740,Registration Renewal - Other,12/06/2012 14:37
+SARINA,ALLIGATOR CREEK,4740,Vehicle/Vessel - Transfer (Financial),12/06/2012 14:37
+SARINA,ALLIGATOR CREEK,4740,Registration Renewal - Other,12/06/2012 14:37
+SARINA,ALLIGATOR CREEK,4740,Vehicle/Vessel - Transfer (Financial),12/06/2012 14:41
+SARINA,ALLIGATOR CREEK,4740,Registration Renewal - Other,12/06/2012 14:41
+SARINA,ARMSTRONG BEACH,4737,Registration Renewal - Other,12/06/2012 15:12
+SARINA,SARINA BEACH,4737,Registration Renewal - Other,12/06/2012 15:29
+SARINA,SARINA BEACH,4737,Registration Renewal - Other,12/06/2012 15:29
+SARINA,CARBROOK,4130,Registration Renewal - Other,12/06/2012 15:46
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),12/06/2012 15:49
+SARINA,SARINA,4737,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),13/06/2012 9:11
+SARINA,SARINA,4737,Vehicle/Vessel - Cancellation,13/06/2012 9:18
+SARINA,OAKENDEN,4741,Application for Marriage Certificate (Non District Registrar),13/06/2012 9:54
+SARINA,MORANBAH,4744,Issue CTP Insurance Certificate & Receipting,13/06/2012 10:15
+SARINA,TIMBERLANDS,4740,Change to Customer/Product record,13/06/2012 10:58
+SARINA,TOOWOOMBA,4350,Vessel Registration - New,13/06/2012 13:47
+SARINA,TOOWOOMBA,4350,Vehicle Registration - New (Financial),13/06/2012 13:47
+SARINA,ILBILBIE,4738,New CTP Insurance,13/06/2012 13:54
+SARINA,ILBILBIE,4738,Permit (registration) ,13/06/2012 13:54
+SARINA,SARINA,4737,Vehicle Registration - New (Financial),13/06/2012 13:57
+SARINA,SARINA,4737,Vehicle Registration - New (Financial),13/06/2012 14:05
+SARINA,SARINA,4737,Vehicle Registration - New (Financial),13/06/2012 14:05
+SARINA,HAY POINT,4740,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),13/06/2012 14:26
+SARINA,HAY POINT,4740,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),13/06/2012 14:26
+SARINA,SARINA,4737,Registration Renewal - Other,13/06/2012 14:35
+SARINA,ALLIGATOR CREEK,4740,Registration Renewal - Other,13/06/2012 14:48
+SARINA,SARINA,4737,Registration Renewal - Other,13/06/2012 15:29
+SARINA,SARINA,4737,Registration Renewal - Other,13/06/2012 15:38
+SARINA,SARINA,4737,Registration Renewal - Other,13/06/2012 15:38
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),13/06/2012 15:46
+TARA,TARA,4421,Vehicle Registration - New (Financial),13/06/2012 16:06
+TARA,TARA,4421,Non Financial Services Specifically Requested,13/06/2012 16:06
+TARA,TARA,4421,Issue CTP Insurance Certificate & Receipting,13/06/2012 16:06
+TARA,ZILLMERE,4034,Permit (registration) ,13/06/2012 16:15
+SARINA,KOUMALA,4738,Registration Renewal - Other,14/06/2012 9:22
+SARINA,KOUMALA,4738,Registration Renewal - Other,14/06/2012 9:22
+SARINA,KOUMALA,4738,Registration Renewal - Other,14/06/2012 9:22
+SARINA,KOUMALA,4738,Registration Renewal - Other,14/06/2012 9:22
+SARINA,SARINA,4737,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),14/06/2012 9:38
+SARINA,MT PLEASANT,4740,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),14/06/2012 12:04
+SARINA,ARMSTRONG BEACH,4737,Vessel Registration - New,14/06/2012 14:05
+SARINA,MACKAY MC,4740,Registration Renewal - Other,14/06/2012 14:08
+SARINA,SUNNYSIDE,4737,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),14/06/2012 14:41
+SARINA,SARINA,4737,Change to Customer/Product record,14/06/2012 15:18
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),14/06/2012 16:04
+SARINA,SARINA,4737,Registration Renewal - Other,14/06/2012 16:04
+SARINA,KOUMALA,4738,Issue CTP Insurance Certificate & Receipting,15/06/2012 9:25
+SARINA,SARINA,4737,Application for Marriage Certificate (Non District Registrar),15/06/2012 9:47
+SARINA,CAMPWIN BEACH,4737,Application for Birth Certificate (Non District Registrar),15/06/2012 10:14
+SARINA,CAMPWIN BEACH,4737,Application for Marriage Certificate (Non District Registrar),15/06/2012 10:14
+SARINA,ILBILBIE,4738,Registration Renewal - Other,15/06/2012 11:12
+SARINA,SARINA,4737,Registration Renewal - Other,15/06/2012 11:19
+SARINA,SARINA,4737,Registration Renewal - Other,15/06/2012 11:22
+SARINA,SARINA,4737,Plate Replacement (Financial),15/06/2012 11:42
+SARINA,MACKAY,4740,Permit (registration) ,15/06/2012 13:49
+SARINA,MACKAY,4740,New CTP Insurance,15/06/2012 13:49
+SARINA,KOUMALA,4738,Vehicle Registration - New (Financial),15/06/2012 14:04
+SARINA,SARINA,4737,Change to Customer/Product record,15/06/2012 14:24
+SARINA,SARINA,4737,Registration Renewal - Other,15/06/2012 15:07
+SARINA,SARINA,4737,Registration Renewal - Other,15/06/2012 15:07
+SARINA,CAPWIN BEACH,4737,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),15/06/2012 15:49
+SARINA,HAY POINT,4740,Vehicle Registration - New (Financial),15/06/2012 16:03
+SARINA,HAY POINT,4740,Low Volume Vins (Plate) (Financial),15/06/2012 16:03
+SARINA,KOUMALA,4737,Vehicle Registration - New (Financial),15/06/2012 16:11
+SARINA,SARINA,4737,Vehicle/Vessel - Cancellation,18/06/2012 9:43
+SARINA,KOUMALA,4738,Application for Marriage Certificate (Non District Registrar),18/06/2012 9:45
+SARINA,SARINA,4737,Registration Renewal - Other,18/06/2012 9:52
+SARINA,KOUMALA,4738,Vehicle Registration - New (Financial),18/06/2012 10:09
+SARINA,SARINA BEACH,4737,Registration Renewal - Other,18/06/2012 10:24
+SARINA,SARINA,4737,Registration Renewal - Other,18/06/2012 10:28
+SARINA,KOUMALA,4738,Registration Renewal - Other,18/06/2012 10:41
+SARINA,HAY POINT,4740,Vehicle Registration - New (Financial),18/06/2012 11:44
+SARINA,ALLIGATOR CREEK,4740,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),18/06/2012 11:52
+SARINA,KOUMALA,4738,Registration Renewal - Other,18/06/2012 11:56
+SARINA,SLADE POINT,4740,Issue CTP Insurance Certificate & Receipting,18/06/2012 12:08
+SARINA,SALONIKA BEACH,4740,Vehicle/Vessel - Cancellation,18/06/2012 12:19
+SARINA,KOUMALA,4738,Registration Renewal - Other,18/06/2012 13:43
+SARINA,WALKERSTON,4751,Receipt of Monies to Customer Account,18/06/2012 14:15
+SARINA,ARMSTRONG BEACH,4737,Registration Renewal - Other,18/06/2012 14:23
+SARINA,MACKAY,4740,Vehicle/Vessel - Transfer (Financial),18/06/2012 14:32
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),18/06/2012 15:03
+SARINA,SARINA,4737,Plate Replacement (Financial),18/06/2012 15:03
+SARINA,MIDDLE CREEK,4737,Permit (registration) ,18/06/2012 15:17
+SARINA,MIDDLE CREEK,4737,New CTP Insurance,18/06/2012 15:17
+SARINA,SARINA,4737,Registration Renewal - Other,18/06/2012 15:47
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),18/06/2012 15:47
+SARINA,SARINA,4737,Plate Replacement (Financial),18/06/2012 16:05
+SARINA,CAMPWIN BEACH,4737,Registration Renewal - Other,19/06/2012 9:04
+SARINA,KOUMALA,4738,Application for Birth Certificate (Non District Registrar),19/06/2012 10:58
+SARINA,SARINA BEACH,4737,Vehicle/Vessel - Transfer (Financial),19/06/2012 11:05
+SARINA,SARINA,4737,Application for Marriage Certificate (Non District Registrar),19/06/2012 11:12
+SARINA,SRINA,4737,Vehicle/Vessel - Cancellation,19/06/2012 12:30
+SARINA,SARINA,4737,Issue CTP Insurance Certificate & Receipting,19/06/2012 14:13
+SARINA,MACKAY,4740,Vehicle/Vessel - Transfer (Financial),19/06/2012 14:32
+SARINA,SARINA,4737,Registration Renewal - Other,19/06/2012 15:39
+SARINA,SARINA,4737,Registration Renewal - Other,19/06/2012 15:39
+SARINA,SARINA,4737,Registration Renewal - Other,20/06/2012 9:17
+SARINA,MT WARREN PARK,4207,Permit (registration) ,20/06/2012 10:04
+SARINA,SARINA,4737,Application for Birth Certificate (Non District Registrar),20/06/2012 10:26
+SARINA,SARINA,4737,Registration Renewal - Other,20/06/2012 11:26
+SARINA,SARINA,4737,Registration Renewal - Other,20/06/2012 11:43
+SARINA,MACKAY,4740,Vehicle Registration - New (Financial),20/06/2012 12:10
+SARINA,GRASSTREE BEACH,4740,Vehicle/Vessel - Transfer (Financial),20/06/2012 13:49
+SARINA,SARINA,4737,Permit (registration) ,20/06/2012 14:05
+SARINA,SARINA,4737,New CTP Insurance,20/06/2012 14:05
+SARINA,KOUMALA,4738,Vehicle/Vessel - Cancellation,20/06/2012 14:16
+SARINA,SARINA,4737,Vehicle Registration - New (Financial),20/06/2012 14:34
+SARINA,ILBILBIE,4738,Registration Renewal - Other,20/06/2012 14:40
+SARINA,ILBILBIE,4738,Registration Renewal - Other,20/06/2012 14:40
+SARINA,SARINA,4737,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),20/06/2012 14:44
+SARINA,GRACEMERE,4702,Registration Renewal - Other,20/06/2012 15:53
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),25/06/2012 9:16
+SARINA,ARMSTRONG BEACH,4737,Registration Renewal - Other,25/06/2012 9:46
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),25/06/2012 10:12
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),25/06/2012 10:12
+SARINA,ARMSTRONG BEACH,4737,Vehicle/Vessel - Transfer (Financial),25/06/2012 10:33
+SARINA,ANDERGROVE,4740,National driver work diary,25/06/2012 10:47
+SARINA,SARINA,4737,Traffic Offence and Camera Detected Offence (1800 Call Centre Service),25/06/2012 12:24
+SARINA,SARINA,4737,Vehicle/Vessel - Cancellation,25/06/2012 13:49
+SARINA,SARINA,4737,Vehicle/Vessel - Transfer (Financial),25/06/2012 14:01
+SARINA,KOUMALA,4738,Plate Replacement (Financial),25/06/2012 14:12
+SARINA,SARINA,4737,Permit Fee (Disability Parking),25/06/2012 14:20
+SARINA,SARINA,4737,Registration Renewal - Other,25/06/2012 15:35
+SARINA,SARINA,4737,Registration Renewal - Other,25/06/2012 15:35
+SARINA,ILBILBIE,4738,Change to Customer/Product record,25/06/2012 15:46

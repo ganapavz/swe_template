@@ -1,0 +1,78 @@
+/* contacts */
+#asides .contact h2,
+#asides-primary .contact h2,
+#asides-secondary .contact h2 {
+  @include fonticon($fa-var-phone, .8, 2, 1, $qgov-green);
+}
+
+#asides .qgov,
+#asides-primary .qgov,
+#asides-secondary .qgov {
+  ul {
+    list-style: none;
+    padding: 0;
+    color: $asides-contact-color;
+    @include font-rem(1.2);
+  }
+}
+
+#asides .contact ul.lead-in {
+  list-style: disc;
+  margin-top: -1em;
+  padding: 0 0 0 2em;
+}
+
+#asides .contact li,
+#asides-primary .contact li,
+#asides-secondary .contact li {
+  padding: 0;
+  margin: .5em 0;
+  word-wrap: break-word;
+  background: transparent 0 0 no-repeat;
+}
+
+#asides .contact dl {
+  margin-left: 0;
+}
+
+#asides .contact dt {
+  position: static;
+  width: auto;
+}
+
+#asides .emergency-contact {
+  border: none;
+  background: $asides-emergency-contact-background-color;
+  color: #4d4d4d;
+  padding-top: 1em;
+}
+
+#asides .emergency-contact p {
+  display: block;
+  background: none;
+  margin: 0.3em;
+  @include fonticon($fa-var-phone, .8, 2, 1, #A60000);
+  @include font-rem(1.4);
+}
+
+.contact .tel,
+.emergency-contact .tel {
+  white-space: nowrap;
+  clear: left;
+  font-weight: 900;
+}
+
+#asides .contact,
+#asides-primary .contact,
+#asides-secondary .contact {
+  background: $asides-feedback-background-color;
+}
+
+#asides .contact a {
+  color: darken($qgov-green, 15%);
+    font-weight: bolder;
+}
+
+#asides .contact a:visited {
+  color: $qgov-blue;
+}

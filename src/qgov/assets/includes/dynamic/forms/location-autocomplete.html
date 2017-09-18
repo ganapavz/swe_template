@@ -1,0 +1,39 @@
+<li class="text location">
+	<label for="location-autocomplete">
+		<span class="label">Location or postcode</span>
+	</label>
+	<input type="text" name="location" id="location-autocomplete" class="location-autocomplete" size="30" value="" placeholder="Enter location or postcode" />
+	<!--#include virtual="/assets/includes/dynamic/maps/get-current-location.html" -->
+	<ol class="address-autocomplete questions">
+		<li>
+			<label for="street">
+				<span class="label">Street address</span>
+			</label>
+			<input type="text" data-type="street" disabled="disabled" id="street" name="street">
+		</li>
+		<li>
+			<label for="city">
+				<span class="label">City</span>
+			</label>
+			<input type="text" data-type="city" disabled="disabled" id="city" name="city">
+		</li>
+		<li>
+			<label for="state">
+				<span class="label">State</span>
+			</label>
+			<input type="text" data-type="state" disabled="disabled" id="state" name="state">
+		</li>
+		<li>
+			<label for="zip">
+				<span class="label">Postal code</span>
+			</label>
+			<input type="text" data-type="zip" disabled="disabled" id="zip" name="zip">
+		</li>
+		<li>
+			<label for="country">
+				<span class="label">Country</span>
+			</label>
+			<input type="text" data-type="country" disabled="disabled" id="country" name="country">
+		</li>
+	</ol>
+</li>

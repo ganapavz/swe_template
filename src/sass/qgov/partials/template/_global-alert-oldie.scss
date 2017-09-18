@@ -1,0 +1,27 @@
+@media screen,projection,tv,handheld {
+	.global-alert h2,
+	.global-alert .time {
+		_position: relative; /* IE6 peekaboo */
+	}
+	.global-alert .time {
+		_margin-top: -2em; /* Me: IE6, where are you getting that extra space from? IE6: Space!! I wanna go to spaaaaace! */
+	}
+	.global-alert .summary {
+		padding-left: 1em;
+		border-left: 1px solid $global-alert-summary-border-left-color;
+		// IE 6 & 7 do not support display: table; hide the left border
+		*border-left: none; 
+	}
+
+	// IE6 not rendering links correctly
+	// conflicting style somewhere?
+	.global-alert a {
+		_color: $global-alert-link-color !important;
+		_text-decoration: none !important;
+
+		&:hover,
+		&:active {
+			_text-decoration: underline !important;
+		}
+	}
+}

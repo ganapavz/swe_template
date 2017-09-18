@@ -1,0 +1,49 @@
+#header .max-width, .max-width {
+	max-width: 94em;
+}
+
+#header-bg {
+	min-height: 14em;
+}
+
+#nav-site {
+	font-size: 120%;
+	font-family: Verdana;
+}
+
+#nav-site .max-width {
+	max-width: 80em;
+	overflow: visible;
+	position: relative;
+	z-index: 1;
+}
+
+#page-container .max-width {
+	background: transparent;
+
+}
+
+.container {
+	max-width: 93.6em !important;
+	padding-top: 1em;
+	box-shadow: 0 10px 10px 5px rgba(0,0,0,0.1);
+}
+
+
+#footer .max-width {
+	max-width: 78em;
+}
+
+#footer {
+	font-size: 120%;
+	font-family: Verdana;
+}
+
+#qg-branding .tagline {
+	text-align: center;
+	float: none;
+}
+
+#nav-site .max-width:before, #nav-site .max-width:after {
+	content: none;
+}

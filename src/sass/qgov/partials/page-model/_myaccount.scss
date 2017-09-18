@@ -1,0 +1,23 @@
+#ia .myaccountCarousel .section a{
+	background: transparent;
+	padding: 0;
+}
+.myaccountCarousel .section a img {
+	max-width: 100%;
+}
+.myaccountCarousel .controlbar .panels {
+	display: none;
+}
+.myAccountSection .introPanel p {
+	display: inline-block;
+}
+.myAccountSection .introPanel p:first-child {
+	width: 77%;
+	margin: 0;
+}
+#ia.myAccountSection .introPanel .green a{
+	background: #78BA00;
+}
+#ia.myAccountSection ul img {
+	display: block;
+}

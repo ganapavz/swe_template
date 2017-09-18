@@ -1,0 +1,508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Responsive maintenance form | Smart Service Queensland | Queensland Government</title>
+
+<!--#set var="franchise" value="ssq-icc"-->
+<!--#set var="title" value="Responsive maintenance form"-->
+<!--#include virtual="/assets/includes/global/head-assets.html"-->
+
+	<meta name="description" content="Responsive maintenance form" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+	
+	<meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=Department of Public Works; ou=Smart Service Queensland" />
+	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland" />
+	<meta name="DCTERMS.created" content="2012-03-15" />
+	<meta name="DCTERMS.modified" content="2012-03-23" />
+	<meta name="DCTERMS.title" content="Responsive maintenance form | Smart Service Queensland" />
+	<meta name="DCTERMS.description" content="Responsive maintenance form" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="Housing" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="CIVIC INFRASTRUCTURE / Public housing / Public housing maintenance" />
+<!--#include virtual="/assets/includes/global/head-meta-identifier.html"-->
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Service" />
+	<meta name="AGLSTERMS.serviceType" scheme="AGLSTERMS.agls-service" content="claims" />
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="government" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+</head>
+
+<body id="qld-gov-au" class="residents">
+
+<!--#include virtual="/assets/includes/global/header.html"-->	
+	
+	<div id="page-container"><div class="max-width">
+		<div id="breadcrumbs">
+			<h2>You are here:</h2>
+			<ol>
+<!--#include virtual="/assets/includes/global/breadcrumb-global.html"-->
+				<li class="last-child">Responsive maintenance form</li>
+			</ol>
+		</div>
+	
+		<div id="content-container">
+			<div id="content">
+				<div class="article"><div class="box-sizing"><div class="border" id="article">
+				
+<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+					<h1>Responsive maintenance request</h1>
+
+<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+					<div class="preamble instructions">
+						<p>Questions marked with <abbr title="(required)">*</abbr> must be completed</p>
+						<p>If details are not known, type in ‘Unknown’</p>
+					</div>
+
+<form action="/cgi-bin/emailform.pl" method="post" class="form">
+
+	<ol class="questions">
+
+		<li>
+			<label for="name-of-tenant">
+				<span class="label">Name of tenant</span>
+				<abbr class="required" title="(required)">*</abbr>
+			</label>
+			<input id="name-of-tenant" name="name-of-tenant" size="30" required="required" type="text" />
+		</li>
+
+		<li>
+				<label for="caller-s-name-and-relationship-to-tenant">
+					<span class="label">Caller’s name and relationship to tenant</span>
+					<small class="hint">If caller is not tenant, fill in relationship details below</small>
+				</label>
+				<textarea id="caller-s-name-and-relationship-to-tenant" name="caller-s-name-and-relationship-to-tenant" rows="2" cols="40"></textarea>
+			</li><li>
+				<label for="contact-telephone-numbers">
+					<span class="label">Contact telephone numbers</span>
+					<abbr class="required" title="(required)">*</abbr>
+				</label>
+				<input id="contact-telephone-numbers" name="contact-telephone-numbers" size="20" type="text" required="required" />
+			</li><li>
+				<label for="rental-agreement-number-or-tenant-s-date-of-birth">
+					<span class="label">Rental agreement number or tenant’s date of birth</span>
+				</label>
+				<input id="rental-agreement-number-or-tenant-s-date-of-birth" name="rental-agreement-number-or-tenant-s-date-of-birth" size="20" type="text" />
+			</li>
+
+					<li class="atomic group">
+						<fieldset>
+							<legend>
+								<span class="label">Address</span>
+							</legend>
+							<ol class="questions">
+								<li>
+									<label for="streetaddress1">
+										<span class="label">Address line 1</span>
+										<abbr class="required" title="(required)">*</abbr>
+									</label>
+									<input name="streetaddress1" id="streetaddress1" size="20" value="" required="required" type="text" />
+								</li>
+								<li>
+									<label for="streetaddress2">
+										<span class="label">Address line 2</span>
+									</label>
+									<input name="streetaddress2" id="streetaddress2" size="20" value="" type="text" />
+								</li>
+								<li>
+									<label for="streetaddress3">
+										<span class="label">Address line 3</span>
+									</label>
+									<input name="streetaddress3" id="streetaddress3" size="20" value="" type="text" />
+								</li>
+								<li>
+									<ol class="questions compact" style="padding: 0">
+										<li>
+											<label for="town">
+												<span class="label">Town or suburb</span>
+												<abbr class="required" title="(required)">*</abbr>
+											</label>
+											<input name="town" id="town" size="20" value="" required="required" type="text" />
+										</li>
+										<li>
+											<label for="state">
+												<span class="label">State</span>
+												<abbr class="required" title="(required)">*</abbr>
+											</label>
+											<input name="state" id="state" size="5" value="QLD" required="required" type="text" />
+										</li>
+										<li>
+											<label for="postcode">
+												<span class="label">Postcode</span>
+												<abbr class="required" title="(required)">*</abbr>
+											</label>
+											<input name="postcode" id="postcode" size="5" value="" required="required" type="text" />
+										</li>
+									</ol>
+								</li>
+								
+							</ol>
+						</fieldset>
+					</li>
+
+		<li>
+				<label for="work-order-text">
+					<span class="label">Work order text</span>
+					<abbr class="required" title="(required)">*</abbr>
+					<small class="hint">Please include: item, location, issue, phone number (Please use UPPERCASE)</small>
+				</label>
+				<textarea id="work-order-text" name="work-order-text" rows="10" cols="40" required="required"></textarea>
+			</li><li>
+				<fieldset>
+					<legend>
+						<span class="label">Priority level</span>
+						<abbr class="required" title="(required)">*</abbr>
+						
+					</legend>
+					<ol class="choices">
+						<li><input id="priority-level-immediate-1-hour" name="priority-level" value="Immediate (1 hour)" required="required" type="radio" /><label for="priority-level-immediate-1-hour">Immediate (1 hour)</label></li>
+						<li><input id="priority-level-urgent-4-hour" name="priority-level" value="Urgent (4 hour)" required="required" type="radio" /><label for="priority-level-urgent-4-hour">Urgent (4 hour)</label></li>
+						<li><input id="priority-level-priority-24-hour" name="priority-level" value="Priority (24 hour)" required="required" type="radio" /><label for="priority-level-priority-24-hour">Priority (24 hour)</label></li>
+						<li><input id="priority-level-normal-14-days" name="priority-level" value="Normal (14 days)" required="required" type="radio" /><label for="priority-level-normal-14-days">Normal (14 days)</label></li>
+						
+						
+						
+					</ol>
+				</fieldset>
+			</li><li>
+				<fieldset>
+					<legend>
+						<span class="label">Was this issue reported after hours</span>
+						<abbr class="required" title="(required)">*</abbr>
+						<small class="hint">Answer ‘Yes’ for public holidays, weekends, after 5pm on weekdays or before 7.30am (in Cannon Hill region) or 8am (all other regions) <a href="#dfn-after-hours" class="help">What is ‘after hours’?</a></small>
+					</legend>
+					<ol class="choices compact">
+						<li><input id="was-this-issue-reported-after-hours-yes" name="was-this-issue-reported-after-hours" value="Yes" required="required" type="radio" checked="checked" /><label for="was-this-issue-reported-after-hours-yes">Yes</label></li>
+						<li><input id="was-this-issue-reported-after-hours-no" name="was-this-issue-reported-after-hours" value="No" required="required" type="radio" /><label for="was-this-issue-reported-after-hours-no">No</label></li>
+					</ol>
+				</fieldset>
+			</li><li>
+				<fieldset>
+					<legend>
+						<span class="label">Has the after hours contractor / QBuild Supervisor been contacted?</span>
+						<abbr class="required" title="(required)">*</abbr>
+						<small class="hint">Please phone the after hours contact for all ‘immediate’ or ‘urgent’ requests</small>
+					</legend>
+					<ol class="choices compact">
+						<li><input id="has-the-after-hours-contractor-qbuild-supervisor-been-contacted-yes" name="has-the-after-hours-contractor-qbuild-supervisor-been-contacted" value="Yes" required="required" type="radio" /><label for="has-the-after-hours-contractor-qbuild-supervisor-been-contacted-yes">Yes</label></li>
+						<li><input id="has-the-after-hours-contractor-qbuild-supervisor-been-contacted-no" name="has-the-after-hours-contractor-qbuild-supervisor-been-contacted" value="No" required="required" type="radio" /><label for="has-the-after-hours-contractor-qbuild-supervisor-been-contacted-no">No</label></li>
+					</ol>
+				</fieldset>
+			</li><li class="section" id="after-hours-contact">
+				<fieldset>
+					<legend>
+						<span class="h2">After hours contractor / QBuild supervisor</span>
+					</legend>
+					<ol class="questions">
+						
+					<li>
+				<label for="name">
+					<span class="label">Name</span>
+					<abbr class="required" title="(required)">*</abbr>
+					
+				</label>
+				<input id="name" name="name" size="30" required="required" type="text" />
+			</li><li>
+				<label for="company-or-qbuild">
+					<span class="label">Company or QBuild</span>
+					<abbr class="required" title="(required)">*</abbr>
+					
+				</label>
+				<input id="company-or-qbuild" name="company-or-qbuild" size="30" required="required" type="text" />
+			</li><li>
+				<label for="phone-number">
+					<span class="label">Phone number</span>
+					<abbr class="required" title="(required)">*</abbr>
+					<small class="hint">Please include area code</small>
+				</label>
+				<input id="phone-number" name="phone-number" size="20" required="required" type="text" />
+			</li></ol>
+				</fieldset>
+			</li><li>
+				<fieldset>
+					<legend>
+						<span class="label">Has QBuild office been contacted? (Business hours)</span>
+						<abbr class="required" title="(required)">*</abbr>
+					</legend>
+					<ol class="choices compact">
+						<li><input id="has-qbuild-been-contacted-yes" name="has-qbuild-been-contacted" value="Yes" required="required" type="radio" /><label for="has-qbuild-been-contacted-yes">Yes</label></li>
+						<li><input id="has-qbuild-been-contacted-no" name="has-qbuild-been-contacted" value="No" required="required" type="radio" /><label for="has-qbuild-been-contacted-no">No</label></li>
+					</ol>
+				</fieldset>
+			</li><li class="section" id="qbuild-information">
+				<fieldset>
+					<legend>
+						<span class="h2">QBuild information</span>
+					</legend>
+					<ol class="questions">
+						
+					<li>
+				<label for="qbuild-office-notified">
+					<span class="label">QBuild office notified</span>
+					<abbr class="required" title="(required)">*</abbr>
+					<small class="hint">Example: Cannon Hill</small>
+				</label>
+				<input id="qbuild-office-notified" name="qbuild-office-notified" size="30" required="required" type="text" />
+			</li><li>
+				<label for="staff-member-name">
+					<span class="label">Staff member name</span>
+					<abbr class="required" title="(required)">*</abbr>
+					
+				</label>
+				<input id="staff-member-name" name="staff-member-name" size="30" required="required" type="text" />
+			</li></ol>
+				</fieldset>
+			</li><li class="section">
+				<fieldset>
+					<legend>
+						<span class="h2">Lodgement details</span>
+					</legend>
+					<ol class="questions">
+						<li class="group">
+							<ol class="questions compact">
+								<li>
+									<label for="date">
+										<span class="label">Date</span>
+										<abbr class="required" title="(required)">*</abbr>
+										
+									</label>
+									<input id="date" name="date" size="10" required="required" type="text" />
+								</li>
+								<li>
+									<label for="time">
+										<span class="label">Time</span>
+										<abbr class="required" title="(required)">*</abbr>
+										
+									</label>
+									<input id="time" name="time" size="10" required="required" type="text" />
+								</li>
+							</ol>
+						</li>
+			<li>
+				<label for="csa-s-name">
+					<span class="label">CSA’s name</span>
+					<abbr class="required" title="(required)">*</abbr>
+					<small class="hint">First then last name</small>
+				</label>
+				<input id="csa-s-name" name="csa-s-name" size="30" required="required" type="text" />
+			</li>
+			<li>
+				<label for="csa-hardphone-telephone-number">
+					<span class="label">CSA hardphone telephone number</span>
+					
+					<small class="hint">Insert number only during BCP event</small>
+				</label>
+				<input id="csa-hardphone-telephone-number" name="csa-hardphone-telephone-number" size="20" type="text" />
+			</li>
+		</ol>
+				</fieldset>
+			</li><li class="footer">
+
+			<ul class="actions">
+				<li><strong><input value="Send email" type="submit" /></strong></li>
+			</ul>
+
+			<input type="hidden" name="captcha" value="" />
+			<input type="hidden" name="recipient" value="unlocatedpropertymaintenance@smartservice.qld.gov.au" />
+			<input type="hidden" id="subject" name="subject" value="Responsive maintenance request" />
+			<!-- reply_to defaults to recipient -->
+			<input type="hidden" name="email_field" value="NO EMAIL" />
+			<!-- <input type="hidden" name="redirect" value="" /> -->
+
+			<!-- could rely on client-side validation. fields that may be irrelevant cannot be in this list (server-side does not understand relevance) -->
+			<input type="hidden" name="mandatory_fields" value="name-of-tenant,contact-telephone-numbers,streetaddress1,town,state,postcode,work-order-text,priority-level,was-this-issue-reported-after-hours,date,time,csa-s-name" />
+
+		</li>
+
+	</ol>
+
+</form>
+
+
+				</div></div></div><!-- end .article, .box-sizing, .border -->
+			</div><!-- end #content -->
+
+			<div id="asides"><div class="box-sizing"><div class="border">
+				<!--#include virtual="/assets/includes/global/global-aside.html"-->
+
+				<div class="aside tip" id="dfn-after-hours">
+					<h2>What is ‘<dfn>after hours</dfn>’?</h2>
+
+					<ul>
+						<li>Public holidays</li>
+						<li>Weekends (Saturday and Sunday)</li>
+						<li>After 5pm (Mon–Fri)</li>
+						<li>Before 7.30am (Cannon Hill region)</li>
+						<li>Before 8am (all other regions)</li>
+					</ul>
+				</div>
+
+			</div></div></div><!-- end #asides, .box-sizing, .border -->
+
+			<div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+				<div id="document-properties"><div class="box-sizing">
+					<dl>
+						<dt>Last updated</dt>
+						<dd>23 March 2012</dd>
+					</dl>
+				</div></div>
+				
+<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+			</div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+		</div><!-- end #content-container -->
+		
+<div id="nav-section"></div>
+	
+	</div></div><!-- end #page-container, .max-width -->
+
+<!--#include virtual="/assets/includes/global/footer.html"-->
+
+<script type="text/javascript"><!-- //
+
+	// polyfill for 2012 public holidays while this script is not bundled into production qgov.js yet
+	if ( typeof qg.date === 'undefined' ) {
+		qg.date = (function() {
+			'use strict';
+
+
+			var datePackage = {},
+
+				// Public holiday dates for 2010-2014 (viewed 2012-03-22)
+				// http://www.justice.qld.gov.au/fair-and-safe-work/industrial-relations/public-holidays/dates
+				// and show holidays here
+				// http://www.justice.qld.gov.au/fair-and-safe-work/industrial-relations/public-holidays/2012-show-holidays
+				qldHolidays = {
+
+					// 2012
+					"2012-04-06" : "Good Friday",
+					"2012-04-07" : "Easter Saturday",
+					"2012-04-09" : "Easter Monday",
+					"2012-04-25" : "Anzac Day",
+					"2012-05-07" : "Labour Day",
+					"2012-06-11" : "Queen’s Diamond Jubilee",
+					"2012-10-01" : "Queen’s Birthday",
+					"2012-12-25" : "Christmas Day",
+					"2012-12-26" : "Boxing Day",
+				}
+			;
+
+
+			// TODO given a date object, return W3CDTF format string (date or datetime?)
+			// TODO given a W3CDTF string, return date object
+			// TODO parse a string into a date object
+			// TODO format a date object into an arbitrary string?
+			// TODO format into the QG editorial style: Day d Month YYYY, h.mmpm
+
+
+			// is a public holiday
+			datePackage.isPublicHoliday = function( date ) {
+				var d = date.getDate(),
+					m = date.getMonth() + 1,
+					y = String( date.getFullYear() ),
+					dateString = y + ( m < 10 ? '-0' : '-' ) + m + ( d < 10 ? '-0' : '-' ) + d
+				;
+
+				// return true, date is a public holiday
+				// TODO, if not a state-wide public holiday and given a latlong, check if it is a show holiday
+				// return false, date is not a public holiday
+				// TODO
+				// return undefined, it is not known if the date is a public holiday (beyond 2 years in the future?)
+
+				return !! qldHolidays[ dateString ];
+			};
+
+
+			return datePackage;
+
+		}());
+	}
+
+
+	var now = new Date(),
+		hours = now.getHours(),
+		mins = now.getMinutes(),
+		armyTime = ( hours < 10 ? '0' : '' ) + hours + ( mins < 10 ? '0' : '' ) + mins,
+		date = $( '#date' ),
+		time = $( '#time' ),
+
+		afterHoursRelevant = function() {
+			var afterHoursContactQuestion = $( '#has-the-after-hours-contractor-qbuild-supervisor-been-contacted-yes' ),
+				afterHoursChecked = document.getElementById( 'was-this-issue-reported-after-hours-yes' ).checked
+			;
+
+			// hide after hours contact question?
+			afterHoursContactQuestion.forcesRelevance( 'relevant', afterHoursChecked );
+			// hide after hours contact details?
+			$( '#after-hours-contact' ).forcesRelevance( 'relevant', afterHoursChecked && afterHoursContactQuestion[ 0 ].checked );
+		}
+
+		qbuildSectionRelevant = function() {
+			$( '#qbuild-information' ).forcesRelevance( 'relevant', document.getElementById( 'has-qbuild-been-contacted-yes' ).checked );
+		}
+	;
+
+
+	// preselect after-hours yes for evenings and weekends
+	if ( /Sun|Sat/.test( now.toString() ) || qg.date.isPublicHoliday( now ) || armyTime < '0730' || hours >= 17 ) {
+		document.getElementById( 'was-this-issue-reported-after-hours-yes' ).click();
+	} else {
+		// probably not after-hours (could be a public holiday)
+		document.getElementById( 'was-this-issue-reported-after-hours-no' ).click();
+	}
+
+
+	// run onchange
+	$( 'input', '#content' )
+		.filter( '[name=was-this-issue-reported-after-hours], [name=has-the-after-hours-contractor-qbuild-supervisor-been-contacted]' )
+			.click( afterHoursRelevant )
+	;
+	// run onload
+	afterHoursRelevant();
+
+
+	// run onchange
+	$( 'input', '#content' ).filter( '[name=has-qbuild-been-contacted]' ).click( qbuildSectionRelevant );
+	// run onload
+	qbuildSectionRelevant();
+
+
+	// help links
+	$( 'a.help', '#content' ).butterfly({
+		closeButton: true,
+		closeButtonImage: qg.swe.paths.assets + 'images/skin/button-close.png',
+		closeButtonCorner: 'tr',
+	});
+
+
+	$( 'form', '#content' ).submit(function() {
+		$( '#subject' ).val([
+			// 'Responsive maintenance request: ',
+			$( '#streetaddress1' ).val(),
+			$( '#streetaddress2' ).val(),
+			$( '#streetaddress3' ).val(),
+			$( '#town' ).val(),
+			$( '#state' ).val(),
+			$( '#postcode' ).val(),
+		].join( ' ' ).replace( /\s+/g, ' ' ));
+	});
+
+
+	// set the current date and time (if blank)
+	if ( date.val().length === 0 ) {
+		date.val( now.getDate() + '/' + ( now.getMonth() + 1 ) + '/' + now.getFullYear() );
+	}
+	if ( time.val().length === 0 ) {
+		time.val( hours + ':' + ( mins < 10 ? '0' : '' ) + mins );
+	}
+
+
+// --></script>
+	
+</body>
+</html>

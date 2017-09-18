@@ -1,0 +1,11 @@
+#nav-site .max-width,
+#nav-site .box-sizing {
+	_zoom: 1; /* IE6 hasLayout (so background colour will be filled) */
+}
+#nav-site {
+	*width: auto; /* override workarounds-ie.css (preset width when #nav-site is high-level audience tabs) */
+}
+
+#nav-section ul li:before, ul li:hover:before {
+	top: 0.2em;
+}

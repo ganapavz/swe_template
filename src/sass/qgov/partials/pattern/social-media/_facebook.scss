@@ -1,0 +1,17 @@
+.facebook-updates p.more,
+.twitter-updates p.more {
+	margin: 1em .5em .5em;
+}
+
+/* Facebook */
+.facebook-story {
+	padding: .5em 0 .5em 58px;
+	position: relative;
+}
+#related-promotions .facebook-updates li img,
+.facebook-updates li img {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	margin-left: -58px; /* IE6 friendly */
+}

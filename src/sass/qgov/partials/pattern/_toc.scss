@@ -1,0 +1,61 @@
+#toc {
+  overflow: hidden;
+  clear: both;
+  margin-top: 1.5em;
+}
+
+#toc .border {
+  background: $toc-border-background-color;
+  padding: 1em 1em !important;
+  margin: 0 !important;
+}
+
+#toc h3 {
+  margin-top: .5em;
+  margin-bottom: 0;
+}
+
+#toc ol {
+  padding: .5em 0 1.5em;
+  margin-top: .5em;
+  overflow: hidden;
+}
+
+#toc li {
+  list-style-type: none;
+}
+
+#toc a {
+  text-decoration: none;
+  position: relative;
+  overflow: visible;
+  float: left;
+  clear: left;
+  margin: 0 0 .3em 3em;
+
+  .link-text {
+    text-decoration: underline;
+    display: block;
+    /* bug: float left is causing link text to wrap prematurely */
+    /*float: left;*/
+    cursor: pointer;
+  }
+
+  .page-number {
+    speak: none; /* These numbers just replicate the list numbers for easy visual styling. They would be redundant to AT */
+    margin: 0 0 .3em -2.85em;
+    float: left;
+    background: $toc-link-page-number-background-color;
+    color: $toc-link-page-number-color;
+    min-width: 1.5em;
+    text-align: center;
+  }
+}
+
+#toc a[href]:hover .page-number {
+  @include alpha-attribute('background', rgba($toc-link-hover-page-number-background-color, 1), $toc-link-hover-page-number-background-color);
+}
+
+#toc .current a {
+  font-weight: bold;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Bill payment | Services | Queensland Government</title>
+
+<!--#set var="franchise" value="OES"-->
+<!--#set var="title" value="Bill payment"-->
+<!--#include virtual="/assets/includes/global/head-assets.html"-->
+
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+	
+    <meta name="DCTERMS.title" content="Bill payment" />
+
+	<meta name="DC.Type.documentType" scheme="agls-document" content="service" />
+	<meta name="DC.Type.serviceType" scheme="agls-service" content="financial" />
+	<meta name="DC.Type.serviceType" scheme="agls-service" content="bills, rates and levies" />    
+	
+	<meta name="DCTERMS.created" content="2011-08-11" />
+	<meta name="DCTERMS.modified" content="2011-08-11" />
+	<meta name="DCTERMS.title" content="Bill payment | Services" />
+	<meta name="DCTERMS.description" content="DESCRIPTION" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION" />
+	<meta name="DCTERMS.identifier" scheme="DCTERMS.URI" content="https://www.smartservice.qld.gov.au/services/bill/select" />
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="service" />
+	<meta name="AGLSTERMS.serviceType" scheme="AGLSTERMS.agls-document" content="bills, rates and levies" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+</head>
+
+<body id="qld-gov-au" class="residents">
+
+<!--#include virtual="/assets/includes/global/header.html"-->	
+	
+	<div id="page-container"><div class="max-width">
+		<div id="breadcrumbs">
+			<h2>You are here:</h2>
+			<ol>
+<!--#include virtual="/assets/includes/global/breadcrumb-services.html"-->
+				<li class="last-child">Bill payment</li>
+			</ol>
+		</div>
+	
+		<div id="content-container">
+            <div id="content">
+
+				<div class="article form"><div class="box-sizing"><div class="border">
+                
+<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+					<h1>Bill payment</h1>
+
+<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+					<div class="preamble">
+						<p>You will need the bill you are paying, showing:</p>
+						<ul>
+							<li>the payment reference number</li>
+							<li>the total amount due</li>
+						</ul>
+						<p>Payments can be made only by Visa or MasterCard.</p>
+						<p>Questions marked with <abbr title="(required)">*</abbr> must be completed.</p>
+					</div>
+
+					<form action="./content-form.html" method="post">
+
+						<ol class="questions">
+
+							<li class="select1 required">
+								<label for="name">
+									<span class="label">Bill type</span>
+									<abbr title="(required)">*</abbr>
+								</label>
+								<select name="bill" id="bill" required="required">
+									<option class="placeholder" value="">Please select…</option>
+									<option>PAPI registration fee</option>
+								</select>
+							</li>
+
+							<li class="footer">
+								<ul class="submit">
+									<li><strong><input type="submit" value="Continue" /></strong></li>
+								</ul>
+							</li>
+
+						</ol>
+
+					</form>
+
+
+				</div></div></div><!-- end .article, .box-sizing, .border -->
+			</div><!-- end #content -->
+
+            <div id="asides"><div class="box-sizing"><div class="border">
+            	<!--#include virtual="/assets/includes/global/global-aside.html"-->
+
+				<div class="aside accepted payment">
+					<h2>We accept</h2>
+					<ul>
+						<li><img src="/assets/images/acceptance-marks/visa.png" alt="Visa" /></li>
+						<li><img src="/assets/images/acceptance-marks/mastercard.png" alt="MasterCard" /></li>
+					</ul>
+					<small>Credit and debit cards accepted</small>
+				</div>
+
+            </div></div></div><!-- end #asides, .box-sizing, .border -->
+
+			<div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+				<div id="document-properties"><div class="box-sizing">
+					<dl>
+						<dt>Last updated</dt>
+						<dd>11 August 2011</dd>
+					</dl>
+				</div></div>
+				
+<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+			</div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+		</div><!-- end #content-container -->
+        
+<!--#include virtual="/examples/nav/transport.html"-->
+	
+    </div></div><!-- end #page-container, .max-width -->
+
+<!--#include virtual="/assets/includes/global/footer.html"-->
+	
+</body>
+</html>

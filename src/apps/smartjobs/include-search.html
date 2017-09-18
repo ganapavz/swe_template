@@ -1,0 +1,736 @@
+					<form id="smartjob-search" action="https://smartjobs.qld.gov.au/jobtools/jncustomsearch.searchResults" method="get">
+						<ol class="questions">
+
+							<li>
+								<label for="keyword">
+									<span class="label">Keywords</span>
+								</label>
+								<input id="keyword" name="in_skills" size="40" />
+							</li>
+
+							<li>
+								<label for="location">
+									<span class="label">Location</span>
+								</label>
+								<select id="location" multiple="multiple" size="7">
+									<option value="" selected="selected">All</option>
+									<option>Brisbane</option>
+									<option>&nbsp; Brisbane&mdash;CBD</option>
+									<option>&nbsp; Brisbane&mdash;North</option>
+									<option>&nbsp; Brisbane&mdash;South</option>
+									<option>&nbsp; Brisbane&mdash;West</option>
+									<option>Sunshine Coast</option>
+									<option>Gold Coast</option>
+									<option>Ipswich</option>
+									<option>Logan</option>
+									<option>South West Qld</option>
+									<option>Wide Bay Burnett</option>
+									<option>Rockhampton region</option>
+									<option>Central West Qld</option>
+									<option>Mackay region</option>
+									<option>Toowoomba</option>
+									<option>Townsville region</option>
+									<option>North West Qld</option>
+									<option>Cairns and Far North Qld</option>
+									<option>Other&mdash;Outside Qld</option>
+								</select>
+							</li>
+
+							<li>
+								<label for="occupation">
+									<span class="label">Occupational group</span>
+								</label>
+								<select id="occupation" multiple="multiple" size="7">
+									<option value="" selected="selected">All</option>
+									<option value="&quot;1&quot;">Accounting and finance</option>
+									<option value="&quot;2&quot;">Administration</option>
+									<option value="&quot;3&quot;">Apprenticeships and traineeships</option>
+									<option value="&quot;4&quot;">Arts, culture and hHeritage</option>
+									<option value="&quot;5&quot;">Auditing and compliance</option>
+									<option value="&quot;6&quot;">Aviation&mdash;crew/engineer</option>
+									<option value="&quot;46&quot;">Building services</option>
+									<option value="&quot;7&quot;">Claims processing</option>
+									<option value="&quot;8&quot;">Community care</option>
+									<option value="&quot;9&quot;">Community engagement and education</option>
+									<option value="&quot;10&quot;">Construction and architecture</option>
+									<option value="&quot;11&quot;">Creative services and design</option>
+									<option value="&quot;12&quot;">Customer service and call centre</option>
+									<option value="&quot;13&quot;">Dentistry</option>
+									<option value="&quot;14&quot;">Economics and statistics</option>
+									<option value="&quot;15&quot;">Education and training</option>
+									<option value="&quot;16&quot;">Emergency and protective services</option>
+									<option value="&quot;17&quot;">Engineering and surveying</option>
+									<option value="&quot;18&quot;">Executive</option>
+									<option value="&quot;19&quot;">Facilities and asset management</option>
+									<option value="&quot;20&quot;">Fishery and marine</option>
+									<option value="&quot;21&quot;">Graduate</option>
+									<option value="&quot;27&quot;">HR and Industrial Relations</option>
+									<option value="&quot;22&quot;">Health&mdash;allied health and clinical support</option>
+									<option value="&quot;23&quot;">Health&mdash;service support</option>
+									<option value="&quot;24&quot;">Health&mdash;medical</option>
+									<option value="&quot;25&quot;">Health&mdash;nursing</option>
+									<option value="&quot;26&quot;">Health&mdash;science and technical</option>
+									<option value="&quot;29&quot;">IT and telecommunications</option>
+									<option value="&quot;28&quot;">Information management and library services</option>
+									<option value="&quot;30&quot;">Justice and legal</option>
+									<option value="&quot;31&quot;">Logistics and transport</option>
+									<option value="&quot;32&quot;">Management</option>
+									<option value="&quot;33&quot;">Marketing, PR and communication</option>
+									<option value="&quot;33.5&quot;">Occupational health and safety</option>
+									<option value="&quot;34&quot;">Policy and planning</option>
+									<option value="&quot;35&quot;">Primary industry and environment</option>
+									<option value="&quot;36&quot;">Procurement</option>
+									<option value="&quot;37&quot;">Project management</option>
+									<option value="&quot;38&quot;">Research</option>
+									<option value="&quot;39&quot;">Sciences</option>
+									<option value="&quot;47&quot;">Security</option>
+									<option value="&quot;40&quot;">Services and hospitality</option>
+									<option value="&quot;41&quot;">Sport and recreation</option>
+									<option value="&quot;42&quot;">Trades</option>
+									<option value="&quot;45&quot;">Valuer and property</option>
+									<option value="&quot;43&quot;">Vehicle and machine operation</option>
+									<option value="&quot;44&quot;">Volunteer</option>
+								</select>
+							</li>
+
+							<li class="group">
+								<fieldset>
+									<legend>
+										<span class="label">Salary (yearly)</span>
+										<small class="hint">Leave blank if you are searching for casual jobs</small>
+									</legend>
+									<ol class="questions compact">
+										<li>
+											<label for="salary-min">
+												<span class="label">Minimum</span>
+											</label>
+											<select id="salary-min">
+												<option value="" class="placeholder">Please select…</option>
+												<option value="">No minimum</option>
+												<option>$30,000</option>
+												<option>$40,000</option>
+												<option>$50,000</option>
+												<option>$60,000</option>
+												<option>$70,000</option>
+												<option>$80,000</option>
+												<option>$90,000</option>
+												<option>$100,000</option>
+												<option>$120,000</option>
+												<option>$150,000</option>
+												<option>$200,000</option>
+											</select>
+										</li>
+
+										<li>
+											<label for="salary-max">
+												<span class="label">Maximum</span>
+											</label>
+											<select id="salary-max">
+												<option value="" class="placeholder">Please select…</option>
+												<option>$30,000</option>
+												<option>$40,000</option>
+												<option>$50,000</option>
+												<option>$60,000</option>
+												<option>$70,000</option>
+												<option>$80,000</option>
+												<option>$90,000</option>
+												<option>$100,000</option>
+												<option>$120,000</option>
+												<option>$150,000</option>
+												<option>$200,000</option>
+												<option value="">$200,000+</option>
+											</select>
+										</li>
+
+									</ol>
+								</fieldset>
+							</li>
+
+							<li>
+								<label for="department">
+									<span class="label">Department or organisation</span>
+								</label>
+								<select id="department">
+									<option value="" selected="selected">All</option>
+									<option value="&quot;15068&quot;">Anti-Discrimination Commission</option>
+									<option value="&quot;15069&quot;">Art Gallery</option>
+									<option value="&quot;15070&quot;">Arts Queensland</option>
+									<option value="&quot;15071&quot;">Australian Agricultural College Corporation</option>
+									<option value="&quot;15073&quot;">Building Services Authority</option>
+									<option value="&quot;15075&quot;">CITEC</option>
+									<option value="&quot;15076&quot;">Commission for Children and Young People</option>
+									<option value="&quot;15121&quot;">Communities</option>
+									<option value="&quot;15392&quot;">Community Safety</option>
+									<option value="&quot;15078&quot;">Corporate Administration Agency</option>
+									<option value="&quot;15080&quot;">Crime and Misconduct Commission</option>
+									<option value="&quot;15067 ~ 15146&quot;">Education and Training</option>
+									<option value="&quot;15081&quot;">Electoral Commission</option>
+									<option value="&quot;15393&quot;">Employment, Economic Development and Innovation</option>
+									<option value="&quot;15381&quot;">Energy and Water Ombudsman Queensland</option>
+									<option value="&quot;15394&quot;">Environment and Resource Management</option>
+									<option value="&quot;15391&quot;">Family Responsibilities Commission</option>
+									<option value="&quot;15082&quot;">Forestry Plantations Queensland Office</option>
+									<option value="&quot;15083&quot;">Goprint</option>
+									<option value="&quot;15085&quot;">Health Practitioner Registration Boards</option>
+									<option value="&quot;15043&quot;">Health Quality and Complaints Commission</option>
+									<option value="&quot;15086&quot;">Information Commissioner</option>
+									<option value="&quot;15128&quot;">Justice and Attorney-General</option>
+									<option value="&quot;15383&quot;">Legal Aid</option>
+									<option value="&quot;15088&quot;">Local Government and Planning</option>
+									<option value="&quot;15395&quot;">Mental Health Review Tribunal (MHRT)</option>
+									<!-- <option value="&quot;15307&quot;">Multi-Agency pool</option> -->
+									<option value="&quot;15104&quot;">Museum</option>
+									<option value="&quot;15119&quot;">Office of the Governor</option>
+									<option value="&quot;15089&quot;">Office of the Queensland Ombudsman</option>
+									<option value="&quot;15090&quot;">Parliamentary Service</option>
+									<option value="&quot;15091&quot;">Performing Arts Centre</option>
+									<option value="&quot;15130&quot;">Premier and Cabinet</option>
+									<option value="&quot;15092&quot;">Project Services</option>
+									<option value="&quot;15093&quot;">Prostitution Licensing</option>
+									<option value="&quot;15094&quot;">Public Service Commission</option>
+									<option value="&quot;15096&quot;">Public Trust Office</option>
+									<option value="&quot;15132&quot;">Public Works</option>
+									<option value="&quot;15098&quot;">Q-COMP</option>
+									<option value="&quot;15097&quot;">QBuild</option>
+									<option value="&quot;15099&quot;">QFleet</option>
+									<option value="&quot;15100&quot;">QLeave</option>
+									<option value="&quot;15137&quot;">Qld Health Shared Service Partner</option>
+									<option value="&quot;15101&quot;">Queensland Audit Office</option>
+									<option value="&quot;15102&quot;">Queensland Choir</option>
+									<option value="&quot;15103&quot;">Queensland College of Teachers</option>
+									<option value="&quot;15149&quot;">Queensland Health</option>
+									<option value="&quot;15105&quot;">Queensland Music Festival</option>
+									<option value="&quot;15388&quot;">Queensland Performing Arts Trust</option>
+									<option value="&quot;15138&quot;">Queensland Police Service</option>
+									<option value="&quot;15077&quot;">Queensland Rural Adjustment Authority</option>
+									<option value="&quot;15306&quot;">Queensland Shared Services</option>
+									<option value="&quot;15107&quot;">Queensland State Archives</option>
+									<option value="&quot;15108&quot;">Queensland Studies Authority</option>
+									<option value="&quot;15109&quot;">Queensland Theatre Company</option>
+									<option value="&quot;15386&quot;">Queensland Treasury Corporation</option>
+									<option value="&quot;15072&quot;">Queensland Water Commission</option>
+									<option value="&quot;15110&quot;">Residential Tenancies Authority</option>
+									<option>Science, Information technology, Innovation and the Arts</option>
+									<option value="&quot;15112&quot;">SDS&mdash;Sales and Distribution Services</option>
+									<option value="&quot;15111&quot;">Safe Food Qld</option>
+									<option value="&quot;15397&quot;">Skills Queensland</option>
+									<option value="&quot;15398&quot;">South Bank Corporation</option>
+									<option value="&quot;15084&quot;">Stadiums Queensland</option>
+									<option value="&quot;15114&quot;">State Library</option>
+									<option value="&quot;15141&quot;">SunWater</option>
+									<option value="&quot;15389&quot;">TransLink Transit Authority</option>
+									<option value="&quot;15129&quot;">Transport and Main Roads</option>
+									<option value="&quot;15140&quot;">Treasury</option>
+									<option value="&quot;15385&quot;">Urban Land Development Authority</option>
+									<option value="&quot;15390&quot;">Water Grid Manager</option>
+									<option value="&quot;15115&quot;">WorkCover</option>
+								</select>
+							</li>
+
+							<li class="section" id="advanced-search">
+								<ol class="questions">
+
+									<li>
+										<label for="job-type">
+											<span class="label">Job type</span>
+										</label>
+										<select multiple="multiple" size="7">
+											<option selected="selected">All</option>
+											<option>Permanent full-time</option>
+											<option>Permanent part-time</option>
+											<option>Temporary full-time</option>
+											<option>Temporary part-time</option>
+											<option>Contract</option>
+											<option>Casual</option>
+										</select>
+									</li>
+
+									<li>
+										<label for="classification">
+											<span class="label">Classification</span>
+										</label>
+										<select id="classification" multiple="multiple" size="15">
+											<option value="" selected="selected">All</option>
+											<option value="&quot;AAIN1&ndash;AAIN9&quot;">AAIN1&ndash;AAIN9</option>
+											<option value="&quot;AGM1&quot;">AGM1</option>
+											<option value="&quot;AGM2&quot;">AGM2</option>
+											<option value="&quot;AIN1&ndash;AIN6&quot;">AIN1&ndash;AIN6</option>
+										<!-- <optgroup label="Administrative stream"> -->
+											<option value="&quot;AO1&quot;">AO1</option>
+											<!-- <option value="&quot;AO1/AO2&quot;">AO1/AO2</option> -->
+											<option value="&quot;AO2&quot;">AO2</option>
+											<option value="&quot;AO3&quot;">AO3</option>
+											<option value="&quot;AO4&quot;">AO4</option>
+											<!-- <option value="&quot;AO4/AO5&quot;">AO4/AO5</option> -->
+											<option value="&quot;AO5&quot;">AO5</option>
+											<!-- <option value="&quot;AO5/AO6&quot;">AO5/AO6</option> -->
+											<!-- <option value="&quot;AO5/FPO2&quot;">AO5/FPO2</option> -->
+											<!-- <option value="&quot;AO5/Stn04&quot;">AO5/Stn04</option> -->
+											<option value="&quot;AO6&quot;">AO6</option>
+											<!-- <option value="&quot;AO6/M6&quot;">AO6/M6</option> -->
+											<option value="&quot;AO7&quot;">AO7</option>
+											<!-- <option value="&quot;AO7/AO8&quot;">AO7/AO8</option> -->
+											<!-- <option value="&quot;AO7/M7&quot;">AO7/M7</option> -->
+											<option value="&quot;AO8&quot;">AO8</option>
+											<!-- <option value="&quot;AO8/M8&quot;">AO8/M8</option> -->
+										<!-- </optgroup> -->
+											<option value="&quot;ASI&quot;">ASI</option>
+											<option value="&quot;Band 1 to Band 3&quot;">Band 1 &ndash; Band 3</option>
+											<option value="&quot;Band 3/Band 5&quot;">Band 3 &ndash; Band 5</option>
+											<option value="&quot;Band 4&quot;">Band 4</option>
+											<option value="&quot;Band5&quot;">Band 5</option>
+											<option value="&quot;Band6&quot;">Band 6</option>
+											<!-- <option value="&quot;Band 6/Band 7&quot;">Band 6/Band 7</option> -->
+											<option value="&quot;Band7&quot;">Band 7</option>
+											<option value="&quot;Band8&quot;">Band 8</option>
+											<option value="&quot;Band9&quot;">Band 9</option>
+											<option value="&quot;Band10&quot;">Band 10</option>
+											<option value="&quot;Band11&quot;">Band 11</option>
+											<option value="&quot;BPO2&quot;">BPO2</option>
+											<option value="&quot;BPO3&quot;">BPO3</option>
+											<option value="&quot;BAO&quot;">BAO</option>
+											<option value="&quot;C2&quot;">C2</option>
+											<option value="&quot;C3&quot;">C3</option>
+											<option value="&quot;C4&quot;">C4</option>
+											<option value="&quot;C5&quot;">C5</option>
+											<option value="&quot;C6&quot;">C6</option>
+											<option value="&quot;C7&quot;">C7</option>
+											<option value="&quot;C8&quot;">C8</option>
+											<option value="&quot;C9&quot;">C9</option>
+											<option value="&quot;C10&quot;">C10</option>
+											<option value="&quot;C11&quot;">C11</option>
+											<option value="&quot;C12&quot;">C12</option>
+											<option value="&quot;C13&quot;">C13</option>
+											<option value="&quot;C14&quot;">C14</option>
+											<option value="&quot;CEC1&quot;">CEC1</option>
+											<!-- <option value="&quot;CEC1-3&quot;">CEC1-3</option> -->
+											<option value="&quot;CEC2&quot;">CEC2</option>
+											<option value="&quot;CEC3&quot;">CEC3</option>
+											<option value="&quot;CEC4&quot;">CEC4</option>
+											<option value="&quot;CEO&quot;">CEO</option>
+											<option value="&quot;CEO1&quot;">CEO1</option>
+											<option value="&quot;CEO2&quot;">CEO2</option>
+											<option value="&quot;CEO3&quot;">CEO3</option>
+											<option value="&quot;CFP1&quot;">CFP1</option>
+											<option value="&quot;CFP2&quot;">CFP2</option>
+											<option value="&quot;CFP3&quot;">CFP3</option>
+											<option value="&quot;CFP4&quot;">CFP4</option>
+											<option value="&quot;CLA03&quot;">CLA03</option>
+											<option value="&quot;CLA04&quot;">CLA04</option>
+											<option value="&quot;CLA05&quot;">CLA05</option>
+											<option value="&quot;CLA06&quot;">CLA06</option>
+											<option value="&quot;CLA07&quot;">CLA07</option>
+											<option value="&quot;CLA08&quot;">CLA08</option>
+											<option value="&quot;CLA09&quot;">CLA09</option>
+											<option value="&quot;CLV01&quot;">CLV01</option>
+											<option value="&quot;CLV02&quot;">CLV02</option>
+											<option value="&quot;CLV03&quot;">CLV03</option>
+											<option value="&quot;CLV04&quot;">CLV04</option>
+											<option value="&quot;CLV05&quot;">CLV05</option>
+											<option value="&quot;CLV06&quot;">CLV06</option>
+											<option value="&quot;CLV07&quot;">CLV07</option>
+											<option value="&quot;CLV08&quot;">CLV08</option>
+											<option value="&quot;CLV09&quot;">CLV09</option>
+											<option value="&quot;CLV10&quot;">CLV10</option>
+											<option value="&quot;CM1&quot;">CM1</option>
+											<option value="&quot;CM2&quot;">CM2</option>
+											<option value="&quot;CM3&quot;">CM3</option>
+											<option value="&quot;CM4&quot;">CM4</option>
+											<option value="&quot;CM5&quot;">CM5</option>
+											<option value="&quot;CM6&quot;">CM6</option>
+											<option value="&quot;CM7&quot;">CM7</option>
+											<option value="&quot;CM8&quot;">CM8</option>
+											<option value="&quot;CM9&quot;">CM9</option>
+											<option value="&quot;CM10&quot;">CM10</option>
+											<option value="&quot;CM11&quot;">CM11</option>
+											<option value="&quot;CM12&quot;">CM12</option>
+											<option value="&quot;CM13&quot;">CM13</option>
+											<option value="&quot;CO1&quot;">CO1</option>
+											<!-- <option value="&quot;CO1/CO2&quot;">CO1/CO2</option> -->
+											<option value="&quot;CO2&quot;">CO2</option>
+											<option value="&quot;CO3&quot;">CO3</option>
+											<option value="&quot;CO4&quot;">CO4</option>
+											<option value="&quot;CO5&quot;">CO5</option>
+											<option value="&quot;CO6&quot;">CO6</option>
+											<!-- <option value="&quot;CO8 to CO3&quot;">CO8 to CO3</option> -->
+											<option value="&quot;ComOp&quot;">ComOp</option>
+											<option value="&quot;CPL1&quot;">CPL1</option>
+											<option value="&quot;CPL2&quot;">CPL2</option>
+											<option value="&quot;CPSUPE&quot;">CPSUPE</option>
+											<option value="&quot;CW01&ndash;CW04&quot;">CW01&ndash;CW04</option>
+											<option value="&quot;CW05&ndash;CW09&quot;">CW05&ndash;CW09</option>
+											<option value="&quot;CW10&ndash;CW14&quot;">CW10&ndash;CW14</option>
+											<option value="&quot;CSXWSNR&quot;">CSXWSNR</option>
+											<option value="&quot;DES1&quot;">DES1</option>
+											<option value="&quot;DES2&quot;">DES2</option>
+											<option value="&quot;DES3&quot;">DES3</option>
+											<option value="&quot;DES4&quot;">DES4</option>
+											<option value="&quot;DO1&quot;">DO1</option>
+											<option value="&quot;DO1.1-DO1.6&quot;">DO1.1-DO1.6</option>
+											<option value="&quot;DO1&ndash;DO7&quot;">DO1&ndash;DO7</option>
+											<option value="&quot;DO2&quot;">DO2</option>
+											<option value="&quot;DO2.1-DO2.3&quot;">DO2.1-DO2.3</option>
+											<option value="&quot;DO2.1-DO2.4&quot;">DO2.1-DO2.4</option>
+											<option value="&quot;DO3&quot;">DO3</option>
+											<option value="&quot;DO3.1-DO3.2&quot;">DO3.1-DO3.2</option>
+											<option value="&quot;DO4&quot;">DO4</option>
+											<option value="&quot;DO4.1-DO4.2&quot;">DO4.1-DO4.2</option>
+											<option value="&quot;DO5&quot;">DO5</option>
+											<option value="&quot;DO8&ndash;DO9&quot;">DO8&ndash;DO9</option>
+											<option value="&quot;DO10&ndash;DO11&quot;">DO10&ndash;DO11</option>
+											<option value="&quot;DO12&ndash;DO13&quot;">DO12&ndash;DO13</option>
+											<option value="&quot;DO14&ndash;DO15&quot;">DO14&ndash;DO15</option>
+											<option value="&quot;DS1&quot;">DS1</option>
+											<option value="&quot;DS1&ndash;DS5&quot;">DS1&ndash;DS5</option>
+											<option value="&quot;DS2&quot;">DS2</option>
+											<option value="&quot;DSO1&quot;">DSO1</option>
+											<option value="&quot;DSO2&quot;">DSO2</option>
+											<option value="&quot;EAC05&quot;">EAC05</option>
+											<option value="&quot;EAC06&quot;">EAC06</option>
+											<option value="&quot;EAC07&quot;">EAC07</option>
+											<option value="&quot;EAC08&quot;">EAC08</option>
+											<option value="&quot;EAC09&quot;">EAC09</option>
+											<option value="&quot;EAC10&quot;">EAC10</option>
+											<option value="&quot;EAC11&quot;">EAC11</option>
+											<option value="&quot;EAC12&quot;">EAC12</option>
+											<option value="&quot;EAC13&quot;">EAC13</option>
+											<option value="&quot;EAC14&quot;">EAC14</option>
+											<option value="&quot;EAL1&quot;">EAL1</option>
+											<option value="&quot;EAL2&quot;">EAL2</option>
+											<option value="&quot;EAL3&quot;">EAL3</option>
+											<option value="&quot;EAL4&quot;">EAL4</option>
+											<option value="&quot;EAL5&quot;">EAL5</option>
+											<option value="&quot;EAL6&quot;">EAL6</option>
+											<option value="&quot;EN&quot;">EN</option>
+											<option value="&quot;ENAP&quot;">ENAP</option>
+											<option value="&quot;EOO2&quot;">EOO2</option>
+											<option value="&quot;EOSD&quot;">EOSD</option>
+											<option value="&quot;FCM&quot;">FCM</option>
+											<option value="&quot;FCHIEF&quot;">FCHIEF</option>
+											<option value="&quot;FCO&quot;">FCO</option>
+											<option value="&quot;FE1&quot;">FE1</option>
+											<option value="&quot;FE2&quot;">FE2</option>
+											<option value="&quot;FE3&quot;">FE3</option>
+											<option value="&quot;FE4&quot;">FE4</option>
+											<option value="&quot;FE4A&quot;">FE4A</option>
+											<option value="&quot;FE5&quot;">FE5</option>
+											<option value="&quot;FE6&quot;">FE6</option>
+											<option value="&quot;FE7&quot;">FE7</option>
+											<option value="&quot;FINS&quot;">FINS</option>
+											<option value="&quot;FO1&quot;">FO1</option>
+											<option value="&quot;FO2&quot;">FO2</option>
+											<option value="&quot;FO3&quot;">FO3</option>
+											<option value="&quot;FO4&quot;">FO4</option>
+											<option value="&quot;FO5&quot;">FO5</option>
+											<option value="&quot;FO6&quot;">FO6</option>
+											<option value="&quot;FO7&quot;">FO7</option>
+											<option value="&quot;FO8&quot;">FO8</option>
+											<option value="&quot;FF&quot;">FF</option>
+											<option value="&quot;FSUP&quot;">FSUP</option>
+											<option value="&quot;FFR&quot;">FFR</option>
+											<option value="&quot;FW4&quot;">FW4</option>
+											<option value="&quot;GP&mdash;AS2&quot;">GP&mdash;AS2</option>
+											<option value="&quot;GP&mdash;BP3&quot;">GP&mdash;BP3</option>
+											<option value="&quot;GP&mdash;PP4&quot;">GP&mdash;PP4</option>
+											<option value="&quot;HBEAP1-HBEAP4&quot;">HBEAP1-HBEAP4</option>
+											<option value="&quot;HBEA4&quot;">HBEA4</option>
+											<option value="&quot;HBEA5&quot;">HBEA5</option>
+											<option value="&quot;HBEA6&quot;">HBEA6</option>
+											<option value="&quot;HBEA7&quot;">HBEA7</option>
+											<option value="&quot;HBEA8&quot;">HBEA8</option>
+											<!-- <option value="&quot;HBEA8-HBEA6&quot;">HBEA8-HBEA6</option> -->
+											<option value="&quot;HBEA9&quot;">HBEA9</option>
+											<option value="&quot;HBEA10&quot;">HBEA10</option>
+											<!-- <option value="&quot;HBEA10-HBEA6&quot;">HBEA10-HBEA6</option> -->
+											<!-- <option value="&quot;HBEA10-HBEA7&quot;">HBEA10-HBEA7</option> -->
+											<!-- <option value="&quot;HBEA10-HBEA8&quot;">HBEA10-HBEA8</option> -->
+											<!-- <option value="&quot;HBEA10-HBEA9&quot;">HBEA10-HBEA9</option> -->
+											<option value="&quot;HBEA11&quot;">HBEA11</option>
+											<!-- <option value="&quot;HBEA11/12&quot;">HBEA11/12</option> -->
+											<option value="&quot;HBEA12&quot;">HBEA12</option>
+											<option value="&quot;HBEA13&quot;">HBEA13</option>
+											<option value="&quot;HES2&quot;">HES2</option>
+											<option value="&quot;HES3&quot;">HES3</option>
+											<option value="&quot;HES4-1-HES4-6&quot;">HES4-1&ndash;HES4-6</option>
+											<option value="&quot;HOS1&quot;">HOS1</option>
+											<option value="&quot;HOS2&quot;">HOS2</option>
+											<option value="&quot;HOS3&quot;">HOS3</option>
+											<option value="&quot;HP1&quot;">HP1</option>
+											<option value="&quot;HP2&quot;">HP2</option>
+											<option value="&quot;HP3&quot;">HP3</option>
+											<option value="&quot;HP4&quot;">HP4</option>
+											<option value="&quot;HP5&quot;">HP5</option>
+											<option value="&quot;HP6&quot;">HP6</option>
+											<option value="&quot;HP7&quot;">HP7</option>
+											<option value="&quot;HP8&quot;">HP8</option>
+											<option value="&quot;IC1&quot;">IC1</option>
+											<option value="&quot;IC2&quot;">IC2</option>
+											<option value="&quot;IC3&quot;">IC3</option>
+											<option value="&quot;IC4&quot;">IC4</option>
+											<option value="&quot;IC5&quot;">IC5</option>
+											<option value="&quot;IC6&quot;">IC6</option>
+											<option value="&quot;IC7&quot;">IC7</option>
+											<option value="&quot;IC8&quot;">IC8</option>
+											<option value="&quot;L1&quot;">L1</option>
+											<option value="&quot;L2&quot;">L2</option>
+											<!-- <option value="&quot;L2-L3&quot;">L2-L3</option> -->
+											<!-- <option value="&quot;L2-L9&quot;">L2-L9</option> -->
+											<option value="&quot;L3&quot;">L3</option>
+											<!-- <option value="&quot;L4-L7&quot;">L4-L7</option> -->
+											<!-- <option value="&quot;L4-L9&quot;">L4-L9</option> -->
+											<!-- <option value="&quot;L7-L9&quot;">L7-L9</option> -->
+											<option value="&quot;L10&quot;">L10</option>
+											<option value="&quot;L10-L13&quot;">L10&ndash;L13</option>
+											<option value="&quot;L11-L13&quot;">L11&ndash;L13 </option>
+											<option value="&quot;L13-L14&quot;">L13&ndash;L14</option>
+											<option value="&quot;L13-L17&quot;">L13&ndash;L17</option>
+											<option value="&quot;L13-L18&quot;">L13&ndash;L18 </option>
+											<option value="&quot;L13-L24&quot;">L13&ndash;L24</option>
+											<option value="&quot;L13-L27&quot;">L13&ndash;L27</option>
+											<option value="&quot;L18-L23&quot;">L18&ndash;L23</option>
+											<option value="&quot;L18-L24&quot;">L18&ndash;L24</option>
+											<option value="&quot;L18-L27&quot;">L18&ndash;L27 </option>
+											<option value="&quot;L24-L25&quot;">L24&ndash;L25</option>
+											<option value="&quot;L25-L27&quot;">L25&ndash;L27</option>
+											<option value="&quot;Lev1&quot;">Lev1</option>
+											<option value="&quot;Lev2&quot;">Lev2</option>
+											<option value="&quot;Lev3&quot;">Lev3</option>
+											<option value="&quot;Lev4&quot;">Lev4</option>
+											<option value="&quot;Lev6&quot;">Lev6</option>
+											<option value="&quot;Lev7&quot;">Lev7</option>
+											<option value="&quot;Lev8&quot;">Lev8</option>
+											<option value="&quot;Level 1 to Level 3&quot;">Level 1 to Level 3</option>
+											<option value="&quot;M1&quot;">M1</option>
+											<option value="&quot;M2&quot;">M2</option>
+											<option value="&quot;M3&quot;">M3</option>
+											<option value="&quot;M4&quot;">M4</option>
+											<option value="&quot;M5&quot;">M5</option>
+											<option value="&quot;M6&quot;">M6</option>
+											<option value="&quot;M7&quot;">M7</option>
+											<option value="&quot;M8&quot;">M8</option>
+											<option value="&quot;M9&quot;">M9</option>
+											<option value="&quot;M10&quot;">M10</option>
+											<option value="&quot;M11&quot;">M11</option>
+											<option value="&quot;M12&quot;">M12</option>
+											<option value="&quot;M13&quot;">M13</option>
+											<option value="&quot;M14&quot;">M14</option>
+											<option value="&quot;MO1&quot;">MO1</option>
+											<option value="&quot;MO2&quot;">MO2</option>
+											<option value="&quot;MO3&quot;">MO3</option>
+											<!-- <option value="&quot;MO3/MO11&quot;">MO3/MO11</option> -->
+											<option value="&quot;MO4&quot;">MO4</option>
+											<option value="&quot;MO5&quot;">MO5</option>
+											<option value="&quot;MO6&quot;">MO6</option>
+											<option value="&quot;MO7&quot;">MO7</option>
+											<option value="&quot;MO8&quot;">MO8</option>
+											<option value="&quot;MO9&quot;">MO9</option>
+											<option value="&quot;MO10&quot;">MO10</option>
+											<option value="&quot;MO11&quot;">MO11</option>
+											<option value="&quot;MO12&quot;">MO12</option>
+											<option value="&quot;MO13&quot;">MO13</option>
+											<option value="&quot;MO14&quot;">MO14</option>
+											<option value="&quot;MOR1-1-MOR1-3&quot;">MOR1-1&ndash;MOR1-3</option>
+											<option value="&quot;MSR1-1-MSR1-4&quot;">MSR1-1&ndash;MSR1-4</option>
+											<option value="&quot;MSR2-1-MSR2-2&quot;">MSR2-1&ndash;MSR2-2</option>
+											<option value="&quot;MWA1&quot;">MWA1</option>
+											<option value="&quot;MWA2&quot;">MWA2</option>
+											<option value="&quot;MWA3&quot;">MWA3</option>
+											<option value="&quot;MWA4&quot;">MWA4</option>
+											<option value="&quot;NEG&quot;">NEG</option>
+											<option value="&quot;NO1&quot;">NO1</option>
+											<option value="&quot;NO2&quot;">NO2</option>
+											<!-- <option value="&quot;NO2/PO2/PO3&quot;">NO2/PO2/PO3</option> -->
+											<!-- <option value="&quot;NO2/PO3&quot;">NO2/PO3</option> -->
+											<option value="&quot;NO3&quot;">NO3</option>
+											<option value="&quot;NO3 DON&quot;">NO3 DON</option>
+											<option value="&quot;NO4&quot;">NO4</option>
+											<option value="&quot;NO4 DON&quot;">NO4 DON</option>
+											<option value="&quot;NO5&quot;">NO5</option>
+											<option value="&quot;NO6&quot;">NO6</option>
+											<option value="&quot;NO7&quot;">NO7</option>
+											<option value="&quot;NO8&quot;">NO8</option>
+											<option value="&quot;NO9&quot;">NO9</option>
+											<option value="&quot;NOBC&quot;">NOBC</option>
+											<option value="&quot;NOMC&quot;">NOMC</option>
+											<option value="&quot;NP&quot;">NP</option>
+											<option value="&quot;Not applicable&quot;">Not applicable</option>
+											<option value="&quot;Nurse Grade 1&quot;">Nurse Grade 1</option>
+											<option value="&quot;Nurse Grade 2&quot;">Nurse Grade 2</option>
+											<option value="&quot;Nurse Grade 3&quot;">Nurse Grade 3</option>
+											<option value="&quot;Nurse Grade 4&quot;">Nurse Grade 4</option>
+											<option value="&quot;Nurse Grade 5&quot;">Nurse Grade 5</option>
+											<option value="&quot;Nurse Grade 6&quot;">Nurse Grade 6</option>
+											<option value="&quot;Nurse Grade 7&quot;">Nurse Grade 7</option>
+											<option value="&quot;Nurse Grade 8&quot;">Nurse Grade 8</option>
+											<option value="&quot;Nurse Grade 9 (1)&quot;">Nurse Grade 9 (1)</option>
+											<option value="&quot;Nurse Grade 9 (2)&quot;">Nurse Grade 9 (2)</option>
+											<option value="&quot;Nurse Grade 9 (3)&quot;">Nurse Grade 9 (3)</option>
+											<option value="&quot;Nurse Grade 10 (1)&quot;">Nurse Grade 10 (1)</option>
+											<option value="&quot;Nurse Grade 10 (2)&quot;">Nurse Grade 10 (2)</option>
+											<option value="&quot;Nurse Grade 10 (3)&quot;">Nurse Grade 10 (3)</option>
+											<option value="&quot;Nurse Grade 10 (4)&quot;">Nurse Grade 10 (4)</option>
+											<option value="&quot;Nurse Grade 11 (1)&quot;">Nurse Grade 11 (1)</option>
+											<option value="&quot;Nurse Grade 11 (2)&quot;">Nurse Grade 11 (2)</option>
+											<option value="&quot;Nurse Grade 11 (3)&quot;">Nurse Grade 11 (3)</option>
+											<option value="&quot;Nurse Grade 11 (4)&quot;">Nurse Grade 11 (4)</option>
+											<option value="&quot;Nurse Grade 12&quot;">Nurse Grade 12</option>
+											<option value="&quot;Nurse Grade 12(1)&quot;">Nurse Grade 12 (1)</option>
+											<option value="&quot;OO1&quot;">OO1</option>
+											<!-- <option value="&quot;OO1/OO2&quot;">OO1/OO2</option> -->
+											<option value="&quot;OO2&quot;">OO2</option>
+											<!-- <option value="&quot;OO2/OO3&quot;">OO2/OO3</option> -->
+											<option value="&quot;OO3&quot;">OO3</option>
+											<option value="&quot;OO4&quot;">OO4</option>
+											<!-- <option value="&quot;OO4/TO2&quot;">OO4/TO2</option> -->
+											<option value="&quot;OO5&quot;">OO5</option>
+											<option value="&quot;OO6&quot;">OO6</option>
+											<option value="&quot;OO7&quot;">OO7</option>
+											<option value="&quot;OO8&quot;">OO8</option>
+											<option value="&quot;OO9&quot;">OO9</option>
+											<option value="&quot;OO10&quot;">OO10</option>
+											<option value="&quot;Optom1&quot;">Optom1</option>
+											<option value="&quot;Ortho1&quot;">Ortho1</option>
+											<option value="&quot;Para&quot;">Para</option>
+											<option value="&quot;ParaAC&quot;">ParaAC</option>
+											<option value="&quot;ParalC&quot;">ParalC</option>
+											<option value="&quot;ParaStud&quot;">ParaStud</option>
+											<option value="&quot;PM1&quot;">PM1</option>
+											<option value="&quot;PM2&quot;">PM2</option>
+											<option value="&quot;PM3&quot;">PM3</option>
+											<option value="&quot;PM4&quot;">PM4</option>
+											<option value="&quot;PM5&quot;">PM5</option>
+											<option value="&quot;PM6&quot;">PM6</option>
+										<!-- <optgroup label="Professional stream"> -->
+											<option value="&quot;PO1&quot;">PO1</option>
+											<!-- <option value="&quot;PO1/PO2&quot;">PO1/PO2</option> -->
+											<option value="&quot;PO2&quot;">PO2</option>
+											<!-- <option value="&quot;PO2/PO3&quot;">PO2/PO3</option> -->
+											<option value="&quot;PO3&quot;">PO3</option>
+											<!-- <option value="&quot;PO3/PO4&quot;">PO3/PO4</option> -->
+											<option value="&quot;PO4&quot;">PO4</option>
+											<!-- <option value="&quot;PO4/PO5&quot;">PO4/PO5</option> -->
+											<option value="&quot;PO5&quot;">PO5</option>
+											<!-- <option value="&quot;PO5/PO6&quot;">PO5/PO6</option> -->
+											<option value="&quot;PO6&quot;">PO6</option>
+										<!-- </optgroup> -->
+											<option value="&quot;PP1&quot;">PP1</option>
+											<option value="&quot;PP2&quot;">PP2</option>
+											<option value="&quot;PP3&quot;">PP3</option>
+											<option value="&quot;PP4&quot;">PP4</option>
+											<option value="&quot;PTO&quot;">PTO</option>
+											<option value="&quot;QAGM1&quot;">QAGM1</option>
+											<option value="&quot;QAGM2&quot;">QAGM2</option>
+											<option value="&quot;QCO1&quot;">QCO1</option>
+											<option value="&quot;QCO2&quot;">QCO2</option>
+											<option value="&quot;QCO3&quot;">QCO3</option>
+											<option value="&quot;QCO4&quot;">QCO4</option>
+											<option value="&quot;QCO5&quot;">QCO5</option>
+											<option value="&quot;QCO6&quot;">QCO6</option>
+											<option value="&quot;QXO-1&quot;">QXO-1</option>
+											<option value="&quot;QXO-2&quot;">QXO-2</option>
+											<option value="&quot;QXO-3&quot;">QXO-3</option>
+											<option value="&quot;RFMO1&quot;">RFMO1</option>
+											<option value="&quot;RFMO2&quot;">RFMO2</option>
+											<option value="&quot;RFMO3&quot;">RFMO3</option>
+											<option value="&quot;RFMO4&quot;">RFMO4</option>
+											<option value="&quot;RIA1&quot;">RIA1</option>
+											<option value="&quot;RIA2&quot;">RIA2</option>
+											<option value="&quot;RIA3&quot;">RIA3</option>
+											<option value="&quot;RIA4&quot;">RIA4</option>
+											<option value="&quot;RIA5&quot;">RIA5</option>
+											<option value="&quot;RMRWH&quot;">RMRWH</option>
+											<option value="&quot;SDS1&ndash;SDS2&quot;">SDS1&ndash;SDS2</option>
+											<option value="&quot;Sect122&quot;">Sect122</option>
+											<option value="&quot;SES2&quot;">SES2</option>
+											<option value="&quot;SES2(H)&quot;">SES2(H)</option>
+											<option value="&quot;SES2(Lw)&quot;">SES2(Lw)</option>
+											<option value="&quot;SES3&quot;">SES3</option>
+											<option value="&quot;SES3(H)&quot;">SES3(H)</option>
+											<option value="&quot;SES3(Lw)&quot;">SES3(Lw)</option>
+											<option value="&quot;SES4&quot;">SES4</option>
+											<option value="&quot;SN&quot;">SN</option>
+											<option value="&quot;SO&quot;">SO</option>
+											<option value="&quot;SO2&quot;">SO2</option>
+											<option value="&quot;SOF&quot;">SOF</option>
+											<option value="&quot;Step1&quot;">Step1</option>
+											<option value="&quot;Step2&quot;">Step2</option>
+											<option value="&quot;Step3&quot;">Step3</option>
+											<option value="&quot;Step4&quot;">Step4</option>
+											<option value="&quot;Step5&quot;">Step5</option>
+											<option value="&quot;Step6&quot;">Step6</option>
+											<option value="&quot;Step7&quot;">Step7</option>
+											<option value="&quot;Step8&quot;">Step8</option>
+											<option value="&quot;StnO1&quot;">StnO1</option>
+											<option value="&quot;StnO2&quot;">StnO2</option>
+											<option value="&quot;STN03&quot;">STN03</option>
+											<option value="&quot;STN04&quot;">STN04</option>
+											<option value="&quot;Stream 2 /GO2&quot;">Stream 2 /GO2</option>
+											<option value="&quot;Stream 2 /HOC1&quot;">Stream 2 /HOC1</option>
+											<option value="&quot;Stream 2 /HOD2&quot;">Stream 2 /HOD2</option>
+											<option value="&quot;Stream 2 /HOSES2&quot;">Stream 2 /HOSES2</option>
+											<option value="&quot;Stream 2 /HOSES3&quot;">Stream 2 /HOSES3</option>
+											<option value="&quot;Stream 2 /HOSES4&quot;">Stream 2 /HOSES4</option>
+											<option value="&quot;Stream 2 /SGO3&quot;">Stream 2 /SGO3</option>
+											<option value="&quot;Stream 3 /DSL1&quot;">Stream 3 /DSL1</option>
+											<option value="&quot;Stream 3 /DSL2&quot;">Stream 3 /DSL2</option>
+											<option value="&quot;Stream 3 /DSL3&quot;">Stream 3 /DSL3</option>
+											<option value="&quot;Stream 3 /SL1&quot;">Stream 3 /SL1</option>
+											<option value="&quot;Stream 3 /SL2&quot;">Stream 3 /SL2</option>
+											<option value="&quot;Stream 3 /SL3&quot;">Stream 3 /SL3</option>
+											<option value="&quot;Stream 3 /SL4&quot;">Stream 3 /SL4</option>
+											<option value="&quot;Stream 3 /SL5&quot;">Stream 3 /SL5</option>
+											<option value="&quot;Stream 3 /SL6&quot;">Stream 3 /SL6</option>
+											<option value="&quot;Stream 3 /SL7&quot;">Stream 3 /SL7</option>
+											<option value="&quot;TAOO2&quot;">TAOO2</option>
+											<option value="&quot;TAOO3&quot;">TAOO3</option>
+											<option value="&quot;TAOO4&quot;">TAOO4</option>
+											<option value="&quot;TCH&quot;">TCH </option>
+											<option value="&quot;TO1&quot;">TO1</option>
+											<!-- <option value="&quot;TO1 to TO3&quot;">TO1 to TO3</option> -->
+											<option value="&quot;TO2&quot;">TO2</option>
+											<!-- <option value="&quot;TO2/TO3&quot;">TO2/TO3</option> -->
+											<option value="&quot;TO3&quot;">TO3</option>
+											<option value="&quot;TO4&quot;">TO4</option>
+											<option value="&quot;TO5&quot;">TO5</option>
+											<option value="&quot;TO6&quot;">TO6 </option>
+											<option value="&quot;TUT&quot;">TUT </option>
+											<option value="&quot;Var.&quot;">Var.</option>
+											<option value="&quot;VHS&quot;">VHS</option>
+											<option value="&quot;VMO1&ndash;VMO3&quot;">VMO1&ndash;VMO3</option>
+											<option value="&quot;VMS1&ndash;VMS4&quot;">VMS1&ndash;VMS4</option>
+											<option value="&quot;VMSS&quot;">VMSS</option>
+											<option value="&quot;VOL&quot;">VOL</option>
+											<option value="&quot;VOS1-VOS5&quot;">VOS1-VOS5</option>
+											<option value="&quot;XO1&quot;">XO1</option>
+											<option value="&quot;XO2&quot;">XO2</option>
+											<option value="&quot;XO3&quot;">XO3</option>
+										</select>
+									</li>
+
+									<li>
+										<label for="date-advertised">
+											<span class="label">Date advertised</span>
+										</label>
+										<select id="date-advertised">
+											<option>Last 24 hours</option>
+											<option>Last 3 days</option>
+											<option>Last 7 days</option>
+											<option>Last 14 days</option>
+											<option>Any time</option>
+										</select>
+									</li>
+
+								</ol>
+							</li>
+
+							<li class="footer">
+								<!-- hidden fields
+								<input type="hidden" name="" value="" /> -->
+								<ul class="actions">
+									<li><strong><input type="submit" value="Search" /></strong></li>
+									<li><a href="https://smartjobs.qld.gov.au/jobtools/jncustomsearch.jobsearch?in_organid=14904">New search</a></li>
+								</ul>
+							</li>
+
+						</ol>
+					</form>

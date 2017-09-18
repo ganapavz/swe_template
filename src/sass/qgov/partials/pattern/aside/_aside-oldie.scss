@@ -1,0 +1,20 @@
+@media screen, projection, tv, handheld {
+	.section-header p.more,
+	.section-header p.feed {
+		*height: 2em; /* IE6 is weird. */
+	}
+	*+html .section-header p.more {
+		*line-height: 2.5em; /* IE7 is weirder. */
+		*margin-top: -.5em;
+	}
+	
+	#asides .contact ul li {
+		_list-style-type: none; /* IE6 needs more convincing */
+		_list-style-image: none;
+	}
+
+	.aside.emergency-contact p {
+		_height: 3.5em; /* min-height for IE6 */
+	}
+
+}

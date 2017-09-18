@@ -1,0 +1,10 @@
+@media screen,projection,tv,handheld {
+	#search-recommended {
+		*display: inline; /* IE7 fix for double margin bug */
+	}
+
+	/* cursor not working correctly on title */
+	a .result-title {
+		*cursor: pointer;
+	}
+}

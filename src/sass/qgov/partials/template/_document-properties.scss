@@ -1,0 +1,73 @@
+/* document properties */
+#document-properties dl {
+    position: relative;
+	display: block;
+	overflow: hidden;
+	margin-top: 1em;
+}
+
+#document-properties dt,
+#document-properties dd {
+	font-weight: normal;
+	margin: 0 1em;
+	padding: 0;
+	display: inline;
+}
+
+#document-properties dt {
+}
+
+#document-properties dd {
+}
+
+/* hack to get dt and dd on same line */
+#document-properties dd:after {
+content: " ";
+display: block;
+line-height: .3em;
+}
+
+dd#document-licence {
+}
+
+@media screen,projection,tv,handheld {
+	#document-properties .box-sizing {
+		padding: 0 1.5em .5em;
+	}
+	#document-properties {
+		clear: both;
+		margin: .7em 0 0;
+	}
+	#meta-wrapper .meta-box-sizing {
+		padding: 0;
+		margin: 0;
+		overflow: visible;
+	}
+	#meta-wrapper .meta-box-sizing:after {
+		/* The following forces these elements to contain the floated elements within without relying on overflow:hidden; */
+		content: ".";
+		display: block;
+		height: 0;
+		font-size: 0;
+		clear: both;
+		visibility: hidden;
+		speak: none;
+	}
+	#meta-wrapper {
+		float: left;
+		clear: both;
+		width: 100%;
+	}
+	#meta-wrapper #document-properties,
+	#meta-wrapper #post-page-options,
+	#meta-wrapper #page-feedback {
+		font-size: 100%;
+	}
+	#meta-wrapper .meta-box-sizing .border {
+		background: $meta-wrapper-background-color;
+		@include clearfix();
+	}
+	#document-properties .box-sizing {
+		margin: 0;
+	}	
+}

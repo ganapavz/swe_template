@@ -1,0 +1,19 @@
+{
+  "name": "swe_template",
+  "version": "2.11.19",
+  "description": "Queensland Government 'single website experience' (SWE) web template and supporting assets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qld-gov-au/swe_template.git"
+  },
+  "author": "Queensland Government",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qld-gov-au/swe_template/issues"
+  },
+  "homepage": "https://github.com/qld-gov-au/swe_template#readme"
+}

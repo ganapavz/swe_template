@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+<head prefix="og: http://ogp.me/ns#">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>MAPS | Google API Common Solution | Queensland Government</title>
+
+<!--#set var="franchise" value="FRANCHISE_ID"-->
+<!--#set var="title" value="TITLE"-->
+
+<!--#include virtual="/assets/includes/global/head-assets-styles.html"-->
+<!-- PUT CUSTOM STYLES HERE -->
+
+<!--#include virtual="/assets/includes/global/head-assets-scripts.html"-->
+<!-- PUT CUSTOM SCRIPTS THAT CANNOT BE DEFERRED HERE (see footer) -->
+
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+	
+	<meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=DEPARTMENT NAME; ou=UNIT NAME" />
+	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland" />
+	<meta name="DCTERMS.created" content="YYYY-MM-DD" />
+	<meta name="DCTERMS.modified" content="YYYY-MM-DD" />
+	<meta name="DCTERMS.title" content="TITLE | FRANCHISE_NAME" />
+	<meta name="DCTERMS.alternative" content="ALTERNATIVE_TITLE" />
+	<meta name="DCTERMS.description" content="DESCRIPTION" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION" />
+	<meta name="DCTERMS.identifier" scheme="DCTERMS.URI" content="URL_OF_PAGE" />
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="AGLS_DOCUMENT_TYPE" />
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="AGLS_AUDIENCE" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+	<meta name="DCTERMS.license" scheme="DCTERMS.URI" content="https://creativecommons.org/licenses/by/4.0/" />
+
+	<!-- PUT CUSTOM METADATA HERE -->
+
+	<style>
+		#app-viewport-tools-search {margin: 1em; text-align: center;}
+		#app-viewport-tools-search h2{text-align: left;}
+		#app-viewport-tools-search ol{margin: 0 .5em 0 0; min-width: 15em; list-style-type: none;}
+		#app-viewport-tools-search ol li{width: 100%;}
+		#app-viewport-tools-search label{display: inline-block;	min-width: 10em;}
+		#app-viewport-tools-search input{margin: .3em;}
+		#app-viewport-tools-search #key-sectors{font-size: .8em; margin: 1em 0;}
+		#app-viewport-tools-search #key-sectors ul{margin: 0 1em;}
+		#app-viewport-tools-search #key-sectors ul li{display: block; text-align: left;}
+		#app-viewport-tools-search #key-sectors label{position: relative; padding-right: .3em; margin: 0 .3em 0.6em; border: 1px solid #CCC; border-radius: 1.3em; background-color: #FFF; max-width: 85%;}
+		#app-viewport-tools-search #key-sectors label i{position: absolute; top: 0px; left: 0px;}
+		#app-viewport-tools-search #key-sectors label span{margin: 0 0em 0em 1.7em; word-break: break-word;	max-width: 90%;}
+		#app-viewport-tools-search .actions{text-align: center;}
+		#app-viewport-tools-search .actions input{padding: .3em;}
+		#app-viewport-tools-search a.all{display: inline-block; margin-top: 0.4em;}
+
+		#search-results,#view-result-container .key {font-size: .8em;}
+		#search-results .key a { position: relative; display: inline-block; text-decoration: none; padding-right: .3em; margin: .3em; border: 1px solid #CCC; border-radius: 1.3em; }
+		#search-results .key a i { font-size: .8em; position: absolute; top: 0px; left: 0px;	}
+		#search-results .key a span { margin: 0 0em 0em 1.7em;	}
+
+		.key .fa {color: #FFF; padding: .2em; width: 1.5em; height: 1.5em; line-height: inherit; text-align: center; border-radius: 100%; text-shadow: 1px 1px rgba( 0, 0, 0, 0.5 ); font-size: 0.8em;}
+		#key-sectors a {display: inline-block; margin: .2em;}
+
+		.key i.fa-flask         { background: #A162D4 }
+		.key i.fa-wrench        { background: #646464 }
+		.key i.fa-cutlery       { background: #50C35F }
+		.key i.fa-medkit        { background: #F70606 }
+		.key i.fa-laptop        { background: #5961A5 }
+		.key i.fa-cogs          { background: #272736 }
+		.key i.fa-bolt          { background: #F9803A }
+		.key i.fa-leaf          { background: #46802B }
+		.key i.fa-fighter-jet   { background: #08BFE3 }
+		.key i.fa-suitcase      { background: #793408 }
+		.key i.fa-dollar        { background: #034D46 }
+		.key i.fa-h-square      { background: #A70000 }
+		.key i.fa-group         { background: #0056F8 }
+		.key i.fa-sun-o         { background: #FCC90D }
+		.key i.fa-bug           { background: #E55255 }
+		.key i.fa-cog           { background: #7C533D }
+		.key i.fa-bus       	{ background: #68A2FF }
+
+		#view-result-container h2 {padding-right: 2em;}
+		#view-result-container .photo {display: block;float: right;width: 46%;height: auto;min-height: 150px;margin-left: .5em;text-align: center;background-color: #FFF;}
+		#view-result-container .key a {position: relative;color: #000;display: inline-block;text-decoration: none;padding: 0px;padding-right: .3em;margin: .3em;border: 1px solid #CCC;border-radius: 1.3em;background-color: #FFF; }
+		#view-result-container .key a span {display: inline;padding: 0px;margin: .3em .3em .3em 1.7em; }
+		#view-result-container .key a i {position: absolute;top: 0px;left: 0px;font-size: .8em; }
+
+		.map-popup h4 {font-size: 15px;}
+		.map-popup p {margin: 18px 0;}
+		.map-popup .key {margin: 1em 0;}
+		.map-popup .key a {text-decoration: none;padding-right: .3em;margin: .3em;}
+		.map-popup i.fa {height: 22px;width: 22px;font-size: 15px;}
+		.map-popup i.fa:before {vertical-align: sub;}
+		.map-popup .key a span {display: none;}
+	</style>
+</head>
+
+<body id="qld-gov-au" class="residents">
+
+	<!--#include virtual="/assets/includes/global/header.html"-->
+
+	<div id="page-container"><div class="max-width">
+		<div id="breadcrumbs">
+			<h2>You are here:</h2>
+			<ol>
+				<!--#include virtual="/assets/includes/global/breadcrumb-citizen.html"-->
+				<li><a href="/FRANCHISE_URL/">FRANCHISE_NAME</a></li>
+				<!-- PUT TOPIC/THEME BREADCRUMBS HERE -->
+				<li class="last-child">TITLE</li>
+			</ol>
+		</div>
+
+		<div id="content-container" class="qgov-maps">
+			<div id="content">
+				<div class="article"><div class="box-sizing"><div class="border" id="article">
+					<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+					<h1>Maps Title</h1>
+					<!--#include virtual="/assets/includes/dynamic/counters/map-template.html"-->
+					<input id="data-url" type="hidden" data-set="scd" data-url="https://data.qld.gov.au/dataset/science-capability-directory/resource/8b9178e0-2995-42ad-8e55-37c15b4435a3">
+					
+
+					<!-- About -->
+					<div id="about-directory">
+
+						<p>The Queensland Science Capability Directory provides information on the State’s key
+							research capabilities, science expertise, and collaboration and investment
+							opportunities. The Directory is searchable by research sector, key topics,
+							geographic location and name.</p>
+					</div>
+					<!-- ##################### -->
+
+					<!--#include virtual="/assets/includes/dynamic/counters/search-results-container.html"-->
+					<!--#include virtual="/assets/includes/dynamic/counters/view-result.html"-->
+					<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+
+					<!-- PUT YOUR PAGE CONTENT HERE -->
+
+
+				</div></div></div><!-- end .article, .box-sizing, .border -->
+			</div><!-- end #content -->
+
+			<div id="asides"><div class="box-sizing"><div class="border">
+				<!--#include virtual="/assets/includes/global/global-aside.html"-->
+				<!--#include virtual="/assets/includes/dynamic/counters/search-form-scd.html"-->
+				<div class="aside summary-directory"></div>
+				<!-- PUT YOUR ASIDES HERE -->
+
+			</div></div></div><!-- end #asides, .box-sizing, .border -->
+
+			<div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+				<div id="document-properties"><div class="box-sizing">
+					<dl>
+						<dt class="visuallyhidden">Licence</dt>
+						<dd id="document-licence">
+							<!--#include virtual="/assets/includes/global/licence-cc-by.html"-->
+						</dd>
+
+						<dt>Last updated</dt>
+						<dd>D MONTH_NAME YYYY</dd>
+					</dl>
+				</div></div>
+
+				<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+			</div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+		</div><!-- end #content-container -->
+
+		<div id="nav-section">
+			<div class="box-sizing">
+				<h2><a href="THEME_OR_TOPIC_URL">THEME_OR_TOPIC_NAME</a></h2>
+				<ul>
+					<!-- PUT YOUR MENU HERE -->
+				</ul>
+			</div>
+		</div>
+
+	</div></div><!-- end #page-container, .max-width -->
+
+
+<!--#include virtual="/assets/includes/global/footer-page.html"-->
+<!-- CUSTOM SCRIPTS -->
+
+<!--#include virtual="/assets/includes/global/footer-stats.html"-->
+<script type="text/javascript">
+	var qg.swe.customMapScript = function(){
+		if(Object.keys($.url().param()).length>0) {
+            $('.aside.summary-directory').html($('#about-directory').html()).show();
+            $('#about-directory').html('').hide();
+            searchResultsParent.removeClass('visuallyhidden');
+        }
+        else {
+            searchResultsParent.addClass('visuallyhidden');
+            if($('#about-directory').html()){$('#about-directory').show();}else if($('.aside.summary-directory').html()){$('#about-directory').html($('.aside.summary-directory').html()).show();}           //VG show summary in content if search results doesnt exists
+            $('.aside.summary-directory').html('').hide();   //VG hide summary in aside bar if search results doesnt exists
+        }
+        searchForm.on('click','.all',function (event) {
+            event.preventDefault();
+            searchForm.find('ol').not('.footer-section').find('input').not(':hidden, :submit').not('input[type=checkbox]').not('input[type=radio]').add('select').val('');
+            searchForm.find('input[type=checkbox]').prop('checked', false);
+            searchForm.find('input[type=radio]').prop('checked', false);
+            History.pushState( { search: {query: ''} }, baseTitle, '?query=' );
+            event.preventDefault();
+            return false;
+        });
+        $('#clear-all').on('click',function(event){  //Clear search form
+            window.location = window.location.pathname; //VG to go to landing page
+            event.preventDefault();
+        });
+
+        //remove element if data not present
+        if($('#view-result-container').length>0){
+            $('#view-result-container').find('.centre-list').each(function(){if($(this).find('li').length===0){$(this).prev().remove();$(this).remove();}});  //to delete the headings of list items which has no data
+        }
+	}
+</script>
+
+</body>
+</html>

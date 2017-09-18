@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Example page | FRANCHISE | Queensland Government</title>
+
+	<!--#set var="franchise" value=""-->
+	<!--#set var="title" value="Example page"-->
+	<!--#set var="licence" value="http://creativecommons.org/licenses/by/3.0/au/"-->
+	<!--#include virtual="/assets/includes/global/head-assets.html"-->
+
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+
+	<meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=DEPARTMENT NAME; ou=UNIT NAME" />
+	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland" />
+	<meta name="DCTERMS.created" content="2010-11-04" />
+	<meta name="DCTERMS.modified" content="2011-03-05" />
+	<meta name="DCTERMS.title" content="Example page | FRANCHISE" />
+	<meta name="DCTERMS.alternative" content="Parking permits" />
+	<meta name="DCTERMS.description" content="DESCRIPTION" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION" />
+	<!--#include virtual="/assets/includes/global/head-meta-identifier.html"-->
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="guidelines" />
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+	<meta name="DCTERMS.license" scheme="DCTERMS.URI" content="https://creativecommons.org/licenses/by/4.0/" />
+
+	<link rel="stylesheet" href="https://www.getinvolved.qld.gov.au/gi/css/jquery-ui.swe.css" media="all" type="text/css" />
+	<link rel="stylesheet" href="https://www.getinvolved.qld.gov.au/gi/css/jquery-ui.plugins.css" media="all" type="text/css" />
+	<link rel="stylesheet" href="https://www.getinvolved.qld.gov.au/gi/css/gi.css" media="all" type="text/css" />
+	<link rel="stylesheet" href="https://www.getinvolved.qld.gov.au/gi/css/gi-swe.css" media="all" type="text/css" />
+	<!--[if IE 7]><link rel="stylesheet" href="https://www.getinvolved.qld.gov.au/gi/css/gi-ie7.css" media="all" type="text/css"/><![endif]-->
+	<!--[if IE 8]><link rel="stylesheet" href="https://www.getinvolved.qld.gov.au/gi/css/gi-ie8.css" media="all" type="text/css"/><![endif]-->
+	<script type="text/javascript" src="https://www.getinvolved.qld.gov.au/gi/js/common.js"></script>
+	<script type="text/javascript" src="https://www.getinvolved.qld.gov.au/gi/js/messages.js"></script>
+	<script type="text/javascript">
+	var maxlength = {
+		demographicsPrivacyNotice: 4000,
+		documentDescription: 200,
+		historyComment: 255,
+		metadataClosedText: 4000,
+		metadataDecidedText: 4000,
+		metadataDescription: 150,
+		metadataKeywords: 400,
+		metadataOpenText: 4000,
+		metadataSubmissions: 600,
+		metadataTitle: 100,
+		ownerPostalAddress: 200,
+		postComment: 4000,
+		questionInstructionInstruction: 1000,
+		questionLabel: 500,
+		questionRatingInstruction: 400,
+		surveyDescription: 4000,
+		surveyExitMessage: 2000,
+		surveyNextMessage: 2000,
+		surveyTitle: 64
+	};
+	var contextPath = '/gi';
+	</script>
+	<script type="text/javascript" src="https://www.getinvolved.qld.gov.au/gi/js/public/survey.js"></script>
+	<script type="text/javascript" src="https://www.getinvolved.qld.gov.au/gi/js/jquery.autogrow.js"></script>
+	<script type="text/javascript" src="https://www.getinvolved.qld.gov.au/gi/js/jquery.maxlength.js"></script>
+
+	<script type="text/javascript">
+	$(function() {
+		// Relevancy checks
+		$('div.q23402').find('select,input:radio,input:checkbox').change(function() {
+			$('#g2552').toggle(!($(this).is(':hidden') || !inList(this, ['no']))).
+			find('select,input:radio,input:checkbox').change();
+			$('#g2552').
+			find('.otherSpecify').hide();
+		});
+		var field = $('div.q23402').find('select,input:checked');
+		$('#g2552').toggle(!(field.is(':hidden') || !inList(field.first(), ['no'])));
+	});
+	</script>
+</head>
+
+<body id="qld-gov-au">
+	<!-- noindex -->
+	<!--[if lt IE 9]><script type="text/javascript">jQuery && jQuery.transformer({addClasses:true});</script><![endif]-->
+
+	<div id="access">
+		<h2>Skip links and keyboard navigation</h2>
+		<ul>
+			<li>
+				<a href="#content">Skip to content</a>
+			</li>
+			<!-- <li><a href="#nav-site">Skip to site navigation</a></li>
+			<li><a href="#footer">Skip to footer</a></li> -->
+			<li id="access-instructions">
+				<a href="https://www.qld.gov.au/help/accessibility/keyboard.html#section-aria-keyboard-navigation">Use tab and cursor keys to move around the page (more information)</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="header-wrapper">
+		<div id="header">
+			<div id="header-bg"></div>
+			<div class="box-sizing">
+				<div class="max-width">
+					<h2>Site header</h2>
+
+					<div id="qg-coa">
+						<a href="https://www.qld.gov.au/">
+							<!--[if gte IE 7]><!-->
+							<img src="https://www.qld.gov.au/assets/v2/images/skin/qg-coa.png" width="287" height="50" alt="Queensland Government home" />
+							<!--<![endif]-->
+							<!--[if lte IE 6]><img src="https://www.qld.gov.au/assets/v2/images/skin/qg-coa-ie6.png" width="287" height="50" alt="Queensland Government home" /><![endif]-->
+							<img src="/assets/v2/images/skin/qg-coa-print.png" class="print-version" alt="" />
+						</a>
+					</div>
+
+					<ul id="tools">
+						<li class="nav-contact">
+							<a accesskey="4" href="https://www.qld.gov.au/contact-us/">Contact us</a>
+						</li>
+						<li class="last-child" id="header-search">
+							<form action="https://find.search.qld.gov.au/s/search.html" id="search-form">
+								<div>
+									<input type="hidden" name="form" value="simple-adv" />								
+									<label for="search-query">Search website</label>
+									<input accesskey="5" type="search" name="query" id="search-query" size="27" value="" />
+									<input id="search-button" type="image" src="/assets/v2/images/skin/button-search.png" value="Search" />
+									<input type="hidden" name="num_ranks" value="10" />
+									<input type="hidden" name="tiers" value="off" />
+									<input type="hidden" name="collection" value="qld-gov" />
+									<input type="hidden" name="profile" value="get-involved" />
+									<input type="hidden" name="form" value="get-involved" />
+								</div>
+							</form>
+						</li>
+					</ul>
+
+					<div id="nav-site">
+						<ul>
+							<li class="nav-residents">
+								<a href="https://www.qld.gov.au/queenslanders/">For Queenslanders</a>
+							</li>
+							<li class="nav-business">
+								<a href="http://www.business.qld.gov.au/">Business and industry</a>
+							</li>
+							<!--<li class="nav-non-residents">
+				<a href="https://www.qld.gov.au/non-residents/">For non-residents</a>
+			</li>-->
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- endnoindex -->
+
+	<div id="page-container">
+		<div class="max-width">
+			<div id="breadcrumbs">
+				<h2>You are here:</h2>
+				<ol>
+					<li class="nav-home">
+						<a href="https://www.qld.gov.au/">Queensland Government home</a>
+					</li>
+
+					<li>
+						<a href="/">Get involved</a>
+					</li>
+					<li>
+						<a href="/gi/home.html" id="j_id32">Your say</a>
+					</li>
+					<li>
+						<a href="/gi/maintenance/home.html" id="j_id35">ConsultQLD</a>
+					</li>
+					<li>
+						<a href="/gi/maintenance/consultation/list.html" id="j_id37">Consultations</a>
+					</li>
+					<li>
+						<a href="/gi/maintenance/consultation/dashboard.html?consultationId=1851&amp;cid=3168" id="j_id39">QPS ICMC Client Satisfaction Survey</a>
+					</li>
+					<li class="last-child">QPS ICMC Client Satisfaction Survey (Preview)</li>
+				</ol>
+			</div>
+
+			<div id="content-container">
+				<div id="content">
+					<div class="article">
+						<div class="box-sizing">
+							<div class="border">
+
+
+								<!-- Global alert -->
+
+								<div></div>
+								<h1>QPS ICMC Client Satisfaction Survey (Preview)</h1>
+								<p>
+									<p>
+										Welcome to the Queensland Police Service Intelligence, Counter-Terrorism
+										<br />and Major Events Command Client Satisfaction Survey</p>
+									<p>
+										What is the purpose of this survey?
+										<br />The purpose of this survey is to collect information regarding the services provided by the Intelligence, Counter-Terrorism and Major Events Command (ICMC), including State Intelligence, Security and Counter-Terrorism Group and the Covert and Specialist Operations Group. The information you provide will be used, where appropriate, to improve the services provided by ICMC. It is intended this survey will be conducted bi-annually.</p>
+									<p>
+										Am I required to identify myself?
+										<br />The information you provide will be collated and disseminated in a way that results reported will not be able to be linked back to any individual. Your responses will be treated anonymously unless you indicate otherwise at the end of the survey.</p>
+									<p>
+										Where can I obtain further information about this evaluation?
+										<br />Should you require any additional information before participating in this survey, or you believe there is someone in your command/region/organisation who is better suited to complete the survey, please contact the ICMC Research Officer on telephone (07) 3364 4561 or email ICMCexternalaccount@police.qld.gov.au.</p>
+									<p>
+										Do I have to participate?
+										<br />Participation is encouraged, however is entirely voluntary.</p>
+									<p>
+										Who will be invited to participate in this survey?
+										<br />This survey will be distributed to persons within the Queensland Police Service and in external agencies who would be expected to have dealings with ICMC.</p>
+									<p>
+										How long will the survey take to complete?
+										<br />The survey should only take about 10 minutes of your time to complete.</p>
+									<p>
+										<br />Thank you for your participation.</p>
+								</p>
+								<form id="consultationResponse" name="consultationResponse" method="post" action="/gi/maintenance/consultation/survey/question/preview.html" enctype="application/x-www-form-urlencoded">
+									<input type="hidden" name="consultationResponse" value="consultationResponse" />
+									<p>Fields marked with
+										<span class="required">*</span>must be completed.
+									</p>
+									<fieldset id="g2551" class="group">
+										<legend>Test</legend>
+										<div class="Choice q23402" id="consultationResponse:group:0:question:0:answerCR">
+
+											<div class="row">
+												<fieldset class="cue survey">
+													<legend class="fieldLabel">
+														<span class="label">
+															<noscript>1.</noscript>test progressive disclosure</span>
+														<span class="required">&nbsp;</span>
+													</legend>
+													<div class="fieldValue">
+														<span class="hint"></span>
+														<div id="consultationResponse:group:0:question:0:answerCR:j_id108" class="middle">
+															<table>
+																<tr>
+																	<td>
+																		<input name="consultationResponse:group:0:question:0:answerCR:j_id109" id="consultationResponse:group:0:question:0:answerCR:j_id109:0" value="yes" type="checkbox" />
+																		<label for="consultationResponse:group:0:question:0:answerCR:j_id109:0">yes</label>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<input name="consultationResponse:group:0:question:0:answerCR:j_id109" id="consultationResponse:group:0:question:0:answerCR:j_id109:1" value="no" type="checkbox" />
+																		<label for="consultationResponse:group:0:question:0:answerCR:j_id109:1">no</label>
+																	</td>
+																</tr>
+															</table>
+														</div>
+													</div>
+												</fieldset>
+											</div>
+										</div>
+									</fieldset>
+									<fieldset id="g2552" class="group">
+										<legend>SECTION 3: SATISFACTION WITH ICMC (a) Services/Products</legend>
+										<noscript>
+											<p class="relevancy">Please answer the questions in this group only if you answered 'no' to question 1.
+											</p>
+										</noscript>
+										<div class="Rating Horizontal q23403" id="consultationResponse:group:1:question:0:answerRH">
+
+											<div class="row">
+												<fieldset class="cue survey">
+													<legend class="fieldLabel">
+														<span class="label">
+															<noscript>2.</noscript>Please rate each of the following based on your experience with ICMC in the last six months:</span>
+														<span class="required">&nbsp;</span>
+													</legend>
+													<div class="fieldValue">
+														<span class="hint"></span>
+														<fieldset class="horizontal">
+															<legend class="fieldLabel">
+																<span class="label">Provision of effective assistance and specialist support appropriate to the request.</span>
+																<span class="required">
+																	<abbr title="Required">*</abbr>
+																</span>
+															</legend>
+															<table>
+																<tr>
+																	<td>
+																		<input type="radio" name="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154" id="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154:0" value="Very Satisfied" />
+																		<label for="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154:0">Very Satisfied</label>
+																	</td>
+																	<td>
+																		<input type="radio" name="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154" id="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154:1" value="Satisfied" />
+																		<label for="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154:1">Satisfied</label>
+																	</td>
+																	<td>
+																		<input type="radio" name="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154" id="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154:2" value="Neither Satisfied nor Dissatisfied" />
+																		<label for="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154:2">Neither Satisfied nor Dissatisfied</label>
+																	</td>
+																	<td>
+																		<input type="radio" name="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154" id="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154:3" value="Dissatisfied" />
+																		<label for="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154:3">Dissatisfied</label>
+																	</td>
+																	<td>
+																		<input type="radio" name="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154" id="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154:4" value="Very Dissatisfied" />
+																		<label for="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154:4">Very Dissatisfied</label>
+																	</td>
+																	<td>
+																		<input type="radio" name="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154" id="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154:5" value="Not Applicable" />
+																		<label for="consultationResponse:group:1:question:0:answerRH:subq:0:j_id154:5">Not Applicable</label>
+																	</td>
+																</tr>
+															</table>
+															<br />
+														</fieldset>
+													</div>
+												</fieldset>
+											</div>
+										</div>
+									</fieldset>
+									<div id="consultationResponse:j_id407">
+
+										<div class="row">
+											<span class="fieldLabel">
+												<span class="label"></span>
+												<span class="required">&nbsp;</span>
+											</span>
+											<div class="fieldValue">
+												<span class="hint"></span>
+												<input type="submit" name="consultationResponse:j_id407:j_id414" value="Done" class="primary" />
+												<script language="JavaScript" type="text/javascript">
+												document.forms['consultationResponse'].onkeypress = new Function("event", "{var keycode;if (window.event) keycode = window.event.keyCode;else if (event) keycode = event.which;else return true;if (keycode == 13) { document.getElementById('consultationResponse:j_id407:j_id414').click();return false; } else return true; }");
+												</script>
+											</div>
+										</div>
+									</div>
+									<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id33:j_id34" />
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- end .article, .box-sizing, .border -->
+				</div>
+				<!-- end #content -->
+
+				<div id="asides">
+					<div class="box-sizing">
+						<div class="border">
+							<!--#include virtual="/assets/includes/global/global-aside.html"-->
+
+							<div class="aside emergency-contact">
+								<p>If you are in a crisis situation, call
+									<span class="tel">13 74 68</span>
+								</p>
+							</div>
+
+							<!--#include virtual="/assets/includes/global/aside-disaster-alert.html" -->
+
+							<!--#include virtual="/assets/includes/global/aside-contact-qgov.html" -->
+
+							<div class="aside story">
+								<h2>Dave’s story</h2>
+								<div class="cut-in">
+									<img src="assets/eg-dave-story.jpg" alt="" />
+								</div>
+								<p>
+									<strong>Kids in Far North Queensland have 2 new exciting playgrounds to explore.</strong>
+								</p>
+								<p>The SugarWorld All Abilities Playground in Edmonton, south of Cairns, includes an accessible swing set, bird’s nest swing, a bamboo maze and a sensory space with outdoor musical instruments.</p>
+							</div>
+
+							<div class="aside your-say">
+								<h2>Have your say</h2>
+								<p>… on
+									<a href="#">changes to page title legislation</a>.</p>
+							</div>
+
+							<div class="aside tip">
+								<h2>Did you know…</h2>
+								<p>A
+									<a href="http://www.disabilityparking.gov.au/">national disability parking scheme</a>is being rolled out across Australia?</p>
+							</div>
+
+							<div class="aside search">
+								<form>
+									<h2>Search SmartJobs</h2>
+									<p>Search inputs here.</p>
+								</form>
+							</div>
+
+
+
+							<div class="aside subscribe">
+								<h2>Subscribe</h2>
+								<p>Subscribe for updates using the
+									<a href="#">news feed</a>
+								</p>
+							</div>
+
+							<div class="aside">
+								<p>Download the following:</p>
+								<ul>
+									<li>
+										<a href="../../docs/cue-template-change-log.pdf" class="download">
+											<span class="title">Downloadable document</span>
+											<span class="meta">(PDF, 72KB)</span>
+										</a>
+									</li>
+									<li>
+										<a href="../../docs/cue-template-change-log.rtf" class="download">
+											<span class="title">Downloadable document</span>
+											<span class="meta">(RTF, 50KB)</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+
+
+							<div class="aside feedback">
+								<h2>Tell us what you think</h2>
+								<p>
+									<a href="#page-feedback">Fill in the feedback section</a>and let us know what you think of the pages so far and what you would like to see in the future.</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- end #asides, .box-sizing, .border -->
+
+				<div id="meta-wrapper">
+					<div class="meta-box-sizing">
+						<div class="border">
+
+							<div id="document-properties">
+								<div class="box-sizing">
+									<dl>
+										<dt class="visuallyhidden">Licence</dt>
+										<dd id="document-licence">
+											<a href="http://creativecommons.org/licenses/by/3.0/au/" rel="license" title="Text available under Creative Commons Attribution 3.0 Australia (CC BY 3.0) licence">
+												<img src="/assets/v2/images/licences/by-80x15.png" alt="Creative Commons Attribution 3.0 Australia (CC BY 3.0)" />
+											</a>
+										</dd>
+
+										<dt>Last updated</dt>
+										<dd>5 March 2012</dd>
+									</dl>
+								</div>
+							</div>
+
+							<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+						</div>
+					</div>
+				</div>
+				<!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+			</div>
+			<!-- end #content-container -->
+
+			<!--#include virtual="/examples/nav/transport.html"-->
+
+		</div>
+	</div>
+	<!-- end #page-container, .max-width -->
+
+	<!--#include virtual="/assets/includes/global/footer.html"-->
+
+</body>
+
+</html>

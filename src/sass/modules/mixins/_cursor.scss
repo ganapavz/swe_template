@@ -1,0 +1,10 @@
+
+@mixin cursor($cursor: pointer) {
+	cursor: $cursor;
+	pointer-events: auto;
+}
+
+@mixin cursor-disabled() {
+	cursor: default;
+	pointer-events: none;
+}

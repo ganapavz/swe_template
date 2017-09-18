@@ -1,0 +1,45 @@
+<h2>Initiatives summary</h2>
+<ul>
+	<li><strong id="initiatives-number">Loading…</strong> ICT-enabled initiatives&mdash;<strong id="initiatives-completed-percentage">Loading…</strong> complete</li>
+	<li><strong id="initiatives-budget">Loading…</strong> budget&mdash;<strong id="initiatives-spent">Loading…</strong> spent</li>
+	<li>Reporting cycle: <strong id="initiatives-reporting-cycle">Loading…</strong></li>
+	<li>Date data current at: <strong id="date-data-approved">Loading…</strong></li>
+	<li>Inclusions: <strong id="initiatives-inclusions">Loading…</strong></li>
+	<li>Exclusions: <strong id="initiatives-exclusions">Loading…</strong></li>
+</ul>
+
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var datafile = "<!--#echo encoding="entity" var="data" -->",
+		otherfile = "<!--#echo encoding="entity" var="other" -->"
+	;
+
+	// load data lib
+	swe.load({ name: 'data', url: 'data.js' });
+
+	function getSetData( sql, container, units ) {
+
+		// configure chart
+		swe.data({
+			container: container,
+			formats: units,
+			sql: sql,
+			type: 'text'
+		});
+	}
+
+	getSetData('SELECT count(*) from \"' + datafile + '\"', 'initiatives-number', '' );
+	getSetData('SELECT avg("Percentage complete") from \"' + datafile + '\"', 'initiatives-completed-percentage', { avg: '%' } );
+	getSetData('SELECT sum("Original total estimated expenditure") from \"' + datafile + '\"', 'initiatives-budget', { sum: '$' } );
+	getSetData('SELECT sum("Actual cost to date") from \"' + datafile + '\"', 'initiatives-spent', { sum: '$' } );
+	getSetData('SELECT \"Reporting cycle\" as cycle from \"' + otherfile + '\"', 'initiatives-reporting-cycle', '' );
+	getSetData('SELECT to_char(\"Date data current at\", \'DD\/MM\/YYYY\') as approveddate from \"' + otherfile + '\"', 'date-data-approved', '' );
+	getSetData('SELECT \"Inclusions\" from \"' + otherfile + '\"', 'initiatives-inclusions', '' );
+	getSetData('SELECT \"Exclusions\" from \"' + otherfile + '\"', 'initiatives-exclusions', '' );
+	
+}( jQuery, qg.swe ));
+
+//--></script><!-- end -->

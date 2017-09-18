@@ -1,0 +1,24 @@
+<script id="list-template" type="text/x-handlebars-template">
+    <div class="services-list">
+        <h2 class="search-results-summary">
+            Displaying <strong>{{items.length}}</strong> services
+        </h2>
+        {{#each items.type}}
+        <div class="service-type">
+            <div class="header">
+                <h3>{{title}}</h3>
+                <span class="service-icon">
+                    <img src="/assets/images/services/{{image}}.jpg" alt="{{title}}"/>
+                </span>
+            </div>
+            <ul>
+                {{#each services}}
+                <li>
+                    <a href="{{[service-url]}}">{{service}}</a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        {{/each}}
+    </div>
+</script>

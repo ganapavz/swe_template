@@ -1,0 +1,74 @@
+/* ASIDES */
+
+/* Default aside */
+.aside {
+  color: $aside-color;
+  padding: 1.8em 2em 1em;
+  overflow: hidden;
+  margin: 0;
+  @include font-rem(0.9);
+
+  h2, h3, .section-header h2 {
+    color: $aside-h2-color;
+    line-height: 1.3em;
+  }
+
+  h3 {
+    margin-top: 0.6em;
+  }
+
+  h2, .section-header h2 {
+    @include font-rem(1.4);
+    font-weight: 700;
+    margin-top: 0.5em;
+  }
+
+  // links
+  a {
+    color: $aside-link-color;
+  }
+
+  a:visited {
+    color: $aside-link-visited-color;
+  }
+
+  li a {
+    text-decoration: none;
+  }
+
+  li a:focus,
+  li a:hover {
+    text-decoration: underline;
+  }
+
+  li a.button:focus,
+  li a.button:hover {
+    text-decoration: none;
+  }
+
+  .news-feature,
+  .events,
+  .facebook-updates,
+  .twitter-updates {
+    background: $qgov-lightBlue-gray;
+  }
+
+  p.tweet-text, 
+  p.facebook-messageBody, 
+  p.date {
+    padding: 0;
+  }
+}
+
+/* aside in butterfly lightbox */
+
+#jb-window .aside {
+  margin: 0;
+}
+
+/* related promotions aside */
+
+#related-promotions .aside h2 {
+  position: static;
+  padding-left: 0;
+}

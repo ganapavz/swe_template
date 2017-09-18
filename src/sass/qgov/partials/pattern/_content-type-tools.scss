@@ -1,0 +1,127 @@
+/* tool pattern */
+.tool {
+	margin: 1em 0 1em 40px;
+	border: 1px solid $tool-border-color;
+	padding: 0 1em 0 50px;
+	background: $tool-background-color;
+	position: relative;
+}
+.tool .actions {
+	background: $tool-actions-background-color;
+	margin: 0 -1em 0 -50px;
+	padding: 1em;
+	text-align: center;
+}
+.tool h3 img {
+	position: absolute;
+	left: -40px;
+	_margin-left: -50px; /* IE6 positioning (balance 50px padding) */
+}
+
+
+/* apps/tools content type */
+
+/* lightbox tweaks */
+#jb-window-inner.tool-lightbox {
+	background: transparent;
+}
+#jb-window-inner .tool {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* tab tweaks */
+#tool-sections {
+	.viewport {
+		background-position: 100% 100%;
+		background-repeat: no-repeat;
+	}
+	.control {
+		padding: 1em 1em 1em 42px;
+	}
+	.controlset a {
+		background-repeat: no-repeat;
+		background-position: 7px 50%;
+	}
+	.section-header {
+		@extend %visually-hidden;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		// to fix height calculations
+		overflow: hidden;
+	}
+
+	// tabs are taller (with icons)
+	&.narrow .tabs {
+		.show,
+		.current {
+			height: 3.5em;
+		}
+		.narrow {
+			height: 3.5em;
+			a {
+				padding-top: 1em;
+				padding-bottom: 1em;
+			}
+		}
+	}
+}
+
+/* tab icons */
+#tab-headspace-button {
+	background-image: url("../images/skin/icon-headspace.png");
+}
+#tab-health-button {
+	background-image: url("../images/skin/icon-health.png");
+}
+#tab-money-button {
+	background-image: url("../images/skin/icon-money.png");
+}
+#tab-transport-button {
+	background-image: url("../images/skin/icon-transport.png");
+}
+#tab-safety-button {
+	background-image: url("../images/skin/icon-safety.png");
+}
+
+
+/* icons pattern */
+.icon {
+	display: block;
+	text-align: center;
+	width: 100px;
+	margin: 1em;
+	float: left;
+	background: url("../images/skin/bg-apps-dropshadow.png") 50% 68px no-repeat;
+	_background: transparent; /* IE6 does not support transparent PNGs, 8-bit transparency not suitable for shadow */
+}
+.icon:link, .icon:visited, .icon:hover, .icon:active {
+	text-decoration: none;
+}
+.icon img {
+	width: 75px;
+	height: 75px;
+	margin: 0 auto;
+}
+.icon:hover {
+	background-position: 50% 70px;
+}
+.icon:hover img {
+	@include rotate( -5deg );
+}
+.icon .link-text {
+	display: block;
+	color: $icon-link-text-color;
+	font-size: 90%;
+	/*margin: .5em 0;*/
+}
+
+
+/* TODO move to IE fixes stylesheet? */
+.viewport .content li {
+	/* IE6/7 FIXES */
+	*zoom: 1;
+	*float: left;
+}

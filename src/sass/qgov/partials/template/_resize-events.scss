@@ -1,0 +1,22 @@
+@media screen,projection,tv,handheld {
+
+	/* ResizeEvents Required CSS... */
+	.resize-events-watcher {
+		display: block;
+		height: auto;
+		width: auto;
+		margin: 0;
+		padding: 0;
+		clear: both;
+	}
+	.resize-events-watcher:after {
+		visibility: hidden;
+		display: block;
+		content: "";
+		clear: both;
+		height: 0;
+	}
+	* html .resize-events-watcher             { zoom: 1; }
+	*:first-child+html .resize-events-watcher { zoom: 1; }
+
+}

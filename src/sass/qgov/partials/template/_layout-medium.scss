@@ -1,0 +1,686 @@
+@media screen, projection, tv, handheld {
+
+  // ios6 svg replacement
+  .ios6,
+  .no-svg {
+    #qg-logo img,
+    #qg-coa img {
+      display: none;
+    }
+
+    #qg-logo a,
+    #qg-coa a {
+      background: url('../images/skin/qg-coa-bg-medium.png') no-repeat;
+      display: inline-block;
+      width: 244px;
+      height: 41px;
+    }
+
+    &.retina {
+      #qg-logo a,
+      #qg-coa a {
+        background: url('../images/skin/qg-coa-bg-medium-retina.png') no-repeat;
+        background-size: 244px 41px;
+      }
+    }
+  }
+
+  body #access {
+    margin-bottom: 0;
+  }
+
+  a {
+    display: inline;
+    white-space: normal;
+    padding: 0;
+  }
+
+  #header .max-width {
+    position: relative;
+  }
+
+  #qg-logo,
+  #qg-coa {
+    position: absolute;
+    top: em(2);
+    left: 0;
+    z-index: 10;
+    margin-left: em(46);
+
+    img {
+      width: 244px;
+      height: 41px;
+    }
+  }
+
+  #breadcrumbs {
+    ol {
+      padding: 0 em(48);
+    }
+
+    a {
+      padding: 0;
+    }
+  }
+
+  // ui controls
+
+  #ui-controls {
+    margin-top: 0.5em;
+    margin-right: em(46);
+
+    li {
+      margin-right: 0;
+
+      a {
+        width: em(24);
+        height: em(24);
+      }
+    }
+
+    #show-search {
+      @include fonticon($fa-var-search, 0.1, 1.5);
+      margin-right: em(23);
+    }
+
+    #show-menu {
+      @include fonticon($fa-var-bars, 0.2, 1.5);
+    }
+  }
+
+  #cart-controls {
+    margin: 0;
+    margin-right: em(130);
+    float: none;
+    position: absolute;
+    top: em(28);
+    right: 0;
+    z-index: 10;
+  }
+
+  #banner #ui-controls {
+    margin-top: 0.5em;
+  }
+
+  #show-search,
+  #show-menu {
+    &:before {
+      font-size: 1.5rem;
+    }
+  }
+
+  // hide things before we set the properties
+
+  #tools,
+  #nav-site {
+    display: none;
+  }
+
+  #tools {
+    margin: em(80) 0 0;
+    padding: 0 em(50);
+    clear: both;
+    float: none;
+
+    li {
+      clear: both;
+      float: none;
+      display: block;
+      margin: 0;
+    }
+
+  }
+
+  #header-search {
+    clear: both;
+    float: none;
+    max-height: $search-form-layout-medium-height;
+    // overflow: hidden;
+  }
+
+  #search-form {
+    background: $white;
+    width: auto;
+    margin-top: 0;
+    padding: 0 $search-form-layout-medium-height 0 0;
+
+    #search-query {
+      border: 1px solid $white;
+      font-size: 1.66em;
+      margin-right: 10%;
+      padding: 0.55em 1em 0.6em;
+    }
+    .listbox {
+      border-color: $white;
+    }
+
+    input#search-button,
+    button#search-button,
+    button#search-button:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: $header-search-button-background-color;
+      color: $header-search-button-color;
+    }
+
+    input#search-button {
+      border: 1px solid $header-search-button-border-color;
+    }
+
+    input#search-button,
+    button#search-button:before {
+      width: auto;
+      height: auto;
+      padding: 0.8em;
+    }
+
+    input#search-button {
+      padding: 1.4em;
+    }
+
+    button#search-button {
+      width: 0;
+      height: $search-form-layout-medium-height;
+      padding-left: $search-form-layout-medium-height;
+      @include fonticon($fa-var-search, 1.33, 1.6);
+    }
+
+  }
+  #banner {
+    #tools {
+      margin-top: 2.8em;
+    }
+    #search-form {
+      margin-top: 0.3em;
+    }
+  }
+
+  // navigation sitewide
+
+  #nav-site {
+    background: $nav-site-background-color;
+    font-size: 100%;
+    padding: 0 em(50);
+
+    ul {
+      padding: 0 0 em(12);
+    }
+
+    ul, li, a {
+      clear: both;
+      float: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      color: $nav-section-color;
+      //margin: 0 em(12);
+      padding: em(8) 0;
+    }
+  }
+
+  #nav-section {
+    background: $nav-section-background-color;
+    color: $nav-section-color;
+    padding-top: 0;
+
+    .box-sizing {
+      overflow: hidden;
+      @include font-rem(1);
+      margin: 0 em(25);
+      padding: em(20) 0;
+    }
+
+    h2, h3 {
+      color: $nav-section-headings-color;
+      font-size: 1.33em;
+      font-weight: bold;
+      line-height: 1.3em;
+      margin: 0;
+      padding: 0 em(19);
+    }
+
+    ul {
+      list-style: none;
+      margin: em(10) 0 0;
+      padding: 0;
+    }
+
+    ul ul,
+    ul ol {
+      padding: 0 1.4em 0 1.5em;
+      margin: 0;
+    }
+
+    ul li {
+      @include font-rem(1);
+      padding: 0.1em em(25) 0.2em;
+      margin: 0;
+    }
+
+    ul li.current-page {
+      padding-right: 20px;
+    }
+
+    ul li.future {
+      background: darken($nav-section-background-color, 5);
+    }
+
+    ul a {
+      padding: 0.5em 0;
+      margin: 0;
+      display: block;
+      background: none;
+      @include fonticon($fa-var-chevron-right, 1, 0.7);
+    }
+
+    a .page-number {
+      margin: 0 1em 0 0;
+    }
+  }
+
+  #page-feedback {
+    @include font-rem(1);
+    padding: 0;
+    margin: 0 em(50);
+
+    .status {
+      width: 76%;
+    }
+
+    form {
+      margin: 0;
+      padding: em(20) 0;
+      width: 60%;
+    }
+  }
+
+  #breadcrumbs ol,
+  .article .box-sizing {
+    float: none;
+  }
+
+  .article, #document-properties,
+  #post-page-options, #page-feedback {
+    width: 100%;
+  }
+
+  #document-properties .box-sizing {
+    padding: em(10) em(50);
+  }
+
+  #document-properties dt,
+  #document-properties dd {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #document-properties #document-licence {
+    clear: both;
+    display: inline !important;
+    float: right !important;
+    margin: 0;
+  }
+
+  #post-page-options {
+    li {
+      padding: 1em 0 !important;
+    }
+
+    li.feedback {
+      padding-left: em(50) !important;
+    }
+
+    li.share {
+      padding-right: em(50) !important;
+    }
+
+    h2 {
+      display: inline-block !important;
+      padding-bottom: em(2);
+    }
+  }
+
+  /* min-height for content area */
+  #content > .article > .box-sizing > .border {
+    min-height: 25em;
+  }
+
+  .article .box-sizing .border {
+    padding: 0; /* Leave room for the section nav current page arrowhead */
+  }
+
+  .franchise-index .article .box-sizing .border,
+  .franchise-index-with-asides .article .box-sizing .border,
+  .large-application .article .box-sizing .border {
+    padding: 0; /* Extra room not needed on franchise landing page */
+  }
+
+  #qg-branding .tagline {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  /* side-by-side comparisons */
+
+  .comparison,
+  #asides .comparison {
+    float: left;
+    margin: 0;
+    width: 49%;
+    *width: 48.95% !important; /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+  }
+  .comparison-first,
+  #asides .comparison-first {
+    margin-right: 2%;
+    clear: left;
+  }
+  .comparison-last,
+  #asides .comparison-last {
+    clear: right;
+  }
+
+  /* INDEX PAGES (FRANCHISE and THEME) */
+  .franchise-index #content-container,
+  .home #content-container,
+  .franchise-index-with-asides #content-container,
+  .large-application #content-container {
+    width: 100% !important;
+  }
+
+  .theme-index #content .section,
+  .audience-index #content .section,
+  .theme-index-with-asides #content .section,
+  .franchise-index #content .section,
+  .home #content .section,
+  .franchise-index-with-asides #content .section {
+    max-width: 100%;
+  }
+
+  .theme-index #asides,
+  .audience-index #asides,
+  .franchise-index #asides {
+    border: 1px solid red; /* If you are seeing this red border, use class="theme-index-with-asides" or "franchise-index-with-asides" on the body tag */
+  }
+  .theme-index-with-asides #asides,
+  .franchise-index-with-asides #asides {
+    border: none;
+    float: right;
+    width: 100%;
+  }
+  .franchise-index-with-asides #asides {
+    width: 33%;
+    *width: 32.95% !important; /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+    margin-top: -3.9em;
+  }
+  .franchise-index-with-asides h1 {
+    width: 63.3%;
+    margin-left: -.25em;
+  }
+
+  #featured-stories .section {
+    float: left;
+    width: 50%;
+    *width: 49.95% !important; /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+    margin-top: 0;
+  }
+
+  /* Slider styles */
+
+  .slide-runner {
+    .list {
+      .section {
+        .slide {
+          padding: 0;
+          width: 85%;
+        }
+      }
+    }
+  }
+
+  /* content container */
+
+  #content-container {
+    .article .box-sizing .border {
+      margin: 0 $content-container-side-margin-large;
+      padding: 0;
+    }
+  }
+
+  /* asides */
+
+  #asides {
+    // border-top: 2px solid darken($content-container-background-color, 5);
+    padding: em(20) 0;
+    width: 100%;
+
+    .box-sizing {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box-sizing .border {
+      background: $content-container-background-color;
+      margin: 0;
+      padding: 0;
+    }
+
+    .aside {
+      // border: 1px solid darken($content-container-background-color, 5);
+      // margin: em(20) em(27);
+      padding: em(20) em(27);
+    }
+
+    .story {
+      border: 1px solid darken($content-container-background-color, 5) !important;
+      // background: darken($content-container-background-color, 5) !important;
+    }
+
+    .contact {
+      // border: 1px solid darken($asides-feedback-background-color, 5);
+    }
+  }
+
+  /* Home styles */
+  .home {
+
+    .article .box-sizing .border,
+    #content-container .article .box-sizing .border {
+      margin: 0;
+      padding: 0;
+    }
+
+    .content-row {
+      padding: em(20) 0;
+    }
+
+    .content-module {
+      margin: 0 em(50);
+    }
+
+    .section-header h2,
+    .section-header h3 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .sections {
+      margin-top: em(32);
+
+      .section ul {
+        width: 85%;
+      }
+
+      .section ul li {
+        margin-right: 0;
+      }
+    }
+
+    // main (search and questions)
+    #main {
+      min-height: em(100);
+
+      #feature-search {
+        height: em(100);
+
+        .section-header,
+        .contents {
+          margin: em(28) 0 0;
+        }
+
+        .section-header {
+          @include visuallyhidden();
+        }
+
+        .contents {
+          height: em(52);
+          width: 55%;
+          padding-right: 5%;
+
+          .search-wrapper {
+            background: $white;
+            overflow: hidden;
+          }
+
+          #search-query-primary {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    #questions {
+      margin-top: em(-164);
+      padding-top: em(76);
+
+      h2 {
+        font-size: em(24);
+
+        &:before {
+          width: em(20);
+          line-height: em(20);
+          margin-right: 0.5em;
+        }
+      }
+
+      .contents {
+        .frag-linx-content {
+          margin: 0.8em 0 !important;
+        }
+      }
+    }
+
+    // options
+
+    .options {
+      padding-bottom: 2em;
+
+      .aside,
+      .section {
+        font-size: 1em;
+        h2 {
+          font-size: 1.8em;
+        }
+      }
+
+      #my-community {
+        border: 0 none !important;
+        @include clearfix();
+        float: left;
+        width: 54%;
+
+        .contents {
+          width: 85%;
+        }
+      }
+
+      #feedback {
+        float: right;
+        width: 46%;
+      }
+
+      #weather-and-selection {
+        border-bottom: 1px solid darken($home-xx-background-color, 5);
+        padding-bottom: 1em;
+      }
+
+      #weather-and-selection,
+      .in-your-area {
+        float: none;
+        width: 100%;
+      }
+
+      .in-your-area {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  /* Undo mobile enhancements */
+  #access-instructions,
+  #fat-footer,
+  .home #services .contents,
+  .home #news .contents,
+  .home #featured .feature img,
+  .page-options,
+  .feed {
+    display: block;
+  }
+
+  /* footer */
+
+  #footer {
+    .box-sizing {
+      padding: 1em 0 4em;
+    }
+    li.legal:first-of-type {
+      border-left: none;
+    }
+  }
+
+  /* fat footer */
+
+  #fat-footer {
+    .section {
+      margin-left: em(62);
+      width: 41%;
+    }
+    #for-qldrs {
+      float: right;
+      margin-left: 0;
+      margin-right: em(58);
+    }
+    li {
+      display: block;
+      line-height: 1.5em;
+    }
+  }
+
+
+  /* Global alert */
+
+  .franchise-index #global-alert h2,
+  .franchise-index-with-asides #global-alert h2,
+  .home #global-alert h2 {
+    float: left;
+  }
+  .franchise-index #global-alert .time,
+  .franchise-index-with-asides #global-alert .time,
+  .home #global-alert .time {
+    float: left;
+    clear: left;
+    padding-left: 60px;
+  }
+  .franchise-index #global-alert .summary,
+  .franchise-index-with-asides #global-alert .summary,
+  .home #global-alert .summary {
+    background: transparent url(../images/skin/bg-global-alert-divider.png) left center no-repeat;
+    clear: none;
+    padding: 2em;
+    margin: -2em;
+    margin-left: 23.5em;
+  }
+
+}

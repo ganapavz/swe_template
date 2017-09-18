@@ -1,0 +1,699 @@
+/* 
+	Template Name: SWE
+	Description: SWE styles 2011
+	Version: 1.0.0
+	Author: Queensland Government
+	Author URI:
+*/
+
+/*
+ * Horizontal Tabs
+ *
+------------------------------------------------------------------------------------- */
+div.swe-horizontal {
+  /* The main container */
+  position: relative;
+  clear: both;
+  width: 100%; /* Set the full width */
+}
+
+/* Directional Buttons (horizontal)
+------------------------------------------------------------------------------------- */
+div.swe-horizontal > div.st_tabs a.st_prev,
+div.swe-horizontal > div.st_tabs a.st_next {
+  /* Directional buttons (previous/next) */
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 110;
+  height: 43px;
+  width: 43px;
+  text-indent: -999em;
+  border: 1px solid $slidetabs-horizontal-tabs-link-next-background-bottom;
+  outline: none;
+  background: $slidetabs-horizontal-tabs-link-prev-next-background-color url("../images/skin/arrows_h.gif") no-repeat;
+  transition: background-color .2s ease-in, color .2s ease-in, box-shadow .2s ease-in;
+}
+
+div.swe-horizontal > div.st_tabs a.st_prev {
+  /* Previous button */
+  left: 0;
+  background-position: center 15px;
+  box-shadow: 0 0.5em 0 rgba($slidetabs-horizontal-tabs-link-next-background-bottom, 0.2), 0 -0.5em 0 rgba($slidetabs-horizontal-tabs-link-next-background-bottom, 0.2), 0.5em 0 0.5em rgba($slidetabs-horizontal-tabs-link-next-background-bottom, 0.2);
+}
+
+div.swe-horizontal > div.st_tabs a.st_prev:hover {
+  /* Previous button hover */
+  background-position: center -45px;
+  background-color: $slidetabs-horizontal-tabs-prev-next-link-hover-background-color;
+}
+
+div.swe-horizontal > div.st_tabs a.st_next {
+  /* Next button */
+  right: 0;
+  background-position: center -15px;
+  border-top-right-radius: 0;
+  box-shadow: 0 .5em 0 $slidetabs-horizontal-tabs-link-next-background-bottom, 0 -.5em 0 $slidetabs-horizontal-tabs-link-next-background-top, -.5em 0 .5em $slidetabs-horizontal-tabs-link-next-box-shadow-rgba;
+}
+
+div.swe-horizontal > div.st_tabs a.st_next:hover {
+  /* Next button hover */
+  background-position: center -75px;
+  background-color: $slidetabs-horizontal-tabs-prev-next-link-hover-background-color;
+}
+
+div.swe-horizontal > div.st_tabs a.st_prev.st_btn_disabled,
+div.swe-horizontal > div.st_tabs a.st_next.st_btn_disabled {
+  /* Previous and next buttons disabled state */
+  cursor: default;
+  background-color: $slidetabs-horizontal-tabs-prev-next-link-disabled-background-color;
+  box-shadow: none;
+}
+
+div.swe-horizontal > div.st_tabs a.st_prev.st_btn_disabled {
+  /* Previous button disabled state */
+  background-position: center -105px;
+}
+
+div.swe-horizontal > div.st_tabs a.st_next.st_btn_disabled {
+  /* Next button disabled state */
+  background-position: center -135px;
+}
+
+/* Tabs (horizontal)
+------------------------------------------------------------------------------------- */
+div.swe-horizontal > div.st_tabs {
+  /* Tabs main container */
+  position: relative;
+  z-index: 100;
+  width: 100% !important;
+  height: 45px;
+  margin-bottom: -1px;
+  overflow: hidden;
+}
+
+div.swe-horizontal.st_sliding_active > div.st_tabs {
+  /* Tabs main container - sliding active (the '.st_sliding_active' class is added to the tabs main container when the tabs are 'slidable') */
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  overflow: visible;
+}
+
+div.swe-horizontal > div.st_tabs div.st_tabs_wrap {
+  /* Tabs slide-container */
+  position: relative !important; /* Don't remove: The tabs sliding position will be calculated from the tabs <ul> first parent element with position:relative */
+  width: 100%;
+}
+
+div.swe-horizontal.st_sliding_active > div.st_tabs div.st_tabs_wrap {
+  /* The '.st_sliding_active' class is added to the main container when tab sliding is activated */
+  width: auto !important;
+  margin: 0 44px; /* Adds side margins to make space for the arrow buttons */
+}
+
+div.swe-horizontal > div.st_tabs ul {
+  /* Tabs unordered list */
+  width: 10000px; /* Set to an arbitrary high value */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div.swe-horizontal > div.st_tabs ul li {
+  /* Tab list elements */
+  display: block;
+  float: left;
+  margin: 0;
+}
+
+div.swe-horizontal > div.st_tabs ul li a {
+  /* Tab links */
+  display: block;
+  height: 43px;
+  margin: 0;
+  padding: 0 28px;
+  font: 14px/43px Verdana, Arial, Helvetica, sans-serif;
+  color: $slidetabs-horizontal-tabs-list-link-color;
+  text-decoration: none;
+  outline: none;
+  border-top: .2em solid $slidetabs-horizontal-tabs-list-link-border-color;
+  border-right: .2em solid $slidetabs-horizontal-tabs-list-link-border-color;
+  background: $slidetabs-horizontal-tabs-list-link-background-color;
+  background: -moz-linear-gradient(center top, $slidetabs-horizontal-tabs-list-link-background-color, $slidetabs-horizontal-tabs-list-link-background-color);
+}
+
+div.swe-horizontal > div.st_tabs ul li a:hover {
+  /* Tabs hover state */
+  color: $slidetabs-horizontal-tabs-list-link-hover-color;
+  background: $slidetabs-horizontal-tabs-list-link-hover-background-color;
+}
+
+div.swe-horizontal > div.st_tabs ul li a.st_tab_first {
+  /* First tab element */
+  border-left: 1px solid $slidetabs-horizontal-tabs-list-link-first-border-color;
+  border-top-left-radius: 0;
+}
+
+div.swe-horizontal.st_sliding_active > div.st_tabs ul li a.st_tab_first {
+  /* First tab element (with tab sliding activated) */
+  border-left: 0 none;
+  border-top-left-radius: 0; /* Reset top-left border radius */
+}
+
+div.swe-horizontal > div.st_tabs ul li a.st_tab_last {
+  /* Last tab element */
+  border-top-right-radius: 0;
+}
+
+div.swe-horizontal.st_sliding_active > div.st_tabs ul li a.st_tab_last {
+  /* Last tab element (with tab sliding activated) */
+  border-right: 0 none;
+  border-top-right-radius: 0;
+}
+
+div.swe-horizontal > div.st_tabs ul li a.st_tab_active {
+  /* Tab active/highlighted state */
+  padding-bottom: 2px;
+  background: $slidetabs-horizontal-tabs-list-link-active-background-color;
+  color: $slidetabs-horizontal-tabs-list-link-active-color;
+}
+
+/* Content (horizontal)
+------------------------------------------------------------------------------------- */
+div.swe-horizontal > div.st_views {
+  /* Main content container */
+  position: relative;
+  height: 390px;
+  padding: 0 !important; /* No padding on this container */
+  line-height: 19px;
+  border: 1px solid $slidetabs-horizontal-views-border-color;
+  background-color: $slidetabs-horizontal-views-background-color;
+  overflow: hidden;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+div.swe-horizontal.st_sliding_active > div.st_views {
+  border-top-right-radius: 0; /* Remove top-right border radius when tab sliding is enabled */
+}
+
+div.swe-horizontal > div.st_views div.st_view {
+  /* Content containers */
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; /* Set 'border-box' box-sizing when using 100% width/height combined with margin or padding */
+  /* Background-image attributes */
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-color: transparent !important;
+  -webkit-font-smoothing: antialiased; /* Safari text rendering fix */
+}
+
+div.swe-horizontal > div.st_views div.st_view_inner {
+  /* Inner content containers */
+  padding: 10px; /* Padding for the content */
+}
+
+div.swe-horizontal > div.st_views div.st_view_first {
+  /* First content container */
+  display: block; /* Show the first content container */
+}
+
+/* Bottom-aligned Tabs (horizontal)
+------------------------------------------------------------------------------------- */
+div.swe-horizontal.align_bottom {
+  /* The main container */
+  margin-bottom: 44px; /* Set to the total height of div.st_tabs */
+}
+
+div.swe-horizontal.align_bottom > div.st_tabs a.st_prev {
+  border-bottom-left-radius: 0;
+}
+
+div.swe-horizontal.align_bottom > div.st_tabs a.st_next {
+  border-bottom-right-radius: 0;
+}
+
+div.swe-horizontal.align_bottom > div.st_tabs a.st_prev, /* Next button */
+div.swe-horizontal.align_bottom > div.st_tabs a.st_next, /* Previous button */
+div.swe-horizontal.align_bottom.st_sliding_active > div.st_tabs, /* Tabs main container (when sliding is activated) */
+div.swe-horizontal.align_bottom > div.st_tabs div.st_views {
+  /* Main content container */
+  /* Reset top border radius */
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+div.swe-horizontal.align_bottom > div.st_tabs a.st_prev {
+  /* Previous button */
+  border-bottom-left-radius: 5px;
+}
+
+div.swe-horizontal.align_bottom > div.st_tabs {
+  /* Tabs main container */
+  position: absolute; /* Absolute position the tabs container at the bottom of the main container */
+  bottom: -44px;
+  left: 0;
+  margin-bottom: 0;
+}
+
+div.swe-horizontal.align_bottom.st_sliding_active > div.st_tabs {
+  /* Tabs main container (when tab sliding is activated) */
+  border-top: 0 none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+div.swe-horizontal.align_bottom > div.st_tabs ul li a {
+  /* Tab links */
+  border-bottom: 1px solid $slidetabs-horizontal-views-list-link-border-color;
+}
+
+div.swe-horizontal.align_bottom > div.st_tabs ul li a.st_tab_first {
+  /* First tab element */
+  border-top-left-radius: 0; /* Reset top-left border radius */
+  border-bottom-left-radius: 0;
+}
+
+div.swe-horizontal.align_bottom.st_sliding_active > div.st_tabs ul li a.st_tab_first {
+  /* First tab element (when tab sliding is activated) */
+  border-bottom-left-radius: 0;
+}
+
+div.swe-horizontal.align_bottom > div.st_tabs ul li a.st_tab_active {
+  /* Tab active/highlighted state */
+  padding-bottom: 0;
+  border-top-color: $slidetabs-horizontal-views-list-link-active-border-color;
+}
+
+div.swe-horizontal.align_bottom > div.st_tabs ul li a.st_tab_last {
+  /* Last tab element */
+  border-top-right-radius: 0; /* Reset top-right border radius */
+  border-bottom-right-radius: 0;
+}
+
+div.swe-horizontal.align_bottom.st_sliding_active > div.st_tabs ul li a.st_tab_last {
+  /* Last tab element (when tab sliding is activated) */
+  border-bottom-right-radius: 0; /* Reset bottom-right border radius */
+}
+
+/* Bottom-aligned Tabs - Content */
+div.swe-horizontal.align_bottom > div.st_views {
+  /* Main content container */
+  border-bottom-left-radius: 0; /* Reset bottom border radius */
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+div.swe-horizontal.align_bottom.st_sliding_active > div.st_views {
+  border-bottom-right-radius: 0; /* Remove bottom-right border radius when sliding is 'active' */
+}
+
+/*
+ * Vertical Tabs
+ *
+------------------------------------------------------------------------------------- */
+div.swe-vertical {
+  /* The main container */
+  position: relative;
+  clear: both;
+  width: 100%; /* Set the full width */
+}
+
+/* Control Buttons (vertical)
+------------------------------------------------------------------------------------- */
+div.swe-vertical > div.st_tabs a.st_prev,
+div.swe-vertical > div.st_tabs a.st_next {
+  /* Directional buttons (previous/next) */
+  display: none;
+  float: left;
+  position: relative;
+  z-index: 100;
+  height: 32px;
+  width: 95px;
+  text-indent: -999em;
+  border: 1px solid $slidetabs-vertical-tabs-prev-next-link-border-color;
+  border-top: 0 none;
+  outline: none;
+  background: $slidetabs-vertical-tabs-prev-next-link-background-color url("../images/skin/arrows_v.gif") no-repeat;
+}
+
+div.swe-vertical > div.st_tabs a.st_prev {
+  /* Previous button */
+  margin-left: -1px;
+  border-right: 0 none;
+  background-position: center 12px;
+  border-top-left-radius: 0;
+}
+
+div.swe-vertical > div.st_tabs a.st_prev:hover {
+  /* Previous button hover */
+  background-position: center -52px;
+  background-color: $slidetabs-vertical-tabs-prev-next-link-hover-background-color;
+}
+
+div.swe-vertical > div.st_tabs a.st_next {
+  /* Next button */
+  background-position: center -20px;
+}
+
+div.swe-vertical > div.st_tabs a.st_next:hover {
+  /* Next button hover */
+  background-position: center -84px;
+  background-color: $slidetabs-vertical-tabs-prev-next-link-hover-background-color;
+}
+
+div.swe-vertical > div.st_tabs a.st_prev.st_btn_disabled,
+div.swe-vertical > div.st_tabs a.st_next.st_btn_disabled {
+  /* Previous and next buttons disabled state */
+  cursor: default;
+  background-color: $slidetabs-vertical-tabs-prev-next-link-disabled-background-color;
+}
+
+div.swe-vertical > div.st_tabs a.st_prev.st_btn_disabled {
+  /* Previous button disabled state */
+  background-position: center -116px;
+}
+
+div.swe-vertical > div.st_tabs a.st_next.st_btn_disabled {
+  /* Next button disabled state */
+  background-position: center -148px;
+}
+
+/* Tabs (vertical)
+------------------------------------------------------------------------------------- */
+div.swe-vertical > div.st_tabs {
+  /* Tabs main container */
+  position: relative;
+  z-index: 100;
+  float: left;
+  width: 193px; /* +1px for the negative right margin */
+  height: 378px;
+  margin-right: -1px;
+  border-top: 1px solid $slidetabs-vertical-tabs-border-color;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  overflow: hidden;
+}
+
+div.swe-vertical.st_sliding_active > div.st_tabs {
+  /* Tabs main container - sliding active (the '.st_sliding_active' class is added to the main container when the tabs are 'slidable') */
+  width: 192px;
+  border-left: 1px solid $slidetabs-vertical-active-tabs-border-color;
+}
+
+div.swe-vertical > div.st_tabs div.st_tabs_wrap {
+  /* Tabs slide-container */
+  position: relative !important; /* Don't remove: The tabs sliding position will be calculated from the tabs <ul> first parent element with position:relative */
+  float: left;
+  clear: both;
+}
+
+div.swe-vertical.st_sliding_active > div.st_tabs div.st_tabs_wrap {
+  /* The '.st_sliding_active' class is added to the main container when tab sliding is activated */
+  margin-left: -1px;
+}
+
+div.swe-vertical > div.st_tabs ul {
+  /* Tabs unordered list */
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+div.swe-vertical > div.st_tabs ul li {
+  /* Tab list elements */
+  position: relative;
+  float: left;
+  clear: both;
+  margin: 0;
+}
+
+div.swe-vertical > div.st_tabs ul li a {
+  /* Tab links */
+  display: block;
+  width: 171px;
+  height: 40px;
+  margin: 0;
+  padding: 14px 0 14px 20px;
+  font: 14px/18px Verdana, Arial, Helvetica, sans-serif;
+  color: $slidetabs-vertical-tabs-list-link-color;
+  text-decoration: none;
+  outline: none;
+  border-right: 1px solid $slidetabs-vertical-tabs-list-link-border-color;
+  border-bottom: 1px solid $slidetabs-vertical-tabs-list-link-border-color;
+  border-left: 1px solid $slidetabs-vertical-tabs-list-link-border-color;
+  background-color: $slidetabs-vertical-tabs-list-link-border-background-color;
+  /* Background gradient */
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($slidetabs-vertical-tabs-list-link-border-background-top), to($slidetabs-vertical-tabs-list-link-border-background-bottom)); /* Safari 4+, Chrome 1-9 */
+  background-image: -webkit-linear-gradient(top, $slidetabs-vertical-tabs-list-link-border-background-top, $slidetabs-vertical-tabs-list-link-border-background-bottom); /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+  background-image: -moz-linear-gradient(top, $slidetabs-vertical-tabs-list-link-border-background-top, $slidetabs-vertical-tabs-list-link-border-background-bottom); /* Firefox 3.6+ */
+  background-image: -ms-linear-gradient(top, $slidetabs-vertical-tabs-list-link-border-background-top, $slidetabs-vertical-tabs-list-link-border-background-bottom); /* IE 10+ */
+  background-image: -o-linear-gradient(top, $slidetabs-vertical-tabs-list-link-border-background-top, $slidetabs-vertical-tabs-list-link-border-background-bottom); /* Opera 11.10+ */
+}
+
+div.swe-vertical > div.st_tabs ul li a:hover {
+  /* Tabs hover state */
+  color: $slidetabs-vertical-tabs-list-link-hover-color;
+  background: $slidetabs-vertical-tabs-list-link-hover-background-color;
+}
+
+div.swe-vertical > div.st_tabs ul li a.st_tab_first {
+  /* First tab element */
+  border-top-left-radius: 0;
+}
+
+div.swe-vertical.st_sliding_active > div.st_tabs ul li a.st_tab_first {
+  /* First tab element (with tab sliding activated) */
+  border-top-left-radius: 0; /* Reset top-left border radius */
+}
+
+div.swe-vertical > div.st_tabs ul li a.st_tab_last {
+  /* Last tab element */
+  border-bottom-left-radius: 0;
+}
+
+div.swe-vertical > div.st_tabs ul li a.st_tab_active {
+  /* Tab active/highlighted state */
+  position: relative;
+  z-index: 10;
+  color: $slidetabs-vertical-tabs-list-link-active-color;
+  padding-right: 2px;
+  background: $slidetabs-vertical-tabs-list-link-active-background-color;
+}
+
+div.swe-vertical > div.st_tabs ul li a span {
+  display: block;
+  clear: both;
+  font-size: 14px;
+  font-weight: normal;
+  color: $slidetabs-vertical-tabs-list-link-span-color;
+  padding-top: 3px;
+}
+
+/* Content (vertical)
+------------------------------------------------------------------------------------- */
+div.swe-vertical > div.st_views {
+  /* Main content container */
+  position: relative;
+  z-index: 5;
+  height: 377px;
+  line-height: 18px;
+  border: 1px solid $slidetabs-vertical-views-border-color;
+  background-color: $slidetabs-vertical-views-background-color;
+  overflow: hidden;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+div.swe-vertical.st_sliding_active > div.st_views {
+  /* Main content container (when tab sliding is activated) */
+  border-bottom-left-radius: 0; /* Reset the bottom-left border radius when tab sliding is activated */
+}
+
+div.swe-vertical > div.st_views div.st_view {
+  /* Content containers - NOTE: background images will be set on these containers */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: none;
+  /* Background-image attributes */
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-color: transparent !important;
+}
+
+div.swe-vertical > div.st_views div.st_view_inner {
+  /* Inner content containers - NOTE: the 'Auto Height' option uses the full height of this container to set the height */
+  overflow: hidden !important; /* Makes the element wrap around the content */
+  padding: 0; /* Padding for the content */
+}
+
+div.swe-vertical > div.st_views div.st_view_first {
+  /* First content container */
+  display: block; /* Show the first content container */
+}
+
+/* Right-aligned Tabs (vertical)
+------------------------------------------------------------------------------------- */
+div.swe-vertical.align_right > div.st_tabs a.st_prev {
+  /* Previous button */
+  margin-left: 0;
+  border-top-left-radius: 0; /* Reset top-left border radius */
+}
+
+div.swe-vertical.align_right > div.st_tabs a.st_next {
+  /* Previous button */
+  margin-right: -1px;
+  border-top-right-radius: 0;
+}
+
+div.swe-vertical.align_right > div.st_tabs {
+  /* Tabs main container */
+  float: right;
+  margin-left: -1px;
+  margin-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  /* Reset left border radius */
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+div.swe-vertical.align_right.st_sliding_active > div.st_tabs {
+  /* Tabs main container - sliding active (the '.st_sliding_active' class is added to the main container when the tabs are 'slidable') */
+  border-right: 1px solid $slidetabs-vertical-right-tabs-border-color;
+  border-left: 0 none;
+}
+
+div.swe-vertical.align_right.st_sliding_active > div.st_tabs div.st_tabs_wrap {
+  /* The '.st_sliding_active' class is added to the main container when tab sliding is activated */
+  margin-left: 0;
+}
+
+div.swe-vertical.align_right > div.st_tabs ul li a {
+  /* Tab links */
+  border-right: 1px solid $slidetabs-vertical-right-tabs-list-link-border-color;
+}
+
+div.swe-vertical.align_right > div.st_tabs ul li a.st_tab_first {
+  /* First tab element */
+  border-top-left-radius: 0; /* Reset top-left border radius */
+  border-top-right-radius: 0;
+}
+
+div.swe-vertical.align_right.st_sliding_active > div.st_tabs ul li a.st_tab_first {
+  /* First tab element (with tab sliding activated) */
+  border-top-right-radius: 0; /* Reset top-left border radius */
+}
+
+div.swe-vertical.align_right > div.st_tabs ul li a.st_tab_last {
+  /* Last tab element */
+  border-bottom-left-radius: 0; /* Reset bottom-left border radius */
+  border-bottom-right-radius: 0;
+}
+
+div.swe-vertical.align_right > div.st_tabs ul li a.st_tab_active {
+  /* Tab active/highlighted state */
+  padding-right: 0;
+  border-left-color: $slidetabs-vertical-right-tabs-list-link-active-border-color;
+}
+
+div.swe-vertical.align_right > div.st_views {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0; /* Reset top-right border radius */
+}
+
+div.swe-vertical.align_right.st_sliding_active > div.st_views {
+  /* Main content container (when tab sliding is activated) */
+  border-bottom-right-radius: 0; /* Reset bottom-right border radius */
+}
+
+/*
+ * Media Queries
+ *
+------------------------------------------------------------------------------------- */
+@media screen and (max-width: 760px) {
+  /* Horizontal Tabs
+  ------------------------------------------------------------------------------------- */
+
+  /* Tabs (horizontal) */
+  div.swe-horizontal > div.st_tabs ul li a {
+    padding-right: 21px;
+    padding-left: 21px;
+  }
+
+  /* Vertical Tabs
+  ------------------------------------------------------------------------------------- */
+
+  /* Arrow Buttons (vertical) */
+  div.swe-vertical > div.st_tabs a.st_prev,
+  div.swe-vertical > div.st_tabs a.st_next {
+    width: 50px;
+    border-left: 0 none;
+  }
+  div.swe-vertical > div.st_tabs a.st_prev {
+    /* Previous button */
+    margin-left: 0;
+    border-right: 1px solid $slidetabs-vertical-tabs-prev-next-link-border-color;
+  }
+
+  /* Tabs (vertical) */
+  div.swe-vertical > div.st_tabs {
+    width: 52px;
+    height: 353px;
+  }
+  div.swe-vertical.st_sliding_active > div.st_tabs {
+    /* Tabs main container - sliding active (the '.st_sliding_active' class is added to the main container when the tabs are 'slidable') */
+    width: 51px;
+  }
+  div.swe-vertical > div.st_tabs ul li a {
+    width: 50px;
+    padding: 0;
+    text-indent: -1000em;
+    background: $slidetabs-vertical-tabs-list-link-border-background-color url("../images/skin/tab_dots.gif") no-repeat center 18px;
+  }
+  div.swe-vertical > div.st_tabs ul li a:hover {
+    /* Tabs hover state */
+    background-color: $slidetabs-vertical-tabs-list-link-hover-background-color;
+  }
+  div.swe-vertical > div.st_tabs ul li a.st_tab_active {
+    padding-right: 1px;
+    background: $slidetabs-vertical-tabs-list-link-active-background-color url("../images/skin/tab_dots.gif") no-repeat center -64px;
+  }
+  div.swe-vertical.align_right > div.st_tabs ul li a.st_tab_active {
+    /* Tab active/highlighted state */
+    padding-right: 0;
+  }
+
+  /* Content (vertical) */
+  div.swe-vertical > div.st_views {
+    height: 352px;
+  }
+
+  /* Right-aligned Tabs (vertical) */
+  div.swe-vertical.align_right > div.st_tabs a.st_next {
+    border-top-right-radius: 0;
+  }
+  div.swe-vertical.align_right > div.st_tabs a.st_prev,
+  div.swe-vertical.align_right > div.st_tabs a.st_next {
+    border-left: 1px solid $slidetabs-vertical-right-tabs-link-prev-border-color;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Tabs (horizontal) */
+  div.swe-horizontal > div.st_tabs ul li a {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+}

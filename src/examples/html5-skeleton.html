@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head prefix="og: http://ogp.me/ns#">
+	<meta charset="UTF-8">
+	<title>TITLE | FRANCHISE_NAME | Queensland Government</title>
+
+<!--#set var="franchise" value="FRANCHISE_ID"-->
+<!--#set var="title" value="TITLE"-->
+<!--#include virtual="/assets/includes/global/head-assets.html"-->
+
+<!-- PUT CUSTOM STYLES HERE -->
+<!-- PUT CUSTOM SCRIPTS THAT CANNOT BE DEFERRED HERE (see footer) -->
+
+	<meta name="description" content="DESCRIPTION">
+	<meta name="keywords" content="KEYWORDS">
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/">
+	
+	<meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=DEPARTMENT NAME; ou=UNIT NAME">
+	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland">
+	<meta name="DCTERMS.created" content="YYYY-MM-DD">
+	<meta name="DCTERMS.modified" content="YYYY-MM-DD">
+	<meta name="DCTERMS.title" content="TITLE | FRANCHISE_NAME">
+	<meta name="DCTERMS.alternative" content="ALTERNATIVE_TITLE">
+	<meta name="DCTERMS.description" content="DESCRIPTION">
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT">
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION">
+	<meta name="DCTERMS.identifier" scheme="DCTERMS.URI" content="URL_OF_PAGE">
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text">
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="AGLS_DOCUMENT_TYPE">
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="AGLS_AUDIENCE">
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland">
+	<meta name="DCTERMS.license" scheme="DCTERMS.URI" content="http://creativecommons.org/licenses/by/3.0/au/">
+
+	<!-- PUT CUSTOM METADATA HERE -->
+</head>
+
+<body id="qld-gov-au" class="residents">
+
+<!--#include virtual="/assets/includes/global/header.html"-->	
+
+	<div id="page-container">
+		<nav id="breadcrumbs">
+			<h2>You are here:</h2>
+			<ol>
+<!--#include virtual="/assets/includes/global/breadcrumb-citizen.html"-->
+				<li><a href="/FRANCHISE_URL/">FRANCHISE_NAME</a></li>
+				<!-- PUT TOPIC/THEME BREADCRUMBS HERE -->
+				<li class="last-child">TITLE</li>
+			</ol>
+		</nav>
+
+		<div id="content-container">
+			<main id="content">
+				<article>
+
+<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+					<h1>TITLE</h1>
+
+<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+					<!-- PUT YOUR PAGE CONTENT HERE -->
+
+				</article><!-- end .article -->
+			</main><!-- end #content -->
+
+			<div id="asides">
+				<!--#include virtual="/assets/includes/global/global-aside.html"-->
+
+				<!-- PUT YOUR ASIDES HERE -->
+
+			</div><!-- end #asides -->
+
+			<footer id="meta-wrapper">
+				<dl id="document-properties">
+					<dt class="visuallyhidden">Licence</dt>
+					<dd id="document-licence">
+						<a href="http://creativecommons.org/licenses/by/3.0/au/" rel="license" title="Text available under Creative Commons Attribution 3.0 Australia (CC BY 3.0) licence"><img src="/assets/v2/images/licences/by-80x15.png" alt="Creative Commons Attribution 3.0 Australia (CC BY 3.0)"/></a>
+					</dd>
+
+					<dt>Last updated</dt>
+					<dd>D MONTH_NAME YYYY</dd>
+				</dl>
+
+<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+			</footer><!-- end #meta-wrapper -->
+
+		</div><!-- end #content-container -->
+
+		<nav id="nav-section">
+			<h2><a href="THEME_OR_TOPIC_URL">THEME_OR_TOPIC_NAME</a></h2>
+			<ul>
+				<!-- PUT YOUR MENU HERE -->
+			</ul>
+		</nav>
+
+	</div><!-- end #page-container -->
+
+
+<!--#include virtual="/assets/includes/global/footer-page.html"-->
+<!-- CUSTOM SCRIPTS -->
+<!--#include virtual="/assets/includes/global/footer-stats.html"-->
+
+</body>
+</html>

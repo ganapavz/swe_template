@@ -1,0 +1,59 @@
+#what-next {
+	overflow: hidden;
+	clear: both;
+	margin-top: 1.5em;
+}
+#what-next .border {
+	padding: 0;
+	margin: 0;
+	/*background: #fff url(../images/skin/bg-content-fade.png) left top repeat-x;*/
+}
+#what-next {
+	clear: both;
+}
+
+@media screen,projection,tv,handheld {
+	/* what's next section */
+	#what-next .border {
+		background: $what-next-border-background-color;
+		background: linear-gradient(top, $what-next-border-background-top 4.2em, $what-next-border-background-color);
+		background: -moz-linear-gradient(top, $what-next-border-background-top 4.2em, $what-next-border-background-color);
+		background: -webkit-linear-gradient(top, $what-next-border-background-top 4.2em, $what-next-border-background-color);
+	    margin: 0 !important;
+	    padding: 0 !important;
+		}
+	#what-next h2 {
+		background: $what-next-h2-background-color;
+		color: $what-next-h2-color;
+		padding: .357em .714em; /* 140% */
+		margin: 0;
+	}
+	#what-next ul {
+		margin: 0;
+	}
+	#what-next li {
+		list-style: none;
+	}
+	#what-next a {
+		display: block;
+		padding: .5em;
+		text-decoration: none;
+		position: relative;
+		padding-left: 2.5em;
+		margin-left: -2em;
+		background: url("../images/skin/bullet-small-list.png") 1em 1em no-repeat;
+	}
+	#what-next li:nth-child(2n) a {
+		background-color: $what-next-li-nth-child-2n-link-background-color;
+	}
+	#what-next a:active,
+	#what-next a:hover {
+		text-decoration: underline;
+	}
+	#what-next a:link {
+		color: $what-next-link-color;
+	}
+	#what-next a:visited {
+		color: $what-next-link-visited-color;
+	}
+}

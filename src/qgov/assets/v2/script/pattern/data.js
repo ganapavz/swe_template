@@ -1,0 +1,436 @@
+/*globals qg*/
+(function( $, qg ) {
+	'use strict';
+
+	// assume: qg.swe, qg.data.get
+
+	// add data to a page as text, a list or chart
+	qg.swe.loaded( 'data', function( config ) {
+		config = $.extend({
+			env: 'data.qld.gov.au',
+			title: 'Data',
+			headings: [],
+			rowHeadings: true,
+			group: 'col', // note: anything other than 'row' becomes col anyway
+			formats: {},
+			type: 'bar',
+			legend: true,
+			supplementary: [],
+			colours: [ '#077DAD', '#78B802', '#C53960', '#6C1DC6', '#E8A717', '#C2D73E', '#2AC05C' ],
+			delimiter: ', '
+		}, config );
+
+		var callback = {};
+
+
+		// colour keywords
+		if ( typeof config.colours === 'string' ) {
+			switch ( config.colours.toLowerCase() ) {
+			case 'accessible':
+				config.colours = [ '#313695', '#4575B4', '#74ADD1', '#ABD9E9', '#FEE090', '#FDAE61', '#F46D43', '#D73027', '#A50026' ];
+				break;
+
+			case 'rag':
+				config.colours = [ '#d80000', '#ffb400', '#007c00' ];
+				break;
+
+			case 'priority':
+				config.colours = [ '#F46D43', '#FDAE61', '#313695', '#ABD9E9' ];
+				break;
+
+			case 'initiatives':
+				config.colours = [ '#313695' ];
+				break;
+			}
+		}
+
+		
+		callback.text = function( data ) {
+			var container = $( document.getElementById( config.container ));
+			// check container exists
+			if ( container.length === 0 ) {
+				$.debug( 'Element not found for data', config.container );
+				return;
+			}
+
+			// add data to page
+			if ( data.result.records.length > 0 ) {
+				container.html(
+					$.map( data.result.records, function( record ) {
+						record = $.map( record, function( value, key ) {
+							return qg.swe.template.format( value, config.formats[ key ] );
+						}).join( config.delimiter );
+						return record;
+					}).join( '\n' )
+				);
+			}
+			// trigger SWE layout reflow
+			container.trigger( 'x-height-change' );
+		};
+
+
+		callback.ul = function( data ) {
+			var container = $( document.getElementById( config.container ));
+
+			// check container exists
+			if ( container.length === 0 ) {
+				$.debug( 'Element not found for data', config.container );
+				return;
+			}
+
+			// add data to page
+			if ( data.result.records.length > 0 ) {
+				container.html(
+					'<ul class="data">' +
+						$.map( data.result.records, function( record ) {
+							record = $.map( record, function( value, key ) {
+								return qg.swe.template.format( value, config.formats[ key ] );
+							}).join( config.delimiter );
+							return '<li>' + qg.swe.template.clean( record ) + '</li>';
+						}).join( '\n' ) +
+					'</ul>'
+				);
+			}
+			// trigger SWE layout reflow
+			container.trigger( 'x-height-change' );
+		};
+
+
+		callback.dl = function( data ) {
+			var container = $( document.getElementById( config.container ));
+
+			// check container exists
+			if ( container.length === 0 ) {
+				$.debug( 'Element not found for chart', config.container );
+				return;
+			}
+
+			// add data table to page
+			var hideClass = '',
+			    rowCount = 0
+			;
+
+			container.html( '<p class="total-search-count">Displaying ' + data.result.records.length + ' search results</p>' +
+				$.map( data.result.records, function( rowData, dlHeading ) {
+					rowCount++;
+					rowData = $.map( config.headings, function( key, i ) {
+
+						hideClass = $.inArray( key, config.supplementary ) > -1 ?  ' class="supplementary"' : '';
+						if (i !== 0 ) {
+							return '<dt' + hideClass + '>' + config.headings[ i ] + '</dt><dd' + hideClass + '>' + qg.swe.template.format( rowData[ key ], config.formats[ key ], { abbr: 'both' } ) + '</dd>';
+						} else {
+							dlHeading = '<h3>' + qg.swe.template.format( rowData[ key ], config.formats[ key ], { abbr: 'both' } ) + '</h3>';
+						}
+					});
+					return '<div id="rs' + rowCount + '">' + dlHeading + '<dl>' + rowData.join( '' ) + '</dl></div>' +
+					       ( config.supplementary.length > 0 ? '<a class="more" href="#rs' + rowCount + '">Show more…</a>' : '' );
+				}).join( '' )
+			);
+
+			// setup lightbox
+			$( 'a.more', container ).butterfly();
+
+			// trigger SWE layout reflow
+			container.trigger( 'x-height-change' );
+			// for tabs in ICT dashboards
+			try {
+				container.closest( '#tabs' ).slidetabs().setContentHeight();
+			}
+			catch (x) {}
+		};
+
+
+	    callback.chart = function( data ) {
+            var container = $( document.getElementById( config.container )),
+                even = true,
+                table, w, h, rows, cols,
+                chart, series, grid, xaxis, yaxis, legend
+            ;
+
+            // check container exists
+            if ( container.length === 0 ) {
+                $.debug( 'Element not found for chart', config.container );
+                return;
+            }
+
+            // add tabs and data table to page
+            container.html(
+                '<div class="section st_view"><div class="st_view_inner"><table class="chart">' +
+                        '<caption>' + qg.swe.template.clean( config.title ) + '</caption>' +
+                        '<thead>' + $.map( config.headings, function( h ) { return '<th scope="col">' + qg.swe.template.clean( h ) + '</th>'; } ).join( '' ) + '</thead>' +
+                        '<tbody>' +
+                        $.map( data.result.records, function( rowData ) {
+                            var tagName;
+                            rowData = $.map( config.headings.slice( 0 ), function( key, i ) {
+                                tagName = config.rowHeadings && i === 0 ? 'th' : 'td';
+                                return '<' + tagName + ( tagName === 'th' ? ' scope="row"' : '' ) + '>' +
+                                           qg.swe.template.format( rowData[ key ], config.formats[ key ] ) + '</' + tagName + '>';
+                            });
+                            return '<tr' + (( even = ! even ) ? ' class="even"' : '' ) + '>' + rowData.join( '' ) + '</tr>';
+                        }).join( '' ) +
+                        '</tbody>' +
+                '</table></div></div>'
+            );
+
+            // put table into a tab section
+            table = container.find( 'table' );
+            table.closest( '.section' ).generateId( config.container + '-table' );
+            // get height (this won't change inside tabs)
+            // min height of 250px (pie charts broken in FF at 140px height)
+            h = Math.max( table.height(), 250 );
+            // don't get width here, padding inside tabs will reduce it
+
+            // chart section
+            chart = $( '<div class="section st_view"><div class="st_view_inner"/></div>' )
+                .generateId( config.container + '-chart' )
+                .prependTo( container )
+            ;
+            // chart container (within chart section)
+            chart = $( '<div/>' ).appendTo( chart.find( '.st_view_inner' ));
+
+            // add st_views wrapper class so individual tab containers are within one container wrapper
+            container.find( '.st_view' ).wrapAll( '<div class="st_views"></div>' );
+
+            // tab control bar
+            container
+            .addClass( 'slidetabs swe-horizontal' )
+            .prepend(
+                    '<div class="st_tabs"><div class="st_tabs_wrap"><ul class="st_tabs_ul">' +
+                            '<li><a href="#' + chart.closest( '.section' ).attr( 'id' ) + '">Chart</a></li>' +
+                            '<li><a href="#' + table.closest( '.section' ).attr( 'id' ) + '">Table</a></li>' +
+                    '</ul></div></div>'
+            );
+
+			// find the id in each section st_view, copy this id into a class on the same div
+			container.find( '.st_view' ).each(function() {
+				var tabID = $( this ).attr( 'id' );
+				$( this ).addClass( tabID );
+				$( this ).removeAttr( 'id' );
+			});
+
+            // get width within tabs
+            w = chart.width();
+            // set height (required for flot)
+            chart.height( h );
+            rows = $( 'tbody tr', table ).length;
+            cols = $( 'tbody tr', table ).eq( 0 ).find( 'td' ).length; // don't count th
+
+            // TODO make this a plugin that can run on any existing HTML table
+
+			// prep data for chart
+			xaxis = {};
+			yaxis = {
+				tickDecimals: 0
+			};
+
+			// this code works for:
+			// - column headings = legend
+			// - row headings = xaxis (groups of bars)
+			data = $.map( $( 'tbody tr', table ), function( tr ) {
+				return [ $.map( $( 'th, td', tr ), function( td ) {
+					td = $( td );
+					var text = td.text();
+					if ( td.is( 'td' )) {
+						text = parseFloat( text.replace( /[^0-9\.]+/g, '' ));
+					}
+					return text;
+				})];
+			});
+			// console.log( 'table data', data );
+
+			switch ( config.type ) {
+			case 'line':
+			case 'bar':
+				// grouping data
+				if ( config.group !== 'row' ) {
+					// [ a, b, c ] => { label: a, data: [[ x1, b ], [ x2, c ]] }
+					data = $.map( data, function( d, row ) {
+						return {
+							label: d.shift(),
+							bars: { order: row },
+							data: $.map( d, function( value, col ) {
+								return [[ col, value ]];
+							})
+						};
+					});
+					// col headings = x axis labels
+					xaxis = {
+						ticks: $.map( $( 'thead th', table ).slice( 1 ), function( th, col ) {
+							return [[ col, $( th ).text() ]];
+						})
+					};
+
+				} else {
+					// group by row
+					// row 1 = [ th, a, b ] -> { label: thead > th, data: [[ x1, a ], [ x2, m ], [ x3, x ]] }
+					// row 2 = [ th, m, n ]
+					// row 3 = [ th, x, y ]
+					// note: assume row headings
+					data = $.map( data[ 0 ].slice( 1 ), function( d, col ) {
+						return {
+							label: $( 'thead th', table ).eq( col + 1 ).text(),
+							bars: { order: col },
+							data: $.map( data, function( rowData, row ) {
+								var value = rowData[ col + 1 ];
+								return [[ row, value ]];
+							})
+						};
+					});
+					// row headings = x axis labels
+					xaxis = {
+						ticks: $.map( $( 'tbody th', table ), function( th, row ) {
+							return [[ row, $( th ).text() ]];
+						})
+					};
+				}
+				if ( config.type === 'line' ) {
+					series = {
+						lines: {
+							show: true,
+							lineWidth: 1
+						},
+						points: { show: false },
+						shadowSize: 0
+					};
+				} else {
+					// assume bar chart
+					series = {
+						bars: {
+							show: true,
+							// lineWidth: 0,
+							barWidth: 0.5 / data.length,
+							align: 'center',
+							fill: 1.0
+						}
+					};
+				}
+				xaxis.tickColor = '#EFEDEE';
+				xaxis.autoscaleMargin = 0.5 / data.length / data[ 0 ].data.length;
+				legend = { show: !! config.legend };
+				if ( typeof config.legend === 'string' && $( config.legend ).length > 0 ) {
+					legend.container = config.legend;
+				}
+				break;
+
+			case 'pie':
+				// assume first cell is headings
+				// [ a, b, c ] => { label: a, data: [ b, c ] }
+				data = $.map( data, function( d ) {
+					return {
+						label: d.shift(),
+						data: d
+					};
+				});
+				series = {
+					pie: {
+						show: true,
+						radius: 0.75,
+						label: {
+							show: true,
+							radius: 0.85,
+							formatter: function( label, series ) {
+								return Math.round( series.percent ) + '%';
+							},
+							background: { color: 'transparent' }
+						}
+					}
+				};
+
+				grid = {
+					hoverable: true,
+					clickable: true
+				};
+
+				if ( !! config.legend ) {
+					legend = {
+						show: true,
+						// include % value in legend labels
+						labelFormatter: function( label, series ) {
+							if ( series.percent === 0 ) {
+								return null;
+							}
+							return label + ' (' + Math.round( series.percent ) + '%)';
+						},
+						backgroundColor: 'transparent'
+					};
+				} else {
+					legend = { show: false };
+				}
+				break;
+			}
+
+			// create chart
+			$.plot( chart, data, {
+				series: series,
+				grid: grid,
+				colors: config.colours,
+				xaxis: xaxis,
+				yaxis: yaxis,
+				legend: legend
+			});
+
+			// check pie labels for overlap
+			if ( config.type === 'pie' ) {
+				(function() {
+					var labels = $( '.pieLabel', chart ), label, prevLabel;
+					if ( labels.length > 1 ) {
+						for ( var i = 0; i < labels.length; i++ ) {
+							label = labels.eq( i );
+							prevLabel = labels.eq( i - 1 );
+							if ( ! (
+								// bounding box collision detection
+								// http://devmag.org.za/2009/04/13/basic-collision-detection-in-2d-part-1/
+								label.offset().top + label.height() < prevLabel.offset().top ||
+								label.offset().top > prevLabel.offset().top + prevLabel.height() ||
+								label.offset().left > prevLabel.offset().left + prevLabel.width() ||
+								label.offset().left + label.width() < prevLabel.offset().left
+							)) {
+								// move this label above the previous one
+								label.css( 'top', prevLabel.position().top - ( label.height() + 1 ));
+							}
+						}
+					} else {
+						// 1 label = 100%
+						labels.addClass( 'pieLabel100' );
+					}
+				}());
+			}
+
+            // initialise tabs (this is so chart size will be correct)
+            container.slidetabs({
+                ajaxSpinner: true,
+                externalLinking: true,
+                autoHeight: true,
+                autoHeightSpeed: 100,
+                touchSupport: true,
+                tabsShowHash: true,
+                responsive: true,
+                contentAnim: 'slideH',
+                tabsSaveState: true,
+                urlLinking: true,
+                contentEasing: '',
+				tabsEasing: ''
+            });
+
+			// trigger SWE layout reflow
+			container.trigger( 'x-height-change' );
+		};
+
+
+		// charts
+		callback.pie = callback.chart;
+		callback.line = callback.chart;
+		callback.bar = callback.chart;
+
+
+		// default callback type
+		if ( typeof callback[ config.type ] !== 'function' ) {
+			config.type = 'ul';
+		}
+
+		// get data from CKAN
+		qg.data.get( config.env, config.sql, callback[ config.type ] );
+	});
+
+
+}( jQuery, qg ));

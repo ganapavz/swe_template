@@ -1,0 +1,221 @@
+.franchise-index h1,
+.franchise-index-with-asides h1 {
+  margin: .5em 0 .3em;
+}
+
+.theme-index h1,
+.theme-index-with-asides h1 {
+  margin: .5em 0 .3em -.5em;
+}
+
+.franchise-index h1,
+.franchise-index-with-asides h1,
+.theme-index h1,
+.theme-index-with-asides h1,
+.audience-index h1,
+.topic-index h1,
+.topic-index-with-asides h1 {
+  color: $headings-top-level;
+  font-family: $lato;
+  font-weight: 900;
+  letter-spacing: .01em;
+  line-height: 1.1;
+  margin: 0.5em -.4em 0.3em;
+  padding: .5em .4em .3em;
+  clear: left;
+  @include font-rem(1.6);
+}
+
+@media screen, projection, tv, handheld {
+  #ia {
+    float: left;
+    width: 100%;
+    margin: -2em 0 1em -.5em;
+  }
+  #ia .d1 {
+    clear: none;
+    float: left;
+    padding: 0;
+    margin: 1em 0;
+    position: relative;
+  }
+  #ia .d1 .inner {
+    height: 90%;
+    margin-left: 58px;
+    margin-right: .5em;
+    padding: 1em 1em 1em 46px;
+  }
+
+  // must be more specific than default (mobile) styles
+  #ia ul a {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    text-decoration: none;
+    text-transform: none;
+    background: transparent;
+    color: $nav-link-color;
+
+    &:hover {
+      background: transparent;
+      color: $nav-link-color;
+      text-decoration: underline;
+    }
+    &:active {
+      background: transparent;
+      color: $nav-link-color;
+      text-decoration: underline;
+    }
+  }
+  #ia h2 {
+    a {
+      color: $link-color;
+      &:hover {
+        color: $link-hover-color;
+      }
+      &:active {
+        color: $link-active-color;
+      }
+    }
+  }
+
+  #ia a:focus .link-text {
+  outline: 2px solid $qg-ovt-active-qg-ovt-controls-link-keyboard-focus-outline-color; /* setting for chrome keyboard browsing */
+  }
+
+  /* no thumbnails on deep (4th level?) IA pages */
+  #ia.no-img .d1 .inner {
+    margin-left: .5em;
+    padding-left: 1em;
+  }
+
+  #ia .d1 h2 {
+    @include font-rem(1.2);
+    font-weight: 900;
+    margin: 0 1em 0 0;
+  }
+
+  #ia .d1 h2 a .link-text {
+    display: block;
+  }
+  #ia .d1 img {
+    background: $large-medium-ia-d1-img-background-color;
+    border: 1px solid $large-medium-ia-d1-img-border-color;
+    @include alpha-attribute('box-shadow', rgba($large-medium-ia-d1-img-box-shadow-rgba, 0.1), $large-medium-ia-d1-img-box-shadow-rgba, 0 0 2px 1px);
+    display: block;
+    height: 75px;
+    left: 13px;
+    top: 1em;
+    width: 75px;
+  }
+  // hide from get involved (does not .inner)
+  #ia .d1 .inner img {
+    position: absolute;
+  }
+  #ia .d1 a:hover img {
+    @include rotate(-5deg);
+    border-color: $link-hover-color;
+  }
+  #ia .d1 a:visited:hover img {
+    border-color: $large-medium-ia-d1-link-visited-hover-img-border-color;
+  }
+
+  /* Mini thumbs for high-level audience index */
+  .residents-index #ia .d1 img {
+    width: 50px;
+    height: 50px;
+    top: .7em;
+  }
+  .residents-index #ia .d1 .inner {
+    margin-left: 48px;
+    padding: 1em 1em .5em 30px;
+    min-height: 45px;
+  }
+  .residents-index #ia li.flex-grid-new-row .inner {
+    margin-left: 40px;
+  }
+
+  .audience-index #ia {
+    margin-top: 0;
+  }
+  .audience-index #ia h2,
+  .audience-index #ia h3,
+  .audience-index #ia ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .audience-index #ia h2 {
+    padding-left: .5em;
+  }
+  .audience-index #ia h3 {
+    @include font-rem(1.2);
+    font-weight: 900;
+    padding-bottom: .5em;
+  }
+  .audience-index #ia .section {
+    margin-top: .5em;
+  }
+
+  #ia .d1 ul li,
+  .home #ia ul li,
+  .home #questions ol li {
+    list-style: none;
+  	margin: .5em 0 .5em 0;
+  }
+  /* #ia .d1 p,
+  #ia .d1 ul {
+    padding: 0 1.5em 0 .8em;
+  } */
+  #ia li.no-thumb p {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  #ia .d1 p {
+    padding: .5em 1em .5em 0;
+    margin: 0;
+  }
+
+  #flex-grid ul li {
+    @include fonticon($fa-var-chevron-right, 0.8, 0.7, 1, $qgov-blue);
+    position: relative;
+    padding-left: 1em;
+    list-style: none;
+    line-height: 1.3em;
+  }
+
+  #flex-grid ul li:before {
+    position: absolute;
+    left: 0;
+    top: em(8);
+  }
+
+  /* asides within related promotions */
+  #ia-updates .aside,
+  #related-promotions .aside {
+    float: left;
+    width: 30%;
+    padding: 0 2em 0 0;
+  }
+  // clearfix for height calculations (slidetabs plugin needs this on qldalert.com)
+  #ia-updates .st_view_inner {
+    @include clearfix();
+  }
+
+  #related-promotions #featured {
+    width: 63%;
+  }
+  #ia-updates .aside,
+  #related-promotions .aside {
+    //margin: 0 .5em;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* Home styles */
+  .home #ia .section {
+    float: left;
+    width: 50%;
+    *width: 49.9% !important; /* The CSS media queries mean a hack here is the only way to include this declaration for IE 6&7 */
+  }
+}

@@ -1,0 +1,744 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=U8" />
+	<title>Customer details | Services | Queensland Government</title>
+
+	<!--#set var="franchise" value="OES"-->
+	<!--#set var="title" value="Customer details"-->
+	<!--#include virtual="/assets/includes/global/head-assets.html"-->
+
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+
+	<meta name="DCTERMS.title" content="Customer details" />
+
+	<meta name="DCTERMS.created" content="2011-08-16" />
+	<meta name="DCTERMS.modified" content="2011-08-18" />
+	<meta name="DCTERMS.title" content="Customer details | Services" />
+	<meta name="DCTERMS.description" content="DESCRIPTION" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION" />
+	<meta name="DCTERMS.identifier" scheme="DCTERMS.URI" content="https://www.smartservice.qld.gov.au/services/bill/select" />
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="service" />
+	<meta name="AGLSTERMS.serviceType" scheme="AGLSTERMS.agls-document" content="financial" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+</head>
+
+<body id="qld-gov-au" class="residents">
+
+	<!--#include virtual="/assets/includes/global/header.html"-->
+
+	<div id="page-container">
+		<div class="max-width">
+			<div id="breadcrumbs">
+				<h2>You are here:</h2>
+				<ol>
+					<!--#include virtual="/assets/includes/global/breadcrumb-services.html"-->
+					<li class="last-child">Customer details</li>
+				</ol>
+			</div>
+
+			<div id="content-container">
+				<div id="content">
+
+					<div class="article">
+						<div class="box-sizing">
+							<div class="border">
+
+								<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+								<h1>Customer details</h1>
+
+								<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+								<div class="preamble">
+
+									<ul>
+										<li>Enter billing and delivery details to continue.</li>
+										<li>Questions marked with
+											<abbr title="(required)">*</abbr>must be completed.</li>
+									</ul>
+								</div>
+
+								<form action="/payment/order/a553ab33-eadd-4e82-8272-744ef74a3362/checkout" method="post" id="checkout" class="form">
+
+									<ol class="sections">
+										<li class="section">
+											<fieldset id="contact-details">
+												<legend>
+													<span class="h2">Billing details</span>
+												</legend>
+												<div class="instructions privacy">
+													<p>Billing details assist with enquiries relating to this order.</p>
+												</div>
+												<ol class="questions">
+
+													<li class="section">
+														<fieldset>
+															<legend>
+																<span class="h3">Name</span>
+															</legend>
+															<ol class="questions slot-in">
+																<li class="group">
+																	<fieldset id="name">
+																		<legend>
+																			<span class="label">Personal name</span>
+
+																			<abbr title="(required)">*</abbr>
+																		</legend>
+																		<ol class="questions compact">
+																			<li class="input">
+																				<label for="name-title">
+																					<span class="label">Title</span>
+																				</label>
+																				<input type="text" name="form.title" size="3" maxlength="12" value="" id="name-title" />
+																			</li>
+
+																			<li class="input">
+																				<label for="name-given">
+																					<span class="label">Given name</span>
+																					<abbr title="(required)">*</abbr>
+																				</label>
+																				<input type="text" name="form.givenName" size="20" maxlength="40" value="" id="name-given" required="required" />
+																			</li>
+
+																			<li class="input">
+
+																				<label for="name-family">
+																					<span class="label">Family name</span>
+																					<abbr title="(required)">*</abbr>
+																				</label>
+																				<input type="text" name="form.familyName" size="20" maxlength="40" value="" id="name-family" required="required" />
+																			</li>
+																		</ol>
+																	</fieldset>
+																</li>
+
+																<li class="input">
+																	<label for="organisation">
+																		<span class="label">Organisation name</span>
+																	</label>
+																	<input type="text" name="form.organisationName" size="40" maxlength="200" value="" id="organisation" />
+																</li>
+
+															</ol>
+														</fieldset>
+													</li>
+
+													<li class="section">
+														<fieldset>
+															<legend>
+																<span class="h3">Contact by phone, fax or email</span>
+															</legend>
+															<ol class="questions slot-in">
+																<li class="input">
+																	<label for="contact-phone">
+																		<span class="label">Phone</span>
+
+																		<abbr title="(required)">*</abbr>
+																	</label>
+																	<input type="text" name="form.contactPhone" size="15" maxlength="20" value="" id="contact-phone" required="required" />
+																</li>
+
+																<li class="input">
+																	<label for="contact-fax">
+																		<span class="label">Fax</span>
+																		<abbr title="(required)">*</abbr>
+
+																	</label>
+																	<input type="text" name="form.contactFax" size="15" maxlength="20" value="" id="contact-fax" required="required" />
+																</li>
+
+
+																<li class="select">
+																	<ul class="choices">
+																		<li>
+																			<label for="copy-of-receipt-requested">
+																				<input type="checkbox" name="form.copyOfReceiptRequested" id="copy-of-receipt-requested" checked="checked" value="true" />Send a copy of receipt and any items via email</label>
+																		</li>
+																	</ul>
+																</li>
+
+																<li class="input">
+																	<label for="contact-email">
+
+																		<span class="label">Email</span>
+																		<abbr title="(required)">*</abbr>
+																	</label>
+																	<input type="text" name="form.contactEmail" size="40" maxlength="100" value="" id="contact-email" required="required" />
+																</li>
+
+																<li class="input">
+																	<label for="contact-email-confirm">
+																		<span class="label">Confirm email</span>
+
+																		<abbr title="(required)">*</abbr>
+																		<span class="hint">Please retype to confirm</span>
+																	</label>
+																	<input type="text" name="form.contactEmailConfirm" size="40" maxlength="100" value="" id="contact-email-confirm" required="required" />
+																</li>
+															</ol>
+														</fieldset>
+													</li>
+
+													<li class="section">
+														<fieldset>
+															<legend>
+																<span class="h3">Contact by post</span>
+															</legend>
+															<ol class="questions slot-in">
+																<li class="group">
+																	<fieldset id="contact-address">
+																		<legend>
+																			<span class="label">Postal address</span>
+																		</legend>
+
+																		<ol class="questions">
+
+																			<li class="input">
+																				<label for="contact-address-line1">
+																					<span class="label">Address line 1</span>
+																					<abbr title="(required)">*</abbr>
+																				</label>
+																				<input type="text" name="form.contactAddress.line1" size="30" maxlength="50" value="" id="contact-address-line1" required="required" />
+																			</li>
+
+																			<li class="input">
+																				<label for="contact-address-line2">
+																					<span class="label">Address line 2 (optional)</span>
+																				</label>
+																				<input type="text" id="contact-address-line2" name="form.contactAddress.line2" value="" size="30" maxlength="50" />
+																			</li>
+
+																			<li class="input">
+																				<label for="contact-address-line3">
+																					<span class="label">Address line 3 (optional)</span>
+																				</label>
+																				<input type="text" id="contact-address-line3" name="form.contactAddress.line3" value="" size="30" maxlength="50" />
+
+																			</li>
+
+																			<li class="input">
+																				<label for="contact-suburb">
+																					<span class="label">Town or suburb</span>
+																					<abbr title="(required)">*</abbr>
+																				</label>
+																				<input type="text" id="contact-suburb" name="form.contactAddress.suburb" value="" maxlength="46" required="required" />
+																			</li>
+
+																			<li class="input">
+																				<label for="contact-state">
+																					<span class="label">State or territory</span>
+
+																				</label>
+																				<input type="text" id="contact-state" name="form.contactAddress.state" value="QLD" size="10" maxlength="46" />
+																			</li>
+
+																			<li class="input">
+																				<label for="contact-postcode">
+																					<span class="label">Postal or zip code</span>
+																				</label>
+																				<input type="text" id="contact-postcode" name="form.contactAddress.postcode" value="" size="5" maxlength="12" />
+																			</li>
+
+																			<li class="input">
+																				<label for="contact-country">
+																					<span class="label">Country</span>
+
+																					<abbr title="(required)">*</abbr>
+																				</label>
+																				<input type="text" id="contact-country" name="form.contactAddress.country" value="Australia" size="30" maxlength="100" required="required" />
+																			</li>
+
+																		</ol>
+																	</fieldset>
+																</li>
+															</ol>
+														</fieldset>
+													</li>
+
+												</ol>
+											</fieldset>
+										</li>
+
+										<li class="section">
+											<fieldset id="delivery-details">
+												<legend>
+													<span class="h2">Delivery details</span>
+												</legend>
+												<ol class="sections">
+													<li class="select">
+														<input type="checkbox" name="form.deliveryAddressSameAsContactAddress" id="delivery-address-same-as-contact-address" value="true" />
+														<label for="delivery-address-same-as-contact-address">Use the same name and address as above</label>
+													</li>
+													<li class="section">
+														<fieldset id="delivery-details-needed">
+															<legend>
+																<span class="h3">Delivery by post</span>
+															</legend>
+															<div class="instructions privacy">
+																<p>Products will be delivered to this address.</p>
+
+															</div>
+															<ol class="questions created slot-in">
+																<li class="input">
+																	<label for="name-delivery">
+																		<span class="label">Deliver to</span>
+																		<abbr title="(required)">*</abbr>
+																		<small class="hint">Recipient's name</small>
+																	</label>
+																	<input type="text" id="name-delivery" name="form.deliveryAddress.recipient" value="" size="40" maxlength="500" required="required" />
+
+																</li>
+																<li class="group">
+																	<fieldset id="delivery-address">
+																		<legend>
+																			<span class="label">Postal address</span>
+																		</legend>
+																		<ol class="questions">
+
+																			<li class="input">
+																				<label for="delivery-address-line1">
+
+																					<span class="label">Address line 1</span>
+																					<abbr title="(required)">*</abbr>
+																				</label>
+																				<input type="text" name="form.deliveryAddress.line1" size="30" maxlength="50" value="" id="delivery-address-line1" required="required" />
+																			</li>
+
+																			<li class="input">
+																				<label for="delivery-address-line2">
+																					<span class="label">Address line 2 (optional)</span>
+																				</label>
+
+																				<input type="text" id="delivery-address-line2" name="form.deliveryAddress.line2" value="" size="30" maxlength="50" />
+																			</li>
+
+																			<li class="input">
+																				<label for="delivery-address-line3">
+																					<span class="label">Address line 3 (optional)</span>
+																				</label>
+																				<input type="text" id="delivery-address-line3" name="form.deliveryAddress.line3" value="" size="30" maxlength="50" />
+																			</li>
+
+																			<li class="input">
+																				<label for="delivery-suburb">
+																					<span class="label">Town or suburb</span>
+
+																					<abbr title="(required)">*</abbr>
+																				</label>
+																				<input type="text" id="delivery-suburb" name="form.deliveryAddress.suburb" value="" maxlength="46" required="required" />
+																			</li>
+
+																			<li class="input">
+																				<label for="delivery-state">
+																					<span class="label">State or territory</span>
+																				</label>
+																				<input type="text" id="delivery-state" name="form.deliveryAddress.state" value="QLD" size="10" maxlength="46" />
+																			</li>
+
+																			<li class="input">
+
+																				<label for="delivery-postcode">
+																					<span class="label">Postal or zip code</span>
+																				</label>
+																				<input type="text" id="delivery-postcode" name="form.deliveryAddress.postcode" value="" size="5" maxlength="12" />
+																			</li>
+
+																			<li class="input">
+																				<label for="delivery-country">
+																					<span class="label">Country</span>
+																					<abbr title="(required)">*</abbr>
+																				</label>
+
+																				<input type="text" id="delivery-country" name="form.deliveryAddress.country" value="Australia" size="30" maxlength="100" required="required" />
+																			</li>
+
+																		</ol>
+																	</fieldset>
+																</li>
+															</ol>
+														</fieldset>
+													</li>
+													<li class="section">
+														<fieldset>
+
+															<legend>
+																<span class="h3">Delivery by email</span>
+															</legend>
+															<div class="instructions privacy">
+																<p>Files and/or instructions will be sent to this email address.</p>
+															</div>
+															<ol class="questions slot-in">
+																<li class="input">
+																	<label for="delivery-email">
+																		<span class="label">Email</span>
+
+																		<abbr title="(required)">*</abbr>
+																	</label>
+																	<input type="text" id="delivery-email" name="form.deliveryEmail" value="" size="40" maxlength="100" required="required" />
+																</li>
+																<li class="input">
+																	<label for="delivery-email-confirm">
+																		<span class="label">Confirm email</span>
+																		<abbr title="(required)">*</abbr>
+																		<small class="hint">Please retype to confirm</small>
+
+																	</label>
+																	<input type="text" id="delivery-email-confirm" name="form.deliveryEmailConfirm" value="" size="40" maxlength="100" required="required" />
+																</li>
+															</ol>
+														</fieldset>
+													</li>
+												</ol>
+											</fieldset>
+										</li>
+
+										<li class="section">
+
+											<fieldset id="tax-details">
+												<legend>
+													<span class="h2">Tax details</span>
+												</legend>
+												<div class="instructions">
+													<p>If a tax invoice is required, complete this section.</p>
+													<input type="hidden" id="abn-required" value="false" required="required" />
+												</div>
+												<ol class="questions created">
+													<li class="select">
+
+														<ul class="choices">
+															<li>
+																<label for="tax-invoice-required">
+																	<input type="checkbox" name="form.taxInvoiceRequested" id="tax-invoice-required" value="true" />Tax invoice requested</label>
+															</li>
+														</ul>
+													</li>
+													<li class="section">
+														<fieldset id="tax-business-details">
+															<legend>
+																<span class="h3">Business details</span>
+															</legend>
+															<div class="instructions">
+																<p>
+																	(Optional) You may provide the registered name, ABN or address of the business for the tax invoice.
+																</p>
+
+															</div>
+															<ol class="questions gathered">
+																<li class="input">
+																	<label for="abn-registered-name">
+																		<span class="label">Registered name</span>
+																		<small class="hint">As shown on ABN registration</small>
+																	</label>
+																	<input type="text" id="abn-registered-name" name="form.businessName" value="" size="30" maxlength="100" />
+																</li>
+
+
+
+																<li class="input">
+																	<label for="abn">
+																		<span class="label">
+																			<abbr title="Australian Business Number">ABN</abbr>
+																		</span>
+																		<small class="hint">Example:
+																			<samp>53 004 085 616</samp>
+																		</small>
+																	</label>
+																	<input type="text" id="abn" name="form.abn" value="
+
+" size="15" maxlength="14" />
+																</li>
+
+																<li class="group">
+																	<fieldset id="tax-address">
+																		<legend>
+
+																			<span class="label">Business address</span>
+																		</legend>
+																		<ol class="questions">
+
+																			<li class="input">
+																				<label for="tax-address-line1">
+																					<span class="label">Address line 1</span>
+
+																				</label>
+
+																				<input type="text" name="form.taxAddress.line1" size="30" maxlength="50" value="" id="tax-address-line1" />
+																			</li>
+
+																			<li class="input">
+																				<label for="tax-address-line2">
+																					<span class="label">Address line 2 (optional)</span>
+																				</label>
+																				<input type="text" id="tax-address-line2" name="form.taxAddress.line2" value="" size="30" maxlength="50" />
+																			</li>
+
+																			<li class="input">
+																				<label for="tax-address-line3">
+																					<span class="label">Address line 3 (optional)</span>
+
+																				</label>
+																				<input type="text" id="tax-address-line3" name="form.taxAddress.line3" value="" size="30" maxlength="50" />
+																			</li>
+
+																			<li class="input">
+																				<label for="tax-suburb">
+																					<span class="label">Town or suburb</span>
+																				</label>
+																				<input type="text" id="tax-suburb" name="form.taxAddress.suburb" value="" maxlength="46" />
+																			</li>
+
+																			<li class="input">
+																				<label for="tax-state">
+																					<span class="label">State or territory</span>
+
+																				</label>
+																				<input type="text" id="tax-state" name="form.taxAddress.state" value="QLD" size="10" maxlength="46" />
+																			</li>
+
+																			<li class="input">
+																				<label for="tax-postcode">
+																					<span class="label">Postal or zip code</span>
+																				</label>
+																				<input type="text" id="tax-postcode" name="form.taxAddress.postcode" value="" size="5" maxlength="12" />
+																			</li>
+
+																			<li class="input">
+																				<label for="tax-country">
+																					<span class="label">Country</span>
+
+																				</label>
+																				<input type="text" id="tax-country" name="form.taxAddress.country" value="Australia" size="30" maxlength="100" />
+																			</li>
+
+																		</ol>
+																	</fieldset>
+																</li>
+															</ol>
+														</fieldset>
+													</li>
+												</ol>
+											</fieldset>
+
+										</li>
+
+										<li class="section">
+											<h2>Order details</h2>
+											<div class="instructions">
+												<p>Please take a moment to make sure this order is correct.</p>
+											</div>
+
+
+											<table class="line-items">
+												<col />
+												<col />
+												<col class="number" align="char" char="." />
+												<col class="number" align="char" char="." />
+												<col class="number" align="char" char="." />
+												<col class="number" />
+												<col class="number" align="char" char="." />
+												<thead>
+
+													<tr>
+														<th scope="col">Item description</th>
+														<td></td>
+														<th scope="col">Reference</th>
+														<th scope="col" class="number">Unit price
+															<small>(excl. GST)</small>
+														</th>
+														<th scope="col" class="number">GST</th>
+
+														<th scope="col" class="number">Unit price
+															<small>(incl. GST)</small>
+														</th>
+														<th scope="col" class="number">Qty</th>
+														<th scope="col" class="number">Total</th>
+													</tr>
+												</thead>
+
+												<tfoot>
+
+													<tr class="total">
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td></td>
+														<td>
+														</td>
+														<th scope="row">Total</th>
+														<td class="number">$7.70</td>
+													</tr>
+
+												</tfoot>
+
+												<tbody>
+
+													<tr>
+														<td scope="row">
+															<strong>IceBreak Milk</strong>
+
+															<small class="agency">Your Agency Name</small>
+														</td>
+
+														<td></td>
+														<td class="identifier"></td>
+														<td class="number">$3.50</td>
+														<td class="number">$0.35</td>
+														<td class="number">$3.85</td>
+														<td class="number">
+															1
+														</td>
+
+														<td class="number">$3.85</td>
+													</tr>
+
+													<tr>
+														<td scope="row">
+															<strong>IceBreak Milk</strong>
+
+															<small class="agency">Your Agency Name</small>
+														</td>
+														<td></td>
+
+														<td class="identifier"></td>
+														<td class="number">$3.50</td>
+														<td class="number">$0.35</td>
+														<td class="number">$3.85</td>
+														<td class="number">
+															1
+														</td>
+														<td class="number">$3.85</td>
+
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li class="group">
+
+											<table class="line-items-summary">
+												<col />
+												<col class="number" align="char" char="." />
+
+												<tbody>
+													<tr class="ex-gst">
+
+														<th scope="row">Total (excl. GST)</th>
+														<td class="number">$7.00</td>
+
+													</tr>
+													<tr class="gst">
+														<th scope="row">Total GST amount paid</th>
+														<td class="number">$0.70</td>
+
+													</tr>
+
+													<tr class="total">
+														<th scope="row">Total amount paid (incl. GST)</th>
+														<td class="number">$7.70</td>
+
+													</tr>
+												</tbody>
+											</table>
+										</li>
+										<li class="footer">
+
+											<ul class="submit">
+												<li>
+													<strong>
+														<input type="submit" id="pay" value="Continue" />
+													</strong>
+												</li>
+											</ul>
+											<input type="hidden" id="contact-email-required-by-agency" value="true" />
+										</li>
+									</ol>
+								</form>
+
+							</div>
+						</div>
+					</div>
+					<!-- end .article, .box-sizing, .border -->
+				</div>
+				<!-- end #content -->
+
+				<div id="asides">
+					<div class="box-sizing">
+						<div class="border">
+							<!--#include virtual="/assets/includes/global/global-aside.html"-->
+
+						</div>
+					</div>
+				</div>
+				<!-- end #asides, .box-sizing, .border -->
+
+				<div id="meta-wrapper">
+					<div class="meta-box-sizing">
+						<div class="border">
+
+							<div id="document-properties">
+								<div class="box-sizing">
+									<dl>
+										<dt>Last updated</dt>
+										<dd>18 August 2011</dd>
+									</dl>
+								</div>
+							</div>
+
+							<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+						</div>
+					</div>
+				</div>
+				<!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+				<div id="nav-section">
+					<div class="box-sizing">
+						<h2>
+							<a href="/payment/">Online payments</a>
+						</h2>
+						<ul>
+							<li class="has-submenu">
+								<a href="/payment/notice.html">Notice to pay</a>
+								<ol>
+									<li>
+										<a href="/payment/notice.html">
+											<span class="page-number">1</span>Notice to pay</a>
+									</li>
+									<li>
+										<a href="/payment/pay-by-credit-card.html">
+											<span class="page-number">2</span>Pay by credit card</a>
+									</li>
+									<li>
+										<a href="/payment/wait.html">
+											<span class="page-number">3</span>Processing payment…</a>
+									</li>
+									<li>
+										<a href="/payment/receipt.html">
+											<span class="page-number">4</span>Receipt</a>
+									</li>
+								</ol>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<!-- end #content-container -->
+
+		</div>
+	</div>
+	<!-- end #page-container, .max-width -->
+
+	<!--#include virtual="/assets/includes/global/footer.html"-->
+
+</body>
+
+</html>

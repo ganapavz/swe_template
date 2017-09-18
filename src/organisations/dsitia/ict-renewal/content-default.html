@@ -1,0 +1,734 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ICT renewal | DSITIA | Queensland Government</title>
+
+<!--#set var="franchise" value=""-->
+<!--#set var="title" value="ICT renewal"-->
+<!--#set var="licence" value="http://creativecommons.org/licenses/by/3.0/au/"-->
+<!--#include virtual="/assets/includes/global/head-assets-styles.html"-->
+<link rel="stylesheet" type="text/css" href="//ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+<style>
+	.date {
+		white-space: nowrap;
+	}
+
+
+	/* hide RAG table while .rag class exists */
+	.rag th,
+	.rag td,
+	.rag p {
+		display: none;
+	}
+	.rag tfoot td {
+		display: block;
+		cursor: pointer;
+	}
+	.rag table,
+	.rag tfoot,
+	.rag tr,
+	.rag td {
+		background: transparent !important;
+	}
+
+
+	/* RAG flags */
+	.rag-green,
+	.rag-amber,
+	.rag-complete {
+		display: block;
+		width: 2em;
+		overflow: hidden;
+		text-indent: 5em;
+		border-left: 2px solid green;
+		position: relative;
+	}
+	.rag-green:after,
+	.rag-amber:after,
+	.rag-complete:after {
+		content: "";
+		display: block;
+		border-color: transparent;
+		border-left-color: green;
+		border-width: .5em 0 .5em 1em;
+		border-style: solid none solid solid;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 0;
+		height: 0;
+	}
+	.rag-complete {
+		border-color: #777;
+	}
+	.rag-complete:after {
+		border-left-color: #777;
+	}
+	.rag-amber {
+		border-color: #FFB400;
+	}
+	.rag-amber:after {
+		border-left-color: #FFB400;
+		top: .25em;
+	}
+
+
+	/* http://datatables.net/styling/ids_classes */
+	/*
+	.sorting,
+	.sorting_asc {
+		background-color: #2c3a45;
+		font-weight: normal;
+	}	
+	table.dataTable tr.odd td.sorting_1,
+	table.dataTable tr.odd td {
+		background: #fcfcfc;
+	}
+	table.dataTable tr.even td.sorting_1,
+	table.dataTable tr.even td {
+		background: #ededed;
+	}
+	*/
+</style>
+<!--#include virtual="/assets/includes/global/head-assets-scripts.html"-->
+<script type="text/javascript" language="javascript" src="//ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+
+
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+	
+	<meta name="DCTERMS.creator" scheme="AGLSTERMS.GOLD" content="c=AU; o=The State of Queensland; ou=DEPARTMENT NAME; ou=UNIT NAME" />
+	<meta name="DCTERMS.publisher" scheme="AGLSTERMS.AglsAgent" content="corporateName=The State of Queensland; jurisdiction=Queensland" />
+	<meta name="DCTERMS.created" content="2014-03-20" />
+	<meta name="DCTERMS.modified" content="2014-03-21" />
+	<meta name="DCTERMS.title" content="ICT renewal | DSITIA" />
+	<meta name="DCTERMS.description" content="DESCRIPTION" />
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION" />
+<!--#include virtual="/assets/includes/global/head-meta-identifier.html"-->
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="guidelines" />
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+	<meta name="DCTERMS.license" scheme="DCTERMS.URI" content="https://creativecommons.org/licenses/by/4.0/" />
+</head>
+
+<body id="qld-gov-au" class="residents">
+
+<!--#include virtual="/assets/includes/global/header.html"-->
+	
+	<div id="page-container"><div class="max-width">
+		<div id="breadcrumbs">
+			<h2>You are here:</h2>
+			<ol>
+<!--#include virtual="/assets/includes/global/breadcrumb-agency.html"-->
+				<li><a href="/dsitia/">DSITIA</a></li>
+				<li><a href="/dsitia/initiatives/">Initiatives</a></li>
+				<li class="last-child">ICT renewal</li>
+			</ol>
+		</div>
+	
+		<div id="content-container">
+			<div id="content">
+				<div class="article"><div class="box-sizing"><div class="border" id="article">
+				
+<!--#include virtual="/assets/includes/global/global-alert.html"-->
+
+					<h1>ICT renewal</h1>
+
+<!--#include virtual="/assets/includes/global/page-options-pre.html"-->
+
+
+					<div class="status success">
+						<h2>Completed</h2>
+						<ul>
+							<li>11.06 Implement a workforce planning framework and skills development program</li>
+						</ul>
+					</div>
+
+					<div class="status warn">
+						<h2>Schedule issue</h2>
+						<ul>
+							<li>11.02 Develop departmental workforce transformation plans</li>
+						</ul>
+					</div>
+
+					<table id="ictr-datatable">
+						<thead>
+							<tr>
+								<th>Status</th>
+								<th>Dates</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<a href="focus11.html#focus11-01">11.01</a>
+									Implement a workforce planning framework and skills development program
+								</td>
+								<td class="date">Jan 2014</td>
+								<td class="rag">
+									<table>
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>Schedule</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Budget</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Issues</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Risks</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>Overall</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+										</tfoot>
+									</table>
+									<p><small>Variance: Final product circulated for action</small></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="focus11.html#focus11-02">11.02</a>
+									Develop departmental workforce transformation plans
+								</td>
+								<td class="date">Mar 2014</td>
+								<td class="rag">
+									<table>
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>Schedule</th>
+												<td><em class="rag-amber">Amber</em></td>
+											</tr>
+											<tr>
+												<th>Budget</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+											<tr>
+												<th>Issues</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+											<tr>
+												<th>Risks</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>Overall</th>
+												<td><em class="rag-amber">Amber</em></td>
+											</tr>
+										</tfoot>
+									</table>
+									<p><small>Variance: Project encountered schedule issue.</small></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="focus11.html#focus11-03">11.03</a>
+									Update the ICT SFIA to include priority capability areas that reflect workforce plans
+								</td>
+								<td class="date">Jun 2014</td>
+								<td class="rag">
+									<table>
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>Schedule</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+											<tr>
+												<th>Budget</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+											<tr>
+												<th>Issues</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+											<tr>
+												<th>Risks</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>Overall</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+										</tfoot>
+									</table>
+									<p><small>Variance: all activities are on track.</small></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="focus11.html#focus11-04">11.04</a>
+									Mobilise the supply of critical roles
+								</td>
+								<td class="date">Sep 2013</td>
+								<td class="rag">
+									<table>
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>Schedule</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Budget</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Issues</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Risks</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>Overall</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+										</tfoot>
+									</table>
+									<p><small>Variance: Final product circulated for action</small></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="focus11.html#focus11-05">11.05</a>
+									Identify and establish industry based options to leverage a common online ICT training platform across government
+								</td>
+								<td class="date">Jul 2015</td>
+								<td class="rag">
+									<table>
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>Schedule</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+											<tr>
+												<th>Budget</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+											<tr>
+												<th>Issues</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+											<tr>
+												<th>Risks</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>Overall</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+										</tfoot>
+									</table>
+									<p><small>Variance: all activities are on track.</small></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="focus11.html#focus11-06">11.06</a>
+									Work with tertiary and professional institutions to access undergraduate, post graduate and professional programs with a view towards growing the future workforce
+								</td>
+								<td class="date">Feb 2014</td>
+								<td class="rag">
+									<table>
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>Schedule</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Budget</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Issues</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Risks</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>Overall</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+										</tfoot>
+									</table>
+									<p><small>Variance: Final product circulated for action</small></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="focus12.html#focus12-01">12.01</a>
+									Implement the United Kingdom’s Office of Government Commerce gateway review process
+								</td>
+								<td class="date">Oct 2013</td>
+								<td class="rag">
+									<table>
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>Schedule</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Budget</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Issues</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Risks</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>Overall</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+										</tfoot>
+									</table>
+									<p><small>Variance: Final product circulated for action</small></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="focus12.html#focus12-02">12.02</a>
+									Implement the Queensland Government ICT Portfolio Management Framework
+								</td>
+								<td class="date">Sep 2013</td>
+								<td class="rag">
+									<table>
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>Schedule</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Budget</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Issues</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Risks</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>Overall</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+										</tfoot>
+									</table>
+									<p><small>Variance: Final product circulated for action</small></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="focus12.html#focus12-03">12.03</a>
+									Establish a Queensland Government portfolio, program and project management improvement initiative with the following outputs
+								</td>
+								<td class="date">Dec 2014</td>
+								<td class="rag">
+									<table>
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>Schedule</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+											<tr>
+												<th>Budget</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+											<tr>
+												<th>Issues</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+											<tr>
+												<th>Risks</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>Overall</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+										</tfoot>
+									</table>
+									<p><small>Variance: all activities are on track.</small></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="focus12.html#focus12-04">12.04</a>
+									Develop and implement common ICT portfolio reporting tools
+								</td>
+								<td class="date">Nov 2013</td>
+								<td class="rag">
+									<table>
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>Schedule</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Budget</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Issues</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Risks</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>Overall</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+										</tfoot>
+									</table>
+									<p><small>Variance: Final product circulated for action</small></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="focus12.html#focus12-05">12.05</a>
+									Undertake ICT project management reform
+								</td>
+								<td class="date">Aug 2014</td>
+								<td class="rag">
+									<table>
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>Schedule</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+											<tr>
+												<th>Budget</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+											<tr>
+												<th>Issues</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+											<tr>
+												<th>Risks</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>Overall</th>
+												<td><span class="rag-green">Green</span></td>
+											</tr>
+										</tfoot>
+									</table>
+									<p><small>Variance: all activities are on track.</small></p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="focus12.html#focus12-06">12.06</a>
+									Launch the Queensland Government ICT dashboard (stage one)
+								</td>
+								<td class="date">Nov 2013</td>
+								<td class="rag">
+									<table>
+										<thead>
+											<tr>
+												<th>Item</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>Schedule</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Budget</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Issues</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+											<tr>
+												<th>Risks</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<th>Overall</th>
+												<td><span class="rag-complete">Finalised</span></td>
+											</tr>
+										</tfoot>
+									</table>
+									<p><small>Variance: Final product circulated for action</small></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+
+				</div></div></div><!-- end .article, .box-sizing, .border -->
+			</div><!-- end #content -->
+
+			<div id="asides"><div class="box-sizing"><div class="border">
+<!--#include virtual="/assets/includes/global/global-aside.html"-->
+
+
+
+			</div></div></div><!-- end #asides, .box-sizing, .border -->
+
+			<div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+				<div id="document-properties"><div class="box-sizing">
+					<dl>
+						<dt class="visuallyhidden">Licence</dt>
+						<dd id="document-licence">
+							<a href="http://creativecommons.org/licenses/by/3.0/au/" rel="license" title="Text available under Creative Commons Attribution 3.0 Australia (CC BY 3.0) licence"><img src="/assets/v2/images/licences/by-80x15.png" alt="Creative Commons Attribution 3.0 Australia (CC BY 3.0)"/></a>
+						</dd>
+
+						<dt>Last updated</dt>
+						<dd>21 March 2014</dd>
+					</dl>
+				</div></div>
+
+<!--#include virtual="/assets/includes/global/page-options-post.html"-->
+
+			</div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+		</div><!-- end #content-container -->
+		
+<div id="nav-section">
+	<div class="box-sizing">
+		<h2><a href="/dsitia/initiatives/">Initiatives</a></h2>
+		<ul>
+			<li><a href="content-default.html">ICT renewal</a></li>
+		</ul>
+	</div>
+</div>
+	
+	</div></div><!-- end #page-container, .max-width -->
+
+<!--#include virtual="/assets/includes/global/footer-page.html"-->
+<script>
+	$( '.even, .odd', '#ictr-datatable' ).removeClass( 'even odd' );
+	$( '#ictr-datatable' ).dataTable({
+		asStripeClasses: [ 'odd', 'even' ]
+	});
+
+	$( 'td a', '#content' ).butterfly();
+
+	$( 'td.rag' ).click(function() {
+		$( this ).toggleClass( 'rag' );
+	});
+</script>
+<!--#include virtual="/assets/includes/global/footer-stats.html"-->
+	
+</body>
+</html>

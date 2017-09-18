@@ -1,0 +1,35 @@
+// -------------------------------------
+//    variables
+// -------------------------------------
+
+// media queries
+$medium-min: 640;
+$medium-max: 980;
+$large-min: 980;
+$large-max: 1200;
+
+// content / typesetting
+$body-base: 62.5%;
+$body-line-height: 1.5;
+$max-line-length: 52em;
+
+// header tools
+$search-form-height: 2.1em;
+$search-form-layout-medium-height: $search-form-height + 2;
+$search-form-layout-small-height: $search-form-height + 0;
+
+// cart tools
+$cart-height: 28em;
+$cart-layout-medium-height: $cart-height + 2;
+$cart-layout-small-height: $cart-height + 6;
+
+// give it a bit of padding for tablets
+$layout-medium-padding: 3em;
+
+// large-application
+$large-application-panel-size: 90%;
+$large-application-transition-speed: 0.3s;
+$large-application-large-panel-size: 25%;
+$large-application-large-viewport-z-index: 1000; // leaflet uses 1000
+$large-application-medium-panel-size: 30%;
+$large-application-panel-size-oldie: 25%; // reset panel sizes (old IE doesn't support media queries)

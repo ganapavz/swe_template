@@ -1,0 +1,85 @@
+<div id="article">
+	<div id="tabs" class="swe-horizontal">
+		<div class="st_tabs">
+			<div class="st_tabs_wrap">
+				<ul class="st_tabs_ul">
+					<li>
+						<a href="#red" class="st_tab_first" id="red-tab-button">Red</a>
+					</li>
+					<li>
+						<a href="#amber" id="amber-tab-button">Amber</a>
+					</li>
+					<li>
+						<a href="#green" id="green-tab-button">Green</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="st_views">
+			<div class="red st_view">
+				<div class="st_view_inner">
+					<div id="projects-list-red"><p>Loading...</p></div>
+				</div>
+			</div>
+			<div class="amber st_view">
+				<div class="st_view_inner">
+					<div id="projects-list-amber"><p>Loading...</p></div>
+				</div>
+			</div>
+			<div class="green st_view">
+				<div class="st_view_inner">
+					<div id="projects-list-green"><p>Loading...</p></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var datafile = "<!--#echo encoding="entity" var="data" -->";
+
+	function initiativesList( type, containerDiv ) {
+		// load json data
+		var sql = 'SELECT \"Initiative name\" as \"Initiative\",' +
+			' \"Investment objectives\" as \"Objectives\",' +
+			' \"Original total estimated expenditure\",' +
+			' \"Revised total estimated expenditure\",' +			
+			' COALESCE(to_char(\"Actual start date\"::date,\'YYYY\/MM\/DD\'), \'TBA\') AS \"Actual start date\",' +
+			' COALESCE(to_char(\"Planned end date\"::date,\'YYYY\/MM\/DD\'), \'TBA\') AS \"Planned end date\",' +
+			' \"Explanation of variance\"' +
+			' FROM  \"' + datafile + '\" WHERE (\"Overall status\"=\'' + type + '\')'
+		;
+
+		// load data lib
+		swe.load({ name: 'data', url: 'data.js' });
+
+		// configure chart
+		swe.data({
+			container: containerDiv,
+			title: type,
+			headings: [ 'Initiative', 'Objectives', 'Original total estimated expenditure', 'Revised total estimated expenditure', 'Actual start date', 'Planned end date', 'Explanation of variance' ],
+			formats: {
+				'Objectives': 'md',
+				'Explanation of variance': 'md',
+				'Original total estimated expenditure': '$',
+				'Revised total estimated expenditure': '$',
+				'Actual start date': 'date',
+				'Planned end date': 'date'
+			},
+			sql: sql,
+			type: 'dl'
+		});
+	}
+
+	initiativesList( 'R', 'projects-list-red' );
+	initiativesList( 'A', 'projects-list-amber' );
+	initiativesList( 'G', 'projects-list-green' );
+
+}( jQuery, qg.swe ));
+
+//--></script><!-- end -->

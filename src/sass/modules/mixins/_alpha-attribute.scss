@@ -1,0 +1,33 @@
+
+// alpha attribute (uses interpolation method)
+// Example 1: @include alpha-attribute('box-shadow', rgba($color, 0.1), $background, 0 0 2px 1px);
+// Example 2: @include alpha-attribute('background', rgba($color, 0.1), $background);
+
+@mixin alpha-attribute($attribute, $color, $background, $specs: null) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: #{$specs} $solid-color;
+  @if $solid-color != $color {
+    @if $specs != null {
+      #{$attribute}: #{$specs} $color;
+    }
+    @else {
+      #{$attribute}: $color;
+    }
+  }
+}
+
+// linear-gradient
+// Example 1: @include linear-gradient(rgba($top, 0.1), $bottom);
+
+@mixin linear-gradient($top, $bottom) {
+  background: $bottom;
+  background: -webkit-gradient(linear, left top, left bottom, from($top), to($bottom));
+  background: -webkit-linear-gradient(top, $top, $bottom);
+  background: -moz-linear-gradient(top, $top, $bottom);
+  background: -ms-linear-gradient(top, $top, $bottom);
+  background: -o-linear-gradient(top, $top, $bottom);
+  background: linear-gradient(top, $top, $bottom);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$top}', EndColorStr='#{$bottom}');
+}

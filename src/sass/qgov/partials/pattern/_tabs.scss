@@ -1,0 +1,72 @@
+.tabbed .viewport {
+	background: $tabbed-viewport-background-color;
+	overflow: hidden;
+	clear: both;
+}
+.tabbed .section .content {
+	overflow: hidden;
+	padding: .7em;
+}
+.tabs {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.tabs li {
+	float: left;
+	display: block;
+}
+// hiding tabs when the container is 'narrow'
+// i.e. not wide enough to fit tabs on a single line
+.narrow .tabs {
+	overflow: auto;
+
+	li {
+		height: 0;
+		overflow: hidden;
+	}
+	.show,
+	.current {
+		height: 2.5em;
+		transition: height .3s;
+	}
+	.narrow {
+		display: block;
+		height: 2.5em;
+	}
+	.narrow.show {
+		display: none;
+	}
+}
+
+.tabs li a {
+	background-color: $tabs-li-link-background-color;
+	color: $tabs-li-link-color;
+	padding: .5em 1.5em;
+	text-decoration: none;
+	margin-right: .2em;
+	float: left;
+}
+
+.tabs .current a {
+	background-color: $tabs-li-current-link-background-color;
+	color: $tabs-li-current-link-color;
+}
+
+// tables inside tabs
+.tabbed table {
+	width: 100%;
+}
+
+// rag tab colours
+#red-tab-button {
+	border-top: 5px solid $red-tab-button-border-color;
+}
+
+#amber-tab-button {
+	border-top: 5px solid $amber-tab-button-border-color;
+}
+
+#green-tab-button {
+	border-top: 5px solid $green-tab-button-border-color;
+}

@@ -1,0 +1,57 @@
+// smaller panels on larger screens
+#large-application {
+  margin: 0 (-1 * $content-container-side-margin-large);
+}
+#app-viewport-tools,
+#app-viewport-info {
+  width: $large-application-large-panel-size;
+  height: 100%;
+  @include alpha-attribute('background', rgba($large-application-large-app-viewport-overlay-background-color, 0.85), $large-application-large-app-viewport-overlay-background-color);
+}
+
+#app-viewport-tools {
+  left: 0;
+  z-index: $large-application-large-viewport-z-index + 2;
+}
+
+#app-viewport-info {
+  right: 0;
+  z-index: $large-application-large-viewport-z-index + 1;
+  overflow-y: scroll;
+}
+
+#app-viewport-tools input[type=search] {
+  max-width: 80%;
+}
+
+#app-viewport-overlay {
+  @include alpha-attribute('background', rgba($large-application-large-app-viewport-overlay-background-color, 0.85), $large-application-large-app-viewport-overlay-background-color);
+}
+
+// dim viewport for visible tools or info
+.viewport-tools #app-viewport-overlay,
+.viewport-info #app-viewport-overlay,
+.viewport-tools-info #app-viewport-overlay {
+  opacity: $whitebox-overlay-opacity;
+}
+
+// hide tools
+.viewport #app-viewport-tools,
+.viewport-info #app-viewport-tools {
+  margin-left: -1 * $large-application-large-panel-size;
+}
+
+// hide info
+.viewport #app-viewport-info,
+.viewport-tools #app-viewport-info {
+  margin-right: -1 * $large-application-large-panel-size;
+}
+
+#app-viewport-tools {
+  form .viewport {
+    width: 21em; // size of query input (+ padding?)
+    #query {
+      width: 20em;
+    }
+  }
+}

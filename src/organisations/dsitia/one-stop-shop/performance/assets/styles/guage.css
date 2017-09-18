@@ -1,0 +1,72 @@
+.chartObjSm {
+	width: 48%;
+	min-height: 300px;
+	min-width: 200px;
+	float: left;
+	position: relative;
+	/*									background: #efefef;
+	-webkit-box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.23);
+	-moz-box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.23);
+	box-shadow: 2px 2px 8px 0px rgba(50, 50, 50, 0.23);*/
+	margin: 5px 1% 10px 1%;
+	text-align: center;
+}
+.chartObjSm div {
+	margin: 0 auto;
+	min-height: 200px;
+}
+.chartObjSm .chartHeader {
+	position: absolute;
+}
+.chartObjSm .chartBody {
+	position: relative;
+	margin-top: 124px;
+}
+.chartObjSm .guage-container {
+	width:250px; 
+	height:160px; 
+	text-align: center;
+}
+.chartObjSm h2 {
+	font-size: 3em;
+	line-height: 1em;
+	margin: 0;
+	min-height: 2.5em;
+}
+.chartObjSm h2 small {
+	float: left;
+	clear: both;
+	font-size: .5em;
+	line-height: 1em;
+	width: 100%;
+	margin: 0;
+}
+.chartObjLg {
+	clear: both;
+	width: 100%;
+}
+.chartObjLg h2 {
+	font-size: 3em;
+	float: left;
+	clear: both;
+}
+.chartObjLg h2 small {
+	float: left;
+	clear: both;
+	font-size: .5em;
+	width: 100%;
+}
+.chartObjSm span {
+	top: -16px;
+	position: relative;
+	font-weight: 900;
+	font-size: .9em;
+}
+.chartObjSm p {
+	font-size: 1em;
+	width: 100%;
+	margin: 0;
+}
+.chartObjSm svg {
+	float: left;
+}

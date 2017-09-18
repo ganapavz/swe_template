@@ -1,0 +1,60 @@
+// -------------------------------------
+//   miscellaneous
+// -------------------------------------
+
+kbd {
+  background: #efefef;
+  border-color: #ffffff #dddddd #dddddd #ffffff;
+  //border-left: 1px solid #ffffff;
+  border-style: solid;
+  border-width: 1px 2px 2px 1px;
+  padding: 0 0.2em;
+}
+
+
+// Hide from visual browsers
+
+#access h2,
+#header h2,
+#nav-site h2,
+#breadcrumbs h2,
+#footer h2,
+#feedback-captcha-container,
+#captcha-container,
+.tabbed .heading, // headings in tabs
+.visuallyhidden {
+  @extend %visually-hidden;
+}
+
+#header #site-name {
+  @extend %visible;
+}
+
+// Important for keyboard access!
+
+.compact-slideshow-active .controlbar a.keyboard-focus {
+  outline: none;
+}
+a.keyboard-focus,
+.compact-slideshow-active .controlbar a.keyboard-focus span {
+  outline: 2px solid $leaflet-container-focus-border-color;
+}
+
+.diagram {
+  width: 100% !important;
+  max-width: 100% !important;
+  text-align: left !important;
+  font-style: normal !important;
+  @include font-size(12, no);
+  * {
+    font-style: normal !important;
+    @include font-size(12, no);
+  }
+  img {
+    border: none;
+    display: block;
+    box-shadow: none;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}

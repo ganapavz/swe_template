@@ -1,0 +1,23 @@
+div.highcharts-axis-labels.highcharts-xaxis-labels span span {
+	text-decoration: underline;
+	color: #007EB1; 
+}
+
+div.highcharts-axis-labels.highcharts-xaxis-labels span span:hover, div.highcharts-axis-labels.highcharts-xaxis-labels span span.active {
+	text-decoration: underline;
+	color: #007EB1;
+	cursor: pointer;
+	font-weight: 900;
+}
+
+div.highcharts-axis-labels.highcharts-xaxis-labels span span:focus {
+	text-decoration: underline;
+	color: #00f;
+	cursor: pointer;
+	font-weight: 900;
+}
+
+td.details-control { background: url('../images/details_open.png') no-repeat center center; }
+tr.shown td.details-control{ background: url('../images/details_close.png') no-repeat center center; }
+.even td.details-control{ background-color: white; }
+tr.summary { cursor: pointer; cursor: hand; }

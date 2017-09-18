@@ -1,0 +1,379 @@
+@media screen, projection, tv, handheld {
+
+  /* News */
+  .news-feature {
+    position: relative;
+    //margin-bottom: 1em;
+    background: $news-feature-background-color url(../images/skin/bg-news.png) left bottom repeat-x;
+  }
+  .news-feature .section {
+    clear: both;
+    margin-bottom: 1em;
+    overflow: hidden;
+  }
+  #related-promotions .news-feature .section img {
+    float: left;
+    clear: left;
+    margin: .5em 0 1em;
+  }
+  .news-feature .news-box-sizing {
+    //background: #fff url (../images/skin/bg-news.png) left top repeat-x;
+    //border: 1px solid #7c94aa;
+    //padding: .5em;
+    overflow: hidden;
+  }
+
+  //.home .news-items .section img,
+  #asides .news-items .section img {
+    //width: 284px;
+    max-width: 100%;
+    height: auto;
+    margin-top: .5em;
+    //margin: .5em 2px 2px 10px;
+  }
+
+  #asides .news-feature .compact-slideshow-active .section {
+    padding-bottom: 0;
+  }
+
+  .news-feature .section h3 {
+    color: $news-feature-section-h3-color;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: .5em .6em 0;
+    float: left;
+    padding: 1em 0 !important;
+    //clear: left; // This was causing issues in IE7 , and its not needed
+  }
+
+  #related-promotions .aside h3 {
+    color: $news-feature-section-h3-color;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: .5em .6em 0;
+    float: left;
+    //clear: left; // This was causing issues in IE7 , and its not needed
+  }
+
+  #related-promotions .aside h3,
+  #related-promotions #featured .section dl.meta {
+    float: none;
+    clear: none;
+    margin-left: 0;
+  }
+  .news-feature dl.meta {
+    color: $news-feature-dl-meta-color;
+    clear: right;
+    overflow: hidden;
+    display: block;
+  }
+
+  .news-feature dl.meta {
+    margin: .5em 0;
+    clear: left;
+    font-size: 90%;
+  }
+  .news-feature dl.meta dt.category {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .news-feature dl.meta dd.category {
+    font-weight: bold;
+    margin: 0 .5em 0 0;
+    padding-right: 15px;
+    float: left;
+    background: transparent url("../images/skin/bullet-word-separator.png") right center no-repeat;
+  }
+  .news-feature .alert dl.meta dd.category,
+  .news-feature .alert .meta dd.category {
+    color: $news-feature-alert-meta-category-color;
+  }
+  .news-feature dl.meta dt.date-posted {
+    float: left;
+    font-weight: normal;
+    margin: 0 .5em 0 0;
+  }
+  .news-feature dl.meta dd.date-posted {
+    float: left;
+    margin: 0;
+  }
+  .news-feature .summary {
+    clear: both;
+    overflow: hidden;
+  }
+
+//  .news-feature dl.meta dt {
+//      background: transparent url(../images/skin/bg-colon.png) right bottom no-repeat;
+//      padding-right: 4px;
+//  }
+  #related-promotions .news-feature .news-items img {
+    margin-right: 1.2em;
+  }
+
+  /* Slideshow active */
+
+  .news-feature .slideshow {
+    overflow: visible;
+    padding-top: .5em;
+  }
+  .news-feature .compact-slideshow-active .section {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+  #related-promotions .news-feature .compact-slideshow-active .section {
+    padding-left: 0;
+  }
+
+  .news-feature .section .important {
+    color: $news-feature-section-important-color; /* WCAG2 AA level text contrast for small text */
+    margin-top: 0;
+  }
+  .news-feature .news-content {
+    overflow: hidden;
+    min-width: 13em;
+    clear: right;
+  }
+  #related-promotions #featured .news-content {
+    clear: none;
+    padding: 0;
+  }
+  .news-feature .news-content p {
+    margin: .5em 0;
+  }
+  .news-feature .compact-slideshow-active .controlbar {
+    padding: 0 .5em .5em;
+  }
+  #related-promotions #featured .compact-slideshow-active .controlbar {
+    padding: 0;
+  }
+  .news-feature .news-content {
+    padding: 0 .7em;
+    clear: left;
+  }
+
+  /* Slideshow controls */
+
+  .compact-slideshow-active .contents,
+  .compact-slideshow-active .controlbar { /* controlbar is only visible when active */
+    padding: 0;
+    overflow: hidden;
+  }
+  .compact-slideshow-active .window {
+    clear: both;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+  .compact-slideshow-active .controlbar ul,
+  .compact-slideshow-active .controlbar li {
+    list-style-type: none;
+    display: inline;
+    margin: 0; padding: 0;
+  }
+  .compact-slideshow-active .controlbar ul {
+    display: block;
+  }
+  .compact-slideshow-active .actions {
+    float: right;
+    width: 6em;
+  }
+  .compact-slideshow-active .panels {
+    float: left;
+  }
+  .compact-slideshow-active .controlbar a,
+  .compact-slideshow-active .controlbar a:link,
+  .compact-slideshow-active .controlbar a:active,
+  .compact-slideshow-active .controlbar a:visited {
+    outline: none;
+    text-decoration: none;
+    color: $compact-slideshow-active-controlbar-link-color;
+    display: block;
+    float: left;
+    padding: 0;
+  }
+  .compact-slideshow-active .controlbar a span {
+    padding: .2em .7em;
+    display: block;
+  }
+  .compact-slideshow-active .controlbar a:hover span,
+  .compact-slideshow-active .controlbar a:active span,
+  .compact-slideshow-active .controlbar a.keyboard-focus span {
+    color: $compact-slideshow-active-controlbar-link-hover-span-color;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .compact-slideshow-active .panels a span.button-symbol,
+  .compact-slideshow-active .panels a:link span.button-symbol,
+  .compact-slideshow-active .panels a:visited span.button-symbol {
+    background: transparent url(../images/skin/icon-slideshow-panels-control.png) center 7px no-repeat;
+    overflow: hidden;
+  }
+  .compact-slideshow-active .panels a.current span.button-symbol,
+  .compact-slideshow-active .panels a.current:link span.button-symbol,
+  .compact-slideshow-active .panels a.current:active span.button-symbol,
+  .compact-slideshow-active .panels a.current:visited span.button-symbol {
+    background-image: url(../images/skin/icon-slideshow-panels-control-current.png);
+  }
+
+  .compact-slideshow-active .panels a:hover span.button-symbol,
+  .compact-slideshow-active .panels a.keyboard-focus span.button-symbol {
+    background-image: url(../images/skin/icon-slideshow-panels-control-hover.png);
+  }
+  .compact-slideshow-active .panels a.current span.button-symbol,
+  .compact-slideshow-active .panels a.current:link span.button-symbol,
+  .compact-slideshow-active .panels a.current:active span.button-symbol,
+  .compact-slideshow-active .panels a.current:visited span.button-symbol,
+  .compact-slideshow-active .panels a.current:hover span.button-symbol {
+    color: $compact-slideshow-active-panels-current-button-symbol-color;
+    cursor: default;
+    text-decoration: none;
+  }
+  .compact-slideshow-active .controlbar a span.button-symbol {
+    speak: none; /* Hide ascii symbols from AT */
+    padding: 0;
+    display: block;
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    text-align: center;
+  }
+  .compact-slideshow-active .actions a span.button-symbol {
+    background-image: url(../images/skin/sprite-slideshow-controls.png);
+    background-position: left -85px;
+    background-repeat: no-repeat;
+  }
+  .compact-slideshow-active .controlbar span.button-title {
+    position: absolute;
+    left: -99999px;
+  }
+  .compact-slideshow-active .controlbar a span img.for-css-replacement {
+    width: 2em !important;
+    height: 2em !important;
+    border: none !important;
+  }
+  .compact-slideshow-active .controlbar .actions a.next span.button-symbol {
+    background-position: -255px -85px;
+  }
+  .compact-slideshow-active .controlbar .actions a.toggle-animation span.button-symbol {
+    background-position: -170px -85px;
+  }
+  .slideshow.animation-running .controlbar .actions a.toggle-animation span.button-symbol {
+    background-position: -85px -85px;
+  }
+  .compact-slideshow-active .actions a:hover span.button-symbol {
+    background-position: left top;
+  }
+  .compact-slideshow-active .controlbar .actions a.next:hover span.button-symbol {
+    background-position: -255px top;
+  }
+  .compact-slideshow-active .controlbar .actions a.toggle-animation:hover span.button-symbol {
+    background-position: -170px top;
+  }
+  .slideshow.animation-running .controlbar .actions a.toggle-animation:hover span.button-symbol {
+    background-position: -85px top;
+  }
+
+  /* News/announcment page styles */
+
+  .page-news #content .feed {
+    margin: -2.6em .5em .5em;
+    padding: 0;
+    clear: both;
+    float: right;
+  }
+  .page-news #content h1 {
+    padding-right: 1em;
+  }
+  .page-news #content .news-featured h3 {
+    margin-bottom: 0;
+  }
+  .page-news ol.news-featured,
+  .page-news ol.news-archive {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .page-news .news-featured li {
+    margin-left: 90px;
+    position: relative;
+  }
+  body.page-news-regional .news-featured li {
+    margin-left: 0;
+  }
+  .page-news .news-featured dl.meta {
+    color: $page-news-news-featured-meta-color;
+    display: block;
+  }
+  .page-news .news-featured dl.meta dt.category {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .page-news .news-featured dl.meta dd.category {
+    font-weight: bold;
+    margin: 0 .5em 0 0;
+    float: left;
+  }
+  .page-news .news-featured .alert dl.meta dd.category,
+  .news-featured .alert .meta dd.category {
+    color: $page-news-news-featured-alert-meta-category-color;
+  }
+
+  .page-news .news-featured dl.meta dt.date-posted {
+    float: left;
+    font-weight: normal;
+    margin: 0 .5em 0 0;
+  }
+  .page-news .news-featured dl.meta dd.date-posted {
+    float: left;
+    margin: 0;
+  }
+  .page-news .news-featured .thumb {
+    /*float: left;*/
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+    margin-left: -90px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .page-news .news-featured a:hover .thumb {
+    @include rotate( -5deg );
+  }
+  .page-news .news-featured .summary {
+    padding: 0 0 1em;
+    margin-bottom: 1em;
+    clear: both;
+    overflow: hidden;
+  }
+  .page-news .news-archive li {
+    margin-left: 13em;
+    position: relative;
+    padding: .3em 0;
+  }
+  .page-news .news-archive dl.meta {
+    color: $page-news-news-archive-meta-color;
+    display: block;
+    margin-left: -14em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 13em;
+    text-align: right;
+    padding: .3em 0;
+  }
+  .page-news .news-archive dl.meta dt.category,
+  .page-news .news-archive dl.meta dd.category,
+  .page-news .news-archive dl.meta dt.date-posted {
+    position: absolute;
+    left: -99999px;
+    width: 100px;
+  }
+}

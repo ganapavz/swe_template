@@ -1,0 +1,32 @@
+/* events */
+#asides .events h2,
+#asides-primary .events h2,
+#asides-secondary .events h2 {
+    @include fonticon($fa-var-calendar, .45, 1.5, 1, $qgov-green);
+}
+
+#asides .events .section h3 {
+    @extend %visually-hidden;
+}
+
+#asides .events ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#asides .events li {
+    margin: 1em 0;
+    // padding: 1em;
+}
+#asides .events .date {
+    font-weight: bold;
+    margin: 0;
+}
+
+#asides .events h4 {
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+    font-family: $font-asides-events-heading;
+}

@@ -1,0 +1,48 @@
+<h2 id="h2-initiatives-by-cost">Initiatives by cost</h2>
+<div id="initiatives-by-cost">Loading...</div>
+<p><strong>Key</strong></p>
+<ul>
+	<li>Green&mdash;initiative is within budget tolerance.</li>
+	<li>Amber&mdash;initiative is still within budget tolerance but pushing the bounds (an issue or risk has been identified that may impact on budget).</li>
+	<li>Red&mdash;initiative is forecast to, or has exceeded budget tolerance.</li>
+</ul>
+<script type="text/javascript"><!--
+
+(function( $, swe ) {
+	'use strict';
+
+	var datafile = "<!--#echo encoding="entity" var="data" -->";
+
+	function initiativesByCost() {
+		// load json data
+		var sql = 'SELECT CASE \"Cost\"' +
+					'		WHEN \'R\' THEN \'RED\'' +
+					'		WHEN \'A\' THEN \'AMBER\'' +
+					'		WHEN \'G\' THEN \'GREEN\'' +
+					'	END AS \"Status\",' +
+			' (SELECT count(B.\"Duration (months)\") from \"' + datafile + '\" B where B.\"Duration (months)\"< 6 and A.\"Cost\"=B.\"Cost\") as \"< 6 months\",'+
+			' (SELECT count(B.\"Duration (months)\") from \"' + datafile + '\" B where (B.\"Duration (months)\" BETWEEN 6 and 12) and A.\"Cost\"=B.\"Cost\") as \"6-12 months\",'+
+			' (SELECT count(B.\"Duration (months)\") from \"' + datafile + '\" B where B.\"Duration (months)\"> 12 and A.\"Cost\"=B.\"Cost\") as \"> 12 months\"'+
+			' FROM  \"' + datafile + '\" A GROUP BY \"Cost\"'
+		;
+
+		// load data lib
+		swe.load({ name: 'data', url: 'data.js' });
+
+		// configure chart
+		swe.data({
+			container: 'initiatives-by-cost',
+			title: 'Initiatives by cost',
+			headings: [ 'Status', '< 6 months', '6-12 months', '> 12 months' ],
+			sql: sql,
+			type: 'bar',
+			colours: 'rag',
+			legend: false
+		});
+	};
+
+	initiativesByCost();
+
+}( jQuery, qg.swe ));
+
+//--></script><!-- end -->

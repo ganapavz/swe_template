@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-AU" lang="en-AU">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Search results | Queensland Government</title>
+
+<s:Plugin name='IncludeUrl' url='http://www.qld.gov.au/assets/includes/global-remote/head-assets.html'></s:Plugin>
+	<!--
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="keywords" content="KEYWORDS" />
+	-->
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<link rel="schema.AGLSTERMS" href="http://www.agls.gov.au/agls/terms/" />
+	
+    <meta name="DCTERMS.title" content="Search results | Queensland Government" />
+    
+	<meta name="DCTERMS.created" content="2011-11-22" />
+	<meta name="DCTERMS.modified" content="2011-11-22" />
+	<meta name="DCTERMS.title" content="Search results | Queensland Government" />
+	<!--<meta name="DCTERMS.description" content="DESCRIPTION" />-->
+	<meta name="DCTERMS.subject" scheme="AGLSTERMS.APAIS" content="SUBJECT" />
+	<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AGIFT" content="FUNCTION" />
+	<meta name="DCTERMS.identifier" scheme="DCTERMS.URI" content="http://www.qld.gov.au/search/" />
+	<meta name="DCTERMS.type" scheme="DCTERMS.DCMIType" content="Text" />
+	<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.agls-document" content="index" />
+	<meta name="DCTERMS.audience" scheme="AGLSTERMS.agls-audience" content="" />
+	<meta name="DCTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content="Queensland" />
+</head>
+
+<body id="qld-gov-au" class="page-search">
+ 
+<s:Plugin name='IncludeUrl' url='http://www.qld.gov.au/assets/includes/global-remote/header.html'></s:Plugin>
+
+	<div id="page-container"><div class="max-width">
+		<div id="breadcrumbs">
+			<h2>You are here:</h2>
+			<ol>
+<s:Plugin name='IncludeUrl' url='http://www.qld.gov.au/assets/includes/global-remote/breadcrumb-global.html'></s:Plugin>
+				<li class="last-child">Search results</li>
+			</ol>
+		</div>
+	
+		<div id="content-container">
+            <div id="content">
+				<div class="article"><div class="box-sizing"><div class="border">
+                
+<s:Plugin name='IncludeUrl' url='http://www.qld.gov.au/assets/includes/global-remote/global-alert.html'></s:Plugin>
+
+					<h1>Search results</h1>
+
+<s:Plugin name='IncludeUrl' url='http://www.qld.gov.au/assets/includes/global-remote/page-options-pre.html'></s:Plugin>
+
+                	
+                    
+                    
+                    
+                                  
+                    
+<!-- Start results -->
+                    
+                     <s:InitialFormOnly><p>Enter your query terms in the box above to search.</p></s:InitialFormOnly>
+                      <s:AfterSearchOnly>  
+                      <!-- Did you mean...? -->
+                        <p><s:CheckSpelling></s:CheckSpelling></p>
+                      
+                      
+                      
+                      <!--featured pages-->
+                        <s:TierBarFeaturedPages><h2 class="featured-search-result-lead-in">Featured results:</h2></s:TierBarFeaturedPages>
+                        <s:FeaturedPages>
+                          <div class="featured-search-result"><div class="inner">
+                            <h3><a href=feat{fp_link}>feat{fp_title}</a></h3>
+                            <p class="description">feat{fp_desc}</p>
+                            <p class="meta"><span class="url">feat{fp_link}</span></p>
+                          </div></div>
+                        </s:FeaturedPages>
+                      
+                      
+                      
+                      <!--Zero search results-->
+                        <s:Compare <s:ResultData>total_matching</s:ResultData> == 0>
+                          <p class="no-search-results">No search results were found for <strong><s:cgi>query</s:cgi></strong>. Please search again using a different search term in the above search box.</p>
+                        </s:Compare>
+                      
+                      
+                      <!-- Result count -->             
+                        <s:Compare <s:ResultData>total_matching</s:ResultData> != >
+                          <h2 class="search-results-summary">
+                            Displaying search results <strong><s:ResultData>currstart</s:ResultData> -
+                            <s:ResultData>currend</s:ResultData></strong> of
+                            <strong><s:commify><s:ResultData>total_matching</s:ResultData></s:commify></strong> for
+                            <strong><s:cgi>query</s:cgi></strong>
+                          </h2>
+                        </s:Compare>
+                      
+                    
+                      
+                      <!-- normal results -->
+                        <s:Results>
+                          <div class="search-result">
+                            <h3><span class="rank">res{rank} </span><a href="res{live_url}">res{title}</a></h3>
+                            <p class="description">res{summary}</p>
+                            <p class="meta"><span class="url">res{live_url}</span> - <span class="file-size">res{filesize}</span> <s:Compare res{date} != No Date>- <span class="date-updated">res{date}</span></s:Compare></p>
+                          </div>
+                        </s:Results>
+                      
+                      <!-- pagination -->
+                        <div class="pagination">
+                          <p><s:PrevNext label="Result pages:"></s:PrevNext></p>
+                        </div>
+                      
+                      </s:AfterSearchOnly>
+                                    
+<!-- End results -->                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+				</div></div></div><!-- end .article, .box-sizing, .border -->
+			</div><!-- end #content -->
+
+            <div id="asides"><div class="box-sizing"><div class="border">
+            	<s:Plugin name='IncludeUrl' url='http://www.qld.gov.au/assets/includes/global-remote/global-aside.html'></s:Plugin>
+                
+               
+               
+               
+               
+            
+            </div></div></div><!-- end #asides, .box-sizing, .border -->
+
+			<div id="meta-wrapper"><div class="meta-box-sizing"><div class="border">
+
+				<div id="document-properties"><div class="box-sizing">
+					<dl>
+						<dt>Last updated</dt>
+						<dd>22 November 2011</dd>
+					</dl>
+				</div></div>
+				
+<s:Plugin name='IncludeUrl' url='http://www.qld.gov.au/assets/includes/global-remote/page-options-post.html'></s:Plugin>
+
+			</div></div></div><!-- end #meta-wrapper, .meta-box-sizing, .border -->
+
+		</div><!-- end #content-container -->
+        
+    <div id="nav-section"><div class="box-sizing">
+        
+        <s:Plugin name='IncludeUrl' url='http://www.qld.gov.au/assets/includes/nav/core.html'></s:Plugin>
+        
+    </div></div><!-- end #nav-section -->
+	
+    </div></div><!-- end #page-container, .max-width -->
+
+<s:Plugin name='IncludeUrl' url='http://www.qld.gov.au/assets/includes/global-remote/footer.html'></s:Plugin>
+
+
+</body>
+</html>

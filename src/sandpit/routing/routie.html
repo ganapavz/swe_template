@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Routie - routing test</title>
+    <meta name="description" content="">
+    <!--#include virtual="/assets/includes/global/head-assets.html"-->
+    <script src="/assets/v2/script/routing.js"></script>
+    <script>
+        $().ready(function () {
+            var $content = $('#content');
+            routie({
+                '': function() {
+                    $content.text('root');
+                },
+                '/test1': function() {
+                    $content.text('test 1');
+                },
+                '/test2': function() {
+                    $content.text('test 2');
+                },
+                '/test3': function() {
+                    $content.text('test 2');
+                }
+            });
+        });
+    </script>
+</head>
+<body id="qld-gov-au">
+
+<div id="page-container">
+    <div class="max-width">
+        <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a
+                href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="nav">
+            <ul>
+                <li><a href=".">Home</a></li>
+                <li><a href="#/test1">Test 1</a></li>
+                <li><a href="#/test2">Test 2</a></li>
+                <li><a href="#/test3/test4">Test 3</a></li>
+            </ul>
+        </div>
+
+        <div id="content"></div>
+    </div>
+</div>
+
+</body>
+</html>

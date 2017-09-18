@@ -1,0 +1,275 @@
+<script type="text/javascript"><!--
+
+	(function( $, swe ) {
+		'use strict';
+
+		var QueryString = function () {
+			// This function is anonymous, is executed immediately and 
+			// the return value is assigned to QueryString!
+			var query_string = {};
+			var query = window.location.search.substring(1);
+			var vars = query.split("&");
+			for (var i=0;i<vars.length;i++) {
+				var pair = vars[i].split("=");
+				// If first entry with this name
+				if (typeof query_string[pair[0]] === "undefined") {
+					query_string[pair[0]] = pair[1];
+					// If second entry with this name
+				} else if (typeof query_string[pair[0]] === "string") {
+					var arr = [ query_string[pair[0]], pair[1] ];
+					query_string[pair[0]] = arr;
+					// If third or later entry with this name
+				} else {
+					query_string[pair[0]].push(pair[1]);
+				}
+			} 
+			return query_string;
+		} ();
+
+		var table = 'qgip2014_funding_available_tables()';
+		var FinancialYear = '2014-15';
+
+		if ( QueryString.FinancialYear && QueryString.FinancialYear === '2013-14' ) {
+			table = 'qgip2013_funding_available_tables()';
+			FinancialYear = '2013-14';
+		} else if ( QueryString.FinancialYear &&QueryString.FinancialYear === '2014-15' ) {
+			table = 'qgip2014_funding_available_tables()';
+			FinancialYear = '2014-15';
+		}
+
+		/*table = '\"14dae4d6-c18e-44f6-a143-f31f30e66d6d\"';
+		table = '\"96e8200f-ec39-497c-b966-4a31552fccec\"';
+		table = '\"1047e55b-a883-4dab-a868-e6021ab174b9\"';
+		table = '\"494bcb0c-d3fb-4acb-b7fd-d0706ea3a465\"';
+		table = '\"4110139f-99b3-4bcd-b66a-9271bed827b4\"';
+		table = '\"4bf68a6b-bdc9-46c6-a061-87e56e71a042\"';
+		table = '\"e62290ab-3f93-4e14-a294-f911d31b1c80\"';
+		table = '\"5e7aef91-3cd9-402e-b128-76a9a8739f59\"';
+		table = '\"691a0951-eeb8-4295-857a-46756fb32f3b\"';
+		table = '\"b1582499-de7d-4b94-9b00-6072a5ded720\"';
+		table = '\"a974af81-bd00-4cd5-b82d-f9d18ce185f6\"';
+		table = '\"d4cd8823-bafc-4e0f-9fc3-5f9e453950d5\"';
+		table = '\"31774b27-5a44-4813-987b-60b7f8c5aae0\"';
+		table = '\"91a460b7-065a-4e74-83fe-f580f618bc7e\"';
+		table = '\"492632f2-ace1-4a11-8150-7cd3c765c2b8\"';
+		table = '\"6825dc6c-a529-44f2-a8eb-310eb934cb75\"';
+		table = '\"bea4d858-0343-4966-b56f-2ab4b3c1245b\"';
+		table = '\"efd89135-206e-430b-911b-c0f582bf97eb\"';
+		table = '\"d0b9e0a8-0ac2-4f9f-ab16-8319ba41fd2a\"';
+		table = '\"f9fdd1a5-f82e-47c5-a9a9-1b30c3a8958f\"';*/
+
+
+		var overviewTitle = '';
+		overviewTitle += QueryString.Category && typeof QueryString.Category !== '' ? 'for ' + QueryString.Category.replace(/\+/g, ' ').replace(/\%2C/g, ',') : '';
+		overviewTitle += QueryString.Agency && typeof QueryString.Agency !== '' ? ' in ' + QueryString.Agency.replace(/\+/g, ' ').replace(/\%2C/g, ',').replace(/\%28/g, '(').replace(/\%29/g, ')') : '';
+
+		var getFilters,
+			searchResultsCount,
+			displaySearchResultsCount,
+			searchResults,
+			displaySearchResult,
+			populateAsideSearchForm,
+			displayPagination,
+			paginationWhenReady,
+			searchSumTotalAvailableFunding,
+			displaySumTotalAvailableFunding
+		;
+
+		getFilters = function() {
+			var query = '';
+
+			query += ( QueryString.query && (typeof QueryString.query !== 'undefined' || typeof QueryString.query !== '' ) ? ', plainto_tsquery(\'english\', \'' + QueryString.query + '\') query' : '' );
+			query += ' WHERE 1=1 AND (\"Funding title\" != \'\' OR \"Program title\" !=\'\')';
+			query += ( QueryString.query && (typeof QueryString.query !== 'undefined' || typeof QueryString.query !== '' ) ? ' AND _full_text @@ query' : '' );
+
+
+			if ( QueryString.Agency && (typeof QueryString.Agency !== 'undefined' || typeof QueryString.Agency !== '' )) {
+				query += ' AND (\"Funding agency\"=\'' + QueryString.Agency.replace(/\+/g, ' ') + '\')';
+			}
+
+			if ( QueryString.Category && (typeof QueryString.Category !== 'undefined' || typeof QueryString.Category !== '' )) {
+				query += ' AND (\"Category\"=\'' + QueryString.Category.replace(/\+/g, ' ').replace(/\%2C/g, ',')  + '\')';
+			}
+
+			return query;
+		}
+
+		searchSumTotalAvailableFunding = function( ) {
+			// load json data
+			var rules = getFilters();
+			var sql = 'SELECT SUM(\"FY budget\") from ' + table + rules;
+			qg.data.get( 'data.qld.gov.au', sql, displaySumTotalAvailableFunding );
+		};
+
+		displaySumTotalAvailableFunding = function( jsonData   ) {
+			var sumTotal = jsonData.result.records[0].sum;
+			var txt = 'This data set reflects program budget information for '+ FinancialYear + '. It is correct at the time of reporting but may be reviewed in line with the funding department’s annual budget process.' 
+			$( '#overview-funding' ).text( txt ) ;
+		};
+
+		searchResults = function( ) {
+			// load json data
+			var rules = getFilters();
+			var limit = 10;
+			var sql = 'SELECT * from ' + table + rules + ' ORDER BY \"FY budget\" DESC LIMIT ' + limit +' OFFSET ' + (QueryString.offset && typeof QueryString.offset !== 'undefined' ? QueryString.offset * limit : 0 );
+			qg.data.get( 'data.qld.gov.au', sql, displaySearchResult );
+		};
+
+
+		displaySearchResult = function ( jsonData ) {
+			// load json data
+			var resultsHTML = '',
+			    results = $( '#results-table' )
+			;
+			results.empty();
+
+			if ( jsonData.result.records.length > 0 ) {
+				// loop through items
+				$.each( jsonData.result.records, function( index, item ) {
+					// append to search results
+					resultsHTML += '<tr class="' + (index%2==1?'even':'odd')+' summary">';
+					resultsHTML += '<td class="details-control"></td>';
+					resultsHTML += '<td class="details-title"><a>' + item['Funding title'] +'</a></td>';
+					resultsHTML += '<td>' + item['Funding agency'] + '</td>';
+					resultsHTML += '<td>' + qg.swe.template.format( item['FY budget'], '$'  ) +'</td>';
+					resultsHTML += '</tr>';
+					resultsHTML += '<tr class="detailedInfoRow ' + (index%2==1?'even':'odd')+'"><td></td><td colspan="3">';
+
+
+					resultsHTML += markdown.toHTML( item['Purpose'] );
+					resultsHTML += '<ul>';
+					resultsHTML +=  (item['Program title'] != '' ) ? '<li>Program title: ' + item['Program title'] +'</li>' : '';
+					resultsHTML += '<li>Category: ' + item['Category'] +'</li>';
+					resultsHTML += (item['Client group'] != '' ) ? '<li>Client group: ' + item['Client group'] +'</li>' : '';
+
+					resultsHTML += '<li>Funding<ul>';
+					resultsHTML += '<li>Frequency: ' + item['Frequency'] +'</li>';
+					resultsHTML += '<li>Terms: ' + item['Funding terms'] +'</li>';
+					resultsHTML += '<li>Type: ' + item['Funding type'] +'</li>';
+					resultsHTML += '<li>Duration: ' + item['Funding agreement duration'] +'</li>';
+
+					resultsHTML += '<li>Funding available (uncommitted, unallocated or TBA): ' + qg.swe.template.format( item['Funding available'], '$', { 'abbr':'both' }  ) +'</li>';
+					resultsHTML += '<li>FY budget: ' + qg.swe.template.format( item['FY budget'], '$', 'abbr' ) +'</li>';
+					resultsHTML += (item['Forward budget'] != '' ) ? '<li>Forward budget: ' +  qg.swe.template.format( item['Forward budget'], '$', 'abbr' ) +'</li>' : '';
+					resultsHTML += (item['Forward budget notes'] != '' ) ? '<li>Forward budget notes: ' + item['Forward budget notes'] +'</li>' : '';
+					resultsHTML += '</ul></li>';
+					resultsHTML += '</ul>';
+					resultsHTML += (item['Website'] != '' ) ? '<p><a href="' + item['Website'] + '">More information…</a></p>' : '';
+					resultsHTML += '</td></tr>';
+				});
+				$( results ).append( resultsHTML );
+			} else {
+				results.append( resultsHTML + '<tr><td colspan="4">No funding records were found for this search</td></tr>' );
+			}
+
+			// Add event listener for opening and closing details
+		    $('#example tbody').on('click', 'tr.summary', function () {
+		        var tr = $(this).next();
+		        if ( tr.hasClass( 'open' ) ) {
+		            tr.hide();
+		            $(this).removeClass( 'shown' );
+		            tr.addClass( 'closed' );
+		            tr.removeClass( 'open' );
+		        } else {
+		            tr.show();
+		            $(this).addClass( 'shown' );
+		            tr.addClass( 'open' );
+		            tr.removeClass( 'closed' );
+		            results.trigger( 'x-height-change' );
+		        }
+		    } );
+		    $( '.detailedInfoRow' ).hide();
+		    results.trigger( 'x-height-change' );
+		};
+
+		searchResultsCount = function() {
+			// load json data
+			var rules = getFilters();
+			var sql = 'SELECT COUNT(*) from ' + table + rules;
+			qg.data.get( 'data.qld.gov.au', sql, displaySearchResultsCount );
+
+		};
+		
+		displaySearchResultsCount = function( jsonData   ) {
+			$( '#total-result' ).text( jsonData.result.records[0].count );
+		};
+
+		populateAsideSearchForm = function(){
+			if ( QueryString.Agency && (typeof QueryString.Agency !== 'undefined' || typeof QueryString.Agency !== '' )) {
+				$( $( 'form', '#asides' )[ 0 ][ 'Agency' ] ).val(QueryString.Agency.replace(/\+/g, ' ') );
+			}
+
+			if ( QueryString.Category && (typeof QueryString.Category !== 'undefined' || typeof QueryString.Category !== '' )) {
+				$( $( 'form', '#asides' )[ 0 ][ 'Category' ] ).val( QueryString.Category.replace(/\+/g, ' ').replace(/\%2C/g, ',') );
+			}
+
+			if ( QueryString.FinancialYear && (typeof QueryString.FinancialYear !== 'undefined' || typeof QueryString.FinancialYear !== '' )) {
+				$( $( 'form', '#asides' )[ 0 ][ 'FinancialYear' ] ).val( QueryString.FinancialYear.replace(/\+/g, ' ').replace(/\%2C/g, ',') );
+			}
+
+			if ( QueryString.query && (typeof QueryString.query !== 'undefined' || typeof QueryString.query !== '' )) {
+				$( $( 'form', '#asides' )[ 0 ][ 'query' ] ).val( QueryString.query.replace(/\+/g, ' ').replace(/\%2C/g, ',') );
+			}
+		};
+
+		displayPagination = function( total ) {
+
+			// current page and total results
+			var url = $.url();
+			var offset = parseInt( url.param( 'offset' ), 10 ) || 0;
+			var start = offset * 10 + 1;
+
+			// how many results on each page
+			var resultspp = 10; // per page
+
+			// display at most 10 pages, preferably up to 5 previous pages
+			var min = Math.max( 1, start - 5 * resultspp );
+			var max = Math.min( total, start + 10 * resultspp );
+
+			if (total > 10) {
+				url = url.attr( 'source' );
+				if ( ! /offset/.test( url )) {
+					url += ( window.location.search.substring(1) ) ? '&offset=0' : '?offset=0';
+				}
+
+				// 'Previous' link
+				if ( offset > 0 ) {
+				  $( 'ul', '#pagination' ).append( '<li><a href="' + url.replace( /offset=\d+/, 'offset=' + ( offset - 1 )) + '">Previous</a></li>' );
+				}
+
+				// numbered links
+				for ( var i = min; i < max; i += resultspp ) {
+					var pageNumber = Math.ceil( i / resultspp );
+					var page = '<li>' + ( start === i ? '<strong>' + pageNumber + '</strong>' : '<a href="' + url.replace( /offset=\d+/, 'offset=' + ( pageNumber - 1 )) + '">' + pageNumber + '</a>' ) + '</li>';
+					$( 'ul', '#pagination' ).append( page );
+				}
+
+				// 'Next' link
+				if ( start + resultspp < total ) {
+				  $( 'ul', '#pagination' ).append( '<li><a href="' + url.replace( /offset=\d+/, 'offset=' + ( offset + 1 )) + '">Next</a></li>' );
+				}
+			} 
+
+			$( '#result-scope' ).html( total > 0 ? (total < 10 ? total : (start + ' - ' + ((offset+1)*resultspp))) : '0' );
+		};
+
+		searchSumTotalAvailableFunding();
+		searchResultsCount();
+		searchResults();
+		populateAsideSearchForm();
+
+		paginationWhenReady = function() {
+			if ( /^\d+$/.test( $( '#total-result' ).text() )) {
+				$( '.total-search-count' ).hide();
+				displayPagination( parseInt( $( '#total-result' ).text(), 10 ));
+			} else {
+				// try again in a minute
+				setTimeout( paginationWhenReady, 1000 );
+			}
+		}
+
+		paginationWhenReady();
+
+	}( jQuery, qg.swe ));
+
+//--></script><!-- end -->
