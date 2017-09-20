@@ -15,5 +15,26 @@
   "bugs": {
     "url": "https://github.com/qld-gov-au/swe_template/issues"
   },
-  "homepage": "https://github.com/qld-gov-au/swe_template#readme"
+  "homepage": "https://github.com/qld-gov-au/swe_template#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "@allmarkedup/purl": "git+https://github.com/allmarkedup/purl.git",
+    "Flot": "git+https://github.com/flot/flot.git",
+    "Placeholders.js": "git+https://github.com/jamesallardice/Placeholders.js.git#3.0.2",
+    "footable": "^2.0.5",
+    "generate-id": "git+https://github.com/bboyle/Generate-ID.git",
+    "historyjs": "^1.8.0-b2",
+    "html5.constraintValidationAPI": "git+https://github.com/bboyle/html5-constraint-validation-API.git",
+    "jquery-ajax-transport-xdomainrequest": "^1.0.4",
+    "jquery.cookie": "^1.4.1",
+    "jquery.scrollto": "^2.1.2",
+    "json3": "^3.3.2",
+    "justgage": "^1.2.2",
+    "leaflet": "^1.2.0",
+    "leaflet.fullscreen": "^1.4.3",
+    "leaflet.markercluster": "^1.1.0",
+    "markdown": "^0.5.0",
+    "raphael": "^2.2.7",
+    "relevance": "git+https://github.com/bboyle/relevance.git"
+  }
 }

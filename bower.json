@@ -14,10 +14,11 @@
     "test",
     "tests"
   ],
-  "devDependencies": {
-    "jquery.generateId": "jquery.generate-id#^1.0.3",
-    "purl": "^2.3.2",
-    "jquery.scrollTo": "^2.1.2",
-    "relevance": "https://github.com/bboyle/relevance.git#^2.1.2"
+  "devDependencies": {},
+  "dependencies": {
+    "jquery-jsonp": "^2.4.0",
+    "doubletaptogo": "http://osvaldas.info/examples/drop-down-navigation-touch-friendly-and-responsive/doubletaptogo.js",
+    "ExplorerCanvas": "excanvas#*",
+    "jquery.flot.orderBars": "http://www.benjaminbuffet.com/public/js/jquery.flot.orderBars.js"
   }
 }

@@ -19,10 +19,10 @@
         ],
 
         "qgov": [
-            "bower_components/generate-id/dist/generate-id.js",
-            "bower_components/purl/purl.js",
+            "node_modules/generate-id/dist/generate-id.js",
+            "node_modules/@allmarkedup/purl/purl.js",
             "src/qgov/assets/v2/script/lib/jquery.history.js",
-            "bower_components/jquery.scrollTo/jquery.scrollTo.js",
+            "node_modules/jquery.scrollto/jquery.scrollTo.js",
             "src/qgov/assets/v2/script/jquery.keyboard-focus.js",
             "src/qgov/assets/v2/script/lib/jquery.aria.js",
             "src/qgov/assets/v2/script/jquery.aria.key-nav.js",
@@ -33,9 +33,9 @@
             "src/qgov/assets/v2/script/lib/jquery.butterfly.js",
             "src/qgov/assets/v2/script/lib/tabs/jquery.mousewheel.min.js",
             "src/qgov/assets/v2/script/lib/tabs/jquery.slidetabs.min.js",
-            "bower_components/relevance/dist/relevance.js",
+            "node_modules/relevance/dist/relevance.js",
             "src/qgov/assets/v2/script/lib/jquery.relevance.legacy-API.js",
-            "bower_components/qgovau-jquery.autocomplete/src/autocomplete.js",
+            "src/qgov/assets/v2/script/lib/forms/autocomplete.js",
             "src/qgov/assets/v2/script/qgov-core.js"
         ],
 
@@ -69,9 +69,9 @@
         "qgovMaps": [
             "src/qgov/assets/v2/script/lib/maps/markerclusterer.js",
             "bower_components/jquery-jsonp/src/jquery.jsonp.js",
-            "bower_components/history.js/scripts/bundled-uncompressed/html4+html5/jquery.history.js",
+            "node_modules/historyjs/scripts/bundled-uncompressed/html4+html5/jquery.history.js",
             "src/qgov/assets/v2/script/utils/data.js",
-            "bower_components/markdown/lib/markdown.js",
+            "node_modules/markdown/lib/markdown.js",
             "src/qgov/assets/v2/script/utils/template.js",
             "src/qgov/assets/v2/script/lib/jquery.pajinate.js",
             "src/qgov/assets/v2/script/pattern/qgov-maps.js"
@@ -87,7 +87,7 @@
             "bower_components/jquery-jsonp/src/jquery.jsonp.js",
             "src/qgov/assets/v2/script/utils/data.js",
             "src/qgov/assets/v2/script/lib/jquery.pajinate.js",
-            "bower_components/markdown/lib/markdown.js",
+            "node_modules/markdown/lib/markdown.js",
             "src/qgov/assets/v2/script/utils/template.js",
             "src/qgov/assets/v2/script/pattern/qgov-counters.js"
         ],
@@ -95,33 +95,33 @@
         "qgovViewResult": [
             "bower_components/jquery-jsonp/src/jquery.jsonp.js",
             "src/qgov/assets/v2/script/utils/data.js",
-            "bower_components/markdown/lib/markdown.js",
+            "node_modules/markdown/lib/markdown.js",
             "src/qgov/assets/v2/script/utils/template.js",
             "src/qgov/assets/v2/script/pattern/qgov-view-result.js"
         ],
 
         "mapsDirectory": [
-            "bower_components/jQuery.XDomainRequest/jQuery.XDomainRequest.js",
-            "bower_components/markdown/lib/markdown.js",
+            "node_modules/jquery-ajax-transport-xdomainrequest/jQuery.XDomainRequest.js",
+            "node_modules/markdown/lib/markdown.js",
             "src/qgov/assets/v2/script/utils/template.js",
             "bower_components/jquery-jsonp/src/jquery.jsonp.js",
             "src/qgov/assets/v2/script/utils/data.js",
-            "bower_components/json3/lib/json3.js",
-            "bower_components/history.js/scripts/bundled-uncompressed/html4+html5/jquery.history.js",
-            "bower_components/leaflet/dist/leaflet-src.js",
-            "bower_components/leaflet.markerclusterer/dist/leaflet.markercluster-src.js",
-            "bower_components/leaflet.fullscreen/Control.FullScreen.js",
+            "node_modules/json3/lib/json3.js",
+            "node_modules/historyjs/scripts/bundled-uncompressed/html4+html5/jquery.history.js",
+            "node_modules/leaflet/dist/leaflet-src.js",
+            "node_modules/leaflet.markercluster/dist/leaflet.markercluster-src.js",
+            "node_modules/leaflet.fullscreen/Control.FullScreen.js",
             "src/qgov/assets/v2/script/jquery.status.js",
             "src/qgov/assets/v2/script/lib/jquery.pajinate.js",
             "src/qgov/assets/v2/script/pattern/qgov-maps-directory.js"
         ],
 
         "footable": [
-            "bower_components/footable/js/footable.js",
-            "bower_components/footable/js/footable.sort.js",
-            "bower_components/footable/js/footable.filter.js",
-            "bower_components/footable/js/footable.paginate.js",
-            "bower_components/footable/js/footable.plugin.template.js"
+            "node_modules/footable/js/footable.js",
+            "node_modules/footable/js/footable.sort.js",
+            "node_modules/footable/js/footable.filter.js",
+            "node_modules/footable/js/footable.paginate.js",
+            "node_modules/footable/js/footable.plugin.template.js"
         ],
 
         "init": [
@@ -140,7 +140,7 @@
             "src/qgov/assets/v2/script/template/print-link-urls.js",
             "src/qgov/assets/v2/script/jquery.fat-footer.js",
             "src/qgov/assets/v2/script/languages.js",
-            "bower_components/jquery.cookie/jquery.cookie.js",
+            "node_modules/jquery.cookie/jquery.cookie.js",
             "src/qgov/assets/v2/script/pattern/tabs.js"
         ],
 
@@ -150,20 +150,20 @@
         ],
 
         "placeholders": [
-            "bower_components/placeholders/lib/utils.js",
-            "bower_components/placeholders/lib/main.js",
-            "bower_components/placeholders/lib/adapters/placeholders.jquery.js"
+            "node_modules/Placeholders.js/lib/utils.js",
+            "node_modules/Placeholders.js/lib/main.js",
+            "node_modules/Placeholders.js/lib/adapters/placeholders.jquery.js"
         ],
 
         "ieLayout": [
             "src/qgov/assets/v2/script/oldIE.js",
-            "bower_components/placeholders/lib/utils.js",
-            "bower_components/placeholders/lib/main.js",
-            "bower_components/placeholders/lib/adapters/placeholders.jquery.js",
+            "node_modules/Placeholders.js/lib/utils.js",
+            "node_modules/Placeholders.js/lib/main.js",
+            "node_modules/Placeholders.js/lib/adapters/placeholders.jquery.js",
             "src/qgov/assets/v2/script/jquery.resize-events.js",
             "src/qgov/assets/v2/script/lib/jquery.transformer-layout.js",
             "src/qgov/assets/v2/script/max-width-ie6.js",
-            "bower_components/excanvas/silverlight/excanvas.js"
+            "bower_components/ExplorerCanvas/silverlight/excanvas.js"
         ],
 
         "video": [
@@ -173,7 +173,7 @@
         ],
 
         "forms": [
-            "bower_components/html5-constraint-validation-API/dist/html5.constraintValidationAPI.js",
+            "node_modules/html5.constraintValidationAPI/dist/html5.constraintValidationAPI.js",
             "src/qgov/assets/v2/script/lib/forms/form-validation.js",
             "src/qgov/assets/v2/script/form-validation-xor.js",
             "src/qgov/assets/v2/script/jquery.forms.required.js",
@@ -214,14 +214,14 @@
             "bower_components/jquery-jsonp/src/jquery.jsonp.js",
             "src/qgov/assets/v2/script/utils/data.js",
             "src/qgov/assets/v2/script/jquery.shorter-list.js",
-            "bower_components/markdown/lib/markdown.js",
+            "node_modules/markdown/lib/markdown.js",
             "src/qgov/assets/v2/script/utils/template.js",
-            "bower_components/flot/jquery.flot.js",
-            "bower_components/flot.orderBars/index.js",
-            "bower_components/flot/jquery.flot.categories.js",
-            "bower_components/flot/jquery.flot.pie.js",
-            "bower_components/raphael/raphael.js",
-            "bower_components/justgage-official/justgage.js",
+            "node_modules/Flot/jquery.flot.js",
+            "bower_components/jquery.flot.orderBars/index.js",
+            "node_modules/Flot/jquery.flot.categories.js",
+            "node_modules/Flot/jquery.flot.pie.js",
+            "node_modules/raphael/raphael.js",
+            "node_modules/justgage/justgage.js",
             "src/qgov/assets/v2/script/pattern/data.js"
         ],
 
@@ -245,9 +245,9 @@
         ],
 
         "jqueryFlot": [
-            "bower_components/flot/jquery.flot.js",
-            "bower_components/flot/jquery.flot.time.js",
-            "bower_components/flot/jquery.flot.symbol.js"
+            "node_modules/Flot/jquery.flot.js",
+            "node_modules/Flot/jquery.flot.time.js",
+            "node_modules/Flot/jquery.flot.symbol.js"
         ],
         "qgovXmlReader": [
             "src/qgov/assets/v2/script/qg-xml-reader.js"
